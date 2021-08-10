@@ -1,0 +1,2 @@
+<?php
+ namespace Pmpr\Common\Foundation\FormMaker\Admin\Field; class Title extends Field { protected ?string $onFront = null; public function __construct(?string $IuvAA, string $W1Ttt = null, string $CM7xZ = null) { parent::__construct("\164\151\x74\154\x65", $IuvAA, $W1Ttt, $CM7xZ); } public function onFront() : ?string { return $this->onFront; } public function setOnFront($h235U) : self { $this->onFront = $h235U; return $this; } }

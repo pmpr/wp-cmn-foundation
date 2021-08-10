@@ -1,0 +1,23 @@
+{% extends get_template('../page', _self) %}
+
+{% block content %}
+
+    <form name="orm_edit_form" method="post" id="orm_edit_form" class="orm-form">
+        {{ do_action('orm_edit_form_top', object) }}
+        <input type="hidden" id="object_id" name="{{ primary_key|esc_attr }}" value="{{ id|esc_attr }}">
+        <div id="poststuff">
+            <div id="post-body" class="metabox-holder columns-{{ columns|default(2)|raw }}">
+                <div id="postbox-container-2" class="postbox-container">
+                    {{ fields|raw }}
+                    {{ do_meta_boxes(name, 'normal', name) }}
+                    {{ do_meta_boxes(name, 'advanced', name) }}
+                </div>
+                <div id="postbox-container-1" class="postbox-container">
+                    {{ do_meta_boxes(name, 'side', name) }}
+                </div>
+            </div>
+            <br class="clear"/>
+        </div>
+        {{ do_action('orm_edit_form_bottom', object) }}
+    </form>
+{% endblock %}

@@ -1,0 +1,2 @@
+<?php
+ namespace Pmpr\Common\Foundation\Decorator; use Pmpr\Common\Foundation\Manipulate\Manipulate; class DecoratorRewrite extends Manipulate { public static function flushRules($ezMZr = true) { flush_rewrite_rules($ezMZr); } public static function addRule($krheM, $KlkY2, $dGXR1 = "\142\x6f\164\x74\157\x6d") { add_rewrite_rule($krheM, $KlkY2, $dGXR1); } public static function addEndpoint($W1Ttt, $jdS71, $LXMfn = true) { add_rewrite_endpoint($W1Ttt, $jdS71, $LXMfn); } }

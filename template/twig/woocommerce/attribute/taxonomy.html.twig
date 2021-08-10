@@ -1,0 +1,11 @@
+{% if fields is defined
+    and fields is not empty %}
+    {% for title, field in fields %}
+        <tr class="form-field">
+            <th scope="row">
+                <label for="{{ item.getId()|esc_attr }}" class="">{{ field.getAttribute('title')|raw }}</label>
+            </th>
+            <td>{{ field.render()|raw }}</td>
+        </tr>
+    {% endfor %}
+{% endif %}

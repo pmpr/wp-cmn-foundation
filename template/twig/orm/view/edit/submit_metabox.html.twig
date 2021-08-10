@@ -1,0 +1,25 @@
+{{ do_action(hook_prefix ~ '_top', object, model, is_editing) }}
+
+<div class="submitbox" id="submitpost">
+    {{ do_action(hook_prefix ~ '_post_top', object, model, is_editing) }}
+    {% include get_template('../table', _self) with {
+        table_class: 'p-2 w-100',
+        cell_class: 'py-2'
+    } %}
+    <div id="major-publishing-actions">
+        {% if deletion is defined
+            and deletion is not empty %}
+
+            <div id="delete-action">
+                {{ deletion|raw }}
+            </div>
+        {% endif %}
+        <div id="publishing-action">
+            <input type="submit" name="orm-save" id="orm-save" class="button button-primary"
+                   value="{{ submit_label|esc_attr }}">
+        </div>
+        <div class="clear"></div>
+    </div>
+    {{ do_action(hook_prefix ~ '_submit_post_bottom', object, model, is_editing) }}
+</div>
+{{ do_action(hook_prefix ~ '_bottom', object, model, is_editing) }}

@@ -1,0 +1,10 @@
+<ul class="radio-group">
+    {% for term in data %}
+        <li>
+            <label class="form-check-label popular-item"
+                   data-target="#tax_input_{{ term.taxonomy|raw }}"
+                   for="in-{{ name|esc_attr }}-{{ term.term_id|esc_attr }}"
+                   data-taxonomy="{{ name }}" data-id="{{ term.term_id|raw }}">{{ term.name|raw }}</label>
+        </li>
+    {% endfor %}
+</ul>

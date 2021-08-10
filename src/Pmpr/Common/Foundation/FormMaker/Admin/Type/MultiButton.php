@@ -1,0 +1,2 @@
+<?php
+ namespace Pmpr\Common\Foundation\FormMaker\Admin\Type; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; class MultiButton extends Button { public function render($vJ8mq, $UBpV1, $zkYoO, $Tdx0d, $D2Cc8) { $o61OJ = ManipulateArray::get($vJ8mq->args, "\x62\x75\x74\x74\x6f\x6e\163", []); if (!(is_array($o61OJ) && $o61OJ)) { goto VAz7Y; } echo $D2Cc8->_desc(true); foreach ($o61OJ as $z19K6) { echo $this->generate($z19K6, $D2Cc8); xyjMl: } WTiLQ: VAz7Y: } }

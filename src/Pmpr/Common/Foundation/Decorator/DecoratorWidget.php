@@ -1,0 +1,2 @@
+<?php
+ namespace Pmpr\Common\Foundation\Decorator; use WP_Widget; class DecoratorWidget extends Decorator { public static function register($YNff8) { register_widget($YNff8); } public static function isActiveSidebar($ueOL6) { return is_active_sidebar($ueOL6); } public static function dynamicSidebar($ueOL6) { dynamic_sidebar($ueOL6); } public static function registerSidebar($ONFmc = []) { register_sidebar($ONFmc); } public static function widget($YNff8, $ghLSD = [], $ONFmc = []) { the_widget($YNff8, $ghLSD, $ONFmc); } }

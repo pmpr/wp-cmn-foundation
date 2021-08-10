@@ -1,0 +1,2 @@
+<?php
+ namespace Pmpr\Common\Foundation\FormMaker\Front\Field; class Nonce extends Html { public function __construct(?string $IuvAA, ?string $W1Ttt, ?string $GmUxy) { $this->addAttribute("\x64\141\x74\141\x2d\156\141\x6d\145", $W1Ttt)->addAttribute("\x64\x61\164\x61\x2d\141\x63\x74\151\x6f\x6e", $GmUxy)->addClass("\x6e\157\x6e\x63\145\55\143\x6f\156\x74\141\x69\156\145\162"); parent::__construct($IuvAA); } }

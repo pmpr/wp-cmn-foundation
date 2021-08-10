@@ -1,0 +1,2 @@
+<?php
+ namespace Pmpr\Common\Foundation\Template; use Pmpr\Common\Foundation\Container\Container; class Common extends Container { }

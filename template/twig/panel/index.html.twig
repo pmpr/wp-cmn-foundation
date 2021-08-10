@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{% if rtl is defined and rtl %}fa" direction="rtl" style="direction: rtl{% else %}en{% endif %}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{{ title|raw }}</title>
+        <meta name="description" content="{{ description|raw }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vazir-font/27.2.2/font-face.css">
+        {{ do_action('boilerplate_panel_head') }}
+    </head>
+    <body class="page-loading">
+        <noscript>
+            <strong>{{ enable_js_message }}</strong>
+        </noscript>
+        <div id="app">
+          <div class="page-loader page-loader-logo" v-if="isShow">
+{#            <img {{ logo|parse_attrs|raw }}/>#}
+            <div class="spinner spinner-primary spinner-lg" :class="`spinner-${size}`"></div>
+          </div>
+        </div>
+        {{ do_action('boilerplate_panel_footer') }}
+    </body>
+</html>

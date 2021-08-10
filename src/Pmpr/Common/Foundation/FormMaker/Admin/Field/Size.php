@@ -1,0 +1,2 @@
+<?php
+ namespace Pmpr\Common\Foundation\FormMaker\Admin\Field; class Size extends Field { public function __construct(?string $IuvAA, ?string $W1Ttt = null, ?string $CM7xZ = null) { parent::__construct("\x73\151\172\x65", $IuvAA, $W1Ttt, $CM7xZ); } public function setDefault($jQRCH = 50, $mjVC_ = 50) : Field { return parent::setDefault(["\x77\x69\144\x74\150" => $jQRCH, "\x68\145\x69\147\150\164" => $mjVC_]); } }

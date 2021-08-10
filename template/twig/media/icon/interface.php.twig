@@ -1,0 +1,11 @@
+<?php
+
+namespace {{ namespace|raw }};
+
+interface {{ interface|raw }} {
+    {% set array = '' %}
+    {% for name, path in icons %}
+      {% set const = name|upper|replace({'-': '_'}) %}
+      const ICON_{{ const|raw }} = '{{ path|raw }}';
+    {% endfor %}
+}

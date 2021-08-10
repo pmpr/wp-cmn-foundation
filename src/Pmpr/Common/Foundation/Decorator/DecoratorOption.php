@@ -1,0 +1,2 @@
+<?php
+ namespace Pmpr\Common\Foundation\Decorator; class DecoratorOption extends Decorator { public static function delete($U3kwz) { return delete_option($U3kwz); } public static function add($U3kwz, $UBpV1) { return add_option($U3kwz, $UBpV1); } public static function get($U3kwz, $MK5NP = false) { return get_option($U3kwz, $MK5NP); } public static function getSite($U3kwz, $MK5NP = false) { get_site_option($U3kwz, $MK5NP); } public static function update($U3kwz, $UBpV1, $taOHl = null) { return update_option($U3kwz, $UBpV1, $taOHl); } }

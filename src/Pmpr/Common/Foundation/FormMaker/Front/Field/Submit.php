@@ -1,0 +1,2 @@
+<?php
+ namespace Pmpr\Common\Foundation\FormMaker\Front\Field; use Pmpr\Common\Foundation\Manipulate\ManipulateFormat; use Pmpr\Common\Foundation\Manipulate\Theme\ManipulateHTML; class Submit extends Button { public function __construct(?string $IuvAA, string $bLLJ0 = null) { parent::__construct($IuvAA, $bLLJ0); $this->addClass("\142\x74\156\x2d\x70\162\x69\x6d\141\x72\171"); $this->addAttribute("\164\x79\160\145", "\163\165\142\x6d\x69\x74"); } public function setForm($Izr5M) : self { $this->addAttribute("\146\157\x72\x6d", $Izr5M); return $this; } }

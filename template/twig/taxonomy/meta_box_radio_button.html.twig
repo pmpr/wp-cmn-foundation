@@ -1,0 +1,7 @@
+{% if id is defined and id is not empty and is_number(id) %}
+    <li id="{{ name }}-{{ id }}" data-sort="{{ id }}">
+        <input class="mt-1" type="radio" name="tax_input[{{ name }}]" id="in-{{ name }}-{{ id }}"
+               value="{{ value }}" {{ checked ? 'checked' : '' }} {{ disabled ? 'disabled="disabled"' : '' }}>
+        <label class="form-check-label" for="in-{{ name }}-{{ id }}">{{ title|raw }}</label>
+    </li>
+{% endif %}

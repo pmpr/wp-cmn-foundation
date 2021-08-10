@@ -1,0 +1,12 @@
+<div class="pr-inline">
+    <ul>
+        {% for id, size in sizes %}
+            <li>
+                <label for="{{ id|raw }}">
+                    {{ size.label|raw }}
+                </label>
+                {{ size.input|raw }}
+            </li>
+        {% endfor %}
+    </ul>
+</div>

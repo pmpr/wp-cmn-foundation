@@ -1,0 +1,87 @@
+{% set segment_title = '' %}
+
+<div class="pr-ffm-modal-container" id="modal_{{ name|esc_attr }}">
+    <div tabindex="0" class="pr-ffm-modal wp-core-ui">
+        <button type="button" class="pr-ffm-modal-close">
+            {{ get_icon(close_icon, {class: 'icon-xs full-opacity'})|raw }}
+            <span class="screen-reader-text">{{ close_message|raw }}</span>
+        </button>
+        <div class="pr-ffm-modal-frame-menu">
+            <div class="pr-ffm-modal-menu">
+                {% if parents is defined and parents is not empty
+                    and segments.has_parent is not empty %}
+
+                    {% for key, parent in parents %}
+
+                        {% if segments.has_parent[key] is not empty %}
+
+                            {% include get_template('menu_item', _self) with {
+                                key: 'modal_submenu_' ~ key,
+                                icon: parent.icon,
+                                title: parent.title,
+                                is_parent: 1
+                            } %}
+
+                            <div class="pr-ffm-modal-submenu" id="pr_ffm_modal_submenu_{{ key|esc_attr }}">
+                                {% for key, segment in segments.has_parent[key] %}
+
+                                    {% include get_template('menu_item', _self) with {
+                                        key: segment.getKey(),
+                                        icon: segment.getIcon(),
+                                        title: segment.getTitle(),
+                                        is_parent: 0
+                                    } %}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                    <div role="presentation" class="separator"></div>
+                {% endif %}
+
+                {% for key, segment in segments.no_parent %}
+
+                    {% include get_template('menu_item', _self) with {
+                        key: segment.getKey(),
+                        icon: segment.getIcon(),
+                        title: segment.getTitle(),
+                        is_parent: 0
+                    } %}
+                {% endfor %}
+            </div>
+        </div>
+        <div class="pr-ffm-modal-frame-content">
+            <div class="pr-ffm-modal-frame mode-select wp-core-ui">
+                <div class="d-flex justify-content-between">
+                    <div class="pr-ffm-modal-frame-title">
+                        <h1></h1>
+                    </div>
+                    <a href="#" class="pr-ffm-modal-menu-toggle">
+                        {{ get_icon(arrow_icon, {class: 'icon-xs'})|raw }}
+                        {{ list_title|raw }}
+                    </a>
+                </div>
+                <div class="pr-ffm-modal-frame-contents{% if contents_class is not empty %} {{ contents_class|esc_attr }}{% endif %}">
+                    {% for segment in segments.all %}
+                        <div class="pr-ffm-modal-content"
+                             id="pr_ffm_{{ segment.getKey()|esc_attr }}_content">
+                            {{ segment.render()|raw }}
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="pr-ffm-modal-frame-toolbar">
+                    {% for segment in segments.all %}
+                        <div class="pr-ffm-modal-toolbar"
+                             id="pr_ffm_{{ segment.getKey()|esc_attr }}_toolbar">
+                            <div class="pr-ffm-modal-toolbar-primary">
+                                {% for button in segment.getButtons() %}
+                                    <button type="button" {{ button.attrs|parse_attrs|raw }}>{{ button.title|raw }}</button>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pr-ffm-modal-backdrop"></div>
+</div>

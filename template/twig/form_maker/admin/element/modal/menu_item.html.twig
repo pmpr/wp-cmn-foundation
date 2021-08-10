@@ -1,0 +1,7 @@
+<a href="#" id="pr_ffm_modal_menu_{{ key|raw }}"
+   class="pr-ffm-modal-menu-item{% if is_parent %} menu-parent{% endif %} d-flex"
+   data-target="#pr_ffm_{{ key|esc_attr }}" data-slug="{{ key|esc_attr }}">
+
+    {{ get_icon(icon, {class: 'icon-sm icon-info'})|raw }}
+    <span class="my-auto pr-ffm-modal-menu-item-title">{{ title|raw }}</span>
+</a>

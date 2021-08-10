@@ -1,0 +1,2 @@
+<?php
+ namespace Pmpr\Common\Foundation\Template\Twig\Extension; use Twig\Error\SyntaxError; use Twig\Token; use Twig\TokenParser\AbstractTokenParser; class BreakToken extends AbstractTokenParser { public function parse(Token $kd3L6) { $DzYhw = $kd3L6->getLine(); $kL7T5 = $this->parser->getStream(); $kL7T5->expect(Token::BLOCK_END_TYPE); return new BreakNode([], [], $DzYhw, $this->getTag()); } public function getTag() : string { return "\x62\x72\x65\x61\x6b"; } }

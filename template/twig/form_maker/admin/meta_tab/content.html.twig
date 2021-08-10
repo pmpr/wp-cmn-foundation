@@ -1,0 +1,15 @@
+<div {{ container_attrs|parse_attrs|raw }}>
+    {% if description is not empty %}
+        <p>{{ description|raw }}</p>
+    {% endif %}
+    <div class="metabox-holder column-{{ column|raw }}">
+        {% if column > 1 %}
+            <div class="metabox-container" data-columns="1">
+                {{ do_meta_boxes('form_maker_tab_side_container_' ~ id, 'side') }}
+            </div>
+        {% endif %}
+        <div class="metabox-container" data-columns="2">
+            <div class="meta-box-sortables ui-sortable main-meta-box"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,2 @@
+<?php
+ namespace Pmpr\Common\Foundation\FormMaker\Admin\Traits; use Pmpr\Common\Foundation\FormMaker\Admin\Element as Forms; trait ElementTrait { public static function getTabElement($IuvAA, $pqHaw = null) : Forms\Tab { return new Forms\Tab($IuvAA, $pqHaw); } public static function getMetaBoxElement($IuvAA, $pqHaw = null, $mOaz6 = false) : Forms\MetaBox { return new Forms\MetaBox($IuvAA, $pqHaw, $mOaz6); } }

@@ -1,0 +1,31 @@
+{% if fields is defined
+    and fields is not empty %}
+    </tbody>
+    </table>
+    <div id="custom_field_{{ id|raw }}" class="pmpr-metabox" style="border-top: 1px solid #eee">
+        <h4 class="px-3 mb-0">{{ title|raw }}</h4>
+        <div class="py-3">{{ fields|raw }}</div>
+    </div>
+    {% if can_add_js %}
+        <script>
+
+            if (document.readyState !== 'complete') {
+
+                document.addEventListener("DOMContentLoaded", function () {
+                    renderCustomFields();
+                });
+            } else if (typeof PMPRTrigger !== "undefined") {
+
+                renderCustomFields();
+            } else {
+
+                console.warn('{{ alert_message|raw }}')
+            }
+
+            function renderCustomFields() {
+
+                PMPRTrigger.doAction('field_added_to_dom', $('#custom_field_{{ id|raw }}'));
+            }
+        </script>
+    {% endif %}
+{% endif %}

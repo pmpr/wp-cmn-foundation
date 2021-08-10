@@ -1,0 +1,2 @@
+<?php
+ namespace Pmpr\Common\Foundation\Template; abstract class Engine extends Common { protected array $paths = []; public function getPaths() : array { return $this->paths; } public abstract function exists($zz18x) : bool; public abstract function namespace2path($FvsF4) : ?string; public abstract function addPath($LAyI1, $MGFO5) : bool; public abstract function render(string $qXQYk, array $Yo_vh = []); }

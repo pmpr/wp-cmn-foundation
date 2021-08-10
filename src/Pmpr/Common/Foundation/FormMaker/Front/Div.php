@@ -1,0 +1,2 @@
+<?php
+ namespace Pmpr\Common\Foundation\FormMaker\Front; class Div extends Element { public function __construct(?string $IuvAA = null) { parent::__construct("\144\x69\x76", $IuvAA); } public function getContent() : ?string { return self::CHILD_CONTENT; } public function asFormGroup() : self { return $this->addClass("\x66\x6f\x72\x6d\55\x67\x72\157\x75\x70"); } public function render($ONFmc = []) : ?string { $ONFmc["\x65\x63\x68\x6f"] = false; return parent::render($ONFmc); } }

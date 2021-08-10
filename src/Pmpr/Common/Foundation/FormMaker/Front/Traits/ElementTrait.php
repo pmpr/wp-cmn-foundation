@@ -1,0 +1,2 @@
+<?php
+ namespace Pmpr\Common\Foundation\FormMaker\Front\Traits; use Pmpr\Common\Foundation\FormMaker\Front as Elements; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString; trait ElementTrait { public static function getFormElement(?string $IuvAA = null) : Elements\Form { return new Elements\Form($IuvAA); } public static function getDivElement(string $IuvAA = null) : Elements\Div { if ($IuvAA) { goto g6lZl; } $IuvAA = "\144\x69\166\x5f" . ManipulateString::uniqid(3); g6lZl: return new Elements\Div($IuvAA); } }

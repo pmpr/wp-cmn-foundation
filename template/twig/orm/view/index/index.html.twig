@@ -1,0 +1,14 @@
+{% extends get_template('../page', _self) %}
+
+{% block content %}
+    {{ table.views()|raw }}
+    <form id="orm-list-filter" method="get">
+        <input type="hidden" name="page" value="{{ name|esc_attr }}"/>
+        <input type="hidden" name="orm_filter_by" value="{{ filter_name|esc_attr }}"/>
+        <input type="hidden" name="orm_filter_value" value="{{ filter_value|esc_attr }}"/>
+        {{ table.search_box(items, name)|raw }}
+        {{ table.display()|raw }}
+    </form>
+    <div id="ajax-response"></div>
+    <br class="clear"/>
+{% endblock %}

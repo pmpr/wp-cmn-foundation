@@ -1,0 +1,51 @@
+{% extends get_template('../page', _self) %}
+
+{% block content %}
+    <div class="orm-view-show">
+        <nav class="nav-tab-wrapper">
+            {% for key, tab in tabs %}
+                <a href="#" class="nav-tab{% if key is same as (main_key) %} nav-tab-active{% endif %}"
+                   data-target="#content_{{ key|esc_attr }}" id="tab_{{ key|esc_attr }}">
+                    {% if tab.icon is defined
+                        and tab.icon is not empty %}
+
+                        {{ get_icon(tab.icon, {
+                            class: 'icon-sm mr-1'
+                        }, 1)|raw }}
+                    {% endif %}
+                    {{ (tab.title ?? tab)|raw }}
+                </a>
+            {% endfor %}
+        </nav>
+        <div class="tabs-content-wrapper">
+            {% for key, tab in tabs %}
+                {% set is_main_key = key is same as (main_key) %}
+                <div class="tab-content pt-4 px-0{% if is_main_key %} active{% endif %}" id="content_{{ key|esc_attr }}">
+                    {% if is_main_key %}
+                        {% include get_template('../table', _self) with {
+                            cell_class: 'py-3 font-16'
+                        } %}
+                        {% if buttons is defined
+                            and buttons is not empty %}
+                            <div class="mt-3">
+                                {% for button in buttons %}
+                                    {% if button is iterable %}
+                                        <a href="{{ button.link|raw }}" title="{{ button.label|raw }}"
+                                           class="text-decoration-none btn btn-{{ button.color }}">{{ button.label|raw }}</a>
+                                    {% else %}
+                                        {{ button|raw }}
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    {% elseif tab.content is defined %}
+
+                        {{ tab.content|raw }}
+                    {% endif %}
+                    {{ do_action('orm_view_show_tab_' ~ key, object, model) }}
+                    {{ do_action('orm_view_show_' ~ name ~ '_tab_' ~ key, object, model) }}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

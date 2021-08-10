@@ -1,0 +1,2 @@
+<?php
+ namespace Pmpr\Common\Foundation\FormMaker\Admin\Field; class Depended extends Checkbox { protected array $targets = []; public function __construct(?string $IuvAA, ?string $W1Ttt, array $x0uBv = [], ?string $CM7xZ = null) { parent::__construct($IuvAA, $W1Ttt, $CM7xZ); $this->setTargets($x0uBv); $this->addParentClass("\x64\x65\x70\145\x6e\x64\145\x64"); } public function getTargets() : ?array { return $this->targets; } public function setTargets($x0uBv) : self { $this->targets = $x0uBv; return $this; } }

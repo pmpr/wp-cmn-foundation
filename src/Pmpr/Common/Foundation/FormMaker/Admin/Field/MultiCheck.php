@@ -1,0 +1,2 @@
+<?php
+ namespace Pmpr\Common\Foundation\FormMaker\Admin\Field; class MultiCheck extends OptionAwareField { protected bool $inline = false; public function __construct(?string $IuvAA, ?string $W1Ttt, ?array $lBalo, ?string $lgUhE = null) { parent::__construct("\x6d\x75\154\x74\151\x63\150\x65\x63\x6b", $IuvAA, $W1Ttt, $lgUhE, $lBalo); $this->addParentClass("\160\x72\55\x73\x77\151\x74\x63\x68"); } public function isInline() : ?bool { return $this->inline; } public function setInline(bool $S3bGf) : self { $this->inline = $S3bGf; return $this; } }

@@ -1,0 +1,2 @@
+<?php
+ namespace Pmpr\Common\Foundation\FormMaker\Front\Field; class OptionAwareField extends Field { protected ?array $options = []; public function getOptions() : ?array { return $this->options; } public function setOptions(array $lBalo) : self { $this->options = $lBalo; return $this; } public function addOption($rVi62, $U3kwz) : self { $this->options[$rVi62] = $U3kwz; return $this; } public function addOptions($lBalo) : self { foreach ($lBalo as $rVi62 => $U3kwz) { $this->addOption($rVi62, $U3kwz); EO8ZD: } xrJmR: return $this; } }

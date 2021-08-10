@@ -1,0 +1,2 @@
+<?php
+ namespace Pmpr\Common\Foundation\Decorator\Post; class DecoratorAuthor extends Common { public static function get() { return get_the_author(); } public static function getLink() { return get_the_author_link(); } public static function getMeta($vJ8mq, $Fef1R = null) { return get_the_author_meta($vJ8mq, $Fef1R); } public static function getPostsURL($Fef1R = null, $W1Ttt = '') { return get_author_posts_url($Fef1R, $W1Ttt); } }
