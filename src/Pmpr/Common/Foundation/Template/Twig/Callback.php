@@ -1,2 +1,2 @@
 <?php
- namespace Pmpr\Common\Foundation\Template\Twig; abstract class Callback extends Common { protected ?Engine $twig = null; public function __construct(Engine $Zv3kO) { $this->twig = $Zv3kO; $this->loadRequirement(); parent::__construct(); } public function getTwig() : Engine { return $this->twig; } public abstract function loadRequirement(); }
+ namespace Pmpr\Common\Foundation\Template\Twig; abstract class Callback extends Common { protected ?Engine $twig = null; public function __construct(Engine $GyJKP) { $this->twig = $GyJKP; $this->loadRequirement(); parent::__construct(); } public function getTwig() : Engine { return $this->twig; } public abstract function loadRequirement(); }
