@@ -1,2 +1,2 @@
 <?php
- namespace Pmpr\Common\Foundation\FormMaker\Admin\Element; class Tool extends Page { public function __construct() { $this->type = "\164\157\x6f\154\163"; if ($this->getParentMenu()) { goto Zhsxz; } $this->parentMenu = "\164\x6f\157\x6c\x73\x2e\x70\150\160"; Zhsxz: parent::__construct(); } }
+ namespace Pmpr\Common\Foundation\FormMaker\Admin\Element; class Tool extends Page { public function __construct() { goto c_1cW; FJlMo: if ($this->getParentMenu()) { goto DL44R; } goto K0RJn; K0RJn: $this->parentMenu = "\x74\157\157\154\x73\56\160\150\160"; goto B7wl7; B7wl7: DL44R: goto tASSh; c_1cW: $this->type = "\x74\157\x6f\x6c\x73"; goto FJlMo; tASSh: parent::__construct(); goto e_Rez; e_Rez: } }
