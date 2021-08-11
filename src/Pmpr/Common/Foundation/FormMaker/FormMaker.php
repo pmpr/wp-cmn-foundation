@@ -1,2 +1,2 @@
 <?php
- namespace Pmpr\Common\Foundation\FormMaker; use Pmpr\Common\Foundation\FormMaker\Admin\Admin; class FormMaker extends Common { public function __construct() { $this->loadRequirement(); parent::__construct(); } public function loadRequirement() { if (!is_admin()) { goto e6njx; } Admin::getInstance(); e6njx: } }
+ namespace Pmpr\Common\Foundation\FormMaker; use Pmpr\Common\Foundation\FormMaker\Admin\Admin; class FormMaker extends Common { public function __construct() { $this->loadRequirement(); parent::__construct(); } public function loadRequirement() { if (!is_admin()) { goto GX_LG; } Admin::getInstance(); GX_LG: } }

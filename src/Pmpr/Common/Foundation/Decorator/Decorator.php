@@ -1,2 +1,2 @@
 <?php
- namespace Pmpr\Common\Foundation\Decorator; use Pmpr\Common\Foundation\Interfaces\ConstantInterface; abstract class Decorator implements ConstantInterface { public static function callFunctionIfExist($TvcZP, $Q7bdl = false, ...$yyeXo) { $CekGt = $Q7bdl; if (!function_exists($TvcZP)) { goto S8Bs9; } $CekGt = call_user_func($TvcZP, ...$yyeXo); S8Bs9: return $CekGt; } }
+ namespace Pmpr\Common\Foundation\Decorator; use Pmpr\Common\Foundation\Interfaces\ConstantInterface; abstract class Decorator implements ConstantInterface { public static function callFunctionIfExist($Xqv4m, $rc5HP = false, ...$MDDYN) { $vhHTR = $rc5HP; if (!function_exists($Xqv4m)) { goto ZaIdy; } $vhHTR = call_user_func($Xqv4m, ...$MDDYN); ZaIdy: return $vhHTR; } }
