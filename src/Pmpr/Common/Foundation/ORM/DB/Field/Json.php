@@ -1,2 +1,2 @@
 <?php
- namespace Pmpr\Common\Foundation\ORM\DB\Field; class Json extends Field { public function __construct(string $ZaJ3f, ?string $aZcKX = null) { parent::__construct("\x6a\163\x6f\156", $ZaJ3f, $aZcKX); } }
+ namespace Pmpr\Common\Foundation\ORM\DB\Field; class Json extends Field { public function __construct(string $n3qF1, ?string $pEMib = null) { parent::__construct("\x6a\x73\157\x6e", $n3qF1, $pEMib); } }
