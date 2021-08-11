@@ -1,2 +1,2 @@
 <?php
- namespace Pmpr\Common\Foundation\ORM\DB\Field; class Str extends Field { public function __construct(string $qHABt, ?string $InIXJ = null) { parent::__construct("\x73\x74\162\x69\x6e\x67", $qHABt, $InIXJ); } }
+ namespace Pmpr\Common\Foundation\ORM\DB\Field; class Str extends Field { public function __construct(string $hKWyZ, ?string $hVbJz = null) { parent::__construct("\163\164\162\151\x6e\x67", $hKWyZ, $hVbJz); } }

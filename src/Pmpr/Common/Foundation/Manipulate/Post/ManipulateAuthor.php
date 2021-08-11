@@ -1,2 +1,2 @@
 <?php
- namespace Pmpr\Common\Foundation\Manipulate\Post; use Pmpr\Common\Foundation\Decorator\Post\DecoratorAuthor; class ManipulateAuthor extends Common { public static function getId($DqZ1Z = null) { return DecoratorAuthor::getMeta("\x49\x44", $DqZ1Z); } public function getNickname($DqZ1Z = null) { return DecoratorAuthor::getMeta("\x6e\x69\x63\153\x6e\141\155\x65", $DqZ1Z); } }
+ namespace Pmpr\Common\Foundation\Manipulate\Post; use Pmpr\Common\Foundation\Decorator\Post\DecoratorAuthor; class ManipulateAuthor extends Common { public static function getId($BZhQ1 = null) { return DecoratorAuthor::getMeta("\111\104", $BZhQ1); } public function getNickname($BZhQ1 = null) { return DecoratorAuthor::getMeta("\x6e\x69\x63\x6b\x6e\141\x6d\145", $BZhQ1); } }
