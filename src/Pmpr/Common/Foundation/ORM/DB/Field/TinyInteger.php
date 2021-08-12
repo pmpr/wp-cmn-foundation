@@ -1,2 +1,2 @@
 <?php
- namespace Pmpr\Common\Foundation\ORM\DB\Field; class TinyInteger extends Field { public function __construct(string $yV1xT, ?string $iOn70 = null) { parent::__construct("\164\151\156\x79\x49\x6e\164\x65\147\145\x72", $yV1xT, $iOn70); } }
+ namespace Pmpr\Common\Foundation\ORM\DB\Field; class TinyInteger extends Field { public function __construct(string $ploD4, ?string $VsXCZ = null) { parent::__construct("\x74\151\156\171\x49\x6e\x74\145\x67\x65\162", $ploD4, $VsXCZ); } }
