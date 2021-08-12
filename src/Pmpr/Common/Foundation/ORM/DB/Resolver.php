@@ -1,2 +1,2 @@
 <?php
- namespace Pmpr\Common\Foundation\ORM\DB; use Illuminate\Database\ConnectionInterface; use Illuminate\Database\ConnectionResolverInterface; class Resolver extends Common implements ConnectionResolverInterface { public function connection($avON1 = null) { return Database::getInstance(); } public function getDefaultConnection() { } public function setDefaultConnection($avON1) { } }
+ namespace Pmpr\Common\Foundation\ORM\DB; use Illuminate\Database\ConnectionInterface; use Illuminate\Database\ConnectionResolverInterface; class Resolver extends Common implements ConnectionResolverInterface { public function connection($zx6Ce = null) { return Database::getInstance(); } public function getDefaultConnection() { } public function setDefaultConnection($zx6Ce) { } }

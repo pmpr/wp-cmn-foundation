@@ -1,2 +1,2 @@
 <?php
- namespace Pmpr\Common\Foundation\ORM\DB\Field; class Boolean extends Field { public function __construct(string $ploD4, ?string $VsXCZ = null) { parent::__construct("\x62\157\x6f\x6c\x65\x61\156", $ploD4, $VsXCZ); } }
+ namespace Pmpr\Common\Foundation\ORM\DB\Field; class Boolean extends Field { public function __construct(string $FpNMX, ?string $ldTR9 = null) { parent::__construct("\142\x6f\157\x6c\x65\141\x6e", $FpNMX, $ldTR9); } }
