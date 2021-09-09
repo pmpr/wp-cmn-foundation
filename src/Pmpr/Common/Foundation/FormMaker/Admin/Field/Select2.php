@@ -1,2 +1,210 @@
 <?php
- namespace Pmpr\Common\Foundation\FormMaker\Admin\Field; class Select2 extends Select { protected ?array $items = []; protected bool $isCustom = false; protected ?string $target = null; public function __construct(?string $CDV1j, ?string $vPl9z, array $sJYGe = [], ?string $Ym4v7 = null) { parent::__construct($CDV1j, $vPl9z, $sJYGe, $Ym4v7, "\x73\145\x6c\145\143\164\62"); $this->addAttribute("\x64\x61\164\141\55\x61\144\x64\141\x62\x6c\145", "\x66\141\154\x73\145"); } public function getItems() : ?array { return $this->items; } public function setItems(?array $hS_Rv) : self { $this->items = $hS_Rv; return $this; } public function addItem($uXZtg) : self { $this->items[] = $uXZtg; return $this; } public function addItems($hS_Rv = []) : self { goto NElVK; rKORf: return $this; goto GYnCU; NElVK: if (!(is_array($hS_Rv) && $hS_Rv)) { goto CU25k; } goto Rge6P; yDYgz: w8WX9: goto QLhM3; QLhM3: CU25k: goto rKORf; Rge6P: foreach ($hS_Rv as $uXZtg) { $this->addItem($uXZtg); erC3J: } goto yDYgz; GYnCU: } public function setMaximumLength($jw4B3 = null) : self { goto Py5Ag; Py5Ag: if (!$jw4B3) { goto tU9WH; } goto NfD16; tA9Gd: return $this; goto VLTT2; NfD16: $this->addAttribute("\144\x61\x74\141\x2d\x6d\141\x78\x69\x6d\x75\155\55\x73\145\x6c\x65\x63\164\151\157\156\55\154\x65\x6e\x67\x74\150", (string) $jw4B3); goto QIQwM; QIQwM: tU9WH: goto tA9Gd; VLTT2: } public function setForUser() : self { $this->setTarget("\x75\x73\145\162\163"); return $this; } public function setForTerm() : self { $this->setTarget("\x74\145\162\155\x73"); return $this; } public function setForPost() : self { $this->setTarget("\160\157\x73\164\x73"); return $this; } public function getTarget() : ?string { return $this->target; } public function setForComments() : self { $this->setTarget("\x63\x6f\x6d\x6d\x65\x6e\x74\x73"); return $this; } public function setTarget(?string $dyyPs) : self { $this->target = $dyyPs; return $this; } public function setArgs(array $DrjAW = []) : self { $this->addAttribute("\144\x61\164\x61\55\141\162\x67\x73", json_encode($DrjAW)); return $this; } public function sortable() : self { $this->asMultiple()->addParentClass("\x73\157\x72\x74\x61\142\x6c\x65\x2d\163\145\154\145\x63\x74\x32")->addClass("\163\157\x72\164\x61\x62\x6c\145\55\x73\x65\x6c\x65\x63\x74\x32"); return $this; } public function isCustom() : ?bool { return $this->isCustom; } public function setIsCustom(bool $HagT5) : self { $this->isCustom = $HagT5; return $this; } public function asMultiple() : self { return $this->setType("\155\165\x6c\164\x69{$this->getType()}"); } public function setPlaceholder(?string $LfYUY = null) : self { return $this->addAttribute("\x64\x61\164\141\x2d\x70\154\141\143\145\150\157\154\144\145\x72", $LfYUY); } public function beforeToArray(array $DrjAW = []) : void { goto YDaoy; qKrWK: $hS_Rv = $this->getItems(); goto p9cwb; JvC_4: $this->addAttribute("\143\x6c\141\x73\163", "\163\x65\154\145\x63\x74\62\x2d\163\145\154\145\143\164\157\162"); goto UZy7r; rB3_1: if (!$this->getTarget()) { goto JVoyr; } goto Rz1po; Acmlf: Lb1_P: goto qKrWK; Rz1po: $this->addAttribute("\144\x61\x74\x61\x2d\x74\x61\162\x67\145\164", $this->getTarget()); goto GgJ0A; UZy7r: goto Lb1_P; goto nXtF7; GgJ0A: JVoyr: goto G0_Yv; G0_Yv: $this->addAttribute("\x64\x61\x74\x61\x2d\151\164\145\155\x73", json_encode($hS_Rv)); goto fTa3q; p9cwb: if (!is_array($hS_Rv)) { goto FKGCj; } goto rB3_1; kI50p: parent::beforeToArray($DrjAW); goto J1J1V; dESj6: $this->addAttribute("\x63\x6c\141\x73\x73", "\143\x75\x73\164\x6f\155\x2d\x73\x65\154\x65\143\164\62\55\x73\x65\x6c\145\x63\x74\157\x72"); goto Acmlf; fTa3q: FKGCj: goto kI50p; YDaoy: if ($this->isCustom()) { goto qubQo; } goto JvC_4; nXtF7: qubQo: goto dESj6; J1J1V: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\FormMaker\Admin\Field;
+
+
+class Select2 extends Select
+{
+    
+    protected ?array $items = [];
+    
+    protected bool $isCustom = false;
+    
+    protected ?string $target = null;
+    
+    public function __construct(?string $aokagokqyuysuksm, ?string $ymqmyyeuycgmigyo, array $qiouiwasaauyaaue = [], ?string $mkqqqewsokcswckc = null)
+    {
+        parent::__construct($aokagokqyuysuksm, $ymqmyyeuycgmigyo, $qiouiwasaauyaaue, $mkqqqewsokcswckc, "\x73\145\x6c\x65\x63\x74\x32");
+        $this->igmaewykumgwoaoy("\144\x61\x74\141\x2d\x61\x64\x64\141\142\x6c\x65", "\x66\x61\154\163\145");
+    }
+    
+    public function wasgwsogmuquqeaa() : ?array
+    {
+        return $this->items;
+    }
+    
+    public function icsmsougoccqosgc(?array $oammesyieqmwuwyi) : self
+    {
+        $this->items = $oammesyieqmwuwyi;
+        return $this;
+    }
+    
+    public function oeewiaacscgyamai($igqsaukqcqscimok) : self
+    {
+        $this->items[] = $igqsaukqcqscimok;
+        return $this;
+    }
+    
+    public function wiweskwucmkcukcm($oammesyieqmwuwyi = []) : self
+    {
+        goto qooqgmcaekwgiqwk;
+        wcywiwisuykessuc:
+        return $this;
+        goto euwcskwkgqiousgk;
+        aouqiuqoigamkwkw:
+        imeksugkqgiymkue:
+        goto iqgyyysiewuckqwg;
+        ywomuwkqguqiwgac:
+        foreach ($oammesyieqmwuwyi as $igqsaukqcqscimok) {
+            $this->oeewiaacscgyamai($igqsaukqcqscimok);
+            miqwiyoooqksyaoq:
+        }
+        goto aouqiuqoigamkwkw;
+        iqgyyysiewuckqwg:
+        cyywwoiwqioiaiwy:
+        goto wcywiwisuykessuc;
+        qooqgmcaekwgiqwk:
+        if (!(is_array($oammesyieqmwuwyi) && $oammesyieqmwuwyi)) {
+            goto cyywwoiwqioiaiwy;
+        }
+        goto ywomuwkqguqiwgac;
+        euwcskwkgqiousgk:
+    }
+    
+    public function ikgocaywoggomiak($giqggecqqikcysgq = null) : self
+    {
+        goto qkooyqycsyamoqco;
+        qkooyqycsyamoqco:
+        if (!$giqggecqqikcysgq) {
+            goto iauikwwuewwacuck;
+        }
+        goto wmiyagiicyqykgyk;
+        gkcymqkuaqimgogw:
+        return $this;
+        goto mmqissyumkkkcymu;
+        yiwwsymuckeyaqaq:
+        iauikwwuewwacuck:
+        goto gkcymqkuaqimgogw;
+        wmiyagiicyqykgyk:
+        $this->igmaewykumgwoaoy("\x64\141\x74\141\55\155\141\x78\151\155\165\155\55\163\x65\154\145\143\164\x69\157\x6e\55\x6c\145\156\x67\x74\x68", (string) $giqggecqqikcysgq);
+        goto yiwwsymuckeyaqaq;
+        mmqissyumkkkcymu:
+    }
+    
+    public function soyqkauogoaqekos() : self
+    {
+        $this->oockkiieqcwiocga("\165\x73\x65\x72\163");
+        return $this;
+    }
+    
+    public function yyayequseyasoyks() : self
+    {
+        $this->oockkiieqcwiocga("\164\145\x72\x6d\163");
+        return $this;
+    }
+    
+    public function smmismmuuccmscya() : self
+    {
+        $this->oockkiieqcwiocga("\160\157\x73\x74\163");
+        return $this;
+    }
+    
+    public function squsacgomqgkakaw() : ?string
+    {
+        return $this->target;
+    }
+    
+    public function imwouwmsiukakwqi() : self
+    {
+        $this->oockkiieqcwiocga("\143\157\x6d\155\x65\156\164\163");
+        return $this;
+    }
+    
+    public function oockkiieqcwiocga(?string $ccamueccusigaaio) : self
+    {
+        $this->target = $ccamueccusigaaio;
+        return $this;
+    }
+    
+    public function eukmukacucooequu(array $ywmkwiwkosakssii = []) : self
+    {
+        $this->igmaewykumgwoaoy("\x64\141\164\x61\x2d\141\162\x67\163", json_encode($ywmkwiwkosakssii));
+        return $this;
+    }
+    
+    public function osmkwgikieoyykwg() : self
+    {
+        $this->oikgogcweiiaocka()->usoqcyyugsuyiewc("\x73\x6f\x72\x74\x61\x62\154\145\55\163\x65\x6c\145\143\164\62")->qigsyyqgewgskemg("\x73\157\162\164\141\142\x6c\x65\55\x73\145\154\x65\143\x74\x32");
+        return $this;
+    }
+    
+    public function somyygqqawwswkyk() : ?bool
+    {
+        return $this->isCustom;
+    }
+    
+    public function yogkakywcccsikkg(bool $somyygqqawwswkyk) : self
+    {
+        $this->isCustom = $somyygqqawwswkyk;
+        return $this;
+    }
+    
+    public function oikgogcweiiaocka() : self
+    {
+        return $this->aseocggwwegcmqes("\155\165\154\x74\x69{$this->gueasuouwqysmomu()}");
+    }
+    
+    public function kyiucygqsgequoys(?string $iwiewowoqmoekyqi = null) : self
+    {
+        return $this->igmaewykumgwoaoy("\x64\x61\164\141\55\160\x6c\x61\143\x65\x68\x6f\154\x64\x65\x72", $iwiewowoqmoekyqi);
+    }
+    
+    public function qgsieamsswkgysow(array $ywmkwiwkosakssii = []) : void
+    {
+        goto awwqsoommoiqeciy;
+        occamqsmqmmeeqqq:
+        $this->igmaewykumgwoaoy("\143\x6c\x61\x73\x73", "\143\165\x73\x74\157\x6d\55\x73\145\154\145\x63\164\62\x2d\163\145\x6c\145\x63\164\157\x72");
+        goto egwwoamyomwcwiua;
+        uakwiicomqaccaay:
+        goto qkiiyckesqsyyuyu;
+        goto siyayucuuoakcueq;
+        akcuaggkmmcguucw:
+        if (!is_array($oammesyieqmwuwyi)) {
+            goto yswwqwicwisywcag;
+        }
+        goto amyqmkoiiowmmgkw;
+        amyqmkoiiowmmgkw:
+        if (!$this->squsacgomqgkakaw()) {
+            goto msociooiiwqqcwkq;
+        }
+        goto iiuieoeegigaoqig;
+        waesmikkwwggimew:
+        msociooiiwqqcwkq:
+        goto eiqoqssiommacioa;
+        yiuycgyoqoeiqyaw:
+        yswwqwicwisywcag:
+        goto awquyomcikuqeems;
+        egwwoamyomwcwiua:
+        qkiiyckesqsyyuyu:
+        goto uqusmgkqcwisoomy;
+        iiuieoeegigaoqig:
+        $this->igmaewykumgwoaoy("\144\141\164\141\55\164\x61\162\147\145\164", $this->squsacgomqgkakaw());
+        goto waesmikkwwggimew;
+        siyayucuuoakcueq:
+        uweeaukswwkcykom:
+        goto occamqsmqmmeeqqq;
+        eiqoqssiommacioa:
+        $this->igmaewykumgwoaoy("\x64\141\164\x61\x2d\x69\164\145\155\x73", json_encode($oammesyieqmwuwyi));
+        goto yiuycgyoqoeiqyaw;
+        seeamagcyugquuea:
+        $this->igmaewykumgwoaoy("\143\x6c\141\x73\163", "\x73\x65\x6c\145\x63\x74\x32\55\x73\x65\x6c\x65\x63\x74\157\162");
+        goto uakwiicomqaccaay;
+        awwqsoommoiqeciy:
+        if ($this->somyygqqawwswkyk()) {
+            goto uweeaukswwkcykom;
+        }
+        goto seeamagcyugquuea;
+        uqusmgkqcwisoomy:
+        $oammesyieqmwuwyi = $this->wasgwsogmuquqeaa();
+        goto akcuaggkmmcguucw;
+        awquyomcikuqeems:
+        parent::qgsieamsswkgysow($ywmkwiwkosakssii);
+        goto sqgiugsaigagemae;
+        sqgiugsaigagemae:
+    }
+}

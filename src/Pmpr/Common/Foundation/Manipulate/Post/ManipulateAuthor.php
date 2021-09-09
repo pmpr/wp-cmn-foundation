@@ -1,2 +1,24 @@
 <?php
- namespace Pmpr\Common\Foundation\Manipulate\Post; use Pmpr\Common\Foundation\Decorator\Post\DecoratorAuthor; class ManipulateAuthor extends Common { public static function getId($pbR1v = null) { return DecoratorAuthor::getMeta("\111\104", $pbR1v); } public function getNickname($pbR1v = null) { return DecoratorAuthor::getMeta("\156\151\x63\153\x6e\141\x6d\145", $pbR1v); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Manipulate\Post;
+
+use Pmpr\Common\Foundation\Decorator\Post\DecoratorAuthor;
+
+class ManipulateAuthor extends Common
+{
+    
+    public static function mwikyscisascoeea($qscaoekmoooeuyqg = null)
+    {
+        return DecoratorAuthor::igawqaomowicuayw("\x49\104", $qscaoekmoooeuyqg);
+    }
+    
+    public function cymkqeuyyqecoqia($qscaoekmoooeuyqg = null)
+    {
+        return DecoratorAuthor::igawqaomowicuayw("\156\151\143\x6b\x6e\141\x6d\145", $qscaoekmoooeuyqg);
+    }
+}

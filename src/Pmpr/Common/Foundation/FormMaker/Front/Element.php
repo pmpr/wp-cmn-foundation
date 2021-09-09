@@ -1,2 +1,171 @@
 <?php
- namespace Pmpr\Common\Foundation\FormMaker\Front; use Pmpr\Common\Foundation\FormMaker\Front\Field as Fields; use Pmpr\Common\Foundation\FormMaker\Front\Traits\FieldTrait; use Pmpr\Common\Foundation\FormMaker\Front\Traits\ElementTrait; use Pmpr\Common\Foundation\Interfaces\ConstantInterface; use Pmpr\Common\Foundation\Manipulate\ManipulateFormat; use Pmpr\Common\Foundation\Manipulate\Theme\ManipulateHTML; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString; use Pmpr\Common\Foundation\Template\Traits\TemplateTrait; use Pmpr\Common\Foundation\Traits\AttributeTrait; use Pmpr\Common\Foundation\Traits\ComponentTrait; use Pmpr\Common\Foundation\Traits\ToArrayTrait; class Element implements ConstantInterface { const CHILD_CONTENT = "\173\173\x20\x63\150\x69\154\x64\137\x63\157\156\164\145\156\164\x20\175\175"; use FieldTrait, ToArrayTrait, ElementTrait, TemplateTrait, ComponentTrait, AttributeTrait; protected ?string $id = null; protected ?Element $parent = null; protected ?string $element = null; public function __construct(string $zrqKX, ?string $CDV1j = null) { goto rjg8l; K0O3k: $this->element = $zrqKX; goto IRHqJ; rjg8l: $this->id = $CDV1j; goto K0O3k; IRHqJ: $this->addAttribute(self::ID, $CDV1j); goto Y8Xk5; Y8Xk5: } public function getId() : ?string { return $this->id; } public function setId(?string $CDV1j) : self { $this->id = $CDV1j; return $this; } public function getParent() : ?Element { return $this->parent; } public function setParent(Element $da8iE) : self { $this->parent = $da8iE; return $this; } public function setDivAsParent($lgX7G = []) : self { return $this->setParent(self::getDivElement()->addAttributes($lgX7G)); } public function getElement() : ?string { return $this->element; } public function setElement(?string $zrqKX) : self { $this->element = $zrqKX; return $this; } public function getContent() : ?string { return null; } public function render($DrjAW = []) : ?string { goto fbzRY; aYUF2: d6Ci_: goto IZ_rk; lOBvC: if (!$DrjAW["\x65\x63\150\157"]) { goto Fs0Aa; } goto uJA5N; fbzRY: $DrjAW = ManipulateFormat::parseArgs($DrjAW, ["\145\x63\x68\157" => false]); goto gs0gc; s1aOv: return $SzEyC; goto irxHo; LzW8J: if (!($SzEyC && $xq2hs && str_contains($xq2hs, self::CHILD_CONTENT))) { goto EpwNK; } goto LEdC2; gs0gc: $zrqKX = $this->getElement(); goto sKFqn; ahdzc: $SzEyC = $this->beforeRenderParent($SzEyC); goto vPyEZ; YJo1t: $da8iE = $this->getParent(); goto VmQ3c; IZ_rk: $SzEyC = $this->beforeRender($SzEyC); goto lOBvC; mUnlU: Fs0Aa: goto s1aOv; VmQ3c: if (!$da8iE) { goto d6Ci_; } goto ahdzc; vdeuw: $SzEyC = ManipulateHTML::generateElement($zrqKX, $aIx0U, true, $this->getContent()); goto Iu0RS; sKFqn: $aIx0U = array_filter($this->getAttributes()); goto vdeuw; LEdC2: $SzEyC = str_replace(self::CHILD_CONTENT, $SzEyC, $xq2hs); goto xmMZL; xmMZL: EpwNK: goto aYUF2; Iu0RS: $SzEyC = $this->afterCreateElement($SzEyC); goto YJo1t; vPyEZ: $xq2hs = $da8iE->render(); goto LzW8J; uJA5N: echo $SzEyC; goto mUnlU; irxHo: } public function afterCreateElement(?string $SzEyC) : ?string { return $SzEyC; } public function beforeRender(?string $SzEyC) : ?string { return $SzEyC; } public function beforeRenderParent(?string $SzEyC) : ?string { return $SzEyC; } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\FormMaker\Front;
+
+use Pmpr\Common\Foundation\FormMaker\Front\Field as Fields;
+use Pmpr\Common\Foundation\FormMaker\Front\Traits\FieldTrait;
+use Pmpr\Common\Foundation\FormMaker\Front\Traits\ElementTrait;
+use Pmpr\Common\Foundation\Interfaces\ConstantInterface;
+use Pmpr\Common\Foundation\Manipulate\ManipulateFormat;
+use Pmpr\Common\Foundation\Manipulate\Theme\ManipulateHTML;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString;
+use Pmpr\Common\Foundation\Template\Traits\TemplateTrait;
+use Pmpr\Common\Foundation\Traits\AttributeTrait;
+use Pmpr\Common\Foundation\Traits\ComponentTrait;
+use Pmpr\Common\Foundation\Traits\ToArrayTrait;
+
+class Element implements ConstantInterface
+{
+    const CHILD_CONTENT = "\173\x7b\x20\x63\150\x69\154\144\x5f\143\157\x6e\164\x65\x6e\x74\x20\x7d\x7d";
+    use FieldTrait, ToArrayTrait, ElementTrait, TemplateTrait, ComponentTrait, AttributeTrait;
+    
+    protected ?string $id = null;
+    
+    protected ?Element $parent = null;
+    
+    protected ?string $element = null;
+    
+    public function __construct(string $kqywgoqsmuswammk, ?string $aokagokqyuysuksm = null)
+    {
+        goto aicwuwomqwiokauu;
+        aicwuwomqwiokauu:
+        $this->id = $aokagokqyuysuksm;
+        goto ymcoqeoiycswaekg;
+        ymcoqeoiycswaekg:
+        $this->element = $kqywgoqsmuswammk;
+        goto weakauyqikcssyqa;
+        weakauyqikcssyqa:
+        $this->igmaewykumgwoaoy(self::ID, $aokagokqyuysuksm);
+        goto amwicomkoysgqays;
+        amwicomkoysgqays:
+    }
+    
+    public function mwikyscisascoeea() : ?string
+    {
+        return $this->id;
+    }
+    
+    public function ggiaseqygioygumq(?string $aokagokqyuysuksm) : self
+    {
+        $this->id = $aokagokqyuysuksm;
+        return $this;
+    }
+    
+    public function ygqycmmkoiuocoia() : ?Element
+    {
+        return $this->parent;
+    }
+    
+    public function mmuyuqussqkgkega(Element $omwmuycmeqcqokom) : self
+    {
+        $this->parent = $omwmuycmeqcqokom;
+        return $this;
+    }
+    
+    public function kmsekkswiwiieqee($siquossayskcwkea = []) : self
+    {
+        return $this->mmuyuqussqkgkega(self::mecgagckeuagggyw()->sueyawuweyoqyeaq($siquossayskcwkea));
+    }
+    
+    public function qqimkcgcmeewwwei() : ?string
+    {
+        return $this->element;
+    }
+    
+    public function comqsuwokcsmkcau(?string $kqywgoqsmuswammk) : self
+    {
+        $this->element = $kqywgoqsmuswammk;
+        return $this;
+    }
+    
+    public function souwykwwmyygqyqi() : ?string
+    {
+        return null;
+    }
+    
+    public function render($ywmkwiwkosakssii = []) : ?string
+    {
+        goto okmkiuqyksmuocqs;
+        ccimukeqcycgeuqg:
+        $kqywgoqsmuswammk = $this->qqimkcgcmeewwwei();
+        goto ayscuauayocuigwk;
+        cwgeqccwaegmsyak:
+        if (!$ywmkwiwkosakssii["\x65\x63\x68\x6f"]) {
+            goto mckeqaowcweksykw;
+        }
+        goto oaoaooyeawsygoic;
+        kkomakqowiegqiqw:
+        if (!$omwmuycmeqcqokom) {
+            goto wkieciyoomooewcu;
+        }
+        goto icwgymeagawmawce;
+        eggcswyiekyiqouo:
+        $qkqgooeegwokcmay = $omwmuycmeqcqokom->render();
+        goto egawuwkuquuagegm;
+        egawuwkuquuagegm:
+        if (!($nsmgceoqaqogqmuw && $qkqgooeegwokcmay && str_contains($qkqgooeegwokcmay, self::CHILD_CONTENT))) {
+            goto eseyuockwcuywymg;
+        }
+        goto zikuogsomooqsyqa;
+        oaoaooyeawsygoic:
+        echo $nsmgceoqaqogqmuw;
+        goto wwyueoeueokuakme;
+        icwgymeagawmawce:
+        $nsmgceoqaqogqmuw = $this->assmkuqekscwausm($nsmgceoqaqogqmuw);
+        goto eggcswyiekyiqouo;
+        ceaoyqaqeikqseos:
+        $nsmgceoqaqogqmuw = $this->ggiwigqywkaqogkk($nsmgceoqaqogqmuw);
+        goto uqqsegscoakyimue;
+        eiigkuqyeygckois:
+        eseyuockwcuywymg:
+        goto siqcocuqywowcwco;
+        wwyueoeueokuakme:
+        mckeqaowcweksykw:
+        goto gukyeocesaeyiegw;
+        siqcocuqywowcwco:
+        wkieciyoomooewcu:
+        goto ypouoyqikysqacqw;
+        uqqsegscoakyimue:
+        $omwmuycmeqcqokom = $this->ygqycmmkoiuocoia();
+        goto kkomakqowiegqiqw;
+        okmkiuqyksmuocqs:
+        $ywmkwiwkosakssii = ManipulateFormat::omaawkkwwyesqwcc($ywmkwiwkosakssii, ["\x65\x63\150\157" => false]);
+        goto ccimukeqcycgeuqg;
+        gukyeocesaeyiegw:
+        return $nsmgceoqaqogqmuw;
+        goto wmgakyyggcmckquc;
+        wesoqqmucysmckyw:
+        $nsmgceoqaqogqmuw = ManipulateHTML::qgsekwygcgawekeq($kqywgoqsmuswammk, $wwgucssaecqekuek, true, $this->souwykwwmyygqyqi());
+        goto ceaoyqaqeikqseos;
+        ypouoyqikysqacqw:
+        $nsmgceoqaqogqmuw = $this->eiieguqemowyacgi($nsmgceoqaqogqmuw);
+        goto cwgeqccwaegmsyak;
+        zikuogsomooqsyqa:
+        $nsmgceoqaqogqmuw = str_replace(self::CHILD_CONTENT, $nsmgceoqaqogqmuw, $qkqgooeegwokcmay);
+        goto eiigkuqyeygckois;
+        ayscuauayocuigwk:
+        $wwgucssaecqekuek = array_filter($this->ccekeuwwqqoiwuwy());
+        goto wesoqqmucysmckyw;
+        wmgakyyggcmckquc:
+    }
+    
+    public function ggiwigqywkaqogkk(?string $nsmgceoqaqogqmuw) : ?string
+    {
+        return $nsmgceoqaqogqmuw;
+    }
+    
+    public function eiieguqemowyacgi(?string $nsmgceoqaqogqmuw) : ?string
+    {
+        return $nsmgceoqaqogqmuw;
+    }
+    
+    public function assmkuqekscwausm(?string $nsmgceoqaqogqmuw) : ?string
+    {
+        return $nsmgceoqaqogqmuw;
+    }
+}

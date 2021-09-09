@@ -1,2 +1,237 @@
 <?php
- namespace Pmpr\Common\Foundation\Data; use Pmpr\Common\Foundation\Foundation; class Source extends Data { protected $src = false; protected $enqueue = true; protected array $attrs = []; protected string $handle = ''; protected $version = false; protected ?string $inline = ''; protected string $media = "\141\154\x6c"; protected bool $inFooter = true; protected array $dependencies = []; protected string $type = self::SCRIPT; public function __construct(string $eUsgM = '', $HyQdd = '', string $j56jL = self::SCRIPT) { goto D82mA; D82mA: $this->src = $HyQdd; goto q7XHT; q7XHT: $this->type = $j56jL; goto L0NgS; L0NgS: $this->handle = $eUsgM; goto iHSwN; iHSwN: } public function getSrc() { return $this->src; } public function setSrc($HyQdd) : self { $this->src = $HyQdd; return $this; } public function getHandle() : string { return $this->handle; } public function setHandle(string $eUsgM) : self { $this->handle = $eUsgM; return $this; } public function getVersion() { return $this->version; } public function setVersion($bpaAm) { $this->version = $bpaAm; return $this; } public function getMedia() : string { return $this->media; } public function setMedia(string $CyCEd) : self { $this->media = $CyCEd; return $this; } public function isInFooter() : bool { return $this->inFooter; } public function setInFooter(bool $Kl7SP) : self { $this->inFooter = $Kl7SP; return $this; } public function getDependencies() : array { return $this->dependencies; } public function addDependency(string $HJbvO) : self { goto K0eDQ; s_Lzu: $this->dependencies[] = $HJbvO; goto ACYPo; bASOO: return $this; goto lfQh1; ACYPo: jK3dK: goto bASOO; K0eDQ: if (in_array($HJbvO, $this->getDependencies())) { goto jK3dK; } goto s_Lzu; lfQh1: } public function addDependencies(array $l6kR8) : self { goto Q21gM; Q21gM: foreach ($l6kR8 as $HJbvO) { $this->addDependency($HJbvO); CeW0x: } goto sDxKq; sDxKq: YaoBl: goto MWIXI; MWIXI: return $this; goto tc6iJ; tc6iJ: } public function getType() : string { return $this->type; } public function setType(string $j56jL) : self { $this->type = $j56jL; return $this; } public function setEnqueue(callable $Imgpi) : self { $this->enqueue = $Imgpi; return $this; } public function getEnqueue() { return $this->enqueue; } public function canEnqueue() : bool { goto t2OM6; Ft3Ry: return (bool) $Imgpi; goto gNkZR; qormZ: B3Y33: goto Ft3Ry; t2OM6: $Imgpi = $this->getEnqueue(); goto GMLsG; HIpgI: $Imgpi = call_user_func($Imgpi); goto qormZ; GMLsG: if (!is_callable($Imgpi)) { goto B3Y33; } goto HIpgI; gNkZR: } public function getInline() : ?string { return $this->inline; } public function setInline(?string $pWZVs) : self { $this->inline = $pWZVs; return $this; } public function addAttr($bUHaw, $yjbyt) : self { $this->attrs[$bUHaw] = $yjbyt; return $this; } public function getAttrs() : array { return $this->attrs; } public function hasInline() : bool { return !empty($this->getInline()); } public function addCommonDependencies() : self { goto oLkji; oLkji: $NRZbq = Foundation::getInstance()->getAssetManager(); goto mQ8gf; bF3Z0: $this->addDependencies(["\x6a\161\x75\x65\x72\x79", $x28H7]); goto rUybi; mQ8gf: $x28H7 = $NRZbq->getDependencyName("\147\x6c\157\142\141\154"); goto bF3Z0; rUybi: return $this; goto sF6Ui; sF6Ui: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Data;
+
+use Pmpr\Common\Foundation\Foundation;
+
+class Source extends Data
+{
+    
+    protected $src = false;
+    
+    protected $enqueue = true;
+    
+    protected array $attrs = [];
+    
+    protected string $handle = '';
+    
+    protected $version = false;
+    
+    protected ?string $inline = '';
+    
+    protected string $media = "\141\154\x6c";
+    
+    protected bool $inFooter = true;
+    
+    protected array $dependencies = [];
+    
+    protected string $type = self::SCRIPT;
+    
+    public function __construct(string $eueuqacmukymcyya = '', $ogomymegcoacqisg = '', string $sqeykgyoooqysmca = self::SCRIPT)
+    {
+        goto ygyqyeocqgucysak;
+        kqwioeqkgsgmmymg:
+        $this->handle = $eueuqacmukymcyya;
+        goto ssiykmokuqwoukkq;
+        ceuqgimswukikqiq:
+        $this->type = $sqeykgyoooqysmca;
+        goto kqwioeqkgsgmmymg;
+        ygyqyeocqgucysak:
+        $this->src = $ogomymegcoacqisg;
+        goto ceuqgimswukikqiq;
+        ssiykmokuqwoukkq:
+    }
+    
+    public function mgaeeqsgeoukeokc()
+    {
+        return $this->src;
+    }
+    
+    public function sseugukgueoiqega($ogomymegcoacqisg) : self
+    {
+        $this->src = $ogomymegcoacqisg;
+        return $this;
+    }
+    
+    public function yoickwcyekiwiyqm() : string
+    {
+        return $this->handle;
+    }
+    
+    public function weqmiqaykgwymcou(string $eueuqacmukymcyya) : self
+    {
+        $this->handle = $eueuqacmukymcyya;
+        return $this;
+    }
+    
+    public function gikwwgqmwccescgy()
+    {
+        return $this->version;
+    }
+    
+    public function aasasueowyemuyoc($kqagasmwymmuiksq)
+    {
+        $this->version = $kqagasmwymmuiksq;
+        return $this;
+    }
+    
+    public function acskcgywyymegikq() : string
+    {
+        return $this->media;
+    }
+    
+    public function eoeiaaaiywqccaqe(string $qsmqqqccagyuaiso) : self
+    {
+        $this->media = $qsmqqqccagyuaiso;
+        return $this;
+    }
+    
+    public function mequouugayiseiei() : bool
+    {
+        return $this->inFooter;
+    }
+    
+    public function mimekgmssueakiwu(bool $siucegisggggeiei) : self
+    {
+        $this->inFooter = $siucegisggggeiei;
+        return $this;
+    }
+    
+    public function auskmiuqesyqemgc() : array
+    {
+        return $this->dependencies;
+    }
+    
+    public function ayuciigykaswwqeo(string $yeiguwcugmswcysy) : self
+    {
+        goto scgiymugkuqikuoo;
+        eqeggksucqsyyqgy:
+        return $this;
+        goto kiieeckyooaiakiy;
+        weookqwiumeyqgqe:
+        swwsoucgukwwokou:
+        goto eqeggksucqsyyqgy;
+        scgiymugkuqikuoo:
+        if (in_array($yeiguwcugmswcysy, $this->auskmiuqesyqemgc())) {
+            goto swwsoucgukwwokou;
+        }
+        goto kggqciusmciogeoc;
+        kggqciusmciogeoc:
+        $this->dependencies[] = $yeiguwcugmswcysy;
+        goto weookqwiumeyqgqe;
+        kiieeckyooaiakiy:
+    }
+    
+    public function kkqyswgcoseeawmu(array $ugmuiugkaygmsagq) : self
+    {
+        goto cwqgyckguaiciiam;
+        ekqawkaqkgwygyys:
+        return $this;
+        goto gaaikwwqsgaskqos;
+        qeeakiaqiwkogiki:
+        mkwcgkgauikuqkgs:
+        goto ekqawkaqkgwygyys;
+        cwqgyckguaiciiam:
+        foreach ($ugmuiugkaygmsagq as $yeiguwcugmswcysy) {
+            $this->ayuciigykaswwqeo($yeiguwcugmswcysy);
+            iekoocwecouagekw:
+        }
+        goto qeeakiaqiwkogiki;
+        gaaikwwqsgaskqos:
+    }
+    
+    public function gueasuouwqysmomu() : string
+    {
+        return $this->type;
+    }
+    
+    public function aseocggwwegcmqes(string $sqeykgyoooqysmca) : self
+    {
+        $this->type = $sqeykgyoooqysmca;
+        return $this;
+    }
+    
+    public function uuukyuwomieyigsu(callable $wgcyssuyaqysoqya) : self
+    {
+        $this->enqueue = $wgcyssuyaqysoqya;
+        return $this;
+    }
+    
+    public function eeiaogaokoekgmeq()
+    {
+        return $this->enqueue;
+    }
+    
+    public function simqeemkoyaqkkwe() : bool
+    {
+        goto scwgaeqqquyqoeey;
+        acqcuwoawoiqqcgw:
+        $wgcyssuyaqysoqya = call_user_func($wgcyssuyaqysoqya);
+        goto qqooskcsgmwcqmyo;
+        acymaqouwqmcmisy:
+        return (bool) $wgcyssuyaqysoqya;
+        goto kuusqsqwcyeicqcu;
+        qqooskcsgmwcqmyo:
+        guyaeuucuqosewwe:
+        goto acymaqouwqmcmisy;
+        muyyguewmgkysmqi:
+        if (!is_callable($wgcyssuyaqysoqya)) {
+            goto guyaeuucuqosewwe;
+        }
+        goto acqcuwoawoiqqcgw;
+        scwgaeqqquyqoeey:
+        $wgcyssuyaqysoqya = $this->eeiaogaokoekgmeq();
+        goto muyyguewmgkysmqi;
+        kuusqsqwcyeicqcu:
+    }
+    
+    public function mmoosseiswcigswg() : ?string
+    {
+        return $this->inline;
+    }
+    
+    public function awagieqcmmwkgwgs(?string $usyqkyomqcuocgoa) : self
+    {
+        $this->inline = $usyqkyomqcuocgoa;
+        return $this;
+    }
+    
+    public function yiuoscqaekcgiyuy($uusmaiomayssaecw, $eqgoocgaqwqcimie) : self
+    {
+        $this->attrs[$uusmaiomayssaecw] = $eqgoocgaqwqcimie;
+        return $this;
+    }
+    
+    public function aoamooyyyuyiwuoq() : array
+    {
+        return $this->attrs;
+    }
+    
+    public function ssimwwmyuyyimmug() : bool
+    {
+        return !empty($this->mmoosseiswcigswg());
+    }
+    
+    public function simswskycwagoeqy() : self
+    {
+        goto yoigaymqwkcqioac;
+        gescaykeyikwwqos:
+        return $this;
+        goto eeaicwceqqsiymuq;
+        eusesuocygoggmyw:
+        $syqogysesqgmqoqi = $qsaooqieuwgqwmmc->yomasssaasmawcso("\147\154\x6f\x62\x61\154");
+        goto oyuyqykycywqikma;
+        yoigaymqwkcqioac:
+        $qsaooqieuwgqwmmc = Foundation::symcgieuakksimmu()->miocmcoykayoyyau();
+        goto eusesuocygoggmyw;
+        oyuyqykycywqikma:
+        $this->kkqyswgcoseeawmu(["\152\161\x75\145\162\x79", $syqogysesqgmqoqi]);
+        goto gescaykeyikwwqos;
+        eeaicwceqqsiymuq:
+    }
+}

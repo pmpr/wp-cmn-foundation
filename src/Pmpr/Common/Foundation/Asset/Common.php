@@ -1,2 +1,14 @@
 <?php
- namespace Pmpr\Common\Foundation\Asset; use Pmpr\Common\Foundation\Container\Container; class Common extends Container { }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Asset;
+
+use Pmpr\Common\Foundation\Container\Container;
+
+class Common extends Container
+{
+}

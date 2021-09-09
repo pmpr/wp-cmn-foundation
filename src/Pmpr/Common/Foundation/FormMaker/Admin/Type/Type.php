@@ -1,2 +1,45 @@
 <?php
- namespace Pmpr\Common\Foundation\FormMaker\Admin\Type; class Type extends Common { public function __construct() { $this->loadRequirement(); parent::__construct(); } public function loadRequirement() { goto Euoj5; Euoj5: Size::getInstance(); goto s6Hkx; PFGTI: MultiButton::getInstance(); goto Afu8t; P7tMN: Select2::getInstance(); goto kZrYS; h_CAG: Button::getInstance(); goto P7tMN; kZrYS: Display::getInstance(); goto nu0Ix; nu0Ix: BSSelect::getInstance(); goto PFGTI; s6Hkx: Html::getInstance(); goto h_CAG; Afu8t: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\FormMaker\Admin\Type;
+
+
+class Type extends Common
+{
+    
+    public function __construct()
+    {
+        parent::__construct();
+        $this->iemaakgqgqosiecm();
+    }
+    public function iemaakgqgqosiecm()
+    {
+        goto mcqoyigqsewkkwgc;
+        eiguqiumekikicuw:
+        Html::symcgieuakksimmu();
+        goto wwauaucuwsokocmm;
+        eccymasqomswiwug:
+        Select2::symcgieuakksimmu();
+        goto yaaisamcwuuowiua;
+        mcqoyigqsewkkwgc:
+        Size::symcgieuakksimmu();
+        goto eiguqiumekikicuw;
+        acoqamisuacwkqyo:
+        BSSelect::symcgieuakksimmu();
+        goto eugsgogsukuqwyou;
+        yaaisamcwuuowiua:
+        Display::symcgieuakksimmu();
+        goto acoqamisuacwkqyo;
+        wwauaucuwsokocmm:
+        Button::symcgieuakksimmu();
+        goto eccymasqomswiwug;
+        eugsgogsukuqwyou:
+        MultiButton::symcgieuakksimmu();
+        goto yeyskwsagaowouas;
+        yeyskwsagaowouas:
+    }
+}

@@ -1,2 +1,38 @@
 <?php
- namespace Pmpr\Common\Foundation\Decorator; class DecoratorOption extends Decorator { public static function delete($czd3T) { return delete_option($czd3T); } public static function add($czd3T, $yjbyt) { return add_option($czd3T, $yjbyt); } public static function get($czd3T, $Ql_ZF = false) { return get_option($czd3T, $Ql_ZF); } public static function getSite($czd3T, $Ql_ZF = false) { get_site_option($czd3T, $Ql_ZF); } public static function update($czd3T, $yjbyt, $P4cFX = null) { return update_option($czd3T, $yjbyt, $P4cFX); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Decorator;
+
+
+class DecoratorOption extends Decorator
+{
+    
+    public static function delete($omkysikckkcieckq)
+    {
+        return delete_option($omkysikckkcieckq);
+    }
+    
+    public static function add($omkysikckkcieckq, $eqgoocgaqwqcimie)
+    {
+        return add_option($omkysikckkcieckq, $eqgoocgaqwqcimie);
+    }
+    
+    public static function get($omkysikckkcieckq, $ggauoeuaesiymgee = false)
+    {
+        return get_option($omkysikckkcieckq, $ggauoeuaesiymgee);
+    }
+    
+    public static function kuaqqosyyoqiueym($omkysikckkcieckq, $ggauoeuaesiymgee = false)
+    {
+        get_site_option($omkysikckkcieckq, $ggauoeuaesiymgee);
+    }
+    
+    public static function update($omkysikckkcieckq, $eqgoocgaqwqcimie, $eogycucmwwksyycu = null)
+    {
+        return update_option($omkysikckkcieckq, $eqgoocgaqwqcimie, $eogycucmwwksyycu);
+    }
+}

@@ -1,2 +1,239 @@
 <?php
- namespace Pmpr\Common\Foundation\Decorator\Post; use WP_Error; use WP_Post; use WP_Post_Type; class DecoratorPost extends Common { public static function isTypeSupport(string $j56jL, string $DTlMC) { return post_type_supports($j56jL, $DTlMC); } public static function isAutoSave($post) { return wp_is_post_autosave($post); } public static function isRevision($post) { return wp_is_post_revision($post); } public static function isPasswordRequired($post = null) { return post_password_required($post); } public static function getAttachedFile($post, $VKKTy = false) { return get_attached_file($post, $VKKTy); } public static function trash($post) { return wp_trash_post($post); } public static function getType($post) { return get_post_type($post); } public static function update($l9uvG) { return wp_update_post($l9uvG); } public static function getEditLink($post) { return get_edit_post_link($post); } public static function insert($DrjAW = []) { return wp_insert_post($DrjAW); } public static function deleteRevision($CDV1j) { return wp_delete_post_revision($CDV1j); } public static function getList($DrjAW = []) { return get_posts($DrjAW); } public static function getThumbnailId($post) { return get_post_thumbnail_id(self::get($post)); } public static function getTitle($post = null) { return get_the_title($post); } public static function hasExcerpt($post = null) { return has_excerpt($post); } public static function getExcerpt($post = null) : string { return get_the_excerpt($post); } public static function getTypeObject(?string $j56jL) : ?WP_Post_Type { return get_post_type_object($j56jL); } public static function delete($post, $utCy4 = false) { goto ELhCL; ELhCL: $k7Lnh = false; goto vb2R6; WOOZf: iOhtL: goto P27te; J1iuE: $k7Lnh = wp_delete_post($post, $utCy4); goto WOOZf; vb2R6: if (!($post && is_numeric($post))) { goto iOhtL; } goto J1iuE; P27te: return $k7Lnh; goto CBZur; CBZur: } public static function getTypeArchiveLink($FyD_R) { return get_post_type_archive_link($FyD_R); } public static function getCommentCount($post = null) { return get_comment_count($post); } public static function getCommentNumber($post = null) { return get_comments_number($post); } public static function isTypeExist(string $j56jL) : bool { return post_type_exists($j56jL); } public static function hasThumbnail($post = null) : bool { return has_post_thumbnail(self::get($post)); } public static function get($post, $NnlHI = self::OBJECT) { return get_post($post, $NnlHI); } public static function getTerms($post, $fvLkx, $DrjAW = []) { return wp_get_post_terms($post, $fvLkx, $DrjAW); } public static function deleteMeta($post, $bUHaw = '', $yjbyt = '') { return delete_post_meta($post, $bUHaw, $yjbyt); } public static function getTypes($DrjAW = [], $NnlHI = self::NAMES) { return get_post_types($DrjAW, $NnlHI); } public static function getRecent($DrjAW = [], $NnlHI = self::OBJECT) { return wp_get_recent_posts($DrjAW, $NnlHI); } public static function addMeta($post, $bUHaw, $yjbyt, $e4jvG = false) { return add_post_meta($post, $bUHaw, $yjbyt, $e4jvG); } public static function getMeta($post, $bUHaw = '', bool $R9bYZ = true) { return get_post_meta($post, $bUHaw, $R9bYZ); } public static function updateMeta($post, $bUHaw, $yjbyt, $JuR2N = '') { return update_post_meta($post, $bUHaw, $yjbyt, $JuR2N); } public static function getField($mi3kO, $post = null, $YG1GM = "\144\x69\163\160\x6c\141\171") { return get_post_field($mi3kO, $post, $YG1GM); } public static function getPermalink($post = null, $mL0JQ = false) { return get_permalink($post, $mL0JQ); } public static function getAncestors($post) { return get_post_ancestors($post); } public static function getThumbnailURL($post = null, $pDZ3Y = "\160\x6f\x73\164\x2d\x74\150\165\x6d\142\156\x61\x69\154") { return get_the_post_thumbnail_url($post, $pDZ3Y); } public static function getThumbnail($post, $pDZ3Y = "\160\157\163\x74\55\164\x68\x75\x6d\x62\x6e\x61\151\x6c", $JLWIV = []) { return get_the_post_thumbnail(self::get($post), $pDZ3Y, $JLWIV); } public static function getContent($post = null, $i1e9t = '', $n57yv = '') { return get_the_content($i1e9t, $n57yv, $post); } public static function getByPath(string $I89I6, $j56jL = "\x70\157\x73\x74", $NnlHI = self::OBJECT) { return get_page_by_path($I89I6, $NnlHI, $j56jL); } public static function getTime($PWVlC = "\x55", $OVzM8 = '', $post = '', $q7VO5 = false) { return get_post_time($PWVlC, $OVzM8, $post, $q7VO5); } public static function getModifiedTime($PWVlC = "\x55", $YAqbp = false, $post = null, $q7VO5 = false) { return get_post_modified_time($PWVlC, $YAqbp, $post, $q7VO5); } public static function addTypeSupport(string $j56jL, $DTlMC, ...$DrjAW) { add_post_type_support($j56jL, $DTlMC, ...$DrjAW); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Decorator\Post;
+
+use WP_Error;
+use WP_Post;
+use WP_Post_Type;
+
+class DecoratorPost extends Common
+{
+    
+    public static function aukcwycsusueciec(string $sqeykgyoooqysmca, string $wiwcgykokegmceyk)
+    {
+        return post_type_supports($sqeykgyoooqysmca, $wiwcgykokegmceyk);
+    }
+    
+    public static function somkqoqeimmeemuq($post)
+    {
+        return wp_is_post_autosave($post);
+    }
+    
+    public static function uiwesgekcwiicksy($post)
+    {
+        return wp_is_post_revision($post);
+    }
+    
+    public static function ugcgywasgqgaysek($post = null)
+    {
+        return post_password_required($post);
+    }
+    
+    public static function ckoygqywcuqasqea($post, $beuoaqwyyugcgeas = false)
+    {
+        return get_attached_file($post, $beuoaqwyyugcgeas);
+    }
+    
+    public static function wugecumwuwwwqyoe($post)
+    {
+        return wp_trash_post($post);
+    }
+    
+    public static function gueasuouwqysmomu($post)
+    {
+        return get_post_type($post);
+    }
+    
+    public static function update($eaceuwkosygcyqks)
+    {
+        return wp_update_post($eaceuwkosygcyqks);
+    }
+    
+    public static function yyykkcyiksewsoqy($post)
+    {
+        return get_edit_post_link($post);
+    }
+    
+    public static function insert($ywmkwiwkosakssii = [])
+    {
+        return wp_insert_post($ywmkwiwkosakssii);
+    }
+    
+    public static function ymeakeisquceukse($aokagokqyuysuksm)
+    {
+        return wp_delete_post_revision($aokagokqyuysuksm);
+    }
+    
+    public static function ciugwooasaqcywas($ywmkwiwkosakssii = [])
+    {
+        return get_posts($ywmkwiwkosakssii);
+    }
+    
+    public static function wsiiswmaagmyiaiw($post)
+    {
+        return get_post_thumbnail_id(self::get($post));
+    }
+    
+    public static function qcgakseyaikigqco($post = null)
+    {
+        return get_the_title($post);
+    }
+    
+    public static function seewsasmyoyciiee($post = null)
+    {
+        return has_excerpt($post);
+    }
+    
+    public static function masoymaamekuykso($post = null) : string
+    {
+        return get_the_excerpt($post);
+    }
+    
+    public static function waaisqccqacqeium(?string $sqeykgyoooqysmca) : ?WP_Post_Type
+    {
+        return get_post_type_object($sqeykgyoooqysmca);
+    }
+    
+    public static function delete($post, $cwwowqyuwccuykom = false)
+    {
+        goto mkyykkyowymkmcuc;
+        uymiqgqiegoigcqs:
+        if (!($post && is_numeric($post))) {
+            goto gqyiymemggwaskka;
+        }
+        goto qisqkemyewoikmem;
+        qgogowwyeaaqgoie:
+        gqyiymemggwaskka:
+        goto ciqsimeoewamiqyc;
+        ciqsimeoewamiqyc:
+        return $eysyeukyagaoqqcy;
+        goto ogweqkwccmuaowyq;
+        qisqkemyewoikmem:
+        $eysyeukyagaoqqcy = wp_delete_post($post, $cwwowqyuwccuykom);
+        goto qgogowwyeaaqgoie;
+        mkyykkyowymkmcuc:
+        $eysyeukyagaoqqcy = false;
+        goto uymiqgqiegoigcqs;
+        ogweqkwccmuaowyq:
+    }
+    
+    public static function mqgeysameoesmuqw($useksmwkuswkwcqg)
+    {
+        return get_post_type_archive_link($useksmwkuswkwcqg);
+    }
+    
+    public static function ymgsgecsiqeegseg($post = null)
+    {
+        return get_comment_count($post);
+    }
+    
+    public static function qmegicmsiwuuwysa($post = null)
+    {
+        return get_comments_number($post);
+    }
+    
+    public static function omaookuucieuqkec(string $sqeykgyoooqysmca) : bool
+    {
+        return post_type_exists($sqeykgyoooqysmca);
+    }
+    
+    public static function oaqimsyggeyyceig($post = null) : bool
+    {
+        return has_post_thumbnail(self::get($post));
+    }
+    
+    public static function get($post, $aqykuigiuwmmcieu = self::OBJECT)
+    {
+        return get_post($post, $aqykuigiuwmmcieu);
+    }
+    
+    public static function weescwwgqgiyumyw($post, $kesssewsiegssiya, $ywmkwiwkosakssii = [])
+    {
+        return wp_get_post_terms($post, $kesssewsiegssiya, $ywmkwiwkosakssii);
+    }
+    
+    public static function smqukgcyacswysqa($post, $uusmaiomayssaecw = '', $eqgoocgaqwqcimie = '')
+    {
+        return delete_post_meta($post, $uusmaiomayssaecw, $eqgoocgaqwqcimie);
+    }
+    
+    public static function mwoyqeeigwqoamiw($ywmkwiwkosakssii = [], $aqykuigiuwmmcieu = self::NAMES)
+    {
+        return get_post_types($ywmkwiwkosakssii, $aqykuigiuwmmcieu);
+    }
+    
+    public static function ymuqsscwmcumcama($ywmkwiwkosakssii = [], $aqykuigiuwmmcieu = self::OBJECT)
+    {
+        return wp_get_recent_posts($ywmkwiwkosakssii, $aqykuigiuwmmcieu);
+    }
+    
+    public static function giwmekimakcaawsq($post, $uusmaiomayssaecw, $eqgoocgaqwqcimie, $omasqoksqewuwwkq = false)
+    {
+        return add_post_meta($post, $uusmaiomayssaecw, $eqgoocgaqwqcimie, $omasqoksqewuwwkq);
+    }
+    
+    public static function igawqaomowicuayw($post, $uusmaiomayssaecw = '', bool $cuyooiakswegosog = true)
+    {
+        return get_post_meta($post, $uusmaiomayssaecw, $cuyooiakswegosog);
+    }
+    
+    public static function ksmqawcowkmegigw($post, $uusmaiomayssaecw, $eqgoocgaqwqcimie, $oyuqkqayqyqysyse = '')
+    {
+        return update_post_meta($post, $uusmaiomayssaecw, $eqgoocgaqwqcimie, $oyuqkqayqyqysyse);
+    }
+    
+    public static function ygwimyogyaqgumam($aiowsaccomcoikus, $post = null, $mgkceomocowocqyo = "\x64\x69\x73\160\154\x61\171")
+    {
+        return get_post_field($aiowsaccomcoikus, $post, $mgkceomocowocqyo);
+    }
+    
+    public static function ycqquoiyyuesegsy($post = null, $eoocgqsqmwuegiae = false)
+    {
+        return get_permalink($post, $eoocgqsqmwuegiae);
+    }
+    
+    public static function iimmeiugygssweyc($post)
+    {
+        return get_post_ancestors($post);
+    }
+    
+    public static function uamasysiccecccmw($post = null, $oiegiwogmwmawkeo = "\160\x6f\163\164\x2d\164\x68\165\155\142\x6e\x61\151\154")
+    {
+        return get_the_post_thumbnail_url($post, $oiegiwogmwmawkeo);
+    }
+    
+    public static function smwweookeqkiiygs($post, $oiegiwogmwmawkeo = "\160\157\163\x74\x2d\x74\150\x75\155\x62\x6e\141\151\x6c", $wisgiwskwawciiee = [])
+    {
+        return get_the_post_thumbnail(self::get($post), $oiegiwogmwmawkeo, $wisgiwskwawciiee);
+    }
+    
+    public static function souwykwwmyygqyqi($post = null, $yauwwygqkmsmamik = '', $ecckicuukiesgaig = '')
+    {
+        return get_the_content($yauwwygqkmsmamik, $ecckicuukiesgaig, $post);
+    }
+    
+    public static function qamwegcyimgcqksw(string $aaokuekaimigoyue, $sqeykgyoooqysmca = "\160\157\x73\164", $aqykuigiuwmmcieu = self::OBJECT)
+    {
+        return get_page_by_path($aaokuekaimigoyue, $aqykuigiuwmmcieu, $sqeykgyoooqysmca);
+    }
+    
+    public static function kugamkssceycoyaq($saqmwwmqiwmkiwaa = "\x55", $sowwqkgqsmguquke = '', $post = '', $mcmaiqckgiuqayau = false)
+    {
+        return get_post_time($saqmwwmqiwmkiwaa, $sowwqkgqsmguquke, $post, $mcmaiqckgiuqayau);
+    }
+    
+    public static function kkkiiqssauymiqsk($saqmwwmqiwmkiwaa = "\x55", $eqwyacwmcqusmwoq = false, $post = null, $mcmaiqckgiuqayau = false)
+    {
+        return get_post_modified_time($saqmwwmqiwmkiwaa, $eqwyacwmcqusmwoq, $post, $mcmaiqckgiuqayau);
+    }
+    
+    public static function oamyquacyacqwamy(string $sqeykgyoooqysmca, $wiwcgykokegmceyk, ...$ywmkwiwkosakssii)
+    {
+        add_post_type_support($sqeykgyoooqysmca, $wiwcgykokegmceyk, ...$ywmkwiwkosakssii);
+    }
+}

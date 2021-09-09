@@ -1,2 +1,67 @@
 <?php
- namespace Pmpr\Common\Foundation\ORM\DB\Traits; use Pmpr\Common\Foundation\Manipulate\Theme\ManipulateHTML; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; trait ActionTrait { protected array $viewActions = []; private function getViewActions() : array { return $this->viewActions; } public function getAddActions() : array { return ManipulateArray::get($this->getViewActions(), "\x61\x64\144", []); } private function addViewAction(?string $aZnoR, ?string $bUHaw, ?string $hTPi6, ?array $aIx0U) : self { goto Zddm2; Drn4F: return $this; goto RAwR6; YONVr: $this->viewActions[$aZnoR][$bUHaw] = ["\x61\x74\164\162\x73" => $aIx0U, "\x74\x69\164\154\x65" => $hTPi6]; goto Drn4F; Zddm2: $aIx0U = ManipulateHTML::addAttribute($aIx0U, "\x63\154\141\x73\163", "\x70\x61\x67\x65\x2d\x74\151\164\154\145\55\141\x63\x74\151\x6f\x6e"); goto YONVr; RAwR6: } public function addAddAction(?string $bUHaw, ?string $hTPi6, ?array $aIx0U) : self { return $this->addViewAction("\141\144\x64", $bUHaw, $hTPi6, $aIx0U); } public function getIndexActions() : array { return ManipulateArray::get($this->getViewActions(), "\151\156\x64\145\x78", []); } public function addIndexAction(?string $bUHaw, ?string $hTPi6, ?array $aIx0U) : self { return $this->addViewAction("\x69\x6e\x64\145\170", $bUHaw, $hTPi6, $aIx0U); } public function getEditActions() : array { return ManipulateArray::get($this->getViewActions(), "\145\144\x69\x74", []); } public function addEditAction(?string $bUHaw, ?string $hTPi6, ?array $aIx0U) : self { return $this->addViewAction("\x65\144\151\x74", $bUHaw, $hTPi6, $aIx0U); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\ORM\DB\Traits;
+
+use Pmpr\Common\Foundation\Manipulate\Theme\ManipulateHTML;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
+
+trait ActionTrait
+{
+    
+    protected array $viewActions = [];
+    
+    private function sqgeouqsaemqsaoc() : array
+    {
+        return $this->viewActions;
+    }
+    
+    public function wqaqomooqiiaeoew() : array
+    {
+        return ManipulateArray::get($this->sqgeouqsaemqsaoc(), "\141\x64\144", []);
+    }
+    
+    private function oecasaciwaammwsa(?string $qqomumygoacsmsie, ?string $uusmaiomayssaecw, ?string $meqocwsecsywiiqs, ?array $wwgucssaecqekuek) : self
+    {
+        goto uiqaoucyoiwykywa;
+        uiqaoucyoiwykywa:
+        $wwgucssaecqekuek = ManipulateHTML::igmaewykumgwoaoy($wwgucssaecqekuek, "\143\x6c\141\x73\163", "\x70\141\147\145\55\x74\x69\164\154\145\55\141\x63\164\x69\157\156");
+        goto umawcakyaoykccao;
+        wwmscmqgasawkkwa:
+        return $this;
+        goto aksogeackceaeays;
+        umawcakyaoykccao:
+        $this->viewActions[$qqomumygoacsmsie][$uusmaiomayssaecw] = ["\141\164\164\162\x73" => $wwgucssaecqekuek, "\x74\x69\x74\x6c\x65" => $meqocwsecsywiiqs];
+        goto wwmscmqgasawkkwa;
+        aksogeackceaeays:
+    }
+    
+    public function kecqycomykimqiim(?string $uusmaiomayssaecw, ?string $meqocwsecsywiiqs, ?array $wwgucssaecqekuek) : self
+    {
+        return $this->oecasaciwaammwsa("\141\144\x64", $uusmaiomayssaecw, $meqocwsecsywiiqs, $wwgucssaecqekuek);
+    }
+    
+    public function easkmgsoqaqeyayo() : array
+    {
+        return ManipulateArray::get($this->sqgeouqsaemqsaoc(), "\x69\156\x64\145\170", []);
+    }
+    
+    public function icyamyikwyaaoqya(?string $uusmaiomayssaecw, ?string $meqocwsecsywiiqs, ?array $wwgucssaecqekuek) : self
+    {
+        return $this->oecasaciwaammwsa("\x69\x6e\x64\x65\170", $uusmaiomayssaecw, $meqocwsecsywiiqs, $wwgucssaecqekuek);
+    }
+    
+    public function nwuqkwkgugcqsgyq() : array
+    {
+        return ManipulateArray::get($this->sqgeouqsaemqsaoc(), "\x65\x64\151\x74", []);
+    }
+    
+    public function qeiuscikgegousks(?string $uusmaiomayssaecw, ?string $meqocwsecsywiiqs, ?array $wwgucssaecqekuek) : self
+    {
+        return $this->oecasaciwaammwsa("\145\144\x69\x74", $uusmaiomayssaecw, $meqocwsecsywiiqs, $wwgucssaecqekuek);
+    }
+}

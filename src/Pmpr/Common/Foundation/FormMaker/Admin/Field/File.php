@@ -1,2 +1,69 @@
 <?php
- namespace Pmpr\Common\Foundation\FormMaker\Admin\Field; class File extends OptionAwareField { protected $previewSize; protected array $queryArgs = []; public function __construct(?string $CDV1j, ?string $vPl9z = null, ?string $Ym4v7 = null) { parent::__construct("\x66\x69\x6c\x65", $CDV1j, $vPl9z, $Ym4v7); $this->addClass("\143\x6d\x62\62\x2d\165\160\154\x6f\141\144\55\x66\151\x6c\145")->setPreviewSize("\164\x68\x75\x6d\142\x6e\141\x69\154")->addOption("\165\x72\154", false); } public function getPreviewSize() { return $this->previewSize; } public function setPreviewSize($bpbL6) : self { $this->previewSize = $bpbL6; return $this; } public function getQueryArgs() : ?array { return $this->queryArgs; } public function addQueryArg($bUHaw, $yjbyt) : self { $this->queryArgs[$bUHaw] = $yjbyt; return $this; } public function addQueryArgs(array $njb3f) : self { goto W2i8s; W2i8s: foreach ($njb3f as $bUHaw => $N2eU9) { $this->addQueryArg($bUHaw, $N2eU9); OknXh: } goto KKoNR; KKoNR: jNqpe: goto btfyB; btfyB: return $this; goto N6l8Q; N6l8Q: } public function afterToArray($sRAOE, array $DrjAW = []) : ?array { $sRAOE["\x74\x65\170\x74"]["\141\x64\x64\137\165\160\154\157\141\144\x5f\146\151\x6c\145\x5f\x74\145\170\x74"] = __("\101\x64\144\40\x6f\162\40\125\160\154\x6f\141\x64\x20\106\x69\x6c\x65", PR__CMN__FOUNDATION); return parent::afterToArray($sRAOE, $DrjAW); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\FormMaker\Admin\Field;
+
+
+class File extends OptionAwareField
+{
+    
+    protected $previewSize;
+    
+    protected array $queryArgs = [];
+    
+    public function __construct(?string $aokagokqyuysuksm, ?string $ymqmyyeuycgmigyo = null, ?string $mkqqqewsokcswckc = null)
+    {
+        parent::__construct("\x66\151\154\x65", $aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc);
+        
+        $this->qigsyyqgewgskemg("\143\x6d\142\x32\55\x75\x70\154\x6f\x61\144\55\x66\x69\x6c\x65")->wyqeckayigciacse("\x74\150\x75\x6d\x62\156\141\151\154")->kesomeowemmyygey("\x75\162\154", false);
+    }
+    
+    public function wuwyssaosksokqga()
+    {
+        return $this->previewSize;
+    }
+    
+    public function wyqeckayigciacse($cosceaceqiwayaag) : self
+    {
+        $this->previewSize = $cosceaceqiwayaag;
+        return $this;
+    }
+    
+    public function qaqaomkkmcmaamwm() : ?array
+    {
+        return $this->queryArgs;
+    }
+    public function oieccmgqekecomks($uusmaiomayssaecw, $eqgoocgaqwqcimie) : self
+    {
+        $this->queryArgs[$uusmaiomayssaecw] = $eqgoocgaqwqcimie;
+        return $this;
+    }
+    
+    public function qagaugomegkiimwa(array $seauiwyeoycowegg) : self
+    {
+        goto oucoguycmqycwegy;
+        wqgoeugeqekuyesm:
+        return $this;
+        goto qoaekweeqcoeagay;
+        wwskooaumymgscgo:
+        wiywcsqiaywacscq:
+        goto wqgoeugeqekuyesm;
+        oucoguycmqycwegy:
+        foreach ($seauiwyeoycowegg as $uusmaiomayssaecw => $awacioyscseiomkc) {
+            $this->oieccmgqekecomks($uusmaiomayssaecw, $awacioyscseiomkc);
+            wgsmkaikymwsokok:
+        }
+        goto wwskooaumymgscgo;
+        qoaekweeqcoeagay:
+    }
+    
+    public function uqawesackiomqgga($kkeqqkkkqwkocsyu, array $ywmkwiwkosakssii = []) : ?array
+    {
+        $kkeqqkkkqwkocsyu["\x74\x65\x78\164"]["\x61\x64\x64\137\x75\x70\x6c\x6f\141\x64\x5f\x66\151\x6c\145\x5f\164\x65\x78\164"] = __("\x41\x64\x64\40\157\x72\40\125\160\x6c\157\x61\x64\x20\x46\x69\154\145", PR__CMN__FOUNDATION);
+        return parent::uqawesackiomqgga($kkeqqkkkqwkocsyu, $ywmkwiwkosakssii);
+    }
+}

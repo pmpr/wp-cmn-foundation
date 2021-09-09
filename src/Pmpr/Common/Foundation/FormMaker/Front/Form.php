@@ -1,2 +1,166 @@
 <?php
- namespace Pmpr\Common\Foundation\FormMaker\Front; use Pmpr\Common\Foundation\FormMaker\Front\Field\Field; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; class Form extends Element { protected ?array $fields = []; protected ?Div $fieldsContainer = null; public function __construct(string $CDV1j = null) { parent::__construct("\146\157\x72\155", $CDV1j); $this->setMethod("\x50\x4f\123\x54"); } public function getContent() : ?string { goto Svg98; Ru2V5: foreach ($F9q7E as $mi3kO) { goto KqThn; BIg2Z: XC067: goto jkNtw; KqThn: if (!$mi3kO instanceof Element) { goto BNnuW; } goto j4jml; FfD7L: BNnuW: goto BIg2Z; j4jml: $BQ_ob .= $mi3kO->render(); goto FfD7L; jkNtw: } goto Fse0R; jSDRa: $BQ_ob = ''; goto Ru2V5; Fse0R: Z5vAw: goto duhYs; MxPDL: return $BQ_ob; goto nconS; Svg98: $F9q7E = ManipulateArray::sortBy($this->getFields(), "\x67\x65\164\120\162\x69\x6f\x72\x69\164\x79"); goto jSDRa; kgtUp: $BQ_ob = str_replace(self::CHILD_CONTENT, $BQ_ob, $J0LMj->render()); goto hoDLX; duhYs: $J0LMj = $this->getFieldsContainer(); goto ywR1Z; hoDLX: EChAx: goto MxPDL; ywR1Z: if (!$J0LMj) { goto EChAx; } goto kgtUp; nconS: } public function getFieldsContainer() : ?Div { return $this->fieldsContainer; } public function setFieldsContainer($lgX7G = []) : self { $this->fieldsContainer = self::getDivElement()->addAttributes($lgX7G); return $this; } public function getFields() : ?array { return $this->fields; } public function getField(?string $CDV1j) : ?Field { return ManipulateArray::get($this->getFields(), $CDV1j); } public function addField(Field $mi3kO) : self { goto Hn18U; ZlFK6: $mi3kO->setPriority(count($this->getFields()) + 1); goto klUIv; klUIv: HgGnM: goto bj2ol; Hn18U: if (!(!$mi3kO->getPriority() && is_array($this->getFields()))) { goto HgGnM; } goto ZlFK6; bj2ol: $this->fields[$mi3kO->getId()] = $mi3kO; goto D9_iC; D9_iC: return $this; goto idl99; idl99: } public function addFields(array $F9q7E) : self { goto yqMte; kGGoN: return $this; goto rSUB3; yqMte: foreach ($F9q7E as $mi3kO) { goto bEUI7; FaAhF: lj_up: goto a3kjW; bEUI7: if (!$mi3kO instanceof Field) { goto r1a4G; } goto i1Wki; i1Wki: $this->addField($mi3kO); goto mPWrT; mPWrT: r1a4G: goto FaAhF; a3kjW: } goto rl08_; rl08_: faenD: goto kGGoN; rSUB3: } public function setAction(string $KcJWJ) : self { $this->replaceAttribute("\x61\143\x74\x69\157\x6e", $KcJWJ); return $this; } public function setMethod(string $BA5nC) : self { $this->replaceAttribute("\x6d\x65\x74\x68\x6f\144", $BA5nC); return $this; } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\FormMaker\Front;
+
+use Pmpr\Common\Foundation\FormMaker\Front\Field\Field;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
+
+class Form extends Element
+{
+    
+    protected ?array $fields = [];
+    
+    protected ?Div $fieldsContainer = null;
+    
+    public function __construct(string $aokagokqyuysuksm = null)
+    {
+        parent::__construct("\x66\x6f\x72\x6d", $aokagokqyuysuksm);
+        $this->cukciuymuoaqgwic("\x50\117\x53\x54");
+    }
+    
+    public function souwykwwmyygqyqi() : ?string
+    {
+        goto wqkyoqmimmcmqgqw;
+        qmgyoamwwkwmkgka:
+        $ewgwqamkygiqaawc = '';
+        goto mkiywysewmkeqawg;
+        aqiyqkqkeeaokeka:
+        gsckkwksmcsuowqg:
+        goto csaumcaiqkmaosqw;
+        csaumcaiqkmaosqw:
+        return $ewgwqamkygiqaawc;
+        goto qkcawoouacuyaiiw;
+        umuqqcsocwogmmuw:
+        $skikiykssoocmmik = $this->kmiowswwgwcocguk();
+        goto ksyuggwmykuiiooy;
+        mkiywysewmkeqawg:
+        foreach ($ikgwqyuyckaewsow as $aiowsaccomcoikus) {
+            goto ykaoeemqmkoaimsw;
+            ykaoeemqmkoaimsw:
+            if (!$aiowsaccomcoikus instanceof Element) {
+                goto cmmyoagaqoyeymik;
+            }
+            goto uywokigkksckcgeg;
+            kgmowiykwaamoceq:
+            gkauywgyiayiioug:
+            goto mgymgcsywkseaaaw;
+            iauuqukiyugkmuqe:
+            cmmyoagaqoyeymik:
+            goto kgmowiykwaamoceq;
+            uywokigkksckcgeg:
+            $ewgwqamkygiqaawc .= $aiowsaccomcoikus->render();
+            goto iauuqukiyugkmuqe;
+            mgymgcsywkseaaaw:
+        }
+        goto skwsosgqyumikwkm;
+        weckoamymcgsskke:
+        $ewgwqamkygiqaawc = str_replace(self::CHILD_CONTENT, $ewgwqamkygiqaawc, $skikiykssoocmmik->render());
+        goto aqiyqkqkeeaokeka;
+        wqkyoqmimmcmqgqw:
+        
+        $ikgwqyuyckaewsow = ManipulateArray::yaeiiwwyckwugsem($this->ugmceccgwaaaigiy());
+        goto qmgyoamwwkwmkgka;
+        skwsosgqyumikwkm:
+        eewuuuyuugucoiwo:
+        goto umuqqcsocwogmmuw;
+        ksyuggwmykuiiooy:
+        if (!$skikiykssoocmmik) {
+            goto gsckkwksmcsuowqg;
+        }
+        goto weckoamymcgsskke;
+        qkcawoouacuyaiiw:
+    }
+    
+    public function kmiowswwgwcocguk() : ?Div
+    {
+        return $this->fieldsContainer;
+    }
+    
+    public function oguwwiuwyqkaueiu($siquossayskcwkea = []) : self
+    {
+        $this->fieldsContainer = self::mecgagckeuagggyw()->sueyawuweyoqyeaq($siquossayskcwkea);
+        return $this;
+    }
+    
+    public function ugmceccgwaaaigiy() : ?array
+    {
+        return $this->fields;
+    }
+    
+    public function ygwimyogyaqgumam(?string $aokagokqyuysuksm) : ?Field
+    {
+        return ManipulateArray::get($this->ugmceccgwaaaigiy(), $aokagokqyuysuksm);
+    }
+    
+    public function mkksewyosgeumwsa(Field $aiowsaccomcoikus) : self
+    {
+        goto wgmoucsgmmgsoeks;
+        kgcygucmaeeaeoqw:
+        $aiowsaccomcoikus->jyumyyugiwwiqomk(count($this->ugmceccgwaaaigiy()) + 1);
+        goto ayumqmewoimoeiwi;
+        wkewwcyckywegkgu:
+        return $this;
+        goto raaikgmaamoasmka;
+        wgmoucsgmmgsoeks:
+        if (!(!$aiowsaccomcoikus->yywskysiycwkwsgw() && is_array($this->ugmceccgwaaaigiy()))) {
+            goto zkqawssceymsouka;
+        }
+        goto kgcygucmaeeaeoqw;
+        ayumqmewoimoeiwi:
+        zkqawssceymsouka:
+        goto ygceqcgcqeugqsac;
+        ygceqcgcqeugqsac:
+        $this->fields[$aiowsaccomcoikus->mwikyscisascoeea()] = $aiowsaccomcoikus;
+        goto wkewwcyckywegkgu;
+        raaikgmaamoasmka:
+    }
+    
+    public function ewweaossowcqywaw(array $ikgwqyuyckaewsow) : self
+    {
+        goto qayqmgmmymcquuag;
+        uewyaeqgisiqwyus:
+        return $this;
+        goto miqweqaaowcigwek;
+        cwuseuekgwsccecg:
+        ikkycqcyiskeyiwc:
+        goto uewyaeqgisiqwyus;
+        qayqmgmmymcquuag:
+        foreach ($ikgwqyuyckaewsow as $aiowsaccomcoikus) {
+            goto qkmecaguyiccekqq;
+            qkmecaguyiccekqq:
+            if (!$aiowsaccomcoikus instanceof Field) {
+                goto nvaqyysiqoawekeq;
+            }
+            goto ekcociwqmcmuagmg;
+            ekcociwqmcmuagmg:
+            $this->mkksewyosgeumwsa($aiowsaccomcoikus);
+            goto smmoumcqseumumuy;
+            smmoumcqseumumuy:
+            nvaqyysiqoawekeq:
+            goto cgkugammwaasskse;
+            cgkugammwaasskse:
+            gkqwqumumsggkisk:
+            goto uuikuwqgwiqisaka;
+            uuikuwqgwiqisaka:
+        }
+        goto cwuseuekgwsccecg;
+        miqweqaaowcigwek:
+    }
+    
+    public function cwqickkaaokiquuo(string $aiamqeawckcsuaou) : self
+    {
+        $this->qcgocuceocquqcuw("\141\x63\164\151\157\156", $aiamqeawckcsuaou);
+        return $this;
+    }
+    
+    public function cukciuymuoaqgwic(string $qgciuiagkkguykgs) : self
+    {
+        $this->qcgocuceocquqcuw("\x6d\145\164\150\x6f\x64", $qgciuiagkkguykgs);
+        return $this;
+    }
+}

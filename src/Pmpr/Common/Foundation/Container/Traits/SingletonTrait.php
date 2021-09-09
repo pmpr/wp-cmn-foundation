@@ -1,2 +1,246 @@
 <?php
- namespace Pmpr\Common\Foundation\Container\Traits; use Exception; use Pmpr\Common\Foundation\Asset\Manager; use Pmpr\Common\Foundation\Container\Storage; use Pmpr\Common\Foundation\Filesystem; use Pmpr\Common\Foundation\Manipulate\ManipulateFormat; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString; use WP_Error; use WP_REST_Response; trait SingletonTrait { protected bool $canRunSetup = true; protected ?Manager $assetManager = null; protected ?Filesystem $filesystem = null; public function __construct() { goto xDjze; SF2N4: $this->setup(); goto VUZO3; xDjze: if (!$this->isCanRunSetup()) { goto NCKfo; } goto SF2N4; VUZO3: NCKfo: goto U30zd; U30zd: } public function isCanRunSetup() : bool { return $this->canRunSetup; } public function getFilesystem() : ?Filesystem { goto re0iG; ibfn5: $this->filesystem = Filesystem::getInstance(); goto QOqYD; tBJye: return $this->filesystem; goto GFFer; re0iG: if ($this->filesystem) { goto gXOp3; } goto ibfn5; QOqYD: gXOp3: goto tBJye; GFFer: } public function getAssetManager() : ?Manager { goto KQ3K6; KYN0S: z2cdr: goto lhks2; gCKmX: return $this->assetManager; goto oiA3N; Z3FP4: $this->assetManager = Manager::getInstanceByKey($eY_VU->getName(), $eY_VU); goto KYN0S; UhOGu: if (!$eY_VU) { goto z2cdr; } goto Z3FP4; lhks2: ueqRZ: goto gCKmX; KQ3K6: if ($this->assetManager) { goto ueqRZ; } goto iLsz5; iLsz5: $eY_VU = self::getRegisteredComponent(); goto UhOGu; oiA3N: } public final function setup() { goto bR2OW; W9J0e: $this->removeFilters(); goto pSzsq; pSzsq: $this->removeActions(); goto G0AQT; bR2OW: $this->addActions(); goto Uyzs5; Uyzs5: $this->addFilters(); goto W9J0e; G0AQT: } public function addActions() { } public function addFilters() { } public function removeActions() { } public function removeFilters() { } public static function getShortClass() { return ManipulateString::getClassName(self::getCalledClass()); } public static function getInstance(...$DrjAW) : self { return Storage::get(self::getCalledClass(), null, ...$DrjAW); } public static function isAlreadyInitialized() : ?bool { return (bool) Storage::has(self::getCalledClass()); } public static function removeInstance(?string $CDV1j = null) : self { return Storage::remove(self::getCalledClass(), $CDV1j); } public static function getInstanceByKey(?string $CDV1j = null, ...$DrjAW) : self { return Storage::get(self::getCalledClass(), $CDV1j, ...$DrjAW); } public function wpError(string $SFz9v, string $k4mxF, int $S_SQE = 403, array $vCZSL = []) : WP_Error { $vCZSL = ManipulateFormat::parseArgs($vCZSL, [self::CODE => $SFz9v, self::STATUS => $S_SQE]); return new WP_Error($SFz9v, $k4mxF, $vCZSL); } public function error2exception($W16SI, $J6fLN = null) { goto l9Y6J; wlTpm: $k4mxF = sprintf($J6fLN, $k4mxF); goto XVetO; IE55t: if (!$J6fLN) { goto ZmWlv; } goto wlTpm; XVetO: ZmWlv: goto WTUJr; l9Y6J: if (!$W16SI instanceof WP_Error) { goto eo3Pp; } goto r6Fwt; r6Fwt: $W16SI = $W16SI->get_error_messages(); goto HKJ2G; HKJ2G: eo3Pp: goto spZXh; WTUJr: $this->throwException($k4mxF); goto a4Pes; spZXh: $k4mxF = implode(PHP_EOL, $W16SI); goto IE55t; a4Pes: } public function throwException($k4mxF, $SFz9v = 0, $KaW2n = null) { throw new Exception($k4mxF, $SFz9v, $KaW2n); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Container\Traits;
+
+use Exception;
+use Pmpr\Common\Foundation\Asset\Manager;
+use Pmpr\Common\Foundation\Container\Storage;
+use Pmpr\Common\Foundation\Filesystem;
+use Pmpr\Common\Foundation\Manipulate\ManipulateFormat;
+use Pmpr\Common\Foundation\Manipulate\ManipulateServer;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString;
+use WP_Error;
+use WP_REST_Response;
+
+trait SingletonTrait
+{
+    
+    protected bool $canRunSetup = true;
+    
+    protected ?Manager $assetManager = null;
+    
+    protected ?Filesystem $filesystem = null;
+    public function __construct()
+    {
+        goto yscgikeomcgkgygk;
+        amswymymkwieuckw:
+        gewawgqiuyosuaqq:
+        goto oqcwmocuwuwokgya;
+        yyymqggqawumumog:
+        $this->gyqeoeemeemicgqi();
+        goto amswymymkwieuckw;
+        yscgikeomcgkgygk:
+        if (!$this->kwyscakayqgsqosc()) {
+            goto gewawgqiuyosuaqq;
+        }
+        goto yyymqggqawumumog;
+        oqcwmocuwuwokgya:
+    }
+    
+    public function kwyscakayqgsqosc() : bool
+    {
+        return $this->canRunSetup;
+    }
+    
+    public function kcciqwskewsuaemk() : ?Filesystem
+    {
+        goto muqaocsweeyqsoye;
+        qeiqyiumsmkicqyu:
+        iusaewegkoiieeom:
+        goto uqkgswsusamuccyw;
+        muqaocsweeyqsoye:
+        if ($this->filesystem) {
+            goto iusaewegkoiieeom;
+        }
+        goto kiiyeeekyiusoeui;
+        uqkgswsusamuccyw:
+        return $this->filesystem;
+        goto cgmagkeoskmgaiyg;
+        kiiyeeekyiusoeui:
+        $this->filesystem = Filesystem::symcgieuakksimmu();
+        goto qeiqyiumsmkicqyu;
+        cgmagkeoskmgaiyg:
+    }
+    
+    public function miocmcoykayoyyau() : ?Manager
+    {
+        goto kewyowoakiiuamsa;
+        kewyowoakiiuamsa:
+        if ($this->assetManager) {
+            goto ekyosowqimyqcaaq;
+        }
+        goto yeuaaqmioucasaks;
+        wuwuiwwcqmgsmisy:
+        ekyosowqimyqcaaq:
+        goto aykmumaieiueyeqa;
+        ysasyyiaseeqkmko:
+        if (!$wksoawcgagcgoask) {
+            goto agocucmwccwemeyq;
+        }
+        goto imigcaguiisikmak;
+        imigcaguiisikmak:
+        $this->assetManager = Manager::ocmycskcuiawkecq($wksoawcgagcgoask->aakmagwggmkoiiyu(), $wksoawcgagcgoask);
+        goto aiaismsmsiymqumq;
+        aiaismsmsiymqumq:
+        agocucmwccwemeyq:
+        goto wuwuiwwcqmgsmisy;
+        yeuaaqmioucasaks:
+        $wksoawcgagcgoask = self::couwksyewgyeooqe();
+        goto ysasyyiaseeqkmko;
+        aykmumaieiueyeqa:
+        return $this->assetManager;
+        goto iyogykmmqkqysuek;
+        iyogykmmqkqysuek:
+    }
+    public final function gyqeoeemeemicgqi()
+    {
+        goto mosmuugeqcsacskc;
+        yqqmsaceyaqyiecq:
+        $this->kgewmaycsoykyaso();
+        goto wogcuyasysqqwuwg;
+        mosmuugeqcsacskc:
+        $this->wigskegsqequoeks();
+        goto uiocmycaouiessgs;
+        uiocmycaouiessgs:
+        $this->kgquecmsgcouyaya();
+        goto tsmssqcisaauygqo;
+        tsmssqcisaauygqo:
+        $this->eogyyugasomygcma();
+        goto yqqmsaceyaqyiecq;
+        wogcuyasysqqwuwg:
+    }
+    public function wigskegsqequoeks()
+    {
+    }
+    public function kgquecmsgcouyaya()
+    {
+    }
+    public function kgewmaycsoykyaso()
+    {
+    }
+    public function eogyyugasomygcma()
+    {
+    }
+    public static function ugwmakayykcmcmqa()
+    {
+        return ManipulateString::mkwcwqkqeqkqyggc(self::uqggkiomyiceyooa());
+    }
+    
+    public static function symcgieuakksimmu(...$ywmkwiwkosakssii) : self
+    {
+        return Storage::get(self::uqggkiomyiceyooa(), null, ...$ywmkwiwkosakssii);
+    }
+    
+    public static function quiqwmkiyigesygc() : ?bool
+    {
+        return (bool) Storage::umuecysoywoumgwo(self::uqggkiomyiceyooa());
+    }
+    
+    public static function mcgwwosyemioouem(?string $aokagokqyuysuksm = null) : self
+    {
+        return Storage::remove(self::uqggkiomyiceyooa(), $aokagokqyuysuksm);
+    }
+    
+    public static function ocmycskcuiawkecq(?string $aokagokqyuysuksm = null, ...$ywmkwiwkosakssii) : self
+    {
+        return Storage::get(self::uqggkiomyiceyooa(), $aokagokqyuysuksm, ...$ywmkwiwkosakssii);
+    }
+    
+    public function oemauiimmycumcsk(string $uamcoiueqaamsqma, int $ymacoouqwcqwwagu = 403, array $icwicymcioeyeyek = []) : WP_Error
+    {
+        $icwicymcioeyeyek = ManipulateFormat::omaawkkwwyesqwcc($icwicymcioeyeyek, [self::CODE => $ymacoouqwcqwwagu, self::STATUS => ManipulateServer::sgsoakksyayeoggw($ymacoouqwcqwwagu)]);
+        return new WP_Error($ymacoouqwcqwwagu, $uamcoiueqaamsqma, $icwicymcioeyeyek);
+    }
+    
+    public function wsmkmgikcacikiwe($iswcokucwmiosiaq) : array
+    {
+        goto seaaqqowyeuqcqey;
+        caqgwosawyuskgcc:
+        qkwgugwgiygosuwi:
+        goto xemcmmyyisyyiyic;
+        ewkyyscmssywguiy:
+        if (!$iswcokucwmiosiaq instanceof WP_Error) {
+            goto qkwgugwgiygosuwi;
+        }
+        goto syeogeciaieosmuy;
+        xemcmmyyisyyiyic:
+        return $ueeagokqmgisgauy;
+        goto ygwskmakekcueimm;
+        seaaqqowyeuqcqey:
+        $ueeagokqmgisgauy = [];
+        goto ewkyyscmssywguiy;
+        syeogeciaieosmuy:
+        
+        $ueeagokqmgisgauy = $iswcokucwmiosiaq->get_error_messages();
+        goto caqgwosawyuskgcc;
+        ygwskmakekcueimm:
+    }
+    
+    public function uocccyeugiykcmes($iswcokucwmiosiaq, $wamcomkuwysqgwgk = null)
+    {
+        goto akkugkigcmogsmwa;
+        aemeckuaowuyyawg:
+        $this->yqkwsouguwgoywcw($uamcoiueqaamsqma);
+        goto ckuakqwqukkeusky;
+        iqcawkmieemgmuws:
+        $uamcoiueqaamsqma = implode(PHP_EOL, $iswcokucwmiosiaq);
+        goto qqugmskikeggcqck;
+        iwqeuawaeyysmyke:
+        $iswcokucwmiosiaq = $this->wsmkmgikcacikiwe($iswcokucwmiosiaq);
+        goto acykcoioqsgegycc;
+        acykcoioqsgegycc:
+        qegkkwokuemqqaca:
+        goto iqcawkmieemgmuws;
+        meacoqqokoucyoga:
+        yauqyiqcegcissma:
+        goto aemeckuaowuyyawg;
+        qqugmskikeggcqck:
+        if (!$wamcomkuwysqgwgk) {
+            goto yauqyiqcegcissma;
+        }
+        goto ymkcomygiuasmiqu;
+        akkugkigcmogsmwa:
+        if (!$iswcokucwmiosiaq instanceof WP_Error) {
+            goto qegkkwokuemqqaca;
+        }
+        goto iwqeuawaeyysmyke;
+        ymkcomygiuasmiqu:
+        $uamcoiueqaamsqma = sprintf($wamcomkuwysqgwgk, $uamcoiueqaamsqma);
+        goto meacoqqokoucyoga;
+        ckuakqwqukkeusky:
+    }
+    
+    public function kyacickkomkioeyu($wgaoewqkwgomoaai) : ?string
+    {
+        goto yseuseagkkcgcqii;
+        gmyqkugayogcoouy:
+        kykiiewgwquaksgc:
+        goto ymyicceouqmquskc;
+        ymyicceouqmquskc:
+        return $uamcoiueqaamsqma;
+        goto mwowmiqewakiqokm;
+        yssmcumiaiqoiqoi:
+        
+        $uamcoiueqaamsqma = $wgaoewqkwgomoaai->getMessage();
+        goto gmyqkugayogcoouy;
+        ayqggsigamwsowka:
+        if (!$wgaoewqkwgomoaai instanceof Exception) {
+            goto kykiiewgwquaksgc;
+        }
+        goto yssmcumiaiqoiqoi;
+        yseuseagkkcgcqii:
+        $uamcoiueqaamsqma = '';
+        goto ayqggsigamwsowka;
+        mwowmiqewakiqokm:
+    }
+    
+    public function yqkwsouguwgoywcw($uamcoiueqaamsqma, $ymacoouqwcqwwagu = 0, $awqociesscimyymk = null)
+    {
+        throw new Exception($uamcoiueqaamsqma, $ymacoouqwcqwwagu, $awqociesscimyymk);
+    }
+}

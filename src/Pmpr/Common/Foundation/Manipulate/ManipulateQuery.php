@@ -1,2 +1,75 @@
 <?php
- namespace Pmpr\Common\Foundation\Manipulate; use Pmpr\Common\Foundation\Decorator\DecoratorHook; use Pmpr\Common\Foundation\Decorator\DecoratorQuery; use Pmpr\Common\Foundation\Manipulate\Plugin\ManipulateWoocommerce; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; class ManipulateQuery extends Manipulate { function isDoingCron() : bool { return DecoratorQuery::isDoingCron() || self::getConstant("\104\x4f\111\x4e\x47\137\x43\x52\x4f\x4e"); } public static function isRestAPIRequest() : bool { goto JGC21; c024c: $nSdJS = false !== strpos($i7N_J, $rbWrz); goto IMRFY; pBEQT: Au8EW: goto tatMv; IMRFY: $nSdJS = DecoratorHook::applyFilters("\x69\163\x5f\162\x65\163\x74\137\141\160\151\137\x72\x65\161\165\145\163\164", $nSdJS); goto pBEQT; OXbOh: if (!($i7N_J = ManipulateServer::getServer("\122\105\121\125\105\x53\124\137\125\x52\111"))) { goto Au8EW; } goto MtPU5; LeTuJ: return $nSdJS; goto Ff4j4; OYDn0: if ($nSdJS) { goto e9_yT; } goto OXbOh; MtPU5: $rbWrz = trailingslashit(rest_get_url_prefix()); goto c024c; JGC21: $nSdJS = ManipulateWoocommerce::isRestAPIRequest(); goto OYDn0; tatMv: e9_yT: goto LeTuJ; Ff4j4: } public static function isFrontendRequest() : bool { return (!is_admin() || ManipulateAjax::isAjax()) && !DecoratorQuery::isDoingCron() && !self::isRestAPIRequest(); } public static function isAdminHtmlRequest() : bool { return is_admin() && !ManipulateAjax::isAjax(); } public static function getValue($LYNyn, $Ql_ZF = null) { global $wp_query; return ManipulateArray::get($wp_query, $LYNyn, $Ql_ZF); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Manipulate;
+
+use Pmpr\Common\Foundation\Decorator\DecoratorHook;
+use Pmpr\Common\Foundation\Decorator\DecoratorQuery;
+use Pmpr\Common\Foundation\Manipulate\Plugin\ManipulateWoocommerce;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
+
+class ManipulateQuery extends Manipulate
+{
+    
+    function cgquaaukmyeomgms() : bool
+    {
+        return DecoratorQuery::cgquaaukmyeomgms() || self::cmaecekuqkwmemms("\104\x4f\x49\116\107\x5f\103\122\x4f\x4e");
+    }
+    
+    public static function aqwquwewocyewasw() : bool
+    {
+        goto iigikgyaeuikoggm;
+        iigikgyaeuikoggm:
+        $uwqkkwmiiumuukoa = ManipulateWoocommerce::aqwquwewocyewasw();
+        goto soqqkwceaykieigm;
+        auqwakoacamemaaw:
+        qmuwqwawwwwiaiyq:
+        goto uqsggeawaemaocua;
+        sccsewaywmwqoikg:
+        if (!($xeciwimgioieayek = ManipulateServer::giiecckwoyiawoyy("\122\x45\x51\125\105\x53\124\137\x55\122\111"))) {
+            goto eaigiqugoyomawia;
+        }
+        goto aygawequkeicqqkc;
+        soqqkwceaykieigm:
+        if ($uwqkkwmiiumuukoa) {
+            goto qmuwqwawwwwiaiyq;
+        }
+        goto sccsewaywmwqoikg;
+        aygawequkeicqqkc:
+        $yuwymayicwwqiske = trailingslashit(rest_get_url_prefix());
+        goto qyegguguqsoeccia;
+        qyegguguqsoeccia:
+        $uwqkkwmiiumuukoa = false !== strpos($xeciwimgioieayek, $yuwymayicwwqiske);
+        goto oguoauieggcougge;
+        uqsggeawaemaocua:
+        return $uwqkkwmiiumuukoa;
+        goto okuwiumssgqqaggm;
+        gmossqyimoswkoms:
+        eaigiqugoyomawia:
+        goto auqwakoacamemaaw;
+        oguoauieggcougge:
+        $uwqkkwmiiumuukoa = DecoratorHook::sscegwueamckwmcy("\151\x73\x5f\x72\x65\x73\x74\137\x61\160\151\x5f\x72\145\161\x75\145\x73\164", $uwqkkwmiiumuukoa);
+        goto gmossqyimoswkoms;
+        okuwiumssgqqaggm:
+    }
+    
+    public static function eewqyocggsagyuis() : bool
+    {
+        return (!is_admin() || ManipulateAjax::mcgoysmkqsqooceq()) && !DecoratorQuery::cgquaaukmyeomgms() && !self::aqwquwewocyewasw();
+    }
+    
+    public static function euqowsuwmgokuqqo() : bool
+    {
+        return is_admin() && !ManipulateAjax::mcgoysmkqsqooceq();
+    }
+    
+    public static function qooeaookuemoqecm($oaukocmsckciqaok, $ggauoeuaesiymgee = null)
+    {
+        global $wp_query;
+        return ManipulateArray::get($wp_query, $oaukocmsckciqaok, $ggauoeuaesiymgee);
+    }
+}

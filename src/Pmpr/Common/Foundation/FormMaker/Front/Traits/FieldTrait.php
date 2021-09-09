@@ -1,2 +1,110 @@
 <?php
- namespace Pmpr\Common\Foundation\FormMaker\Front\Traits; use Pmpr\Common\Foundation\FormMaker\Front\Field as Fields; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString; trait FieldTrait { public static function getEmptyNonce() : Fields\Html { goto ns7vy; bBdtF: return $SzEyC; goto bixy0; NRHpE: $SzEyC->addClass("\156\157\x6e\143\x65\x2d\x63\157\x6e\164\x61\x69\156\x65\x72"); goto bBdtF; ns7vy: $SzEyC = new Fields\Html("\x6e\157\156\143\x65\137" . ManipulateString::uniqid(3)); goto NRHpE; bixy0: } public static function getHtmlField($CDV1j = null) : Fields\Html { goto rXmwv; bwJyG: return new Fields\Html($CDV1j); goto tjPAk; rXmwv: if ($CDV1j) { goto Xt0ou; } goto HmzlL; tob7T: Xt0ou: goto bwJyG; HmzlL: $CDV1j = "\x68\x74\x6d\x6c\x5f" . ManipulateString::uniqid(3); goto tob7T; tjPAk: } public static function getHeaderField(?string $hTPi6 = null) : Fields\Header { return new Fields\Header("\x68\x65\x61\x64\x65\x72\137" . ManipulateString::uniqid(3), $hTPi6); } public static function getNonceField(?string $vPl9z, ?string $KcJWJ) : Fields\Nonce { return new Fields\Nonce("\x6e\157\x6e\x63\145\137" . ManipulateString::uniqid(3), $vPl9z, $KcJWJ); } public static function getButtonField(string $CDV1j, string $RW9QB = null) : Fields\Button { return new Fields\Button($CDV1j, $RW9QB); } public static function getSubmitField(string $CDV1j, ?string $RW9QB = null) : Fields\Submit { return new Fields\Submit($CDV1j, $RW9QB); } public static function getHiddenField(string $CDV1j, ?string $yjbyt = null) : Fields\Hidden { return new Fields\Hidden($CDV1j, $yjbyt); } public static function getTextField(string $CDV1j, ?string $RW9QB = null, ?string $Ym4v7 = null) : Fields\Text { return new Fields\Text($CDV1j, $RW9QB, $Ym4v7); } public static function getRadioField(string $CDV1j, ?string $RW9QB = null, ?string $Ym4v7 = null) : Fields\Radio { return new Fields\Radio($CDV1j, $RW9QB, $Ym4v7); } public static function getDatepickerField($CDV1j, string $RW9QB = null, string $Ym4v7 = null) : Fields\Datepicker { return new Fields\Datepicker($CDV1j, $RW9QB, $Ym4v7); } public static function getSelectField(string $CDV1j, ?string $RW9QB = null, ?string $Ym4v7 = null) : Fields\Select { return new Fields\Select($CDV1j, $RW9QB, $Ym4v7); } public static function getTextareaField(string $CDV1j, ?string $RW9QB = null, ?string $Ym4v7 = null) : Fields\Textarea { return new Fields\Textarea($CDV1j, $RW9QB, $Ym4v7); } public static function getCollectionField(string $CDV1j, string $RW9QB = null, string $Ym4v7 = null) : Fields\Collection { return new Fields\Collection($CDV1j, $RW9QB, $Ym4v7); } public static function getTextButtonField(string $CDV1j, ?string $RW9QB = null, ?string $Ym4v7 = null) : Fields\TextButton { return new Fields\TextButton($CDV1j, $RW9QB, $Ym4v7); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\FormMaker\Front\Traits;
+
+use Pmpr\Common\Foundation\FormMaker\Front\Field as Fields;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString;
+
+trait FieldTrait
+{
+    
+    public static function uikcsmyiqacmyoau() : Fields\Html
+    {
+        goto ssuaiecwgwieuugg;
+        eyooyicsiemqsguk:
+        return $nsmgceoqaqogqmuw;
+        goto kuqysugeaoqosigi;
+        ssuaiecwgwieuugg:
+        $nsmgceoqaqogqmuw = new Fields\Html("\x6e\157\156\143\145\x5f" . ManipulateString::uniqid(3));
+        goto qgckaaawkwimwegg;
+        qgckaaawkwimwegg:
+        $nsmgceoqaqogqmuw->qigsyyqgewgskemg("\156\x6f\156\x63\145\x2d\143\157\x6e\x74\x61\x69\x6e\x65\162");
+        goto eyooyicsiemqsguk;
+        kuqysugeaoqosigi:
+    }
+    
+    public static function aikamsoikcwsewac($aokagokqyuysuksm = null) : Fields\Html
+    {
+        goto geyqommgwmggqccq;
+        geyqommgwmggqccq:
+        if ($aokagokqyuysuksm) {
+            goto wwggwoqkiogsgsuy;
+        }
+        goto quskcgyyawkiiqoi;
+        quskcgyyawkiiqoi:
+        $aokagokqyuysuksm = "\150\x74\155\154\x5f" . ManipulateString::uniqid(3);
+        goto yquuyysqcawssmik;
+        cocmuyqusmyqugik:
+        return new Fields\Html($aokagokqyuysuksm);
+        goto kgusyguuagwuwmga;
+        yquuyysqcawssmik:
+        wwggwoqkiogsgsuy:
+        goto cocmuyqusmyqugik;
+        kgusyguuagwuwmga:
+    }
+    
+    public static function wowyaacgaccyeici(?string $meqocwsecsywiiqs = null) : Fields\Header
+    {
+        return new Fields\Header("\150\x65\x61\144\145\162\x5f" . ManipulateString::uniqid(3), $meqocwsecsywiiqs);
+    }
+    
+    public static function ewgquygaowykwacc(?string $ymqmyyeuycgmigyo, ?string $aiamqeawckcsuaou) : Fields\Nonce
+    {
+        return new Fields\Nonce("\156\157\x6e\143\x65\137" . ManipulateString::uniqid(3), $ymqmyyeuycgmigyo, $aiamqeawckcsuaou);
+    }
+    
+    public static function qoeiescseggagsqs(string $aokagokqyuysuksm, string $pkyyagewkiyckmwy = null) : Fields\Button
+    {
+        return new Fields\Button($aokagokqyuysuksm, $pkyyagewkiyckmwy);
+    }
+    
+    public static function ucmasmuimegwqeuk(string $aokagokqyuysuksm, ?string $pkyyagewkiyckmwy = null) : Fields\Submit
+    {
+        return new Fields\Submit($aokagokqyuysuksm, $pkyyagewkiyckmwy);
+    }
+    
+    public static function cwiuiiakukcsaakw(string $aokagokqyuysuksm, ?string $eqgoocgaqwqcimie = null) : Fields\Hidden
+    {
+        return new Fields\Hidden($aokagokqyuysuksm, $eqgoocgaqwqcimie);
+    }
+    
+    public static function ymuegqgyuagyucws(string $aokagokqyuysuksm, ?string $pkyyagewkiyckmwy = null, ?string $mkqqqewsokcswckc = null) : Fields\Text
+    {
+        return new Fields\Text($aokagokqyuysuksm, $pkyyagewkiyckmwy, $mkqqqewsokcswckc);
+    }
+    
+    public static function yyuwuqsiucweeoue(string $aokagokqyuysuksm, ?string $pkyyagewkiyckmwy = null, ?string $mkqqqewsokcswckc = null) : Fields\Radio
+    {
+        return new Fields\Radio($aokagokqyuysuksm, $pkyyagewkiyckmwy, $mkqqqewsokcswckc);
+    }
+    
+    public static function cmmsoiggwwuyqqks($aokagokqyuysuksm, string $pkyyagewkiyckmwy = null, string $mkqqqewsokcswckc = null) : Fields\Datepicker
+    {
+        return new Fields\Datepicker($aokagokqyuysuksm, $pkyyagewkiyckmwy, $mkqqqewsokcswckc);
+    }
+    
+    public static function mccagaqeagiikkec(string $aokagokqyuysuksm, ?string $pkyyagewkiyckmwy = null, ?string $mkqqqewsokcswckc = null) : Fields\Select
+    {
+        return new Fields\Select($aokagokqyuysuksm, $pkyyagewkiyckmwy, $mkqqqewsokcswckc);
+    }
+    
+    public static function uouyygwcgsmygaee(string $aokagokqyuysuksm, ?string $pkyyagewkiyckmwy = null, ?string $mkqqqewsokcswckc = null) : Fields\Textarea
+    {
+        return new Fields\Textarea($aokagokqyuysuksm, $pkyyagewkiyckmwy, $mkqqqewsokcswckc);
+    }
+    
+    public static function qqmgmgasauucoago(string $aokagokqyuysuksm, string $pkyyagewkiyckmwy = null, string $mkqqqewsokcswckc = null) : Fields\Collection
+    {
+        return new Fields\Collection($aokagokqyuysuksm, $pkyyagewkiyckmwy, $mkqqqewsokcswckc);
+    }
+    
+    public static function owsksqyywuckswgo(string $aokagokqyuysuksm, ?string $pkyyagewkiyckmwy = null, ?string $mkqqqewsokcswckc = null) : Fields\TextButton
+    {
+        return new Fields\TextButton($aokagokqyuysuksm, $pkyyagewkiyckmwy, $mkqqqewsokcswckc);
+    }
+}

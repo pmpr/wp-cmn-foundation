@@ -1,2 +1,57 @@
 <?php
- namespace Pmpr\Common\Foundation\FormMaker\Admin\Field; class Textarea extends Text { protected bool $isCode = false; public function __construct(?string $CDV1j, ?string $vPl9z, ?string $Ym4v7 = null) { parent::__construct($CDV1j, $vPl9z, $Ym4v7, "\164\x65\170\164\x61\162\x65\x61"); } public function setRows($BB5tA) : self { $this->replaceAttribute("\162\157\x77\163", (string) $BB5tA); return $this; } public function isCode() : ?bool { return $this->isCode; } public function setForCode(bool $Qb7rH) : self { $this->isCode = $Qb7rH; return $this; } public function beforeToArray(array $DrjAW = []) : void { goto XkQTI; XkQTI: parent::beforeToArray($DrjAW); goto ZYGYa; d6iCs: $this->setType("\x74\145\x78\x74\x61\162\x65\x61\137\143\x6f\x64\145"); goto JwBr1; ZYGYa: if (!$this->isCode) { goto bjsnn; } goto d6iCs; JwBr1: bjsnn: goto NB9I3; NB9I3: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\FormMaker\Admin\Field;
+
+
+class Textarea extends Text
+{
+    
+    protected bool $isCode = false;
+    
+    public function __construct(?string $aokagokqyuysuksm, ?string $ymqmyyeuycgmigyo, ?string $mkqqqewsokcswckc = null)
+    {
+        parent::__construct($aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc, "\x74\145\170\x74\x61\x72\145\141");
+    }
+    
+    public function qsecygiycssgacqs($essikcmqiyqaqoaq) : self
+    {
+        $this->qcgocuceocquqcuw("\162\x6f\x77\163", (string) $essikcmqiyqaqoaq);
+        return $this;
+    }
+    
+    public function ocoegkcaqcuqgack() : ?bool
+    {
+        return $this->isCode;
+    }
+    
+    public function iuukamimsgmkcqoa(bool $ocoegkcaqcuqgack) : self
+    {
+        $this->isCode = $ocoegkcaqcuqgack;
+        return $this;
+    }
+    
+    public function qgsieamsswkgysow(array $ywmkwiwkosakssii = []) : void
+    {
+        goto ausiueiaqeuyacoa;
+        ausiueiaqeuyacoa:
+        parent::qgsieamsswkgysow($ywmkwiwkosakssii);
+        goto gusuiauayocsggww;
+        gusuiauayocsggww:
+        if (!$this->isCode) {
+            goto muiyqcciawymsusc;
+        }
+        goto weuacusmsswqqmws;
+        qausweuwkqqoqguo:
+        muiyqcciawymsusc:
+        goto wwksckauqugwqqww;
+        weuacusmsswqqmws:
+        $this->aseocggwwegcmqes("\x74\145\170\x74\x61\162\x65\141\137\143\157\144\x65");
+        goto qausweuwkqqoqguo;
+        wwksckauqugwqqww:
+    }
+}

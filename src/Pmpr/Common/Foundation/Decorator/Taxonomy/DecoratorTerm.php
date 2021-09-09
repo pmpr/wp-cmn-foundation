@@ -1,2 +1,60 @@
 <?php
- namespace Pmpr\Common\Foundation\Decorator\Taxonomy; use WP_Error; use WP_Term; class DecoratorTerm extends Common { public static function getList($DrjAW = []) { return get_terms($DrjAW); } public static function addMeta($OnhXQ, $bUHaw, $yjbyt) { return add_term_meta($OnhXQ, $bUHaw, $yjbyt); } public static function getLink($OnhXQ, $fvLkx = '') { return get_term_link($OnhXQ, $fvLkx); } public static function updateMeta($OnhXQ, $bUHaw, $yjbyt, $Daf1U = '') { return update_term_meta($OnhXQ, $bUHaw, $yjbyt, $Daf1U); } public static function get($OnhXQ = null, $fvLkx = '') { return get_term($OnhXQ, $fvLkx); } public static function deleteMeta($OnhXQ, $bUHaw, $yjbyt = '') { return delete_term_meta($OnhXQ, $bUHaw, $yjbyt); } public static function getMeta($OnhXQ, $bUHaw = '', $R9bYZ = false) { return get_term_meta($OnhXQ, $bUHaw, $R9bYZ); } public static function getEditLink($OnhXQ, $fvLkx = '', $j56jL = '') { return get_edit_term_link($OnhXQ, $fvLkx, $j56jL); } public static function getBy($mi3kO, $yjbyt, $fvLkx = '', $NnlHI = self::OBJECT, $Te6M8 = "\x72\141\x77") { return get_term_by($mi3kO, $yjbyt, $fvLkx, $NnlHI, $Te6M8); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Decorator\Taxonomy;
+
+use WP_Error;
+use WP_Term;
+
+class DecoratorTerm extends Common
+{
+    
+    public static function ciugwooasaqcywas($ywmkwiwkosakssii = [])
+    {
+        return get_terms($ywmkwiwkosakssii);
+    }
+    
+    public static function giwmekimakcaawsq($iwewcwusemqaiggk, $uusmaiomayssaecw, $eqgoocgaqwqcimie)
+    {
+        return add_term_meta($iwewcwusemqaiggk, $uusmaiomayssaecw, $eqgoocgaqwqcimie);
+    }
+    
+    public static function qmgcisuuikgmqcsu($iwewcwusemqaiggk, $kesssewsiegssiya = '')
+    {
+        return get_term_link($iwewcwusemqaiggk, $kesssewsiegssiya);
+    }
+    
+    public static function ksmqawcowkmegigw($iwewcwusemqaiggk, $uusmaiomayssaecw, $eqgoocgaqwqcimie, $swwmymiaiosiyqis = '')
+    {
+        return update_term_meta($iwewcwusemqaiggk, $uusmaiomayssaecw, $eqgoocgaqwqcimie, $swwmymiaiosiyqis);
+    }
+    
+    public static function get($iwewcwusemqaiggk = null, $kesssewsiegssiya = '')
+    {
+        return get_term($iwewcwusemqaiggk, $kesssewsiegssiya);
+    }
+    
+    public static function smqukgcyacswysqa($iwewcwusemqaiggk, $uusmaiomayssaecw, $eqgoocgaqwqcimie = '')
+    {
+        return delete_term_meta($iwewcwusemqaiggk, $uusmaiomayssaecw, $eqgoocgaqwqcimie);
+    }
+    
+    public static function igawqaomowicuayw($iwewcwusemqaiggk, $uusmaiomayssaecw = '', $cuyooiakswegosog = false)
+    {
+        return get_term_meta($iwewcwusemqaiggk, $uusmaiomayssaecw, $cuyooiakswegosog);
+    }
+    
+    public static function yyykkcyiksewsoqy($iwewcwusemqaiggk, $kesssewsiegssiya = '', $sqeykgyoooqysmca = '')
+    {
+        return get_edit_term_link($iwewcwusemqaiggk, $kesssewsiegssiya, $sqeykgyoooqysmca);
+    }
+    
+    public static function woimamkkeyoyauoa($aiowsaccomcoikus, $eqgoocgaqwqcimie, $kesssewsiegssiya = '', $aqykuigiuwmmcieu = self::OBJECT, $tsuauommsquiesmk = "\162\141\x77")
+    {
+        return get_term_by($aiowsaccomcoikus, $eqgoocgaqwqcimie, $kesssewsiegssiya, $aqykuigiuwmmcieu, $tsuauommsquiesmk);
+    }
+}

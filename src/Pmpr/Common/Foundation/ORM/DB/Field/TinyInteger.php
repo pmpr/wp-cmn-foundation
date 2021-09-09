@@ -1,2 +1,18 @@
 <?php
- namespace Pmpr\Common\Foundation\ORM\DB\Field; class TinyInteger extends Field { public function __construct(string $CDV1j, ?string $hTPi6 = null) { parent::__construct("\x74\151\156\171\111\156\164\x65\147\x65\x72", $CDV1j, $hTPi6); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\ORM\DB\Field;
+
+
+class TinyInteger extends Field
+{
+    
+    public function __construct(string $aokagokqyuysuksm, ?string $meqocwsecsywiiqs = null)
+    {
+        parent::__construct("\x74\x69\156\171\111\x6e\x74\145\x67\145\162", $aokagokqyuysuksm, $meqocwsecsywiiqs);
+    }
+}

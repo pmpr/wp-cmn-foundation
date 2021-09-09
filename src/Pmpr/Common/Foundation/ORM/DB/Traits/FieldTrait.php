@@ -1,2 +1,74 @@
 <?php
- namespace Pmpr\Common\Foundation\ORM\DB\Traits; use Pmpr\Common\Foundation\ORM\DB\Field as Fields; trait FieldTrait { public function getEnumField(string $CDV1j, array $sJYGe) : Fields\Enumeration { return new Fields\Enumeration($CDV1j, $sJYGe); } public function getJsonField(string $CDV1j) : Fields\Json { return new Fields\Json($CDV1j); } public function getTextField(string $CDV1j) : Fields\Text { return new Fields\Text($CDV1j); } public function getFileField(string $CDV1j) : Fields\File { return new Fields\File($CDV1j); } public function getStringField(string $CDV1j) : Fields\Str { return new Fields\Str($CDV1j); } public function getIntegerField(string $CDV1j) : Fields\Integer { return new Fields\Integer($CDV1j); } public function getForeignField(string $CDV1j) : Fields\Foreign { return new Fields\Foreign($CDV1j); } public function getBooleanField(string $CDV1j) : Fields\Boolean { return new Fields\Boolean($CDV1j); } public function getBigIntField(string $CDV1j) : Fields\BigInteger { return new Fields\BigInteger($CDV1j); } public function getDateTimeField(string $CDV1j) : Fields\DateTime { return new Fields\DateTime($CDV1j); } public function getTimestampField(string $CDV1j) : Fields\Timestamp { return new Fields\Timestamp($CDV1j); } public function getTinyIntegerField(string $CDV1j) : Fields\TinyInteger { return new Fields\TinyInteger($CDV1j); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\ORM\DB\Traits;
+
+use Pmpr\Common\Foundation\ORM\DB\Field as Fields;
+
+trait FieldTrait
+{
+    
+    public function owgikiusoocuqqgo(string $aokagokqyuysuksm, array $qiouiwasaauyaaue) : Fields\Enumeration
+    {
+        return new Fields\Enumeration($aokagokqyuysuksm, $qiouiwasaauyaaue);
+    }
+    
+    public function qagesioaeoaacoea(string $aokagokqyuysuksm) : Fields\Json
+    {
+        return new Fields\Json($aokagokqyuysuksm);
+    }
+    
+    public function ymuegqgyuagyucws(string $aokagokqyuysuksm) : Fields\Text
+    {
+        return new Fields\Text($aokagokqyuysuksm);
+    }
+    
+    public function kimoeccokowuaiic(string $aokagokqyuysuksm) : Fields\File
+    {
+        return new Fields\File($aokagokqyuysuksm);
+    }
+    
+    public function qcyqgwuuymykkcke(string $aokagokqyuysuksm) : Fields\Str
+    {
+        return new Fields\Str($aokagokqyuysuksm);
+    }
+    
+    public function geqyygqiwiqusekc(string $aokagokqyuysuksm) : Fields\Integer
+    {
+        return new Fields\Integer($aokagokqyuysuksm);
+    }
+    
+    public function ggiieomioscuigco(string $aokagokqyuysuksm) : Fields\Foreign
+    {
+        return new Fields\Foreign($aokagokqyuysuksm);
+    }
+    
+    public function kwwgyikigsyesgoo(string $aokagokqyuysuksm) : Fields\Boolean
+    {
+        return new Fields\Boolean($aokagokqyuysuksm);
+    }
+    
+    public function mekgiwmysqksocmy(string $aokagokqyuysuksm) : Fields\BigInteger
+    {
+        return new Fields\BigInteger($aokagokqyuysuksm);
+    }
+    
+    public function wyauigyyoceiaygw(string $aokagokqyuysuksm) : Fields\DateTime
+    {
+        return new Fields\DateTime($aokagokqyuysuksm);
+    }
+    
+    public function ceqawoymcymsaeqo(string $aokagokqyuysuksm) : Fields\Timestamp
+    {
+        return new Fields\Timestamp($aokagokqyuysuksm);
+    }
+    
+    public function mwgowkwweqssomgy(string $aokagokqyuysuksm) : Fields\TinyInteger
+    {
+        return new Fields\TinyInteger($aokagokqyuysuksm);
+    }
+}

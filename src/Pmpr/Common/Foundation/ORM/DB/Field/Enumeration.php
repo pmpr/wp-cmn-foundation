@@ -1,2 +1,19 @@
 <?php
- namespace Pmpr\Common\Foundation\ORM\DB\Field; class Enumeration extends Field { public function __construct(string $CDV1j, array $sJYGe, ?string $hTPi6 = null) { parent::__construct("\145\x6e\165\155", $CDV1j, $hTPi6); $this->options = $sJYGe; } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\ORM\DB\Field;
+
+
+class Enumeration extends Field
+{
+    
+    public function __construct(string $aokagokqyuysuksm, array $qiouiwasaauyaaue, ?string $meqocwsecsywiiqs = null)
+    {
+        parent::__construct("\145\x6e\165\155", $aokagokqyuysuksm, $meqocwsecsywiiqs);
+        $this->options = $qiouiwasaauyaaue;
+    }
+}

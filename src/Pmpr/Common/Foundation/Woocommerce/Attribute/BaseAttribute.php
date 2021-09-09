@@ -1,2 +1,135 @@
 <?php
- namespace Pmpr\Common\Foundation\Woocommerce\Attribute; use Pmpr\Common\Foundation\FormMaker\Admin\Field\Field; use Pmpr\Common\Foundation\Manipulate\ManipulateServer; use Pmpr\Common\Foundation\Manipulate\Plugin\ManipulateWoocommerce; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; use WC_Product_Attribute; abstract class BaseAttribute extends Common { protected array $fields = []; protected ?string $name = null; public function addFilters() { $this->addFilter("\x77\157\157\x63\x6f\155\x6d\145\162\x63\x65\137\141\x74\x74\162\x69\x62\165\x74\x65\137\x6f\x75\164\160\165\164", [$this, "\141\x74\x74\162\x69\142\x75\x74\145\117\x75\x74\x70\165\164"], 99, 4); parent::addFilters(); } public function getName() : ?string { return $this->name; } public function getFields($product = null) : array { return (array) $this->applyFilters($this->generateHook("\x77\157\157\x63\157\x6d\x6d\145\162\143\145\137{$this->getName()}\x5f\141\x74\164\162\x69\142\x75\164\145\x5f\x63\x75\163\x74\157\155\x5f\x66\x69\145\154\x64\163"), $this->fields, $product); } public function addField(Field $mi3kO) : self { $this->fields[$mi3kO->getId()] = $mi3kO; return $this; } public function getProduct($CDV1j = null) : int { goto pvKC0; GH5Hj: NBsJT: goto kg55T; kg55T: return absint($product); goto x1SUq; fZpK8: if (!(!$product || $CDV1j)) { goto NBsJT; } goto JpaES; pvKC0: $product = ManipulateServer::getPost("\x70\x6f\x73\x74\x5f\151\x64"); goto fZpK8; JpaES: $product = ManipulateWoocommerce::getProductId($CDV1j); goto GH5Hj; x1SUq: } public function attributeOutput($NnlHI, $chQYT, $product) { goto q7woU; q7woU: $product = $this->getProduct($product); goto eD_6t; eD_6t: if (!$chQYT instanceof WC_Product_Attribute) { goto KizVA; } goto zhkJy; JwOQm: foreach ($F9q7E as $bUHaw => $mi3kO) { goto G7gL5; oRJid: $bUHaw = $mi3kO->getId(); goto K4Rv3; VvReR: if (!is_numeric($bUHaw)) { goto C17jC; } goto oRJid; aKPGx: if (ManipulateArray::get($NnlHI, $bUHaw)) { goto BN9x4; } goto T2e9T; f9_tc: BN9x4: goto OTxsT; T2e9T: $NnlHI[$bUHaw] = $this->getValue($mi3kO->getId(), $this->getAttributeId($chQYT)); goto f9_tc; xjvni: wQe1q: goto hQnUt; K4Rv3: C17jC: goto aKPGx; OTxsT: Cem3i: goto xjvni; G7gL5: if (!$mi3kO instanceof Field) { goto Cem3i; } goto VvReR; hQnUt: } goto LnyYE; EMUP2: return $NnlHI; goto tO_oc; LnyYE: bEPc2: goto Jwyp5; zhkJy: $F9q7E = $this->getFields($product); goto JwOQm; Jwyp5: KizVA: goto EMUP2; tO_oc: } public abstract function getValue($O2gvr, $chQYT); public abstract function getAttributeId($chQYT) : ?string; }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Woocommerce\Attribute;
+
+use Pmpr\Common\Foundation\FormMaker\Admin\Field\Field;
+use Pmpr\Common\Foundation\Manipulate\ManipulateServer;
+use Pmpr\Common\Foundation\Manipulate\Plugin\ManipulateWoocommerce;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
+use WC_Product_Attribute;
+
+abstract class BaseAttribute extends Common
+{
+    
+    protected array $fields = [];
+    
+    protected ?string $name = null;
+    public function kgquecmsgcouyaya()
+    {
+        $this->cecaguuoecmccuse("\x77\157\x6f\x63\x6f\155\155\145\x72\x63\145\x5f\x61\164\164\x72\x69\142\165\x74\x65\x5f\157\x75\164\160\x75\164", [$this, "\x6e\x6f\161\165\155\161\x61\161\x69\163\155\x6d\153\x61\x63\x75"], 99, 4);
+        parent::kgquecmsgcouyaya();
+    }
+    
+    public function aakmagwggmkoiiyu() : ?string
+    {
+        return $this->name;
+    }
+    
+    public function ugmceccgwaaaigiy($product = null) : array
+    {
+        return (array) $this->sscegwueamckwmcy($this->ygyygikyocoymgaw("\x77\x6f\x6f\x63\157\155\155\145\x72\x63\x65\137{$this->aakmagwggmkoiiyu()}\x5f\x61\x74\164\x72\151\142\x75\164\x65\137\143\x75\163\x74\157\155\x5f\146\x69\145\x6c\x64\x73"), $this->fields, $product);
+    }
+    
+    public function mkksewyosgeumwsa(Field $aiowsaccomcoikus) : self
+    {
+        $this->fields[$aiowsaccomcoikus->mwikyscisascoeea()] = $aiowsaccomcoikus;
+        return $this;
+    }
+    
+    public function aqasygcsqysmmyke($aokagokqyuysuksm = null) : int
+    {
+        goto lwkkgmcgkowgygcs;
+        lwkkgmcgkowgygcs:
+        $product = ManipulateServer::ayueggmoqeeukqmq("\x70\157\163\164\x5f\151\144");
+        goto ueyqgegieiwkocck;
+        ickoqwmqsgowyscy:
+        uoowsoawqkggioeo:
+        goto cwgsuaukyieoswoq;
+        ueyqgegieiwkocck:
+        if (!(!$product || $aokagokqyuysuksm)) {
+            goto uoowsoawqkggioeo;
+        }
+        goto yukscyeaqukseeim;
+        cwgsuaukyieoswoq:
+        return absint($product);
+        goto uwoawkimmaqcwqcq;
+        yukscyeaqukseeim:
+        $product = ManipulateWoocommerce::omwkqcuwceweymcc($aokagokqyuysuksm);
+        goto ickoqwmqsgowyscy;
+        uwoawkimmaqcwqcq:
+    }
+    
+    public function noqumqaqismmkacu($aqykuigiuwmmcieu, $ymkomoccmymcoiea, $product)
+    {
+        goto usukaqsqeowqkwwu;
+        wukeekgkakowukck:
+        ayuwgkkummcqqesk:
+        goto wwgssoakwoscwoss;
+        ukaumyigguemyqmg:
+        if (!$ymkomoccmymcoiea instanceof WC_Product_Attribute) {
+            goto weciiuggqamwweai;
+        }
+        goto mekmkiaykamiugmo;
+        mekmkiaykamiugmo:
+        $ikgwqyuyckaewsow = $this->ugmceccgwaaaigiy($product);
+        goto okieooymmiqqwsui;
+        okieooymmiqqwsui:
+        foreach ($ikgwqyuyckaewsow as $uusmaiomayssaecw => $aiowsaccomcoikus) {
+            goto ismswigsaeymicgu;
+            uaeqweeeyaoceeae:
+            gaqiaugiyyuoaywe:
+            goto ismmoaqwqiyscccu;
+            ismswigsaeymicgu:
+            if (!$aiowsaccomcoikus instanceof Field) {
+                goto gaqiaugiyyuoaywe;
+            }
+            goto syuuameqwoymyswo;
+            syuuameqwoymyswo:
+            if (!is_numeric($uusmaiomayssaecw)) {
+                goto mouaeysyaawwqsmq;
+            }
+            goto kykgeuicqicmuucg;
+            ismmoaqwqiyscccu:
+            eqgkqikoqkaiuocm:
+            goto seymakqosammeimy;
+            oqmwiucmyoiwciws:
+            $aqykuigiuwmmcieu[$uusmaiomayssaecw] = $this->qooeaookuemoqecm($aiowsaccomcoikus->mwikyscisascoeea(), $this->uqsmmauywmsuqais($ymkomoccmymcoiea));
+            goto sqummycmewomisus;
+            sqummycmewomisus:
+            gsiaweqgymagyokg:
+            goto uaeqweeeyaoceeae;
+            kykgeuicqicmuucg:
+            $uusmaiomayssaecw = $aiowsaccomcoikus->mwikyscisascoeea();
+            goto gqaiosgasmiekmma;
+            gqaiosgasmiekmma:
+            mouaeysyaawwqsmq:
+            goto eeyukwscccmigmuq;
+            eeyukwscccmigmuq:
+            if (ManipulateArray::get($aqykuigiuwmmcieu, $uusmaiomayssaecw)) {
+                goto gsiaweqgymagyokg;
+            }
+            goto oqmwiucmyoiwciws;
+            seymakqosammeimy:
+        }
+        goto wukeekgkakowukck;
+        komaikgkmaeoescu:
+        return $aqykuigiuwmmcieu;
+        goto syeosgmcsoykgmoi;
+        wwgssoakwoscwoss:
+        weciiuggqamwweai:
+        goto komaikgkmaeoescu;
+        usukaqsqeowqkwwu:
+        $product = $this->aqasygcsqysmmyke($product);
+        goto ukaumyigguemyqmg;
+        syeosgmcsoykgmoi:
+    }
+    
+    public abstract function qooeaookuemoqecm($qqgocisyeuuqmcwc, $ymkomoccmymcoiea);
+    
+    public abstract function uqsmmauywmsuqais($ymkomoccmymcoiea) : ?string;
+}

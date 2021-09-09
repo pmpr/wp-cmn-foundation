@@ -1,2 +1,110 @@
 <?php
- namespace Pmpr\Common\Foundation\Manipulate; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; class ManipulateAjax extends Manipulate { public static function isAjax() : bool { goto ta5mp; TWMDx: if (function_exists("\151\163\x5f\141\152\x61\x78") && is_ajax()) { goto Bgkpd; } goto tI7wF; rbHX8: $gNQWu = true; goto ypL2S; CGhpi: lLH8Z: goto bpc9s; tI7wF: if (!(ManipulateArray::get($_SERVER, "\110\x54\x54\x50\137\130\x5f\122\x45\x51\x55\x45\x53\124\x45\x44\137\127\x49\x54\110") == "\x58\x4d\x4c\x48\164\164\160\x52\x65\161\x75\145\163\x74" || self::getConstant("\104\x4f\x49\x4e\107\137\101\x4a\101\x58"))) { goto lLH8Z; } goto ofFDt; bpc9s: goto N8_r0; goto kVqB7; ofFDt: $gNQWu = true; goto CGhpi; SaC0r: utxsF: goto cu8EV; y_UW8: goto utxsF; goto c0AvN; kVqB7: Bgkpd: goto rbHX8; ypL2S: N8_r0: goto y_UW8; ta5mp: $gNQWu = false; goto T1N54; T1N54: if (function_exists("\167\160\x5f\x64\157\x69\156\x67\137\141\x6a\141\170") && wp_doing_ajax()) { goto cI9_I; } goto TWMDx; cu8EV: return $gNQWu; goto WJYVh; ZKkUj: $gNQWu = true; goto SaC0r; c0AvN: cI9_I: goto ZKkUj; WJYVh: } public static function getURL() : ?string { return admin_url("\141\x64\x6d\x69\x6e\55\141\152\141\170\56\x70\x68\160"); } public static function sendResponse($k4mxF, $zwzt3 = true) { goto MRkxF; Az7dQ: ip5ni: goto WSk9d; MRkxF: if ($zwzt3) { goto ip5ni; } goto DwU2d; axZkK: iARzk: goto nBHN1; lbp3Y: goto iARzk; goto Az7dQ; nBHN1: return $k4mxF; goto pf_yN; DwU2d: wp_send_json_error($k4mxF); goto lbp3Y; WSk9d: wp_send_json_success($k4mxF); goto axZkK; pf_yN: } public static function checkReferer($KcJWJ, $njb3f = "\x6e\157\x6e\143\145", $sUkif = false) { return check_ajax_referer($KcJWJ, $njb3f, $sUkif); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Manipulate;
+
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
+
+class ManipulateAjax extends Manipulate
+{
+    
+    public static function mcgoysmkqsqooceq() : bool
+    {
+        goto seqcuygkmogesgsw;
+        ooqyuwsmqcmmwiuy:
+        if (!(ManipulateArray::get($_SERVER, "\x48\x54\x54\x50\137\x58\x5f\x52\105\x51\x55\105\x53\124\105\104\137\x57\x49\124\110") == "\x58\115\x4c\110\x74\x74\x70\122\145\161\x75\145\x73\x74" || self::cmaecekuqkwmemms("\104\117\111\116\107\x5f\101\x4a\101\x58"))) {
+            goto cokuamakgaokeooy;
+        }
+        goto maiiaecisekgocgs;
+        aysowqiuocakwcic:
+        mooeqigccuskogqm:
+        goto rioiswicyaiaqscu;
+        seqcuygkmogesgsw:
+        $mcgoysmkqsqooceq = false;
+        goto ekqmseimucoqkuaa;
+        ikmgqgmecqcqumwg:
+        $mcgoysmkqsqooceq = true;
+        goto qycioskysmyisuaq;
+        yoooiiugiwuwomcg:
+        wyumwugwoycammog:
+        goto uugysiwkssgqqasy;
+        kegsswygcecmiumq:
+        cokuamakgaokeooy:
+        goto acoiommggkmcwoec;
+        acoiommggkmcwoec:
+        goto mooeqigccuskogqm;
+        goto yoooiiugiwuwomcg;
+        maiiaecisekgocgs:
+        $mcgoysmkqsqooceq = true;
+        goto kegsswygcecmiumq;
+        rioiswicyaiaqscu:
+        goto wiiegigayuiikwew;
+        goto suqqaiqcyikmwuak;
+        uicekgggkiwiyykk:
+        if (function_exists("\x69\x73\x5f\x61\x6a\x61\170") && is_ajax()) {
+            goto wyumwugwoycammog;
+        }
+        goto ooqyuwsmqcmmwiuy;
+        ekqmseimucoqkuaa:
+        if (function_exists("\x77\160\x5f\144\x6f\x69\156\147\x5f\141\152\x61\170") && wp_doing_ajax()) {
+            goto msswemwawesaoqgi;
+        }
+        goto uicekgggkiwiyykk;
+        qycioskysmyisuaq:
+        wiiegigayuiikwew:
+        goto wwmaagcmssuqyuyo;
+        wwmaagcmssuqyuyo:
+        return $mcgoysmkqsqooceq;
+        goto dasseuygmamimemo;
+        uugysiwkssgqqasy:
+        $mcgoysmkqsqooceq = true;
+        goto aysowqiuocakwcic;
+        suqqaiqcyikmwuak:
+        msswemwawesaoqgi:
+        goto ikmgqgmecqcqumwg;
+        dasseuygmamimemo:
+    }
+    
+    public static function oiucukewkckkwiqc() : ?string
+    {
+        return admin_url("\x61\x64\155\x69\156\55\x61\x6a\141\170\x2e\x70\150\x70");
+    }
+    
+    public static function imkyucqsciqykkee($uamcoiueqaamsqma, $kigowwqauiumummw = true)
+    {
+        goto gmssueaqqeomimkc;
+        eseukqeswwciauqo:
+        wp_send_json_error($uamcoiueqaamsqma);
+        goto isaumaiwsokyqgku;
+        ssgmgeyqauwowayi:
+        kecysscqgsiiqiuy:
+        goto kaewsesomywgaqya;
+        uwymkmkoccikuayq:
+        wp_send_json_success($uamcoiueqaamsqma);
+        goto ssgmgeyqauwowayi;
+        kaewsesomywgaqya:
+        return $uamcoiueqaamsqma;
+        goto eimkikcwmqgeaaik;
+        isaumaiwsokyqgku:
+        goto kecysscqgsiiqiuy;
+        goto wuoiuakueguccsic;
+        wuoiuakueguccsic:
+        gcuqqquokaqaacwk:
+        goto uwymkmkoccikuayq;
+        gmssueaqqeomimkc:
+        if ($kigowwqauiumummw) {
+            goto gcuqqquokaqaacwk;
+        }
+        goto eseukqeswwciauqo;
+        eimkikcwmqgeaaik:
+    }
+    
+    public static function wqsmsuyggkkyyocc($aiamqeawckcsuaou, $seauiwyeoycowegg = "\156\157\156\143\x65", $gqgoqaeswmcwagoi = false)
+    {
+        return check_ajax_referer($aiamqeawckcsuaou, $seauiwyeoycowegg, $gqgoqaeswmcwagoi);
+    }
+}

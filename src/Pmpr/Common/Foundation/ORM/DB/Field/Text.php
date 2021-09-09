@@ -1,2 +1,18 @@
 <?php
- namespace Pmpr\Common\Foundation\ORM\DB\Field; class Text extends Field { public function __construct(string $CDV1j, ?string $hTPi6 = null) { parent::__construct("\164\145\x78\164", $CDV1j, $hTPi6); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\ORM\DB\Field;
+
+
+class Text extends Field
+{
+    
+    public function __construct(string $aokagokqyuysuksm, ?string $meqocwsecsywiiqs = null)
+    {
+        parent::__construct("\x74\145\170\x74", $aokagokqyuysuksm, $meqocwsecsywiiqs);
+    }
+}

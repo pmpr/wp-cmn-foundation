@@ -1,2 +1,40 @@
 <?php
- namespace Pmpr\Common\Foundation\FormMaker\Front\Traits; use Pmpr\Common\Foundation\FormMaker\Front as Elements; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString; trait ElementTrait { public static function getFormElement(?string $CDV1j = null) : Elements\Form { return new Elements\Form($CDV1j); } public static function getDivElement(string $CDV1j = null) : Elements\Div { goto Q3cLV; opLpr: return new Elements\Div($CDV1j); goto eKEnq; Q3cLV: if ($CDV1j) { goto PqKGi; } goto aVBgJ; aVBgJ: $CDV1j = "\144\x69\x76\137" . ManipulateString::uniqid(3); goto DPY5j; DPY5j: PqKGi: goto opLpr; eKEnq: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\FormMaker\Front\Traits;
+
+use Pmpr\Common\Foundation\FormMaker\Front as Elements;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString;
+
+trait ElementTrait
+{
+    
+    public static function mmmemoswoaiewkes(?string $aokagokqyuysuksm = null) : Elements\Form
+    {
+        return new Elements\Form($aokagokqyuysuksm);
+    }
+    
+    public static function mecgagckeuagggyw(string $aokagokqyuysuksm = null) : Elements\Div
+    {
+        goto qoymuwcmemkoauao;
+        aukaaeuwkcigaeww:
+        $aokagokqyuysuksm = "\x64\x69\166\137" . ManipulateString::uniqid(3);
+        goto kuawumwakiqoeaau;
+        kwwiokmgeaeiqeus:
+        return new Elements\Div($aokagokqyuysuksm);
+        goto guowuoimowsseiua;
+        kuawumwakiqoeaau:
+        qeqocuqeecocsqak:
+        goto kwwiokmgeaeiqeus;
+        qoymuwcmemkoauao:
+        if ($aokagokqyuysuksm) {
+            goto qeqocuqeecocsqak;
+        }
+        goto aukaaeuwkcigaeww;
+        guowuoimowsseiua:
+    }
+}

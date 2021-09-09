@@ -1,2 +1,384 @@
 <?php
- namespace Pmpr\Common\Foundation\Traits; use Pmpr\Common\Foundation\Container\Storage; use Pmpr\Common\Foundation\Data\Component; use Pmpr\Common\Foundation\Decorator\DecoratorOption; use Pmpr\Common\Foundation\Manipulate\ManipulateFile; use Pmpr\Common\Foundation\Manipulate\ManipulateSetting; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString; use Pmpr\Common\Foundation\Template\Traits\TemplateTrait; trait ComponentTrait { use TemplateTrait; public final function registerComponent($ZRu7k) { goto KaCIM; KaCIM: Storage::addComponent($this, $ZRu7k); goto c9tBf; DqCvh: $this->registerPathForTemplatingEngine(); goto RI1fi; c9tBf: $this->loadTextDomain(); goto DqCvh; RI1fi: } public final function isComponentActive(string $vPl9z = null) : bool { goto Br0Xx; amMY0: dKVCR: goto gzH5m; zJ3CW: $czd3T = DecoratorOption::get("\x63\157\155\160\x6f\x6e\x65\156\x74\55{$vPl9z}", []); goto z1QFo; N84hS: WUzsY: goto WwG45; NG7N9: $vPl9z = $eY_VU->getDirectoryName(); goto hOYDs; hOYDs: iWoQb: goto N84hS; GjunE: if (!$eY_VU) { goto iWoQb; } goto NG7N9; Br0Xx: if ($vPl9z) { goto WUzsY; } goto X39Iq; MHEIh: if (!(!$aP7ei && $vPl9z)) { goto dKVCR; } goto zJ3CW; X39Iq: $eY_VU = self::getRegisteredComponent(); goto GjunE; z1QFo: $aP7ei = ManipulateArray::get($czd3T, self::STATUS) == self::ACTIVE; goto amMY0; WwG45: $aP7ei = ManipulateSetting::getConstant("\103\x4f\x4d\120\117\116\105\x4e\124\123\137\x41\103\124\111\x56\105", 0); goto MHEIh; gzH5m: return $aP7ei; goto SgfBL; SgfBL: } public final function isComponentRunning(string $vPl9z, string $j56jL = self::PKG) : bool { $eY_VU = self::getRegisteredComponentByName("\x70\x72\x5f\137{$j56jL}\x5f\x5f" . ManipulateString::toSnake($vPl9z)); return $eY_VU instanceof Component; } public static final function getCalledClass() : string { return get_called_class(); } public static function getRegisteredComponents($j56jL = null) : array { return Storage::getComponents($j56jL); } public static function getComponentType($jg5rc = null) : ?string { goto ajGtf; Obqyi: GKthX: goto DIuKt; ajGtf: if ($jg5rc) { goto lNBBq; } goto W_y7w; qhosx: $j56jL = ''; goto h_MUk; yeISQ: $j56jL = strtolower(ManipulateArray::get($mELn0, 1)); goto xeJ2T; W_y7w: $jg5rc = self::getCalledClass(); goto wklSw; h_MUk: $mELn0 = explode("\x5c", $jg5rc); goto jKG5E; wklSw: lNBBq: goto qhosx; qRb03: TabJS: goto IMfW6; jKG5E: if (!$mELn0) { goto TabJS; } goto yeISQ; xeJ2T: switch ($j56jL) { case "\160\x61\143\x6b\x61\x67\145": $j56jL = self::PKG; goto Zsjax; case "\143\x6f\x6d\155\x6f\156": $j56jL = self::CMN; goto Zsjax; case "\x74\150\x65\155\x65": $j56jL = self::THM; goto Zsjax; default: $j56jL = self::CTM; } goto Obqyi; DIuKt: Zsjax: goto qRb03; IMfW6: return $j56jL; goto Iaipa; Iaipa: } public static function getRegisteredComponent($jg5rc = null) : ?Component { $vPl9z = self::getRegisteredComponentName($jg5rc); return Storage::getComponent($vPl9z); } public static function getRegisteredComponentShortname($jg5rc = null) : ?string { goto j3Z9b; OjBht: if (!$eY_VU) { goto Ji1e9; } goto lQ9kl; j3Z9b: $eY_VU = self::getRegisteredComponent($jg5rc); goto Of2Kg; v1lol: return $bLDPU; goto jT3O7; Of2Kg: $bLDPU = ''; goto OjBht; lQ9kl: $bLDPU = $eY_VU->getShortname(); goto VswRH; VswRH: Ji1e9: goto v1lol; jT3O7: } public static final function getRegisteredComponentName($jg5rc = null) : ?string { goto yQME_; N3rRR: wp_die("\x63\x61\156\x20\x6e\157\164\x20\162\145\x67\x69\163\164\x65\162\40\143\157\x6d\x70\157\156\145\x6e\x74\72\x20" . $jg5rc); goto tU4ec; a2LEh: return ManipulateString::toSnake("\x70\x72\x5f\x5f{$j56jL}\x5f\137{$eY_VU}"); goto HCmGo; h7qex: if ($j56jL) { goto EyJYD; } goto N3rRR; tU4ec: EyJYD: goto r8BxZ; CYvB0: $jg5rc = self::getCalledClass(); goto GZqCO; yQME_: if ($jg5rc) { goto Fb2Bj; } goto CYvB0; GZqCO: Fb2Bj: goto MP6Od; r8BxZ: $mELn0 = explode("\134", $jg5rc); goto bbpfa; MP6Od: $j56jL = self::getComponentType($jg5rc); goto h7qex; bbpfa: $eY_VU = ManipulateArray::get($mELn0, 2); goto a2LEh; HCmGo: } public static function getRegisteredComponentByRootPath($M7KqN = null) : ?Component { goto TzqnS; GdgkI: bfdPX: goto HNpej; D7B88: $GP2p7 = self::getRegisteredComponents(); goto EqePB; TzqnS: $tD16r = null; goto D7B88; EqePB: foreach ($GP2p7 as $eY_VU) { goto FVGjN; wbojl: HPj13: goto hWsOt; tu3yJ: goto bfdPX; goto wbojl; q9jUr: $tD16r = $eY_VU; goto tu3yJ; FVGjN: if (!($eY_VU->getRoot() === $M7KqN)) { goto HPj13; } goto q9jUr; hWsOt: ScbWz: goto YQvf9; YQvf9: } goto GdgkI; HNpej: return $tD16r; goto d4QXK; d4QXK: } public static function getRegisteredComponentByName(string $vPl9z) : ?Component { return ManipulateArray::get(self::getRegisteredComponents(), $vPl9z); } public static final function getRegisteredComponentRootPath($jg5rc = null) : ?string { goto snm3T; YnJ3O: $JEVTO = $eY_VU->getRoot(); goto h3fEV; h3fEV: B3Yks: goto MdGy_; x4cCC: $JEVTO = ManipulateFile::getConstant(strtoupper($vPl9z) . self::__ROOT__PATH, null); goto metil; RQEbv: if ($eY_VU) { goto MbVzS; } goto phtkA; phtkA: $vPl9z = self::getRegisteredComponentName($jg5rc); goto x4cCC; MdGy_: return $JEVTO; goto F4TPM; metil: goto B3Yks; goto DJTwN; snm3T: $eY_VU = self::getRegisteredComponent($jg5rc); goto RQEbv; DJTwN: MbVzS: goto YnJ3O; F4TPM: } private final function loadTextDomain(string $ePNVH = null, string $JEVTO = null) : bool { goto n3RGl; hUAxu: return load_textdomain($ePNVH, realpath("{$JEVTO}\x2f{$B2Zb6}")); goto KUQzG; lUNdG: if ($JEVTO) { goto vkC5P; } goto Hthif; M_e3x: $B2Zb6 = "{$gbKy1}\x2e\155\x6f"; goto lUNdG; Hthif: $JEVTO = $this->getRegisteredComponentRootPath() . "\x2f\164\x72\x61\156\x73\154\x61\164\151\x6f\x6e"; goto vxnHQ; n3RGl: if ($ePNVH) { goto eMD5v; } goto A1dwy; A1dwy: $eY_VU = self::getRegisteredComponent(); goto xscBa; xscBa: if (!$eY_VU) { goto THf97; } goto qykw7; pvJKA: $gbKy1 = $this->applyFilters("\x70\154\x75\x67\151\156\x5f\154\157\x63\x61\154\x65", determine_locale(), $ePNVH); goto M_e3x; vxnHQ: vkC5P: goto hUAxu; fZPgE: eMD5v: goto pvJKA; xDLeO: THf97: goto fZPgE; qykw7: $ePNVH = $eY_VU->getDomain(); goto xDLeO; KUQzG: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Traits;
+
+use Pmpr\Common\Foundation\Container\Storage;
+use Pmpr\Common\Foundation\Data\Component;
+use Pmpr\Common\Foundation\Decorator\DecoratorOption;
+use Pmpr\Common\Foundation\Manipulate\ManipulateFile;
+use Pmpr\Common\Foundation\Manipulate\ManipulateSetting;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString;
+use Pmpr\Common\Foundation\Template\Traits\TemplateTrait;
+
+trait ComponentTrait
+{
+    use TemplateTrait;
+    
+    public final function gkieogwukagigisy($miawkwqioaeasiig)
+    {
+        goto ciakokmuycsamoew;
+        ciakokmuycsamoew:
+        Storage::kmsomwiqwmoyoeci($this, $miawkwqioaeasiig);
+        goto oicciogwwqmcoaue;
+        ceugguwawauqcgqc:
+        $this->kkcywkucqsawqqqo();
+        goto umesgccceskkwcek;
+        oicciogwwqmcoaue:
+        $this->ycgwemyyomeiuake();
+        goto ceugguwawauqcgqc;
+        umesgccceskkwcek:
+    }
+    
+    public final function gmiyqqaekqcsoime(string $ymqmyyeuycgmigyo = null) : bool
+    {
+        goto ycsyqeiqmgkqsykm;
+        nwisymowgiuysywm:
+        $ggocakcisguuokai = ManipulateSetting::cmaecekuqkwmemms("\x43\x4f\x4d\120\117\x4e\105\116\124\123\x5f\101\103\x54\x49\x56\105", 0);
+        goto uoukmckqqaewiack;
+        kmikysaiomgcocuq:
+        if (!$wksoawcgagcgoask) {
+            goto emmyeiacygokoyqm;
+        }
+        goto euoyyamaesgwcumc;
+        wquwgeoesiweimsy:
+        $wksoawcgagcgoask = self::couwksyewgyeooqe();
+        goto kmikysaiomgcocuq;
+        uoukmckqqaewiack:
+        if (!(!$ggocakcisguuokai && $ymqmyyeuycgmigyo)) {
+            goto ikuegsumgygqkoiq;
+        }
+        goto gowseceuccyoykqg;
+        iusisyuoomsaqyge:
+        emmyeiacygokoyqm:
+        goto iosumqekeyuyscwm;
+        euoyyamaesgwcumc:
+        $ymqmyyeuycgmigyo = $wksoawcgagcgoask->eeucessuemoysgqg();
+        goto iusisyuoomsaqyge;
+        sqmgyqqesycegaog:
+        ikuegsumgygqkoiq:
+        goto auawcgwsgmocyikg;
+        ycsyqeiqmgkqsykm:
+        if ($ymqmyyeuycgmigyo) {
+            goto quykkkqkscyeakyc;
+        }
+        goto wquwgeoesiweimsy;
+        iosumqekeyuyscwm:
+        quykkkqkscyeakyc:
+        goto nwisymowgiuysywm;
+        gowseceuccyoykqg:
+        $omkysikckkcieckq = DecoratorOption::get("\143\157\x6d\x70\157\x6e\145\x6e\x74\55{$ymqmyyeuycgmigyo}", []);
+        goto wmmymakwgisiiemm;
+        auawcgwsgmocyikg:
+        return $ggocakcisguuokai;
+        goto csiywiqqacqiooam;
+        wmmymakwgisiiemm:
+        $ggocakcisguuokai = ManipulateArray::get($omkysikckkcieckq, self::STATUS) == self::ACTIVE;
+        goto sqmgyqqesycegaog;
+        csiywiqqacqiooam:
+    }
+    
+    public final function omseesogaocascyo(string $ymqmyyeuycgmigyo, string $sqeykgyoooqysmca = self::PKG) : bool
+    {
+        $wksoawcgagcgoask = self::mqucqomkmisceawy("\160\162\137\x5f{$sqeykgyoooqysmca}\137\137" . ManipulateString::ogimogiceeekegoi($ymqmyyeuycgmigyo));
+        return $wksoawcgagcgoask instanceof Component;
+    }
+    
+    public static final function uqggkiomyiceyooa() : string
+    {
+        return get_called_class();
+    }
+    
+    public static function isyyiqwsgyieiqgu($sqeykgyoooqysmca = null) : array
+    {
+        return Storage::misumgawyweoagic($sqeykgyoooqysmca);
+    }
+    
+    public static function yegwayqakokyuiok($egkyssmuqcwaciya = null) : ?string
+    {
+        goto gkswmkowgekmoecu;
+        gwwgqgceskcqukig:
+        return $sqeykgyoooqysmca;
+        goto gqugaamwqqookmyc;
+        isyassymuywsayyy:
+        cgmoawqqgooiomam:
+        goto qyckkgmuykqyaieq;
+        esucokaeqgmiaige:
+        switch ($sqeykgyoooqysmca) {
+            case "\160\141\x63\153\x61\x67\x65":
+                $sqeykgyoooqysmca = self::PKG;
+                goto cgmoawqqgooiomam;
+            case "\143\157\155\x6d\157\156":
+                $sqeykgyoooqysmca = self::CMN;
+                goto cgmoawqqgooiomam;
+            case "\164\x68\x65\x6d\145":
+                $sqeykgyoooqysmca = self::THM;
+                goto cgmoawqqgooiomam;
+            default:
+                $sqeykgyoooqysmca = self::CTM;
+        }
+        goto oqgmiysscyygyaqg;
+        cueascwqacykggki:
+        ccuemieucuwkaiug:
+        goto qqicgmcqukmywgwu;
+        mousymoamqcmauki:
+        $uomewyckeuqoqocu = explode("\134", $egkyssmuqcwaciya);
+        goto yyiysucuymcuyycw;
+        yyiysucuymcuyycw:
+        if (!$uomewyckeuqoqocu) {
+            goto igsmwqseogmyegee;
+        }
+        goto agcwmeycmgsyqeok;
+        owmcuewayukusqmo:
+        $egkyssmuqcwaciya = self::uqggkiomyiceyooa();
+        goto cueascwqacykggki;
+        oqgmiysscyygyaqg:
+        ckyyiokeqmgokkii:
+        goto isyassymuywsayyy;
+        gkswmkowgekmoecu:
+        if ($egkyssmuqcwaciya) {
+            goto ccuemieucuwkaiug;
+        }
+        goto owmcuewayukusqmo;
+        qyckkgmuykqyaieq:
+        igsmwqseogmyegee:
+        goto gwwgqgceskcqukig;
+        qqicgmcqukmywgwu:
+        $sqeykgyoooqysmca = '';
+        goto mousymoamqcmauki;
+        agcwmeycmgsyqeok:
+        $sqeykgyoooqysmca = strtolower(ManipulateArray::get($uomewyckeuqoqocu, 1));
+        goto esucokaeqgmiaige;
+        gqugaamwqqookmyc:
+    }
+    
+    public static function couwksyewgyeooqe($egkyssmuqcwaciya = null) : ?Component
+    {
+        $ymqmyyeuycgmigyo = self::akuociswqmoigkas($egkyssmuqcwaciya);
+        return Storage::cqusmgskowmesgcg($ymqmyyeuycgmigyo);
+    }
+    
+    public static function aswwewigcsoawwqk($egkyssmuqcwaciya = null) : ?string
+    {
+        goto eoeoaoomoeayemks;
+        ygsiuoyewwecoemg:
+        ayemyskkicqyskos:
+        goto ywuegkmgqmweogqq;
+        kaccuycsyukugwao:
+        if (!$wksoawcgagcgoask) {
+            goto ayemyskkicqyskos;
+        }
+        goto wqmkwsgmeceakwaw;
+        eoeoaoomoeayemks:
+        $wksoawcgagcgoask = self::couwksyewgyeooqe($egkyssmuqcwaciya);
+        goto aucqswuoeqocuiqk;
+        ywuegkmgqmweogqq:
+        return $kcismmoemwgiymuq;
+        goto ceasygsiuksuwwoc;
+        aucqswuoeqocuiqk:
+        $kcismmoemwgiymuq = '';
+        goto kaccuycsyukugwao;
+        wqmkwsgmeceakwaw:
+        $kcismmoemwgiymuq = $wksoawcgagcgoask->aiqioscoyukqgsgw();
+        goto ygsiuoyewwecoemg;
+        ceasygsiuksuwwoc:
+    }
+    
+    public static final function akuociswqmoigkas($egkyssmuqcwaciya = null) : ?string
+    {
+        goto mimogmagkwkiyskc;
+        sieseicooqugaqgo:
+        $wksoawcgagcgoask = ManipulateArray::get($uomewyckeuqoqocu, 2);
+        goto goukwgqscacouyqs;
+        caoauekaaegosauw:
+        $uomewyckeuqoqocu = explode("\x5c", $egkyssmuqcwaciya);
+        goto sieseicooqugaqgo;
+        qcmwkecooegwkkks:
+        wp_die("\x63\x61\x6e\40\156\157\164\40\162\145\147\x69\x73\x74\x65\162\x20\x63\x6f\155\x70\157\156\145\156\164\x3a\x20" . $egkyssmuqcwaciya);
+        goto myemeeaqoywegsok;
+        aemayukkiiaiueaq:
+        $sqeykgyoooqysmca = self::yegwayqakokyuiok($egkyssmuqcwaciya);
+        goto kawmoeuiyqkqmsmo;
+        wcesgqaeqiqawysc:
+        smwkgmymskokcoek:
+        goto aemayukkiiaiueaq;
+        kawmoeuiyqkqmsmo:
+        if ($sqeykgyoooqysmca) {
+            goto sgaaocqwgeqismmo;
+        }
+        goto qcmwkecooegwkkks;
+        myemeeaqoywegsok:
+        sgaaocqwgeqismmo:
+        goto caoauekaaegosauw;
+        goukwgqscacouyqs:
+        return ManipulateString::ogimogiceeekegoi("\x70\x72\x5f\137{$sqeykgyoooqysmca}\137\137{$wksoawcgagcgoask}");
+        goto cyekoicwwmekycyy;
+        oimegeaimoymkmsc:
+        $egkyssmuqcwaciya = self::uqggkiomyiceyooa();
+        goto wcesgqaeqiqawysc;
+        mimogmagkwkiyskc:
+        if ($egkyssmuqcwaciya) {
+            goto smwkgmymskokcoek;
+        }
+        goto oimegeaimoymkmsc;
+        cyekoicwwmekycyy:
+    }
+    
+    public static function qmkyymgaecsmakqq($couygeouymagssgw = null) : ?Component
+    {
+        goto yeomwmwumiieiywi;
+        ymsiicmasqigsymw:
+        yegimqcqoeaacsyq:
+        goto yiyuuyewoweiaokc;
+        yiyuuyewoweiaokc:
+        return $ksiyqouuaoymsycg;
+        goto uiwmoaosqkcaoqce;
+        yeomwmwumiieiywi:
+        $ksiyqouuaoymsycg = null;
+        goto wakmmggoiykyuamq;
+        wakmmggoiykyuamq:
+        $mqkkuqaimswumeww = self::isyyiqwsgyieiqgu();
+        goto coqmamquawyaeyae;
+        coqmamquawyaeyae:
+        foreach ($mqkkuqaimswumeww as $wksoawcgagcgoask) {
+            goto aikaeokwagkiecao;
+            mkggmsugkikwywom:
+            qywueemkicmwyoqg:
+            goto gkiikogcsmysucuc;
+            aikaeokwagkiecao:
+            if (!($wksoawcgagcgoask->ikeqsmumgwwuqmkw() === $couygeouymagssgw)) {
+                goto qywueemkicmwyoqg;
+            }
+            goto acikugwgomwemcmu;
+            kamwemiweockugia:
+            goto yegimqcqoeaacsyq;
+            goto mkggmsugkikwywom;
+            gkiikogcsmysucuc:
+            remiaquuossuqoma:
+            goto uywoegeimqomwqoa;
+            acikugwgomwemcmu:
+            $ksiyqouuaoymsycg = $wksoawcgagcgoask;
+            goto kamwemiweockugia;
+            uywoegeimqomwqoa:
+        }
+        goto ymsiicmasqigsymw;
+        uiwmoaosqkcaoqce:
+    }
+    
+    public static function mqucqomkmisceawy(string $ymqmyyeuycgmigyo) : ?Component
+    {
+        return ManipulateArray::get(self::isyyiqwsgyieiqgu(), $ymqmyyeuycgmigyo);
+    }
+    
+    public static final function cmewgsgomuwkkoou($egkyssmuqcwaciya = null) : ?string
+    {
+        goto wiokcqeyeaymgwae;
+        cewcuuesgeiiassq:
+        goto gkqsiqmqqemqqwku;
+        goto koikauauameyygqc;
+        amieoocwaeecmywi:
+        return $mkomwsiykqigmqca;
+        goto uogamakkkoeumkuo;
+        qsgigkoyesqiwoik:
+        $mkomwsiykqigmqca = ManipulateFile::cmaecekuqkwmemms(strtoupper($ymqmyyeuycgmigyo) . self::__ROOT__PATH, null);
+        goto cewcuuesgeiiassq;
+        sueiceyeyweumeck:
+        $ymqmyyeuycgmigyo = self::akuociswqmoigkas($egkyssmuqcwaciya);
+        goto qsgigkoyesqiwoik;
+        wiokcqeyeaymgwae:
+        $wksoawcgagcgoask = self::couwksyewgyeooqe($egkyssmuqcwaciya);
+        goto geyysuiiagkkeqam;
+        koikauauameyygqc:
+        ucyimwewacagqocw:
+        goto sksucoueuaiseguw;
+        mqeycgqqaoguwkoa:
+        gkqsiqmqqemqqwku:
+        goto amieoocwaeecmywi;
+        sksucoueuaiseguw:
+        $mkomwsiykqigmqca = $wksoawcgagcgoask->ikeqsmumgwwuqmkw();
+        goto mqeycgqqaoguwkoa;
+        geyysuiiagkkeqam:
+        if ($wksoawcgagcgoask) {
+            goto ucyimwewacagqocw;
+        }
+        goto sueiceyeyweumeck;
+        uogamakkkoeumkuo:
+    }
+    
+    private final function ycgwemyyomeiuake(string $mokawwccycoiqeka = null, string $mkomwsiykqigmqca = null) : bool
+    {
+        goto qsowiceqiuciwiku;
+        sawggikqsayoiscm:
+        $mokawwccycoiqeka = $wksoawcgagcgoask->wwawisckiqeueoua();
+        goto kegwaamwygcyissk;
+        uiiiomwgksaissoc:
+        $mkomwsiykqigmqca = $this->cmewgsgomuwkkoou() . "\x2f\x74\162\141\156\x73\x6c\141\x74\151\157\156";
+        goto aqoumegesyioyyme;
+        aqoumegesyioyyme:
+        wsocaemogooskccw:
+        goto uwyayemiakeqosci;
+        acmyiosessocqqsg:
+        $wksoawcgagcgoask = self::couwksyewgyeooqe();
+        goto uqagmecggeymyekm;
+        qsowiceqiuciwiku:
+        if ($mokawwccycoiqeka) {
+            goto eqgiyaakqasaqymq;
+        }
+        goto acmyiosessocqqsg;
+        uqagmecggeymyekm:
+        if (!$wksoawcgagcgoask) {
+            goto waoymaouskgiemes;
+        }
+        goto sawggikqsayoiscm;
+        yqewwggigucqaiou:
+        $egcekquqcyayskcm = "{$aamkqmkgsaqmcuao}\56\x6d\157";
+        goto moqsoaomwaeykgei;
+        kegwaamwygcyissk:
+        waoymaouskgiemes:
+        goto sqkuescwoaugawem;
+        gqewqqqogsygmicg:
+        $aamkqmkgsaqmcuao = $this->sscegwueamckwmcy("\x70\154\x75\x67\151\x6e\x5f\x6c\x6f\143\141\x6c\145", determine_locale(), $mokawwccycoiqeka);
+        goto yqewwggigucqaiou;
+        uwyayemiakeqosci:
+        
+        return load_textdomain($mokawwccycoiqeka, realpath("{$mkomwsiykqigmqca}\57{$egcekquqcyayskcm}"));
+        goto sqswqiyeaauwaeui;
+        moqsoaomwaeykgei:
+        if ($mkomwsiykqigmqca) {
+            goto wsocaemogooskccw;
+        }
+        goto uiiiomwgksaissoc;
+        sqkuescwoaugawem:
+        eqgiyaakqasaqymq:
+        goto gqewqqqogsygmicg;
+        sqswqiyeaauwaeui:
+    }
+    
+    public function eegcqkwceasicmek() : ?string
+    {
+        goto ksiskiqygouakumc;
+        ksiskiqygouakumc:
+        $wissqeyocyayguas = $this->sscegwueamckwmcy("\x67\145\x74\x5f\160\155\x70\162\x5f\x70\154\x75\x67\151\x6e\x5f\x61\x70\x69\137\153\x65\171", '');
+        goto gksysyaaaaeasgmg;
+        gksysyaaaaeasgmg:
+        if (is_string($wissqeyocyayguas)) {
+            goto qyemiqcwoyeyeyiw;
+        }
+        goto gwauyogieqaqueyu;
+        suycymikusukkyio:
+        qyemiqcwoyeyeyiw:
+        goto mkseiiygswgckuyi;
+        mkseiiygswgckuyi:
+        return $wissqeyocyayguas;
+        goto ogksggygiqgccsgs;
+        gwauyogieqaqueyu:
+        $wissqeyocyayguas = null;
+        goto suycymikusukkyio;
+        ogksggygiqgccsgs:
+    }
+}

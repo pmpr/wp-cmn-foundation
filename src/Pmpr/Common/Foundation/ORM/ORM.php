@@ -1,2 +1,179 @@
 <?php
- namespace Pmpr\Common\Foundation\ORM; use Pmpr\Common\Foundation\Manipulate\ManipulateServer; use Pmpr\Common\Foundation\Manipulate\ManipulateUser; use Pmpr\Common\Foundation\ORM\DB\Model; class ORM extends Common { public function __construct() { $this->loadRequirement(); parent::__construct(); } public function addActions() { $this->addAction("\x69\x6e\x69\164", [$this, "\151\156\x69\164"]); parent::addActions(); } public function addFilters() { $this->addFilter("\x70\x61\x72\x65\x6e\x74\x5f\146\151\x6c\x65", [$this, "\165\x70\144\x61\x74\145\120\x61\162\145\156\164\106\151\154\145"])->addFilter("\163\165\x62\x6d\145\156\165\137\x66\x69\154\x65", [$this, "\165\x70\144\141\x74\145\123\165\x62\x6d\145\156\165\x46\151\x6c\145"]); parent::addFilters(); } public function updateParentFile($Nr_3l) { goto WxStj; wqpo0: $_wp_real_parent_file[$aZnoR->getSlug()] = $Nr_3l; goto Nlv1B; WxStj: global $orm_model; goto b1ghU; LSOm9: vfoaO: goto mtMqX; cQpd1: $aZnoR = $orm_model->getView("\x69\x6e\144\145\x78"); goto SV078; S93U6: $Nr_3l = $orm_model::getRegisteredComponentName(); goto cQpd1; SV078: if (!$aZnoR) { goto WGiv7; } goto SaI1g; mtMqX: qGqVQ: goto RnwVs; CTXcQ: if (!(strpos($vs_36, $orm_model->getRegisterName()) !== false)) { goto vfoaO; } goto S93U6; b1ghU: if (!$orm_model instanceof Model) { goto qGqVQ; } goto ORgWa; Nlv1B: WGiv7: goto LSOm9; SaI1g: global $_wp_real_parent_file; goto wqpo0; ORgWa: $vs_36 = ManipulateServer::get(self::PAGE); goto CTXcQ; RnwVs: return $Nr_3l; goto v3l19; v3l19: } public function updateSubmenuFile($Nr_3l) { goto gMDI5; Fa_LZ: G72yx: goto gBZuR; u5P3r: EuO6x: goto Fa_LZ; gBZuR: return $Nr_3l; goto jdHjT; PM6Lv: suyYd: goto u5P3r; nwr0W: $aZnoR = $orm_model->getView("\x69\156\x64\x65\170"); goto e61cQ; fwXfK: $vs_36 = ManipulateServer::get(self::PAGE); goto w69tf; ayYxM: if (!$orm_model instanceof Model) { goto G72yx; } goto fwXfK; e61cQ: if (!$aZnoR) { goto suyYd; } goto vtn5V; w69tf: if (!(strpos($vs_36, $orm_model->getRegisterName()) !== false)) { goto EuO6x; } goto nwr0W; vtn5V: $Nr_3l = $aZnoR->getSlug(); goto PM6Lv; gMDI5: global $orm_model; goto ayYxM; jdHjT: } public function init() { goto A1niS; pswKR: if (!is_admin()) { goto vcm3n; } goto tnYnj; WC0Av: $this->doAction($this->generateHook("\x69\x6e\151\164")); goto pswKR; tnYnj: $this->doAction($this->generateHook("\141\144\155\151\x6e\x5f\x69\156\x69\x74")); goto WIqoW; WIqoW: vcm3n: goto PtvQv; A1niS: $this->populateRoles(); goto WC0Av; PtvQv: } private function populateRoles() { goto ffGeM; pJJNM: iydUd: goto Ej7Lm; ezEBN: foreach ($L2jBR as $KkOhr) { $tq1Qn->add_cap($KkOhr); OI02K: } goto pJJNM; aYO0L: if (!$tq1Qn) { goto RXIIw; } goto oFwwT; oFwwT: $L2jBR = $this->getTableCapabilities([], "\x69\164\x65\x6d", null); goto ezEBN; ffGeM: $tq1Qn = ManipulateUser::getRoleByName("\141\x64\x6d\151\156\x69\x73\x74\162\141\164\157\x72"); goto aYO0L; Ej7Lm: RXIIw: goto MP82o; MP82o: } private function loadRequirement() { } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\ORM;
+
+use Pmpr\Common\Foundation\Manipulate\ManipulateServer;
+use Pmpr\Common\Foundation\Manipulate\ManipulateUser;
+use Pmpr\Common\Foundation\ORM\DB\Model;
+
+class ORM extends Common
+{
+    const ADMIN_GET_MODELS_ACTION = "\141\144\x6d\x69\156\x5f\x67\145\x74\137\x6d\x6f\x64\145\154\163";
+    
+    public function __construct()
+    {
+        parent::__construct();
+    }
+    public function wigskegsqequoeks()
+    {
+        $this->qcsmikeggeemccuu("\x69\x6e\151\164", [$this, "\x69\x6e\x69\164"]);
+        parent::wigskegsqequoeks();
+    }
+    public function kgquecmsgcouyaya()
+    {
+        $this->cecaguuoecmccuse("\160\x61\x72\x65\156\x74\137\146\151\154\x65", [$this, "\153\155\165\x61\145\x69\x63\x6d\163\163\x69\145\163\157\x79\153"])->cecaguuoecmccuse("\163\165\x62\x6d\145\x6e\x75\x5f\x66\x69\154\145", [$this, "\x75\167\143\171\147\157\171\153\151\x79\161\x75\x6f\155\x69\x77"]);
+        parent::kgquecmsgcouyaya();
+    }
+    
+    public function kmuaeicmssiesoyk($qogsmwakwacwqogk)
+    {
+        goto qmeoaqmsuseueqiy;
+        cuoqqgaygogsmmic:
+        $suaemuyiacqyugsm = ManipulateServer::get(self::PAGE);
+        goto cgewcsueoyaeikgm;
+        qcessicwuikwqsis:
+        ickcmqoiosquugwe:
+        goto yssscwioiyygssec;
+        ygkcacsyyckescqs:
+        if (!$orm_model instanceof Model) {
+            goto ickcmqoiosquugwe;
+        }
+        goto cuoqqgaygogsmmic;
+        igymseewwyiocoug:
+        $qqomumygoacsmsie = $orm_model->cgswceaawqgeskua("\151\156\x64\145\x78");
+        goto mqccmesakuemceqi;
+        qwcegcuowwgiccos:
+        eiawsoasmscmqswa:
+        goto qcessicwuikwqsis;
+        cgewcsueoyaeikgm:
+        if (!(strpos($suaemuyiacqyugsm, $orm_model->miwqiiqeegeqcwis()) !== false)) {
+            goto eiawsoasmscmqswa;
+        }
+        goto sukskmcwsoysiuqu;
+        qmeoaqmsuseueqiy:
+        global $orm_model;
+        goto ygkcacsyyckescqs;
+        twkmiuomimomscew:
+        $_wp_real_parent_file[$qqomumygoacsmsie->aqcogscycyycgkuq()] = $qogsmwakwacwqogk;
+        goto kooskuwkuayiuose;
+        eyiamcekkgkiawqy:
+        global $_wp_real_parent_file;
+        goto twkmiuomimomscew;
+        sukskmcwsoysiuqu:
+        $qogsmwakwacwqogk = $orm_model::akuociswqmoigkas();
+        goto igymseewwyiocoug;
+        yssscwioiyygssec:
+        return $qogsmwakwacwqogk;
+        goto ieumumsgyguceusy;
+        kooskuwkuayiuose:
+        goeoymmqqqeeoime:
+        goto qwcegcuowwgiccos;
+        mqccmesakuemceqi:
+        if (!$qqomumygoacsmsie) {
+            goto goeoymmqqqeeoime;
+        }
+        goto eyiamcekkgkiawqy;
+        ieumumsgyguceusy:
+    }
+    
+    public function uwcygoykiyquomiw($qogsmwakwacwqogk)
+    {
+        goto oouoqimaaqcmccay;
+        qsygcycwieukkgwc:
+        $qogsmwakwacwqogk = $qqomumygoacsmsie->aqcogscycyycgkuq();
+        goto kiwqkcaekqqyuegq;
+        sycygoiaiqqageym:
+        if (!$orm_model instanceof Model) {
+            goto ycakugokkqkuqyiu;
+        }
+        goto gygawoqywkukmqee;
+        gygawoqywkukmqee:
+        $suaemuyiacqyugsm = ManipulateServer::get(self::PAGE);
+        goto kciouyuaqkyqomam;
+        quwcqmyokicssyew:
+        siqagquguiemuoku:
+        goto iqcogmsguwoikame;
+        iqcogmsguwoikame:
+        ycakugokkqkuqyiu:
+        goto gimmuoqwckiseaik;
+        gimmuoqwckiseaik:
+        return $qogsmwakwacwqogk;
+        goto cmqucgoewuyieoyk;
+        umgaesggesswoaqe:
+        if (!$qqomumygoacsmsie) {
+            goto coywmiyqgsweuiic;
+        }
+        goto qsygcycwieukkgwc;
+        kiwqkcaekqqyuegq:
+        coywmiyqgsweuiic:
+        goto quwcqmyokicssyew;
+        oouoqimaaqcmccay:
+        global $orm_model;
+        goto sycygoiaiqqageym;
+        wwkgkaecgiwggcck:
+        $qqomumygoacsmsie = $orm_model->cgswceaawqgeskua("\151\x6e\144\x65\x78");
+        goto umgaesggesswoaqe;
+        kciouyuaqkyqomam:
+        if (!(strpos($suaemuyiacqyugsm, $orm_model->miwqiiqeegeqcwis()) !== false)) {
+            goto siqagquguiemuoku;
+        }
+        goto wwkgkaecgiwggcck;
+        cmqucgoewuyieoyk:
+    }
+    public function init()
+    {
+        goto ayyweymyuuiauamo;
+        ayyweymyuuiauamo:
+        $this->auemcisgwigucumo();
+        goto mosqsmqimqgqoase;
+        omugkkesagcyagmk:
+        if (!is_admin()) {
+            goto yqykqysmiquwoasu;
+        }
+        goto ygcsmkuycoagwyou;
+        ygcsmkuycoagwyou:
+        $this->cqscqicucmeamkyq($this->ygyygikyocoymgaw("\x61\x64\155\151\156\x5f\x69\x6e\151\164"));
+        goto kqksuugcgsyeoayy;
+        kqksuugcgsyeoayy:
+        yqykqysmiquwoasu:
+        goto iggyqogweyosuikc;
+        mosqsmqimqgqoase:
+        $this->cqscqicucmeamkyq($this->ygyygikyocoymgaw("\x69\x6e\x69\x74"));
+        goto omugkkesagcyagmk;
+        iggyqogweyosuikc:
+    }
+    private function auemcisgwigucumo()
+    {
+        goto miyqyeiwquwsacsm;
+        miyqyeiwquwsacsm:
+        
+        $oeucsuyqysaciasy = ManipulateUser::ikcimmaqiwekowoi("\x61\x64\155\x69\156\151\163\164\x72\141\164\x6f\162");
+        goto eegqyykygiccaoeo;
+        acaqummmoyiemqss:
+        qkcyqocqqwmqgqww:
+        goto suswcqoyyqkkquuo;
+        eegqyykygiccaoeo:
+        if (!$oeucsuyqysaciasy) {
+            goto qkcyqocqqwmqgqww;
+        }
+        goto ywqgcegomwaiuquc;
+        wmmggowmigekyoso:
+        foreach ($sksmomeiauyqaomi as $gkswkiicccswksiq) {
+            $oeucsuyqysaciasy->add_cap($gkswkiicccswksiq);
+            ssoucoucsgccekwe:
+        }
+        goto soqqemyioggmoakg;
+        soqqemyioggmoakg:
+        qqewoyookaskiuek:
+        goto acaqummmoyiemqss;
+        ywqgcegomwaiuquc:
+        $sksmomeiauyqaomi = $this->homgcsoocssgwgym([], "\x69\x74\x65\155", null);
+        goto wmmggowmigekyoso;
+        suswcqoyyqkkquuo:
+    }
+}

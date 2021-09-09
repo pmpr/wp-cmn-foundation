@@ -1,2 +1,221 @@
 <?php
- namespace Pmpr\Common\Foundation\Woocommerce\Attribute; use Pmpr\Common\Foundation\FormMaker\Admin\Element\MetaBox; use Pmpr\Common\Foundation\FormMaker\Admin\Field\Field; use Pmpr\Common\Foundation\Manipulate\ManipulateServer; use Pmpr\Common\Foundation\Manipulate\Taxonomy\ManipulateTerm; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; class GlobalAttribute extends BaseAttribute { const VALUE_TYPE = self::VALUE . "\137\164\171\x70\145"; protected ?Model $model = null; public function __construct() { goto VNQoO; RjVQ3: parent::__construct(); goto iLLxL; VNQoO: $this->name = "\147\154\x6f\x62\x61\154"; goto WIohC; WIohC: $this->model = Model::getInstance(); goto RjVQ3; iLLxL: } public function addActions() { $this->addAction("\x70\154\x75\x67\151\x6e\163\137\x6c\157\141\144\x65\144", [$this, "\x70\x6c\x75\147\x69\x6e\163\114\157\x61\x64\145\144"])->addAction("\167\157\157\143\x6f\155\x6d\x65\162\x63\145\137\x61\x74\164\162\151\142\x75\164\x65\x5f\x75\160\144\x61\x74\x65\144", [$this, "\163\x61\x76\x65"])->addAction("\167\x6f\157\x63\x6f\155\155\x65\162\x63\145\x5f\x61\x66\164\145\x72\x5f\141\144\x64\137\x61\x74\164\x72\151\x62\165\164\x65\x5f\x66\x69\145\x6c\x64\163", [$this, "\162\x65\156\x64\145\x72\x41\x64\144\x46\157\x72\155\x46\151\x65\x6c\144\x73"])->addAction("\x77\x6f\157\x63\x6f\x6d\155\x65\x72\x63\145\x5f\x61\x66\164\145\x72\x5f\145\144\151\164\137\141\164\164\x72\x69\x62\165\164\x65\137\x66\151\x65\x6c\144\163", [$this, "\162\145\x6e\x64\x65\162\x45\144\151\x74\106\157\162\155\x46\x69\145\154\x64\163"]); parent::addActions(); } public function addFilters() { $this->addFilter("\167\x6f\x6f\x63\157\155\x6d\145\x72\143\145\137\x61\164\x74\x72\151\142\x75\x74\145\137\164\141\170\x6f\156\157\155\x69\145\163", [$this, "\x75\160\x64\141\164\x65\101\x74\x74\162\x69\142\165\x74\145\124\x61\170\157\x6e\x6f\155\151\x65\x73"]); parent::addFilters(); } public function pluginsLoaded() { $vpmy0 = $this->applyFilters($this->generateHook("\167\157\x6f\x63\157\x6d\x6d\145\x72\143\145\x5f\x61\x74\164\x72\x69\142\165\x74\145\x5f\164\x61\170\157\156\x6f\155\x69\x65\x73\137\166\141\x6c\x75\145\x5f\164\171\x70\x65\x73"), [self::DATE => __("\104\x61\x74\x65", PR__CMN__FOUNDATION), self::NUMBER => __("\x4e\x75\x6d\142\x65\x72", PR__CMN__FOUNDATION)]); $this->addField(MetaBox::getBSSelectField(self::VALUE_TYPE, __("\126\x61\x6c\165\x65\x20\164\171\160\145", PR__CMN__FOUNDATION), $vpmy0)->setDesc(__("\x54\x79\160\145\40\x6f\x66\40\x76\x61\154\x75\145\x73", PR__CMN__FOUNDATION))); } public function updateAttributeTaxonomies($hS_Rv) { goto xB8u_; XPry3: Zkkw5: goto EdFoK; EdFoK: return $hS_Rv; goto kcdVa; OL06Y: if (!is_array($hS_Rv)) { goto Zkkw5; } goto NclO0; NclO0: foreach ($hS_Rv as $VIAHW => $uXZtg) { goto QZz2w; t9zDE: if (!$CJaMf) { goto Ve3s2; } goto eCo_G; WiczI: Iv6Kb: goto OF8oT; KdPYn: zLfrr: goto ZCjxX; k2_lA: $hS_Rv[$VIAHW] = $uXZtg; goto KdPYn; OF8oT: Ve3s2: goto k2_lA; eCo_G: foreach ($F9q7E as $mi3kO) { goto vvDrv; vvDrv: $GgNCy = $mi3kO->getId(); goto X9_fE; h6WCB: oPwTc: goto rIt5j; X9_fE: $uXZtg = ManipulateArray::set($uXZtg, [$GgNCy => $this->getValue($GgNCy, $CJaMf)]); goto h6WCB; rIt5j: } goto WiczI; QZz2w: $CJaMf = ManipulateArray::get($uXZtg, "\x61\x74\164\162\151\x62\x75\164\145\137\x69\144"); goto t9zDE; ZCjxX: } goto ZHoU3; xB8u_: $F9q7E = $this->getFields(); goto OL06Y; ZHoU3: Sqdqn: goto XPry3; kcdVa: } public function getModel() : ?Model { return $this->model; } public function getAttributeId($chQYT) : ?string { return $chQYT->get_id(); } public function save($CDV1j) { foreach ($this->getFields() as $mi3kO) { goto sAQvP; KEn5a: $vPl9z = $mi3kO->getId(); goto p31w1; DbD0W: Kv9ZM: goto h4673; yKPUG: $this->getModel()->saveMetadata($CDV1j, $vPl9z, $yjbyt); goto BXdPh; sAQvP: if (!($mi3kO instanceof Field && $mi3kO->getId())) { goto ZmSVx; } goto KEn5a; BXdPh: ZmSVx: goto DbD0W; p31w1: $yjbyt = ManipulateServer::getPost($vPl9z, ''); goto yKPUG; h4673: } HAWIA: } public function getValue($O2gvr, $chQYT) { return $this->getModel()->getMetaValueBy($chQYT, $O2gvr); } public function renderAddFormFields() { goto MMouc; vwCux: foreach ($F9q7E as $mi3kO) { echo ManipulateTerm::renderField($mi3kO); gkSdG: } goto bMjrI; MMouc: $F9q7E = $this->getFields(); goto vwCux; bMjrI: rM30w: goto L0x7o; L0x7o: } public function renderEditFormFields() { goto Ft7WN; Ft7WN: $LYufS = ManipulateServer::get("\145\x64\x69\164"); goto LA5X7; LA5X7: if (!$LYufS) { goto XjI9R; } goto l4lQc; l4lQc: $F9q7E = $this->getFields(); goto KexmO; bF3FM: SeoEo: goto mXK2I; KexmO: foreach ($F9q7E as $mi3kO) { goto s48ht; s48ht: if (!$mi3kO instanceof Field) { goto BCzLw; } goto jfhNa; bi98x: BCzLw: goto FiCzV; jfhNa: $mi3kO->setValue($this->getValue($mi3kO->getId(), $LYufS)); goto KPXU_; FiCzV: inGvX: goto Tfy0I; KPXU_: echo ManipulateTerm::renderField($mi3kO, true); goto bi98x; Tfy0I: } goto bF3FM; mXK2I: XjI9R: goto CccsK; CccsK: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Woocommerce\Attribute;
+
+use Pmpr\Common\Foundation\FormMaker\Admin\Element\MetaBox;
+use Pmpr\Common\Foundation\FormMaker\Admin\Field\Field;
+use Pmpr\Common\Foundation\Manipulate\ManipulateServer;
+use Pmpr\Common\Foundation\Manipulate\Taxonomy\ManipulateTerm;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
+
+class GlobalAttribute extends BaseAttribute
+{
+    const VALUE_TYPE = self::VALUE . "\137\164\x79\x70\x65";
+    
+    protected ?Model $model = null;
+    
+    public function __construct()
+    {
+        goto eiwsqkiauqoseceu;
+        eiwsqkiauqoseceu:
+        $this->name = "\x67\154\x6f\142\141\154";
+        goto meuauqksicgeyqci;
+        ycwuaycumimegeaw:
+        parent::__construct();
+        goto emcwccgymecyuwog;
+        meuauqksicgeyqci:
+        $this->model = Model::symcgieuakksimmu();
+        goto ycwuaycumimegeaw;
+        emcwccgymecyuwog:
+    }
+    public function wigskegsqequoeks()
+    {
+        $this->qcsmikeggeemccuu("\160\154\x75\147\151\156\163\x5f\x6c\x6f\x61\144\x65\x64", [$this, "\151\143\x77\143\147\155\x63\157\151\155\161\145\x69\147\171\145"])->qcsmikeggeemccuu("\167\x6f\x6f\143\x6f\155\155\145\x72\143\145\x5f\x61\x74\x74\162\x69\142\165\164\145\x5f\x75\x70\144\141\164\x65\x64", [$this, "\163\141\166\145"])->qcsmikeggeemccuu("\167\x6f\157\x63\x6f\155\x6d\145\162\143\145\x5f\141\146\164\x65\162\137\141\144\144\x5f\x61\x74\x74\x72\x69\142\165\x74\x65\137\x66\151\145\154\x64\x73", [$this, "\x69\151\163\x63\161\143\167\x61\151\143\145\157\x6b\x6f\171\x75"])->qcsmikeggeemccuu("\167\x6f\157\143\x6f\155\x6d\x65\162\143\x65\x5f\x61\146\x74\x65\162\x5f\145\x64\151\164\137\x61\164\x74\162\151\142\x75\164\145\137\146\151\145\x6c\x64\163", [$this, "\x67\x67\143\171\x67\141\171\x63\x6d\143\143\143\145\163\x77\x6f"]);
+        parent::wigskegsqequoeks();
+    }
+    public function kgquecmsgcouyaya()
+    {
+        $this->cecaguuoecmccuse("\x77\157\157\x63\157\155\155\x65\x72\143\145\x5f\141\x74\x74\162\x69\142\165\x74\x65\137\x74\141\170\x6f\156\x6f\x6d\x69\145\x73", [$this, "\147\163\143\153\x71\171\x73\x6f\x6b\165\x6d\x6b\167\161\x73\x71"]);
+        parent::kgquecmsgcouyaya();
+    }
+    public function icwcgmcoimqeigye()
+    {
+        $iggakkcyoeakgcmq = $this->sscegwueamckwmcy($this->ygyygikyocoymgaw("\x77\x6f\157\x63\157\155\x6d\x65\162\143\x65\x5f\x61\x74\164\x72\151\x62\x75\164\145\137\x74\141\x78\157\156\x6f\155\151\x65\163\137\x76\141\154\165\x65\137\164\171\x70\x65\163"), [self::DATE => __("\x44\141\164\x65", PR__CMN__FOUNDATION), self::NUMBER => __("\x4e\x75\x6d\x62\x65\x72", PR__CMN__FOUNDATION)]);
+        $this->mkksewyosgeumwsa(MetaBox::ckuwucygcwsiawms(self::VALUE_TYPE, __("\x56\x61\154\x75\145\40\164\x79\x70\145", PR__CMN__FOUNDATION), $iggakkcyoeakgcmq)->ccmwycqioaicegoc(__("\124\171\160\x65\x20\157\146\x20\x76\141\x6c\x75\145\163", PR__CMN__FOUNDATION)));
+    }
+    
+    public function gsckqysokumkwqsq($oammesyieqmwuwyi)
+    {
+        goto smuqqgosmeymscwo;
+        gyyuyqcmmcsoemkc:
+        return $oammesyieqmwuwyi;
+        goto ukgemiyqimumoyoa;
+        micgaswksmmkmgkq:
+        if (!is_array($oammesyieqmwuwyi)) {
+            goto ukkkayewayqiekce;
+        }
+        goto gqqeucaekwcskwqm;
+        uegaqgayeaugeoim:
+        ukkkayewayqiekce:
+        goto gyyuyqcmmcsoemkc;
+        ikaweoguqucoaegy:
+        qcmugwqioeggciuq:
+        goto uegaqgayeaugeoim;
+        smuqqgosmeymscwo:
+        $ikgwqyuyckaewsow = $this->ugmceccgwaaaigiy();
+        goto micgaswksmmkmgkq;
+        gqqeucaekwcskwqm:
+        foreach ($oammesyieqmwuwyi as $momcykaoccoymeig => $igqsaukqcqscimok) {
+            goto kqwoqegwcaycwyou;
+            umgmikwiqagosokm:
+            $oammesyieqmwuwyi[$momcykaoccoymeig] = $igqsaukqcqscimok;
+            goto ikiwqgmciageamia;
+            ayqwqcgquogagmsc:
+            gcsessaokiukkyig:
+            goto cwcoqyuoyckuuios;
+            cwcoqyuoyckuuios:
+            gguissygssokqwso:
+            goto umgmikwiqagosokm;
+            guuosmqayokicema:
+            if (!$mqeiemgcoiugcyuc) {
+                goto gguissygssokqwso;
+            }
+            goto cagiyomyssauaquc;
+            ikiwqgmciageamia:
+            iimgquoiiseikqug:
+            goto syaimiaogoukoqaa;
+            cagiyomyssauaquc:
+            foreach ($ikgwqyuyckaewsow as $aiowsaccomcoikus) {
+                goto okywiecqsoykqemk;
+                okywiecqsoykqemk:
+                $qiuwqmysqigceouo = $aiowsaccomcoikus->mwikyscisascoeea();
+                goto acmmiiqmeggwcuis;
+                ksugksoayiigqake:
+                cyomuwaeeaimesos:
+                goto mukqaqueesywqsuq;
+                acmmiiqmeggwcuis:
+                $igqsaukqcqscimok = ManipulateArray::set($igqsaukqcqscimok, [$qiuwqmysqigceouo => $this->qooeaookuemoqecm($qiuwqmysqigceouo, $mqeiemgcoiugcyuc)]);
+                goto ksugksoayiigqake;
+                mukqaqueesywqsuq:
+            }
+            goto ayqwqcgquogagmsc;
+            kqwoqegwcaycwyou:
+            $mqeiemgcoiugcyuc = ManipulateArray::get($igqsaukqcqscimok, "\x61\164\164\x72\x69\x62\165\x74\145\x5f\x69\x64");
+            goto guuosmqayokicema;
+            syaimiaogoukoqaa:
+        }
+        goto ikaweoguqucoaegy;
+        ukgemiyqimumoyoa:
+    }
+    
+    public function mgogaykgkoogasim() : ?Model
+    {
+        return $this->model;
+    }
+    
+    public function uqsmmauywmsuqais($ymkomoccmymcoiea) : ?string
+    {
+        return $ymkomoccmymcoiea->get_id();
+    }
+    
+    public function save($aokagokqyuysuksm)
+    {
+        foreach ($this->ugmceccgwaaaigiy() as $aiowsaccomcoikus) {
+            goto eggowcqiawiuwski;
+            qkgoiusmuuaqwywu:
+            zsscgecwckmocwqa:
+            goto waiwugiowecgeeww;
+            ouqgocoygmaiamou:
+            $this->mgogaykgkoogasim()->aawsuyueaaimeqsm($aokagokqyuysuksm, $ymqmyyeuycgmigyo, $eqgoocgaqwqcimie);
+            goto qaaymsuwqmigcoea;
+            awgyiumgyeockqoa:
+            $eqgoocgaqwqcimie = ManipulateServer::ayueggmoqeeukqmq($ymqmyyeuycgmigyo, '');
+            goto ouqgocoygmaiamou;
+            igkameomykgywamu:
+            $ymqmyyeuycgmigyo = $aiowsaccomcoikus->mwikyscisascoeea();
+            goto awgyiumgyeockqoa;
+            eggowcqiawiuwski:
+            if (!($aiowsaccomcoikus instanceof Field && $aiowsaccomcoikus->mwikyscisascoeea())) {
+                goto weyuusiimkuykwca;
+            }
+            goto igkameomykgywamu;
+            qaaymsuwqmigcoea:
+            weyuusiimkuykwca:
+            goto qkgoiusmuuaqwywu;
+            waiwugiowecgeeww:
+        }
+        miocgmmkkkksmisy:
+    }
+    
+    public function qooeaookuemoqecm($qqgocisyeuuqmcwc, $ymkomoccmymcoiea)
+    {
+        return $this->mgogaykgkoogasim()->eukesgmuogimqwaa($ymkomoccmymcoiea, $qqgocisyeuuqmcwc);
+    }
+    public function iiscqcwaiceokoyu()
+    {
+        goto wgawqekaeousiwwe;
+        cuwwggakcukcesmy:
+        oaoggiyikquikqmg:
+        goto yukceuoyyusqyiak;
+        wgawqekaeousiwwe:
+        $ikgwqyuyckaewsow = $this->ugmceccgwaaaigiy();
+        goto oewsmwkmgiiugcie;
+        oewsmwkmgiiugcie:
+        foreach ($ikgwqyuyckaewsow as $aiowsaccomcoikus) {
+            echo ManipulateTerm::qkauysqeioauswys($aiowsaccomcoikus);
+            awcqsekwccegiugq:
+        }
+        goto cuwwggakcukcesmy;
+        yukceuoyyusqyiak:
+    }
+    public function ggcygaycmccceswo()
+    {
+        goto ewgmqmguwukoekoc;
+        ewgmqmguwukoekoc:
+        $wwgeaeqgacgwooqi = ManipulateServer::get("\145\x64\151\x74");
+        goto wakwsokmekawssyi;
+        wakwsokmekawssyi:
+        if (!$wwgeaeqgacgwooqi) {
+            goto eckksscswgomeoqs;
+        }
+        goto okgaykwweumwcsyq;
+        mmiukekqescmgkie:
+        ywosowquuuociuio:
+        goto agmcywmicucyeiig;
+        okgaykwweumwcsyq:
+        $ikgwqyuyckaewsow = $this->ugmceccgwaaaigiy();
+        goto qwuuagecegiqouig;
+        qwuuagecegiqouig:
+        foreach ($ikgwqyuyckaewsow as $aiowsaccomcoikus) {
+            goto msqawsuquouuugkc;
+            imqikuakumuqamky:
+            eeimccqyqieauwuk:
+            goto myuwuwgiccywkiog;
+            myuwuwgiccywkiog:
+            gesseuyackqsekiy:
+            goto ackiyyoociyuiaio;
+            kaacyyeegamkqkak:
+            $aiowsaccomcoikus->iygyugseyaqwywyg($this->qooeaookuemoqecm($aiowsaccomcoikus->mwikyscisascoeea(), $wwgeaeqgacgwooqi));
+            goto uaqeuukkceomqisi;
+            msqawsuquouuugkc:
+            if (!$aiowsaccomcoikus instanceof Field) {
+                goto eeimccqyqieauwuk;
+            }
+            goto kaacyyeegamkqkak;
+            uaqeuukkceomqisi:
+            echo ManipulateTerm::qkauysqeioauswys($aiowsaccomcoikus, true);
+            goto imqikuakumuqamky;
+            ackiyyoociyuiaio:
+        }
+        goto mmiukekqescmgkie;
+        agmcywmicucyeiig:
+        eckksscswgomeoqs:
+        goto miuwoyekioyugegk;
+        miuwoyekioyugegk:
+    }
+}

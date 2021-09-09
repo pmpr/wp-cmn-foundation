@@ -1,2 +1,37 @@
 <?php
- namespace Pmpr\Common\Foundation\Decorator; use Pmpr\Common\Foundation\Interfaces\ConstantInterface; abstract class Decorator implements ConstantInterface { public static function callFunctionIfExist($STVAO, $Ql_ZF = false, ...$DrjAW) { goto kqt2s; mMVBc: return $GZ2SR; goto N5Ugk; v8KU5: Pi6aq: goto mMVBc; sLR63: if (!function_exists($STVAO)) { goto Pi6aq; } goto GMTv9; GMTv9: $GZ2SR = call_user_func($STVAO, ...$DrjAW); goto v8KU5; kqt2s: $GZ2SR = $Ql_ZF; goto sLR63; N5Ugk: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Decorator;
+
+use Pmpr\Common\Foundation\Interfaces\ConstantInterface;
+
+abstract class Decorator implements ConstantInterface
+{
+    
+    public static function qyyygkguqcmgkmey($ekiuyucoiagmscgy, $ggauoeuaesiymgee = false, ...$ywmkwiwkosakssii)
+    {
+        goto qaqiseeiwwigcwco;
+        wmwwsisgwaqsqeko:
+        smquqoksuqyismms:
+        goto mqusmmmgkskwmoau;
+        qqiasayqgeaewgwe:
+        $ksaameoqigiaoigg = call_user_func($ekiuyucoiagmscgy, ...$ywmkwiwkosakssii);
+        goto wmwwsisgwaqsqeko;
+        qaqiseeiwwigcwco:
+        $ksaameoqigiaoigg = $ggauoeuaesiymgee;
+        goto iequyuqyouasoeyy;
+        mqusmmmgkskwmoau:
+        return $ksaameoqigiaoigg;
+        goto syacoiikqeqwssee;
+        iequyuqyouasoeyy:
+        if (!function_exists($ekiuyucoiagmscgy)) {
+            goto smquqoksuqyismms;
+        }
+        goto qqiasayqgeaewgwe;
+        syacoiikqeqwssee:
+    }
+}

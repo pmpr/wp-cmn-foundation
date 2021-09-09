@@ -1,2 +1,73 @@
 <?php
- namespace Pmpr\Common\Foundation\FormMaker\Admin\Field; class Slider extends Field { protected array $images = []; protected array $flickity = []; protected array $imageAttributes = []; public function __construct(?string $CDV1j, ?string $vPl9z, array $DUEQm, array $km0D2 = [], ?string $Ym4v7 = null) { goto PXzda; IdVUp: $this->imageAttributes = $km0D2; goto GpdmS; PXzda: parent::__construct("\x73\x6c\x69\x64\x65\162", $CDV1j, $vPl9z, $Ym4v7); goto RqTeJ; RqTeJ: $this->images = $DUEQm; goto IdVUp; GpdmS: } public function getImages() : ?array { return $this->images; } public function setImages($DUEQm) : self { $this->images = $DUEQm; return $this; } public function getFlickity() : ?array { return $this->flickity; } public function setFlickity($Fq5DW) : self { $this->flickity = $Fq5DW; return $this; } public function getImageAttributes() : ?array { return $this->imageAttributes; } public function setImageAttributes($km0D2) : self { $this->imageAttributes = $km0D2; return $this; } public function afterToArray($sRAOE, array $DrjAW = []) : ?array { $sRAOE["\151\x6d\141\147\145\x2d\141\164\164\x72"] = $this->getImageAttributes(); return parent::afterToArray($sRAOE, $DrjAW); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\FormMaker\Admin\Field;
+
+
+class Slider extends Field
+{
+    
+    protected array $images = [];
+    
+    protected array $flickity = [];
+    
+    protected array $imageAttributes = [];
+    
+    public function __construct(?string $aokagokqyuysuksm, ?string $ymqmyyeuycgmigyo, array $somsiuiquigiqsmk, array $ucwamkesemusoeyc = [], ?string $mkqqqewsokcswckc = null)
+    {
+        goto amkuiuweeikqwmiy;
+        cussqussoggmeosi:
+        $this->imageAttributes = $ucwamkesemusoeyc;
+        goto isqmsyisayasekmi;
+        amkuiuweeikqwmiy:
+        parent::__construct("\x73\154\x69\x64\x65\x72", $aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc);
+        goto aqswwkimeemgqqig;
+        aqswwkimeemgqqig:
+        $this->images = $somsiuiquigiqsmk;
+        goto cussqussoggmeosi;
+        isqmsyisayasekmi:
+    }
+    
+    public function yumisumuwkywyyqk() : ?array
+    {
+        return $this->images;
+    }
+    
+    public function gusyugwmyiwwsmui($somsiuiquigiqsmk) : self
+    {
+        $this->images = $somsiuiquigiqsmk;
+        return $this;
+    }
+    
+    public function igqaeymkskkcckac() : ?array
+    {
+        return $this->flickity;
+    }
+    
+    public function quoekiugscwkoeoo($qweosuogcimgomwi) : self
+    {
+        $this->flickity = $qweosuogcimgomwi;
+        return $this;
+    }
+    
+    public function kkyeqssqcoqmoycc() : ?array
+    {
+        return $this->imageAttributes;
+    }
+    
+    public function omsioukysssesasy($ucwamkesemusoeyc) : self
+    {
+        $this->imageAttributes = $ucwamkesemusoeyc;
+        return $this;
+    }
+    
+    public function uqawesackiomqgga($kkeqqkkkqwkocsyu, array $ywmkwiwkosakssii = []) : ?array
+    {
+        $kkeqqkkkqwkocsyu["\x69\155\141\x67\145\x2d\141\164\164\162"] = $this->kkyeqssqcoqmoycc();
+        return parent::uqawesackiomqgga($kkeqqkkkqwkocsyu, $ywmkwiwkosakssii);
+    }
+}

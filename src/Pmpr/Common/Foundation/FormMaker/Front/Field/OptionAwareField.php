@@ -1,2 +1,50 @@
 <?php
- namespace Pmpr\Common\Foundation\FormMaker\Front\Field; class OptionAwareField extends Field { protected ?array $options = []; public function getOptions() : ?array { return $this->options; } public function setOptions(array $sJYGe) : self { $this->options = $sJYGe; return $this; } public function addOption($bUHaw, $czd3T) : self { $this->options[$bUHaw] = $czd3T; return $this; } public function addOptions($sJYGe) : self { goto oTx40; oTx40: foreach ($sJYGe as $bUHaw => $czd3T) { $this->addOption($bUHaw, $czd3T); kHFDB: } goto Zh_dj; Zh_dj: xEGbE: goto WFlWo; WFlWo: return $this; goto nXw7R; nXw7R: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\FormMaker\Front\Field;
+
+
+class OptionAwareField extends Field
+{
+    
+    protected ?array $options = [];
+    
+    public function gkwkqmwweiawigae() : ?array
+    {
+        return $this->options;
+    }
+    
+    public function eksgyasugmuassok(array $qiouiwasaauyaaue) : self
+    {
+        $this->options = $qiouiwasaauyaaue;
+        return $this;
+    }
+    
+    public function kesomeowemmyygey($uusmaiomayssaecw, $omkysikckkcieckq) : self
+    {
+        $this->options[$uusmaiomayssaecw] = $omkysikckkcieckq;
+        return $this;
+    }
+    
+    public function acauweqyyugwisqc($qiouiwasaauyaaue) : self
+    {
+        goto wmqacumokqegmmiq;
+        wmqacumokqegmmiq:
+        foreach ($qiouiwasaauyaaue as $uusmaiomayssaecw => $omkysikckkcieckq) {
+            $this->kesomeowemmyygey($uusmaiomayssaecw, $omkysikckkcieckq);
+            wegiqgicwasiuomk:
+        }
+        goto cqewgaaqiwayuoko;
+        kgywiqemagekugqe:
+        return $this;
+        goto uuiukusqaqkykiyi;
+        cqewgaaqiwayuoko:
+        gwewaiykiykyigeo:
+        goto kgywiqemagekugqe;
+        uuiukusqaqkykiyi:
+    }
+}

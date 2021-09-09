@@ -1,2 +1,105 @@
 <?php
- namespace Pmpr\Common\Foundation\Manipulate; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; class ManipulateFormat extends Manipulate { public static function isExternalLink($GJw4l) { goto AwKcE; x_Vzl: $ETlXO = ManipulateArray::get($dyyPs, "\150\x6f\163\164"); goto NP2tV; AwKcE: $dtzBn = self::parseURL(ManipulateServer::homeURL()); goto j9Miw; NP2tV: return $dtzBn && $u24Zt && $dyyPs && $ETlXO && strcasecmp($ETlXO, $u24Zt) !== 0; goto iO5BJ; lrTN7: $u24Zt = ManipulateArray::get($dtzBn, "\x68\157\163\164"); goto x_Vzl; j9Miw: $dyyPs = self::parseURL($GJw4l); goto lrTN7; iO5BJ: } public static function parseURL($GJw4l, $eY_VU = -1) { goto dDRg2; SAOg4: Tq3Uw: goto AuTr6; vReQw: yWnfu: goto nqeFN; YJjJo: $OB14_ = parse_url($GJw4l, $eY_VU); goto mu5KC; mu5KC: goto Tq3Uw; goto vReQw; AuTr6: return $OB14_; goto V2IPU; nqeFN: $OB14_ = wp_parse_url($GJw4l, $eY_VU); goto SAOg4; dDRg2: if (function_exists("\167\160\137\x70\x61\162\x73\x65\137\x75\162\x6c")) { goto yWnfu; } goto YJjJo; V2IPU: } public static function parseArgs($DrjAW, $ppKv3 = []) { return wp_parse_args($DrjAW, $ppKv3); } public static function addProtocol2URL(string $GJw4l) : string { goto rt0iG; QGZ2z: $GJw4l = "\x2f\x2f" . $GJw4l; goto K_Q2W; d9j4X: $GJw4l = set_url_scheme($GJw4l); goto RQv_G; rt0iG: if (!(!strpos($GJw4l, "\x68\164\164\x70\x3a\57\x2f") !== false && !strpos($GJw4l, "\150\164\x74\160\x73\72\x2f\x2f") !== false)) { goto Qgawd; } goto ukO4S; K_Q2W: QTQoz: goto d9j4X; MDqP1: return $GJw4l; goto tQlaM; RQv_G: Qgawd: goto MDqP1; ukO4S: if (!(substr($GJw4l, 0, 2) !== "\57\57")) { goto QTQoz; } goto QGZ2z; tQlaM: } public static function removeHttpProtocol($GJw4l = '') : ?string { return str_replace(["\x68\164\164\x70\72\x2f\57", "\150\164\164\160\x73\72\x2f\57", "\x2f\57"], '', $GJw4l); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Manipulate;
+
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
+
+class ManipulateFormat extends Manipulate
+{
+    
+    public static function aoaeiwswyagmesku($eeamcawaiqocomwy)
+    {
+        goto ekiaoywcsemmomqw;
+        ekiaoywcsemmomqw:
+        $egsumesakcaaukem = self::gooqqcmsyseiaikc(ManipulateServer::gmigwwwmwemyaayy());
+        goto koaeoimocwqoguem;
+        koaeoimocwqoguem:
+        $ccamueccusigaaio = self::gooqqcmsyseiaikc($eeamcawaiqocomwy);
+        goto yaiicikgkwuucyac;
+        awcsskayoyoqcuie:
+        return $egsumesakcaaukem && $wkwsmsgmkcmugoya && $ccamueccusigaaio && $yukwwaakiyeueawg && strcasecmp($yukwwaakiyeueawg, $wkwsmsgmkcmugoya) !== 0;
+        goto kwakioosoiemmiok;
+        yaiicikgkwuucyac:
+        $wkwsmsgmkcmugoya = ManipulateArray::get($egsumesakcaaukem, "\x68\x6f\x73\x74");
+        goto cwsacmayigiyqiim;
+        cwsacmayigiyqiim:
+        $yukwwaakiyeueawg = ManipulateArray::get($ccamueccusigaaio, "\150\157\x73\x74");
+        goto awcsskayoyoqcuie;
+        kwakioosoiemmiok:
+    }
+    
+    public static function gooqqcmsyseiaikc($eeamcawaiqocomwy, $wksoawcgagcgoask = -1)
+    {
+        goto aamysqsckaiwqayk;
+        aamysqsckaiwqayk:
+        if (function_exists("\x77\160\137\x70\x61\x72\163\145\x5f\x75\x72\154")) {
+            goto ckawikqsskikqiya;
+        }
+        goto ceusqkuwoqusqoug;
+        cysskkuqiccoycuk:
+        ckawikqsskikqiya:
+        goto micwmacyekkoumqe;
+        kcyiiwwsyagcyiic:
+        goto gegywycsimoakaei;
+        goto cysskkuqiccoycuk;
+        ceusqkuwoqusqoug:
+        $yiasugywggckywoa = parse_url($eeamcawaiqocomwy, $wksoawcgagcgoask);
+        goto kcyiiwwsyagcyiic;
+        micwmacyekkoumqe:
+        $yiasugywggckywoa = wp_parse_url($eeamcawaiqocomwy, $wksoawcgagcgoask);
+        goto iqqsmugsquwuwmys;
+        qoagkeesiqqueeac:
+        return $yiasugywggckywoa;
+        goto syaceqoiqwmukkka;
+        iqqsmugsquwuwmys:
+        gegywycsimoakaei:
+        goto qoagkeesiqqueeac;
+        syaceqoiqwmukkka:
+    }
+    
+    public static function omaawkkwwyesqwcc($ywmkwiwkosakssii, $ycmguuqqaiisymgg = [])
+    {
+        return wp_parse_args($ywmkwiwkosakssii, $ycmguuqqaiisymgg);
+    }
+    
+    public static function qugygsasyieckkoc(string $eeamcawaiqocomwy) : string
+    {
+        goto ywsmaykqgsqcascy;
+        wsekioqwsiuuemiu:
+        $eeamcawaiqocomwy = set_url_scheme($eeamcawaiqocomwy);
+        goto eqgaeioggggckcqy;
+        ywsmaykqgsqcascy:
+        if (!(!strpos($eeamcawaiqocomwy, "\x68\164\164\x70\x3a\57\57") !== false && !strpos($eeamcawaiqocomwy, "\x68\x74\164\160\163\x3a\x2f\57") !== false)) {
+            goto iymgcgmyoeuckqyq;
+        }
+        goto qeumeeoamsmgwgga;
+        qeumeeoamsmgwgga:
+        if (!(substr($eeamcawaiqocomwy, 0, 2) !== "\57\57")) {
+            goto eoiammowyewyyqog;
+        }
+        goto sycwismoacqosiiq;
+        sycwismoacqosiiq:
+        $eeamcawaiqocomwy = "\57\57" . $eeamcawaiqocomwy;
+        goto msywwusgwymwiwoo;
+        kwqigwcciguyuegu:
+        return $eeamcawaiqocomwy;
+        goto qequskoucemymsom;
+        msywwusgwymwiwoo:
+        eoiammowyewyyqog:
+        goto wsekioqwsiuuemiu;
+        eqgaeioggggckcqy:
+        iymgcgmyoeuckqyq:
+        goto kwqigwcciguyuegu;
+        qequskoucemymsom:
+    }
+    
+    public static function gokuyqsimauyacke($eeamcawaiqocomwy = '') : ?string
+    {
+        return str_replace(["\x68\164\x74\160\x3a\57\x2f", "\x68\164\x74\160\x73\72\57\x2f", "\x2f\x2f"], '', $eeamcawaiqocomwy);
+    }
+}

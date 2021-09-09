@@ -1,2 +1,55 @@
 <?php
- namespace Pmpr\Common\Foundation\FormMaker\Admin\Field; class Radio extends OptionAwareField { protected bool $inline; public function __construct(?string $CDV1j, ?string $vPl9z, array $sJYGe = [], ?string $Ym4v7 = null) { goto SxW2G; wUXot: $this->setDefault(key($sJYGe)); goto X7Jgp; VKdwF: parent::__construct("\x72\x61\x64\151\x6f", $CDV1j, $vPl9z, $Ym4v7, $sJYGe); goto fuC5c; SxW2G: if (!(is_array($sJYGe) && $sJYGe)) { goto xK1J1; } goto wUXot; X7Jgp: xK1J1: goto VKdwF; fuC5c: } public function isInline() : ?bool { return $this->inline; } public function setInline(bool $pWZVs) : self { $this->inline = $pWZVs; return $this; } public function asInline() : Field { $this->setInline(true); return parent::asInline(); } public function getItem($RW9QB, $aIx0U) { return array_merge(["\x6c\x61\x62\145\x6c" => $RW9QB], $aIx0U); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\FormMaker\Admin\Field;
+
+
+class Radio extends OptionAwareField
+{
+    
+    protected bool $inline;
+    
+    public function __construct(?string $aokagokqyuysuksm, ?string $ymqmyyeuycgmigyo, array $qiouiwasaauyaaue = [], ?string $mkqqqewsokcswckc = null)
+    {
+        goto yuoeiacwiaccoqmc;
+        kmukeiwuqougaquk:
+        ssgqequeqwoooawy:
+        goto qcsagcciiqgqicsw;
+        eqywooyqyouscges:
+        $this->eyygsasuqmommkua(key($qiouiwasaauyaaue));
+        goto kmukeiwuqougaquk;
+        qcsagcciiqgqicsw:
+        parent::__construct("\162\x61\x64\x69\157", $aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc, $qiouiwasaauyaaue);
+        goto osammgwycqaekuuu;
+        yuoeiacwiaccoqmc:
+        if (!(is_array($qiouiwasaauyaaue) && $qiouiwasaauyaaue)) {
+            goto ssgqequeqwoooawy;
+        }
+        goto eqywooyqyouscges;
+        osammgwycqaekuuu:
+    }
+    
+    public function wmociykwcyesssui() : ?bool
+    {
+        return $this->inline;
+    }
+    
+    public function awagieqcmmwkgwgs(bool $usyqkyomqcuocgoa) : self
+    {
+        $this->inline = $usyqkyomqcuocgoa;
+        return $this;
+    }
+    public function mkmssscwmeekwgqo() : Field
+    {
+        $this->awagieqcmmwkgwgs(true);
+        return parent::mkmssscwmeekwgqo();
+    }
+    public function sqoiuykcoueiucgc($pkyyagewkiyckmwy, $wwgucssaecqekuek)
+    {
+        return array_merge(["\x6c\141\142\145\154" => $pkyyagewkiyckmwy], $wwgucssaecqekuek);
+    }
+}

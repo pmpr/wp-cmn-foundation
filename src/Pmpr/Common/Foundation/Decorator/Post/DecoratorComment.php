@@ -1,2 +1,69 @@
 <?php
- namespace Pmpr\Common\Foundation\Decorator\Post; use WP_Error; class DecoratorComment extends Common { public static function get($aLpnO) { return get_comment($aLpnO); } public static function getText($aLpnO) { return get_comment_text($aLpnO); } public static function getAuthor($aLpnO) { return get_comment_author($aLpnO); } public static function getList($DrjAW = []) { return get_comments($DrjAW); } public static function getAuthorURL($aLpnO) { return get_comment_author_url($aLpnO); } public static function update(array $h9FEe) { return wp_update_comment($h9FEe); } public static function delete($aLpnO, $utCy4 = false) { return wp_delete_comment($aLpnO, $utCy4); } public static function getClass($jg5rc = [], $aLpnO = null) { return get_comment_class($jg5rc, $aLpnO); } public static function getMeta($aLpnO, $bUHaw, $R9bYZ = true) { return get_comment_meta($aLpnO, $bUHaw, $R9bYZ); } public static function updateMeta($aLpnO, $bUHaw, $yjbyt, $Daf1U = '') { return update_comment_meta($aLpnO, $bUHaw, $yjbyt, $Daf1U); } public static function addMeta($aLpnO, $bUHaw, $yjbyt, $e4jvG = true) { return add_comment_meta($aLpnO, $bUHaw, $yjbyt, $e4jvG); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Decorator\Post;
+
+use WP_Error;
+
+class DecoratorComment extends Common
+{
+    
+    public static function get($aqqmosqmsuueyaes)
+    {
+        return get_comment($aqqmosqmsuueyaes);
+    }
+    
+    public static function ykgcioecqcwwkime($aqqmosqmsuueyaes)
+    {
+        return get_comment_text($aqqmosqmsuueyaes);
+    }
+    
+    public static function mguqscccckuywsya($aqqmosqmsuueyaes)
+    {
+        return get_comment_author($aqqmosqmsuueyaes);
+    }
+    
+    public static function ciugwooasaqcywas($ywmkwiwkosakssii = [])
+    {
+        return get_comments($ywmkwiwkosakssii);
+    }
+    
+    public static function qkweigiqsaaigqau($aqqmosqmsuueyaes)
+    {
+        return get_comment_author_url($aqqmosqmsuueyaes);
+    }
+    
+    public static function update(array $emeuqoyyougcgsoq)
+    {
+        return wp_update_comment($emeuqoyyougcgsoq);
+    }
+    
+    public static function delete($aqqmosqmsuueyaes, $cwwowqyuwccuykom = false)
+    {
+        return wp_delete_comment($aqqmosqmsuueyaes, $cwwowqyuwccuykom);
+    }
+    
+    public static function uecyuoauykiqqkey($egkyssmuqcwaciya = [], $aqqmosqmsuueyaes = null)
+    {
+        return get_comment_class($egkyssmuqcwaciya, $aqqmosqmsuueyaes);
+    }
+    
+    public static function igawqaomowicuayw($aqqmosqmsuueyaes, $uusmaiomayssaecw, $cuyooiakswegosog = true)
+    {
+        return get_comment_meta($aqqmosqmsuueyaes, $uusmaiomayssaecw, $cuyooiakswegosog);
+    }
+    
+    public static function ksmqawcowkmegigw($aqqmosqmsuueyaes, $uusmaiomayssaecw, $eqgoocgaqwqcimie, $swwmymiaiosiyqis = '')
+    {
+        return update_comment_meta($aqqmosqmsuueyaes, $uusmaiomayssaecw, $eqgoocgaqwqcimie, $swwmymiaiosiyqis);
+    }
+    
+    public static function giwmekimakcaawsq($aqqmosqmsuueyaes, $uusmaiomayssaecw, $eqgoocgaqwqcimie, $omasqoksqewuwwkq = true)
+    {
+        return add_comment_meta($aqqmosqmsuueyaes, $uusmaiomayssaecw, $eqgoocgaqwqcimie, $omasqoksqewuwwkq);
+    }
+}

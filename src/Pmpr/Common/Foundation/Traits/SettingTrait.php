@@ -1,2 +1,112 @@
 <?php
- namespace Pmpr\Common\Foundation\Traits; use Pmpr\Common\Foundation\FormMaker\Admin\Element\Setting; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; trait SettingTrait { protected ?Setting $settingObj = null; protected array $allSettings = []; public final function getSettingObj() : ?Setting { return $this->settingObj; } public final function getAllSettings() : array { goto XdYaD; DY8uQ: skXqJ: goto FGdZF; sQPiu: $QsfZH = $this->getSettingObj(); goto eZ8iy; JoLRL: $this->allSettings = $QSM1c; goto DY8uQ; eZ8iy: if (!$QsfZH) { goto SODDw; } goto MTqYM; MTqYM: $QSM1c = $QsfZH::getSettings(); goto P0EXi; kctVG: oLi0_: goto AwyXp; XdYaD: if ($this->allSettings) { goto oLi0_; } goto sQPiu; AwyXp: return $this->allSettings; goto H6dRr; FGdZF: SODDw: goto kctVG; P0EXi: if (!is_array($QSM1c)) { goto skXqJ; } goto JoLRL; H6dRr: } public final function getSettingByKey(string $bUHaw, $Ql_ZF = null) { goto aASm0; jmsI6: if (!$QsfZH) { goto RSxbz; } goto E6q_U; WavGu: $QsfZH = $this->getSettingObj(); goto jmsI6; LGNAd: if (!$QSM1c) { goto XW0b7; } goto cVjSB; aASm0: $QSM1c = $this->getAllSettings(); goto LGNAd; NV0Sy: goto NTwxn; goto oztqE; xA9I5: $xN65K = $Ql_ZF; goto WavGu; BUPiX: return $xN65K; goto rayCc; E6q_U: $xN65K = $QsfZH::getSetting($bUHaw, $Ql_ZF); goto JjHkD; oztqE: XW0b7: goto xA9I5; JjHkD: RSxbz: goto V3Un_; V3Un_: NTwxn: goto BUPiX; cVjSB: $xN65K = ManipulateArray::get($QSM1c, $bUHaw, $Ql_ZF); goto NV0Sy; rayCc: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Traits;
+
+use Pmpr\Common\Foundation\FormMaker\Admin\Element\Setting;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
+
+trait SettingTrait
+{
+    
+    protected ?Setting $settingObj = null;
+    
+    protected array $allSettings = [];
+    
+    public final function kmuweyayaqoeqiyw() : ?Setting
+    {
+        return $this->settingObj;
+    }
+    
+    public final function aoqykkmokwseeeie() : array
+    {
+        goto mmumoewcwoeqqikq;
+        acssgquoaaqsgkoc:
+        if (!$mksyucucyswaukig) {
+            goto scaqkaeuuiukecqw;
+        }
+        goto qimeociykiaweowe;
+        qimeociykiaweowe:
+        $qeqooyuoiasweuck = $mksyucucyswaukig::mywwyegkuymookeg();
+        goto scmqowwwcamqgmko;
+        cmquiwyeuuqiukoq:
+        yuuweaqskiwsqcma:
+        goto wiyqcmuawqcaiqii;
+        suussioiakqqoucq:
+        $mksyucucyswaukig = $this->kmuweyayaqoeqiyw();
+        goto acssgquoaaqsgkoc;
+        scmqowwwcamqgmko:
+        if (!is_array($qeqooyuoiasweuck)) {
+            goto kqykqkseesagqqyq;
+        }
+        goto cmigmsgqgyquimqk;
+        qcaquoiwoswywuoq:
+        kqykqkseesagqqyq:
+        goto ggsmiqmuykwukucu;
+        wiyqcmuawqcaiqii:
+        return $this->allSettings;
+        goto mwuaakaqmuaoceee;
+        cmigmsgqgyquimqk:
+        $this->allSettings = $qeqooyuoiasweuck;
+        goto qcaquoiwoswywuoq;
+        mmumoewcwoeqqikq:
+        if ($this->allSettings) {
+            goto yuuweaqskiwsqcma;
+        }
+        goto suussioiakqqoucq;
+        ggsmiqmuykwukucu:
+        scaqkaeuuiukecqw:
+        goto cmquiwyeuuqiukoq;
+        mwuaakaqmuaoceee:
+    }
+    
+    public final function weysguygiseoukqw(string $uusmaiomayssaecw, $ggauoeuaesiymgee = null)
+    {
+        goto iyuykukkmuayayya;
+        cycegeagomyaqcyk:
+        $amakmumgguksgmum = ManipulateArray::get($qeqooyuoiasweuck, $uusmaiomayssaecw, $ggauoeuaesiymgee);
+        goto ycmkeyowaosmeqcq;
+        ycmkeyowaosmeqcq:
+        goto yaagosqmegoeuayu;
+        goto swymgyikwmgeocwc;
+        iyuykukkmuayayya:
+        $qeqooyuoiasweuck = $this->aoqykkmokwseeeie();
+        goto qcococyiuemmqkyy;
+        qcococyiuemmqkyy:
+        if (!$qeqooyuoiasweuck) {
+            goto aykqwyescqmocguo;
+        }
+        goto cycegeagomyaqcyk;
+        swymgyikwmgeocwc:
+        aykqwyescqmocguo:
+        goto umkuoceaqoiucmim;
+        yommcseewkuckumw:
+        yaagosqmegoeuayu:
+        goto sesewseggywgeamc;
+        sesewseggywgeamc:
+        return $amakmumgguksgmum;
+        goto qmcwuyogkcugmqss;
+        owcacaiiayyowwaq:
+        $amakmumgguksgmum = $mksyucucyswaukig::eiwcuqigayigimak($uusmaiomayssaecw, $ggauoeuaesiymgee);
+        goto oiksuciayusgwsua;
+        umkuoceaqoiucmim:
+        $amakmumgguksgmum = $ggauoeuaesiymgee;
+        goto iaawguyeskggqumi;
+        oiksuciayusgwsua:
+        qkuyaaweimgsaqww:
+        goto yommcseewkuckumw;
+        cmewqmeamawkiigk:
+        if (!$mksyucucyswaukig) {
+            goto qkuyaaweimgsaqww;
+        }
+        goto owcacaiiayyowwaq;
+        iaawguyeskggqumi:
+        $mksyucucyswaukig = $this->kmuweyayaqoeqiyw();
+        goto cmewqmeamawkiigk;
+        qmcwuyogkcugmqss:
+    }
+}

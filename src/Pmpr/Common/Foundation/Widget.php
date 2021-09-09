@@ -1,2 +1,272 @@
 <?php
- namespace Pmpr\Common\Foundation; use Pmpr\Common\Foundation\Container\Traits\SingletonTrait; use Pmpr\Common\Foundation\Decorator\DecoratorWidget; use Pmpr\Common\Foundation\FormMaker\Admin\Field\Field; use Pmpr\Common\Foundation\FormMaker\Admin\Traits\ElementTrait; use Pmpr\Common\Foundation\FormMaker\Admin\Traits\FieldTrait; use Pmpr\Common\Foundation\Interfaces\ConstantInterface; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString; use Pmpr\Common\Foundation\Traits\ComponentTrait; use Pmpr\Common\Foundation\Traits\HookTrait; use Pmpr\Common\Foundation\Traits\TranslateTrait; use WP_Widget; abstract class Widget extends WP_Widget implements ConstantInterface { const OUTPUT_TEMPLATE = "\157\165\x74\x70\x75\164\x5f\164\x65\x6d\160\154\141\164\x65"; use SingletonTrait, ComponentTrait, TranslateTrait, ElementTrait, FieldTrait, HookTrait; public function __construct(string $vPl9z = null, string $Ym4v7 = null, $CDV1j = null, $TLFm3 = [], $RE6h3 = []) { goto kxZ05; z1hF6: EDdY3: goto zDbHX; zFg1Z: $this->setup(); goto KPv1q; XKHDQ: parent::__construct("{$s7T9l}\x5f{$CDV1j}", $vPl9z, $TLFm3, $RE6h3); goto zFg1Z; uwOJB: $TLFm3 = array_merge($TLFm3, ["\143\154\x61\x73\163\156\141\155\x65" => ManipulateString::toKebab("{$s7T9l}\55{$CDV1j}"), self::DESCRIPTION => $Ym4v7]); goto XKHDQ; jiQmA: $CDV1j = ManipulateString::toSnake(self::getShortClass()); goto z1hF6; kxZ05: if ($CDV1j) { goto EDdY3; } goto jiQmA; zDbHX: $s7T9l = self::getRegisteredComponentName(); goto uwOJB; KPv1q: } public function addActions() { $this->addAction("\x61\144\x6d\x69\x6e\137\151\x6e\151\x74", [$this, "\141\x64\x6d\x69\156\111\156\151\164"])->addAction("\167\x69\x64\147\145\x74\163\x5f\151\156\x69\x74", [$this, "\162\145\x67\x69\163\x74\145\162"])->addAction("\x61\144\155\x69\x6e\x5f\146\157\x6f\x74\145\162\x2d\x77\x69\144\147\x65\x74\163\56\160\x68\160", [$this, "\141\x64\x6d\151\156\106\x6f\x6f\x74\x65\x72"]); } public function register() { DecoratorWidget::register(self::getCalledClass()); } public function adminInit() { goto iWw_V; iWw_V: global $hook_suffix; goto k0YEx; ey1fK: kGg9l: goto Zoivb; roFRg: $this->enqueueAssets(); goto ey1fK; k0YEx: if (!($hook_suffix === "\x77\x69\x64\x67\145\x74\x73\x2e\x70\x68\x70")) { goto kGg9l; } goto roFRg; Zoivb: } public function enqueueAssets() { } public function adminFooter() { } public function update($X5RSK, $lNfph) { goto tRSsj; af3EU: return $jfqIH; goto wM370; vxqng: $F9q7E = $this->getFields(); goto PFaYY; PFaYY: foreach ($F9q7E as $CDV1j => $mi3kO) { $jfqIH[$CDV1j] = ManipulateArray::get($X5RSK, $CDV1j); rXd0B: } goto nRPHp; tRSsj: $jfqIH = $lNfph; goto vxqng; nRPHp: f1omh: goto af3EU; wM370: } public function form($jfqIH) { goto d1bNN; M4SFk: $F9q7E = $this->getFields(); goto ikVfr; NdyKA: self::renderFields($m8qRA); goto heffR; me0U3: if (!$m8qRA) { goto Sff0H; } goto NdyKA; gRWh1: glRVZ: goto me0U3; ikVfr: foreach ($F9q7E as $CDV1j => $mi3kO) { goto uu_6h; LEfKC: goto flgna; goto V8Ht9; QmW4B: $m8qRA[$CDV1j] = $mi3kO; goto Fg_vr; jej1S: if (!($yjbyt = ManipulateArray::get($jfqIH, $CDV1j))) { goto EQRhK; } goto n7gRU; KkoYy: flgna: goto QmW4B; uu_6h: $mi3kO["\151\144"] = $this->get_field_name($CDV1j); goto VyS9U; WJ516: if (!$mi3kO instanceof Field) { goto IMe91; } goto jej1S; iaRNT: if (in_array($mi3kO->getType(), ["\143\150\x65\x63\153\x62\x6f\170", "\162\x61\144\x69\157"])) { goto rREI9; } goto o2N0l; o2N0l: $mi3kO->asBlock()->replaceAttribute("\151\x64", $this->get_field_id($CDV1j)); goto LEfKC; Fg_vr: IMe91: goto noNWv; np8bN: EQRhK: goto iaRNT; VNshs: $mi3kO->asInline(); goto KkoYy; noNWv: OiLBZ: goto mixyZ; n7gRU: $mi3kO->setValue($yjbyt); goto np8bN; VyS9U: $mi3kO = self::getFieldByArgs($mi3kO); goto WJ516; V8Ht9: rREI9: goto VNshs; mixyZ: } goto gRWh1; heffR: Sff0H: goto sXxOc; d1bNN: $m8qRA = []; goto M4SFk; sXxOc: } public final function widget($DrjAW, $jfqIH) { goto xHoee; y_Wkk: if (!$SzEyC) { goto ihUt6; } goto aKkD1; xHoee: if (!(is_array($DrjAW) && is_array($jfqIH))) { goto abroi; } goto hO2Qj; rTi0L: ihUt6: goto vPCsW; uqSK3: echo (string) ManipulateArray::get($DrjAW, self::AFTER_WIDGET, ''); goto rTi0L; vPCsW: abroi: goto Vbukt; IO4mG: echo $SzEyC; goto uqSK3; aKkD1: echo (string) ManipulateArray::get($DrjAW, self::BEFORE_WIDGET, ''); goto IO4mG; hO2Qj: $SzEyC = $this->getOutput($DrjAW, $jfqIH); goto y_Wkk; Vbukt: } public final function getOutput(?array $DrjAW = [], ?array $jfqIH = []) { goto M6Jyu; rvcQt: $NnlHI = ''; goto paEQF; MV_Iv: if (!$this->canRender($DrjAW, $jfqIH, $ZrOBu)) { goto Z82jl; } goto UfCf5; paEQF: $uWq9S = ManipulateString::toSnake(ManipulateArray::get($ZrOBu, self::OUTPUT_TEMPLATE, self::getShortClass())); goto MV_Iv; UfCf5: $NnlHI = $this->renderTemplate($uWq9S, $ZrOBu, ["\x65\x63\x68\157" => false]); goto wfHmN; M6Jyu: $ZrOBu = $this->getParameters($DrjAW, $jfqIH); goto rvcQt; CGMOf: return $NnlHI; goto keHDM; wfHmN: Z82jl: goto CGMOf; keHDM: } public function canRender($DrjAW = [], $jfqIH = [], $ZrOBu = []) : bool { return !empty($ZrOBu); } public function getParameters($DrjAW = [], $jfqIH = []) : array { return $jfqIH; } public abstract function getFields() : array; }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation;
+
+use Pmpr\Common\Foundation\Container\Traits\SingletonTrait;
+use Pmpr\Common\Foundation\Decorator\DecoratorWidget;
+use Pmpr\Common\Foundation\FormMaker\Admin\Field\Field;
+use Pmpr\Common\Foundation\FormMaker\Admin\Traits\ElementTrait;
+use Pmpr\Common\Foundation\FormMaker\Admin\Traits\FieldTrait;
+use Pmpr\Common\Foundation\Interfaces\ConstantInterface;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString;
+use Pmpr\Common\Foundation\Traits\ComponentTrait;
+use Pmpr\Common\Foundation\Traits\HookTrait;
+use Pmpr\Common\Foundation\Traits\TranslateTrait;
+use WP_Widget;
+
+abstract class Widget extends WP_Widget implements ConstantInterface
+{
+    const OUTPUT_TEMPLATE = "\157\x75\x74\160\x75\164\137\164\145\x6d\160\x6c\x61\x74\x65";
+    use SingletonTrait, ComponentTrait, TranslateTrait, ElementTrait, FieldTrait, HookTrait;
+    
+    public function __construct(string $ymqmyyeuycgmigyo = null, string $mkqqqewsokcswckc = null, $aokagokqyuysuksm = null, $yqwciyekkgusiioi = [], $akcsikgoamcgoccg = [])
+    {
+        goto iqocscomgkciyiwe;
+        gosgauymqceykgek:
+        auegygmkkiqsgwsc:
+        goto eyqggcokeuakaskk;
+        eyqggcokeuakaskk:
+        $quowyokcwswmuois = self::akuociswqmoigkas();
+        goto uqskcceawegkiakk;
+        iqocscomgkciyiwe:
+        if ($aokagokqyuysuksm) {
+            goto auegygmkkiqsgwsc;
+        }
+        goto yqqyiokywmggkmke;
+        yqqyiokywmggkmke:
+        $aokagokqyuysuksm = ManipulateString::ogimogiceeekegoi(self::ugwmakayykcmcmqa());
+        goto gosgauymqceykgek;
+        uqskcceawegkiakk:
+        $yqwciyekkgusiioi = array_merge($yqwciyekkgusiioi, ["\143\154\x61\163\163\156\x61\155\x65" => ManipulateString::igcwuwuymeuomaqo("{$quowyokcwswmuois}\55{$aokagokqyuysuksm}"), self::DESCRIPTION => $mkqqqewsokcswckc]);
+        goto uysygigskiiwsckq;
+        uysygigskiiwsckq:
+        parent::__construct("{$quowyokcwswmuois}\x5f{$aokagokqyuysuksm}", $ymqmyyeuycgmigyo, $yqwciyekkgusiioi, $akcsikgoamcgoccg);
+        goto woomeusquuuqekig;
+        woomeusquuuqekig:
+        $this->gyqeoeemeemicgqi();
+        goto mcwswowewmqqckqw;
+        mcwswowewmqqckqw:
+    }
+    public function wigskegsqequoeks()
+    {
+        $this->qcsmikeggeemccuu("\x61\x64\155\x69\156\x5f\x69\156\151\164", [$this, "\171\x65\171\x69\147\x75\171\145\147\155\155\x79\165\x73\x65\141"])->qcsmikeggeemccuu("\x77\x69\x64\147\x65\x74\163\x5f\151\x6e\x69\x74", [$this, "\x72\145\147\x69\163\x74\x65\162"])->qcsmikeggeemccuu("\141\x64\x6d\151\156\x5f\146\157\x6f\x74\145\162\55\167\151\x64\x67\145\x74\x73\x2e\160\x68\x70", [$this, "\x67\x67\163\153\143\147\x67\141\141\x65\x61\153\147\x61\x71\143"]);
+    }
+    public function register()
+    {
+        DecoratorWidget::register(self::uqggkiomyiceyooa());
+    }
+    public function yeyiguyegmmyusea()
+    {
+        goto qawueqwiyeiyecce;
+        msouaocmygwukeos:
+        $this->saoyckekguwqwgcq();
+        goto euyiicoiumuescuk;
+        qawueqwiyeiyecce:
+        global $hook_suffix;
+        goto oumqmgawoewueoio;
+        euyiicoiumuescuk:
+        uggeicmsysmmaqqc:
+        goto gyauoqayaysycwwa;
+        oumqmgawoewueoio:
+        if (!($hook_suffix === "\167\151\144\147\145\x74\x73\56\x70\150\160")) {
+            goto uggeicmsysmmaqqc;
+        }
+        goto msouaocmygwukeos;
+        gyauoqayaysycwwa:
+    }
+    public function saoyckekguwqwgcq()
+    {
+    }
+    public function ggskcggaaeakgaqc()
+    {
+    }
+    
+    public function update($new_instance, $old_instance) : array
+    {
+        goto ugkwawscyiogikmg;
+        gyeoaqyauigkuyuw:
+        return $owgumcsyqsamiemg;
+        goto ygyasaouaeomcook;
+        ugkwawscyiogikmg:
+        $owgumcsyqsamiemg = $old_instance;
+        goto ouggemmeccgmecei;
+        sagesqcycossmmcy:
+        foreach ($ikgwqyuyckaewsow as $aokagokqyuysuksm => $aiowsaccomcoikus) {
+            $owgumcsyqsamiemg[$aokagokqyuysuksm] = ManipulateArray::get($new_instance, $aokagokqyuysuksm);
+            agokgacocekqqaaw:
+        }
+        goto kwkumyugkkscqsqa;
+        ouggemmeccgmecei:
+        $ikgwqyuyckaewsow = $this->ugmceccgwaaaigiy();
+        goto sagesqcycossmmcy;
+        kwkumyugkkscqsqa:
+        kcgykyaakyymmgca:
+        goto gyeoaqyauigkuyuw;
+        ygyasaouaeomcook:
+    }
+    
+    public function form($owgumcsyqsamiemg)
+    {
+        goto omskesmswmwcyqog;
+        uiwwogwqcoyqgqws:
+        $ikgwqyuyckaewsow = $this->ugmceccgwaaaigiy();
+        goto lemqkucuseomiegm;
+        kqoyicwkeiqacumi:
+        qoywwuqkqwgkgomu:
+        goto euayuoscsqgcwoco;
+        kysegkcsysgsocum:
+        kywsoesguwyeukuk:
+        goto uukawameoimyycmi;
+        omskesmswmwcyqog:
+        $eaoumsseceiowgsk = [];
+        goto uiwwogwqcoyqgqws;
+        lemqkucuseomiegm:
+        foreach ($ikgwqyuyckaewsow as $aokagokqyuysuksm => $aiowsaccomcoikus) {
+            goto oosmoaqgqegqmecm;
+            kgeouqmockmeqamy:
+            $aiowsaccomcoikus->mkmssscwmeekwgqo();
+            goto muymgykqieiyymqq;
+            yuqgckkmggeecmcu:
+            ywqqcwwikuaqgswy:
+            goto kgeouqmockmeqamy;
+            oosmoaqgqegqmecm:
+            $aiowsaccomcoikus["\151\144"] = $this->get_field_name($aokagokqyuysuksm);
+            goto eksiecgiomucusou;
+            eksiecgiomucusou:
+            $aiowsaccomcoikus = self::okmsgamiiemyesao($aiowsaccomcoikus);
+            goto gweewkicumqyakeo;
+            mggwwmagesiaegsg:
+            gmiqeasocceqcmyy:
+            goto aciwauiwiuckcckm;
+            qsseaomwyuequyuc:
+            $aiowsaccomcoikus->iygyugseyaqwywyg($eqgoocgaqwqcimie);
+            goto eeawuswkssoumcqq;
+            gweewkicumqyakeo:
+            if (!$aiowsaccomcoikus instanceof Field) {
+                goto gmiqeasocceqcmyy;
+            }
+            goto ceooomymweuccyke;
+            muymgykqieiyymqq:
+            qwckkegewuioawok:
+            goto caiggmogoqgosgka;
+            aciwauiwiuckcckm:
+            yoyuemoqqmcamysy:
+            goto mukmqcgqiyskioqg;
+            wgagciiiyokkccaw:
+            $aiowsaccomcoikus->yoimakcqmoqokkcu()->qcgocuceocquqcuw("\x69\144", $this->get_field_id($aokagokqyuysuksm));
+            goto swusasqsywoymauc;
+            caiggmogoqgosgka:
+            $eaoumsseceiowgsk[$aokagokqyuysuksm] = $aiowsaccomcoikus;
+            goto mggwwmagesiaegsg;
+            qwycyuqsagqcyeau:
+            
+            if (in_array($aiowsaccomcoikus->gueasuouwqysmomu(), ["\x63\x68\x65\143\x6b\142\157\x78", "\162\141\144\x69\157"])) {
+                goto ywqqcwwikuaqgswy;
+            }
+            goto wgagciiiyokkccaw;
+            eeawuswkssoumcqq:
+            iaaakumgaeogkyau:
+            goto qwycyuqsagqcyeau;
+            swusasqsywoymauc:
+            goto qwckkegewuioawok;
+            goto yuqgckkmggeecmcu;
+            ceooomymweuccyke:
+            if (!($eqgoocgaqwqcimie = ManipulateArray::get($owgumcsyqsamiemg, $aokagokqyuysuksm))) {
+                goto iaaakumgaeogkyau;
+            }
+            goto qsseaomwyuequyuc;
+            mukmqcgqiyskioqg:
+        }
+        goto kysegkcsysgsocum;
+        uukawameoimyycmi:
+        if (!$eaoumsseceiowgsk) {
+            goto qoywwuqkqwgkgomu;
+        }
+        goto mwuwcsuwecyqmyme;
+        mwuwcsuwecyqmyme:
+        self::iuaucuookgoqiiio($eaoumsseceiowgsk);
+        goto kqoyicwkeiqacumi;
+        euayuoscsqgcwoco:
+    }
+    
+    public final function widget($ywmkwiwkosakssii, $owgumcsyqsamiemg)
+    {
+        goto mssgmiumamgawcik;
+        ausccuiqiucusomk:
+        $nsmgceoqaqogqmuw = $this->kooycocagkkmaiay($ywmkwiwkosakssii, $owgumcsyqsamiemg);
+        goto eccqqigoouugsysq;
+        mksiaogycqumieig:
+        uommomyecokquyes:
+        goto sycmggisamuqcmqm;
+        qooeamikmycgiyse:
+        echo ManipulateArray::get($ywmkwiwkosakssii, self::BEFORE_WIDGET, '');
+        goto cggoissgmskoycqy;
+        mssgmiumamgawcik:
+        if (!(is_array($ywmkwiwkosakssii) && is_array($owgumcsyqsamiemg))) {
+            goto uuocckquiogqceuq;
+        }
+        goto ausccuiqiucusomk;
+        sycmggisamuqcmqm:
+        uuocckquiogqceuq:
+        goto kqkwquycsmecsyoa;
+        eccqqigoouugsysq:
+        if (!$nsmgceoqaqogqmuw) {
+            goto uommomyecokquyes;
+        }
+        goto qooeamikmycgiyse;
+        waasqesguuugkyki:
+        echo ManipulateArray::get($ywmkwiwkosakssii, self::AFTER_WIDGET, '');
+        goto mksiaogycqumieig;
+        cggoissgmskoycqy:
+        echo $nsmgceoqaqogqmuw;
+        goto waasqesguuugkyki;
+        kqkwquycsmecsyoa:
+    }
+    
+    public final function kooycocagkkmaiay(?array $ywmkwiwkosakssii = [], ?array $owgumcsyqsamiemg = []) : string
+    {
+        goto ecgwiyooacwymoum;
+        maeqicokuuskkcac:
+        eyweqiugyoewuqks:
+        goto cqgimwmuwikgaguk;
+        wqgwguwaoomgaiik:
+        $qqscaoyqikuyeoaw = ManipulateString::ogimogiceeekegoi(ManipulateArray::get($qookweymeqawmcwo, self::OUTPUT_TEMPLATE, self::ugwmakayykcmcmqa()));
+        goto gyaowmgukagqyoeq;
+        ucycmogwkmqoqycw:
+        $aqykuigiuwmmcieu = $this->iuygowkemiiwqmiw($qqscaoyqikuyeoaw, $qookweymeqawmcwo, ["\x65\x63\x68\x6f" => false]);
+        goto maeqicokuuskkcac;
+        oigccucsmoiegsic:
+        $aqykuigiuwmmcieu = '';
+        goto wqgwguwaoomgaiik;
+        gyaowmgukagqyoeq:
+        if (!$this->qoqyomiqwooaeoiy($ywmkwiwkosakssii, $owgumcsyqsamiemg, $qookweymeqawmcwo)) {
+            goto eyweqiugyoewuqks;
+        }
+        goto ucycmogwkmqoqycw;
+        cqgimwmuwikgaguk:
+        return $aqykuigiuwmmcieu;
+        goto suuaoskwcwmiyyoi;
+        ecgwiyooacwymoum:
+        $qookweymeqawmcwo = $this->gayqqwwuycceosii($ywmkwiwkosakssii, $owgumcsyqsamiemg);
+        goto oigccucsmoiegsic;
+        suuaoskwcwmiyyoi:
+    }
+    
+    public function qoqyomiqwooaeoiy($ywmkwiwkosakssii = [], $owgumcsyqsamiemg = [], $qookweymeqawmcwo = []) : bool
+    {
+        return !empty($qookweymeqawmcwo);
+    }
+    
+    public function gayqqwwuycceosii($ywmkwiwkosakssii = [], $owgumcsyqsamiemg = []) : array
+    {
+        return $owgumcsyqsamiemg;
+    }
+    
+    public abstract function ugmceccgwaaaigiy() : array;
+}

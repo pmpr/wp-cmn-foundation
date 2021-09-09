@@ -1,2 +1,126 @@
 <?php
- namespace Pmpr\Common\Foundation\FormMaker\Front\Field; use Pmpr\Common\Foundation\FormMaker\FormMaker; use Pmpr\Common\Foundation\Manipulate\ManipulateServer; class Text extends Field { protected ?string $icon = null; public function __construct(?string $CDV1j, string $RW9QB = null, string $Ym4v7 = null, string $j56jL = self::TEXT) { parent::__construct("\151\x6e\x70\165\164", $j56jL, $CDV1j, $RW9QB, $Ym4v7); $this->addClass("\x66\x6f\x72\x6d\x2d\143\157\x6e\x74\x72\x6f\154"); } public function getIcon() : ?string { return $this->icon; } public function setIcon(?string $cbVPu) : self { $this->icon = $cbVPu; return $this; } public function asEmail() : self { $this->left2rightOnFocus(); return $this->setType("\145\155\x61\x69\x6c"); } public function asSearch() : self { return $this->setType("\x73\x65\141\x72\143\150"); } public function asTel() : self { return $this->setType("\x74\x65\x6c"); } public function asURL() : self { return $this->setType(self::URL); } public function asPassword() : self { return $this->setType("\160\x61\163\163\167\x6f\162\144"); } public function setPlaceholder(?string $LfYUY) : self { $this->setAriaLabel($LfYUY); return $this->replaceAttribute("\160\x6c\141\143\x65\x68\157\x6c\x64\x65\x72", $LfYUY); } public function setValueFromRequest($jHzX4 = false) : self { goto RjGde; jusLO: $yjbyt = ManipulateServer::get($CDV1j); goto LyDTM; Skvrd: MtR6A: goto jusLO; XU832: $yjbyt = ManipulateServer::getPost($CDV1j); goto Uoq2w; Uoq2w: goto Ij8OE; goto Skvrd; JBnQj: $CDV1j = $this->getId(); goto IpzbJ; LyDTM: Ij8OE: goto rEwoB; IpzbJ: if ($jHzX4) { goto MtR6A; } goto XU832; aCQFm: return $this; goto stLMU; rEwoB: $this->setValue($yjbyt); goto QtTKV; QtTKV: G89E5: goto aCQFm; RjGde: if ($this->getValue()) { goto G89E5; } goto JBnQj; stLMU: } public function beforeToArray(array $DrjAW = []) : void { goto m0wPu; Lyqv1: $this->setIcon(FormMaker::getInstance()->getAssetManager()->getIcon($this->getIcon())); goto m37J2; m37J2: xK_ox: goto t2Bki; m0wPu: if (!$this->getIcon()) { goto xK_ox; } goto Lyqv1; t2Bki: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\FormMaker\Front\Field;
+
+use Pmpr\Common\Foundation\FormMaker\FormMaker;
+use Pmpr\Common\Foundation\Manipulate\ManipulateServer;
+
+class Text extends Field
+{
+    
+    protected ?string $icon = null;
+    
+    public function __construct(?string $aokagokqyuysuksm, string $pkyyagewkiyckmwy = null, string $mkqqqewsokcswckc = null, string $sqeykgyoooqysmca = self::TEXT)
+    {
+        parent::__construct("\151\x6e\160\x75\x74", $sqeykgyoooqysmca, $aokagokqyuysuksm, $pkyyagewkiyckmwy, $mkqqqewsokcswckc);
+        $this->qigsyyqgewgskemg("\146\x6f\162\x6d\55\143\x6f\156\164\162\157\x6c");
+    }
+    
+    public function eyamqkqiykagecsw() : ?string
+    {
+        return $this->icon;
+    }
+    
+    public function saemoowcasogykak(?string $wkaqekwwgqsqwcoi) : self
+    {
+        $this->icon = $wkaqekwwgqsqwcoi;
+        return $this;
+    }
+    
+    public function mkiaygiogeeyogqm() : self
+    {
+        $this->soqmwakwiegiceeo();
+        return $this->aseocggwwegcmqes("\145\155\141\x69\154");
+    }
+    
+    public function esakmaucmeoucami() : self
+    {
+        return $this->aseocggwwegcmqes("\x73\x65\141\x72\x63\x68");
+    }
+    
+    public function smigkcmumwkgamkk() : self
+    {
+        return $this->aseocggwwegcmqes("\164\x65\154");
+    }
+    
+    public function xkgcwkwsqysqamic() : self
+    {
+        return $this->aseocggwwegcmqes(self::URL);
+    }
+    
+    public function sqsumkuougquscyg() : self
+    {
+        return $this->aseocggwwegcmqes("\x70\x61\x73\163\x77\157\x72\144");
+    }
+    
+    public function kyiucygqsgequoys(?string $iwiewowoqmoekyqi) : self
+    {
+        $this->gysckqgokmciyqcg($iwiewowoqmoekyqi);
+        return $this->qcgocuceocquqcuw("\160\x6c\x61\x63\145\x68\x6f\x6c\x64\x65\x72", $iwiewowoqmoekyqi);
+    }
+    
+    public function umyeigwcmeakuqsu($qsuyiaikaquswaug = false) : self
+    {
+        goto eikwaewqcysuywmw;
+        cyakakoyscyyseim:
+        $this->iygyugseyaqwywyg($eqgoocgaqwqcimie);
+        goto kegswsuciueamysc;
+        sgsuggymsisiisya:
+        guqakeyeceygukgo:
+        goto kemseeaykemmgosi;
+        kemseeaykemmgosi:
+        $eqgoocgaqwqcimie = ManipulateServer::get($aokagokqyuysuksm);
+        goto rsiscqyuuaqqukaq;
+        kegswsuciueamysc:
+        seqicmqaumeoweik:
+        goto gcwsyykomkieycmo;
+        qasqismygkemyaka:
+        $eqgoocgaqwqcimie = ManipulateServer::ayueggmoqeeukqmq($aokagokqyuysuksm);
+        goto yaigsowoksoegqig;
+        lowoswoqauswsswm:
+        if ($qsuyiaikaquswaug) {
+            goto guqakeyeceygukgo;
+        }
+        goto qasqismygkemyaka;
+        wayumgcgmkiqwouu:
+        $aokagokqyuysuksm = $this->mwikyscisascoeea();
+        goto lowoswoqauswsswm;
+        eikwaewqcysuywmw:
+        if ($this->qooeaookuemoqecm()) {
+            goto seqicmqaumeoweik;
+        }
+        goto wayumgcgmkiqwouu;
+        yaigsowoksoegqig:
+        goto kioecaokqiyeyimw;
+        goto sgsuggymsisiisya;
+        rsiscqyuuaqqukaq:
+        kioecaokqiyeyimw:
+        goto cyakakoyscyyseim;
+        gcwsyykomkieycmo:
+        return $this;
+        goto wmmicyyikqyykeqm;
+        wmmicyyikqyykeqm:
+    }
+    
+    public function qgsieamsswkgysow(array $ywmkwiwkosakssii = []) : void
+    {
+        goto gsiggywymmcuoyow;
+        ecoyeceqcymocmge:
+        $this->saemoowcasogykak(FormMaker::symcgieuakksimmu()->miocmcoykayoyyau()->eyamqkqiykagecsw($this->eyamqkqiykagecsw()));
+        goto ayekommagiogccge;
+        ayekommagiogccge:
+        cmsosmamsmyuogsi:
+        goto sgwigiywwyuoakok;
+        gsiggywymmcuoyow:
+        if (!$this->eyamqkqiykagecsw()) {
+            goto cmsosmamsmyuogsi;
+        }
+        goto ecoyeceqcymocmge;
+        sgwigiywwyuoakok:
+    }
+}

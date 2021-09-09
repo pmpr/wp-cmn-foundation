@@ -1,2 +1,127 @@
 <?php
- namespace Pmpr\Common\Foundation\FormMaker\Front; use Pmpr\Common\Foundation\FormMaker\FormMaker; use Pmpr\Common\Foundation\Media\Icon\Interfaces\IconFontawesomeInterface; class MultiStepForm extends Element { protected array $steps = []; protected ?string $submitText = null; public function __construct(string $CDV1j = null) { goto zlf3o; zlf3o: $this->addClass("\x6d\165\x6c\164\151\55\x73\164\145\160\x2d\x66\x72\157\x6d"); goto gpiVf; x6s6D: $this->submitText = __("\x53\165\x62\155\151\164", PR__CMN__FOUNDATION); goto UjzJl; YsaIL: $this->replaceAttribute("\x6d\145\x74\x68\157\144", "\120\x4f\x53\x54"); goto x6s6D; gpiVf: parent::__construct("\x66\x6f\162\x6d", $CDV1j); goto YsaIL; UjzJl: } public function clickableSteps() : self { $this->addClass("\143\154\x69\x63\x6b\141\x62\154\145\x2d\x73\x74\x65\x70\x73"); return $this; } public function startFrom(int $PZ4C6) : self { goto vhVvn; XemBe: return $this; goto U19vp; C3GPT: VCcKD: goto XemBe; vhVvn: if (!($PZ4C6 > 1 && count($this->getSteps()) >= $PZ4C6)) { goto VCcKD; } goto WMTkB; WMTkB: $this->addAttribute("\x64\x61\164\141\x2d\x73\164\x65\160\55\x73\164\x61\x72\164", $PZ4C6); goto C3GPT; U19vp: } public function getSubmitText() : ?string { return $this->submitText; } public function setSubmitText(?string $F9yut) : self { $this->submitText = $F9yut; return $this; } public function getContent() : ?string { return $this->renderTemplate("\x73\164\145\x70\163", ["\x66\157\x72\155" => $this, "\163\x74\x65\x70\163" => $this->getSteps(), "\x73\165\142\155\x69\x74\x5f\x74\145\170\x74" => $this->getSubmitText(), "\151\156\x76\x61\154\151\144\x5f\151\143\x6f\x6e" => IconFontawesomeInterface::ICON_CIRCLE_EXCLAMATION]); } public function hasStep() : bool { return !empty($this->steps); } public function getSteps() : array { return $this->steps; } public function addStep(Step $PZ4C6) : self { $this->steps[$PZ4C6->getId()] = $PZ4C6; return $this; } public function addSteps(array $xqlNW) : self { goto l_6PR; l_6PR: foreach ($xqlNW as $PZ4C6) { $this->addStep($PZ4C6); RvB1n: } goto XJAyi; a90JR: return $this; goto On__4; XJAyi: e8Agu: goto a90JR; On__4: } public function enqueue() { goto S2NwQ; qWFlU: $JPxwG->addFrontSource($JPxwG->getScriptSource($vPl9z, $JPxwG->get("{$vPl9z}\x2e\x6a\x73"))->addDependency("\152\161\165\x65\162\171"))->addFrontSource($JPxwG->getStyleSource($vPl9z, $JPxwG->get("{$vPl9z}\x2e\143\163\x73"))); goto eCPST; S2NwQ: $JPxwG = FormMaker::getInstance()->getAssetManager(); goto nOuIF; nOuIF: $vPl9z = "\x6d\165\x6c\164\151\163\x74\145\x70"; goto qWFlU; eCPST: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\FormMaker\Front;
+
+use Pmpr\Common\Foundation\FormMaker\FormMaker;
+use Pmpr\Common\Foundation\Media\Icon\Interfaces\IconFontawesomeInterface;
+
+class MultiStepForm extends Element
+{
+    
+    protected array $steps = [];
+    
+    protected ?string $submitText = null;
+    
+    public function __construct(string $aokagokqyuysuksm = null)
+    {
+        goto mqgaomisqwmiigim;
+        mqgaomisqwmiigim:
+        $this->qigsyyqgewgskemg("\155\165\154\x74\151\x2d\163\x74\145\160\x2d\146\x72\157\x6d");
+        goto kesceucuisgqegwo;
+        cywucuooyguymsci:
+        $this->submitText = __("\x53\x75\142\x6d\x69\x74", PR__CMN__FOUNDATION);
+        goto iagwwaaygcmmmykw;
+        quagwcciuagqessg:
+        $this->qcgocuceocquqcuw("\155\x65\x74\x68\157\x64", "\120\x4f\123\x54");
+        goto cywucuooyguymsci;
+        kesceucuisgqegwo:
+        parent::__construct("\146\x6f\x72\x6d", $aokagokqyuysuksm);
+        goto quagwcciuagqessg;
+        iagwwaaygcmmmykw:
+    }
+    
+    public function iiqoooqcakkaeyiw() : self
+    {
+        $this->qigsyyqgewgskemg("\x63\x6c\x69\x63\153\141\x62\x6c\145\x2d\163\x74\145\x70\163");
+        return $this;
+    }
+    
+    public function suguoqqeycoiwcok(int $wyeyeaaekyoyimqu) : self
+    {
+        goto okqqowooiskyccky;
+        iyokcuwocqoicegc:
+        wwuwmiikyeeygyyi:
+        goto qgaayqcoacyscqik;
+        okqqowooiskyccky:
+        if (!($wyeyeaaekyoyimqu > 1 && count($this->guiyusikssumecwk()) >= $wyeyeaaekyoyimqu)) {
+            goto wwuwmiikyeeygyyi;
+        }
+        goto wkgaeksumwsaweow;
+        wkgaeksumwsaweow:
+        $this->igmaewykumgwoaoy("\144\x61\164\x61\55\163\x74\145\x70\55\x73\164\141\162\x74", $wyeyeaaekyoyimqu);
+        goto iyokcuwocqoicegc;
+        qgaayqcoacyscqik:
+        return $this;
+        goto yycgqsoesmqsemik;
+        yycgqsoesmqsemik:
+    }
+    
+    public function qoomaywwaswcaccu() : ?string
+    {
+        return $this->submitText;
+    }
+    
+    public function misaicooiwoaimmu(?string $skmckiwuuaoeqemm) : self
+    {
+        $this->submitText = $skmckiwuuaoeqemm;
+        return $this;
+    }
+    
+    public function souwykwwmyygqyqi() : ?string
+    {
+        return $this->iuygowkemiiwqmiw("\x73\x74\x65\160\163", ["\x66\157\162\155" => $this, "\x73\x74\x65\160\x73" => $this->guiyusikssumecwk(), "\x73\x75\x62\155\x69\164\137\x74\145\x78\x74" => $this->qoomaywwaswcaccu(), "\151\x6e\x76\x61\x6c\151\144\x5f\151\x63\x6f\x6e" => IconFontawesomeInterface::ICON_CIRCLE_EXCLAMATION]);
+    }
+    
+    public function wmoeeiseqeecugmu() : bool
+    {
+        return !empty($this->steps);
+    }
+    
+    public function guiyusikssumecwk() : array
+    {
+        return $this->steps;
+    }
+    
+    public function mgqggiyywoageqmo(Step $wyeyeaaekyoyimqu) : self
+    {
+        $this->steps[$wyeyeaaekyoyimqu->mwikyscisascoeea()] = $wyeyeaaekyoyimqu;
+        return $this;
+    }
+    
+    public function maoomkygegkowemi(array $asuggasaseaacmqu) : self
+    {
+        goto iwcsswgiuqiqagyq;
+        iwcsswgiuqiqagyq:
+        foreach ($asuggasaseaacmqu as $wyeyeaaekyoyimqu) {
+            $this->mgqggiyywoageqmo($wyeyeaaekyoyimqu);
+            aciiwoowqoygcuee:
+        }
+        goto guqwaqawiyaoycwc;
+        oyeykyosscuomyqc:
+        return $this;
+        goto asiqqkkoesoeogsq;
+        guqwaqawiyaoycwc:
+        iumugucomiookemq:
+        goto oyeykyosscuomyqc;
+        asiqqkkoesoeogsq:
+    }
+    public function enqueue()
+    {
+        goto cmswoqwiyuoecakm;
+        cmswoqwiyuoecakm:
+        $eygsasmqycagyayw = FormMaker::symcgieuakksimmu()->miocmcoykayoyyau();
+        goto oamwewkoeuaeksyy;
+        yaugeaqeukqssose:
+        $eygsasmqycagyayw->oeoquuwkoywiuesy($eygsasmqycagyayw->owygwqwawqoiusis($ymqmyyeuycgmigyo, $eygsasmqycagyayw->get("{$ymqmyyeuycgmigyo}\56\x6a\163"))->ayuciigykaswwqeo("\x6a\x71\165\145\162\171"))->oeoquuwkoywiuesy($eygsasmqycagyayw->awgyqswkqywwmkye($ymqmyyeuycgmigyo, $eygsasmqycagyayw->get("{$ymqmyyeuycgmigyo}\x2e\143\x73\x73")));
+        goto uaicoasqcyeuawwk;
+        oamwewkoeuaeksyy:
+        $ymqmyyeuycgmigyo = "\x6d\165\x6c\164\151\x73\164\x65\160";
+        goto yaugeaqeukqssose;
+        uaicoasqcyeuawwk:
+    }
+}

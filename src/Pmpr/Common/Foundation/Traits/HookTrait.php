@@ -1,2 +1,88 @@
 <?php
- namespace Pmpr\Common\Foundation\Traits; use Pmpr\Common\Foundation\Decorator\DecoratorHook; use Pmpr\Common\Foundation\Manipulate\ManipulateHook; trait HookTrait { public final function generateHook($vPl9z, $HHR3D = true, $s7T9l = null) : ?string { goto S0QFO; S0QFO: if ($s7T9l) { goto onTMo; } goto z9cdJ; OAa0e: return ManipulateHook::generateHook($vPl9z, $s7T9l, $HHR3D); goto GYfuE; z9cdJ: $s7T9l = $this->getRegisteredComponentName(); goto IPiPJ; IPiPJ: onTMo: goto OAa0e; GYfuE: } public final function applyFilters(string $wTG2x, ...$DrjAW) { return DecoratorHook::applyFilters($wTG2x, ...$DrjAW); } public final function addFilter(string $wTG2x, callable $STVAO, int $pwEST = 10, int $LyWRW = 1) : self { DecoratorHook::addFilter($wTG2x, $STVAO, $pwEST, $LyWRW); return $this; } public final function removeFilter(string $wTG2x, callable $STVAO, int $pwEST = 10) : self { DecoratorHook::removeFilter($wTG2x, $STVAO, $pwEST); return $this; } public final function doAction(string $wTG2x, ...$DrjAW) : self { DecoratorHook::doAction($wTG2x, ...$DrjAW); return $this; } public final function addAction(string $wTG2x, callable $STVAO, int $pwEST = 10, int $LyWRW = 1) : self { DecoratorHook::addAction($wTG2x, $STVAO, $pwEST, $LyWRW); return $this; } public final function addPrivateAjaxAction(string $KcJWJ, callable $STVAO, int $pwEST = 10) : self { DecoratorHook::addPrivateAjaxAction($KcJWJ, $STVAO, $pwEST); return $this; } public final function addPublicAjaxAction(string $KcJWJ, callable $STVAO, int $pwEST = 10) : self { DecoratorHook::addPublicAjaxAction($KcJWJ, $STVAO, $pwEST); return $this; } public final function addBothAjaxAction(string $KcJWJ, callable $STVAO, int $pwEST = 10) : self { DecoratorHook::addBothAjaxAction($KcJWJ, $STVAO, $pwEST); return $this; } public final function removeAction(string $wTG2x, callable $STVAO, int $pwEST = 10) : self { DecoratorHook::removeAction($wTG2x, $STVAO, $pwEST); return $this; } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Traits;
+
+use Pmpr\Common\Foundation\Decorator\DecoratorHook;
+use Pmpr\Common\Foundation\Manipulate\ManipulateHook;
+
+trait HookTrait
+{
+    
+    public final function ygyygikyocoymgaw($ymqmyyeuycgmigyo, $ykuqcwwmuyqmkisq = true, $quowyokcwswmuois = null) : ?string
+    {
+        goto aaaicwymgocaseis;
+        mgkwqmyqgswasocy:
+        return ManipulateHook::ygyygikyocoymgaw($ymqmyyeuycgmigyo, $quowyokcwswmuois, $ykuqcwwmuyqmkisq);
+        goto iuimkcgcsyemcuei;
+        aaaicwymgocaseis:
+        if ($quowyokcwswmuois) {
+            goto syoyogomscqcsoyk;
+        }
+        goto aycyouisaiokysqw;
+        moequykwukcqmiga:
+        syoyogomscqcsoyk:
+        goto mgkwqmyqgswasocy;
+        aycyouisaiokysqw:
+        $quowyokcwswmuois = $this->akuociswqmoigkas();
+        goto moequykwukcqmiga;
+        iuimkcgcsyemcuei:
+    }
+    
+    public final function sscegwueamckwmcy(string $iaakskwmyqceoscy, ...$ywmkwiwkosakssii)
+    {
+        return DecoratorHook::sscegwueamckwmcy($iaakskwmyqceoscy, ...$ywmkwiwkosakssii);
+    }
+    
+    public final function cecaguuoecmccuse(string $iaakskwmyqceoscy, callable $ekiuyucoiagmscgy, int $sqqewmoeaekuyyas = 10, int $qaecciyumakckokk = 1) : self
+    {
+        DecoratorHook::cecaguuoecmccuse($iaakskwmyqceoscy, $ekiuyucoiagmscgy, $sqqewmoeaekuyyas, $qaecciyumakckokk);
+        return $this;
+    }
+    
+    public final function ggmgmqswqkgecosg(string $iaakskwmyqceoscy, callable $ekiuyucoiagmscgy, int $sqqewmoeaekuyyas = 10) : self
+    {
+        DecoratorHook::ggmgmqswqkgecosg($iaakskwmyqceoscy, $ekiuyucoiagmscgy, $sqqewmoeaekuyyas);
+        return $this;
+    }
+    
+    public final function cqscqicucmeamkyq(string $iaakskwmyqceoscy, ...$ywmkwiwkosakssii) : self
+    {
+        DecoratorHook::cqscqicucmeamkyq($iaakskwmyqceoscy, ...$ywmkwiwkosakssii);
+        return $this;
+    }
+    
+    public final function qcsmikeggeemccuu(string $iaakskwmyqceoscy, callable $ekiuyucoiagmscgy, int $sqqewmoeaekuyyas = 10, int $qaecciyumakckokk = 1) : self
+    {
+        DecoratorHook::qcsmikeggeemccuu($iaakskwmyqceoscy, $ekiuyucoiagmscgy, $sqqewmoeaekuyyas, $qaecciyumakckokk);
+        return $this;
+    }
+    
+    public final function koaegcswmcqsiykq(string $aiamqeawckcsuaou, callable $ekiuyucoiagmscgy, int $sqqewmoeaekuyyas = 10) : self
+    {
+        DecoratorHook::koaegcswmcqsiykq($aiamqeawckcsuaou, $ekiuyucoiagmscgy, $sqqewmoeaekuyyas);
+        return $this;
+    }
+    
+    public final function suoiicwmcuqouwow(string $aiamqeawckcsuaou, callable $ekiuyucoiagmscgy, int $sqqewmoeaekuyyas = 10) : self
+    {
+        DecoratorHook::suoiicwmcuqouwow($aiamqeawckcsuaou, $ekiuyucoiagmscgy, $sqqewmoeaekuyyas);
+        return $this;
+    }
+    
+    public final function iqkqummseggmikgo(string $aiamqeawckcsuaou, callable $ekiuyucoiagmscgy, int $sqqewmoeaekuyyas = 10) : self
+    {
+        DecoratorHook::iqkqummseggmikgo($aiamqeawckcsuaou, $ekiuyucoiagmscgy, $sqqewmoeaekuyyas);
+        return $this;
+    }
+    
+    public final function kuieicsuscgmwigg(string $iaakskwmyqceoscy, callable $ekiuyucoiagmscgy, int $sqqewmoeaekuyyas = 10) : self
+    {
+        DecoratorHook::kuieicsuscgmwigg($iaakskwmyqceoscy, $ekiuyucoiagmscgy, $sqqewmoeaekuyyas);
+        return $this;
+    }
+}

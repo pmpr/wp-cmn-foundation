@@ -1,2 +1,4044 @@
 <?php
- namespace Pmpr\Common\Foundation\Detector; class Browser extends Common { protected ?string $os = ''; protected ?string $name = ''; protected ?string $agent = ''; protected bool $isAol = false; protected bool $isRobot = false; protected ?string $version = ''; protected bool $isMobile = false; protected bool $isTablet = false; protected ?string $platform = ''; protected bool $isFacebook = false; protected ?string $aolVersion = ''; const BROWSER_UNKNOWN = "\x75\156\x6b\x6e\157\x77\156"; const VERSION_UNKNOWN = "\165\x6e\153\x6e\x6f\x77\x6e"; const BROWSER_OPERA = "\117\x70\145\x72\x61"; const BROWSER_OPERA_MINI = "\117\160\145\162\x61\x20\x4d\151\x6e\151"; const BROWSER_WEBTV = "\127\145\142\x54\x56"; const BROWSER_EDGE = "\x45\144\147\145"; const BROWSER_IE = "\x49\x6e\x74\145\x72\156\145\x74\40\x45\170\x70\x6c\157\x72\145\x72"; const BROWSER_POCKET_IE = "\x50\157\x63\x6b\145\x74\x20\111\156\164\x65\x72\x6e\145\x74\x20\105\x78\x70\154\157\162\x65\162"; const BROWSER_KONQUEROR = "\x4b\x6f\x6e\161\x75\x65\162\157\x72"; const BROWSER_ICAB = "\x69\x43\x61\x62"; const BROWSER_OMNIWEB = "\117\x6d\156\x69\x57\145\142"; const BROWSER_FIREBIRD = "\x46\x69\162\x65\142\x69\x72\x64"; const BROWSER_FIREFOX = "\106\151\x72\x65\146\x6f\170"; const BROWSER_BRAVE = "\x42\162\141\166\145"; const BROWSER_PALEMOON = "\x50\141\154\x65\x6d\157\157\156"; const BROWSER_ICEWEASEL = "\111\143\x65\x77\145\141\x73\x65\x6c"; const BROWSER_SHIRETOKO = "\x53\150\x69\162\x65\x74\x6f\x6b\157"; const BROWSER_MOZILLA = "\x4d\157\172\151\x6c\154\x61"; const BROWSER_AMAYA = "\x41\x6d\141\x79\x61"; const BROWSER_LYNX = "\114\171\156\x78"; const BROWSER_SAFARI = "\x53\x61\x66\141\x72\151"; const BROWSER_IPHONE = "\x69\x50\x68\x6f\156\145"; const BROWSER_IPOD = "\x69\x50\157\x64"; const BROWSER_IPAD = "\151\120\141\x64"; const BROWSER_CHROME = "\x43\150\x72\x6f\x6d\x65"; const BROWSER_ANDROID = "\101\x6e\x64\x72\157\151\144"; const BROWSER_GOOGLEBOT = "\x47\157\x6f\x67\154\145\102\157\164"; const BROWSER_CURL = "\x63\x55\x52\x4c"; const BROWSER_WGET = "\127\147\x65\164"; const BROWSER_UCBROWSER = "\125\103\102\x72\x6f\167\x73\145\162"; const BROWSER_YANDEXBOT = "\x59\x61\x6e\144\x65\x78\x42\x6f\164"; const BROWSER_YANDEXIMAGERESIZER_BOT = "\x59\141\156\x64\145\x78\x49\155\x61\x67\x65\122\x65\163\151\172\x65\x72"; const BROWSER_YANDEXIMAGES_BOT = "\131\141\156\x64\145\x78\x49\x6d\x61\x67\x65\163"; const BROWSER_YANDEXVIDEO_BOT = "\131\x61\x6e\144\145\x78\126\x69\x64\145\x6f"; const BROWSER_YANDEXMEDIA_BOT = "\x59\x61\156\144\x65\170\115\x65\144\151\141"; const BROWSER_YANDEXBLOGS_BOT = "\x59\141\156\144\x65\x78\x42\x6c\x6f\147\x73"; const BROWSER_YANDEXFAVICONS_BOT = "\131\141\x6e\144\x65\x78\106\141\166\x69\x63\x6f\156\x73"; const BROWSER_YANDEXWEBMASTER_BOT = "\x59\x61\156\x64\x65\x78\x57\x65\142\x6d\x61\x73\164\145\x72"; const BROWSER_YANDEXDIRECT_BOT = "\131\141\x6e\x64\x65\170\104\x69\x72\x65\x63\164"; const BROWSER_YANDEXMETRIKA_BOT = "\131\141\156\x64\145\170\x4d\x65\164\162\151\153\x61"; const BROWSER_YANDEXNEWS_BOT = "\131\141\x6e\x64\x65\170\x4e\x65\x77\x73"; const BROWSER_YANDEXCATALOG_BOT = "\131\x61\x6e\144\145\170\103\x61\x74\x61\154\157\x67"; const BROWSER_SLURP = "\131\x61\150\x6f\157\41\x20\123\x6c\x75\x72\160"; const BROWSER_W3CVALIDATOR = "\x57\x33\103\x20\126\141\154\151\x64\x61\164\x6f\x72"; const BROWSER_BLACKBERRY = "\x42\154\x61\143\153\x42\145\162\x72\171"; const BROWSER_ICECAT = "\111\143\x65\x43\141\x74"; const BROWSER_NOKIA_S60 = "\x4e\x6f\x6b\x69\x61\40\123\66\60\x20\x4f\123\x53\x20\x42\x72\157\167\163\145\x72"; const BROWSER_NOKIA = "\116\157\x6b\151\x61\x20\x42\162\x6f\167\163\x65\x72"; const BROWSER_MSN = "\x4d\123\116\40\x42\x72\157\167\x73\145\162"; const BROWSER_MSNBOT = "\x4d\x53\116\40\x42\157\164"; const BROWSER_BINGBOT = "\x42\x69\156\147\x20\x42\x6f\x74"; const BROWSER_VIVALDI = "\x56\151\x76\141\x6c\144\151"; const BROWSER_YANDEX = "\131\x61\156\144\x65\x78"; const BROWSER_NETSCAPE_NAVIGATOR = "\x4e\x65\x74\x73\x63\141\160\145\x20\116\x61\x76\151\x67\x61\164\157\x72"; const BROWSER_GALEON = "\x47\141\x6c\145\x6f\156"; const BROWSER_NETPOSITIVE = "\x4e\145\164\120\157\163\151\164\x69\166\145"; const BROWSER_PHOENIX = "\x50\150\157\145\156\151\170"; const BROWSER_PLAYSTATION = "\120\x6c\x61\x79\123\164\x61\164\151\157\x6e"; const BROWSER_SAMSUNG = "\x53\x61\x6d\x73\x75\x6e\x67\x42\162\157\167\163\145\162"; const BROWSER_SILK = "\x53\151\x6c\153"; const BROWSER_I_FRAME = "\111\x66\x72\141\155\x65\x6c\x79"; const BROWSER_COCOA = "\103\x6f\143\157\141\122\x65\x73\x74\x43\x6c\151\145\x6e\164"; const PLATFORM_UNKNOWN = "\165\156\153\x6e\157\x77\156"; const PLATFORM_WINDOWS = "\x57\151\x6e\x64\x6f\167\x73"; const PLATFORM_WINDOWS_CE = "\127\151\x6e\144\157\167\163\x20\x43\105"; const PLATFORM_APPLE = "\x41\x70\160\x6c\x65"; const PLATFORM_LINUX = "\114\151\x6e\x75\x78"; const PLATFORM_OS2 = "\x4f\x53\57\x32"; const PLATFORM_BEOS = "\102\x65\x4f\x53"; const PLATFORM_IPHONE = "\151\x50\150\x6f\x6e\145"; const PLATFORM_IPOD = "\x69\x50\157\144"; const PLATFORM_IPAD = "\151\120\x61\144"; const PLATFORM_BLACKBERRY = "\102\x6c\141\x63\153\102\145\162\162\171"; const PLATFORM_NOKIA = "\x4e\157\x6b\151\x61"; const PLATFORM_FREEBSD = "\106\162\145\x65\102\x53\104"; const PLATFORM_OPENBSD = "\x4f\x70\x65\x6e\102\x53\104"; const PLATFORM_NETBSD = "\116\145\164\x42\x53\104"; const PLATFORM_SUNOS = "\123\x75\156\x4f\x53"; const PLATFORM_OPENSOLARIS = "\117\160\x65\x6e\x53\x6f\154\141\162\151\x73"; const PLATFORM_ANDROID = "\101\x6e\144\x72\x6f\151\144"; const PLATFORM_PLAYSTATION = "\123\157\156\x79\x20\120\x6c\141\171\123\164\x61\x74\151\157\156"; const PLATFORM_ROKU = "\122\157\x6b\x75"; const PLATFORM_APPLE_TV = "\101\x70\160\x6c\145\40\x54\126"; const PLATFORM_TERMINAL = "\x54\145\162\155\x69\x6e\x61\154"; const PLATFORM_FIRE_OS = "\x46\x69\162\145\40\117\123"; const PLATFORM_SMART_TV = "\123\x4d\101\x52\x54\x2d\124\x56"; const PLATFORM_CHROME_OS = "\103\x68\x72\x6f\x6d\145\x20\x4f\123"; const PLATFORM_JAVA_ANDROID = "\112\141\166\x61\57\101\156\x64\162\x6f\x69\144"; const PLATFORM_POSTMAN = "\120\157\163\164\x6d\x61\156"; const PLATFORM_I_FRAME = "\x49\x66\x72\141\x6d\x65\154\171"; const OPERATING_SYSTEM_UNKNOWN = "\165\156\153\x6e\x6f\x77\x6e"; public function __construct($EgSIf = '') { goto hI6KL; rh8cv: parent::__construct(); goto EIRXu; bSuF6: jPav6: goto gnZRk; BUALd: if ($EgSIf != '') { goto jPav6; } goto HIWtj; hI6KL: $this->runSetup = false; goto BUALd; uRj1s: goto qCj_t; goto bSuF6; tDxAM: qCj_t: goto rh8cv; HIWtj: $this->reset(); goto OMcBS; OMcBS: $this->determine(); goto uRj1s; gnZRk: $this->setUserAgent($EgSIf); goto tDxAM; EIRXu: } public function reset() { goto AQMbx; Lf0Zi: $this->isAol = false; goto x3_ph; O0feJ: $this->isMobile = false; goto Hja6g; AQMbx: $this->os = self::OPERATING_SYSTEM_UNKNOWN; goto BhbFX; DXiN5: $this->platform = self::PLATFORM_UNKNOWN; goto fabTu; x3_ph: $this->isRobot = false; goto GllRX; GllRX: $this->version = self::VERSION_UNKNOWN; goto DXiN5; fabTu: $this->isTablet = false; goto O0feJ; ISaA1: $this->aolVersion = self::VERSION_UNKNOWN; goto dDajz; BhbFX: $this->name = self::BROWSER_UNKNOWN; goto ayAd9; ayAd9: $this->agent = isset($_SERVER["\x48\x54\x54\x50\x5f\125\x53\105\122\x5f\x41\107\x45\116\124"]) ? $_SERVER["\110\124\124\x50\137\x55\123\x45\122\x5f\101\x47\x45\116\x54"] : ''; goto Lf0Zi; Hja6g: $this->isFacebook = false; goto ISaA1; dDajz: } function isBrowser(?string $HNjKW) { return 0 == strcasecmp($this->name, trim($HNjKW)); } public function getBrowser() { return $this->name; } public function setBrowser(?string $vcRbn) { $this->name = $vcRbn; } public function getPlatform() { return $this->platform; } public function setPlatform(?string $wnuvp) { $this->platform = $wnuvp; } public function getVersion() { return $this->version; } public function setVersion(?string $bpaAm) { $this->version = preg_replace("\57\x5b\x5e\60\55\71\x2c\x2e\54\x61\x2d\172\54\x41\55\132\x2d\x5d\x2f", '', $bpaAm); } public function getAolVersion() { return $this->aolVersion; } public function setAolVersion(?string $bpaAm) { $this->aolVersion = preg_replace("\57\133\136\x30\55\x39\x2c\56\54\141\55\172\54\101\x2d\x5a\135\x2f", '', $bpaAm); } public function isAol() { return $this->isAol; } public function isMobile() { return $this->isMobile; } public function isTablet() { return $this->isTablet; } public function isRobot() { return $this->isRobot; } public function isFacebook() { return $this->isFacebook; } public function setAol($XIhz_) { $this->isAol = $XIhz_; } protected function setMobile($yjbyt = true) { $this->isMobile = $yjbyt; } protected function setTablet($yjbyt = true) { $this->isTablet = $yjbyt; } protected function setRobot($yjbyt = true) { $this->isRobot = $yjbyt; } protected function setFacebook($yjbyt = true) { $this->isFacebook = $yjbyt; } public function getUserAgent() { return $this->agent; } public function setUserAgent($K0ztk) { goto tuiiJ; tuiiJ: $this->reset(); goto dME3m; SLhoI: $this->determine(); goto jLbxv; dME3m: $this->agent = $K0ztk; goto SLhoI; jLbxv: } public function isChromeFrame() { return strpos($this->agent, "\x63\x68\162\x6f\x6d\145\146\162\141\155\145") !== false; } public function __toString() { return "\x3c\x73\x74\162\157\x6e\147\76\x42\x72\157\167\x73\145\162\x20\116\x61\155\145\72\x3c\x2f\x73\164\162\x6f\x6e\147\76\40{$this->getBrowser()}\74\142\162\57\76\12" . "\74\x73\x74\162\x6f\156\x67\76\x42\162\157\167\163\145\x72\x20\x56\x65\x72\163\151\x6f\156\72\74\57\x73\164\x72\x6f\156\147\x3e\x20{$this->getVersion()}\x3c\142\x72\x2f\x3e\12" . "\x3c\163\x74\162\157\x6e\x67\x3e\x42\x72\x6f\167\x73\x65\162\40\x55\x73\145\162\x20\x41\147\x65\x6e\164\x20\123\164\162\x69\x6e\x67\72\74\57\163\x74\162\x6f\156\x67\76\40{$this->getUserAgent()}\x3c\x62\162\x2f\x3e\xa" . "\74\x73\164\162\x6f\156\x67\x3e\120\x6c\141\x74\146\x6f\162\x6d\72\74\57\x73\164\162\x6f\x6e\147\76\40{$this->getPlatform()}\74\x62\x72\x2f\x3e"; } protected function determine() { goto DN3p8; DN3p8: $this->checkPlatform(); goto hYk1A; FHIlT: $this->checkForAol(); goto U1hKF; hYk1A: $this->checkBrowsers(); goto FHIlT; U1hKF: } protected function checkBrowsers() { return $this->checkBrowserWebTv() || $this->checkBrowserBrave() || $this->checkBrowserUCBrowser() || $this->checkBrowserEdge() || $this->checkBrowserInternetExplorer() || $this->checkBrowserOpera() || $this->checkBrowserGaleon() || $this->checkBrowserNetscapeNavigator9Plus() || $this->checkBrowserVivaldi() || $this->checkBrowserYandex() || $this->checkBrowserPalemoon() || $this->checkBrowserFirefox() || $this->checkBrowserChrome() || $this->checkBrowserOmniWeb() || $this->checkBrowserAndroid() || $this->checkBrowseriPad() || $this->checkBrowseriPod() || $this->checkBrowseriPhone() || $this->checkBrowserBlackBerry() || $this->checkBrowserNokia() || $this->checkBrowserGoogleBot() || $this->checkBrowserMSNBot() || $this->checkBrowserBingBot() || $this->checkBrowserSlurp() || $this->checkBrowserYandexBot() || $this->checkBrowserYandexImageResizerBot() || $this->checkBrowserYandexBlogsBot() || $this->checkBrowserYandexCatalogBot() || $this->checkBrowserYandexDirectBot() || $this->checkBrowserYandexFaviconsBot() || $this->checkBrowserYandexImagesBot() || $this->checkBrowserYandexMediaBot() || $this->checkBrowserYandexMetrikaBot() || $this->checkBrowserYandexNewsBot() || $this->checkBrowserYandexVideoBot() || $this->checkBrowserYandexWebmasterBot() || $this->checkFacebookExternalHit() || $this->checkBrowserSamsung() || $this->checkBrowserSilk() || $this->checkBrowserSafari() || $this->checkBrowserNetPositive() || $this->checkBrowserFirebird() || $this->checkBrowserKonqueror() || $this->checkBrowserIcab() || $this->checkBrowserPhoenix() || $this->checkBrowserAmaya() || $this->checkBrowserLynx() || $this->checkBrowserShiretoko() || $this->checkBrowserIceCat() || $this->checkBrowserIceweasel() || $this->checkBrowserW3CValidator() || $this->checkBrowserCurl() || $this->checkBrowserWget() || $this->checkBrowserPlayStation() || $this->checkBrowserIframely() || $this->checkBrowserCocoa() || $this->checkBrowserMozilla(); } protected function checkBrowserBlackBerry() { goto h3lNt; kQqbW: aO_fm: goto JOsyz; h3lNt: if (!(stripos($this->agent, "\x62\x6c\x61\143\153\142\x65\162\162\x79") !== false)) { goto tNnkE; } goto Ziwhm; Ziwhm: $FQpX2 = explode("\x2f", stristr($this->agent, "\102\154\x61\143\153\102\145\162\x72\x79")); goto AcFrT; fl4KI: $this->setVersion($qCKaG[0]); goto aPSOx; AcFrT: if (!isset($FQpX2[1])) { goto aO_fm; } goto ofMs8; RxiFX: return false; goto nQKMz; aPSOx: $this->name = self::BROWSER_BLACKBERRY; goto t3qjj; ofMs8: $qCKaG = explode("\x20", $FQpX2[1]); goto fl4KI; JOsyz: tNnkE: goto RxiFX; t3qjj: $this->setMobile(true); goto YCl4a; YCl4a: return true; goto kQqbW; nQKMz: } protected function checkForAol() { goto jYXKe; ZQq3S: xPlpd: goto W4KoK; W4KoK: mlIe2: goto U3oRF; EC7IU: return true; goto ZQq3S; qET98: $this->setAol(true); goto Fa1if; DanT5: $qCKaG = explode("\x20", stristr($this->agent, "\x41\117\x4c")); goto NZo7t; ZnS4p: if (!(stripos($this->agent, "\141\x6f\x6c") !== false)) { goto mlIe2; } goto DanT5; NZo7t: if (!isset($qCKaG[1])) { goto xPlpd; } goto qET98; nMt27: $this->setAolVersion(self::VERSION_UNKNOWN); goto ZnS4p; U3oRF: return false; goto OIlT4; jYXKe: $this->setAol(false); goto nMt27; Fa1if: $this->setAolVersion(preg_replace("\57\133\136\x30\55\x39\134\x2e\141\x2d\x7a\x5d\57\x69", '', $qCKaG[1])); goto EC7IU; OIlT4: } protected function checkBrowserGoogleBot() { goto V89eq; V89eq: if (!(stripos($this->agent, "\147\x6f\157\x67\x6c\x65\142\x6f\164") !== false)) { goto nDbTs; } goto QzqAu; g1drW: $qCKaG = explode("\40", $FQpX2[1]); goto B5Luk; DYn5K: return false; goto LPeb_; TsUwe: nDbTs: goto DYn5K; B5Luk: $this->setVersion(str_replace("\x3b", '', $qCKaG[0])); goto uznqQ; QzqAu: $FQpX2 = explode("\57", stristr($this->agent, "\147\x6f\x6f\147\x6c\145\x62\x6f\x74")); goto jS69s; RHmob: uCH8M: goto TsUwe; knzFf: $this->setRobot(true); goto nHyJO; jS69s: if (!isset($FQpX2[1])) { goto uCH8M; } goto g1drW; nHyJO: return true; goto RHmob; uznqQ: $this->name = self::BROWSER_GOOGLEBOT; goto knzFf; LPeb_: } protected function checkBrowserYandexBot() { goto h6LZL; PmkIQ: VJrdN: goto rr69v; KwRIa: return true; goto fKbnI; fKbnI: VYA0r: goto PmkIQ; BMMAj: if (!isset($FQpX2[1])) { goto VYA0r; } goto wmOXc; L8iMg: $this->setVersion(str_replace("\x3b", '', $qCKaG[0])); goto bnUV3; wmOXc: $qCKaG = explode("\40", $FQpX2[1]); goto L8iMg; bnUV3: $this->name = self::BROWSER_YANDEXBOT; goto lzNZX; MdpMJ: $FQpX2 = explode("\57", stristr($this->agent, "\131\141\x6e\x64\x65\x78\102\x6f\164")); goto BMMAj; rr69v: return false; goto Y_NiG; lzNZX: $this->setRobot(true); goto KwRIa; h6LZL: if (!(stripos($this->agent, "\x59\x61\x6e\x64\145\170\x42\x6f\164") !== false)) { goto VJrdN; } goto MdpMJ; Y_NiG: } protected function checkBrowserYandexImageResizerBot() { goto YsAXq; IcG0w: $this->name = self::BROWSER_YANDEXIMAGERESIZER_BOT; goto u0OF9; wBw4M: return false; goto e7MUq; jr0Pk: $qCKaG = explode("\40", $FQpX2[1]); goto iq1By; iq1By: $this->setVersion(str_replace("\73", '', $qCKaG[0])); goto IcG0w; m7lEg: eBeEG: goto wBw4M; u0OF9: $this->setRobot(true); goto hT_4J; BgIFS: $FQpX2 = explode("\57", stristr($this->agent, "\131\141\156\x64\145\x78\111\x6d\141\147\145\x52\145\163\x69\172\145\162")); goto XToR2; UDaYi: JEjNc: goto m7lEg; XToR2: if (!isset($FQpX2[1])) { goto JEjNc; } goto jr0Pk; hT_4J: return true; goto UDaYi; YsAXq: if (!(stripos($this->agent, "\131\x61\156\x64\145\170\111\x6d\x61\147\x65\122\x65\163\x69\172\x65\x72") !== false)) { goto eBeEG; } goto BgIFS; e7MUq: } protected function checkBrowserYandexCatalogBot() { goto FIFMk; MOo02: $this->setRobot(true); goto IUYx2; Kz7Ru: ALkEO: goto SwTDk; gyGDa: $FQpX2 = explode("\57", stristr($this->agent, "\x59\141\x6e\144\145\x78\x43\141\164\x61\154\x6f\147")); goto X8Bue; okJid: $this->setVersion(str_replace("\73", '', $qCKaG[0])); goto xVPKu; SwTDk: return false; goto KxGrn; xVPKu: $this->name = self::BROWSER_YANDEXCATALOG_BOT; goto MOo02; IUYx2: return true; goto QN3mT; X8Bue: if (!isset($FQpX2[1])) { goto xSXCF; } goto JdjVM; FIFMk: if (!(stripos($this->agent, "\131\x61\x6e\x64\145\x78\x43\x61\164\141\154\157\147") !== false)) { goto ALkEO; } goto gyGDa; JdjVM: $qCKaG = explode("\40", $FQpX2[1]); goto okJid; QN3mT: xSXCF: goto Kz7Ru; KxGrn: } protected function checkBrowserYandexNewsBot() { goto LfMv4; I5CA9: $this->name = self::BROWSER_YANDEXNEWS_BOT; goto OnGse; OnGse: $this->setRobot(true); goto jFxZH; Vgc9B: $this->setVersion(str_replace("\x3b", '', $qCKaG[0])); goto I5CA9; p2jm9: return false; goto dlre4; jFxZH: return true; goto x2H5H; x2H5H: wMKGU: goto LcSHy; LfMv4: if (!(stripos($this->agent, "\131\x61\156\x64\145\x78\x4e\x65\x77\x73") !== false)) { goto Vipiu; } goto OhGEp; OhGEp: $FQpX2 = explode("\x2f", stristr($this->agent, "\x59\x61\156\144\x65\170\116\x65\x77\x73")); goto p531V; p531V: if (!isset($FQpX2[1])) { goto wMKGU; } goto azIBt; azIBt: $qCKaG = explode("\40", $FQpX2[1]); goto Vgc9B; LcSHy: Vipiu: goto p2jm9; dlre4: } protected function checkBrowserYandexMetrikaBot() { goto K8GM8; YnZEa: z5KP9: goto hCmlO; qMzGU: $this->name = self::BROWSER_YANDEXMETRIKA_BOT; goto zmeXA; zmeXA: $this->setRobot(true); goto ZDs6n; K8GM8: if (!(stripos($this->agent, "\x59\141\x6e\144\145\x78\115\145\164\x72\x69\153\x61") !== false)) { goto qJ3fR; } goto yYqEx; UDyst: return false; goto LviLV; ZDs6n: return true; goto YnZEa; yYqEx: $FQpX2 = explode("\x2f", stristr($this->agent, "\131\141\156\x64\x65\x78\115\x65\x74\x72\151\153\x61")); goto qNccl; Ee1S5: $qCKaG = explode("\x20", $FQpX2[1]); goto f64Pv; hCmlO: qJ3fR: goto UDyst; f64Pv: $this->setVersion(str_replace("\x3b", '', $qCKaG[0])); goto qMzGU; qNccl: if (!isset($FQpX2[1])) { goto z5KP9; } goto Ee1S5; LviLV: } protected function checkBrowserYandexDirectBot() { goto SUe2g; t2WjI: $this->setRobot(true); goto Hghov; dcEgQ: $FQpX2 = explode("\57", stristr($this->agent, "\x59\x61\156\x64\x65\170\x44\x69\162\x65\143\x74")); goto AHln0; AHln0: if (!isset($FQpX2[1])) { goto xs_nD; } goto NTzux; vR7To: $this->name = self::BROWSER_YANDEXDIRECT_BOT; goto t2WjI; SUe2g: if (!(stripos($this->agent, "\x59\141\156\x64\145\170\x44\151\x72\145\x63\x74") !== false)) { goto PoT1A; } goto dcEgQ; DBJnv: xs_nD: goto Fltus; NTzux: $qCKaG = explode("\x20", $FQpX2[1]); goto zg6EM; zg6EM: $this->setVersion(str_replace("\x3b", '', $qCKaG[0])); goto vR7To; Hghov: return true; goto DBJnv; Fltus: PoT1A: goto GA4nW; GA4nW: return false; goto T92NP; T92NP: } protected function checkBrowserYandexWebmasterBot() { goto z6hnS; KVTG7: $this->name = self::BROWSER_YANDEXWEBMASTER_BOT; goto NVlox; SJ25O: J99aA: goto zQ1ts; NVlox: $this->setRobot(true); goto v20pE; zQ1ts: LWSzN: goto OVTnB; z6hnS: if (!(stripos($this->agent, "\x59\141\156\144\145\170\x57\x65\x62\155\x61\x73\x74\145\162") !== false)) { goto LWSzN; } goto y0axC; OVTnB: return false; goto nkGx5; v20pE: return true; goto SJ25O; VaAcU: $qCKaG = explode("\40", $FQpX2[1]); goto meV2r; oDvgo: if (!isset($FQpX2[1])) { goto J99aA; } goto VaAcU; y0axC: $FQpX2 = explode("\57", stristr($this->agent, "\131\x61\x6e\144\x65\x78\x57\145\142\155\x61\x73\x74\145\162")); goto oDvgo; meV2r: $this->setVersion(str_replace("\73", '', $qCKaG[0])); goto KVTG7; nkGx5: } protected function checkBrowserYandexFaviconsBot() { goto uISfi; dW6m3: zoBqb: goto si3bZ; eBe7s: return true; goto dW6m3; Pi1Ya: $this->setRobot(true); goto eBe7s; S2pCa: $this->setVersion(str_replace("\x3b", '', $qCKaG[0])); goto V5EGJ; uISfi: if (!(stripos($this->agent, "\x59\x61\x6e\144\x65\170\106\x61\166\x69\143\x6f\x6e\163") !== false)) { goto zUwr2; } goto Wp2qt; V5EGJ: $this->name = self::BROWSER_YANDEXFAVICONS_BOT; goto Pi1Ya; Wp2qt: $FQpX2 = explode("\x2f", stristr($this->agent, "\131\x61\156\x64\145\x78\106\x61\166\151\x63\x6f\156\163")); goto c6SWX; HDaJz: return false; goto cODoz; si3bZ: zUwr2: goto HDaJz; c6SWX: if (!isset($FQpX2[1])) { goto zoBqb; } goto ze6Cc; ze6Cc: $qCKaG = explode("\x20", $FQpX2[1]); goto S2pCa; cODoz: } protected function checkBrowserYandexBlogsBot() { goto e3TPM; rFtrX: sxdt2: goto S6UEx; CJfvm: return true; goto rFtrX; e3TPM: if (!(stripos($this->agent, "\131\x61\x6e\144\x65\x78\x42\154\x6f\147\163") !== false)) { goto aEsip; } goto d6jtd; FHvqC: $qCKaG = explode("\x20", $FQpX2[1]); goto Aqb2C; NzpAE: $this->name = self::BROWSER_YANDEXBLOGS_BOT; goto Vlhfw; X9If3: return false; goto UgyWi; QyAgG: if (!isset($FQpX2[1])) { goto sxdt2; } goto FHvqC; Vlhfw: $this->setRobot(true); goto CJfvm; d6jtd: $FQpX2 = explode("\57", stristr($this->agent, "\x59\x61\x6e\x64\145\170\102\x6c\x6f\147\163")); goto QyAgG; S6UEx: aEsip: goto X9If3; Aqb2C: $this->setVersion(str_replace("\x3b", '', $qCKaG[0])); goto NzpAE; UgyWi: } protected function checkBrowserYandexMediaBot() { goto EQxck; uXkeg: if (!isset($FQpX2[1])) { goto n84Ku; } goto sSlyZ; EQxck: if (!(stripos($this->agent, "\131\x61\x6e\144\145\x78\x4d\145\144\x69\x61") !== false)) { goto yLS9J; } goto cBMuq; YGCpq: yLS9J: goto Eyjon; Eyjon: return false; goto MKaHC; mxaB3: n84Ku: goto YGCpq; cBMuq: $FQpX2 = explode("\x2f", stristr($this->agent, "\131\141\x6e\144\x65\170\x4d\x65\144\151\x61")); goto uXkeg; yTTS0: return true; goto mxaB3; O4knl: $this->name = self::BROWSER_YANDEXMEDIA_BOT; goto utzy0; sSlyZ: $qCKaG = explode("\40", $FQpX2[1]); goto epb5j; epb5j: $this->setVersion(str_replace("\x3b", '', $qCKaG[0])); goto O4knl; utzy0: $this->setRobot(true); goto yTTS0; MKaHC: } protected function checkBrowserYandexVideoBot() { goto XSHJe; m1Mom: if (!isset($FQpX2[1])) { goto gd5QW; } goto yk3pf; Cq_H6: $this->setVersion(str_replace("\73", '', $qCKaG[0])); goto gjqIZ; XSHJe: if (!(stripos($this->agent, "\x59\x61\x6e\144\145\170\x56\x69\144\145\x6f") !== false)) { goto iz1uM; } goto ecfS1; irUMM: return true; goto bfHK2; UZXVo: return false; goto TGR3f; QOPfn: iz1uM: goto UZXVo; bfHK2: gd5QW: goto QOPfn; yk3pf: $qCKaG = explode("\x20", $FQpX2[1]); goto Cq_H6; ecfS1: $FQpX2 = explode("\x2f", stristr($this->agent, "\x59\x61\x6e\x64\145\170\126\x69\144\x65\x6f")); goto m1Mom; vEuQ6: $this->setRobot(true); goto irUMM; gjqIZ: $this->name = self::BROWSER_YANDEXVIDEO_BOT; goto vEuQ6; TGR3f: } protected function checkBrowserYandexImagesBot() { goto FO4Dd; ihION: AVYiI: goto w0Avm; PDfam: $qCKaG = explode("\40", $FQpX2[1]); goto eaVUY; w0Avm: return false; goto REXtG; eaVUY: $this->setVersion(str_replace("\73", '', $qCKaG[0])); goto qth0i; LNHvE: uyRgr: goto ihION; zuLwN: if (!isset($FQpX2[1])) { goto uyRgr; } goto PDfam; kxAzt: $FQpX2 = explode("\57", stristr($this->agent, "\131\141\x6e\144\x65\170\111\155\141\x67\x65\x73")); goto zuLwN; FO4Dd: if (!(stripos($this->agent, "\131\141\x6e\x64\x65\170\x49\x6d\x61\147\145\x73") !== false)) { goto AVYiI; } goto kxAzt; oz7uC: return true; goto LNHvE; qth0i: $this->name = self::BROWSER_YANDEXIMAGES_BOT; goto ICqZ4; ICqZ4: $this->setRobot(true); goto oz7uC; REXtG: } protected function checkBrowserMSNBot() { goto cmWJO; xtjZU: return false; goto W37tX; r24Di: G6XUH: goto f2ns6; cmWJO: if (!(stripos($this->agent, "\155\163\156\142\157\x74") !== false)) { goto ZxzIr; } goto e3eK2; EL8zC: $this->name = self::BROWSER_MSNBOT; goto qE9cQ; qE9cQ: $this->setRobot(true); goto oT0WA; oT0WA: return true; goto r24Di; f2ns6: ZxzIr: goto xtjZU; vj6Nz: $this->setVersion(str_replace("\x3b", '', $qCKaG[0])); goto EL8zC; pe3Ex: $qCKaG = explode("\x20", $FQpX2[1]); goto vj6Nz; e3eK2: $FQpX2 = explode("\57", stristr($this->agent, "\x6d\x73\156\142\157\164")); goto bfoEd; bfoEd: if (!isset($FQpX2[1])) { goto G6XUH; } goto pe3Ex; W37tX: } protected function checkBrowserBingBot() { goto WqYxw; MUsyE: $this->setRobot(true); goto TiocT; xr30D: m7nz4: goto owK0_; ZEYWb: $qCKaG = explode("\x20", $FQpX2[1]); goto LCVpQ; m6Jcg: $this->name = self::BROWSER_BINGBOT; goto MUsyE; LCVpQ: $this->setVersion(str_replace("\x3b", '', $qCKaG[0])); goto m6Jcg; aEKvM: $FQpX2 = explode("\x2f", stristr($this->agent, "\x62\151\x6e\x67\x62\157\x74")); goto X12OI; BoMvh: return false; goto UYIk2; TiocT: return true; goto xr30D; owK0_: KXDOz: goto BoMvh; WqYxw: if (!(stripos($this->agent, "\142\x69\156\x67\142\x6f\164") !== false)) { goto KXDOz; } goto aEKvM; X12OI: if (!isset($FQpX2[1])) { goto m7nz4; } goto ZEYWb; UYIk2: } protected function checkBrowserW3CValidator() { goto LCmfv; aCIys: $qCKaG = explode("\40", $FQpX2[1]); goto bcls5; LCmfv: if (stripos($this->agent, "\x57\x33\x43\x2d\x63\150\x65\143\153\154\151\156\153") !== false) { goto kkzKv; } goto rjG77; rjG77: if (stripos($this->agent, "\x57\63\x43\137\126\x61\154\x69\x64\141\x74\157\162") !== false) { goto Dsacg; } goto ypqqL; bcls5: $this->setVersion($qCKaG[0]); goto lR1bE; ypqqL: if (stripos($this->agent, "\127\x33\x43\x2d\x6d\x6f\142\x69\154\145\117\x4b") !== false) { goto i1yUm; } goto ZdO_x; ebSq8: $this->setVersion($qCKaG[0]); goto wf1Z0; wf1Z0: $this->name = self::BROWSER_W3CVALIDATOR; goto GcS9m; H3V_L: $qCKaG = explode("\x20", $FQpX2[1]); goto ebSq8; T62gj: return true; goto i23FR; i4RYy: goto dxPNF; goto SByTl; sZ_52: $FQpX2 = explode("\x2f", stristr($this->agent, "\127\63\x43\55\143\150\x65\x63\153\x6c\x69\156\x6b")); goto tF5Kt; EqMk3: if (!isset($FQpX2[1])) { goto vsv1x; } goto H3V_L; vogNv: Dsacg: goto orkhb; tF5Kt: if (!isset($FQpX2[1])) { goto h1HKp; } goto aCIys; kIvCF: $this->setMobile(true); goto viBhi; ZdO_x: goto dxPNF; goto Fe9TU; Fe9TU: kkzKv: goto sZ_52; oAS53: dxPNF: goto tGNTq; lR1bE: $this->name = self::BROWSER_W3CVALIDATOR; goto T62gj; SByTl: i1yUm: goto We13Y; viBhi: return true; goto oAS53; Ioxpb: $FQpX2 = explode("\x2f", stristr($JQFU1, "\x57\63\103\137\x56\x61\154\x69\144\x61\164\x6f\162")); goto EqMk3; bZVZP: vsv1x: goto i4RYy; i23FR: h1HKp: goto mTFjF; orkhb: $JQFU1 = str_replace("\127\x33\x43\137\x56\x61\x6c\151\x64\141\x74\x6f\x72\x20", "\x57\x33\x43\137\x56\x61\x6c\151\x64\141\164\x6f\x72\x2f", $this->agent); goto Ioxpb; tGNTq: return false; goto uGNLY; We13Y: $this->name = self::BROWSER_W3CVALIDATOR; goto kIvCF; mTFjF: goto dxPNF; goto vogNv; GcS9m: return true; goto bZVZP; uGNLY: } protected function checkBrowserSlurp() { goto m2agV; coY3q: $this->setVersion($qCKaG[0]); goto tC8qu; tC8qu: $this->name = self::BROWSER_SLURP; goto YxtZe; FbxXE: return true; goto PE0w3; MGExL: $qCKaG = explode("\x20", $FQpX2[1]); goto coY3q; EHnmK: return false; goto TRmUc; YxtZe: $this->setRobot(true); goto jL5tT; rYq0o: $FQpX2 = explode("\57", stristr($this->agent, "\123\x6c\x75\162\160")); goto FZrCd; GX9h6: SzBmn: goto EHnmK; m2agV: if (!(stripos($this->agent, "\163\x6c\165\x72\160") !== false)) { goto SzBmn; } goto rYq0o; FZrCd: if (!isset($FQpX2[1])) { goto r_yqp; } goto MGExL; jL5tT: $this->setMobile(false); goto FbxXE; PE0w3: r_yqp: goto GX9h6; TRmUc: } protected function checkBrowserBrave() { goto jUMY_; oD677: $this->setBrowser(self::BROWSER_BRAVE); goto gdheT; lXdOI: $this->setVersion(''); goto spGvQ; kJzBd: $this->setVersion($qCKaG[0]); goto oD677; Aoz9J: XPFmr: goto wPiYt; KxM9h: $qCKaG = explode("\40", $p5gmD[1]); goto kJzBd; MU_qW: if (!isset($p5gmD[1])) { goto Va_ly; } goto KxM9h; SOxN1: uZ9BW: goto uWV7P; FeKHU: goto V4sEd; goto SOxN1; yUo4W: goto V4sEd; goto Aoz9J; K3_NI: if (stripos($this->agent, "\x20\x42\x72\141\166\145\x20") !== false) { goto XPFmr; } goto FeKHU; uWV7P: $p5gmD = explode("\x2f", stristr($this->agent, "\102\162\x61\166\x65")); goto MU_qW; vWq2J: Va_ly: goto yUo4W; wPiYt: $this->setBrowser(self::BROWSER_BRAVE); goto lXdOI; m65CC: return false; goto Xo5Ns; gdheT: return true; goto vWq2J; jUMY_: if (stripos($this->agent, "\102\162\x61\166\x65\57") !== false) { goto uZ9BW; } goto K3_NI; TF8g5: V4sEd: goto m65CC; spGvQ: return true; goto TF8g5; Xo5Ns: } protected function checkBrowserEdge() { goto Dg5tU; Nge4c: hnmGR: goto iCxiJ; HrWq2: return false; goto pj2t7; n1r8L: $this->setBrowser(self::BROWSER_EDGE); goto wmj4e; arQkm: return true; goto Nge4c; Dg5tU: if (!(stripos($this->agent, "\105\x64\147\x65\57") !== false)) { goto TG7R8; } goto WlUFk; iCxiJ: TG7R8: goto HrWq2; wmj4e: if (!(stripos($this->agent, "\127\151\x6e\x64\x6f\x77\163\x20\x50\150\157\x6e\x65") !== false || stripos($this->agent, "\101\x6e\x64\162\157\x69\x64") !== false)) { goto FoWBF; } goto YoHdI; YoHdI: $this->setMobile(true); goto Jof_S; VNwPZ: $this->setVersion($qCKaG[0]); goto n1r8L; AfihX: $qCKaG = explode("\40", $FQpX2[1]); goto VNwPZ; W90ZL: if (!isset($FQpX2[1])) { goto hnmGR; } goto AfihX; WlUFk: $FQpX2 = explode("\57", stristr($this->agent, "\105\x64\147\x65")); goto W90ZL; Jof_S: FoWBF: goto arQkm; pj2t7: } protected function checkBrowserInternetExplorer() { goto wIRo7; SCDcS: $this->setVersion(str_replace(["\50", "\51", "\x3b"], '', $FQpX2[1])); goto gEewb; R5sAl: return true; goto WfMDr; ETazE: $this->setVersion($qCKaG[1]); goto wHyt1; AHhOn: if (stripos($this->agent, "\155\x69\143\x72\157\163\x6f\146\164\40\151\156\x74\x65\x72\156\x65\164\x20\x65\170\160\154\157\x72\x65\x72") !== false) { goto qf8cl; } goto Pq0BH; Pq0BH: if (stripos($this->agent, "\155\163\151\x65") !== false && stripos($this->agent, "\157\160\145\x72\141") === false) { goto PYScj; } goto cDfzV; KoEVq: DpKln: goto RdpaL; WfMDr: uSknx: goto mhs4l; Y8xlW: if (!isset($FQpX2[1])) { goto uSknx; } goto jyjeQ; G9zlr: if (!isset($FQpX2[1])) { goto DpKln; } goto xrfqF; mziMp: goto MqFaY; goto jvOyf; kk1fO: return true; goto Ocfhg; DUE4X: $hvD6X = explode("\162\x76\x3a", $this->agent); goto E1KF8; Wb66i: PYScj: goto xWSDJ; xD_qI: qf8cl: goto ZEjrb; PahGt: $this->setBrowser(self::BROWSER_POCKET_IE); goto LkGTV; qGu6_: $this->setMobile(true); goto VeF7b; NrXQt: $FQpX2 = explode("\40", stristr(str_replace("\x3b", "\73\x20", $this->agent), "\x6d\x73\x69\145")); goto zkIc2; LgQjm: vm6zc: goto youT2; V0vGZ: $FQpX2 = explode("\x20", stristr($this->agent, "\155\x73\x70\151\145")); goto Y8xlW; fyvOA: $this->setBrowser(self::BROWSER_IE); goto gyk2K; QRx94: goto MqFaY; goto LgQjm; LkGTV: $this->setMobile(true); goto SfxEP; FJFH_: if (!preg_match("\x2f\63\60\70\174\x34\x32\65\174\x34\x32\x36\174\x34\67\64\x7c\60\x62\61\57\151", $FQpX2)) { goto cj7Se; } goto S2Mea; S2Mea: $this->setVersion("\x31\x2e\x35"); goto wYZM1; jTPbM: goto A2nWu; goto ncXA2; jyjeQ: $this->setPlatform(self::PLATFORM_WINDOWS_CE); goto ytfWb; zkIc2: if (!isset($FQpX2[1])) { goto NURH1; } goto Amb9s; kaPcd: return true; goto KoEVq; feeRx: goto MqFaY; goto zF4g7; XBJcS: $FQpX2 = stristr($this->agent, "\57"); goto FJFH_; gyk2K: $this->setVersion("\x31\x31\x2e\60"); goto vqZoU; Ocfhg: goto MqFaY; goto Wb66i; OIBTj: if (stripos($this->agent, "\x6d\163\x70\151\145") !== false || stripos($this->agent, "\160\157\143\x6b\145\164") !== false) { goto SqRAx; } goto mziMp; EbsQF: $this->setVersion($FQpX2[1]); goto Npkq9; ncXA2: caq3h: goto EbsQF; vqZoU: return true; goto E6_cl; xWSDJ: if (!(stripos($this->agent, "\x6d\x73\156\x62") !== false)) { goto mJWyX; } goto XRa8j; xrfqF: $this->setBrowser(self::BROWSER_MSN); goto wRAWF; wIRo7: if (stripos($this->agent, "\124\162\151\144\x65\156\x74\x2f\67\x2e\60\x3b\x20\162\166\x3a\61\x31\56\60") !== false) { goto c8UvL; } goto AHhOn; gzTpT: if (!isset($qCKaG[1])) { goto QUwbB; } goto ETazE; zF4g7: SqRAx: goto V0vGZ; A4ecr: $this->setVersion("\x31\56\60"); goto XBJcS; E1KF8: if (!isset($hvD6X[1])) { goto P2HOE; } goto N9BOe; ytfWb: $this->setBrowser(self::BROWSER_POCKET_IE); goto qGu6_; wYZM1: cj7Se: goto kk1fO; oln2G: return true; goto PBnIi; P90bk: return false; goto Xxl0O; gEewb: if (!(stripos($this->agent, "\111\105\115\x6f\x62\151\154\x65") !== false)) { goto AmUKf; } goto PahGt; wRAWF: $this->setVersion(str_replace(["\x28", "\51", "\73"], '', $FQpX2[1])); goto kaPcd; youT2: $this->setBrowser(self::BROWSER_IE); goto DUE4X; Amb9s: $this->setBrowser(self::BROWSER_IE); goto SCDcS; cDfzV: if (stripos($this->agent, "\x74\x72\151\144\x65\x6e\164") !== false) { goto vm6zc; } goto OIBTj; Npkq9: A2nWu: goto R5sAl; XRa8j: $FQpX2 = explode("\40", stristr(str_replace("\x3b", "\x3b\x20", $this->agent), "\115\x53\116")); goto G9zlr; SfxEP: AmUKf: goto oln2G; Pvo7r: $qCKaG = explode("\57", $this->agent); goto gzTpT; mhs4l: MqFaY: goto P90bk; PBnIi: NURH1: goto QRx94; jvOyf: c8UvL: goto fyvOA; BigkU: $this->agent = str_replace(["\115\157\172\151\154\x6c\141", "\x47\x65\143\153\x6f"], "\115\123\x49\105", $this->agent); goto ZCFbH; wHyt1: QUwbB: goto jTPbM; N9BOe: $this->setVersion(preg_replace("\57\133\136\60\55\x39\x2e\x5d\53\57", '', $hvD6X[1])); goto BigkU; E6_cl: goto MqFaY; goto xD_qI; ZEjrb: $this->setBrowser(self::BROWSER_IE); goto A4ecr; RdpaL: mJWyX: goto NrXQt; ZCFbH: P2HOE: goto feeRx; VeF7b: if (stripos($this->agent, "\x6d\x73\160\151\x65") !== false) { goto caq3h; } goto Pvo7r; Xxl0O: } protected function checkBrowserOpera() { goto FV_r1; VIt9C: if (!(stripos($this->agent, "\x4d\x6f\142\151\x6c\x65") !== false)) { goto Qu8RG; } goto j6IbS; mEk8V: $this->setVersion($qCKaG[0]); goto o3wew; ORWk5: $qCKaG = explode("\40", $FQpX2[1]); goto Lefdu; ES9XP: Qu8RG: goto WY8Bj; JlPZw: XYU1r: goto EyLvU; fSV_E: $this->setVersion($Nmdim[1]); goto rYvjW; nZ0nx: if (!isset($FQpX2[1])) { goto Hm4A_; } goto ORWk5; j6IbS: $this->setMobile(true); goto ES9XP; Pa0Qn: goto v5y7O; goto k7c7G; PbvP6: return true; goto JuEKc; roFP0: $this->setVersion(isset($qCKaG[1]) ? $qCKaG[1] : ''); goto wUS_Q; nQXSM: $qCKaG = explode("\x20", $FQpX2[1]); goto mEk8V; CN3tr: if (!isset($FQpX2[1])) { goto d8o6o; } goto nQXSM; fO_33: $FQpX2 = explode("\57", str_replace("\50", "\40", $lzTkR)); goto j8UTi; EN7mh: if (!isset($qCKaG[1])) { goto k_as8; } goto BFXLp; X9L9a: iFzV0: goto BzUt4; WLxfv: $this->setMobile(true); goto JlPZw; o4aRV: k_as8: goto WESga; WY8Bj: $this->name = self::BROWSER_OPERA; goto PbvP6; nI6HI: return false; goto sVyBk; M3sl_: goto v5y7O; goto Lehey; WESga: goto WESEj; goto X9L9a; JuEKc: v5y7O: goto nI6HI; BFXLp: $this->setVersion($qCKaG[1]); goto o4aRV; QlybL: $FQpX2 = explode("\x2f", str_replace("\x28", "\x20", $lzTkR)); goto nZ0nx; Lehey: In9pe: goto yQguI; yQguI: $lzTkR = stristr($this->agent, "\x4f\x50\122"); goto FzEha; xRtsU: Hm4A_: goto v14CM; BzUt4: $FQpX2 = explode("\x2f", $lzTkR); goto CN3tr; FzEha: if (!preg_match("\57\134\57\x2f", $lzTkR)) { goto E7lwG; } goto fO_33; ZtPyM: ZC4wT: goto NRAuy; yqM00: $qCKaG = explode("\x20", $FQpX2[1]); goto xdIA3; j8UTi: if (!isset($FQpX2[1])) { goto MBcET; } goto yqM00; B6z_l: PRlSK: goto fSV_E; x9Cmr: $lzTkR = stristr($this->agent, "\157\x70\145\162\141"); goto xVAoh; v14CM: DYzFI: goto X8E6V; HrjVQ: $qCKaG = explode("\40", stristr($lzTkR, "\157\x70\145\162\141")); goto roFP0; w0VeN: VHukI: goto QlybL; C_pa2: return true; goto Pa0Qn; szBZy: return true; goto M3sl_; xVAoh: if (preg_match("\57\x56\x65\x72\x73\x69\157\156\134\57\x28\61\52\x2e\x2a\51\x24\57", $lzTkR, $Nmdim)) { goto PRlSK; } goto hro0g; hro0g: if (preg_match("\57\x5c\x2f\x2f", $lzTkR)) { goto VHukI; } goto HrjVQ; EyLvU: $this->name = self::BROWSER_OPERA; goto szBZy; RJqJX: if (preg_match("\57\x5c\x2f\57", $lzTkR)) { goto iFzV0; } goto wnRS0; IGWO3: WESEj: goto oDK07; FV_r1: if (stripos($this->agent, "\157\160\x65\x72\x61\40\155\151\156\x69") !== false) { goto ZC4wT; } goto nldjq; k7c7G: uXqkm: goto x9Cmr; x1tu9: $this->setMobile(true); goto C_pa2; RtXUu: MBcET: goto N9ssa; lKJ1T: if (stripos($this->agent, "\x4f\120\122") !== false) { goto In9pe; } goto T7tGg; wUS_Q: goto DYzFI; goto B6z_l; o3wew: d8o6o: goto IGWO3; T7tGg: goto v5y7O; goto ZtPyM; NRAuy: $lzTkR = stristr($this->agent, "\157\x70\145\x72\x61\40\x6d\151\x6e\151"); goto RJqJX; xdIA3: $this->setVersion($qCKaG[0]); goto RtXUu; Lefdu: $this->setVersion($qCKaG[0]); goto xRtsU; N9ssa: E7lwG: goto VIt9C; oDK07: $this->name = self::BROWSER_OPERA_MINI; goto x1tu9; rYvjW: goto DYzFI; goto w0VeN; nldjq: if (stripos($this->agent, "\x6f\160\145\x72\141") !== false) { goto uXqkm; } goto lKJ1T; X8E6V: if (!(stripos($this->agent, "\x4f\x70\145\162\141\40\115\x6f\x62\x69") !== false)) { goto XYU1r; } goto WLxfv; wnRS0: $qCKaG = explode("\40", stristr($lzTkR, "\x6f\160\x65\x72\141\x20\155\151\x6e\x69")); goto EN7mh; sVyBk: } protected function checkBrowserChrome() { goto xAGKt; fsD9X: aZQAw: goto jBI99; ciw6C: $this->setTablet(true); goto mhqh1; SUH71: $this->setMobile(true); goto zm3vx; mhqh1: goto CkNKT; goto lsiuA; xAGKt: if (!(stripos($this->agent, "\103\x68\162\x6f\155\145") !== false)) { goto DIybF; } goto dSRW3; B3Gch: $qCKaG = explode("\x20", $FQpX2[1]); goto FjFvn; DTPuN: return false; goto ks4rT; dSRW3: $FQpX2 = preg_split("\57\133\x5c\57\73\135\x2b\57", stristr($this->agent, "\103\x68\x72\x6f\x6d\x65")); goto lVIgg; qyUXw: if (stripos($this->agent, "\115\157\142\151\154\x65") !== false) { goto ufXCS; } goto ciw6C; BuAbv: $this->setBrowser(self::BROWSER_CHROME); goto OquP0; lVIgg: if (!isset($FQpX2[1])) { goto N3syG; } goto B3Gch; jBI99: return true; goto C9NeH; C9NeH: N3syG: goto StWXq; FjFvn: $this->setVersion($qCKaG[0]); goto BuAbv; OquP0: if (!(stripos($this->agent, "\101\x6e\144\x72\x6f\x69\x64") !== false)) { goto aZQAw; } goto qyUXw; lsiuA: ufXCS: goto SUH71; StWXq: DIybF: goto DTPuN; zm3vx: CkNKT: goto fsD9X; ks4rT: } protected function checkBrowserWebTv() { goto TeO5P; eNIyX: if (!isset($FQpX2[1])) { goto NosrI; } goto jy0Xi; Z9R8S: $FQpX2 = explode("\x2f", stristr($this->agent, "\167\x65\142\164\166")); goto eNIyX; TeO5P: if (!(stripos($this->agent, "\167\145\142\x74\x76") !== false)) { goto ME_wh; } goto Z9R8S; onXu3: $this->setVersion($qCKaG[0]); goto BQFgo; ibjNe: NosrI: goto YxhYG; DeBG0: return false; goto rwlDw; YxhYG: ME_wh: goto DeBG0; BQFgo: $this->setBrowser(self::BROWSER_WEBTV); goto PNDBK; PNDBK: return true; goto ibjNe; jy0Xi: $qCKaG = explode("\40", $FQpX2[1]); goto onXu3; rwlDw: } protected function checkBrowserNetPositive() { goto fRX7B; byuWV: $this->setVersion(str_replace(["\x28", "\51", "\73"], '', $qCKaG[0])); goto AM10I; SP83_: return false; goto Dchax; eQVdB: $FQpX2 = explode("\x2f", stristr($this->agent, "\x4e\145\x74\120\157\x73\x69\x74\151\166\x65")); goto aaECr; F58b3: Aiy6H: goto SP83_; fRX7B: if (!(stripos($this->agent, "\116\145\x74\120\157\x73\151\164\151\166\145") !== false)) { goto Aiy6H; } goto eQVdB; l4Lxu: Oj8hn: goto F58b3; ix7yM: return true; goto l4Lxu; AXNoM: $qCKaG = explode("\x20", $FQpX2[1]); goto byuWV; aaECr: if (!isset($FQpX2[1])) { goto Oj8hn; } goto AXNoM; AM10I: $this->setBrowser(self::BROWSER_NETPOSITIVE); goto ix7yM; Dchax: } protected function checkBrowserGaleon() { goto kl9H3; Pmdf7: return false; goto X5J8N; bUYd1: $FQpX2 = explode("\40", stristr($this->agent, "\147\141\154\x65\157\156")); goto vH_pF; vH_pF: $qCKaG = explode("\x2f", $FQpX2[0]); goto ml0B2; kl9H3: if (!(stripos($this->agent, "\147\141\154\x65\157\x6e") !== false)) { goto PATvj; } goto bUYd1; n7st4: PB3RA: goto hCXWw; nwMZb: return true; goto n7st4; ml0B2: if (!isset($qCKaG[1])) { goto PB3RA; } goto ZyvFg; hCXWw: PATvj: goto Pmdf7; jtw7e: $this->setBrowser(self::BROWSER_GALEON); goto nwMZb; ZyvFg: $this->setVersion($qCKaG[1]); goto jtw7e; X5J8N: } protected function checkBrowserKonqueror() { goto m5gpS; j9_sg: JPm6I: goto ErYqF; m5gpS: if (!(stripos($this->agent, "\x4b\x6f\156\161\165\145\x72\157\162") !== false)) { goto idtsW; } goto Y26re; kqY8h: return true; goto j9_sg; BToVj: $qCKaG = explode("\x2f", $FQpX2[0]); goto xcLkl; Y26re: $FQpX2 = explode("\x20", stristr($this->agent, "\113\157\156\161\165\145\x72\x6f\162")); goto BToVj; EELV2: $this->setVersion($qCKaG[1]); goto hPpMx; hPpMx: $this->setBrowser(self::BROWSER_KONQUEROR); goto kqY8h; v1hP8: return false; goto nwyTG; xcLkl: if (!isset($qCKaG[1])) { goto JPm6I; } goto EELV2; ErYqF: idtsW: goto v1hP8; nwyTG: } protected function checkBrowserIcab() { goto nhjGU; Tgjso: if (!isset($qCKaG[1])) { goto i8eNS; } goto o3KeG; nhjGU: if (!(stripos($this->agent, "\x69\143\x61\142") !== false)) { goto d_w_E; } goto OF8uJ; Y8MXz: $this->setBrowser(self::BROWSER_ICAB); goto MFqgQ; o3KeG: $this->setVersion($qCKaG[1]); goto Y8MXz; MFqgQ: return true; goto wlYFV; V1u42: return false; goto dWlVM; WTyVc: d_w_E: goto V1u42; wlYFV: i8eNS: goto WTyVc; OF8uJ: $qCKaG = explode("\x20", stristr(str_replace("\57", "\40", $this->agent), "\151\x63\x61\x62")); goto Tgjso; dWlVM: } protected function checkBrowserOmniWeb() { goto qtpQt; Dkpdx: return false; goto u5wVV; nEX5x: return true; goto umRbe; qtpQt: if (!(stripos($this->agent, "\157\x6d\156\x69\x77\x65\142") !== false)) { goto WDLUa; } goto qKSsS; umRbe: WDLUa: goto Dkpdx; gAE5V: $this->setVersion($qCKaG[0]); goto bem2U; oZ863: $qCKaG = explode("\x20", isset($FQpX2[1]) ? $FQpX2[1] : ''); goto gAE5V; qKSsS: $FQpX2 = explode("\x2f", stristr($this->agent, "\157\155\x6e\151\x77\145\x62")); goto oZ863; bem2U: $this->setBrowser(self::BROWSER_OMNIWEB); goto nEX5x; u5wVV: } protected function checkBrowserPhoenix() { goto zdg0z; oZ7Zo: $this->setVersion($qCKaG[1]); goto EYlXh; zdg0z: if (!(stripos($this->agent, "\120\150\x6f\x65\156\x69\170") !== false)) { goto AscyY; } goto ThnOL; ThnOL: $qCKaG = explode("\57", stristr($this->agent, "\x50\x68\157\145\156\151\170")); goto yR2Aj; RwK8C: T4nbn: goto MLsiu; litqb: return false; goto D3AEv; EYlXh: $this->setBrowser(self::BROWSER_PHOENIX); goto wGixW; yR2Aj: if (!isset($qCKaG[1])) { goto T4nbn; } goto oZ7Zo; MLsiu: AscyY: goto litqb; wGixW: return true; goto RwK8C; D3AEv: } protected function checkBrowserFirebird() { goto YFjr7; yAOx8: return false; goto yQvWH; KDDcA: $qCKaG = explode("\57", stristr($this->agent, "\x46\x69\162\145\x62\151\162\144")); goto zgF55; u46Se: LcY6X: goto ec8KQ; zgF55: if (!isset($qCKaG[1])) { goto LcY6X; } goto v2kfy; YFjr7: if (!(stripos($this->agent, "\x46\151\162\x65\x62\151\162\144") !== false)) { goto AO5gD; } goto KDDcA; SKviT: $this->setBrowser(self::BROWSER_FIREBIRD); goto DZx0D; v2kfy: $this->setVersion($qCKaG[1]); goto SKviT; ec8KQ: AO5gD: goto yAOx8; DZx0D: return true; goto u46Se; yQvWH: } protected function checkBrowserNetscapeNavigator9Plus() { goto RgEiq; Z8tk9: $this->setBrowser(self::BROWSER_NETSCAPE_NAVIGATOR); goto FDDVJ; V9YHV: goto o_x8z; goto IRHAV; FqStJ: E0U_H: goto Z70yS; IRHAV: ot2w0: goto Q_6PT; eaSrI: return true; goto ZOqm2; RgEiq: if (stripos($this->agent, "\x46\151\162\x65\146\x6f\x78") !== false && preg_match("\57\116\141\x76\151\x67\141\164\157\x72\x5c\57\x28\x5b\136\40\x5d\x2a\51\x2f\x69", $this->agent, $Nmdim)) { goto ot2w0; } goto Oxhz3; dHAnp: goto o_x8z; goto FqStJ; ZOqm2: o_x8z: goto fulBV; Z70yS: $this->setVersion($Nmdim[1]); goto N3XKq; fulBV: return false; goto zmGYo; Oxhz3: if (stripos($this->agent, "\106\x69\162\145\x66\x6f\170") === false && preg_match("\x2f\x4e\x65\x74\x73\x63\141\160\x65\66\77\134\57\x28\x5b\x5e\40\135\52\x29\57\151", $this->agent, $Nmdim)) { goto E0U_H; } goto V9YHV; FDDVJ: return true; goto dHAnp; N3XKq: $this->setBrowser(self::BROWSER_NETSCAPE_NAVIGATOR); goto eaSrI; Q_6PT: $this->setVersion($Nmdim[1]); goto Z8tk9; zmGYo: } protected function checkBrowserShiretoko() { goto jOIWx; tSSzr: $this->setBrowser(self::BROWSER_SHIRETOKO); goto zOA7N; LlVLe: return false; goto sIgss; zOA7N: return true; goto XFCao; XFCao: yNcD5: goto LlVLe; jOIWx: if (!(stripos($this->agent, "\x4d\157\172\x69\154\154\x61") !== false && preg_match("\x2f\x53\x68\151\162\x65\x74\x6f\x6b\157\134\x2f\50\x5b\136\40\135\52\x29\x2f\151", $this->agent, $Nmdim))) { goto yNcD5; } goto kiS1q; kiS1q: $this->setVersion($Nmdim[1]); goto tSSzr; sIgss: } protected function checkBrowserIceCat() { goto OZi18; OZi18: if (!(stripos($this->agent, "\x4d\x6f\x7a\x69\154\154\141") !== false && preg_match("\x2f\111\143\145\103\141\164\x5c\57\x28\133\136\40\x5d\52\51\x2f\x69", $this->agent, $Nmdim))) { goto dM0Fd; } goto UAwfC; zYCmj: $this->setBrowser(self::BROWSER_ICECAT); goto RX_6u; JY2xY: return false; goto dh1OD; UAwfC: $this->setVersion($Nmdim[1]); goto zYCmj; whyXt: dM0Fd: goto JY2xY; RX_6u: return true; goto whyXt; dh1OD: } protected function checkBrowserNokia() { goto Ei7Kk; jGSAn: fulZj: goto eEgYn; boYh1: Po9Vl: goto hFEQ1; hFEQ1: return false; goto Q6HE5; wrYhm: return true; goto boYh1; eEgYn: $this->setMobile(true); goto wrYhm; rmclY: $this->setBrowser(self::BROWSER_NOKIA); goto A2XWh; A2XWh: goto fulZj; goto ZDrNa; Ei7Kk: if (!preg_match("\x2f\x4e\157\153\151\x61\50\133\136\134\x2f\x5d\x2b\x29\x5c\57\50\x5b\136\x20\123\x50\x5d\x2b\51\x2f\151", $this->agent, $Nmdim)) { goto Po9Vl; } goto Bhm8W; Bhm8W: $this->setVersion($Nmdim[2]); goto uyZgm; ZDrNa: lYOay: goto FzlRN; FzlRN: $this->setBrowser(self::BROWSER_NOKIA_S60); goto jGSAn; uyZgm: if (stripos($this->agent, "\123\x65\x72\x69\145\163\x36\x30") !== false || strpos($this->agent, "\123\x36\60") !== false) { goto lYOay; } goto rmclY; Q6HE5: } protected function checkBrowserPalemoon() { goto j1E2c; BBZSa: vA1V4: goto evIKh; pnRpu: goto vA1V4; goto zyL9s; ibHRc: $this->setBrowser(self::BROWSER_PALEMOON); goto sBt0q; fLma2: goto vA1V4; goto RwW40; ZLjaT: ymags: goto aKD8O; zyL9s: Zws42: goto ZgZ2H; evIKh: r0t5H: goto YXf89; OdBJY: if (preg_match("\57\x50\141\x6c\145\x6d\157\157\x6e\57\x69", $this->agent, $Nmdim)) { goto Zws42; } goto CJm_o; ZgZ2H: $this->setVersion(''); goto fl5s9; WHaN1: return true; goto BBZSa; URxXC: $this->setBrowser(self::BROWSER_PALEMOON); goto QCC9Z; sBt0q: return true; goto pnRpu; fl5s9: $this->setBrowser(self::BROWSER_PALEMOON); goto WHaN1; j1E2c: if (!(stripos($this->agent, "\163\x61\x66\141\162\151") === false)) { goto r0t5H; } goto paGAd; ev_AP: $this->setVersion($Nmdim[1]); goto ibHRc; uk_BJ: if (preg_match("\x2f\120\x61\x6c\145\155\157\x6f\x6e\x28\133\60\55\x39\x61\55\172\x41\55\x5a\134\56\x5d\x2b\x29\57\x69", $this->agent, $Nmdim)) { goto aDZY2; } goto OdBJY; YXf89: return false; goto QE2ai; paGAd: if (preg_match("\57\120\x61\154\x65\155\157\x6f\156\133\134\57\40\x5c\x28\135\x28\x5b\136\40\73\x5c\51\x5d\x2b\51\x2f\151", $this->agent, $Nmdim)) { goto ymags; } goto uk_BJ; aKD8O: $this->setVersion($Nmdim[1]); goto URxXC; RwW40: aDZY2: goto ev_AP; CJm_o: goto vA1V4; goto ZLjaT; QCC9Z: return true; goto fLma2; QE2ai: } protected function checkBrowserUCBrowser() { goto eXOrr; fapUp: if (stripos($this->agent, "\115\x6f\142\x69\x6c\145") !== false) { goto FOJrx; } goto fsRhT; fsRhT: $this->setTablet(true); goto h4Idg; J8yy4: return false; goto QhHCr; DCkHv: $this->setBrowser(self::BROWSER_UCBROWSER); goto oS6IH; AmXUr: Vfz99: goto J8yy4; y1pKN: $this->setVersion($Nmdim[1]); goto kinKd; qx5RE: if (!isset($Nmdim[1])) { goto MVFjC; } goto y1pKN; ZLseG: FOJrx: goto cGvHK; kinKd: MVFjC: goto fapUp; oS6IH: return true; goto AmXUr; cGvHK: $this->setMobile(true); goto dTlx4; h4Idg: goto WPNjE; goto ZLseG; dTlx4: WPNjE: goto DCkHv; eXOrr: if (!preg_match("\x2f\125\103\40\x3f\x42\x72\x6f\x77\x73\145\x72\134\57\x3f\50\x5b\134\x64\x5c\x2e\135\x2b\x29\57", $this->agent, $Nmdim)) { goto Vfz99; } goto qx5RE; QhHCr: } protected function checkBrowserFirefox() { goto lV0_u; XE6B8: $this->setBrowser(self::BROWSER_FIREFOX); goto rVBMq; IpBRt: $this->setBrowser(self::BROWSER_FIREFOX); goto WBtTA; HWW9L: if (preg_match("\x2f\x46\x69\x72\145\x66\157\x78\x24\57\x69", $this->agent, $Nmdim)) { goto MqY7Q; } goto THvlT; Fl0Qn: $this->setVersion($Nmdim[1]); goto pbkf3; Qu5_G: $this->setVersion($Nmdim[1]); goto Ga45_; ZATQG: if (stripos($this->agent, "\x4d\x6f\x62\151\x6c\x65") !== false || stripos($this->agent, "\x54\x61\x62\x6c\x65\x74") !== false) { goto ORZnj; } goto B00lE; RF430: goto klLz1; goto Ttuxn; OX6oN: if (preg_match("\57\x46\151\162\145\x66\x6f\x78\x28\x5b\60\x2d\x39\141\x2d\172\x41\x2d\x5a\134\56\135\53\51\57\151", $this->agent, $Nmdim)) { goto zN3i1; } goto HWW9L; Ynqnr: $this->setVersion($Nmdim[1]); goto IpBRt; dJ1cb: lAg3n: goto IKdOf; ZLojQ: goto atg79; goto mZP1K; GXyDK: $this->setTablet(true); goto C1Yvq; pp4H4: $this->setVersion(''); goto XE6B8; ENQqQ: zN3i1: goto Ynqnr; jTjSZ: $this->setMobile(true); goto dJ1cb; pFglV: if (preg_match("\x2f\106\x78\151\x4f\x53\x5b\134\x2f\40\134\50\x5d\50\133\x5e\40\73\x5c\x29\x5d\53\51\57\151", $this->agent, $Nmdim)) { goto Dn_Yt; } goto ZLojQ; XNAxP: return true; goto z1XLb; WBtTA: return true; goto FMjUO; EE_Np: goto atg79; goto rDY31; D9IT1: R_UG2: goto XNAxP; r1KZe: $this->setMobile(true); goto QQfTO; rVBMq: return true; goto p3Bz5; IKdOf: vpP0L: goto zCFbB; f6voA: RGplh: goto Fl0Qn; B00lE: $this->setTablet(true); goto RF430; lV0_u: if (stripos($this->agent, "\x73\x61\x66\x61\162\x69") === false) { goto Su7L9; } goto pFglV; mZP1K: Su7L9: goto MeNNN; C1Yvq: goto lAg3n; goto eachP; zCFbB: return true; goto Hw0dB; Kg0ME: MqY7Q: goto pp4H4; wr70W: if (!(stripos($this->agent, "\x41\156\x64\x72\157\x69\x64") !== false || stripos($this->agent, "\x69\x50\x68\x6f\156\x65") !== false)) { goto vpP0L; } goto sHkRZ; THvlT: goto aqHMX; goto f6voA; Hw0dB: atg79: goto tuI75; Ttuxn: ORZnj: goto r1KZe; tuI75: return false; goto usaRH; p3Bz5: aqHMX: goto EE_Np; pbkf3: $this->setBrowser(self::BROWSER_FIREFOX); goto FslSC; sHkRZ: if (stripos($this->agent, "\x4d\157\x62\151\154\145") !== false || stripos($this->agent, "\124\141\142\154\145\164") !== false) { goto jGvmG; } goto GXyDK; rDY31: Dn_Yt: goto Qu5_G; QQfTO: klLz1: goto D9IT1; FMjUO: goto aqHMX; goto Kg0ME; z1XLb: goto aqHMX; goto ENQqQ; eachP: jGvmG: goto jTjSZ; Ga45_: $this->setBrowser(self::BROWSER_FIREFOX); goto wr70W; FslSC: if (!(stripos($this->agent, "\101\x6e\x64\x72\x6f\151\x64") !== false || stripos($this->agent, "\151\x50\150\x6f\x6e\x65") !== false)) { goto R_UG2; } goto ZATQG; MeNNN: if (preg_match("\57\106\x69\x72\x65\146\x6f\170\133\x5c\57\x20\x5c\50\x5d\x28\x5b\x5e\40\73\x5c\x29\135\x2b\51\57\151", $this->agent, $Nmdim)) { goto RGplh; } goto OX6oN; usaRH: } protected function checkBrowserIceweasel() { goto rbsaj; b9U8F: di4k8: goto XYn63; rbsaj: if (!(stripos($this->agent, "\x49\143\x65\x77\x65\141\163\x65\154") !== false)) { goto kkuSP; } goto FyACh; oCa0s: return true; goto b9U8F; kfgku: $this->setBrowser(self::BROWSER_ICEWEASEL); goto oCa0s; XYn63: kkuSP: goto LQBCY; FUuVC: $qCKaG = explode("\40", $FQpX2[1]); goto JSOuA; FyACh: $FQpX2 = explode("\x2f", stristr($this->agent, "\111\x63\x65\167\145\x61\163\x65\x6c")); goto oOCe1; LQBCY: return false; goto ye0sl; oOCe1: if (!isset($FQpX2[1])) { goto di4k8; } goto FUuVC; JSOuA: $this->setVersion($qCKaG[0]); goto kfgku; ye0sl: } protected function checkBrowserMozilla() { goto Wif9L; Epd03: $qCKaG = explode("\x20", stristr($this->agent, "\162\x76\72")); goto Gf6b2; lrqp3: Phpdp: goto NTlYr; LjwKH: M76vX: goto YZiMs; aBAiv: goto mzFXy; goto lrqp3; EWWtV: $this->setBrowser(self::BROWSER_MOZILLA); goto nGnKM; VvEqp: if (stripos($this->agent, "\x6d\157\172\151\x6c\x6c\x61") !== false && preg_match("\57\162\166\x3a\133\x30\x2d\x39\135\x5c\56\133\60\55\71\x5d\x2f\x69", $this->agent) && stripos($this->agent, "\156\145\x74\163\143\x61\160\x65") === false) { goto M76vX; } goto neqUv; TPZR2: return false; goto HjCbP; NTlYr: $this->setVersion($Nmdim[1]); goto g_0Uf; W3lhR: return true; goto aBAiv; Wif9L: if (stripos($this->agent, "\x6d\157\x7a\151\154\154\141") !== false && preg_match("\57\162\x76\72\133\60\x2d\x39\x5d\x2e\133\60\x2d\71\135\133\x61\55\142\x5d\x3f\57\x69", $this->agent) && stripos($this->agent, "\156\145\164\163\x63\x61\x70\x65") === false) { goto yEi_R; } goto VvEqp; e9Zti: return true; goto dMVk6; dMVk6: mzFXy: goto TPZR2; nGnKM: return true; goto YM27p; g_0Uf: $this->setBrowser(self::BROWSER_MOZILLA); goto e9Zti; HSgdR: $this->setVersion(str_replace("\162\166\x3a", '', $qCKaG[0])); goto Nhspw; Gf6b2: preg_match("\57\x72\x76\72\133\60\55\71\135\56\x5b\x30\55\x39\x5d\x5b\x61\x2d\142\x5d\77\57\151", $this->agent, $qCKaG); goto S6YxF; S6YxF: $this->setVersion(str_replace("\162\x76\72", '', $qCKaG[0])); goto EWWtV; Nhspw: $this->setBrowser(self::BROWSER_MOZILLA); goto W3lhR; I1JN_: goto mzFXy; goto cfbqy; neqUv: if (stripos($this->agent, "\155\x6f\172\x69\x6c\154\x61") !== false && preg_match("\x2f\x6d\157\172\x69\154\154\x61\134\57\50\x5b\136\40\135\x2a\51\57\x69", $this->agent, $Nmdim) && stripos($this->agent, "\x6e\x65\164\x73\143\x61\x70\145") === false) { goto Phpdp; } goto I1JN_; YZiMs: $qCKaG = explode('', stristr($this->agent, "\162\166\x3a")); goto HSgdR; YM27p: goto mzFXy; goto LjwKH; cfbqy: yEi_R: goto Epd03; HjCbP: } protected function checkBrowserLynx() { goto RQel0; RQel0: if (!(stripos($this->agent, "\154\171\156\170") !== false)) { goto vXcvr; } goto H4eDc; pLDZT: vXcvr: goto grwGh; wreGv: $this->setBrowser(self::BROWSER_LYNX); goto Fke7E; grwGh: return false; goto Iggv5; Xxho9: $this->setVersion($qCKaG[0]); goto wreGv; hM_CT: $qCKaG = explode("\x20", isset($FQpX2[1]) ? $FQpX2[1] : ''); goto Xxho9; Fke7E: return true; goto pLDZT; H4eDc: $FQpX2 = explode("\57", stristr($this->agent, "\114\171\156\x78")); goto hM_CT; Iggv5: } protected function checkBrowserAmaya() { goto fVziD; fBWCs: SMo1j: goto ptP71; SgKfQ: $qCKaG = explode("\40", $FQpX2[1]); goto j4Mq8; c2Hcg: $this->setBrowser(self::BROWSER_AMAYA); goto SlD4T; irqK2: $FQpX2 = explode("\57", stristr($this->agent, "\101\155\141\x79\x61")); goto CadtU; CadtU: if (!isset($FQpX2[1])) { goto lmWsQ; } goto SgKfQ; ptP71: return false; goto gvbdA; j4Mq8: $this->setVersion($qCKaG[0]); goto c2Hcg; fVziD: if (!(stripos($this->agent, "\x61\155\x61\171\x61") !== false)) { goto SMo1j; } goto irqK2; SlD4T: return true; goto qcVv1; qcVv1: lmWsQ: goto fBWCs; gvbdA: } protected function checkBrowserSafari() { goto ES1jX; WZb0f: return false; goto UD1PY; UvHgv: KkNdT: goto KFLcS; vES2D: vorwV: goto ILX4T; ILX4T: $qCKaG = explode("\40", $FQpX2[1]); goto gNueX; vF06a: $this->setVersion(self::VERSION_UNKNOWN); goto QYIBy; i0Ymx: Xxws6: goto WZb0f; KFLcS: $this->setBrowser(self::BROWSER_SAFARI); goto mYe2m; xLrkB: if (isset($FQpX2[1])) { goto vorwV; } goto vF06a; ES1jX: if (!(stripos($this->agent, "\x53\x61\146\x61\x72\x69") !== false && stripos($this->agent, "\151\x50\150\x6f\156\x65") === false && stripos($this->agent, "\x69\120\x6f\144") === false)) { goto Xxws6; } goto bHbfw; QYIBy: goto KkNdT; goto vES2D; gNueX: $this->setVersion($qCKaG[0]); goto UvHgv; mYe2m: return true; goto i0Ymx; bHbfw: $FQpX2 = explode("\57", stristr($this->agent, "\126\x65\x72\163\x69\157\156")); goto xLrkB; UD1PY: } protected function checkBrowserSamsung() { goto Ixq1P; FeEvF: $this->setVersion($qCKaG[0]); goto COXxN; zqKhE: return true; goto jY17J; gppoC: if (isset($FQpX2[1])) { goto R4KNm; } goto Dc6en; Ixq1P: if (!(stripos($this->agent, "\x53\141\155\163\x75\x6e\x67\102\162\x6f\167\x73\x65\x72") !== false)) { goto d3z_B; } goto k5_N2; YHFQ8: R4KNm: goto yRCA5; Dc6en: $this->setVersion(self::VERSION_UNKNOWN); goto dkbr5; Eg3TR: $this->setBrowser(self::BROWSER_SAMSUNG); goto zqKhE; DpPJQ: return false; goto Ity7c; dkbr5: goto Y2gSa; goto YHFQ8; COXxN: Y2gSa: goto Eg3TR; k5_N2: $FQpX2 = explode("\57", stristr($this->agent, "\x53\141\155\163\165\156\x67\102\x72\157\167\163\145\162")); goto gppoC; jY17J: d3z_B: goto DpPJQ; yRCA5: $qCKaG = explode("\40", $FQpX2[1]); goto FeEvF; Ity7c: } protected function checkBrowserSilk() { goto BfZsL; BfZsL: if (!(stripos($this->agent, "\123\151\154\x6b") !== false)) { goto hhTr9; } goto Y8vEG; Y8vEG: $FQpX2 = explode("\57", stristr($this->agent, "\123\x69\154\x6b")); goto vTwqO; d5bWK: $this->setVersion($qCKaG[0]); goto xD36M; WbQg3: OVy5i: goto G4Xvr; vTwqO: if (isset($FQpX2[1])) { goto OVy5i; } goto T708g; YOINu: return true; goto Kct2k; xD36M: SBQKc: goto o8jC6; T708g: $this->setVersion(self::VERSION_UNKNOWN); goto W7LlM; W7LlM: goto SBQKc; goto WbQg3; S9etP: return false; goto omyr6; Kct2k: hhTr9: goto S9etP; o8jC6: $this->setBrowser(self::BROWSER_SILK); goto YOINu; G4Xvr: $qCKaG = explode("\x20", $FQpX2[1]); goto d5bWK; omyr6: } protected function checkBrowserIframely() { goto yIXCn; Scx30: $FQpX2 = explode("\x2f", stristr($this->agent, "\111\x66\162\141\155\145\154\171")); goto GKVDU; kE4Gj: return true; goto VJhvz; HcC4O: Ve0i4: goto mSTZa; yIXCn: if (!(stripos($this->agent, "\x49\x66\162\141\x6d\x65\x6c\x79") !== false)) { goto UWqAp; } goto Scx30; BbFoE: hkN0w: goto A3q0E; brpsY: return false; goto XK_3b; pg6QB: $this->setVersion($qCKaG[0]); goto BbFoE; RBCSi: $this->setVersion(self::VERSION_UNKNOWN); goto TyI4h; TyI4h: goto hkN0w; goto HcC4O; A3q0E: $this->setBrowser(self::BROWSER_I_FRAME); goto kE4Gj; mSTZa: $qCKaG = explode("\x20", $FQpX2[1]); goto pg6QB; VJhvz: UWqAp: goto brpsY; GKVDU: if (isset($FQpX2[1])) { goto Ve0i4; } goto RBCSi; XK_3b: } protected function checkBrowserCocoa() { goto YeQv2; m54Gk: $this->setVersion(self::VERSION_UNKNOWN); goto iHCe6; VQOZb: if (isset($FQpX2[1])) { goto aMq72; } goto m54Gk; X8LE8: lU4J1: goto UXYIt; ZAHVG: $this->setVersion($qCKaG[0]); goto jwaXU; UXYIt: return false; goto EihJn; jwaXU: Rb7lN: goto KWB6O; qNsZ5: aMq72: goto ZpvNX; KWB6O: $this->setBrowser(self::BROWSER_COCOA); goto jO6Dh; ZpvNX: $qCKaG = explode("\x20", $FQpX2[1]); goto ZAHVG; pRBHS: $FQpX2 = explode("\x2f", stristr($this->agent, "\103\x6f\x63\157\x61\122\145\x73\x74\103\154\x69\x65\156\164")); goto VQOZb; YeQv2: if (!(stripos($this->agent, "\x43\157\143\x6f\141\x52\x65\x73\x74\103\x6c\x69\145\x6e\x74") !== false)) { goto lU4J1; } goto pRBHS; jO6Dh: return true; goto X8LE8; iHCe6: goto Rb7lN; goto qNsZ5; EihJn: } protected function checkFacebookExternalHit() { goto tnDbq; tnDbq: if (!stristr($this->agent, "\106\141\143\145\x62\x6f\x6f\x6b\x45\x78\x74\145\162\x6e\141\154\x48\x69\x74")) { goto xuiKJ; } goto B11xi; FW2CU: $this->setFacebook(true); goto AnK1n; Qs93H: xuiKJ: goto Lvm8S; Lvm8S: return false; goto Yjldz; B11xi: $this->setRobot(true); goto FW2CU; AnK1n: return true; goto Qs93H; Yjldz: } protected function checkForFacebookIos() { goto FJu8W; JSV6K: $this->setFacebook(true); goto Va9Re; ZEsOX: return false; goto cPJae; Va9Re: return true; goto Cw32b; FJu8W: if (!stristr($this->agent, "\106\x42\111\x4f\x53")) { goto FDh_d; } goto JSV6K; Cw32b: FDh_d: goto ZEsOX; cPJae: } protected function getSafariVersionOnIos() { goto pom3c; zGNfH: return true; goto JrC6S; e5XCu: return false; goto a1KwC; pom3c: $FQpX2 = explode("\x2f", stristr($this->agent, "\x56\145\162\x73\151\x6f\x6e")); goto dXROP; REAcj: $this->setVersion($qCKaG[0]); goto zGNfH; JrC6S: Fmc7R: goto e5XCu; anWwY: $qCKaG = explode("\40", $FQpX2[1]); goto REAcj; dXROP: if (!isset($FQpX2[1])) { goto Fmc7R; } goto anWwY; a1KwC: } protected function getChromeVersionOnIos() { goto CesQ1; n8hDJ: $this->setVersion($qCKaG[0]); goto AzuuS; CPns9: IAeXo: goto cjI67; WP1Bu: return true; goto CPns9; CesQ1: $FQpX2 = explode("\x2f", stristr($this->agent, "\103\x72\x69\x4f\123")); goto dfVOE; dfVOE: if (!isset($FQpX2[1])) { goto IAeXo; } goto tXDoX; cjI67: return false; goto RydcL; AzuuS: $this->setBrowser(self::BROWSER_CHROME); goto WP1Bu; tXDoX: $qCKaG = explode("\40", $FQpX2[1]); goto n8hDJ; RydcL: } protected function checkBrowseriPhone() { goto C91Qg; H61MR: $this->setBrowser(self::BROWSER_IPHONE); goto RC41O; b8zBA: $this->setMobile(true); goto mb12D; RC41O: $this->getSafariVersionOnIos(); goto YzGdd; q2RGZ: $this->checkForFacebookIos(); goto b8zBA; C91Qg: if (!(stripos($this->agent, "\x69\x50\x68\x6f\x6e\x65") !== false)) { goto An6ho; } goto ap_Jq; OKhcD: return false; goto sPJHn; mb12D: return true; goto Bg4DU; ap_Jq: $this->setVersion(self::VERSION_UNKNOWN); goto H61MR; YzGdd: $this->getChromeVersionOnIos(); goto q2RGZ; Bg4DU: An6ho: goto OKhcD; sPJHn: } protected function checkBrowseriPad() { goto FDy5d; ZM5BW: $this->getSafariVersionOnIos(); goto w0OwB; lPzgZ: $this->setBrowser(self::BROWSER_IPAD); goto ZM5BW; lEopv: $this->setTablet(true); goto r2a2E; r2a2E: return true; goto V5hUf; R1Pco: $this->setVersion(self::VERSION_UNKNOWN); goto lPzgZ; FDy5d: if (!(stripos($this->agent, "\x69\120\141\144") !== false)) { goto lweR_; } goto R1Pco; JZ0uE: $this->checkForFacebookIos(); goto lEopv; w0OwB: $this->getChromeVersionOnIos(); goto JZ0uE; V5hUf: lweR_: goto rkIDZ; rkIDZ: return false; goto U0JZD; U0JZD: } protected function checkBrowseriPod() { goto WpZ0u; A_cO_: $this->setMobile(true); goto rfRbp; mx4eK: SZyVf: goto eKLCx; RupVv: $this->setVersion(self::VERSION_UNKNOWN); goto w14Ku; eKLCx: return false; goto FB7hF; WpZ0u: if (!(stripos($this->agent, "\151\x50\157\x64") !== false)) { goto SZyVf; } goto RupVv; w14Ku: $this->setBrowser(self::BROWSER_IPOD); goto dSUTZ; KKr2s: $this->getChromeVersionOnIos(); goto ovH01; dSUTZ: $this->getSafariVersionOnIos(); goto KKr2s; rfRbp: return true; goto mx4eK; ovH01: $this->checkForFacebookIos(); goto A_cO_; FB7hF: } protected function checkBrowserAndroid() { goto J5VMa; n345c: if (stripos($this->agent, "\x4d\157\x62\x69\154\145") !== false) { goto BJyOL; } goto xikIJ; QoTJi: $this->setVersion($qCKaG[0]); goto Jt3sg; DjFOB: goto wsbIJ; goto mAv9h; ISqzQ: $this->setMobile(true); goto qzp9B; U3CCH: $this->setBrowser(self::BROWSER_ANDROID); goto eMu8S; qzp9B: wsbIJ: goto U3CCH; eMu8S: return true; goto rtLgz; PqYbk: if (isset($FQpX2[1])) { goto z1whE; } goto T0gJx; KTuCJ: goto V77cq; goto HwItG; rtLgz: ChW7v: goto hE2w_; J5VMa: if (!(stripos($this->agent, "\x41\156\x64\162\x6f\x69\144") !== false)) { goto ChW7v; } goto GgBxe; Jt3sg: V77cq: goto n345c; mAv9h: BJyOL: goto ISqzQ; HwItG: z1whE: goto Jmslj; GgBxe: $FQpX2 = explode("\40", stristr($this->agent, "\101\156\x64\162\x6f\151\144")); goto PqYbk; Jmslj: $qCKaG = explode("\x20", $FQpX2[1]); goto QoTJi; xikIJ: $this->setTablet(true); goto DjFOB; T0gJx: $this->setVersion(self::VERSION_UNKNOWN); goto KTuCJ; hE2w_: return false; goto JSsL0; JSsL0: } protected function checkBrowserVivaldi() { goto axTt0; MzT83: return true; goto l6sYA; axTt0: if (!(stripos($this->agent, "\126\151\166\x61\154\x64\x69") !== false)) { goto ZLWTl; } goto si6pD; l_jtS: $this->setBrowser(self::BROWSER_VIVALDI); goto MzT83; mHaRA: $qCKaG = explode("\x20", $FQpX2[1]); goto MpNWp; Ny2ds: if (!isset($FQpX2[1])) { goto tyEha; } goto mHaRA; DSo0b: ZLWTl: goto S0KT9; S0KT9: return false; goto dz_G1; l6sYA: tyEha: goto DSo0b; MpNWp: $this->setVersion($qCKaG[0]); goto l_jtS; si6pD: $FQpX2 = explode("\x2f", stristr($this->agent, "\126\151\x76\x61\154\144\x69")); goto Ny2ds; dz_G1: } protected function checkBrowserYandex() { goto wiDK1; IrWDm: kJaRk: goto I32iv; fYjEQ: $this->setMobile(true); goto AMHL6; Zf_oL: $FQpX2 = explode("\x2f", stristr($this->agent, "\131\141\102\162\x6f\167\163\145\162")); goto wo6dQ; mQEC3: if (stripos($this->agent, "\115\x6f\x62\x69\x6c\x65") !== false) { goto SFN1E; } goto ZfN7Q; bu8LF: $this->setTablet(true); goto gjBrM; X4BFL: return false; goto t9sEX; OiJL1: $this->setBrowser(self::BROWSER_YANDEX); goto GxPw4; I32iv: return true; goto sPP3A; DbLZu: $qCKaG = explode("\x20", $FQpX2[1]); goto PVbXK; SbFjS: Drzcq: goto fyYa9; wiDK1: if (!(stripos($this->agent, "\x59\141\x42\162\157\167\x73\145\x72") !== false)) { goto yzpik; } goto Zf_oL; CkXpj: SFN1E: goto fYjEQ; wo6dQ: if (!isset($FQpX2[1])) { goto e8vme; } goto DbLZu; xIoZ4: rqdUN: goto bu8LF; GxPw4: if (stripos($this->agent, "\151\x50\141\x64") !== false) { goto rqdUN; } goto mQEC3; gjBrM: goto kJaRk; goto CkXpj; fyYa9: $this->setTablet(true); goto IrWDm; sPP3A: e8vme: goto H9gNj; ZfN7Q: if (stripos($this->agent, "\x41\x6e\x64\162\157\x69\144") !== false) { goto Drzcq; } goto L7kE0; PVbXK: $this->setVersion($qCKaG[0]); goto OiJL1; L7kE0: goto kJaRk; goto xIoZ4; AMHL6: goto kJaRk; goto SbFjS; H9gNj: yzpik: goto X4BFL; t9sEX: } protected function checkBrowserPlayStation() { goto LYTzU; UE9WM: $this->setMobile(true); goto UQdPz; EbxaG: $FQpX2 = explode("\x20", stristr($this->agent, "\x50\x6c\x61\171\x53\164\x61\x74\151\157\156\40")); goto jZHUp; YBBZe: if (!(stripos($this->agent, "\x50\x6f\162\x74\x61\x62\154\145\51") !== false || stripos($this->agent, "\x56\151\x74\x61") !== false)) { goto fsRNd; } goto UE9WM; LYTzU: if (!(stripos($this->agent, "\120\x6c\x61\x79\x53\x74\x61\164\x69\157\x6e\x20") !== false)) { goto Rpbqq; } goto EbxaG; OsZ73: $this->setVersion($qCKaG[0]); goto YBBZe; jZHUp: $this->setBrowser(self::BROWSER_PLAYSTATION); goto A2jmu; pwnjD: return true; goto Bbh1c; Bbh1c: S4vCQ: goto x8Gzx; PRMp3: return false; goto N3Lo2; A2jmu: if (!isset($FQpX2[0])) { goto S4vCQ; } goto W1D0e; W1D0e: $qCKaG = explode("\51", $FQpX2[2]); goto OsZ73; UQdPz: fsRNd: goto pwnjD; x8Gzx: Rpbqq: goto PRMp3; N3Lo2: } protected function checkBrowserWget() { goto kbk8Y; B7lZf: return true; goto lwQXZ; NG6eg: $this->setVersion($FQpX2[1]); goto sTT_G; sTT_G: $this->setBrowser(self::BROWSER_WGET); goto B7lZf; LT3kC: return false; goto H_tV2; kbk8Y: if (!preg_match("\x21\136\x57\x67\145\164\x2f\50\x5b\136\x20\x5d\53\x29\41\151", $this->agent, $FQpX2)) { goto KS7IJ; } goto NG6eg; lwQXZ: KS7IJ: goto LT3kC; H_tV2: } protected function checkBrowserCurl() { goto VxFAe; MDKsg: $FQpX2 = explode("\x2f", stristr($this->agent, "\143\x75\x72\154")); goto lSxUZ; VxFAe: if (!(strpos($this->agent, "\x63\165\x72\x6c") === 0)) { goto S74cY; } goto MDKsg; FG4E8: S74cY: goto E2N6Q; E2N6Q: return false; goto rJyuz; PxIDi: $this->setVersion($qCKaG[0]); goto IBAla; w6j1W: return true; goto YEMOf; vbFBw: $qCKaG = explode("\40", $FQpX2[1]); goto PxIDi; IBAla: $this->setBrowser(self::BROWSER_CURL); goto w6j1W; lSxUZ: if (!isset($FQpX2[1])) { goto aXq02; } goto vbFBw; YEMOf: aXq02: goto FG4E8; rJyuz: } protected function checkPlatform() { goto jOOME; bUjoo: $this->platform = self::PLATFORM_NOKIA; goto CM7NJ; ED5es: if (stripos($this->agent, "\x53\x69\x6c\x6b") !== false) { goto Bu2cP; } goto gIU1z; gIU1z: if (stripos($this->agent, "\154\x69\156\x75\170") !== false && stripos($this->agent, "\123\115\101\122\x54\x2d\x54\126") !== false) { goto DhbGI; } goto bWSls; WvOHW: $this->platform = self::PLATFORM_IPAD; goto bWNDY; VurwC: goto Lw02R; goto PKwpN; clqXb: auZrT: goto E2Y1B; m00VN: goto Lw02R; goto m1T2Y; PKwpN: s46eN: goto hs7CK; k7fnJ: $this->platform = self::PLATFORM_OPENBSD; goto Gq1W3; iiUMl: ZJ5sr: goto QA3jq; A28wO: faOyN: goto XJvzC; HQ7V9: goto Lw02R; goto v7Qv7; yZs4k: if (stripos($this->agent, "\103\162\117\123") !== false) { goto yWSUx; } goto eDPw4; SP9hg: if (stripos($this->agent, "\x52\157\x6b\x75") !== false) { goto TfiYy; } goto RJhFt; TLtOo: $this->platform = self::PLATFORM_OPENSOLARIS; goto VurwC; SEPib: $this->platform = self::PLATFORM_I_FRAME; goto lRMVd; dOaVZ: X6uh4: goto k7fnJ; TegdX: goto Lw02R; goto FJaOv; rCkR0: $this->platform = self::PLATFORM_FIRE_OS; goto APseN; LVi0J: if (stripos($this->agent, "\167\x69\156") !== false) { goto oIGuq; } goto i3fbW; XAg4E: goto Lw02R; goto utGxO; Gq1W3: goto Lw02R; goto iiUMl; Iuz2V: if (stripos($this->agent, "\116\145\164\102\123\104") !== false) { goto ZJ5sr; } goto zNHIm; QosNa: if (stripos($this->agent, "\x63\x75\x72\x6c") !== false) { goto faOyN; } goto yZs4k; EAUxD: D9Hft: goto aefmL; lRMVd: Lw02R: goto svTA_; U4b72: if (stripos($this->agent, "\123\x75\x6e\117\x53") !== false) { goto s46eN; } goto vyYj4; QA3jq: $this->platform = self::PLATFORM_NETBSD; goto eZdtv; G1mfE: if (stripos($this->agent, "\141\156\144\162\157\151\x64") !== false) { goto jjEv9; } goto ED5es; hbMiK: goto Lw02R; goto p1xd0; eeXSP: $this->platform = self::PLATFORM_OS2; goto vDTdZ; AH6Wy: if (stripos($this->agent, "\117\x70\x65\x6e\x42\x53\x44") !== false) { goto X6uh4; } goto Iuz2V; aefmL: $this->platform = self::PLATFORM_APPLE_TV; goto oyFMM; qoltm: if (stripos($this->agent, "\155\141\143") !== false) { goto Sa_kT; } goto G1mfE; ZvRfM: jjEv9: goto HbIZN; HGKXt: $this->platform = self::PLATFORM_POSTMAN; goto Y2QnK; m8bh4: Bu2cP: goto rCkR0; Dc5Vy: if (stripos($this->agent, "\x69\x50\x61\x64") !== false) { goto Qu5TX; } goto DzvOf; OjDmo: $this->platform = self::PLATFORM_BLACKBERRY; goto HQ7V9; utGxO: ogUbX: goto HGKXt; O1yZJ: goto Lw02R; goto rdG8U; RCkqw: $this->platform = self::PLATFORM_ROKU; goto m00VN; RRNPd: if (stripos($this->agent, "\102\x65\x4f\123") !== false) { goto BVTM3; } goto LVi0J; bWNDY: goto Lw02R; goto grJ7z; eDPw4: if (stripos($this->agent, "\157\x6b\x68\x74\x74\x70") !== false) { goto SPllX; } goto qH_Xn; i3fbW: if (stripos($this->agent, "\x50\154\141\x79\x73\x74\141\x74\151\157\x6e") !== false) { goto auZrT; } goto SP9hg; rdG8U: a3Z7I: goto hIabp; oiIKF: Sa_kT: goto TzFQD; F7miF: nOm5H: goto SEPib; DTYNl: goto Lw02R; goto wf3z3; FJaOv: Lcdxi: goto GZdSK; AquNk: if (stripos($this->agent, "\164\x76\x4f\x53") !== false) { goto D9Hft; } goto QosNa; TzFQD: $this->platform = self::PLATFORM_APPLE; goto ZBDyh; HbIZN: $this->platform = self::PLATFORM_ANDROID; goto R0jHo; ziVW6: goto Lw02R; goto TOdsY; y_gaK: $this->platform = self::PLATFORM_IPOD; goto TegdX; HbveG: TfiYy: goto RCkqw; CM7NJ: goto Lw02R; goto QdBPN; Y2QnK: goto Lw02R; goto F7miF; Cz5cF: if (stripos($this->agent, "\x42\154\x61\143\153\102\x65\162\162\x79") !== false) { goto LTiwl; } goto qPQrS; QdBPN: LTiwl: goto OjDmo; Zjtfv: goto Lw02R; goto MEHls; vDTdZ: goto Lw02R; goto jIZW4; xy5tD: goto Lw02R; goto HbveG; aOQ2T: $this->platform = self::PLATFORM_FREEBSD; goto Kx7Tj; h37ri: goto Lw02R; goto clqXb; QMQaz: $this->platform = self::PLATFORM_CHROME_OS; goto DTYNl; tmn3z: CXfj3: goto TLtOo; Il4IV: DhbGI: goto Ctgw_; jIZW4: BVTM3: goto NyLi_; jOOME: if (stripos($this->agent, "\167\x69\156\144\x6f\167\x73") !== false) { goto a3Z7I; } goto Dc5Vy; NyLi_: $this->platform = self::PLATFORM_BEOS; goto hbMiK; vyYj4: if (stripos($this->agent, "\x4f\x53\134\57\62") !== false) { goto Nq8rl; } goto RRNPd; GZdSK: $this->platform = self::PLATFORM_IPHONE; goto RXOii; ZBDyh: goto Lw02R; goto ZvRfM; hIabp: $this->platform = self::PLATFORM_WINDOWS; goto ziVW6; p1xd0: oIGuq: goto kPOLK; APseN: goto Lw02R; goto Il4IV; A_d1r: $this->platform = self::PLATFORM_IPHONE . "\x2f" . self::PLATFORM_IPAD; goto Z7CiO; v7Qv7: BeS1u: goto aOQ2T; ogeFn: $this->platform = self::PLATFORM_JAVA_ANDROID; goto XAg4E; qH_Xn: if (stripos($this->agent, "\120\157\163\164\155\141\156\x52\165\x6e\164\x69\155\x65") !== false) { goto ogUbX; } goto sJ5hB; bWSls: if (stripos($this->agent, "\x6c\x69\156\x75\170") !== false) { goto aoPXR; } goto imfUQ; TOdsY: Qu5TX: goto WvOHW; DzvOf: if (stripos($this->agent, "\151\120\157\x64") !== false) { goto Yf0pR; } goto GFZON; RJhFt: if (stripos($this->agent, "\151\x4f\123") !== false) { goto VmwK8; } goto AquNk; fL6XN: KyM90: goto bUjoo; zNHIm: if (stripos($this->agent, "\117\160\145\156\x53\157\x6c\x61\162\151\163") !== false) { goto CXfj3; } goto U4b72; hs7CK: $this->platform = self::PLATFORM_SUNOS; goto sYVir; imfUQ: if (stripos($this->agent, "\x4e\157\153\x69\141") !== false) { goto KyM90; } goto Cz5cF; R0jHo: goto Lw02R; goto m8bh4; hC_UD: goto Lw02R; goto fL6XN; sYVir: goto Lw02R; goto lrusF; eZdtv: goto Lw02R; goto tmn3z; sJ5hB: if (stripos($this->agent, "\x49\146\162\141\x6d\x65\154\171") !== false) { goto nOm5H; } goto O1yZJ; M5K2y: yWSUx: goto QMQaz; Z7CiO: goto Lw02R; goto EAUxD; lrusF: Nq8rl: goto eeXSP; grJ7z: Yf0pR: goto y_gaK; m1T2Y: VmwK8: goto A_d1r; Kx7Tj: goto Lw02R; goto dOaVZ; RXOii: goto Lw02R; goto oiIKF; wf3z3: SPllX: goto ogeFn; XJvzC: $this->platform = self::PLATFORM_TERMINAL; goto asJlr; HTJ1q: $this->platform = self::PLATFORM_LINUX; goto hC_UD; kPOLK: $this->platform = self::PLATFORM_WINDOWS; goto h37ri; asJlr: goto Lw02R; goto M5K2y; E2Y1B: $this->platform = self::PLATFORM_PLAYSTATION; goto xy5tD; Ctgw_: $this->platform = self::PLATFORM_LINUX . "\x2f" . self::PLATFORM_SMART_TV; goto Zjtfv; oyFMM: goto Lw02R; goto A28wO; MEHls: aoPXR: goto HTJ1q; qPQrS: if (stripos($this->agent, "\106\162\145\145\x42\x53\104") !== false) { goto BeS1u; } goto AH6Wy; GFZON: if (stripos($this->agent, "\x69\120\150\157\x6e\x65") !== false) { goto Lcdxi; } goto qoltm; svTA_: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Detector;
+
+
+class Browser extends Common
+{
+    
+    protected ?string $os = '';
+    
+    protected ?string $name = '';
+    
+    protected ?string $agent = '';
+    
+    protected bool $isAol = false;
+    
+    protected bool $isRobot = false;
+    
+    protected ?string $version = '';
+    
+    protected bool $isMobile = false;
+    
+    protected bool $isTablet = false;
+    
+    protected ?string $platform = '';
+    
+    protected bool $isFacebook = false;
+    
+    protected ?string $aolVersion = '';
+    const BROWSER_UNKNOWN = "\x75\x6e\x6b\156\x6f\x77\156";
+    const VERSION_UNKNOWN = "\x75\156\153\x6e\157\x77\x6e";
+    const BROWSER_OPERA = "\117\x70\145\x72\141";
+    
+    const BROWSER_OPERA_MINI = "\x4f\160\145\162\141\x20\115\x69\x6e\151";
+    
+    const BROWSER_WEBTV = "\x57\x65\x62\x54\x56";
+    
+    const BROWSER_EDGE = "\105\144\147\145";
+    
+    const BROWSER_IE = "\x49\x6e\164\145\x72\156\x65\164\x20\105\170\160\x6c\x6f\162\x65\x72";
+    
+    const BROWSER_POCKET_IE = "\120\157\143\x6b\x65\164\40\x49\156\164\145\162\x6e\x65\164\40\105\170\160\x6c\157\162\x65\162";
+    
+    const BROWSER_KONQUEROR = "\113\157\156\x71\x75\145\162\157\162";
+    
+    const BROWSER_ICAB = "\x69\x43\x61\142";
+    
+    const BROWSER_OMNIWEB = "\117\x6d\x6e\x69\x57\145\x62";
+    
+    const BROWSER_FIREBIRD = "\x46\151\x72\x65\142\x69\162\x64";
+    
+    const BROWSER_FIREFOX = "\106\x69\162\x65\x66\x6f\170";
+    
+    const BROWSER_BRAVE = "\x42\x72\x61\x76\x65";
+    
+    const BROWSER_PALEMOON = "\120\141\x6c\x65\x6d\x6f\157\x6e";
+    
+    const BROWSER_ICEWEASEL = "\111\143\145\x77\x65\141\163\145\x6c";
+    
+    const BROWSER_SHIRETOKO = "\123\x68\151\x72\x65\x74\157\153\157";
+    
+    const BROWSER_MOZILLA = "\115\157\x7a\x69\154\154\x61";
+    
+    const BROWSER_AMAYA = "\x41\155\141\171\141";
+    
+    const BROWSER_LYNX = "\x4c\171\x6e\x78";
+    
+    const BROWSER_SAFARI = "\123\x61\146\141\162\x69";
+    
+    const BROWSER_IPHONE = "\151\x50\x68\157\156\145";
+    
+    const BROWSER_IPOD = "\x69\x50\x6f\144";
+    
+    const BROWSER_IPAD = "\151\x50\141\144";
+    
+    const BROWSER_CHROME = "\x43\x68\162\x6f\x6d\x65";
+    
+    const BROWSER_ANDROID = "\x41\x6e\144\162\157\x69\144";
+    
+    const BROWSER_GOOGLEBOT = "\x47\157\x6f\147\154\145\x42\x6f\164";
+    
+    const BROWSER_CURL = "\143\125\122\114";
+    
+    const BROWSER_WGET = "\x57\147\145\164";
+    
+    const BROWSER_UCBROWSER = "\x55\x43\x42\162\157\167\x73\145\x72";
+    
+    const BROWSER_YANDEXBOT = "\131\141\156\144\145\x78\102\x6f\164";
+    
+    const BROWSER_YANDEXIMAGERESIZER_BOT = "\131\141\156\x64\145\x78\x49\x6d\x61\147\x65\122\145\x73\151\x7a\145\162";
+    
+    const BROWSER_YANDEXIMAGES_BOT = "\131\x61\x6e\x64\145\x78\111\x6d\x61\x67\145\163";
+    
+    const BROWSER_YANDEXVIDEO_BOT = "\131\x61\156\x64\x65\x78\x56\x69\144\145\x6f";
+    
+    const BROWSER_YANDEXMEDIA_BOT = "\131\x61\x6e\x64\145\170\x4d\145\144\x69\141";
+    
+    const BROWSER_YANDEXBLOGS_BOT = "\x59\141\156\144\145\x78\x42\x6c\x6f\x67\x73";
+    
+    const BROWSER_YANDEXFAVICONS_BOT = "\131\x61\156\x64\145\x78\106\x61\x76\x69\x63\x6f\156\x73";
+    
+    const BROWSER_YANDEXWEBMASTER_BOT = "\131\x61\156\x64\x65\x78\127\145\x62\155\x61\x73\164\x65\x72";
+    
+    const BROWSER_YANDEXDIRECT_BOT = "\131\x61\156\x64\145\x78\104\151\162\145\143\x74";
+    
+    const BROWSER_YANDEXMETRIKA_BOT = "\131\141\156\144\145\x78\x4d\x65\x74\162\151\x6b\141";
+    
+    const BROWSER_YANDEXNEWS_BOT = "\x59\141\156\x64\145\x78\x4e\145\x77\163";
+    
+    const BROWSER_YANDEXCATALOG_BOT = "\x59\x61\x6e\144\145\x78\103\x61\164\141\x6c\157\147";
+    
+    const BROWSER_SLURP = "\x59\x61\150\157\157\x21\x20\123\x6c\x75\162\x70";
+    
+    const BROWSER_W3CVALIDATOR = "\x57\x33\x43\40\x56\x61\154\x69\x64\141\x74\157\162";
+    
+    const BROWSER_BLACKBERRY = "\102\154\141\x63\x6b\x42\x65\x72\x72\x79";
+    
+    const BROWSER_ICECAT = "\111\143\x65\x43\x61\164";
+    
+    const BROWSER_NOKIA_S60 = "\116\157\153\x69\141\x20\x53\x36\x30\40\x4f\123\123\x20\x42\162\x6f\x77\163\145\x72";
+    
+    const BROWSER_NOKIA = "\116\157\153\151\x61\40\102\162\x6f\167\163\145\x72";
+    
+    const BROWSER_MSN = "\115\123\116\x20\102\x72\157\x77\163\x65\x72";
+    
+    const BROWSER_MSNBOT = "\115\123\x4e\40\x42\x6f\x74";
+    
+    const BROWSER_BINGBOT = "\102\x69\156\147\40\x42\157\164";
+    
+    const BROWSER_VIVALDI = "\126\x69\166\x61\x6c\x64\151";
+    
+    const BROWSER_YANDEX = "\x59\x61\156\144\145\x78";
+    
+    const BROWSER_NETSCAPE_NAVIGATOR = "\x4e\145\164\x73\143\x61\160\145\x20\116\141\166\151\147\141\x74\x6f\x72";
+    
+    const BROWSER_GALEON = "\107\x61\x6c\145\x6f\156";
+    
+    const BROWSER_NETPOSITIVE = "\x4e\145\164\x50\x6f\x73\x69\x74\151\166\x65";
+    
+    const BROWSER_PHOENIX = "\120\150\157\145\x6e\151\170";
+    
+    const BROWSER_PLAYSTATION = "\120\154\x61\x79\x53\x74\x61\164\x69\157\x6e";
+    const BROWSER_SAMSUNG = "\x53\x61\155\x73\165\156\147\x42\162\157\x77\163\145\x72";
+    const BROWSER_SILK = "\x53\151\x6c\153";
+    const BROWSER_I_FRAME = "\x49\x66\162\141\155\x65\154\x79";
+    const BROWSER_COCOA = "\103\x6f\143\x6f\141\122\145\163\164\103\x6c\x69\x65\156\164";
+    const PLATFORM_UNKNOWN = "\165\156\153\156\157\167\x6e";
+    const PLATFORM_WINDOWS = "\127\x69\156\x64\x6f\167\163";
+    const PLATFORM_WINDOWS_CE = "\x57\151\x6e\144\157\x77\163\40\103\x45";
+    const PLATFORM_APPLE = "\101\160\160\154\x65";
+    const PLATFORM_LINUX = "\x4c\151\156\165\170";
+    const PLATFORM_OS2 = "\117\x53\x2f\62";
+    const PLATFORM_BEOS = "\102\145\117\123";
+    const PLATFORM_IPHONE = "\x69\x50\150\x6f\x6e\145";
+    const PLATFORM_IPOD = "\151\120\x6f\x64";
+    const PLATFORM_IPAD = "\x69\120\x61\144";
+    const PLATFORM_BLACKBERRY = "\102\154\141\x63\153\102\145\162\x72\171";
+    const PLATFORM_NOKIA = "\116\x6f\153\x69\x61";
+    const PLATFORM_FREEBSD = "\x46\x72\x65\145\102\x53\104";
+    const PLATFORM_OPENBSD = "\x4f\x70\145\x6e\x42\x53\104";
+    const PLATFORM_NETBSD = "\x4e\x65\x74\x42\123\104";
+    const PLATFORM_SUNOS = "\123\165\156\117\x53";
+    const PLATFORM_OPENSOLARIS = "\x4f\160\x65\156\123\x6f\x6c\141\162\x69\x73";
+    const PLATFORM_ANDROID = "\x41\156\x64\162\x6f\x69\x64";
+    const PLATFORM_PLAYSTATION = "\123\157\156\171\x20\x50\154\141\171\x53\164\141\x74\151\x6f\156";
+    const PLATFORM_ROKU = "\122\157\x6b\x75";
+    const PLATFORM_APPLE_TV = "\101\160\160\154\x65\x20\124\x56";
+    const PLATFORM_TERMINAL = "\x54\x65\x72\155\151\x6e\x61\154";
+    const PLATFORM_FIRE_OS = "\x46\x69\x72\145\40\x4f\x53";
+    const PLATFORM_SMART_TV = "\x53\115\x41\122\124\x2d\x54\x56";
+    const PLATFORM_CHROME_OS = "\x43\150\x72\157\x6d\x65\40\x4f\x53";
+    const PLATFORM_JAVA_ANDROID = "\112\141\x76\141\x2f\101\156\x64\x72\157\x69\x64";
+    const PLATFORM_POSTMAN = "\x50\157\163\164\155\x61\156";
+    const PLATFORM_I_FRAME = "\x49\x66\162\141\155\x65\x6c\171";
+    const OPERATING_SYSTEM_UNKNOWN = "\165\156\153\156\157\x77\156";
+    
+    public function __construct($uowwycywwssskuys = '')
+    {
+        goto kymoeekcwkmosuqm;
+        yyiuaymyqkoooyse:
+        $this->iaoqckywsogqyiio($uowwycywwssskuys);
+        goto iacsmyoeqsisuoqq;
+        iyyskykwysmaiosq:
+        $this->qeqwswckeiieossq();
+        goto swuiymekcguiocgu;
+        swuiymekcguiocgu:
+        goto mqkaiyymkmeyewiw;
+        goto hwcueuuaimkiawcg;
+        oakqasoccyooqcqk:
+        if ($uowwycywwssskuys != '') {
+            goto csscwckocuaykoew;
+        }
+        goto eawommuykgayesso;
+        iacsmyoeqsisuoqq:
+        mqkaiyymkmeyewiw:
+        goto wieuocqaikcuwsmg;
+        kymoeekcwkmosuqm:
+        $this->runSetup = false;
+        goto oakqasoccyooqcqk;
+        eawommuykgayesso:
+        $this->reset();
+        goto iyyskykwysmaiosq;
+        wieuocqaikcuwsmg:
+        parent::__construct();
+        goto ywqaqwigqqqcsyos;
+        hwcueuuaimkiawcg:
+        csscwckocuaykoew:
+        goto yyiuaymyqkoooyse;
+        ywqaqwigqqqcsyos:
+    }
+    
+    public function reset()
+    {
+        goto eussomccqmmumkoc;
+        wmaqigaciaqiikcy:
+        $this->isMobile = false;
+        goto gosgumwgamwesssq;
+        gosgumwgamwesssq:
+        $this->isFacebook = false;
+        goto makeckokeoicueia;
+        ycoiwiguwggowsug:
+        $this->isRobot = false;
+        goto ykyuusouwcesskqe;
+        ykyuusouwcesskqe:
+        $this->version = self::VERSION_UNKNOWN;
+        goto aiwaekeqciwyimwi;
+        uquciwyocygmwaeq:
+        $this->agent = isset($_SERVER["\x48\124\124\120\x5f\x55\123\105\122\137\x41\107\x45\116\124"]) ? $_SERVER["\110\x54\124\120\x5f\x55\123\105\122\x5f\101\107\105\x4e\x54"] : '';
+        goto ukuqoksosmkiycci;
+        eussomccqmmumkoc:
+        $this->os = self::OPERATING_SYSTEM_UNKNOWN;
+        goto isiseiywogusquiy;
+        makeckokeoicueia:
+        $this->aolVersion = self::VERSION_UNKNOWN;
+        goto kkckckioiqcwoukw;
+        wqwmkcisgiyyoyam:
+        $this->isTablet = false;
+        goto wmaqigaciaqiikcy;
+        isiseiywogusquiy:
+        $this->name = self::BROWSER_UNKNOWN;
+        goto uquciwyocygmwaeq;
+        aiwaekeqciwyimwi:
+        $this->platform = self::PLATFORM_UNKNOWN;
+        goto wqwmkcisgiyyoyam;
+        ukuqoksosmkiycci:
+        $this->isAol = false;
+        goto ycoiwiguwggowsug;
+        kkckckioiqcwoukw:
+    }
+    
+    function uuiwksyaomacmeqm(?string $qwgmkicgcaksayya)
+    {
+        return 0 == strcasecmp($this->name, trim($qwgmkicgcaksayya));
+    }
+    
+    public function aagmmewiwysmgseq()
+    {
+        return $this->name;
+    }
+    
+    public function ikciowomiysyewgc(?string $quckouuiqiiowoei)
+    {
+        $this->name = $quckouuiqiiowoei;
+    }
+    
+    public function kqeiosksqeuksyqu()
+    {
+        return $this->platform;
+    }
+    
+    public function skgoeccmwgyoiusu(?string $cqoiisuwooysmeyi)
+    {
+        $this->platform = $cqoiisuwooysmeyi;
+    }
+    
+    public function gikwwgqmwccescgy()
+    {
+        return $this->version;
+    }
+    
+    public function aasasueowyemuyoc(?string $kqagasmwymmuiksq)
+    {
+        $this->version = preg_replace("\x2f\133\x5e\60\55\71\x2c\56\54\x61\x2d\172\54\x41\55\x5a\x2d\135\x2f", '', $kqagasmwymmuiksq);
+    }
+    
+    public function wguymammuskciise()
+    {
+        return $this->aolVersion;
+    }
+    
+    public function qkeiegqwsgiwwkik(?string $kqagasmwymmuiksq)
+    {
+        $this->aolVersion = preg_replace("\x2f\133\136\60\x2d\x39\x2c\x2e\x2c\x61\x2d\x7a\x2c\x41\55\x5a\x5d\57", '', $kqagasmwymmuiksq);
+    }
+    
+    public function ekkycoyiksmuegcg()
+    {
+        return $this->isAol;
+    }
+    
+    public function qawecuimqqcqwgsw()
+    {
+        return $this->isMobile;
+    }
+    
+    public function gsuucswsiuggysyw()
+    {
+        return $this->isTablet;
+    }
+    
+    public function iquiuqgoysikecce()
+    {
+        return $this->isRobot;
+    }
+    
+    public function jwuckkwosioqkeeg()
+    {
+        return $this->isFacebook;
+    }
+    
+    public function igmimcweskyugiqm($ekkycoyiksmuegcg)
+    {
+        $this->isAol = $ekkycoyiksmuegcg;
+    }
+    
+    protected function eywockmuswoykooc($eqgoocgaqwqcimie = true)
+    {
+        $this->isMobile = $eqgoocgaqwqcimie;
+    }
+    
+    protected function icigyueiiwsukmsu($eqgoocgaqwqcimie = true)
+    {
+        $this->isTablet = $eqgoocgaqwqcimie;
+    }
+    
+    protected function aasmeayouwmacaow($eqgoocgaqwqcimie = true)
+    {
+        $this->isRobot = $eqgoocgaqwqcimie;
+    }
+    
+    protected function oqgqmcogeugkakss($eqgoocgaqwqcimie = true)
+    {
+        $this->isFacebook = $eqgoocgaqwqcimie;
+    }
+    
+    public function ckaoiscoyuuosace()
+    {
+        return $this->agent;
+    }
+    
+    public function iaoqckywsogqyiio($agent_string)
+    {
+        goto zocygeecusggsqgy;
+        wmigqcwwousgyuqc:
+        $this->qeqwswckeiieossq();
+        goto kaycsosiqusqeiio;
+        oewkyegysuioqeuy:
+        $this->agent = $agent_string;
+        goto wmigqcwwousgyuqc;
+        zocygeecusggsqgy:
+        $this->reset();
+        goto oewkyegysuioqeuy;
+        kaycsosiqusqeiio:
+    }
+    
+    public function uwkecmsuikoyuymq()
+    {
+        return strpos($this->agent, "\x63\x68\x72\157\x6d\145\146\162\141\155\145") !== false;
+    }
+    
+    public function __toString()
+    {
+        return "\74\163\164\x72\157\x6e\x67\76\x42\x72\157\167\163\145\x72\x20\116\141\155\145\x3a\74\57\163\x74\162\157\156\147\x3e\x20{$this->aagmmewiwysmgseq()}\x3c\x62\x72\57\76\12" . "\x3c\x73\164\x72\x6f\156\x67\x3e\x42\162\x6f\167\x73\145\x72\40\x56\145\162\163\x69\157\156\x3a\x3c\x2f\x73\x74\162\157\x6e\x67\x3e\x20{$this->gikwwgqmwccescgy()}\74\x62\162\57\x3e\12" . "\x3c\163\x74\x72\x6f\156\147\x3e\x42\162\157\167\x73\145\162\40\x55\x73\145\162\40\101\147\145\156\164\40\123\164\162\151\156\147\x3a\74\x2f\x73\164\162\157\x6e\147\x3e\40{$this->ckaoiscoyuuosace()}\74\x62\162\57\76\xa" . "\74\163\164\x72\x6f\x6e\x67\x3e\x50\154\x61\x74\146\x6f\162\155\x3a\x3c\x2f\x73\x74\x72\157\156\x67\x3e\x20{$this->kqeiosksqeuksyqu()}\x3c\142\162\57\x3e";
+    }
+    
+    protected function qeqwswckeiieossq()
+    {
+        goto eqgwseukuesiwuuq;
+        cyeauauawcaoqwsi:
+        $this->iggocwysumewuquw();
+        goto egkiiogswgakiack;
+        egkiiogswgakiack:
+        $this->caqkscqcyqeciamc();
+        goto mgyqaewckasyuiie;
+        eqgwseukuesiwuuq:
+        $this->acmmsiuwaekasogs();
+        goto cyeauauawcaoqwsi;
+        mgyqaewckasyuiie:
+    }
+    
+    protected function iggocwysumewuquw()
+    {
+        return $this->maowoygwywiawwyc() || $this->gggwayigqkokeigi() || $this->sukgiyywqmoigmom() || $this->makyeuicweuowumi() || $this->cgequousmqakcios() || $this->eqqcucwcgwqiogik() || $this->usswyskeuiskccki() || $this->aweyeayscomouegw() || $this->mgaiuyuciiueqyge() || $this->syeogeymkuiqsoec() || $this->eqkuicmgoaougagi() || $this->qsseiqmmssqiuomm() || $this->oomiyiuwesyuegws() || $this->uockauwugkqgqkce() || $this->oomuqgqyykuccewm() || $this->ciawmegkaaacmoew() || $this->cysskoyaouegkmky() || $this->iaacgcgmmegamkiu() || $this->uumayumieageyiuy() || $this->qcqikaemyysumcsu() || $this->siwcougwagmcauoi() || $this->aeywoaukuwaeegku() || $this->qaigygakimuucuki() || $this->cimegwusqouswgao() || $this->oumugceeiaceqieo() || $this->wmcqkeiuewqameek() || $this->eccwcswcuggacgua() || $this->mwoogugykmiymmgy() || $this->qceuceikgwagccsq() || $this->uuyiswoewekeauaw() || $this->sqawuqckmasomwiq() || $this->aaseiwemciwamqqm() || $this->ksumscewmeyaocyy() || $this->qsemkkquagiaoioc() || $this->bgkmykkkkksumwea() || $this->ugaiaiamygwcwemg() || $this->ksikmmeqsuycsqck() || $this->yswggmyigakcackc() || $this->uiwkymoksesuumwe() || $this->qcswwmqaioswesoq() || $this->momgeesgauwmqaks() || $this->gewsuekegcksgkai() || $this->ecocgoqgymuacegg() || $this->wacucmcykeakeeou() || $this->qaweacwkwmmuqqam() || $this->usemqkymaguiocgy() || $this->mqsiuucsqqyuwcuw() || $this->mmyqoqguasigekck() || $this->noeygigqkeciickm() || $this->akwueocamkykcwyy() || $this->ykyiqmysgemoaakw() || $this->qiqsouwkwmwmqeem() || $this->wiqieuoqysguameu() || $this->gqwuksqaksqcemam() || $this->cgqcukygysieeqko() || $this->ccaaioyauuuuyikg() || $this->aowooqokikgeegkm();
+    }
+    
+    protected function uumayumieageyiuy()
+    {
+        goto ykkuoyukeqkaiamg;
+        wiaauiiuyogwauum:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto qweasgqgummkgesw;
+        }
+        goto amwiioosseiocuic;
+        amwiioosseiocuic:
+        $quiguswioiaaywey = explode("\40", $yikciqwsimweauyg[1]);
+        goto cyueaiekggqumaic;
+        squkoccwioggcaye:
+        $this->eywockmuswoykooc(true);
+        goto oocgwowiyomcosac;
+        oocgwowiyomcosac:
+        return true;
+        goto ggywsksyyogoocie;
+        ggywsksyyogoocie:
+        qweasgqgummkgesw:
+        goto mcacwiaagqysweem;
+        cyueaiekggqumaic:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto owseqyqgagqaacmy;
+        oqokmmqoikgwmsai:
+        return false;
+        goto yackuaqwsqcwciyo;
+        ykkuoyukeqkaiamg:
+        if (!(stripos($this->agent, "\142\154\141\143\153\142\x65\x72\162\171") !== false)) {
+            goto skkkocayisgiuaoq;
+        }
+        goto womyiwaoigaequiw;
+        owseqyqgagqaacmy:
+        $this->name = self::BROWSER_BLACKBERRY;
+        goto squkoccwioggcaye;
+        mcacwiaagqysweem:
+        skkkocayisgiuaoq:
+        goto oqokmmqoikgwmsai;
+        womyiwaoigaequiw:
+        $yikciqwsimweauyg = explode("\x2f", stristr($this->agent, "\x42\x6c\141\143\153\x42\x65\162\162\x79"));
+        goto wiaauiiuyogwauum;
+        yackuaqwsqcwciyo:
+    }
+    
+    protected function caqkscqcyqeciamc()
+    {
+        goto wuesuwyyyaesmkas;
+        oscqsgwcimqawseu:
+        yqiaqmigsoeqmgwo:
+        goto ysqeawycwuosoawe;
+        awiawgewcmmiugqm:
+        if (!isset($quiguswioiaaywey[1])) {
+            goto yqiaqmigsoeqmgwo;
+        }
+        goto meayoamiqaqouykk;
+        meayoamiqaqouykk:
+        $this->igmimcweskyugiqm(true);
+        goto igsmkqcwksaogqaq;
+        uoeogwamkogoqoow:
+        $this->qkeiegqwsgiwwkik(self::VERSION_UNKNOWN);
+        goto emyigiiocasusaea;
+        ysqeawycwuosoawe:
+        aiswkmkmkckuociu:
+        goto omikseuuygmokqsw;
+        iekwmuigmiooiugw:
+        return true;
+        goto oscqsgwcimqawseu;
+        omikseuuygmokqsw:
+        return false;
+        goto sqackyqqakkykaus;
+        igsmkqcwksaogqaq:
+        $this->qkeiegqwsgiwwkik(preg_replace("\57\133\136\x30\x2d\71\x5c\x2e\141\55\172\x5d\57\x69", '', $quiguswioiaaywey[1]));
+        goto iekwmuigmiooiugw;
+        emyigiiocasusaea:
+        if (!(stripos($this->agent, "\x61\x6f\x6c") !== false)) {
+            goto aiswkmkmkckuociu;
+        }
+        goto qykicwksywyiiqkk;
+        qykicwksywyiiqkk:
+        $quiguswioiaaywey = explode("\40", stristr($this->agent, "\101\x4f\x4c"));
+        goto awiawgewcmmiugqm;
+        wuesuwyyyaesmkas:
+        $this->igmimcweskyugiqm(false);
+        goto uoeogwamkogoqoow;
+        sqackyqqakkykaus:
+    }
+    
+    protected function siwcougwagmcauoi()
+    {
+        goto ggkkqomssqyqiquq;
+        ecsieaukkkskmiye:
+        return true;
+        goto iqoqyuokokywiqsg;
+        mickaocycsqkssoi:
+        return false;
+        goto eeegygkcwmqmqyes;
+        qemwkwgoywqqwscg:
+        $quiguswioiaaywey = explode("\40", $yikciqwsimweauyg[1]);
+        goto csmemsmogwosqkks;
+        iuqoaqsqmamokiaa:
+        $yikciqwsimweauyg = explode("\57", stristr($this->agent, "\x67\157\x6f\147\x6c\145\x62\157\x74"));
+        goto uquoikaaykqmayco;
+        ggkkqomssqyqiquq:
+        if (!(stripos($this->agent, "\147\157\x6f\x67\x6c\x65\x62\157\x74") !== false)) {
+            goto sgykyaiuwiykyqqc;
+        }
+        goto iuqoaqsqmamokiaa;
+        csmemsmogwosqkks:
+        $this->aasasueowyemuyoc(str_replace("\x3b", '', $quiguswioiaaywey[0]));
+        goto wiuqggsaqsscggyq;
+        iqoqyuokokywiqsg:
+        yiqceakcgqweqwkq:
+        goto soqqgkywqwwiuymo;
+        soqqgkywqwwiuymo:
+        sgykyaiuwiykyqqc:
+        goto mickaocycsqkssoi;
+        uquoikaaykqmayco:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto yiqceakcgqweqwkq;
+        }
+        goto qemwkwgoywqqwscg;
+        muuoiakkusqamoia:
+        $this->aasmeayouwmacaow(true);
+        goto ecsieaukkkskmiye;
+        wiuqggsaqsscggyq:
+        $this->name = self::BROWSER_GOOGLEBOT;
+        goto muuoiakkusqamoia;
+        eeegygkcwmqmqyes:
+    }
+    
+    protected function oumugceeiaceqieo()
+    {
+        goto uwowyggggqcqiuao;
+        uqwoeksekoweiwke:
+        qocgiimiggeksoky:
+        goto ykqeemyaewkmowyu;
+        cmkiwqcgsmwyuggk:
+        $this->aasasueowyemuyoc(str_replace("\73", '', $quiguswioiaaywey[0]));
+        goto eqwkmqasacseyecw;
+        wywgewmwqwqsysig:
+        $this->aasmeayouwmacaow(true);
+        goto ggkyameswcsquisg;
+        eqwkmqasacseyecw:
+        $this->name = self::BROWSER_YANDEXBOT;
+        goto wywgewmwqwqsysig;
+        uwowyggggqcqiuao:
+        if (!(stripos($this->agent, "\131\x61\156\144\x65\x78\x42\157\x74") !== false)) {
+            goto qocgiimiggeksoky;
+        }
+        goto oagaqukqswwgeqsa;
+        ggkyameswcsquisg:
+        return true;
+        goto mwwimgssiegweqes;
+        ykqeemyaewkmowyu:
+        return false;
+        goto comoigwsemiiwoks;
+        mwwimgssiegweqes:
+        cgewwoksiyocyiga:
+        goto uqwoeksekoweiwke;
+        usukksgaqiqwqeys:
+        $quiguswioiaaywey = explode("\x20", $yikciqwsimweauyg[1]);
+        goto cmkiwqcgsmwyuggk;
+        oagaqukqswwgeqsa:
+        $yikciqwsimweauyg = explode("\57", stristr($this->agent, "\131\141\x6e\144\x65\170\102\x6f\x74"));
+        goto ewuugiguuowassgm;
+        ewuugiguuowassgm:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto cgewwoksiyocyiga;
+        }
+        goto usukksgaqiqwqeys;
+        comoigwsemiiwoks:
+    }
+    
+    protected function wmcqkeiuewqameek()
+    {
+        goto ceycsuymgwmceuew;
+        oouoqmemwouuymam:
+        return true;
+        goto kmokgyokoacsqkcg;
+        cicagciwwymgewcm:
+        $quiguswioiaaywey = explode("\40", $yikciqwsimweauyg[1]);
+        goto omkuusmocycoywqq;
+        omkuusmocycoywqq:
+        $this->aasasueowyemuyoc(str_replace("\73", '', $quiguswioiaaywey[0]));
+        goto ycuossoamymsusws;
+        egsqiegeesaowyyo:
+        $this->aasmeayouwmacaow(true);
+        goto oouoqmemwouuymam;
+        mkummeawiecmouws:
+        seimmqskqimoouui:
+        goto segicigoioeuyass;
+        kmokgyokoacsqkcg:
+        uioqqaiayukmemcg:
+        goto mkummeawiecmouws;
+        segicigoioeuyass:
+        return false;
+        goto uqqiokcseqswsgia;
+        ygyacaeuykeookuw:
+        $yikciqwsimweauyg = explode("\x2f", stristr($this->agent, "\131\x61\156\144\145\170\111\155\x61\147\145\122\x65\163\x69\172\145\x72"));
+        goto ggaemwcyouewkgcm;
+        ceycsuymgwmceuew:
+        if (!(stripos($this->agent, "\131\x61\156\x64\145\170\111\155\141\147\x65\x52\x65\163\151\172\145\162") !== false)) {
+            goto seimmqskqimoouui;
+        }
+        goto ygyacaeuykeookuw;
+        ggaemwcyouewkgcm:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto uioqqaiayukmemcg;
+        }
+        goto cicagciwwymgewcm;
+        ycuossoamymsusws:
+        $this->name = self::BROWSER_YANDEXIMAGERESIZER_BOT;
+        goto egsqiegeesaowyyo;
+        uqqiokcseqswsgia:
+    }
+    
+    protected function mwoogugykmiymmgy()
+    {
+        goto kmcewougmoaciyky;
+        emiksyiouuqsigmq:
+        return false;
+        goto awasoqakauqikkya;
+        aykkageemggigccw:
+        $this->aasasueowyemuyoc(str_replace("\x3b", '', $quiguswioiaaywey[0]));
+        goto ikwcwqmomksisice;
+        ikwcwqmomksisice:
+        $this->name = self::BROWSER_YANDEXCATALOG_BOT;
+        goto ssayikwmgomomkkq;
+        muwsmoccecigsoqc:
+        $quiguswioiaaywey = explode("\x20", $yikciqwsimweauyg[1]);
+        goto aykkageemggigccw;
+        ssayikwmgomomkkq:
+        $this->aasmeayouwmacaow(true);
+        goto cemqmygogskcoygo;
+        cemqmygogskcoygo:
+        return true;
+        goto wwskqqaskwicmaay;
+        iiswiwucogikyuse:
+        $yikciqwsimweauyg = explode("\57", stristr($this->agent, "\x59\141\x6e\144\145\170\x43\x61\164\x61\x6c\x6f\x67"));
+        goto aqysowuwkoqgsoku;
+        kmcewougmoaciyky:
+        if (!(stripos($this->agent, "\131\141\x6e\144\x65\170\103\141\x74\x61\154\x6f\147") !== false)) {
+            goto syumssoiimkseoum;
+        }
+        goto iiswiwucogikyuse;
+        wwskqqaskwicmaay:
+        yyacgikiikmoesek:
+        goto koiysaseasuyieym;
+        koiysaseasuyieym:
+        syumssoiimkseoum:
+        goto emiksyiouuqsigmq;
+        aqysowuwkoqgsoku:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto yyacgikiikmoesek;
+        }
+        goto muwsmoccecigsoqc;
+        awasoqakauqikkya:
+    }
+    
+    protected function qsemkkquagiaoioc()
+    {
+        goto yeequkyciegceoeo;
+        wagiyaqsgwiqyaie:
+        eykuqgakcouscsks:
+        goto kicewoesgqwaasem;
+        eicmoywsowuqoaou:
+        $this->aasmeayouwmacaow(true);
+        goto wokayyqugqaoewiy;
+        yymkyucwwqwymsse:
+        $this->aasasueowyemuyoc(str_replace("\73", '', $quiguswioiaaywey[0]));
+        goto mscskuyuseuoqaqm;
+        kicewoesgqwaasem:
+        return false;
+        goto kcakqaaesggwiooc;
+        auomkekgcqwsmgqu:
+        $quiguswioiaaywey = explode("\40", $yikciqwsimweauyg[1]);
+        goto yymkyucwwqwymsse;
+        ggiqousqgowseosg:
+        $yikciqwsimweauyg = explode("\x2f", stristr($this->agent, "\x59\141\x6e\144\145\x78\116\x65\x77\x73"));
+        goto wyeguiaumcoesuiy;
+        wyeguiaumcoesuiy:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto sqimcsougcukocky;
+        }
+        goto auomkekgcqwsmgqu;
+        kgskcgusosyauysg:
+        sqimcsougcukocky:
+        goto wagiyaqsgwiqyaie;
+        mscskuyuseuoqaqm:
+        $this->name = self::BROWSER_YANDEXNEWS_BOT;
+        goto eicmoywsowuqoaou;
+        yeequkyciegceoeo:
+        if (!(stripos($this->agent, "\x59\141\156\144\145\x78\116\x65\x77\163") !== false)) {
+            goto eykuqgakcouscsks;
+        }
+        goto ggiqousqgowseosg;
+        wokayyqugqaoewiy:
+        return true;
+        goto kgskcgusosyauysg;
+        kcakqaaesggwiooc:
+    }
+    
+    protected function ksumscewmeyaocyy()
+    {
+        goto qwimoyomwmmwkucy;
+        ackciywssqaumgac:
+        $yikciqwsimweauyg = explode("\x2f", stristr($this->agent, "\x59\141\x6e\x64\x65\170\x4d\x65\x74\162\151\x6b\x61"));
+        goto cwygwqacakmoesuw;
+        qaiaymokiyasqmic:
+        $this->aasmeayouwmacaow(true);
+        goto eyyiqqumygsogaoq;
+        skqkiegmwieyweww:
+        uwiyeosqocyekygy:
+        goto ousiwuqmksykqcec;
+        cgiakccyuqqwmomc:
+        $quiguswioiaaywey = explode("\40", $yikciqwsimweauyg[1]);
+        goto iuumaowkqqsoicgy;
+        iuumaowkqqsoicgy:
+        $this->aasasueowyemuyoc(str_replace("\x3b", '', $quiguswioiaaywey[0]));
+        goto awwiackkekswgamo;
+        cwygwqacakmoesuw:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto cwykioaoamgqueey;
+        }
+        goto cgiakccyuqqwmomc;
+        eyyiqqumygsogaoq:
+        return true;
+        goto iskggyooogqgowys;
+        ousiwuqmksykqcec:
+        return false;
+        goto kiqcuyecmyaegims;
+        qwimoyomwmmwkucy:
+        if (!(stripos($this->agent, "\131\141\x6e\x64\x65\170\x4d\145\x74\x72\151\x6b\x61") !== false)) {
+            goto uwiyeosqocyekygy;
+        }
+        goto ackciywssqaumgac;
+        iskggyooogqgowys:
+        cwykioaoamgqueey:
+        goto skqkiegmwieyweww;
+        awwiackkekswgamo:
+        $this->name = self::BROWSER_YANDEXMETRIKA_BOT;
+        goto qaiaymokiyasqmic;
+        kiqcuyecmyaegims:
+    }
+    
+    protected function qceuceikgwagccsq()
+    {
+        goto wesewyeqgccwmaos;
+        wesewyeqgccwmaos:
+        if (!(stripos($this->agent, "\131\141\156\144\145\x78\104\151\162\145\143\x74") !== false)) {
+            goto yagmcusocgoqkewa;
+        }
+        goto aoeeywugooqmewcc;
+        kuemgcgokyyggkoi:
+        return true;
+        goto eseawwcgusiywyge;
+        yugqeemimuuqeucm:
+        $this->aasmeayouwmacaow(true);
+        goto kuemgcgokyyggkoi;
+        caegiamkkykaqmqu:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto comcaymsaykamcgi;
+        }
+        goto wykyuuuooigicwgs;
+        skomukgmucsuaggq:
+        $this->aasasueowyemuyoc(str_replace("\x3b", '', $quiguswioiaaywey[0]));
+        goto essswiygiqegaayw;
+        soeiamgkkekwcoss:
+        yagmcusocgoqkewa:
+        goto gugywasieysgmmyw;
+        wykyuuuooigicwgs:
+        $quiguswioiaaywey = explode("\x20", $yikciqwsimweauyg[1]);
+        goto skomukgmucsuaggq;
+        gugywasieysgmmyw:
+        return false;
+        goto uaamscmwcmumgasy;
+        aoeeywugooqmewcc:
+        $yikciqwsimweauyg = explode("\57", stristr($this->agent, "\x59\141\x6e\144\x65\170\104\x69\x72\x65\x63\x74"));
+        goto caegiamkkykaqmqu;
+        essswiygiqegaayw:
+        $this->name = self::BROWSER_YANDEXDIRECT_BOT;
+        goto yugqeemimuuqeucm;
+        eseawwcgusiywyge:
+        comcaymsaykamcgi:
+        goto soeiamgkkekwcoss;
+        uaamscmwcmumgasy:
+    }
+    
+    protected function ugaiaiamygwcwemg()
+    {
+        goto uewgegcascsimmaq;
+        akeoiekwqqqgqamo:
+        $this->aasasueowyemuyoc(str_replace("\73", '', $quiguswioiaaywey[0]));
+        goto sqqqyyimyskaygea;
+        squqowgmqgocyqmi:
+        return true;
+        goto qysommommieagsuw;
+        gwokcyciswoaygie:
+        $this->aasmeayouwmacaow(true);
+        goto squqowgmqgocyqmi;
+        wysmsmaeqiucoycu:
+        $quiguswioiaaywey = explode("\x20", $yikciqwsimweauyg[1]);
+        goto akeoiekwqqqgqamo;
+        sqqqyyimyskaygea:
+        $this->name = self::BROWSER_YANDEXWEBMASTER_BOT;
+        goto gwokcyciswoaygie;
+        ikmicisyykkwmeso:
+        return false;
+        goto cyqyggywyykwqyak;
+        aekaikwiqmuwwqia:
+        suugmuecwqaakaoc:
+        goto ikmicisyykkwmeso;
+        qysommommieagsuw:
+        qimcgqssayewaygw:
+        goto aekaikwiqmuwwqia;
+        kiaawmeeisegyugk:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto qimcgqssayewaygw;
+        }
+        goto wysmsmaeqiucoycu;
+        uewgegcascsimmaq:
+        if (!(stripos($this->agent, "\131\141\x6e\x64\145\x78\x57\x65\x62\155\x61\163\x74\145\x72") !== false)) {
+            goto suugmuecwqaakaoc;
+        }
+        goto gcgwykikiomgmgqa;
+        gcgwykikiomgmgqa:
+        $yikciqwsimweauyg = explode("\57", stristr($this->agent, "\x59\141\x6e\144\x65\170\127\x65\x62\155\141\163\x74\x65\162"));
+        goto kiaawmeeisegyugk;
+        cyqyggywyykwqyak:
+    }
+    
+    protected function uuyiswoewekeauaw()
+    {
+        goto woikwmiiusqmoygy;
+        eosuykwimywegmse:
+        $this->name = self::BROWSER_YANDEXFAVICONS_BOT;
+        goto swuywmmasggeiqou;
+        yakmisgikescmgoo:
+        return false;
+        goto aacosyksiacoaeig;
+        woikwmiiusqmoygy:
+        if (!(stripos($this->agent, "\x59\x61\156\x64\x65\x78\x46\x61\x76\151\x63\157\156\163") !== false)) {
+            goto mkcsckwgisqasmao;
+        }
+        goto imsysaygciegsqok;
+        imsysaygciegsqok:
+        $yikciqwsimweauyg = explode("\57", stristr($this->agent, "\131\141\156\144\x65\x78\106\x61\x76\x69\143\x6f\x6e\x73"));
+        goto mygsucymimsqmqky;
+        ieycgksaoqioisky:
+        osumgoskasckcieg:
+        goto qigcoauseeigksyc;
+        swuywmmasggeiqou:
+        $this->aasmeayouwmacaow(true);
+        goto ceugiycaewioseoe;
+        uwemyeqsgcieyymm:
+        $quiguswioiaaywey = explode("\40", $yikciqwsimweauyg[1]);
+        goto lhsckqwkqqauiqwy;
+        mygsucymimsqmqky:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto osumgoskasckcieg;
+        }
+        goto uwemyeqsgcieyymm;
+        ceugiycaewioseoe:
+        return true;
+        goto ieycgksaoqioisky;
+        lhsckqwkqqauiqwy:
+        $this->aasasueowyemuyoc(str_replace("\x3b", '', $quiguswioiaaywey[0]));
+        goto eosuykwimywegmse;
+        qigcoauseeigksyc:
+        mkcsckwgisqasmao:
+        goto yakmisgikescmgoo;
+        aacosyksiacoaeig:
+    }
+    
+    protected function eccwcswcuggacgua()
+    {
+        goto dqcamiqqkwiowaag;
+        oameuaooiigaiucg:
+        $this->name = self::BROWSER_YANDEXBLOGS_BOT;
+        goto omccwaywmcmqksmq;
+        sigosycgcicoiuuc:
+        $yikciqwsimweauyg = explode("\57", stristr($this->agent, "\131\141\156\x64\x65\x78\102\154\157\147\163"));
+        goto iycocuaeccqgyoia;
+        iycocuaeccqgyoia:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto gwqqoewaikqqueoe;
+        }
+        goto ycyyicuqwqcyqeig;
+        uaaiysoikgsuscqw:
+        muyymwciiieqymqw:
+        goto naiguckqsyeaesek;
+        ycyyicuqwqcyqeig:
+        $quiguswioiaaywey = explode("\x20", $yikciqwsimweauyg[1]);
+        goto kccciwsgesamyyau;
+        omccwaywmcmqksmq:
+        $this->aasmeayouwmacaow(true);
+        goto imkwmsokcecosyse;
+        kccciwsgesamyyau:
+        $this->aasasueowyemuyoc(str_replace("\73", '', $quiguswioiaaywey[0]));
+        goto oameuaooiigaiucg;
+        osuskyuuggamicou:
+        gwqqoewaikqqueoe:
+        goto uaaiysoikgsuscqw;
+        dqcamiqqkwiowaag:
+        if (!(stripos($this->agent, "\x59\141\x6e\x64\145\170\x42\x6c\157\147\x73") !== false)) {
+            goto muyymwciiieqymqw;
+        }
+        goto sigosycgcicoiuuc;
+        naiguckqsyeaesek:
+        return false;
+        goto eqqaouecoaseisgq;
+        imkwmsokcecosyse:
+        return true;
+        goto osuskyuuggamicou;
+        eqqaouecoaseisgq:
+    }
+    
+    protected function aaseiwemciwamqqm()
+    {
+        goto kmayccieqkkiqicw;
+        eiswwscyoaqoggge:
+        $this->aasasueowyemuyoc(str_replace("\73", '', $quiguswioiaaywey[0]));
+        goto qaqmwuwwqycmqkyg;
+        eyogsqkuigcksouq:
+        $this->aasmeayouwmacaow(true);
+        goto gwkeoekmeeqmmwgy;
+        iymeugimwgcywusq:
+        $quiguswioiaaywey = explode("\x20", $yikciqwsimweauyg[1]);
+        goto eiswwscyoaqoggge;
+        ukeksoegcoqokeik:
+        suagmomycmooyggu:
+        goto iigucumgucicccac;
+        aikqumiqkkqaqgee:
+        kqmkicwuyqakoika:
+        goto ukeksoegcoqokeik;
+        skqmieiumikceamg:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto kqmkicwuyqakoika;
+        }
+        goto iymeugimwgcywusq;
+        iigucumgucicccac:
+        return false;
+        goto swusyoymaokumies;
+        qaqmwuwwqycmqkyg:
+        $this->name = self::BROWSER_YANDEXMEDIA_BOT;
+        goto eyogsqkuigcksouq;
+        umsckeuyiggsewac:
+        $yikciqwsimweauyg = explode("\57", stristr($this->agent, "\x59\x61\156\x64\x65\x78\115\145\x64\x69\141"));
+        goto skqmieiumikceamg;
+        gwkeoekmeeqmmwgy:
+        return true;
+        goto aikqumiqkkqaqgee;
+        kmayccieqkkiqicw:
+        if (!(stripos($this->agent, "\131\141\156\x64\145\x78\x4d\x65\144\151\x61") !== false)) {
+            goto suagmomycmooyggu;
+        }
+        goto umsckeuyiggsewac;
+        swusyoymaokumies:
+    }
+    
+    protected function bgkmykkkkksumwea()
+    {
+        goto cmasgwmooaiccewo;
+        uegccyuaemgmocgu:
+        amcsamiamksyqmuq:
+        goto iouecsmwqgaiycoq;
+        qcwaessgikigogay:
+        xwymaakqyeoqaams:
+        goto uegccyuaemgmocgu;
+        egemeuggwgwuayoi:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto xwymaakqyeoqaams;
+        }
+        goto qqusymyoygwwueco;
+        cyckkcksiwwqasio:
+        $yikciqwsimweauyg = explode("\x2f", stristr($this->agent, "\x59\x61\x6e\x64\145\x78\x56\x69\144\x65\x6f"));
+        goto egemeuggwgwuayoi;
+        wsqgykwqkgiwaksw:
+        return true;
+        goto qcwaessgikigogay;
+        qqusymyoygwwueco:
+        $quiguswioiaaywey = explode("\x20", $yikciqwsimweauyg[1]);
+        goto iuoiiwaosgqoeask;
+        giuuqwcsockoiqem:
+        $this->name = self::BROWSER_YANDEXVIDEO_BOT;
+        goto smqoegcueykkkiiq;
+        smqoegcueykkkiiq:
+        $this->aasmeayouwmacaow(true);
+        goto wsqgykwqkgiwaksw;
+        iuoiiwaosgqoeask:
+        $this->aasasueowyemuyoc(str_replace("\73", '', $quiguswioiaaywey[0]));
+        goto giuuqwcsockoiqem;
+        iouecsmwqgaiycoq:
+        return false;
+        goto qqyasyisimsuyiiw;
+        cmasgwmooaiccewo:
+        if (!(stripos($this->agent, "\x59\141\156\144\x65\170\x56\151\x64\145\x6f") !== false)) {
+            goto amcsamiamksyqmuq;
+        }
+        goto cyckkcksiwwqasio;
+        qqyasyisimsuyiiw:
+    }
+    
+    protected function sqawuqckmasomwiq()
+    {
+        goto ywiyqcgyoweomkqg;
+        eeqgkcgywkwgmiyg:
+        return true;
+        goto cumwowkcomuigeag;
+        ggawqqciikeiqiau:
+        $this->name = self::BROWSER_YANDEXIMAGES_BOT;
+        goto mucqymyysqeiaqwk;
+        kyemcamscwoeeoiy:
+        $this->aasasueowyemuyoc(str_replace("\73", '', $quiguswioiaaywey[0]));
+        goto ggawqqciikeiqiau;
+        qomyesuacseysugi:
+        yeywuuiugmgeuygm:
+        goto wsiqkesiecagcykw;
+        cumwowkcomuigeag:
+        geqcuwsuqymcqiou:
+        goto qomyesuacseysugi;
+        wsiqkesiecagcykw:
+        return false;
+        goto iawccecmgeaocqmg;
+        mucqymyysqeiaqwk:
+        $this->aasmeayouwmacaow(true);
+        goto eeqgkcgywkwgmiyg;
+        ywiyqcgyoweomkqg:
+        if (!(stripos($this->agent, "\131\141\156\144\x65\x78\111\x6d\x61\147\x65\163") !== false)) {
+            goto yeywuuiugmgeuygm;
+        }
+        goto gmgemamkswqeskmo;
+        gmgemamkswqeskmo:
+        $yikciqwsimweauyg = explode("\57", stristr($this->agent, "\x59\141\156\x64\x65\x78\111\155\x61\x67\145\163"));
+        goto gswsuaquqikkycwi;
+        gswsuaquqikkycwi:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto geqcuwsuqymcqiou;
+        }
+        goto eemgwkicuicwskms;
+        eemgwkicuicwskms:
+        $quiguswioiaaywey = explode("\40", $yikciqwsimweauyg[1]);
+        goto kyemcamscwoeeoiy;
+        iawccecmgeaocqmg:
+    }
+    
+    protected function aeywoaukuwaeegku()
+    {
+        goto iskwcciiywiaamos;
+        cyoymqqkgiumuegy:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto heakaosaewwowmcu;
+        }
+        goto fkcemcakyseoskmc;
+        iskwcciiywiaamos:
+        if (!(stripos($this->agent, "\x6d\163\x6e\x62\157\164") !== false)) {
+            goto euyooyocyuucmmmc;
+        }
+        goto saaioyiceykemgas;
+        quaugcgaccqksmmk:
+        $this->aasmeayouwmacaow(true);
+        goto oyqaeioosuiwoacw;
+        saaioyiceykemgas:
+        $yikciqwsimweauyg = explode("\57", stristr($this->agent, "\155\163\156\142\x6f\164"));
+        goto cyoymqqkgiumuegy;
+        wuqswaumkwuciiqi:
+        euyooyocyuucmmmc:
+        goto wmkoscqgkmsoasms;
+        aucqaemoukqogokc:
+        $this->aasasueowyemuyoc(str_replace("\x3b", '', $quiguswioiaaywey[0]));
+        goto aekwmmmciucegyys;
+        oyqaeioosuiwoacw:
+        return true;
+        goto omeekeuouqiieacw;
+        wmkoscqgkmsoasms:
+        return false;
+        goto cecqqwuqeiccmmos;
+        fkcemcakyseoskmc:
+        $quiguswioiaaywey = explode("\40", $yikciqwsimweauyg[1]);
+        goto aucqaemoukqogokc;
+        omeekeuouqiieacw:
+        heakaosaewwowmcu:
+        goto wuqswaumkwuciiqi;
+        aekwmmmciucegyys:
+        $this->name = self::BROWSER_MSNBOT;
+        goto quaugcgaccqksmmk;
+        cecqqwuqeiccmmos:
+    }
+    
+    protected function qaigygakimuucuki()
+    {
+        goto mywassaguwommoyg;
+        mywassaguwommoyg:
+        if (!(stripos($this->agent, "\142\x69\x6e\147\142\x6f\164") !== false)) {
+            goto aisgmewqismsouqm;
+        }
+        goto mgsyyameesskqgsk;
+        oasoyuckmqumgwwy:
+        yksumiuqcoggugea:
+        goto ucugysauicuskega;
+        caumawwwskkoekcw:
+        $this->name = self::BROWSER_BINGBOT;
+        goto gciueqsqsgcekwae;
+        ucugysauicuskega:
+        aisgmewqismsouqm:
+        goto kaiekqyukykoqiwa;
+        cwmwkkauqqusccgs:
+        $quiguswioiaaywey = explode("\40", $yikciqwsimweauyg[1]);
+        goto isowmaawkwmkcgmo;
+        gciueqsqsgcekwae:
+        $this->aasmeayouwmacaow(true);
+        goto ggyweqemgcmwwwgu;
+        kaiekqyukykoqiwa:
+        return false;
+        goto eayemqoaewmasoos;
+        mgsyyameesskqgsk:
+        $yikciqwsimweauyg = explode("\57", stristr($this->agent, "\x62\x69\x6e\x67\142\157\164"));
+        goto wsgcyguocqmgccks;
+        isowmaawkwmkcgmo:
+        $this->aasasueowyemuyoc(str_replace("\x3b", '', $quiguswioiaaywey[0]));
+        goto caumawwwskkoekcw;
+        ggyweqemgcmwwwgu:
+        return true;
+        goto oasoyuckmqumgwwy;
+        wsgcyguocqmgccks:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto yksumiuqcoggugea;
+        }
+        goto cwmwkkauqqusccgs;
+        eayemqoaewmasoos:
+    }
+    
+    protected function ykyiqmysgemoaakw()
+    {
+        goto ucwwsimgkkgymqwm;
+        eikeicmemcaswgaq:
+        qacccgcuwysswgqk:
+        goto wisaskaqkeaqaymk;
+        wisaskaqkeaqaymk:
+        
+        $eaogoiscgwgmugsq = str_replace("\127\x33\x43\137\126\141\154\x69\x64\x61\164\x6f\162\40", "\x57\63\103\x5f\126\x61\154\x69\x64\x61\x74\157\162\x2f", $this->agent);
+        goto wmigsokoiegiocys;
+        wmquwikmuiskcucm:
+        qquioqqwmiuemaaw:
+        goto ymmgwsqqoskmaags;
+        wqcseegakwamkcca:
+        $this->eywockmuswoykooc(true);
+        goto yeyoqmmeeuqucmky;
+        mecmyqgsmiuesukw:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto ouaywweeyqecagmc;
+        aayyiwqgkqkkckeg:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto wimcmomumakqcikc;
+        }
+        goto mwoaykewsqmiikum;
+        gyswaoawqisgeiac:
+        $yikciqwsimweauyg = explode("\57", stristr($this->agent, "\127\x33\103\55\x63\150\x65\x63\x6b\x6c\x69\156\153"));
+        goto aayyiwqgkqkkckeg;
+        mwoaykewsqmiikum:
+        $quiguswioiaaywey = explode("\40", $yikciqwsimweauyg[1]);
+        goto iammckaiicmaeweq;
+        yeyoqmmeeuqucmky:
+        return true;
+        goto wmquwikmuiskcucm;
+        wuasiiywuycmkusq:
+        wimcmomumakqcikc:
+        goto ygagqkmcasesqcui;
+        kuimcqawqqqgcoqs:
+        ucgecsiyweweymqw:
+        goto osyoqauakmkoaigc;
+        mieyqmckqkqaoygo:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto gccyyceaqackqsec;
+        }
+        goto kwkeisysqagyioig;
+        wyqswauigsseskum:
+        gukkaysgawyusckc:
+        goto gyswaoawqisgeiac;
+        kmawaeioomkgqkqe:
+        gccyyceaqackqsec:
+        goto ngkomagwskmkmcuc;
+        cuaueyackcccuamq:
+        if (stripos($this->agent, "\x57\x33\103\55\155\x6f\x62\151\x6c\145\x4f\x4b") !== false) {
+            goto ucgecsiyweweymqw;
+        }
+        goto oaaqgeqiwsykukeg;
+        wkaeeqagowygkuya:
+        return true;
+        goto wuasiiywuycmkusq;
+        ygagqkmcasesqcui:
+        goto qquioqqwmiuemaaw;
+        goto eikeicmemcaswgaq;
+        ymmgwsqqoskmaags:
+        return false;
+        goto suaeioykcscoamsi;
+        kwkeisysqagyioig:
+        $quiguswioiaaywey = explode("\x20", $yikciqwsimweauyg[1]);
+        goto mecmyqgsmiuesukw;
+        iammckaiicmaeweq:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto eiuwyaccguegyckc;
+        gogqmaoyqeoscico:
+        return true;
+        goto kmawaeioomkgqkqe;
+        ngkomagwskmkmcuc:
+        goto qquioqqwmiuemaaw;
+        goto kuimcqawqqqgcoqs;
+        ouaywweeyqecagmc:
+        $this->name = self::BROWSER_W3CVALIDATOR;
+        goto gogqmaoyqeoscico;
+        ucwwsimgkkgymqwm:
+        if (stripos($this->agent, "\127\x33\x43\x2d\x63\150\145\143\153\x6c\x69\156\x6b") !== false) {
+            goto gukkaysgawyusckc;
+        }
+        goto syoagkqccoyegkac;
+        syoagkqccoyegkac:
+        if (stripos($this->agent, "\x57\63\103\137\126\x61\x6c\x69\x64\141\164\157\162") !== false) {
+            goto qacccgcuwysswgqk;
+        }
+        goto cuaueyackcccuamq;
+        osyoqauakmkoaigc:
+        $this->name = self::BROWSER_W3CVALIDATOR;
+        goto wqcseegakwamkcca;
+        wmigsokoiegiocys:
+        $yikciqwsimweauyg = explode("\x2f", stristr($eaogoiscgwgmugsq, "\127\x33\x43\137\x56\x61\x6c\151\144\141\164\157\x72"));
+        goto mieyqmckqkqaoygo;
+        eiuwyaccguegyckc:
+        $this->name = self::BROWSER_W3CVALIDATOR;
+        goto wkaeeqagowygkuya;
+        oaaqgeqiwsykukeg:
+        goto qquioqqwmiuemaaw;
+        goto wyqswauigsseskum;
+        suaeioykcscoamsi:
+    }
+    
+    protected function cimegwusqouswgao()
+    {
+        goto mksgaooiuiymkkac;
+        waauqgswsiesowse:
+        $this->eywockmuswoykooc(false);
+        goto wqwqukkyascugisy;
+        yuueeqwwgggeycog:
+        $quiguswioiaaywey = explode("\x20", $yikciqwsimweauyg[1]);
+        goto qccmiyoiqguwmqug;
+        mksgaooiuiymkkac:
+        if (!(stripos($this->agent, "\163\154\x75\x72\160") !== false)) {
+            goto gggsgesuicesmqya;
+        }
+        goto cqmkeoyaqqoykcyu;
+        wqwqukkyascugisy:
+        return true;
+        goto ecyoakcmqwaksmms;
+        okyykeecayqaccik:
+        gggsgesuicesmqya:
+        goto wqgwmgkmeiewmwsm;
+        wqgwmgkmeiewmwsm:
+        return false;
+        goto cugwcccamcyuksgk;
+        ecyoakcmqwaksmms:
+        ukoqoieuoigccaoi:
+        goto okyykeecayqaccik;
+        kiqkwuaswsmkigok:
+        $this->name = self::BROWSER_SLURP;
+        goto yieciwkqiqgceuya;
+        qccmiyoiqguwmqug:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto kiqkwuaswsmkigok;
+        yieciwkqiqgceuya:
+        $this->aasmeayouwmacaow(true);
+        goto waauqgswsiesowse;
+        ueyiaawciiimcmia:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto ukoqoieuoigccaoi;
+        }
+        goto yuueeqwwgggeycog;
+        cqmkeoyaqqoykcyu:
+        $yikciqwsimweauyg = explode("\57", stristr($this->agent, "\123\154\x75\x72\x70"));
+        goto ueyiaawciiimcmia;
+        cugwcccamcyuksgk:
+    }
+    
+    protected function gggwayigqkokeigi()
+    {
+        goto aouymgmkkcaaymky;
+        egsiwgciqqkwecuy:
+        if (stripos($this->agent, "\40\102\162\141\x76\145\x20") !== false) {
+            goto gqogwsuwyiouywcy;
+        }
+        goto escsoaemgioqgqso;
+        aouymgmkkcaaymky:
+        if (stripos($this->agent, "\x42\162\x61\166\x65\x2f") !== false) {
+            goto yuosayyyyemookmi;
+        }
+        goto egsiwgciqqkwecuy;
+        soiguuywuqqisowg:
+        return false;
+        goto gqmiumskekekmaks;
+        ymmyqwqggkuwimiw:
+        return true;
+        goto oqkyykockmuiaycc;
+        hiuqggmuisuaaksw:
+        return true;
+        goto uiyscqcowgeaeoco;
+        ayikwkmouqocqoya:
+        $quiguswioiaaywey = explode("\x20", $uuygmciickwewegw[1]);
+        goto wsuauiewqimocoes;
+        uiyscqcowgeaeoco:
+        sieeqakumiscuwmy:
+        goto soiguuywuqqisowg;
+        wsuauiewqimocoes:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto oemaagemmycueycs;
+        ikqqmyoegaeocwqw:
+        
+        
+        $this->aasasueowyemuyoc('');
+        goto hiuqggmuisuaaksw;
+        egeecgiwycoqsgqm:
+        $this->ikciowomiysyewgc(self::BROWSER_BRAVE);
+        goto ikqqmyoegaeocwqw;
+        aygyqqwyyugyoakg:
+        gqogwsuwyiouywcy:
+        goto egeecgiwycoqsgqm;
+        ywwgsgiqkuwwuwas:
+        if (!isset($uuygmciickwewegw[1])) {
+            goto yqswiyiomsgeayiw;
+        }
+        goto ayikwkmouqocqoya;
+        uugykecieoomuygs:
+        goto sieeqakumiscuwmy;
+        goto aygyqqwyyugyoakg;
+        oqkyykockmuiaycc:
+        yqswiyiomsgeayiw:
+        goto uugykecieoomuygs;
+        gumousymsmeugmsm:
+        yuosayyyyemookmi:
+        goto egaiuisgeekasiow;
+        oemaagemmycueycs:
+        $this->ikciowomiysyewgc(self::BROWSER_BRAVE);
+        goto ymmyqwqggkuwimiw;
+        escsoaemgioqgqso:
+        goto sieeqakumiscuwmy;
+        goto gumousymsmeugmsm;
+        egaiuisgeekasiow:
+        $uuygmciickwewegw = explode("\57", stristr($this->agent, "\x42\162\141\166\145"));
+        goto ywwgsgiqkuwwuwas;
+        gqmiumskekekmaks:
+    }
+    
+    protected function makyeuicweuowumi()
+    {
+        goto weygkwekqawoowyq;
+        iuiusomcwkaiksyq:
+        aoueegmsgkeokaoq:
+        goto weuwgyoweusiaweq;
+        ykoqgweokgwkcawk:
+        return false;
+        goto iqugwmioumykkagm;
+        icmmwweaumcckgam:
+        $this->eywockmuswoykooc(true);
+        goto aisaywmsiigsegso;
+        sioosmeyiqmscmkc:
+        $quiguswioiaaywey = explode("\40", $yikciqwsimweauyg[1]);
+        goto iicgycsecmaeqqcg;
+        wwaoocgeiyswqwow:
+        $yikciqwsimweauyg = explode("\57", stristr($this->agent, "\x45\144\x67\x65"));
+        goto mcuiomgoamywqgya;
+        wssaokwkycsqqumw:
+        return true;
+        goto iuiusomcwkaiksyq;
+        aisaywmsiigsegso:
+        acsqgoigqaiqiwaw:
+        goto wssaokwkycsqqumw;
+        uomswgeawseimkou:
+        $this->ikciowomiysyewgc(self::BROWSER_EDGE);
+        goto yiiaqacikommoaoy;
+        iicgycsecmaeqqcg:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto uomswgeawseimkou;
+        yiiaqacikommoaoy:
+        if (!(stripos($this->agent, "\127\x69\x6e\x64\x6f\167\x73\40\120\150\157\x6e\x65") !== false || stripos($this->agent, "\101\156\x64\162\x6f\x69\x64") !== false)) {
+            goto acsqgoigqaiqiwaw;
+        }
+        goto icmmwweaumcckgam;
+        weygkwekqawoowyq:
+        if (!(stripos($this->agent, "\x45\x64\x67\145\x2f") !== false)) {
+            goto wmuqesieiugiquks;
+        }
+        goto wwaoocgeiyswqwow;
+        weuwgyoweusiaweq:
+        wmuqesieiugiquks:
+        goto ykoqgweokgwkcawk;
+        mcuiomgoamywqgya:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto aoueegmsgkeokaoq;
+        }
+        goto sioosmeyiqmscmkc;
+        iqugwmioumykkagm:
+    }
+    
+    protected function cgequousmqakcios()
+    {
+        goto oqkkssoawygysqmq;
+        ciymuigaugeiouic:
+        $this->ikciowomiysyewgc(self::BROWSER_IE);
+        goto sosikmkcuygeukyo;
+        qmkkwkqieggiyamm:
+        $this->eywockmuswoykooc(true);
+        goto eamumkggcmyaosco;
+        ecuoemaqoeosiase:
+        $this->aasasueowyemuyoc("\61\x2e\65");
+        goto aecsciyiseuamymy;
+        oqkkssoawygysqmq:
+        if (stripos($this->agent, "\124\162\151\144\x65\x6e\x74\57\x37\x2e\x30\x3b\40\162\166\72\61\61\56\60") !== false) {
+            goto imiuwwuwwyqigmou;
+        }
+        goto yioasqegwkugoqag;
+        yioasqegwkugoqag:
+        if (stripos($this->agent, "\x6d\x69\x63\x72\x6f\x73\157\x66\x74\x20\151\156\164\x65\x72\156\145\164\40\x65\170\x70\154\x6f\x72\145\162") !== false) {
+            goto iqgasessakaoieuw;
+        }
+        goto waqsamacggacoaye;
+        cmcisgcoaouauymu:
+        if (!isset($sogksuscggsicmac[1])) {
+            goto sqcqqsocqymmgwcq;
+        }
+        goto camscswqceqycmke;
+        megqkiykgiamgmsk:
+        sqcqqsocqymmgwcq:
+        goto ccyiuskguauimqee;
+        kigaqwsiuygysecu:
+        $this->skgoeccmwgyoiusu(self::PLATFORM_WINDOWS_CE);
+        goto qgagcuckouyuyuss;
+        gygwagcmmmaioikw:
+        iqgasessakaoieuw:
+        goto mkimssyoqguuowky;
+        kwumsouwywsqkmci:
+        $this->aasasueowyemuyoc("\61\61\x2e\60");
+        goto qmckmkykmyucosyq;
+        qeimskmimouyssgu:
+        goto oscemsgoyimocqei;
+        goto csecmagoocuukewm;
+        ogeakuasmaemuwga:
+        imiuwwuwwyqigmou:
+        goto wiawimwuykuugcwi;
+        myksiemsskucuyac:
+        goto oscemsgoyimocqei;
+        goto gygwagcmmmaioikw;
+        camscswqceqycmke:
+        $this->aasasueowyemuyoc(preg_replace("\57\x5b\x5e\x30\x2d\x39\56\x5d\53\x2f", '', $sogksuscggsicmac[1]));
+        goto yukycgouyuqkmaok;
+        iaiewssiomowoyas:
+        $yikciqwsimweauyg = explode("\x20", stristr(str_replace("\73", "\73\x20", $this->agent), "\x6d\x73\151\145"));
+        goto gsuacqigwaigyaia;
+        ewasqwuscwkeuuyi:
+        return false;
+        goto wskkwyoiugucwwua;
+        sggyugwiuggaaqyo:
+        segewkgiakaqsgoc:
+        goto mwauqumigegcywiw;
+        sgwwscoqkcuoqqsg:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto ucuiqegmmogyasmw;
+        }
+        goto kigaqwsiuygysecu;
+        ysamigeqeyqgiwcs:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[1]);
+        goto sggyugwiuggaaqyo;
+        sosikmkcuygeukyo:
+        $this->aasasueowyemuyoc(str_replace(["\50", "\x29", "\73"], '', $yikciqwsimweauyg[1]));
+        goto kwgkaeyusoekmway;
+        omeswwygqyeqyqmw:
+        oeiiuoikyagkmyqa:
+        goto uecqmukyqqgyoegy;
+        yukycgouyuqkmaok:
+        $this->agent = str_replace(["\115\x6f\x7a\151\154\154\x61", "\x47\145\143\153\x6f"], "\x4d\x53\111\105", $this->agent);
+        goto megqkiykgiamgmsk;
+        wiawimwuykuugcwi:
+        $this->ikciowomiysyewgc(self::BROWSER_IE);
+        goto kwumsouwywsqkmci;
+        ckmosuuwagciuwmw:
+        if (stripos($this->agent, "\x6d\x73\160\151\x65") !== false || stripos($this->agent, "\x70\x6f\x63\x6b\145\164") !== false) {
+            goto osewecweiaekeoou;
+        }
+        goto iuiyyuwauoowkgeg;
+        gmiyusqaiqaaakkk:
+        $quiguswioiaaywey = explode("\x2f", $this->agent);
+        goto umimoqmwoeecysqi;
+        oyykmqismqsyaaus:
+        $yikciqwsimweauyg = explode("\x20", stristr($this->agent, "\x6d\x73\x70\x69\x65"));
+        goto sgwwscoqkcuoqqsg;
+        mkimssyoqguuowky:
+        $this->ikciowomiysyewgc(self::BROWSER_IE);
+        goto aqcqeucsaaeuiwqa;
+        oiksgywwsqweoeai:
+        if (stripos($this->agent, "\x74\162\x69\144\145\x6e\164") !== false) {
+            goto okicguwqeyiuywos;
+        }
+        goto ckmosuuwagciuwmw;
+        mwauqumigegcywiw:
+        goto iamckkumoomyeoum;
+        goto omeswwygqyeqyqmw;
+        gikcoemsgecyasqe:
+        eewmcuekysqqkeey:
+        goto gkgwqoquqekiayus;
+        kwyiuyoeysqeywmm:
+        return true;
+        goto uoyuiiauquiwgasu;
+        oawogoiagossceii:
+        $yikciqwsimweauyg = stristr($this->agent, "\x2f");
+        goto ouecqyewekugmwkm;
+        iuiyyuwauoowkgeg:
+        goto oscemsgoyimocqei;
+        goto ogeakuasmaemuwga;
+        uecqmukyqqgyoegy:
+        $this->aasasueowyemuyoc($yikciqwsimweauyg[1]);
+        goto gyqcauemgkuwquua;
+        csecmagoocuukewm:
+        sykosugesqqqqyey:
+        goto ggakkmokkykkqawi;
+        aqcqeucsaaeuiwqa:
+        $this->aasasueowyemuyoc("\x31\56\x30");
+        goto oawogoiagossceii;
+        uoyuiiauquiwgasu:
+        ucuiqegmmogyasmw:
+        goto muaiioeaoiqiogie;
+        ocsoakwgmmwsekyi:
+        goto oscemsgoyimocqei;
+        goto qmywsksagymugcou;
+        owcekoqmukawoeao:
+        $yikciqwsimweauyg = explode("\x20", stristr(str_replace("\x3b", "\x3b\x20", $this->agent), "\115\123\x4e"));
+        goto ymgeisswqiucoaas;
+        qmywsksagymugcou:
+        okicguwqeyiuywos:
+        goto qsqgkiyigokqcioe;
+        wwckusqkukciicei:
+        $sogksuscggsicmac = explode("\x72\x76\x3a", $this->agent);
+        goto cmcisgcoaouauymu;
+        umimoqmwoeecysqi:
+        if (!isset($quiguswioiaaywey[1])) {
+            goto segewkgiakaqsgoc;
+        }
+        goto ysamigeqeyqgiwcs;
+        oqymsqskimoyuyye:
+        osewecweiaekeoou:
+        goto oyykmqismqsyaaus;
+        ouecqyewekugmwkm:
+        if (!preg_match("\57\63\x30\70\174\x34\x32\65\x7c\64\x32\66\174\x34\67\x34\x7c\x30\142\61\x2f\151", $yikciqwsimweauyg)) {
+            goto fkuiuosooquwmkoi;
+        }
+        goto ecuoemaqoeosiase;
+        ymgeisswqiucoaas:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto eewmcuekysqqkeey;
+        }
+        goto wucmiaeomamqgqes;
+        waqsamacggacoaye:
+        if (stripos($this->agent, "\x6d\163\x69\x65") !== false && stripos($this->agent, "\157\x70\145\162\x61") === false) {
+            goto sykosugesqqqqyey;
+        }
+        goto oiksgywwsqweoeai;
+        qsqgkiyigokqcioe:
+        $this->ikciowomiysyewgc(self::BROWSER_IE);
+        goto wwckusqkukciicei;
+        wuismmmeeqkiowua:
+        return true;
+        goto gikcoemsgecyasqe;
+        qgagcuckouyuyuss:
+        $this->ikciowomiysyewgc(self::BROWSER_POCKET_IE);
+        goto qmkkwkqieggiyamm;
+        gsuacqigwaigyaia:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto mqigmosuikyaaamk;
+        }
+        goto ciymuigaugeiouic;
+        asoiigkaqcguaioi:
+        $this->aasasueowyemuyoc(str_replace(["\x28", "\51", "\73"], '', $yikciqwsimweauyg[1]));
+        goto wuismmmeeqkiowua;
+        ccyiuskguauimqee:
+        goto oscemsgoyimocqei;
+        goto oqymsqskimoyuyye;
+        muaiioeaoiqiogie:
+        oscemsgoyimocqei:
+        goto ewasqwuscwkeuuyi;
+        gaccwqquykeauumg:
+        meqqkyuusamyauyc:
+        goto sqikwaiakyissigo;
+        sqikwaiakyissigo:
+        return true;
+        goto yeagcqwaoeskgqmg;
+        aecsciyiseuamymy:
+        fkuiuosooquwmkoi:
+        goto guiqaqkuywsmqcoc;
+        eamumkggcmyaosco:
+        if (stripos($this->agent, "\x6d\x73\160\151\145") !== false) {
+            goto oeiiuoikyagkmyqa;
+        }
+        goto gmiyusqaiqaaakkk;
+        uckgesmigkiyqyck:
+        $this->ikciowomiysyewgc(self::BROWSER_POCKET_IE);
+        goto pwgwmqwuoqysukeo;
+        wucmiaeomamqgqes:
+        $this->ikciowomiysyewgc(self::BROWSER_MSN);
+        goto asoiigkaqcguaioi;
+        yeagcqwaoeskgqmg:
+        mqigmosuikyaaamk:
+        goto ocsoakwgmmwsekyi;
+        gyqcauemgkuwquua:
+        iamckkumoomyeoum:
+        goto kwyiuyoeysqeywmm;
+        guiqaqkuywsmqcoc:
+        return true;
+        goto qeimskmimouyssgu;
+        ggakkmokkykkqawi:
+        
+        if (!(stripos($this->agent, "\155\x73\x6e\x62") !== false)) {
+            goto gggamqmqusyimaky;
+        }
+        goto owcekoqmukawoeao;
+        kwgkaeyusoekmway:
+        if (!(stripos($this->agent, "\x49\105\x4d\x6f\x62\151\154\145") !== false)) {
+            goto meqqkyuusamyauyc;
+        }
+        goto uckgesmigkiyqyck;
+        qmckmkykmyucosyq:
+        return true;
+        goto myksiemsskucuyac;
+        pwgwmqwuoqysukeo:
+        $this->eywockmuswoykooc(true);
+        goto gaccwqquykeauumg;
+        gkgwqoquqekiayus:
+        gggamqmqusyimaky:
+        goto iaiewssiomowoyas;
+        wskkwyoiugucwwua:
+    }
+    
+    protected function eqqcucwcgwqiogik()
+    {
+        goto ckiggmwimwykqyee;
+        myymisiqiwiqymuu:
+        if (!(stripos($this->agent, "\x4d\157\x62\x69\154\x65") !== false)) {
+            goto sckcaoikwggaoiqm;
+        }
+        goto eaicyuessygcyuqu;
+        omggicgmwyakocik:
+        $quiguswioiaaywey = explode("\x20", stristr($cgkyugweawsewkuu, "\x6f\160\145\162\141"));
+        goto sqicocysoqwcgasq;
+        wyagecywqcysyyae:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto kekkyamkouwoiyyi;
+        kmmsoqcgiyougqqy:
+        owgoagmssqsysiyq:
+        goto ygqkqwkyoosgomug;
+        oesqmiaisaqseigm:
+        if (preg_match("\x2f\126\145\x72\x73\151\x6f\x6e\134\57\50\61\x2a\56\52\x29\x24\57", $cgkyugweawsewkuu, $meyiiwcswqmuggyg)) {
+            goto zkoqiugkkemmwqeq;
+        }
+        goto kmyoqookuiyomeec;
+        qwwigmoeocgyqyuy:
+        goto aaumqogegyqosuiq;
+        goto oeeccicqsoiyqcig;
+        uksaceogcmuacumi:
+        $cgkyugweawsewkuu = stristr($this->agent, "\117\120\x52");
+        goto ieuewgsuqywiuuki;
+        agasiekywmaokckg:
+        return true;
+        goto qwwigmoeocgyqyuy;
+        sikkakqouqeckesc:
+        sckcaoikwggaoiqm:
+        goto aqwaemcyooumguou;
+        kwemswkcueagmssu:
+        $yikciqwsimweauyg = explode("\x2f", str_replace("\50", "\40", $cgkyugweawsewkuu));
+        goto mayucqimkiskmcms;
+        yiomssmosemcckmc:
+        $this->eywockmuswoykooc(true);
+        goto uuamswicsoyuguug;
+        syawcymwokyaqeck:
+        $quiguswioiaaywey = explode("\40", $yikciqwsimweauyg[1]);
+        goto qskwqqamoqekaqum;
+        coeaoweyqagqsoqq:
+        $this->name = self::BROWSER_OPERA_MINI;
+        goto goowmysscaoakuma;
+        iqkkuesiuysywyag:
+        goto aaumqogegyqosuiq;
+        goto swasyyuiyouasyqy;
+        micqaoiiquokaqmw:
+        $quiguswioiaaywey = explode("\x20", $yikciqwsimweauyg[1]);
+        goto wyagecywqcysyyae;
+        eaicyuessygcyuqu:
+        $this->eywockmuswoykooc(true);
+        goto sikkakqouqeckesc;
+        kiykgaeecsuoegei:
+        aaumqogegyqosuiq:
+        goto cuyagmoysmwoceks;
+        sqicocysoqwcgasq:
+        $this->aasasueowyemuyoc(isset($quiguswioiaaywey[1]) ? $quiguswioiaaywey[1] : '');
+        goto awiqeeiewssogaaq;
+        ygwwwwcgiwmcakmi:
+        return true;
+        goto uuiioegocmmcqgwq;
+        usycoqawsmoaqewm:
+        if (stripos($this->agent, "\157\160\145\162\x61") !== false) {
+            goto yueaaaoockqicmwq;
+        }
+        goto igesuquikuwmsywg;
+        yaeowwmkcuqmesau:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto owgoagmssqsysiyq;
+        }
+        goto kkumemicscqeqawi;
+        oeeccicqsoiyqcig:
+        gocgaeomskmyyuaq:
+        goto uksaceogcmuacumi;
+        uasakawygcqkquuy:
+        ouqiiwuqeoegciso:
+        goto myymisiqiwiqymuu;
+        wkgugqyackgiowas:
+        goto qkmucouuqggkwssg;
+        goto goiegscqgcukimys;
+        aqwaemcyooumguou:
+        $this->name = self::BROWSER_OPERA;
+        goto asgwqocgsuugguse;
+        kwaiiaowwykksgcw:
+        $cgkyugweawsewkuu = stristr($this->agent, "\157\160\145\162\x61");
+        goto oesqmiaisaqseigm;
+        iuiickwiuccmyiey:
+        if (!(stripos($this->agent, "\117\160\x65\162\x61\40\x4d\157\x62\x69") !== false)) {
+            goto iseeayqyeoawwmwc;
+        }
+        goto yiomssmosemcckmc;
+        asgwqocgsuugguse:
+        return true;
+        goto kiykgaeecsuoegei;
+        qousyksekeougumo:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto cyikciomyweygykm;
+        }
+        goto micqaoiiquokaqmw;
+        occyqeeyumwaygik:
+        $yikciqwsimweauyg = explode("\x2f", $cgkyugweawsewkuu);
+        goto yaeowwmkcuqmesau;
+        eismimkcoiokucom:
+        zkoqiugkkemmwqeq:
+        goto sooawcagkoismuqa;
+        msccquimgomummck:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto kmmsoqcgiyougqqy;
+        kkumemicscqeqawi:
+        $quiguswioiaaywey = explode("\40", $yikciqwsimweauyg[1]);
+        goto msccquimgomummck;
+        awiqeeiewssogaaq:
+        goto usoiismiikooagme;
+        goto eismimkcoiokucom;
+        eqiygsagygouqkyy:
+        if (preg_match("\x2f\x5c\x2f\57", $cgkyugweawsewkuu)) {
+            goto qymmimiisagiymuy;
+        }
+        goto gcasowsewwisgqwc;
+        igesuquikuwmsywg:
+        if (stripos($this->agent, "\x4f\x50\122") !== false) {
+            goto gocgaeomskmyyuaq;
+        }
+        goto iqkkuesiuysywyag;
+        kqggyaomgmqyicmc:
+        $this->name = self::BROWSER_OPERA;
+        goto agasiekywmaokckg;
+        qsaiiuqwimiqiwyc:
+        ycsuqaygaisskkeq:
+        goto wkgugqyackgiowas;
+        mgsmmaqqkusaaqew:
+        soacqquaasiggock:
+        goto kwemswkcueagmssu;
+        ckiggmwimwykqyee:
+        if (stripos($this->agent, "\x6f\x70\145\162\141\x20\x6d\x69\156\x69") !== false) {
+            goto umaimowkyaemisiq;
+        }
+        goto usycoqawsmoaqewm;
+        gcasowsewwisgqwc:
+        $quiguswioiaaywey = explode("\x20", stristr($cgkyugweawsewkuu, "\x6f\160\145\x72\x61\40\x6d\151\x6e\151"));
+        goto ieysgookkakiiuoo;
+        aykuikogcgweeoio:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[1]);
+        goto qsaiiuqwimiqiwyc;
+        akmiwammkswkmyio:
+        $cgkyugweawsewkuu = stristr($this->agent, "\157\160\145\x72\x61\40\155\x69\x6e\151");
+        goto eqiygsagygouqkyy;
+        ieysgookkakiiuoo:
+        if (!isset($quiguswioiaaywey[1])) {
+            goto ycsuqaygaisskkeq;
+        }
+        goto aykuikogcgweeoio;
+        eoeoikgkiuewagwg:
+        goto usoiismiikooagme;
+        goto mgsmmaqqkusaaqew;
+        kekkyamkouwoiyyi:
+        cyikciomyweygykm:
+        goto uasakawygcqkquuy;
+        goiegscqgcukimys:
+        qymmimiisagiymuy:
+        goto occyqeeyumwaygik;
+        sooawcagkoismuqa:
+        $this->aasasueowyemuyoc($meyiiwcswqmuggyg[1]);
+        goto eoeoikgkiuewagwg;
+        ieuewgsuqywiuuki:
+        if (!preg_match("\x2f\x5c\57\57", $cgkyugweawsewkuu)) {
+            goto ouqiiwuqeoegciso;
+        }
+        goto wysmuiaeuqqaycig;
+        ygqkqwkyoosgomug:
+        qkmucouuqggkwssg:
+        goto coeaoweyqagqsoqq;
+        kmyoqookuiyomeec:
+        if (preg_match("\57\134\x2f\57", $cgkyugweawsewkuu)) {
+            goto soacqquaasiggock;
+        }
+        goto omggicgmwyakocik;
+        swasyyuiyouasyqy:
+        umaimowkyaemisiq:
+        goto akmiwammkswkmyio;
+        goowmysscaoakuma:
+        $this->eywockmuswoykooc(true);
+        goto ygwwwwcgiwmcakmi;
+        uuamswicsoyuguug:
+        iseeayqyeoawwmwc:
+        goto kqggyaomgmqyicmc;
+        qskwqqamoqekaqum:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto ameqasmessgyycqq;
+        mayucqimkiskmcms:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto ycsqoemcioqgscik;
+        }
+        goto syawcymwokyaqeck;
+        uuiioegocmmcqgwq:
+        goto aaumqogegyqosuiq;
+        goto yygugwkyoeackami;
+        yygugwkyoeackami:
+        yueaaaoockqicmwq:
+        goto kwaiiaowwykksgcw;
+        ameqasmessgyycqq:
+        ycsqoemcioqgscik:
+        goto isucaqumoqgykqig;
+        isucaqumoqgykqig:
+        usoiismiikooagme:
+        goto iuiickwiuccmyiey;
+        wysmuiaeuqqaycig:
+        $yikciqwsimweauyg = explode("\x2f", str_replace("\50", "\40", $cgkyugweawsewkuu));
+        goto qousyksekeougumo;
+        cuyagmoysmwoceks:
+        return false;
+        goto amecoaswmoqigiku;
+        amecoaswmoqigiku:
+    }
+    
+    protected function oomiyiuwesyuegws()
+    {
+        goto iggqqqegoegigyii;
+        ieeieiuoeqquyaka:
+        $this->icigyueiiwsukmsu(true);
+        goto qakmsceesmcwecmo;
+        wmcauamwimsyiauk:
+        csguwgocosyisgyq:
+        goto mmowusaeqemsisiq;
+        sackmgaomiwgeqca:
+        $yikciqwsimweauyg = preg_split("\x2f\133\x5c\57\73\135\53\x2f", stristr($this->agent, "\103\x68\162\157\155\x65"));
+        goto uiuyiuiocgycwaae;
+        ckgikcyggaegucyk:
+        uqsmiiqigeisoyse:
+        goto coyegiuygcqwmaqc;
+        wskewcieqoqiuoui:
+        return true;
+        goto ggiacqackmguiiki;
+        qwiwywqwmmciwiea:
+        
+        if (!(stripos($this->agent, "\x41\156\144\162\x6f\151\144") !== false)) {
+            goto eoueymmeawwwswwq;
+        }
+        goto oucqmskiygmmsmye;
+        uqqaaeqoykgcakec:
+        $this->ikciowomiysyewgc(self::BROWSER_CHROME);
+        goto qwiwywqwmmciwiea;
+        scimuugawiiuemki:
+        $this->eywockmuswoykooc(true);
+        goto wmcauamwimsyiauk;
+        coyegiuygcqwmaqc:
+        return false;
+        goto eukqocmusiasmewe;
+        oucqmskiygmmsmye:
+        if (stripos($this->agent, "\115\157\x62\151\x6c\x65") !== false) {
+            goto fwqikeoyaewusiym;
+        }
+        goto ieeieiuoeqquyaka;
+        iggqqqegoegigyii:
+        if (!(stripos($this->agent, "\103\x68\x72\x6f\x6d\145") !== false)) {
+            goto uqsmiiqigeisoyse;
+        }
+        goto sackmgaomiwgeqca;
+        isgqqmaauckagsao:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto uqqaaeqoykgcakec;
+        uyeiymmkkiyccakm:
+        fwqikeoyaewusiym:
+        goto scimuugawiiuemki;
+        smsuqgcummiyucsc:
+        $quiguswioiaaywey = explode("\40", $yikciqwsimweauyg[1]);
+        goto isgqqmaauckagsao;
+        uiuyiuiocgycwaae:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto cqcomacmwgougkai;
+        }
+        goto smsuqgcummiyucsc;
+        ggiacqackmguiiki:
+        cqcomacmwgougkai:
+        goto ckgikcyggaegucyk;
+        mmowusaeqemsisiq:
+        eoueymmeawwwswwq:
+        goto wskewcieqoqiuoui;
+        qakmsceesmcwecmo:
+        goto csguwgocosyisgyq;
+        goto uyeiymmkkiyccakm;
+        eukqocmusiasmewe:
+    }
+    
+    protected function maowoygwywiawwyc()
+    {
+        goto sciiwomqgcamicqs;
+        kywqmsqusiysywqe:
+        usmucisyagswyysu:
+        goto swkkeqmaqugwiysy;
+        yscyooysgqsyuayo:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto usmucisyagswyysu;
+        }
+        goto ssoogugiigiqooce;
+        swkkeqmaqugwiysy:
+        wawimucmukumkuca:
+        goto csoomgiiyysqmeku;
+        mseowikguuikkiys:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto ageemsqieiqyqwag;
+        eiosgmsukekekyou:
+        return true;
+        goto kywqmsqusiysywqe;
+        ageemsqieiqyqwag:
+        $this->ikciowomiysyewgc(self::BROWSER_WEBTV);
+        goto eiosgmsukekekyou;
+        ssoogugiigiqooce:
+        $quiguswioiaaywey = explode("\40", $yikciqwsimweauyg[1]);
+        goto mseowikguuikkiys;
+        sciiwomqgcamicqs:
+        if (!(stripos($this->agent, "\x77\145\142\164\166") !== false)) {
+            goto wawimucmukumkuca;
+        }
+        goto aiaaaesgesgwsuck;
+        csoomgiiyysqmeku:
+        return false;
+        goto ukkkmakiisiqkacm;
+        aiaaaesgesgwsuck:
+        $yikciqwsimweauyg = explode("\x2f", stristr($this->agent, "\167\145\142\164\x76"));
+        goto yscyooysgqsyuayo;
+        ukkkmakiisiqkacm:
+    }
+    
+    protected function momgeesgauwmqaks()
+    {
+        goto uggmmsuyiiyuaeic;
+        akmiwuwwkeokegkq:
+        mukwaeyamkyacewo:
+        goto oqyumeoumucciuao;
+        cemwkemiwicagmou:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto mukwaeyamkyacewo;
+        }
+        goto uowyeayyimmqogge;
+        gouyqmyakowooiyw:
+        return false;
+        goto eyuieiqqgyowoocu;
+        ocisosooggaaueii:
+        $this->ikciowomiysyewgc(self::BROWSER_NETPOSITIVE);
+        goto uuimoqmwywkkaygo;
+        uowyeayyimmqogge:
+        $quiguswioiaaywey = explode("\x20", $yikciqwsimweauyg[1]);
+        goto wkasucgiaeogugcw;
+        wkasucgiaeogugcw:
+        $this->aasasueowyemuyoc(str_replace(["\x28", "\x29", "\73"], '', $quiguswioiaaywey[0]));
+        goto ocisosooggaaueii;
+        cyaaugsakiugouae:
+        $yikciqwsimweauyg = explode("\57", stristr($this->agent, "\116\145\164\120\157\x73\x69\x74\x69\166\145"));
+        goto cemwkemiwicagmou;
+        uuimoqmwywkkaygo:
+        return true;
+        goto akmiwuwwkeokegkq;
+        uggmmsuyiiyuaeic:
+        if (!(stripos($this->agent, "\x4e\x65\164\x50\x6f\163\x69\x74\151\166\x65") !== false)) {
+            goto gocmokqaeqkqcmma;
+        }
+        goto cyaaugsakiugouae;
+        oqyumeoumucciuao:
+        gocmokqaeqkqcmma:
+        goto gouyqmyakowooiyw;
+        eyuieiqqgyowoocu:
+    }
+    
+    protected function usswyskeuiskccki()
+    {
+        goto ycaooqesseeagoka;
+        ggaoikewqkecamgs:
+        if (!isset($quiguswioiaaywey[1])) {
+            goto gmgwsqeqwquucyoo;
+        }
+        goto qwgicaiskacusqka;
+        ikuoukwawkkyaacy:
+        return true;
+        goto omcmaswaawciiaui;
+        ycaooqesseeagoka:
+        if (!(stripos($this->agent, "\147\141\154\x65\x6f\x6e") !== false)) {
+            goto csuemgeukskicmmi;
+        }
+        goto ccaqsekgkcqqayyg;
+        quucsamwocuceyae:
+        csuemgeukskicmmi:
+        goto emoscekqieoummww;
+        iegksyacuckwoyiw:
+        $quiguswioiaaywey = explode("\57", $yikciqwsimweauyg[0]);
+        goto ggaoikewqkecamgs;
+        ccaqsekgkcqqayyg:
+        $yikciqwsimweauyg = explode("\40", stristr($this->agent, "\x67\141\x6c\145\x6f\x6e"));
+        goto iegksyacuckwoyiw;
+        aekskqewqmeauaug:
+        $this->ikciowomiysyewgc(self::BROWSER_GALEON);
+        goto ikuoukwawkkyaacy;
+        omcmaswaawciiaui:
+        gmgwsqeqwquucyoo:
+        goto quucsamwocuceyae;
+        emoscekqieoummww:
+        return false;
+        goto cyucgakoiiemocie;
+        qwgicaiskacusqka:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[1]);
+        goto aekskqewqmeauaug;
+        cyucgakoiiemocie:
+    }
+    
+    protected function ecocgoqgymuacegg()
+    {
+        goto omusyecyksyowysk;
+        myemqwquecqwakyq:
+        return true;
+        goto ksmacqoqogyoookk;
+        ugmggeiwogwcgcqy:
+        iqwiyiisyasiwsiu:
+        goto mwcysigeamkwiwku;
+        msywkyeikecaomgo:
+        if (!isset($quiguswioiaaywey[1])) {
+            goto yeayeuiggqoigwag;
+        }
+        goto uccocwouuuisiage;
+        uukmwmiaqigsqaug:
+        $this->ikciowomiysyewgc(self::BROWSER_KONQUEROR);
+        goto myemqwquecqwakyq;
+        mwcysigeamkwiwku:
+        return false;
+        goto ywukigwwwumwuicy;
+        kwsuumgiqsskggqy:
+        $yikciqwsimweauyg = explode("\x20", stristr($this->agent, "\113\x6f\x6e\161\x75\145\x72\x6f\x72"));
+        goto yiyksucyuaosekey;
+        ksmacqoqogyoookk:
+        yeayeuiggqoigwag:
+        goto ugmggeiwogwcgcqy;
+        uccocwouuuisiage:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[1]);
+        goto uukmwmiaqigsqaug;
+        omusyecyksyowysk:
+        if (!(stripos($this->agent, "\x4b\x6f\156\161\165\145\x72\157\162") !== false)) {
+            goto iqwiyiisyasiwsiu;
+        }
+        goto kwsuumgiqsskggqy;
+        yiyksucyuaosekey:
+        $quiguswioiaaywey = explode("\x2f", $yikciqwsimweauyg[0]);
+        goto msywkyeikecaomgo;
+        ywukigwwwumwuicy:
+    }
+    
+    protected function wacucmcykeakeeou()
+    {
+        goto gqaoecysyaaccyyy;
+        gqaoecysyaaccyyy:
+        if (!(stripos($this->agent, "\151\x63\x61\142") !== false)) {
+            goto qkmqkcwgskmyeoyq;
+        }
+        goto somyyugyumgeukik;
+        oymcieacieeqwses:
+        $this->ikciowomiysyewgc(self::BROWSER_ICAB);
+        goto cggwmqyuewwisqsu;
+        somyyugyumgeukik:
+        $quiguswioiaaywey = explode("\40", stristr(str_replace("\57", "\40", $this->agent), "\x69\143\x61\x62"));
+        goto oikasesimicoysmu;
+        ymkqceigmmuokugy:
+        uyuugesysqaueywi:
+        goto gygkmqwkaiskgwws;
+        gygkmqwkaiskgwws:
+        qkmqkcwgskmyeoyq:
+        goto awukkyueuqcaywks;
+        cggwmqyuewwisqsu:
+        return true;
+        goto ymkqceigmmuokugy;
+        oikasesimicoysmu:
+        if (!isset($quiguswioiaaywey[1])) {
+            goto uyuugesysqaueywi;
+        }
+        goto kicmwgigiciiuqaw;
+        awukkyueuqcaywks:
+        return false;
+        goto akgyaaawgcecyoqc;
+        kicmwgigiciiuqaw:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[1]);
+        goto oymcieacieeqwses;
+        akgyaaawgcecyoqc:
+    }
+    
+    protected function uockauwugkqgqkce()
+    {
+        goto wikueqyuegggkqoi;
+        qymyaksieaiemaam:
+        ceskkigeaqcaasqs:
+        goto ygeweomowkiskgec;
+        syuakiekoaowmoyy:
+        $this->ikciowomiysyewgc(self::BROWSER_OMNIWEB);
+        goto symsqqgwwimugwue;
+        gsuqomaoosusiqew:
+        $quiguswioiaaywey = explode("\40", isset($yikciqwsimweauyg[1]) ? $yikciqwsimweauyg[1] : '');
+        goto ymyqsgymeusoakyi;
+        symsqqgwwimugwue:
+        return true;
+        goto qymyaksieaiemaam;
+        ymyqsgymeusoakyi:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto syuakiekoaowmoyy;
+        wikueqyuegggkqoi:
+        if (!(stripos($this->agent, "\x6f\x6d\x6e\x69\167\145\142") !== false)) {
+            goto ceskkigeaqcaasqs;
+        }
+        goto qoigmymamwikqkce;
+        ygeweomowkiskgec:
+        return false;
+        goto kkaqamsuqkgkwowo;
+        qoigmymamwikqkce:
+        $yikciqwsimweauyg = explode("\57", stristr($this->agent, "\x6f\155\x6e\x69\167\145\x62"));
+        goto gsuqomaoosusiqew;
+        kkaqamsuqkgkwowo:
+    }
+    
+    protected function qaweacwkwmmuqqam()
+    {
+        goto owuqwmsqouswswau;
+        iugcwummaqmgiqgm:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[1]);
+        goto cqmwuwoaqiumaogi;
+        caomeykgioesgswg:
+        acmqaeyciymmsgua:
+        goto owaomgiwykiiesqs;
+        aecesusucigikyqs:
+        return true;
+        goto caomeykgioesgswg;
+        skawosaecygmqmsq:
+        if (!isset($quiguswioiaaywey[1])) {
+            goto acmqaeyciymmsgua;
+        }
+        goto iugcwummaqmgiqgm;
+        owaomgiwykiiesqs:
+        ewswyuykwuaigiyo:
+        goto wkeoacqqekmaqogk;
+        cqmwuwoaqiumaogi:
+        $this->ikciowomiysyewgc(self::BROWSER_PHOENIX);
+        goto aecesusucigikyqs;
+        iawosyeimcucqgky:
+        $quiguswioiaaywey = explode("\x2f", stristr($this->agent, "\120\150\157\145\156\x69\x78"));
+        goto skawosaecygmqmsq;
+        wkeoacqqekmaqogk:
+        return false;
+        goto iaewosqywiqiqmqs;
+        owuqwmsqouswswau:
+        if (!(stripos($this->agent, "\x50\150\157\x65\x6e\151\170") !== false)) {
+            goto ewswyuykwuaigiyo;
+        }
+        goto iawosyeimcucqgky;
+        iaewosqywiqiqmqs:
+    }
+    
+    protected function gewsuekegcksgkai()
+    {
+        goto asmgcmegmekauiqm;
+        sqkqqasyecqeysww:
+        ueimcmmgwiommwwg:
+        goto seekksssaiokokyq;
+        eqgyoucqmyyqqagc:
+        return true;
+        goto qomaksiaaooygwsg;
+        wgmeusuigqsowace:
+        $this->ikciowomiysyewgc(self::BROWSER_FIREBIRD);
+        goto eqgyoucqmyyqqagc;
+        seekksssaiokokyq:
+        return false;
+        goto vkcgsyecgukweyki;
+        kgeeikakwgkukkke:
+        if (!isset($quiguswioiaaywey[1])) {
+            goto bkmiygiccoagsyck;
+        }
+        goto cyscaaaicmkkqies;
+        quqkggiycuoeaysg:
+        $quiguswioiaaywey = explode("\x2f", stristr($this->agent, "\x46\x69\x72\x65\142\151\162\144"));
+        goto kgeeikakwgkukkke;
+        asmgcmegmekauiqm:
+        if (!(stripos($this->agent, "\106\151\162\145\142\151\162\x64") !== false)) {
+            goto ueimcmmgwiommwwg;
+        }
+        goto quqkggiycuoeaysg;
+        qomaksiaaooygwsg:
+        bkmiygiccoagsyck:
+        goto sqkqqasyecqeysww;
+        cyscaaaicmkkqies:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[1]);
+        goto wgmeusuigqsowace;
+        vkcgsyecgukweyki:
+    }
+    
+    protected function aweyeayscomouegw()
+    {
+        goto cmmgaceguouaicok;
+        owkecwacqesgqcaq:
+        return false;
+        goto gggcyumymmmiuaeu;
+        iiksoosqisyggaks:
+        ocegwkgcsegowucu:
+        goto kkmwiocaqecosykg;
+        kqmsyeoyemocoiqs:
+        goto aiawyogcusykcgem;
+        goto iiksoosqisyggaks;
+        uceyoakcoqqgkmka:
+        return true;
+        goto mksgqgcoeeksaiqe;
+        gosqawkmwoukawsa:
+        if (stripos($this->agent, "\x46\151\162\145\x66\x6f\170") === false && preg_match("\x2f\x4e\x65\x74\163\x63\x61\160\x65\66\77\134\x2f\x28\133\x5e\40\x5d\x2a\51\57\151", $this->agent, $meyiiwcswqmuggyg)) {
+            goto aiugcqaaymaasikk;
+        }
+        goto kqmsyeoyemocoiqs;
+        xwsiauqamwogkwmo:
+        $this->aasasueowyemuyoc($meyiiwcswqmuggyg[1]);
+        goto csskywiguyamicyu;
+        siycmwciwoewsooi:
+        goto aiawyogcusykcgem;
+        goto ceguiykycywoocuu;
+        kkmwiocaqecosykg:
+        $this->aasasueowyemuyoc($meyiiwcswqmuggyg[1]);
+        goto mqieeoagcesmykuy;
+        asmgcueacgcuokak:
+        return true;
+        goto siycmwciwoewsooi;
+        mqieeoagcesmykuy:
+        $this->ikciowomiysyewgc(self::BROWSER_NETSCAPE_NAVIGATOR);
+        goto asmgcueacgcuokak;
+        mksgqgcoeeksaiqe:
+        aiawyogcusykcgem:
+        goto owkecwacqesgqcaq;
+        csskywiguyamicyu:
+        $this->ikciowomiysyewgc(self::BROWSER_NETSCAPE_NAVIGATOR);
+        goto uceyoakcoqqgkmka;
+        cmmgaceguouaicok:
+        if (stripos($this->agent, "\x46\x69\162\145\x66\157\170") !== false && preg_match("\x2f\116\141\x76\151\147\x61\164\x6f\x72\x5c\x2f\x28\x5b\x5e\x20\x5d\x2a\x29\57\x69", $this->agent, $meyiiwcswqmuggyg)) {
+            goto ocegwkgcsegowucu;
+        }
+        goto gosqawkmwoukawsa;
+        ceguiykycywoocuu:
+        aiugcqaaymaasikk:
+        goto xwsiauqamwogkwmo;
+        gggcyumymmmiuaeu:
+    }
+    
+    protected function mmyqoqguasigekck()
+    {
+        goto ogcasmoaumciscii;
+        ymykisoiiyyqeqim:
+        $this->aasasueowyemuyoc($meyiiwcswqmuggyg[1]);
+        goto mcqqawkmqiiyecey;
+        keqsgkcumkusgygg:
+        return false;
+        goto eqsqecmiugakueqm;
+        ogcasmoaumciscii:
+        if (!(stripos($this->agent, "\115\157\x7a\151\x6c\154\x61") !== false && preg_match("\x2f\x53\150\x69\x72\145\x74\157\x6b\157\134\57\50\x5b\136\40\135\x2a\x29\57\x69", $this->agent, $meyiiwcswqmuggyg))) {
+            goto imaukawsimqgmauc;
+        }
+        goto ymykisoiiyyqeqim;
+        yasusgwwwekossyy:
+        return true;
+        goto isygymaiseqgeiau;
+        mcqqawkmqiiyecey:
+        $this->ikciowomiysyewgc(self::BROWSER_SHIRETOKO);
+        goto yasusgwwwekossyy;
+        isygymaiseqgeiau:
+        imaukawsimqgmauc:
+        goto keqsgkcumkusgygg;
+        eqsqecmiugakueqm:
+    }
+    
+    protected function noeygigqkeciickm()
+    {
+        goto cmwigsaskaamoema;
+        iyoukgscwmcoweqa:
+        $this->ikciowomiysyewgc(self::BROWSER_ICECAT);
+        goto yagoyoogqkomucci;
+        swuqimcsmiwqaaom:
+        return false;
+        goto eacseogmmqokmogu;
+        cmwigsaskaamoema:
+        if (!(stripos($this->agent, "\x4d\x6f\x7a\151\154\154\141") !== false && preg_match("\x2f\111\143\x65\x43\x61\164\x5c\57\50\x5b\x5e\x20\135\x2a\x29\x2f\151", $this->agent, $meyiiwcswqmuggyg))) {
+            goto ymqcqiyawcogwgym;
+        }
+        goto ecmeeksmaqyumykg;
+        kegmcwesswsaamum:
+        ymqcqiyawcogwgym:
+        goto swuqimcsmiwqaaom;
+        yagoyoogqkomucci:
+        return true;
+        goto kegmcwesswsaamum;
+        ecmeeksmaqyumykg:
+        $this->aasasueowyemuyoc($meyiiwcswqmuggyg[1]);
+        goto iyoukgscwmcoweqa;
+        eacseogmmqokmogu:
+    }
+    
+    protected function qcqikaemyysumcsu()
+    {
+        goto koakuemcskwaoesy;
+        cwyqqgwwmesmkiam:
+        $this->aasasueowyemuyoc($meyiiwcswqmuggyg[2]);
+        goto ssewsumymwocqyyc;
+        koakuemcskwaoesy:
+        if (!preg_match("\x2f\x4e\157\153\x69\x61\x28\x5b\x5e\134\x2f\135\53\x29\134\x2f\50\133\136\x20\123\x50\x5d\53\x29\x2f\x69", $this->agent, $meyiiwcswqmuggyg)) {
+            goto ycmiqcakcweakeaa;
+        }
+        goto cwyqqgwwmesmkiam;
+        ssewsumymwocqyyc:
+        if (stripos($this->agent, "\123\145\x72\x69\145\x73\66\x30") !== false || strpos($this->agent, "\x53\x36\x30") !== false) {
+            goto oswqmcgsewiscugq;
+        }
+        goto qgoyesykieqauwqi;
+        aaqekekaoaqgkiio:
+        ycmiqcakcweakeaa:
+        goto ogoiksimykeiuekg;
+        aesqewckgocaowoi:
+        goto guukcysyaquuekek;
+        goto gsguoieaewagyogs;
+        ocesuggkygmwyoqu:
+        guukcysyaquuekek:
+        goto amwwumeqoscyamoc;
+        gsguoieaewagyogs:
+        oswqmcgsewiscugq:
+        goto qskksaagcgukausc;
+        iimagwawmcgmaoga:
+        return true;
+        goto aaqekekaoaqgkiio;
+        qgoyesykieqauwqi:
+        $this->ikciowomiysyewgc(self::BROWSER_NOKIA);
+        goto aesqewckgocaowoi;
+        qskksaagcgukausc:
+        $this->ikciowomiysyewgc(self::BROWSER_NOKIA_S60);
+        goto ocesuggkygmwyoqu;
+        amwwumeqoscyamoc:
+        $this->eywockmuswoykooc(true);
+        goto iimagwawmcgmaoga;
+        ogoiksimykeiuekg:
+        return false;
+        goto aomicoqgwkaiosso;
+        aomicoqgwkaiosso:
+    }
+    
+    protected function eqkuicmgoaougagi()
+    {
+        goto eiwccayegouiekwk;
+        ycaskcwiywemgmay:
+        sgyogmewgaymcogg:
+        goto icmgwgoywmewyeii;
+        sqgomkiuekmaykyw:
+        goto sgyogmewgaymcogg;
+        goto ouseosmqaaykkaaw;
+        csgyceiomssoweek:
+        return true;
+        goto ycaskcwiywemgmay;
+        kuimgaokwkqogaqk:
+        if (preg_match("\57\120\x61\154\x65\x6d\x6f\157\x6e\x2f\x69", $this->agent, $meyiiwcswqmuggyg)) {
+            goto wusygegyegamyioq;
+        }
+        goto iuumwocuuoyceaks;
+        auaaassweykwwsge:
+        return true;
+        goto sqgomkiuekmaykyw;
+        qkymmwmmiemiauyg:
+        wusygegyegamyioq:
+        goto ykceeqicyiqgssye;
+        eoemqkmecwqsagce:
+        return true;
+        goto kigsuwkmaacmwgsq;
+        mimmumuekmyyyaug:
+        $this->aasasueowyemuyoc($meyiiwcswqmuggyg[1]);
+        goto awyuyuuiayqoekkc;
+        kigsuwkmaacmwgsq:
+        goto sgyogmewgaymcogg;
+        goto qkymmwmmiemiauyg;
+        icmgwgoywmewyeii:
+        ksqsiosguewggcya:
+        goto mocwcekscogegcwa;
+        awyuyuuiayqoekkc:
+        $this->ikciowomiysyewgc(self::BROWSER_PALEMOON);
+        goto eoemqkmecwqsagce;
+        acasskokyagwkumy:
+        if (preg_match("\57\120\x61\x6c\145\155\157\157\156\x5b\x5c\57\40\134\50\x5d\50\133\x5e\40\73\x5c\51\x5d\x2b\x29\x2f\151", $this->agent, $meyiiwcswqmuggyg)) {
+            goto omagiuciweiemoik;
+        }
+        goto osoyyysskuckoocc;
+        osoyyysskuckoocc:
+        if (preg_match("\x2f\120\x61\154\145\x6d\157\x6f\156\50\133\60\55\x39\x61\x2d\172\101\55\x5a\134\56\x5d\53\x29\x2f\151", $this->agent, $meyiiwcswqmuggyg)) {
+            goto uemcayqyeweiosqw;
+        }
+        goto kuimgaokwkqogaqk;
+        ykceeqicyiqgssye:
+        $this->aasasueowyemuyoc('');
+        goto qwmuiakauycoowya;
+        oewqywyeaueuiyes:
+        omagiuciweiemoik:
+        goto ssoogecumeaeekcs;
+        iuumwocuuoyceaks:
+        goto sgyogmewgaymcogg;
+        goto oewqywyeaueuiyes;
+        eiwccayegouiekwk:
+        if (!(stripos($this->agent, "\163\141\146\141\x72\151") === false)) {
+            goto ksqsiosguewggcya;
+        }
+        goto acasskokyagwkumy;
+        ssoogecumeaeekcs:
+        $this->aasasueowyemuyoc($meyiiwcswqmuggyg[1]);
+        goto ukeaeogwsoackkas;
+        qwmuiakauycoowya:
+        $this->ikciowomiysyewgc(self::BROWSER_PALEMOON);
+        goto csgyceiomssoweek;
+        ouseosmqaaykkaaw:
+        uemcayqyeweiosqw:
+        goto mimmumuekmyyyaug;
+        mocwcekscogegcwa:
+        return false;
+        goto aqewaqaseausoewg;
+        ukeaeogwsoackkas:
+        $this->ikciowomiysyewgc(self::BROWSER_PALEMOON);
+        goto auaaassweykwwsge;
+        aqewaqaseausoewg:
+    }
+    
+    protected function sukgiyywqmoigmom()
+    {
+        goto mogugiawmaoukmak;
+        weekemioaaygmggw:
+        return true;
+        goto ycgokycmgosuamok;
+        mgqmswesaekqqwiu:
+        $this->icigyueiiwsukmsu(true);
+        goto yuaommqaoiseeice;
+        ysmckuskoqmsyaca:
+        $this->aasasueowyemuyoc($meyiiwcswqmuggyg[1]);
+        goto qgeeiygkaaeqeaua;
+        cciuyoceqiauqsic:
+        ecsuogeauwascies:
+        goto oekaqqseuemcgeqe;
+        uuskeoeuumiigues:
+        $this->ikciowomiysyewgc(self::BROWSER_UCBROWSER);
+        goto weekemioaaygmggw;
+        mogugiawmaoukmak:
+        if (!preg_match("\x2f\125\103\x20\x3f\102\x72\x6f\x77\163\x65\162\134\57\x3f\50\x5b\x5c\x64\134\56\135\x2b\51\x2f", $this->agent, $meyiiwcswqmuggyg)) {
+            goto kyisocwmmwaiwayk;
+        }
+        goto ccokywiouwwmiwse;
+        qgeeiygkaaeqeaua:
+        aegamiyqqcwuqcyk:
+        goto qkmiokuccayckwiy;
+        yuaommqaoiseeice:
+        goto aoasogsaqgewacum;
+        goto cciuyoceqiauqsic;
+        qkmiokuccayckwiy:
+        if (stripos($this->agent, "\x4d\x6f\142\x69\154\x65") !== false) {
+            goto ecsuogeauwascies;
+        }
+        goto mgqmswesaekqqwiu;
+        ycgokycmgosuamok:
+        kyisocwmmwaiwayk:
+        goto mqweugciiyyukymg;
+        ccokywiouwwmiwse:
+        if (!isset($meyiiwcswqmuggyg[1])) {
+            goto aegamiyqqcwuqcyk;
+        }
+        goto ysmckuskoqmsyaca;
+        mqweugciiyyukymg:
+        return false;
+        goto meamoqcwwsqiyoqc;
+        oekaqqseuemcgeqe:
+        $this->eywockmuswoykooc(true);
+        goto ikcmeaikkuekumye;
+        ikcmeaikkuekumye:
+        aoasogsaqgewacum:
+        goto uuskeoeuumiigues;
+        meamoqcwwsqiyoqc:
+    }
+    
+    protected function qsseiqmmssqiuomm()
+    {
+        goto wamigcygcsucigmi;
+        mkyoiqgumggcsakq:
+        qcqqieuakcakkwem:
+        goto oakyyiqquqsccuks;
+        rkaswcmccyqqioqs:
+        gmcieuucmgkcoyii:
+        goto yseakuykcykcomwg;
+        yseikqceqguugaee:
+        wsmwmwswqaoeaquq:
+        goto uioaeuugwsakiykw;
+        uqsgmacmweuuwqgy:
+        if (preg_match("\x2f\x46\151\162\x65\x66\157\x78\50\x5b\60\55\71\x61\x2d\172\101\55\x5a\134\56\x5d\x2b\51\57\x69", $this->agent, $meyiiwcswqmuggyg)) {
+            goto mmeumymqusiaiugs;
+        }
+        goto qogciqauggmmigia;
+        ewoywsgmimyigwai:
+        
+        if (!(stripos($this->agent, "\x41\156\144\162\x6f\151\144") !== false || stripos($this->agent, "\x69\120\x68\x6f\x6e\145") !== false)) {
+            goto gmcieuucmgkcoyii;
+        }
+        goto smyugaykeesyuakw;
+        cwoaoecuqyiccwcw:
+        $this->ikciowomiysyewgc(self::BROWSER_FIREFOX);
+        goto wqmeugomsqagioak;
+        yggwmccmmiemueou:
+        akqgwckwiiugwiay:
+        goto cqouacqmcegmykuu;
+        imimwegqkykucuia:
+        return true;
+        goto iksugmewgigsiaec;
+        qegwssscaomyoekg:
+        $this->icigyueiiwsukmsu(true);
+        goto yysucuowuoiskkui;
+        wamigcygcsucigmi:
+        if (stripos($this->agent, "\163\141\146\141\x72\x69") === false) {
+            goto swusuwwawauqqqae;
+        }
+        goto qmcmakumyemsuoaa;
+        koomcmawyuomqmii:
+        qmssaeiomssoycas:
+        goto smeqeomcqisgssau;
+        smyugaykeesyuakw:
+        if (stripos($this->agent, "\115\157\x62\151\154\x65") !== false || stripos($this->agent, "\x54\141\x62\x6c\x65\164") !== false) {
+            goto wsmwmwswqaoeaquq;
+        }
+        goto uqemmmykkceucwum;
+        smeqeomcqisgssau:
+        $this->aasasueowyemuyoc($meyiiwcswqmuggyg[1]);
+        goto osioeeokiykiemau;
+        ywimuqyysmaggeum:
+        
+        if (!(stripos($this->agent, "\x41\156\144\x72\x6f\151\x64") !== false || stripos($this->agent, "\x69\120\x68\x6f\156\145") !== false)) {
+            goto qgocscwqkuyemmcw;
+        }
+        goto iaksmguwicewykey;
+        iaumckssomaweakk:
+        if (preg_match("\57\x46\x69\x72\x65\146\x6f\170\x5b\x5c\57\x20\x5c\x28\135\x28\x5b\136\40\x3b\x5c\x29\x5d\53\51\x2f\x69", $this->agent, $meyiiwcswqmuggyg)) {
+            goto yuqemymykuasskoy;
+        }
+        goto uqsgmacmweuuwqgy;
+        yysucuowuoiskkui:
+        goto akqgwckwiiugwiay;
+        goto wguwcgascccyeasu;
+        qmcmakumyemsuoaa:
+        if (preg_match("\x2f\x46\170\x69\117\123\133\134\x2f\x20\134\x28\x5d\50\133\136\x20\x3b\134\51\135\53\x29\57\151", $this->agent, $meyiiwcswqmuggyg)) {
+            goto qmssaeiomssoycas;
+        }
+        goto kgwewosygiuoiigk;
+        iksugmewgigsiaec:
+        oiuiwkywiekacygs:
+        goto ewqooaykuauegwio;
+        iwmsiaqgccqqkgcc:
+        waqwkysqcskykuum:
+        goto wcosggqmokuwgomy;
+        aomoesqmwqcyueoa:
+        $this->eywockmuswoykooc(true);
+        goto yggwmccmmiemueou;
+        osioeeokiykiemau:
+        $this->ikciowomiysyewgc(self::BROWSER_FIREFOX);
+        goto ywimuqyysmaggeum;
+        gsiigogemgmesycs:
+        mmeumymqusiaiugs:
+        goto oqqooygakaagaiqw;
+        iaksmguwicewykey:
+        if (stripos($this->agent, "\115\157\142\x69\154\x65") !== false || stripos($this->agent, "\124\141\x62\x6c\x65\x74") !== false) {
+            goto kscocsoaygkcaocq;
+        }
+        goto qegwssscaomyoekg;
+        ewqooaykuauegwio:
+        return false;
+        goto jimwweuekesuemiy;
+        wqmeugomsqagioak:
+        return true;
+        goto iwmsiaqgccqqkgcc;
+        qaqckwcumcykqcay:
+        $this->ikciowomiysyewgc(self::BROWSER_FIREFOX);
+        goto giiusoakskiciase;
+        oakyyiqquqsccuks:
+        $this->aasasueowyemuyoc('');
+        goto cwoaoecuqyiccwcw;
+        giiusoakskiciase:
+        return true;
+        goto wkeeueuiysyiqaoq;
+        qogciqauggmmigia:
+        if (preg_match("\57\x46\151\162\145\146\x6f\170\44\x2f\x69", $this->agent, $meyiiwcswqmuggyg)) {
+            goto qcqqieuakcakkwem;
+        }
+        goto semoayicskccgemw;
+        koiuecgmeyuiwqkk:
+        aeecqkykiqyuqmyg:
+        goto rkaswcmccyqqioqs;
+        uiskkgkcyssegigy:
+        goto waqwkysqcskykuum;
+        goto gsiigogemgmesycs;
+        wkeeueuiysyiqaoq:
+        goto waqwkysqcskykuum;
+        goto mkyoiqgumggcsakq;
+        mqqqqeiimsgyacaw:
+        swusuwwawauqqqae:
+        goto iaumckssomaweakk;
+        oqqooygakaagaiqw:
+        $this->aasasueowyemuyoc($meyiiwcswqmuggyg[1]);
+        goto qaqckwcumcykqcay;
+        aaymugikaeaqsaos:
+        $this->ikciowomiysyewgc(self::BROWSER_FIREFOX);
+        goto ewoywsgmimyigwai;
+        ouigaoeeokmqaqoe:
+        yuqemymykuasskoy:
+        goto myycwmecoyeekeus;
+        wguwcgascccyeasu:
+        kscocsoaygkcaocq:
+        goto aomoesqmwqcyueoa;
+        wcosggqmokuwgomy:
+        goto oiuiwkywiekacygs;
+        goto koomcmawyuomqmii;
+        cqouacqmcegmykuu:
+        qgocscwqkuyemmcw:
+        goto imimwegqkykucuia;
+        uioaeuugwsakiykw:
+        $this->eywockmuswoykooc(true);
+        goto koiuecgmeyuiwqkk;
+        myycwmecoyeekeus:
+        $this->aasasueowyemuyoc($meyiiwcswqmuggyg[1]);
+        goto aaymugikaeaqsaos;
+        kgwewosygiuoiigk:
+        goto oiuiwkywiekacygs;
+        goto mqqqqeiimsgyacaw;
+        euoqiuygwwssoqou:
+        goto aeecqkykiqyuqmyg;
+        goto yseikqceqguugaee;
+        semoayicskccgemw:
+        goto waqwkysqcskykuum;
+        goto ouigaoeeokmqaqoe;
+        uqemmmykkceucwum:
+        $this->icigyueiiwsukmsu(true);
+        goto euoqiuygwwssoqou;
+        yseakuykcykcomwg:
+        return true;
+        goto uiskkgkcyssegigy;
+        jimwweuekesuemiy:
+    }
+    
+    protected function akwueocamkykcwyy()
+    {
+        goto omygyywamgusigko;
+        akkuysmcasqukkug:
+        return false;
+        goto gaqigeacswyyikkk;
+        seyoowocwsqsekqi:
+        $quiguswioiaaywey = explode("\x20", $yikciqwsimweauyg[1]);
+        goto yoqwqkuekiauqsuc;
+        miwaaaueiacyqequ:
+        ywgwuqyisimkacqe:
+        goto baqgcseewusocmom;
+        gouiskmmqywoscgm:
+        $yikciqwsimweauyg = explode("\57", stristr($this->agent, "\111\x63\x65\167\x65\x61\163\x65\x6c"));
+        goto uwcawmmgcaecgyqm;
+        yoqwqkuekiauqsuc:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto wousqisikkiooewi;
+        omygyywamgusigko:
+        if (!(stripos($this->agent, "\111\x63\145\x77\x65\x61\x73\x65\154") !== false)) {
+            goto iioueceaesegmgyi;
+        }
+        goto gouiskmmqywoscgm;
+        uwcawmmgcaecgyqm:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto ywgwuqyisimkacqe;
+        }
+        goto seyoowocwsqsekqi;
+        wwamkekgkkiogiiu:
+        return true;
+        goto miwaaaueiacyqequ;
+        baqgcseewusocmom:
+        iioueceaesegmgyi:
+        goto akkuysmcasqukkug;
+        wousqisikkiooewi:
+        $this->ikciowomiysyewgc(self::BROWSER_ICEWEASEL);
+        goto wwamkekgkkiogiiu;
+        gaqigeacswyyikkk:
+    }
+    
+    protected function aowooqokikgeegkm()
+    {
+        goto sgwiageicumuqwke;
+        qwyameqoseiywwus:
+        preg_match("\x2f\x72\x76\x3a\133\60\55\x39\135\56\133\60\55\x39\x5d\133\141\55\142\x5d\x3f\57\x69", $this->agent, $quiguswioiaaywey);
+        goto wwmqgecmsimuecam;
+        gqaiguosioisccwm:
+        cskgiyqesqqawuwo:
+        goto qwwscygkwwsiocok;
+        sgwiageicumuqwke:
+        if (stripos($this->agent, "\x6d\157\172\x69\154\154\x61") !== false && preg_match("\x2f\162\x76\72\133\60\55\x39\x5d\56\133\x30\x2d\x39\x5d\x5b\x61\x2d\142\135\x3f\x2f\x69", $this->agent) && stripos($this->agent, "\x6e\145\x74\163\x63\x61\x70\x65") === false) {
+            goto sqsgeccoawoeukws;
+        }
+        goto coyskeyoikeaqoek;
+        ngeuswkcwioygkku:
+        yqyyssciomuwwisa:
+        goto oymsgiwgeiqguuyy;
+        wgcmsygycukiqmui:
+        return true;
+        goto kaycawgquiieeaiw;
+        mmomogyaswcsgwwy:
+        $quiguswioiaaywey = explode("\x20", stristr($this->agent, "\x72\x76\x3a"));
+        goto qwyameqoseiywwus;
+        amksqwmicsmyocyw:
+        return true;
+        goto wcaiuquuswsqacgg;
+        oymsgiwgeiqguuyy:
+        $quiguswioiaaywey = explode('', stristr($this->agent, "\x72\x76\72"));
+        goto ygoomqwcsggeiuge;
+        amcioyyyuiigekuo:
+        if (stripos($this->agent, "\x6d\157\172\151\x6c\x6c\x61") !== false && preg_match("\57\x6d\x6f\x7a\151\154\154\141\134\x2f\50\133\x5e\x20\x5d\x2a\x29\57\151", $this->agent, $meyiiwcswqmuggyg) && stripos($this->agent, "\x6e\145\x74\x73\143\x61\x70\145") === false) {
+            goto cskgiyqesqqawuwo;
+        }
+        goto kmwseockoawqkoao;
+        qwwscygkwwsiocok:
+        $this->aasasueowyemuyoc($meyiiwcswqmuggyg[1]);
+        goto wggeuckgywqucase;
+        wcaiuquuswsqacgg:
+        goto qagasowcequukwoc;
+        goto gqaiguosioisccwm;
+        ygoomqwcsggeiuge:
+        $this->aasasueowyemuyoc(str_replace("\162\166\72", '', $quiguswioiaaywey[0]));
+        goto qkqwgsoymmqsqeim;
+        qkqwgsoymmqsqeim:
+        $this->ikciowomiysyewgc(self::BROWSER_MOZILLA);
+        goto amksqwmicsmyocyw;
+        kaycawgquiieeaiw:
+        goto qagasowcequukwoc;
+        goto ngeuswkcwioygkku;
+        usmieesmayeskkmk:
+        sqsgeccoawoeukws:
+        goto mmomogyaswcsgwwy;
+        wggeuckgywqucase:
+        $this->ikciowomiysyewgc(self::BROWSER_MOZILLA);
+        goto seggycoceaokwcsa;
+        seggycoceaokwcsa:
+        return true;
+        goto iqmgswgoooqkkigo;
+        aoosuewasqmmyqoi:
+        return false;
+        goto kwuakeywaocokwig;
+        wwmqgecmsimuecam:
+        $this->aasasueowyemuyoc(str_replace("\x72\166\x3a", '', $quiguswioiaaywey[0]));
+        goto escuksewiugekayq;
+        coyskeyoikeaqoek:
+        if (stripos($this->agent, "\x6d\x6f\x7a\151\x6c\154\x61") !== false && preg_match("\x2f\162\166\x3a\x5b\60\55\x39\135\x5c\56\x5b\x30\x2d\x39\135\x2f\151", $this->agent) && stripos($this->agent, "\156\x65\164\x73\143\x61\160\x65") === false) {
+            goto yqyyssciomuwwisa;
+        }
+        goto amcioyyyuiigekuo;
+        escuksewiugekayq:
+        $this->ikciowomiysyewgc(self::BROWSER_MOZILLA);
+        goto wgcmsygycukiqmui;
+        kmwseockoawqkoao:
+        goto qagasowcequukwoc;
+        goto usmieesmayeskkmk;
+        iqmgswgoooqkkigo:
+        qagasowcequukwoc:
+        goto aoosuewasqmmyqoi;
+        kwuakeywaocokwig:
+    }
+    
+    protected function mqsiuucsqqyuwcuw()
+    {
+        goto yewmigswwuewyqki;
+        gokkyeisqkoccqis:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto ymmqwacaoayoyiei;
+        wgsqeuaooemcuqqu:
+        wowiaueqaaqckwqq:
+        goto wwqoywoqcyikouca;
+        aqcucyeikgmemsoq:
+        return true;
+        goto wgsqeuaooemcuqqu;
+        ciimuiiegyeaggya:
+        $quiguswioiaaywey = explode("\x20", isset($yikciqwsimweauyg[1]) ? $yikciqwsimweauyg[1] : '');
+        goto gokkyeisqkoccqis;
+        guwmgkcgaoysewyw:
+        $yikciqwsimweauyg = explode("\57", stristr($this->agent, "\114\171\156\x78"));
+        goto ciimuiiegyeaggya;
+        yewmigswwuewyqki:
+        if (!(stripos($this->agent, "\154\x79\x6e\x78") !== false)) {
+            goto wowiaueqaaqckwqq;
+        }
+        goto guwmgkcgaoysewyw;
+        wwqoywoqcyikouca:
+        return false;
+        goto qyogimcocyqgyyee;
+        ymmqwacaoayoyiei:
+        $this->ikciowomiysyewgc(self::BROWSER_LYNX);
+        goto aqcucyeikgmemsoq;
+        qyogimcocyqgyyee:
+    }
+    
+    protected function usemqkymaguiocgy()
+    {
+        goto usaooeqiaewcmyog;
+        qmycieyiysuesagy:
+        return true;
+        goto wgiwseywikgwumwe;
+        gseqciagemceawam:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto ikiegwiqykqwuykk;
+        kmagwqsioegswiqk:
+        $yikciqwsimweauyg = explode("\x2f", stristr($this->agent, "\101\155\141\x79\x61"));
+        goto kuegskyiyugiuosa;
+        uaigiceqkuiguogo:
+        $quiguswioiaaywey = explode("\40", $yikciqwsimweauyg[1]);
+        goto gseqciagemceawam;
+        egqqigmomgaaamqc:
+        return false;
+        goto agiiusmyqqkgqymk;
+        wgiwseywikgwumwe:
+        aksacseyuwyiseay:
+        goto rkoyiagmcaycmwmg;
+        rkoyiagmcaycmwmg:
+        sgaqioqcecwgyikg:
+        goto egqqigmomgaaamqc;
+        ikiegwiqykqwuykk:
+        $this->ikciowomiysyewgc(self::BROWSER_AMAYA);
+        goto qmycieyiysuesagy;
+        kuegskyiyugiuosa:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto aksacseyuwyiseay;
+        }
+        goto uaigiceqkuiguogo;
+        usaooeqiaewcmyog:
+        if (!(stripos($this->agent, "\x61\x6d\x61\x79\141") !== false)) {
+            goto sgaqioqcecwgyikg;
+        }
+        goto kmagwqsioegswiqk;
+        agiiusmyqqkgqymk:
+    }
+    
+    protected function qcswwmqaioswesoq()
+    {
+        goto ksogiaquuskeygaq;
+        igsmwamoyswayqiy:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto gyomccegicuoyguk;
+        aygkuykcicgceciq:
+        $yikciqwsimweauyg = explode("\57", stristr($this->agent, "\x56\145\162\x73\151\x6f\x6e"));
+        goto kiocmmsiuwcuemyg;
+        mgqockcuascmkosg:
+        kiqiskyesywkwkos:
+        goto qiocyqceaiyiakii;
+        qiocyqceaiyiakii:
+        return false;
+        goto qqaeaoygygacuuos;
+        gyomccegicuoyguk:
+        cwycmkkoscmgcecg:
+        goto mquksyyawiwsakwy;
+        cguuomiqwuicsgwa:
+        $this->aasasueowyemuyoc(self::VERSION_UNKNOWN);
+        goto yqggmewmakemgkui;
+        ksogiaquuskeygaq:
+        if (!(stripos($this->agent, "\x53\141\x66\x61\x72\151") !== false && stripos($this->agent, "\x69\x50\150\x6f\x6e\x65") === false && stripos($this->agent, "\151\120\x6f\144") === false)) {
+            goto kiqiskyesywkwkos;
+        }
+        goto aygkuykcicgceciq;
+        coosgwiiekamiyug:
+        return true;
+        goto mgqockcuascmkosg;
+        kiocmmsiuwcuemyg:
+        if (isset($yikciqwsimweauyg[1])) {
+            goto iammommmgkimyyaa;
+        }
+        goto cguuomiqwuicsgwa;
+        yqggmewmakemgkui:
+        goto cwycmkkoscmgcecg;
+        goto qoguisoimaueiaoo;
+        mquksyyawiwsakwy:
+        $this->ikciowomiysyewgc(self::BROWSER_SAFARI);
+        goto coosgwiiekamiyug;
+        eowkmiqqmqyeayci:
+        $quiguswioiaaywey = explode("\x20", $yikciqwsimweauyg[1]);
+        goto igsmwamoyswayqiy;
+        qoguisoimaueiaoo:
+        iammommmgkimyyaa:
+        goto eowkmiqqmqyeayci;
+        qqaeaoygygacuuos:
+    }
+    protected function yswggmyigakcackc()
+    {
+        goto agsoqikgikksqkom;
+        ameeyqiguwmykwai:
+        mokuaeasioyuisqs:
+        goto eswswyigkwqaaasy;
+        gmeiquwcawwmowwm:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto ameeyqiguwmykwai;
+        uogoykaeoysgmism:
+        $this->aasasueowyemuyoc(self::VERSION_UNKNOWN);
+        goto eoewsuaewaeueaks;
+        agsoqikgikksqkom:
+        if (!(stripos($this->agent, "\123\x61\x6d\163\165\x6e\147\102\162\157\167\163\x65\x72") !== false)) {
+            goto umacsiiqmwygcycu;
+        }
+        goto iscqcsqyqkmkgkag;
+        ckgoiwueekyamwcu:
+        return false;
+        goto uusaeowyacskgumg;
+        eswswyigkwqaaasy:
+        $this->ikciowomiysyewgc(self::BROWSER_SAMSUNG);
+        goto mcukkaquiosmsguy;
+        usaokwsyegousimg:
+        umacsiiqmwygcycu:
+        goto ckgoiwueekyamwcu;
+        qscgsguyqggkagoe:
+        wasmuqumoqqcmgys:
+        goto awceesgmgquwakuu;
+        skkmiiyukuqmiimc:
+        if (isset($yikciqwsimweauyg[1])) {
+            goto wasmuqumoqqcmgys;
+        }
+        goto uogoykaeoysgmism;
+        mcukkaquiosmsguy:
+        return true;
+        goto usaokwsyegousimg;
+        eoewsuaewaeueaks:
+        goto mokuaeasioyuisqs;
+        goto qscgsguyqggkagoe;
+        awceesgmgquwakuu:
+        $quiguswioiaaywey = explode("\40", $yikciqwsimweauyg[1]);
+        goto gmeiquwcawwmowwm;
+        iscqcsqyqkmkgkag:
+        $yikciqwsimweauyg = explode("\x2f", stristr($this->agent, "\123\141\155\163\x75\x6e\147\102\162\157\x77\x73\145\162"));
+        goto skkmiiyukuqmiimc;
+        uusaeowyacskgumg:
+    }
+    protected function uiwkymoksesuumwe()
+    {
+        goto siyeyakoauowwose;
+        kkweuygueeaqsksg:
+        $quiguswioiaaywey = explode("\x20", $yikciqwsimweauyg[1]);
+        goto iyqmmwymomwqiqaw;
+        iyqmmwymomwqiqaw:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto yaowkqscayqikmck;
+        siyeyakoauowwose:
+        if (!(stripos($this->agent, "\x53\151\154\153") !== false)) {
+            goto kwkcmwgyiwyacywi;
+        }
+        goto eaawsaueyyoiqoao;
+        ymqwkscegcogqqwy:
+        return false;
+        goto oayqqymykwwugkwe;
+        gwigmqemwuqewiae:
+        eoeoqacqgmumwcuk:
+        goto kkweuygueeaqsksg;
+        uieyawsyauemyqgy:
+        $this->ikciowomiysyewgc(self::BROWSER_SILK);
+        goto uciuogooymiyqyao;
+        uciuogooymiyqyao:
+        return true;
+        goto msmouyoaqcwsasuw;
+        yaowkqscayqikmck:
+        wmssuwyesuyeiows:
+        goto uieyawsyauemyqgy;
+        eaawsaueyyoiqoao:
+        $yikciqwsimweauyg = explode("\57", stristr($this->agent, "\123\151\x6c\x6b"));
+        goto eyimkecocwsicyge;
+        eyimkecocwsicyge:
+        if (isset($yikciqwsimweauyg[1])) {
+            goto eoeoqacqgmumwcuk;
+        }
+        goto ooswoacocwcgoagc;
+        ooswoacocwcgoagc:
+        $this->aasasueowyemuyoc(self::VERSION_UNKNOWN);
+        goto kyqewaqymicucwuc;
+        kyqewaqymicucwuc:
+        goto wmssuwyesuyeiows;
+        goto gwigmqemwuqewiae;
+        msmouyoaqcwsasuw:
+        kwkcmwgyiwyacywi:
+        goto ymqwkscegcogqqwy;
+        oayqqymykwwugkwe:
+    }
+    protected function cgqcukygysieeqko()
+    {
+        goto gyoiekqiqwwquomc;
+        ocoaeuqqauqewyig:
+        ugsumemcqucesssg:
+        goto mksgcawyikcceiqa;
+        gyoiekqiqwwquomc:
+        if (!(stripos($this->agent, "\x49\146\162\141\155\x65\x6c\x79") !== false)) {
+            goto ugsumemcqucesssg;
+        }
+        goto cqayoeygyqqamquk;
+        mksgcawyikcceiqa:
+        return false;
+        goto gkaykeoacgugeumu;
+        ksswuscweggkeiko:
+        qewckkocqykmeywg:
+        goto qsoukmmoqeuqsoee;
+        eiiemassiceeqmeq:
+        $quiguswioiaaywey = explode("\40", $yikciqwsimweauyg[1]);
+        goto sgwucycigkyieoea;
+        sgwucycigkyieoea:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto ksswuscweggkeiko;
+        iieeiugaeeqyaqok:
+        wwwqiimkicqiuwui:
+        goto eiiemassiceeqmeq;
+        cqayoeygyqqamquk:
+        $yikciqwsimweauyg = explode("\x2f", stristr($this->agent, "\x49\x66\162\x61\155\x65\154\171"));
+        goto cmowiicqgqiakqem;
+        qsoukmmoqeuqsoee:
+        $this->ikciowomiysyewgc(self::BROWSER_I_FRAME);
+        goto ukiiyimwmgiqisca;
+        qsqskaukgysseokg:
+        $this->aasasueowyemuyoc(self::VERSION_UNKNOWN);
+        goto seswyksiukyeqkqc;
+        cmowiicqgqiakqem:
+        if (isset($yikciqwsimweauyg[1])) {
+            goto wwwqiimkicqiuwui;
+        }
+        goto qsqskaukgysseokg;
+        seswyksiukyeqkqc:
+        goto qewckkocqykmeywg;
+        goto iieeiugaeeqyaqok;
+        ukiiyimwmgiqisca:
+        return true;
+        goto ocoaeuqqauqewyig;
+        gkaykeoacgugeumu:
+    }
+    protected function ccaaioyauuuuyikg()
+    {
+        goto sgsaqgwgakicwckk;
+        eiqmqaiyewsgyois:
+        $yikciqwsimweauyg = explode("\x2f", stristr($this->agent, "\103\x6f\143\157\141\x52\145\x73\164\x43\x6c\x69\x65\x6e\x74"));
+        goto wekysuykykiweqms;
+        jawaweyeoaoueooa:
+        yksmaaesmwecwoak:
+        goto wayscwykqcwqgqyi;
+        yieeukyoaeioqock:
+        return true;
+        goto jawaweyeoaoueooa;
+        kacseggomkeowiqm:
+        $this->aasasueowyemuyoc(self::VERSION_UNKNOWN);
+        goto iaiekaygcqmocmee;
+        kewymgqeemiuewca:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto scooeumumiwmgowm;
+        wekysuykykiweqms:
+        if (isset($yikciqwsimweauyg[1])) {
+            goto uuqskowyckcgagkc;
+        }
+        goto kacseggomkeowiqm;
+        iaiekaygcqmocmee:
+        goto wwyeoccuqgcgcuuc;
+        goto wguukissuqyuqeku;
+        wayscwykqcwqgqyi:
+        return false;
+        goto ccsysoygswagacce;
+        scooeumumiwmgowm:
+        wwyeoccuqgcgcuuc:
+        goto eyowigugugmmkeiw;
+        wguukissuqyuqeku:
+        uuqskowyckcgagkc:
+        goto ggwywcekieoyeuya;
+        sgsaqgwgakicwckk:
+        if (!(stripos($this->agent, "\103\157\143\x6f\141\122\145\163\x74\103\x6c\x69\x65\x6e\x74") !== false)) {
+            goto yksmaaesmwecwoak;
+        }
+        goto eiqmqaiyewsgyois;
+        ggwywcekieoyeuya:
+        $quiguswioiaaywey = explode("\x20", $yikciqwsimweauyg[1]);
+        goto kewymgqeemiuewca;
+        eyowigugugmmkeiw:
+        $this->ikciowomiysyewgc(self::BROWSER_COCOA);
+        goto yieeukyoaeioqock;
+        ccsysoygswagacce:
+    }
+    
+    protected function ksikmmeqsuycsqck()
+    {
+        goto kycikakmkwkieqwk;
+        qkgkkwcagegkwkwi:
+        $this->aasmeayouwmacaow(true);
+        goto oioqgywuoiaisyuu;
+        essqemwiweimukwe:
+        kgecmyesgkacyyqm:
+        goto uuqaakyqgqwiiwom;
+        oioqgywuoiaisyuu:
+        $this->oqgqmcogeugkakss(true);
+        goto iqymaeimsmwkkkie;
+        iqymaeimsmwkkkie:
+        return true;
+        goto essqemwiweimukwe;
+        uuqaakyqgqwiiwom:
+        return false;
+        goto yiamqaqsueaiqwuq;
+        kycikakmkwkieqwk:
+        if (!stristr($this->agent, "\106\141\143\x65\x62\x6f\x6f\x6b\x45\170\164\x65\x72\156\x61\154\x48\151\164")) {
+            goto kgecmyesgkacyyqm;
+        }
+        goto qkgkkwcagegkwkwi;
+        yiamqaqsueaiqwuq:
+    }
+    
+    protected function ssquiwqwwcgcqiic()
+    {
+        goto mkumickumqmmkiqc;
+        cwcuamqicskkmuyg:
+        $this->oqgqmcogeugkakss(true);
+        goto qugekewwywkuiqyk;
+        gsyquwaygesygkiq:
+        return false;
+        goto keyciqmuisymkgcw;
+        qwmyieguwoysqegw:
+        mceeomsqguaacseg:
+        goto gsyquwaygesygkiq;
+        qugekewwywkuiqyk:
+        return true;
+        goto qwmyieguwoysqegw;
+        mkumickumqmmkiqc:
+        if (!stristr($this->agent, "\106\102\111\117\123")) {
+            goto mceeomsqguaacseg;
+        }
+        goto cwcuamqicskkmuyg;
+        keyciqmuisymkgcw:
+    }
+    
+    protected function uewoqoqkekmsyoeo()
+    {
+        goto aiyqwwuiayikques;
+        ggqwsgmqqyaicosm:
+        $quiguswioiaaywey = explode("\40", $yikciqwsimweauyg[1]);
+        goto iieymwaigukwymsc;
+        aiyqwwuiayikques:
+        $yikciqwsimweauyg = explode("\x2f", stristr($this->agent, "\x56\x65\162\x73\151\x6f\x6e"));
+        goto swgqwkyuwoqeyeyu;
+        mcqygaykwaaseack:
+        return true;
+        goto aukkqqimoumiiccy;
+        iieymwaigukwymsc:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto mcqygaykwaaseack;
+        swgqwkyuwoqeyeyu:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto moyywqqiasmyoscc;
+        }
+        goto ggqwsgmqqyaicosm;
+        raigmgqaksaqoosc:
+        return false;
+        goto ascewisaoqauaymk;
+        aukkqqimoumiiccy:
+        moyywqqiasmyoscc:
+        goto raigmgqaksaqoosc;
+        ascewisaoqauaymk:
+    }
+    
+    protected function iqsiguacookiqwcs()
+    {
+        goto iwoquisgaegiocss;
+        yuyccgsguyaaygmu:
+        return true;
+        goto smagqkegqiooysya;
+        yccweyyksqycwuqi:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto kcckgokmwuywmaiw;
+        }
+        goto qoamoegiiwismakk;
+        oakguomioocmeiia:
+        $this->ikciowomiysyewgc(self::BROWSER_CHROME);
+        goto yuyccgsguyaaygmu;
+        wqswcaeeyeaqieom:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto oakguomioocmeiia;
+        qoamoegiiwismakk:
+        $quiguswioiaaywey = explode("\x20", $yikciqwsimweauyg[1]);
+        goto wqswcaeeyeaqieom;
+        eiissuweooqsaauy:
+        return false;
+        goto kakgceiyakaueuww;
+        smagqkegqiooysya:
+        kcckgokmwuywmaiw:
+        goto eiissuweooqsaauy;
+        iwoquisgaegiocss:
+        $yikciqwsimweauyg = explode("\57", stristr($this->agent, "\x43\162\x69\117\123"));
+        goto yccweyyksqycwuqi;
+        kakgceiyakaueuww:
+    }
+    
+    protected function iaacgcgmmegamkiu()
+    {
+        goto mmuomyiooicyqscg;
+        emaeckumgkmgcaew:
+        $this->eywockmuswoykooc(true);
+        goto wiamyucsaoosmoei;
+        iiwmmqqaqckwwiqe:
+        uqieceoogswuggos:
+        goto oqqscigyquseosya;
+        eusmcuqiciwcooss:
+        $this->uewoqoqkekmsyoeo();
+        goto gamusuoqieekieka;
+        wiamyucsaoosmoei:
+        return true;
+        goto iiwmmqqaqckwwiqe;
+        mmuomyiooicyqscg:
+        if (!(stripos($this->agent, "\x69\120\x68\157\156\x65") !== false)) {
+            goto uqieceoogswuggos;
+        }
+        goto yegcwkkemkycyuua;
+        gamusuoqieekieka:
+        $this->iqsiguacookiqwcs();
+        goto dwyqyusgqwqwomqk;
+        wuoaeksukwwaycoi:
+        $this->ikciowomiysyewgc(self::BROWSER_IPHONE);
+        goto eusmcuqiciwcooss;
+        dwyqyusgqwqwomqk:
+        $this->ssquiwqwwcgcqiic();
+        goto emaeckumgkmgcaew;
+        oqqscigyquseosya:
+        return false;
+        goto akqsaiecouuqacks;
+        yegcwkkemkycyuua:
+        $this->aasasueowyemuyoc(self::VERSION_UNKNOWN);
+        goto wuoaeksukwwaycoi;
+        akqsaiecouuqacks:
+    }
+    
+    protected function ciawmegkaaacmoew()
+    {
+        goto cucsooyoayssmcas;
+        ayqocaaesmkygque:
+        return true;
+        goto usaseckaaaugcygu;
+        usaseckaaaugcygu:
+        ysoiwegyoqymuuek:
+        goto muouqwckwywsgiwg;
+        ckguemuwukmeycag:
+        $this->icigyueiiwsukmsu(true);
+        goto ayqocaaesmkygque;
+        qyskykugeiqkauce:
+        $this->uewoqoqkekmsyoeo();
+        goto cguckckouuwacmow;
+        mkywwqusckeeisiy:
+        $this->aasasueowyemuyoc(self::VERSION_UNKNOWN);
+        goto qskoquwmkkgkkmuy;
+        cucsooyoayssmcas:
+        if (!(stripos($this->agent, "\x69\120\141\x64") !== false)) {
+            goto ysoiwegyoqymuuek;
+        }
+        goto mkywwqusckeeisiy;
+        cguckckouuwacmow:
+        $this->iqsiguacookiqwcs();
+        goto wacgcmsgismsomma;
+        wacgcmsgismsomma:
+        $this->ssquiwqwwcgcqiic();
+        goto ckguemuwukmeycag;
+        qskoquwmkkgkkmuy:
+        $this->ikciowomiysyewgc(self::BROWSER_IPAD);
+        goto qyskykugeiqkauce;
+        muouqwckwywsgiwg:
+        return false;
+        goto qquimmcqqiyegcym;
+        qquimmcqqiyegcym:
+    }
+    
+    protected function cysskoyaouegkmky()
+    {
+        goto ouaokeyacuscccyu;
+        ymcqcaygueguiuig:
+        return false;
+        goto eiwuwemqmigskwoe;
+        iwwouqosmwummgsi:
+        return true;
+        goto wygcwcywyeosuemq;
+        wsiggqyeiueeyqyu:
+        $this->ikciowomiysyewgc(self::BROWSER_IPOD);
+        goto ikcsgymqsagymgco;
+        osygawsacakgggko:
+        $this->eywockmuswoykooc(true);
+        goto iwwouqosmwummgsi;
+        eeqsuowcmyeyuoqw:
+        $this->iqsiguacookiqwcs();
+        goto auaukkuskuciowkq;
+        auaukkuskuciowkq:
+        $this->ssquiwqwwcgcqiic();
+        goto osygawsacakgggko;
+        iywyeuaaoaeymmag:
+        $this->aasasueowyemuyoc(self::VERSION_UNKNOWN);
+        goto wsiggqyeiueeyqyu;
+        wygcwcywyeosuemq:
+        qkeuasieckwuqseq:
+        goto ymcqcaygueguiuig;
+        ouaokeyacuscccyu:
+        if (!(stripos($this->agent, "\x69\x50\157\144") !== false)) {
+            goto qkeuasieckwuqseq;
+        }
+        goto iywyeuaaoaeymmag;
+        ikcsgymqsagymgco:
+        $this->uewoqoqkekmsyoeo();
+        goto eeqsuowcmyeyuoqw;
+        eiwuwemqmigskwoe:
+    }
+    
+    protected function oomuqgqyykuccewm()
+    {
+        goto kuqeksgikkymkyeo;
+        gosqmqqycwquosse:
+        goto oqoyyooooyegowuk;
+        goto cwgiecqggoksyuko;
+        gkkogauyaimaaoky:
+        $this->aasasueowyemuyoc(self::VERSION_UNKNOWN);
+        goto akocagcmqwymsqqw;
+        kuqeksgikkymkyeo:
+        if (!(stripos($this->agent, "\101\156\x64\x72\157\151\x64") !== false)) {
+            goto kggwwgeqkgwyoseq;
+        }
+        goto aogimqgcygkugqoc;
+        kekiekeeqkowaiga:
+        $this->eywockmuswoykooc(true);
+        goto wscoawgsgqekweuq;
+        wqmmaiwyoumwmiyi:
+        return true;
+        goto oaoaskeocoucoaes;
+        akocagcmqwymsqqw:
+        goto soqmkkwmmkqiweau;
+        goto ckyyyqokcocsmium;
+        aogimqgcygkugqoc:
+        $yikciqwsimweauyg = explode("\40", stristr($this->agent, "\x41\x6e\144\x72\157\x69\144"));
+        goto kwmkgoegswsseyia;
+        ckyyyqokcocsmium:
+        wwiysyawwqeuikcc:
+        goto qioeweaouoiyoayy;
+        soyeimgmemqugquc:
+        $this->icigyueiiwsukmsu(true);
+        goto gosqmqqycwquosse;
+        cwgiecqggoksyuko:
+        sqwwkouiqayeqeyo:
+        goto kekiekeeqkowaiga;
+        qioeweaouoiyoayy:
+        $quiguswioiaaywey = explode("\x20", $yikciqwsimweauyg[1]);
+        goto ssyeoucmcqaewkws;
+        iuugeqgkacqmuais:
+        return false;
+        goto eqocwcasskyqeauu;
+        ssyeoucmcqaewkws:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto gukuouumaoiiugiw;
+        ayyeoeyyawiuiukq:
+        if (stripos($this->agent, "\115\157\x62\x69\154\x65") !== false) {
+            goto sqwwkouiqayeqeyo;
+        }
+        goto soyeimgmemqugquc;
+        gukuouumaoiiugiw:
+        soqmkkwmmkqiweau:
+        goto ayyeoeyyawiuiukq;
+        ysuyamauyegkceea:
+        $this->ikciowomiysyewgc(self::BROWSER_ANDROID);
+        goto wqmmaiwyoumwmiyi;
+        kwmkgoegswsseyia:
+        if (isset($yikciqwsimweauyg[1])) {
+            goto wwiysyawwqeuikcc;
+        }
+        goto gkkogauyaimaaoky;
+        wscoawgsgqekweuq:
+        oqoyyooooyegowuk:
+        goto ysuyamauyegkceea;
+        oaoaskeocoucoaes:
+        kggwwgeqkgwyoseq:
+        goto iuugeqgkacqmuais;
+        eqocwcasskyqeauu:
+    }
+    
+    protected function mgaiuyuciiueqyge()
+    {
+        goto oyswaymeoiouuaoo;
+        keuamggsqkcwyoqi:
+        return false;
+        goto uywiwaiokksgwuqm;
+        aykkiwwmmckueiak:
+        return true;
+        goto gmiywscmoiqcceks;
+        gmiywscmoiqcceks:
+        kkiiykemaoeswsay:
+        goto ikumyeymcsyyuauw;
+        ikumyeymcsyyuauw:
+        uiseoyicaoyaokum:
+        goto keuamggsqkcwyoqi;
+        imumueocakucecam:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto ssciauiqmswaugss;
+        gqsmmaqkuciiwwki:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto kkiiykemaoeswsay;
+        }
+        goto yuokckkqcuumcmua;
+        oyswaymeoiouuaoo:
+        if (!(stripos($this->agent, "\x56\151\166\x61\154\144\151") !== false)) {
+            goto uiseoyicaoyaokum;
+        }
+        goto ycagakkcsskiqweu;
+        ycagakkcsskiqweu:
+        $yikciqwsimweauyg = explode("\57", stristr($this->agent, "\126\151\x76\x61\x6c\x64\x69"));
+        goto gqsmmaqkuciiwwki;
+        ssciauiqmswaugss:
+        $this->ikciowomiysyewgc(self::BROWSER_VIVALDI);
+        goto aykkiwwmmckueiak;
+        yuokckkqcuumcmua:
+        $quiguswioiaaywey = explode("\x20", $yikciqwsimweauyg[1]);
+        goto imumueocakucecam;
+        uywiwaiokksgwuqm:
+    }
+    
+    protected function syeogeymkuiqsoec()
+    {
+        goto yyagogoiskcuomuq;
+        qwscyqgokmkeqwuq:
+        gousoguwcwieyseq:
+        goto syosmkmiyacocysi;
+        cwmsekismgywawai:
+        $yikciqwsimweauyg = explode("\x2f", stristr($this->agent, "\x59\141\x42\x72\157\167\163\x65\x72"));
+        goto aooeicywwyscawue;
+        syosmkmiyacocysi:
+        $this->icigyueiiwsukmsu(true);
+        goto soiuksqqwmsqwyeq;
+        lwaoqwcmyiqkkouw:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto emsgawiqsesiiccg;
+        aooeicywwyscawue:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto ykqeyymweawywsia;
+        }
+        goto qemqoaymwywkewmy;
+        uguwgicugawycckm:
+        return true;
+        goto wskgeycusaokeymw;
+        wugyaiqayoamwacg:
+        if (stripos($this->agent, "\101\x6e\x64\162\157\151\x64") !== false) {
+            goto yisqaaicegsokeuk;
+        }
+        goto secssyuygoycmiqa;
+        emsgawiqsesiiccg:
+        $this->ikciowomiysyewgc(self::BROWSER_YANDEX);
+        goto eekkyoakqmykcqec;
+        kiauseesqiwimyue:
+        wouosmamsmggekic:
+        goto sokqsksiecasgugs;
+        wskgeycusaokeymw:
+        ykqeyymweawywsia:
+        goto kmwwukmymssqakuk;
+        guuowemmmmcgukow:
+        return false;
+        goto yycskqumwcimyyye;
+        sokqsksiecasgugs:
+        $this->eywockmuswoykooc(true);
+        goto qyaiyoskqmqyyuos;
+        yyagogoiskcuomuq:
+        if (!(stripos($this->agent, "\131\141\x42\x72\x6f\167\163\x65\162") !== false)) {
+            goto awoyakoygoouaqgi;
+        }
+        goto cwmsekismgywawai;
+        syookwiaqwmsaoem:
+        yisqaaicegsokeuk:
+        goto usscqwyeesggymse;
+        kmwwukmymssqakuk:
+        awoyakoygoouaqgi:
+        goto guuowemmmmcgukow;
+        ismcyiwkmqaaygge:
+        if (stripos($this->agent, "\115\x6f\x62\151\x6c\145") !== false) {
+            goto wouosmamsmggekic;
+        }
+        goto wugyaiqayoamwacg;
+        qemqoaymwywkewmy:
+        $quiguswioiaaywey = explode("\x20", $yikciqwsimweauyg[1]);
+        goto lwaoqwcmyiqkkouw;
+        usscqwyeesggymse:
+        $this->icigyueiiwsukmsu(true);
+        goto okmmkcokmyiqkceg;
+        okmmkcokmyiqkceg:
+        messwieuimiowsag:
+        goto uguwgicugawycckm;
+        secssyuygoycmiqa:
+        goto messwieuimiowsag;
+        goto qwscyqgokmkeqwuq;
+        qyaiyoskqmqyyuos:
+        goto messwieuimiowsag;
+        goto syookwiaqwmsaoem;
+        soiuksqqwmsqwyeq:
+        goto messwieuimiowsag;
+        goto kiauseesqiwimyue;
+        eekkyoakqmykcqec:
+        if (stripos($this->agent, "\x69\x50\141\144") !== false) {
+            goto gousoguwcwieyseq;
+        }
+        goto ismcyiwkmqaaygge;
+        yycskqumwcimyyye:
+    }
+    
+    protected function gqwuksqaksqcemam()
+    {
+        goto okgoksuuouqmmqog;
+        yqiyiacommmwsuce:
+        wyqemyugccycgaso:
+        goto kweqeekeouiqocqw;
+        kmggqcwmkwwcuioa:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto gssmokgwcmqesyao;
+        yecageyyqwumqoca:
+        qiayswmiyoqisyac:
+        goto aqcwmswmgmgqokmu;
+        aqcwmswmgmgqokmu:
+        return true;
+        goto iuaaiqsmgoqiscio;
+        gssmokgwcmqesyao:
+        if (!(stripos($this->agent, "\120\x6f\x72\x74\x61\x62\154\x65\51") !== false || stripos($this->agent, "\x56\151\x74\x61") !== false)) {
+            goto qiayswmiyoqisyac;
+        }
+        goto agwcwemswacqgqyk;
+        kqaemkmmqkyeweye:
+        $quiguswioiaaywey = explode("\x29", $yikciqwsimweauyg[2]);
+        goto kmggqcwmkwwcuioa;
+        iuaaiqsmgoqiscio:
+        sgkeayimkgeyaqic:
+        goto yqiyiacommmwsuce;
+        wcuqqmycwwoqwwga:
+        $this->ikciowomiysyewgc(self::BROWSER_PLAYSTATION);
+        goto woiqioceiyccoyyi;
+        agwcwemswacqgqyk:
+        $this->eywockmuswoykooc(true);
+        goto yecageyyqwumqoca;
+        kweqeekeouiqocqw:
+        return false;
+        goto ikkseymmmeooqmcm;
+        woiqioceiyccoyyi:
+        if (!isset($yikciqwsimweauyg[0])) {
+            goto sgkeayimkgeyaqic;
+        }
+        goto kqaemkmmqkyeweye;
+        okgoksuuouqmmqog:
+        if (!(stripos($this->agent, "\120\x6c\x61\x79\x53\164\141\164\151\x6f\156\x20") !== false)) {
+            goto wyqemyugccycgaso;
+        }
+        goto kgmwwkoiqwyscmys;
+        kgmwwkoiqwyscmys:
+        $yikciqwsimweauyg = explode("\x20", stristr($this->agent, "\120\154\x61\x79\x53\164\141\164\x69\157\x6e\40"));
+        goto wcuqqmycwwoqwwga;
+        ikkseymmmeooqmcm:
+    }
+    
+    protected function wiqieuoqysguameu()
+    {
+        goto soqyakgcqemouuko;
+        kumioksgmqmsaeqy:
+        $this->ikciowomiysyewgc(self::BROWSER_WGET);
+        goto ckkwwiuyquomkcku;
+        ckkwwiuyquomkcku:
+        return true;
+        goto yemgimowqwsuqegu;
+        squaugeowuwyumqu:
+        $this->aasasueowyemuyoc($yikciqwsimweauyg[1]);
+        goto kumioksgmqmsaeqy;
+        yemgimowqwsuqegu:
+        cimakcokyqkmyiau:
+        goto sskqokueeqgsuumq;
+        sskqokueeqgsuumq:
+        return false;
+        goto ysuagggqaicqyguk;
+        soqyakgcqemouuko:
+        if (!preg_match("\x21\x5e\127\x67\145\x74\57\50\x5b\x5e\x20\135\x2b\x29\41\x69", $this->agent, $yikciqwsimweauyg)) {
+            goto cimakcokyqkmyiau;
+        }
+        goto squaugeowuwyumqu;
+        ysuagggqaicqyguk:
+    }
+    
+    protected function qiqsouwkwmwmqeem()
+    {
+        goto msasquyamakaamys;
+        qikuwygeoaimcukg:
+        return false;
+        goto ceiseomqooekseuo;
+        okacoggoqgoomuyc:
+        wiuyqgeaacmksuqq:
+        goto qikuwygeoaimcukg;
+        yammukygywskcuey:
+        $this->aasasueowyemuyoc($quiguswioiaaywey[0]);
+        goto yusmiciysquiqayq;
+        yymscyccyaauqiaa:
+        $yikciqwsimweauyg = explode("\x2f", stristr($this->agent, "\x63\165\162\154"));
+        goto owayquiaceqooaiq;
+        sisuqeisegegcsiy:
+        $quiguswioiaaywey = explode("\40", $yikciqwsimweauyg[1]);
+        goto yammukygywskcuey;
+        yusmiciysquiqayq:
+        $this->ikciowomiysyewgc(self::BROWSER_CURL);
+        goto gquuqqacuqsgsyqc;
+        owayquiaceqooaiq:
+        if (!isset($yikciqwsimweauyg[1])) {
+            goto womwoaskosgsauog;
+        }
+        goto sisuqeisegegcsiy;
+        msasquyamakaamys:
+        if (!(strpos($this->agent, "\143\165\162\x6c") === 0)) {
+            goto wiuyqgeaacmksuqq;
+        }
+        goto yymscyccyaauqiaa;
+        gquuqqacuqsgsyqc:
+        return true;
+        goto qysqqycgiwmucggw;
+        qysqqycgiwmucggw:
+        womwoaskosgsauog:
+        goto okacoggoqgoomuyc;
+        ceiseomqooekseuo:
+    }
+    
+    protected function acmmsiuwaekasogs()
+    {
+        goto aeycoymkqiwogwag;
+        kgweiqeqkukguqui:
+        suessqeuiasoqioi:
+        goto acwuukokiwgoswuc;
+        miqaocyiuwmyyycc:
+        $this->platform = self::PLATFORM_FIRE_OS;
+        goto cguaokskycyggqym;
+        cakiqwoseiyqqqkk:
+        uwkiseisiuqsoqsa:
+        goto yicuqsmuiueiuwos;
+        qmisymqoqmqocwoe:
+        if (stripos($this->agent, "\122\157\x6b\165") !== false) {
+            goto suessqeuiasoqioi;
+        }
+        goto mcygcucugmyqswys;
+        qykkceysyessasey:
+        goto siaqsogicwwmayco;
+        goto iwyoaksegwaksmsu;
+        awumcmmeumuaiocw:
+        goto siaqsogicwwmayco;
+        goto oguaeaawigyoscii;
+        ymyoskqgyeykqmom:
+        $this->platform = self::PLATFORM_OPENSOLARIS;
+        goto gwoqyokuiqqwugsk;
+        ugeyyoekkekmiqcw:
+        goto siaqsogicwwmayco;
+        goto kgweiqeqkukguqui;
+        seaqqywowweasaoa:
+        $this->platform = self::PLATFORM_OPENBSD;
+        goto scoouaqeoeicswwu;
+        eouqmgocqewmwgik:
+        $this->platform = self::PLATFORM_POSTMAN;
+        goto ymucyiowcaqucyom;
+        oguaeaawigyoscii:
+        eicqsqkmeaimooii:
+        goto mougyosiwyugsymo;
+        iyqcgqusyeiiaiai:
+        $this->platform = self::PLATFORM_IPHONE;
+        goto sukiqmyemewakiao;
+        uyiaqakwuswweqme:
+        goto siaqsogicwwmayco;
+        goto ecusscoueakqaqsu;
+        gawseeswkisqiwoe:
+        $this->platform = self::PLATFORM_FREEBSD;
+        goto kycoymqmaukeekum;
+        coakwcyymiqcmwug:
+        goto siaqsogicwwmayco;
+        goto iacwiwmoggwseqsa;
+        iouagkwueekusiwi:
+        goto siaqsogicwwmayco;
+        goto imagekgwsuqccwgo;
+        ciewwguuyumcisme:
+        if (stripos($this->agent, "\116\145\164\102\x53\x44") !== false) {
+            goto yyimqwkqigowmcco;
+        }
+        goto uwwiiwscccuowuoq;
+        ggqeyyoscwueysku:
+        ewgqscsiomaciyew:
+        goto qqsmygoumegcogay;
+        ycskcusgcyeowagm:
+        goto siaqsogicwwmayco;
+        goto owkougkyymiwoaqu;
+        eyekywukwqucywcm:
+        if (stripos($this->agent, "\117\160\145\156\x42\123\x44") !== false) {
+            goto scqaokckckemicqi;
+        }
+        goto ciewwguuyumcisme;
+        qqsmygoumegcogay:
+        $this->platform = self::PLATFORM_IPAD;
+        goto qykkceysyessasey;
+        umgsqowiqmesssay:
+        goto siaqsogicwwmayco;
+        goto cakiqwoseiyqqqkk;
+        wmkiqcsuycsieuga:
+        kuyowuyquoioeqoc:
+        goto sgkmocmkaomwusik;
+        igcukieyogyaqwyo:
+        if (stripos($this->agent, "\x49\146\x72\141\155\x65\x6c\171") !== false) {
+            goto mquyowqsoawycyok;
+        }
+        goto imgwqyoiweuiwiec;
+        yeqmmgegmqgwyaea:
+        sesgwayockkaakwm:
+        goto mkycqgqaawooaaeu;
+        qmqsccegugoiyaiu:
+        goto siaqsogicwwmayco;
+        goto ggqeyyoscwueysku;
+        aaaaikyksmgkyygi:
+        goto siaqsogicwwmayco;
+        goto wioukmwequaosqsu;
+        yioawsqawmqagueg:
+        wwaocaooaayqamsu:
+        goto acuiieocsgiyakia;
+        ecusscoueakqaqsu:
+        sccmgumeswegawyk:
+        goto okqmcygoiwaesmis;
+        gqomqwuiesioaaaq:
+        if (stripos($this->agent, "\x63\165\162\154") !== false) {
+            goto aucmemccqucmicwm;
+        }
+        goto ywuwweugeccmeuqk;
+        icyocwacicqauogu:
+        goto siaqsogicwwmayco;
+        goto esqqqokyeaoauoou;
+        sieaoicuiusscywg:
+        if (stripos($this->agent, "\x74\166\x4f\123") !== false) {
+            goto koceigseyecoyoia;
+        }
+        goto gqomqwuiesioaaaq;
+        ugccoisuygekiaae:
+        yyimqwkqigowmcco:
+        goto gqwemyquuwgqcaic;
+        omeoqgskaoomewqa:
+        $this->platform = self::PLATFORM_WINDOWS;
+        goto ewiyakwgaasssqmq;
+        umkyqiyguqoauyek:
+        if (stripos($this->agent, "\154\x69\156\x75\170") !== false) {
+            goto wwaocaooaayqamsu;
+        }
+        goto eceqcqseqcswkywu;
+        eceqcqseqcswkywu:
+        if (stripos($this->agent, "\116\x6f\153\151\x61") !== false) {
+            goto mioiqgkakcguokqa;
+        }
+        goto uuweusyuygicyoik;
+        kwsagikwoqogqecc:
+        umyuckgysaegimue:
+        goto wicaemaewwoooiuq;
+        imagekgwsuqccwgo:
+        giawgsomaouqgiyc:
+        goto eouqmgocqewmwgik;
+        aeeiacomeyceesoe:
+        goto siaqsogicwwmayco;
+        goto seeosigigeuueiqy;
+        oakqgwgaaakkecgm:
+        goto siaqsogicwwmayco;
+        goto wyioqosyqawqkoyi;
+        uwwiiwscccuowuoq:
+        if (stripos($this->agent, "\117\160\145\156\123\157\x6c\x61\x72\x69\163") !== false) {
+            goto ugkesgkkcqcasmoq;
+        }
+        goto uyymyaogieaawaig;
+        meiykooeimaqqico:
+        $this->platform = self::PLATFORM_APPLE_TV;
+        goto oakqgwgaaakkecgm;
+        sskkqsmyqmgyewue:
+        mioiqgkakcguokqa:
+        goto aacemqiqgqoyokmi;
+        msqmyqgiaeeeoeco:
+        if (stripos($this->agent, "\154\151\x6e\x75\170") !== false && stripos($this->agent, "\123\115\101\x52\x54\x2d\124\x56") !== false) {
+            goto eeieacyyeywwyewo;
+        }
+        goto umkyqiyguqoauyek;
+        ccmmogiaggiuewmu:
+        if (stripos($this->agent, "\167\151\156") !== false) {
+            goto yikaomgieukoawws;
+        }
+        goto syqgqkeomqsysaey;
+        woqqukymqiuyququ:
+        $this->platform = self::PLATFORM_SUNOS;
+        goto ycskcusgcyeowagm;
+        mcygcucugmyqswys:
+        if (stripos($this->agent, "\x69\117\123") !== false) {
+            goto oymuyuskiqyacysw;
+        }
+        goto sieaoicuiusscywg;
+        uuweusyuygicyoik:
+        if (stripos($this->agent, "\102\x6c\x61\x63\153\102\145\162\162\171") !== false) {
+            goto gcgyqiaawwccgqaw;
+        }
+        goto qugmeamkemckgqwo;
+        uwegawkagcagoeiw:
+        eeieacyyeywwyewo:
+        goto aycyoqqqwmyciise;
+        iacwiwmoggwseqsa:
+        ugkesgkkcqcasmoq:
+        goto ymyoskqgyeykqmom;
+        qwkcgqyyygyasgqw:
+        $this->platform = self::PLATFORM_TERMINAL;
+        goto aeeiacomeyceesoe;
+        ykwmoaqmwggiqmsk:
+        if (stripos($this->agent, "\x69\x50\x6f\144") !== false) {
+            goto iewuyuigwmkcmcas;
+        }
+        goto yymiwwumowysiagy;
+        gqwemyquuwgqcaic:
+        $this->platform = self::PLATFORM_NETBSD;
+        goto coakwcyymiqcmwug;
+        yqaikoeaiuauikcw:
+        goto siaqsogicwwmayco;
+        goto yyckaiasyqokgsyy;
+        muicsociwumgosaw:
+        goto siaqsogicwwmayco;
+        goto yioawsqawmqagueg;
+        ywuwweugeccmeuqk:
+        if (stripos($this->agent, "\x43\x72\x4f\123") !== false) {
+            goto qqsiimkqkguqkeag;
+        }
+        goto iwacoiqoegwuaoqo;
+        scoouaqeoeicswwu:
+        goto siaqsogicwwmayco;
+        goto ugccoisuygekiaae;
+        kyqkigouggegscsi:
+        siaqsogicwwmayco:
+        goto igiuieggauocicsg;
+        esqqqokyeaoauoou:
+        yikaomgieukoawws:
+        goto omeoqgskaoomewqa;
+        cgqqkkwugmiqyiow:
+        if (stripos($this->agent, "\151\x50\141\144") !== false) {
+            goto ewgqscsiomaciyew;
+        }
+        goto ykwmoaqmwggiqmsk;
+        muiouqmomamguoce:
+        $this->platform = self::PLATFORM_OS2;
+        goto umgsqowiqmesssay;
+        ukmeggiqssyyyuku:
+        $this->platform = self::PLATFORM_I_FRAME;
+        goto kyqkigouggegscsi;
+        oyioakacwwceegie:
+        $this->platform = self::PLATFORM_BLACKBERRY;
+        goto gsyegqcsyscyycic;
+        uyymyaogieaawaig:
+        if (stripos($this->agent, "\123\165\156\x4f\x53") !== false) {
+            goto gaomwgqgumkcqawg;
+        }
+        goto iwgksuqmosckeqys;
+        aacemqiqgqoyokmi:
+        $this->platform = self::PLATFORM_NOKIA;
+        goto eequuumweyqioygw;
+        yyckaiasyqokgsyy:
+        oymuyuskiqyacysw:
+        goto ewumqgcwgeqqsoao;
+        sgkmocmkaomwusik:
+        $this->platform = self::PLATFORM_PLAYSTATION;
+        goto ugeyyoekkekmiqcw;
+        sayicwyqgigeswug:
+        if (stripos($this->agent, "\102\x65\117\123") !== false) {
+            goto uwkiseisiuqsoqsa;
+        }
+        goto ccmmogiaggiuewmu;
+        gooiuuagswggewoq:
+        mquyowqsoawycyok:
+        goto ukmeggiqssyyyuku;
+        gqcyummwsikcccom:
+        csuikuskoecgsymk:
+        goto miqaocyiuwmyyycc;
+        acuiieocsgiyakia:
+        $this->platform = self::PLATFORM_LINUX;
+        goto syqyosyywqwgoeoo;
+        sukiqmyemewakiao:
+        goto siaqsogicwwmayco;
+        goto yeqmmgegmqgwyaea;
+        miayoysigsgumwyi:
+        if (stripos($this->agent, "\x53\151\154\153") !== false) {
+            goto csuikuskoecgsymk;
+        }
+        goto msqmyqgiaeeeoeco;
+        iwgksuqmosckeqys:
+        if (stripos($this->agent, "\117\123\134\57\62") !== false) {
+            goto ysoeqwagkauquwme;
+        }
+        goto sayicwyqgigeswug;
+        wicaemaewwoooiuq:
+        $this->platform = self::PLATFORM_WINDOWS;
+        goto qmqsccegugoiyaiu;
+        ewumqgcwgeqqsoao:
+        $this->platform = self::PLATFORM_IPHONE . "\57" . self::PLATFORM_IPAD;
+        goto aaaaikyksmgkyygi;
+        yymiwwumowysiagy:
+        if (stripos($this->agent, "\x69\x50\x68\x6f\156\x65") !== false) {
+            goto qekesyoouukaciyy;
+        }
+        goto qsacucessyquaame;
+        yicuqsmuiueiuwos:
+        $this->platform = self::PLATFORM_BEOS;
+        goto icyocwacicqauogu;
+        kycoymqmaukeekum:
+        goto siaqsogicwwmayco;
+        goto oesgciyeoewgouki;
+        sucmgqcacggcucec:
+        $this->platform = self::PLATFORM_IPOD;
+        goto wsgkqgogymcgueag;
+        iwyoaksegwaksmsu:
+        iewuyuigwmkcmcas:
+        goto sucmgqcacggcucec;
+        iwacoiqoegwuaoqo:
+        if (stripos($this->agent, "\x6f\153\150\164\x74\160") !== false) {
+            goto eicqsqkmeaimooii;
+        }
+        goto wkmmaysiigyuyimk;
+        eequuumweyqioygw:
+        goto siaqsogicwwmayco;
+        goto kmgqqgsuiwcyccak;
+        seeosigigeuueiqy:
+        qqsiimkqkguqkeag:
+        goto cekocgmmwuacyckg;
+        acwuukokiwgoswuc:
+        $this->platform = self::PLATFORM_ROKU;
+        goto yqaikoeaiuauikcw;
+        eimqoqgqmsiokyeq:
+        qekesyoouukaciyy:
+        goto iyqcgqusyeiiaiai;
+        imgwqyoiweuiwiec:
+        goto siaqsogicwwmayco;
+        goto kwsagikwoqogqecc;
+        gsyegqcsyscyycic:
+        goto siaqsogicwwmayco;
+        goto kwewaoocuqgaseoa;
+        cguaokskycyggqym:
+        goto siaqsogicwwmayco;
+        goto uwegawkagcagoeiw;
+        mougyosiwyugsymo:
+        $this->platform = self::PLATFORM_JAVA_ANDROID;
+        goto iouagkwueekusiwi;
+        wyioqosyqawqkoyi:
+        aucmemccqucmicwm:
+        goto qwkcgqyyygyasgqw;
+        cekocgmmwuacyckg:
+        $this->platform = self::PLATFORM_CHROME_OS;
+        goto awumcmmeumuaiocw;
+        ewiyakwgaasssqmq:
+        goto siaqsogicwwmayco;
+        goto wmkiqcsuycsieuga;
+        aeycoymkqiwogwag:
+        if (stripos($this->agent, "\167\x69\x6e\144\157\167\163") !== false) {
+            goto umyuckgysaegimue;
+        }
+        goto cgqqkkwugmiqyiow;
+        kwewaoocuqgaseoa:
+        wyimgokwakggwuoi:
+        goto gawseeswkisqiwoe;
+        syqgqkeomqsysaey:
+        if (stripos($this->agent, "\x50\x6c\141\171\163\x74\141\164\151\157\x6e") !== false) {
+            goto kuyowuyquoioeqoc;
+        }
+        goto qmisymqoqmqocwoe;
+        oesgciyeoewgouki:
+        scqaokckckemicqi:
+        goto seaqqywowweasaoa;
+        qsacucessyquaame:
+        if (stripos($this->agent, "\155\141\x63") !== false) {
+            goto sesgwayockkaakwm;
+        }
+        goto ommoqequygggywyi;
+        acysyqkmkgaoewci:
+        gaomwgqgumkcqawg:
+        goto woqqukymqiuyququ;
+        owkougkyymiwoaqu:
+        ysoeqwagkauquwme:
+        goto muiouqmomamguoce;
+        aycyoqqqwmyciise:
+        $this->platform = self::PLATFORM_LINUX . "\57" . self::PLATFORM_SMART_TV;
+        goto muicsociwumgosaw;
+        wkmmaysiigyuyimk:
+        if (stripos($this->agent, "\120\157\x73\164\155\x61\x6e\122\165\156\x74\x69\x6d\x65") !== false) {
+            goto giawgsomaouqgiyc;
+        }
+        goto igcukieyogyaqwyo;
+        wsgkqgogymcgueag:
+        goto siaqsogicwwmayco;
+        goto eimqoqgqmsiokyeq;
+        qugmeamkemckgqwo:
+        if (stripos($this->agent, "\106\x72\x65\145\102\123\104") !== false) {
+            goto wyimgokwakggwuoi;
+        }
+        goto eyekywukwqucywcm;
+        mkycqgqaawooaaeu:
+        $this->platform = self::PLATFORM_APPLE;
+        goto uyiaqakwuswweqme;
+        wioukmwequaosqsu:
+        koceigseyecoyoia:
+        goto meiykooeimaqqico;
+        ommoqequygggywyi:
+        if (stripos($this->agent, "\x61\156\x64\x72\x6f\151\144") !== false) {
+            goto sccmgumeswegawyk;
+        }
+        goto miayoysigsgumwyi;
+        okqmcygoiwaesmis:
+        $this->platform = self::PLATFORM_ANDROID;
+        goto kkecucquwauqqyku;
+        kmgqqgsuiwcyccak:
+        gcgyqiaawwccgqaw:
+        goto oyioakacwwceegie;
+        gwoqyokuiqqwugsk:
+        goto siaqsogicwwmayco;
+        goto acysyqkmkgaoewci;
+        syqyosyywqwgoeoo:
+        goto siaqsogicwwmayco;
+        goto sskkqsmyqmgyewue;
+        kkecucquwauqqyku:
+        goto siaqsogicwwmayco;
+        goto gqcyummwsikcccom;
+        ymucyiowcaqucyom:
+        goto siaqsogicwwmayco;
+        goto gooiuuagswggewoq;
+        igiuieggauocicsg:
+    }
+}

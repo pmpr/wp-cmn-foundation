@@ -1,2 +1,118 @@
 <?php
- namespace Pmpr\Common\Foundation\Detector; use Mobile_Detect; class Detector extends Common { protected ?Browser $browser = null; protected ?Mobile_Detect $device = null; public function __construct() { goto VnSgl; VnSgl: $this->device = new Mobile_Detect(); goto SIB0C; yp3q0: parent::__construct(); goto oSEEk; SIB0C: $this->browser = Browser::getInstance(); goto yp3q0; oSEEk: } public function maybeIgnoreDownload($VKTSi) { return $VKTSi && !($this->isMobile() || $this->isTablet()); } public function getDevice() : ?Mobile_Detect { return $this->device; } public function getBrowser() : ?Browser { return $this->browser; } public function isMobile() { return $this->is("\x6d\x6f\x62\x69\x6c\145"); } public function isComputer() { return $this->is("\x63\157\x6d\x70\165\164\x65\x72"); } public function isTablet() { return $this->is("\164\141\142\154\145\164"); } public function isChrome() { return $this->is("\103\x68\x72\x6f\x6d\x65"); } public function isFirefox() { return $this->is("\106\151\162\x65\x66\157\x78"); } private function is($yjbyt) { goto MgQOp; c41SR: zk5_Z: goto phrg5; MgQOp: $vcRbn = $this->getBrowser()->getBrowser(); goto AgodR; sx7Is: switch ($yjbyt) { case "\x63\x6f\x6d\x70\x75\164\x65\x72": return !$BHGoO->isMobile(); case "\164\141\x62\x6c\x65\164": return $BHGoO->isTablet(); case "\x6d\x6f\x62\x69\154\x65": return $BHGoO->isMobile() && !$BHGoO->isTablet(); case "\x42\x72\141\166\x65": return Browser::BROWSER_BRAVE === $vcRbn; case "\103\150\162\157\155\x65": return Browser::BROWSER_CHROME === $vcRbn; case "\106\151\x72\x65\x66\157\170": return Browser::BROWSER_FIREFOX === $vcRbn; case "\105\x64\147\x65": return Browser::BROWSER_EDGE === $vcRbn; case "\x49\x6e\164\x65\x72\156\x65\x74\40\x45\x78\160\154\157\x72\x65\162": return Browser::BROWSER_IE === $vcRbn; case "\x4f\160\x65\x72\x61": return Browser::BROWSER_OPERA === $vcRbn; case "\x53\141\x66\x61\162\151": return Browser::BROWSER_SAFARI === $vcRbn; case "\123\141\x66\141\x72\151\x20\x6f\x6e\x20\151\x50\x68\157\156\x65": return Browser::BROWSER_IPHONE === $vcRbn; default: return true; } goto lC_DR; AgodR: $BHGoO = $this->getDevice(); goto sx7Is; lC_DR: E3PjX: goto c41SR; phrg5: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Detector;
+
+use Mobile_Detect;
+
+class Detector extends Common
+{
+    
+    protected ?Browser $browser = null;
+    
+    protected ?Mobile_Detect $device = null;
+    public function __construct()
+    {
+        goto oaoummcgooyceayi;
+        iiyysuksmomyyuye:
+        parent::__construct();
+        goto cugaeomiskasooic;
+        siaweewywmuayyks:
+        $this->browser = Browser::symcgieuakksimmu();
+        goto iiyysuksmomyyuye;
+        oaoummcgooyceayi:
+        $this->device = new Mobile_Detect();
+        goto siaweewywmuayyks;
+        cugaeomiskasooic:
+    }
+    
+    public function cyciimaqkakwcqqy($acsweksygkmmgggk) : bool
+    {
+        return $acsweksygkmmgggk && !($this->qawecuimqqcqwgsw() || $this->gsuucswsiuggysyw());
+    }
+    
+    public function gekgcikwymwuuuog() : ?Mobile_Detect
+    {
+        return $this->device;
+    }
+    
+    public function aagmmewiwysmgseq() : ?Browser
+    {
+        return $this->browser;
+    }
+    
+    public function qawecuimqqcqwgsw() : bool
+    {
+        return $this->is("\155\157\142\151\x6c\x65");
+    }
+    
+    public function uggoocigiyiqkmww() : bool
+    {
+        return $this->is("\x63\157\155\x70\165\x74\145\162");
+    }
+    
+    public function gsuucswsiuggysyw() : bool
+    {
+        return $this->is("\164\141\142\x6c\x65\164");
+    }
+    
+    public function iwuicqgsgkaeikwa() : bool
+    {
+        return $this->is("\x43\150\162\x6f\155\145");
+    }
+    
+    public function yksyugcywqmuqgwo() : bool
+    {
+        return $this->is("\x46\151\x72\145\146\157\170");
+    }
+    
+    private function is($eqgoocgaqwqcimie) : bool
+    {
+        goto yukieguwkeesieiy;
+        yukieguwkeesieiy:
+        $quckouuiqiiowoei = $this->aagmmewiwysmgseq()->aagmmewiwysmgseq();
+        goto cwceosugiiyyauqi;
+        eayyeuwawewcqcom:
+        yeeicocmyyaeksys:
+        goto esscoiyogsoqoquc;
+        ciwyuyksieuuqiee:
+        imwweegoasykooim:
+        goto eayyeuwawewcqcom;
+        ogugiciyicewkyue:
+        switch ($eqgoocgaqwqcimie) {
+            case "\143\157\x6d\160\x75\164\145\162":
+                return !$syowsmcowosssaos->qawecuimqqcqwgsw();
+            case "\x74\141\142\x6c\145\164":
+                return $syowsmcowosssaos->gsuucswsiuggysyw();
+            case "\x6d\157\142\x69\154\x65":
+                return $syowsmcowosssaos->qawecuimqqcqwgsw() && !$syowsmcowosssaos->gsuucswsiuggysyw();
+            case "\x42\162\141\x76\x65":
+                return Browser::BROWSER_BRAVE === $quckouuiqiiowoei;
+            case "\103\150\x72\157\155\145":
+                return Browser::BROWSER_CHROME === $quckouuiqiiowoei;
+            case "\106\x69\x72\x65\x66\x6f\x78":
+                return Browser::BROWSER_FIREFOX === $quckouuiqiiowoei;
+            case "\x45\x64\147\145":
+                return Browser::BROWSER_EDGE === $quckouuiqiiowoei;
+            case "\x49\156\164\145\162\156\x65\164\40\105\x78\160\154\x6f\162\x65\x72":
+                return Browser::BROWSER_IE === $quckouuiqiiowoei;
+            case "\x4f\x70\145\162\x61":
+                return Browser::BROWSER_OPERA === $quckouuiqiiowoei;
+            case "\x53\x61\146\x61\x72\x69":
+                return Browser::BROWSER_SAFARI === $quckouuiqiiowoei;
+            case "\x53\141\x66\141\162\x69\x20\x6f\156\40\151\x50\150\157\156\x65":
+                return Browser::BROWSER_IPHONE === $quckouuiqiiowoei;
+            default:
+                return true;
+        }
+        goto ciwyuyksieuuqiee;
+        cwceosugiiyyauqi:
+        $syowsmcowosssaos = $this->gekgcikwymwuuuog();
+        goto ogugiciyicewkyue;
+        esscoiyogsoqoquc:
+    }
+}

@@ -1,2 +1,31 @@
 <?php
- namespace Pmpr\Common\Foundation\FormMaker\Admin\Field; class Title extends Field { protected ?string $onFront = null; public function __construct(?string $CDV1j, string $vPl9z = null, string $Ym4v7 = null) { parent::__construct("\x74\151\164\154\x65", $CDV1j, $vPl9z, $Ym4v7); } public function onFront() : ?string { return $this->onFront; } public function setOnFront($Qotpi) : self { $this->onFront = $Qotpi; return $this; } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\FormMaker\Admin\Field;
+
+
+class Title extends Field
+{
+    
+    protected ?string $onFront = null;
+    
+    public function __construct(?string $aokagokqyuysuksm, string $ymqmyyeuycgmigyo = null, string $mkqqqewsokcswckc = null)
+    {
+        parent::__construct("\164\x69\x74\154\x65", $aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc);
+    }
+    
+    public function akimsyoyqymiqaiy() : ?string
+    {
+        return $this->onFront;
+    }
+    
+    public function eywokgocsciueciu($akimsyoyqymiqaiy) : self
+    {
+        $this->onFront = $akimsyoyqymiqaiy;
+        return $this;
+    }
+}

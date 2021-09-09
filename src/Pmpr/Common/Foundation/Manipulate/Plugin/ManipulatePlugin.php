@@ -1,2 +1,68 @@
 <?php
- namespace Pmpr\Common\Foundation\Manipulate\Plugin; use Pmpr\Common\Foundation\Decorator\DecoratorOption; use Pmpr\Common\Foundation\Decorator\DecoratorPlugin; use Pmpr\Common\Foundation\Manipulate\ManipulateFormat; use WP_Requirements_Check; class ManipulatePlugin extends Common { public static function getActives() : array { return (array) DecoratorOption::get("\141\x63\164\x69\x76\145\137\x70\154\165\147\x69\156\163", []); } public static function isActive(?string $KhO1T) : bool { return DecoratorPlugin::isActive($KhO1T) || self::isActiveForNetwork($KhO1T); } public static function isRequirementsPassed($DrjAW = []) : bool { goto Q7r7m; Q7r7m: $DrjAW = ManipulateFormat::parseArgs($DrjAW, ["\160\x68\x70" => "\x37\x2e\x34", "\167\x70" => "\65\x2e\62"]); goto bmMmh; bmMmh: $DAn0A = new WP_Requirements_Check($DrjAW); goto gI6SI; gI6SI: return $DAn0A->passes(); goto vu788; vu788: } public static function isActiveForNetwork(?string $KhO1T) : bool { goto Ua0VR; TyQz2: if (!is_multisite()) { goto POsHf; } goto PRYJr; PRYJr: $dShgx = DecoratorOption::getSite("\141\143\164\x69\x76\x65\137\x73\x69\164\x65\x77\151\144\145\137\160\x6c\x75\147\x69\156\163"); goto j1ooy; XCOe2: POsHf: goto nLMVZ; j1ooy: $aP7ei = isset($dShgx[$KhO1T]); goto XCOe2; Ua0VR: $aP7ei = false; goto TyQz2; nLMVZ: return $aP7ei; goto CTjua; CTjua: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Manipulate\Plugin;
+
+use Pmpr\Common\Foundation\Decorator\DecoratorOption;
+use Pmpr\Common\Foundation\Decorator\DecoratorPlugin;
+use Pmpr\Common\Foundation\Manipulate\ManipulateFormat;
+use WP_Requirements_Check;
+
+class ManipulatePlugin extends Common
+{
+    
+    public static function yicegakcoioyuwos() : array
+    {
+        return (array) DecoratorOption::get("\x61\x63\x74\x69\166\145\137\x70\x6c\x75\x67\x69\x6e\x73", []);
+    }
+    
+    public static function ggocakcisguuokai(?string $mkysicwccoeicumg) : bool
+    {
+        return DecoratorPlugin::ggocakcisguuokai($mkysicwccoeicumg) || self::sioyqaykmwwugmgi($mkysicwccoeicumg);
+    }
+    
+    public static function sskmceyamwugkaii($ywmkwiwkosakssii = []) : bool
+    {
+        goto kogocyykgoassccw;
+        kogocyykgoassccw:
+        $ywmkwiwkosakssii = ManipulateFormat::omaawkkwwyesqwcc($ywmkwiwkosakssii, ["\x70\x68\160" => "\x37\x2e\x34", "\167\160" => "\x35\56\62"]);
+        goto ukqyaweoikcegyco;
+        ukqyaweoikcegyco:
+        $gioggcykgoikcwiy = new WP_Requirements_Check($ywmkwiwkosakssii);
+        goto cgqcuiaiciwumqyy;
+        cgqcuiaiciwumqyy:
+        return $gioggcykgoikcwiy->uysacksscoseuguc();
+        goto essaksagsgmwyccs;
+        essaksagsgmwyccs:
+    }
+    
+    public static function sioyqaykmwwugmgi(?string $mkysicwccoeicumg) : bool
+    {
+        goto swiqeuyomyeicqea;
+        mwskikiiuqwkeiqq:
+        if (!is_multisite()) {
+            goto meqcqssumqokgkqc;
+        }
+        goto aywemsgsqqwuwasc;
+        swiqeuyomyeicqea:
+        $ggocakcisguuokai = false;
+        goto mwskikiiuqwkeiqq;
+        mggewcywmuekqcaq:
+        meqcqssumqokgkqc:
+        goto iakeaakmeqkaioeg;
+        mqueqquuggcakwcy:
+        $ggocakcisguuokai = isset($mseykiqqcmyesccu[$mkysicwccoeicumg]);
+        goto mggewcywmuekqcaq;
+        aywemsgsqqwuwasc:
+        $mseykiqqcmyesccu = DecoratorOption::kuaqqosyyoqiueym("\x61\143\x74\x69\x76\x65\137\163\x69\164\145\167\151\x64\x65\137\160\x6c\x75\x67\151\156\x73");
+        goto mqueqquuggcakwcy;
+        iakeaakmeqkaioeg:
+        return $ggocakcisguuokai;
+        goto eawkaqqqaeooyyws;
+        eawkaqqqaeooyyws:
+    }
+}

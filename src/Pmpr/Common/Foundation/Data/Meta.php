@@ -1,2 +1,78 @@
 <?php
- namespace Pmpr\Common\Foundation\Data; class Meta extends Data { protected ?string $name = ''; protected ?string $title = ''; protected ?string $value = ''; protected ?string $icon = ''; protected ?int $priority = 1; public function getName() : ?string { return $this->name; } public function setName(?string $vPl9z) : self { $this->name = $vPl9z; return $this; } public function getTitle() : ?string { return $this->title; } public function setTitle(?string $hTPi6) : self { $this->title = $hTPi6; return $this; } public function getValue() : ?string { return $this->value; } public function setValue(?string $yjbyt) : self { $this->value = $yjbyt; return $this; } public function getIcon() : ?string { return $this->icon; } public function setIcon(?string $cbVPu) : self { $this->icon = $cbVPu; return $this; } public function getPriority() : ?int { return $this->priority; } public function setPriority(?int $pwEST) : self { $this->priority = $pwEST; return $this; } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Data;
+
+
+class Meta extends Data
+{
+    
+    protected ?string $name = '';
+    
+    protected ?string $title = '';
+    
+    protected ?string $value = '';
+    
+    protected ?string $icon = '';
+    
+    protected ?int $priority = 1;
+    
+    public function aakmagwggmkoiiyu() : ?string
+    {
+        return $this->name;
+    }
+    
+    public function usuqmwksoeaayaig(?string $ymqmyyeuycgmigyo) : self
+    {
+        $this->name = $ymqmyyeuycgmigyo;
+        return $this;
+    }
+    
+    public function qcgakseyaikigqco() : ?string
+    {
+        return $this->title;
+    }
+    
+    public function gswweykyogmsyawy(?string $meqocwsecsywiiqs) : self
+    {
+        $this->title = $meqocwsecsywiiqs;
+        return $this;
+    }
+    
+    public function qooeaookuemoqecm() : ?string
+    {
+        return $this->value;
+    }
+    
+    public function iygyugseyaqwywyg(?string $eqgoocgaqwqcimie) : self
+    {
+        $this->value = $eqgoocgaqwqcimie;
+        return $this;
+    }
+    
+    public function eyamqkqiykagecsw() : ?string
+    {
+        return $this->icon;
+    }
+    
+    public function saemoowcasogykak(?string $wkaqekwwgqsqwcoi) : self
+    {
+        $this->icon = $wkaqekwwgqsqwcoi;
+        return $this;
+    }
+    
+    public function yywskysiycwkwsgw() : ?int
+    {
+        return $this->priority;
+    }
+    
+    public function jyumyyugiwwiqomk(?int $sqqewmoeaekuyyas) : self
+    {
+        $this->priority = $sqqewmoeaekuyyas;
+        return $this;
+    }
+}

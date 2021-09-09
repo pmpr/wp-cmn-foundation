@@ -1,2 +1,58 @@
 <?php
- namespace Pmpr\Common\Foundation\Decorator\Taxonomy; class DecoratorTaxonomy extends Common { public static function register($fvLkx, $TSqL1, $DrjAW = []) { return register_taxonomy($fvLkx, $TSqL1, $DrjAW); } public static function registerForObjectType($fvLkx, $TSqL1) { return register_taxonomy_for_object_type($fvLkx, $TSqL1); } public static function get($fvLkx) { return get_taxonomy($fvLkx); } public static function isCategory($zxZ_R) { return is_category($zxZ_R); } public static function exist(?string $fvLkx) : bool { return taxonomy_exists($fvLkx); } public static function isHierarchical($fvLkx) : bool { return is_taxonomy_hierarchical($fvLkx); } public static function isTax($fvLkx = '', $OnhXQ = '') { return is_tax($fvLkx, $OnhXQ); } public static function getList($DrjAW = [], $NnlHI = self::NAMES, $R6ARr = "\141\x6e\144") { return get_taxonomies($DrjAW, $NnlHI, $R6ARr); } public static function getListByObject($QsfZH, $NnlHI = self::NAMES) { return get_object_taxonomies($QsfZH, $NnlHI); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Decorator\Taxonomy;
+
+
+class DecoratorTaxonomy extends Common
+{
+    
+    public static function register($kesssewsiegssiya, $mqyaskyaekmkegmg, $ywmkwiwkosakssii = [])
+    {
+        return register_taxonomy($kesssewsiegssiya, $mqyaskyaekmkegmg, $ywmkwiwkosakssii);
+    }
+    
+    public static function ycewygugskisecuo($kesssewsiegssiya, $mqyaskyaekmkegmg)
+    {
+        return register_taxonomy_for_object_type($kesssewsiegssiya, $mqyaskyaekmkegmg);
+    }
+    
+    public static function get($kesssewsiegssiya)
+    {
+        return get_taxonomy($kesssewsiegssiya);
+    }
+    
+    public static function sgayqmgoigoseaoo($guwumyyyakswawas)
+    {
+        return is_category($guwumyyyakswawas);
+    }
+    
+    public static function myagqecycsaiyqsk(?string $kesssewsiegssiya) : bool
+    {
+        return taxonomy_exists($kesssewsiegssiya);
+    }
+    
+    public static function aewcsqigycuaekym($kesssewsiegssiya) : bool
+    {
+        return is_taxonomy_hierarchical($kesssewsiegssiya);
+    }
+    
+    public static function qmssqeyayicowkgy($kesssewsiegssiya = '', $iwewcwusemqaiggk = '')
+    {
+        return is_tax($kesssewsiegssiya, $iwewcwusemqaiggk);
+    }
+    
+    public static function ciugwooasaqcywas($ywmkwiwkosakssii = [], $aqykuigiuwmmcieu = self::NAMES, $cackiyicawmkyqqg = "\x61\x6e\x64")
+    {
+        return get_taxonomies($ywmkwiwkosakssii, $aqykuigiuwmmcieu, $cackiyicawmkyqqg);
+    }
+    
+    public static function qgckgkwskmsomoqs($mksyucucyswaukig, $aqykuigiuwmmcieu = self::NAMES)
+    {
+        return get_object_taxonomies($mksyucucyswaukig, $aqykuigiuwmmcieu);
+    }
+}

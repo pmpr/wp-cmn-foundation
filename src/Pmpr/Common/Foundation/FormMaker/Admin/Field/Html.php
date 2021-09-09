@@ -1,2 +1,31 @@
 <?php
- namespace Pmpr\Common\Foundation\FormMaker\Admin\Field; class Html extends Field { protected $content = null; public function __construct(?string $CDV1j) { parent::__construct("\150\164\x6d\x6c", $CDV1j); } public function getContent() { return $this->content; } public function setContent($BQ_ob) : self { $this->content = $BQ_ob; return $this; } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\FormMaker\Admin\Field;
+
+
+class Html extends Field
+{
+    
+    protected $content = null;
+    
+    public function __construct(?string $aokagokqyuysuksm)
+    {
+        parent::__construct("\150\164\x6d\x6c", $aokagokqyuysuksm);
+    }
+    
+    public function souwykwwmyygqyqi()
+    {
+        return $this->content;
+    }
+    
+    public function oguessuismosauuu($ewgwqamkygiqaawc) : self
+    {
+        $this->content = $ewgwqamkygiqaawc;
+        return $this;
+    }
+}

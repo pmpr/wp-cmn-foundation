@@ -1,2 +1,23 @@
 <?php
- namespace Pmpr\Common\Foundation\FormMaker\Admin\Field; class Size extends Field { public function __construct(?string $CDV1j, ?string $vPl9z = null, ?string $Ym4v7 = null) { parent::__construct("\163\151\172\145", $CDV1j, $vPl9z, $Ym4v7); } public function setDefault($uqXVx = 50, $kEPME = 50) : Field { return parent::setDefault(["\167\x69\x64\x74\x68" => $uqXVx, "\150\145\x69\x67\x68\x74" => $kEPME]); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\FormMaker\Admin\Field;
+
+
+class Size extends Field
+{
+    
+    public function __construct(?string $aokagokqyuysuksm, ?string $ymqmyyeuycgmigyo = null, ?string $mkqqqewsokcswckc = null)
+    {
+        parent::__construct("\x73\x69\172\145", $aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc);
+    }
+    
+    public function eyygsasuqmommkua($qeswwaqqsyymqawg = 50, $cswemwoyesycwkuq = 50) : Field
+    {
+        return parent::eyygsasuqmommkua(["\167\x69\144\x74\x68" => $qeswwaqqsyymqawg, "\150\145\x69\x67\150\164" => $cswemwoyesycwkuq]);
+    }
+}

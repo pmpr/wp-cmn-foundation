@@ -1,2 +1,36 @@
 <?php
- namespace Pmpr\Common\Foundation\FormMaker\Front\Field; use Pmpr\Common\Foundation\Manipulate\ManipulateFormat; use Pmpr\Common\Foundation\Manipulate\Theme\ManipulateHTML; class Submit extends Button { public function __construct(?string $CDV1j, string $RW9QB = null) { goto bOMHf; nen2q: $this->addClass("\x62\164\156\55\x70\162\x69\x6d\x61\162\x79"); goto y2ris; y2ris: $this->addAttribute("\164\171\x70\x65", "\163\165\142\x6d\x69\x74"); goto uPtx_; bOMHf: parent::__construct($CDV1j, $RW9QB); goto nen2q; uPtx_: } public function setForm($m8qRA) : self { $this->addAttribute("\x66\x6f\162\x6d", $m8qRA); return $this; } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\FormMaker\Front\Field;
+
+use Pmpr\Common\Foundation\Manipulate\ManipulateFormat;
+use Pmpr\Common\Foundation\Manipulate\Theme\ManipulateHTML;
+
+class Submit extends Button
+{
+    
+    public function __construct(?string $aokagokqyuysuksm, string $pkyyagewkiyckmwy = null)
+    {
+        goto scayemgqcsisqqag;
+        aasaocqscwkksuom:
+        $this->qigsyyqgewgskemg("\x62\164\156\55\160\x72\151\x6d\141\x72\171");
+        goto gwgisgmcmgcasskc;
+        gwgisgmcmgcasskc:
+        $this->igmaewykumgwoaoy("\164\x79\x70\145", "\163\165\142\x6d\x69\x74");
+        goto mmesoimsyqeiowoo;
+        scayemgqcsisqqag:
+        parent::__construct($aokagokqyuysuksm, $pkyyagewkiyckmwy);
+        goto aasaocqscwkksuom;
+        mmesoimsyqeiowoo:
+    }
+    
+    public function ieoqemcqwqowuwie($eaoumsseceiowgsk) : self
+    {
+        $this->igmaewykumgwoaoy("\x66\x6f\162\x6d", $eaoumsseceiowgsk);
+        return $this;
+    }
+}

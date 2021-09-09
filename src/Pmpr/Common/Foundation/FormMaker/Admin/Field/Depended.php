@@ -1,2 +1,41 @@
 <?php
- namespace Pmpr\Common\Foundation\FormMaker\Admin\Field; class Depended extends Checkbox { protected array $targets = []; public function __construct(?string $CDV1j, ?string $vPl9z, array $JstF6 = [], ?string $Ym4v7 = null) { goto q_siI; q_siI: parent::__construct($CDV1j, $vPl9z, $Ym4v7); goto h64Kn; byEqw: $this->addParentClass("\144\x65\160\x65\156\144\145\144"); goto gIrDU; h64Kn: $this->setTargets($JstF6); goto byEqw; gIrDU: } public function getTargets() : ?array { return $this->targets; } public function setTargets($JstF6) : self { $this->targets = $JstF6; return $this; } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\FormMaker\Admin\Field;
+
+
+class Depended extends Checkbox
+{
+    
+    protected array $targets = [];
+    
+    public function __construct(?string $aokagokqyuysuksm, ?string $ymqmyyeuycgmigyo, array $cwucaoaqgwqcwews = [], ?string $mkqqqewsokcswckc = null)
+    {
+        goto aawmyoyeqakesesk;
+        iuesiswwkuycmkss:
+        $this->usoqcyyugsuyiewc("\x64\145\x70\145\x6e\x64\x65\144");
+        goto yuuemysicwemmaeo;
+        aukusqkcwcumyaqg:
+        $this->yekmmasckowaowgc($cwucaoaqgwqcwews);
+        goto iuesiswwkuycmkss;
+        aawmyoyeqakesesk:
+        parent::__construct($aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc);
+        goto aukusqkcwcumyaqg;
+        yuuemysicwemmaeo:
+    }
+    
+    public function qammgescyicuwouu() : ?array
+    {
+        return $this->targets;
+    }
+    
+    public function yekmmasckowaowgc($cwucaoaqgwqcwews) : self
+    {
+        $this->targets = $cwucaoaqgwqcwews;
+        return $this;
+    }
+}

@@ -1,2 +1,159 @@
 <?php
- namespace Pmpr\Common\Foundation\Page\Admin; use Pmpr\Common\Foundation\Manipulate\ManipulateServer; use Pmpr\Common\Foundation\Manipulate\Theme\ManipulateMenu; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; use Pmpr\Common\Foundation\WPListTable; abstract class Page extends Common { protected array $tabs = []; protected array $args = []; protected array $acts = []; protected ?WPListTable $listTable = null; public function getTab($CDV1j) : ?Tab { return ManipulateArray::get($this->getTabs(), $CDV1j, null); } public function getArg($vPl9z) { return ManipulateArray::get($this->getArgs(), $vPl9z); } public function getArgs() : array { return $this->args; } public function getTabs() : array { return $this->tabs; } public function addTab(Tab $KuWxx) : self { $this->tabs[$KuWxx->getId()] = $KuWxx; return $this; } public function getActs() : array { return $this->acts; } public function addAct(string $PAITS) : self { $this->acts[] = $PAITS; return $this; } public function getListTable() : ?WPListTable { return $this->listTable; } public function addTabs(array $h7hiL = []) : self { goto qcNxC; RHBNG: PK_Mh: goto fssVJ; fssVJ: return $this; goto N_k2A; qcNxC: foreach ($h7hiL as $KuWxx) { $this->addTab($KuWxx); UrxaP: } goto RHBNG; N_k2A: } public function addActions() { $wTG2x = $this->generateHook("\160\141\x67\x65\x5f\141\x64\x6d\x69\156\x5f\x62\145\146\x6f\x72\x65\137{$this->getArg("\160\141\x72\x65\156\x74\137\163\154\x75\x67")}\x5f\164\x61\142\163"); $this->addAction($wTG2x, [$this, "\142\145\x66\157\x72\x65\124\x61\x62\x73"])->addAction("\x61\x64\x6d\x69\x6e\137\x6d\145\156\x75", [$this, "\141\144\x6d\151\156\115\x65\x6e\165"]); } public function adminMenu() { goto SyALP; hcRxs: $MjmmA["\146\x75\x6e\143\x74\151\157\156"] = [$this, "\x72\x65\156\144\145\162"]; goto s7TMw; Jm93o: if (!$MjmmA) { goto Yt32n; } goto hcRxs; s7TMw: ManipulateMenu::addMenu($MjmmA); goto x9waL; SyALP: $MjmmA = $this->getArgs(); goto Jm93o; x9waL: Yt32n: goto UJDdk; UJDdk: } public function render() { goto iXKcR; oNKGC: $CDV1j = ManipulateServer::get("\x74\141\x62", key($h7hiL)); goto BBKWh; F4JHF: if (!is_array($h7hiL)) { goto DT1RT; } goto TkczH; BBKWh: $KuWxx = $this->getTab($CDV1j); goto EWghB; iXKcR: $this->initView(); goto igFAM; igFAM: $KuWxx = null; goto pukpu; n0OrZ: echo $this->renderTemplate("\151\x6e\x64\x65\170", ["\x74\x61\142\163" => $h7hiL, "\x70\x61\x67\x65" => $this, "\141\x63\164\x69\x6f\x6e\163" => $this->getActs(), "\x6c\151\163\164\137\164\141\x62\x6c\145" => $this->getListTable(), "\x63\x75\162\x72\145\156\164\137\164\x61\x62" => $KuWxx, "\143\x75\x72\x72\x65\x6e\x74\x5f\160\141\x67\145\x5f\154\151\156\x6b" => admin_url("\141\144\x6d\x69\x6e\56\160\150\x70\x3f\160\x61\147\145\75" . $this->getArg("\155\145\x6e\165\x5f\163\x6c\165\147"))], ["\143\x6c\141\163\163" => self::class]); goto K99ai; EWghB: DT1RT: goto n0OrZ; pukpu: $h7hiL = $this->getTabs(); goto F4JHF; TkczH: $h7hiL = ManipulateArray::sortBy($h7hiL, "\x67\x65\164\120\162\151\x6f\162\x69\x74\171"); goto oNKGC; K99ai: } public function beforeTabs($vs_36) { } public final function isCurrentPage() : bool { return ManipulateServer::get(self::PAGE) === $this->getArg("\155\145\156\165\137\x73\x6c\165\x67"); } public function initView() { } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Page\Admin;
+
+use Pmpr\Common\Foundation\Manipulate\ManipulateServer;
+use Pmpr\Common\Foundation\Manipulate\Theme\ManipulateMenu;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
+use Pmpr\Common\Foundation\WPListTable;
+
+abstract class Page extends Common
+{
+    
+    protected array $tabs = [];
+    
+    protected array $args = [];
+    
+    protected array $acts = [];
+    
+    protected ?WPListTable $listTable = null;
+    
+    public function qiuwgoaekqikgcci($aokagokqyuysuksm) : ?Tab
+    {
+        return ManipulateArray::get($this->equiyaoamqmaeckc(), $aokagokqyuysuksm, null);
+    }
+    
+    public function imkyoqyocosuqasu($ymqmyyeuycgmigyo)
+    {
+        return ManipulateArray::get($this->kooiucqkggeagccu(), $ymqmyyeuycgmigyo);
+    }
+    
+    public function kooiucqkggeagccu() : array
+    {
+        return $this->args;
+    }
+    
+    public function equiyaoamqmaeckc() : array
+    {
+        return $this->tabs;
+    }
+    
+    public function aucimgwswmgaocae(Tab $cciauwuwuqaywgce) : self
+    {
+        $this->tabs[$cciauwuwuqaywgce->mwikyscisascoeea()] = $cciauwuwuqaywgce;
+        return $this;
+    }
+    
+    public function ckiimaaecogswcsu() : array
+    {
+        return $this->acts;
+    }
+    
+    public function quyawykcegmmwmky(string $mauamegckkwueuuo) : self
+    {
+        $this->acts[] = $mauamegckkwueuuo;
+        return $this;
+    }
+    
+    public function waeasakssissiuqg() : ?WPListTable
+    {
+        return $this->listTable;
+    }
+    
+    public function ciwuiwsyckiiogwo(array $ywoucyskcquysiwc = []) : self
+    {
+        goto wymmeymakykomoeg;
+        oqsykugcsggakmoy:
+        return $this;
+        goto oekessmycksmemam;
+        ksqaeuyiiiuuouoi:
+        eqakckaqmkweciao:
+        goto oqsykugcsggakmoy;
+        wymmeymakykomoeg:
+        foreach ($ywoucyskcquysiwc as $cciauwuwuqaywgce) {
+            $this->aucimgwswmgaocae($cciauwuwuqaywgce);
+            oagkkuowwccmeaoc:
+        }
+        goto ksqaeuyiiiuuouoi;
+        oekessmycksmemam:
+    }
+    public function wigskegsqequoeks()
+    {
+        $iaakskwmyqceoscy = $this->ygyygikyocoymgaw("\160\141\x67\x65\137\x61\x64\x6d\x69\x6e\137\142\145\146\157\x72\x65\137{$this->imkyoqyocosuqasu("\x70\141\162\145\x6e\x74\x5f\163\x6c\x75\147")}\137\164\141\x62\x73");
+        $this->qcsmikeggeemccuu($iaakskwmyqceoscy, [$this, "\x6b\143\x63\x67\145\x6b\x69\161\x67\x73\165\x77\155\x6f\x77\157"])->qcsmikeggeemccuu("\x61\x64\x6d\151\x6e\137\x6d\145\x6e\165", [$this, "\x65\x75\161\x67\167\x69\x73\x63\167\x67\x71\153\x71\153\x65\x63"]);
+    }
+    public function euqgwiscwgqkqkec()
+    {
+        goto kmccaesicogsgcmk;
+        kmccaesicogsgcmk:
+        $ewuukoycimkekouc = $this->kooiucqkggeagccu();
+        goto ewucaygocgykeweg;
+        ioawiemsmsyyssyu:
+        ManipulateMenu::aemwscceysomkuea($ewuukoycimkekouc);
+        goto iayicqkseeycaaqk;
+        ayayswaesiscymcw:
+        $ewuukoycimkekouc["\146\165\156\143\x74\x69\157\156"] = [$this, "\x72\x65\x6e\144\145\x72"];
+        goto ioawiemsmsyyssyu;
+        iayicqkseeycaaqk:
+        gwaiikaaqgaoigay:
+        goto mcqegwkqsoygamey;
+        ewucaygocgykeweg:
+        if (!$ewuukoycimkekouc) {
+            goto gwaiikaaqgaoigay;
+        }
+        goto ayayswaesiscymcw;
+        mcqegwkqsoygamey:
+    }
+    public function render()
+    {
+        goto uyeqsmcyogggskye;
+        osysmqqcyasqyscm:
+        $aokagokqyuysuksm = ManipulateServer::get("\x74\x61\142", key($ywoucyskcquysiwc));
+        goto aoooaekesimaisms;
+        yosaemoyeeiykeai:
+        csgcicsyauawamqw:
+        goto mywoocikqmgcqsog;
+        mywoocikqmgcqsog:
+        echo $this->iuygowkemiiwqmiw("\x69\156\x64\x65\170", ["\164\x61\142\x73" => $ywoucyskcquysiwc, "\x70\x61\x67\x65" => $this, "\x61\x63\164\151\157\156\x73" => $this->ckiimaaecogswcsu(), "\x6c\151\x73\164\x5f\164\141\142\x6c\145" => $this->waeasakssissiuqg(), "\x63\165\x72\162\x65\x6e\x74\137\164\141\x62" => $cciauwuwuqaywgce, "\143\165\162\x72\x65\156\x74\137\160\141\x67\x65\x5f\x6c\151\x6e\x6b" => admin_url("\141\144\x6d\x69\156\x2e\x70\150\160\77\x70\x61\x67\x65\75" . $this->imkyoqyocosuqasu("\155\x65\x6e\165\x5f\163\x6c\x75\x67"))], ["\143\x6c\141\x73\163" => self::class]);
+        goto swekqaeccossoigy;
+        cqcskimegccygqym:
+        if (!is_array($ywoucyskcquysiwc)) {
+            goto csgcicsyauawamqw;
+        }
+        goto eoasqcamsowcwweq;
+        eoasqcamsowcwweq:
+        
+        $ywoucyskcquysiwc = ManipulateArray::yaeiiwwyckwugsem($ywoucyskcquysiwc);
+        goto osysmqqcyasqyscm;
+        cayayuqimskqkayc:
+        $cciauwuwuqaywgce = null;
+        goto qgcicekcucaauaka;
+        aoooaekesimaisms:
+        $cciauwuwuqaywgce = $this->qiuwgoaekqikgcci($aokagokqyuysuksm);
+        goto yosaemoyeeiykeai;
+        qgcicekcucaauaka:
+        $ywoucyskcquysiwc = $this->equiyaoamqmaeckc();
+        goto cqcskimegccygqym;
+        uyeqsmcyogggskye:
+        $this->suicksywcwiggasc();
+        goto cayayuqimskqkayc;
+        swekqaeccossoigy:
+    }
+    
+    public function kccgekiqgsuwmowo($suaemuyiacqyugsm)
+    {
+    }
+    
+    public final function qcsgmgoukiouuscw() : bool
+    {
+        return ManipulateServer::get(self::PAGE) === $this->imkyoqyocosuqasu("\155\145\156\165\137\x73\154\x75\147");
+    }
+    public function suicksywcwiggasc()
+    {
+    }
+}

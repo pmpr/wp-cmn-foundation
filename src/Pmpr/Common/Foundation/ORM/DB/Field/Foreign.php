@@ -1,2 +1,186 @@
 <?php
- namespace Pmpr\Common\Foundation\ORM\DB\Field; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString; class Foreign extends Field { const ONE_TO_ONE = "\x6f\x6e\x65\164\x6f\x6f\156\x65"; const ONE_TO_MANY = "\157\156\x65\164\157\x6d\141\x6e\x79"; const MANY_TO_ONE = "\x6d\141\x6e\x79\x74\157\x6f\156\x65"; const MANY_TO_MANY = "\x6d\x61\156\171\164\157\x6d\141\x6e\171"; protected ?string $on = null; protected ?string $class = null; protected bool $mappedBy = false; protected ?string $references = "\x69\x64"; protected ?string $inversedBy = null; protected ?string $relation = self::ONE_TO_ONE; protected ?string $onDelete = "\116\x4f\40\x41\103\x54\x49\117\116"; protected ?string $onUpdate = "\x4e\x4f\40\101\x43\124\x49\x4f\116"; public function __construct(string $CDV1j, ?string $hTPi6 = null) { parent::__construct("\146\x6f\162\x65\x69\147\x6e", $CDV1j, $hTPi6); } public function getRelation() : ?string { return $this->relation; } private function setRelation(?string $E4Jc8) : self { $this->relation = $E4Jc8; return $this; } public function asOneToOne() : self { return $this->setRelation(self::ONE_TO_ONE); } public function asOneToMany() : self { $this->asMappedBy()->dontShowUI(); return $this->setRelation(self::ONE_TO_MANY); } public function asManyToMany() : self { return $this->setRelation(self::MANY_TO_MANY); } public function asManyToOne() : self { goto LnaZF; xxNCR: wp_die(sprintf(__("\x46\x6f\x72\145\151\x67\x6e\40\x6b\145\x79\x20\45\x73\40\155\x75\x73\x74\x20\x65\x6e\x64\40\167\x69\x74\x68\40\x25\x73\40\160\157\x73\164\146\151\x78", PR__CMN__FOUNDATION), $this->getId(), self::_ID)); goto LG9yQ; LnaZF: $this->asInversedBy(); goto zRYXT; AdRVq: return $this->setRelation(self::MANY_TO_ONE); goto lnNpa; LG9yQ: Lx_PN: goto AdRVq; zRYXT: if (ManipulateString::endWith($this->getId(), self::_ID)) { goto Lx_PN; } goto xxNCR; lnNpa: } public function isManyToOne() : bool { return $this->getRelation() == self::MANY_TO_ONE; } public function isOneToMany() : bool { return $this->getRelation() == self::ONE_TO_MANY; } public function isOneToOne() : bool { return $this->getRelation() == self::ONE_TO_ONE; } public function isManyToMany() : bool { return $this->getRelation() == self::MANY_TO_MANY; } public function getClass() : ?string { return $this->class; } public function setClass(?string $jg5rc) : self { $this->class = $jg5rc; return $this; } public function isMappedBy() : bool { return $this->mappedBy; } public function asMappedBy() : self { $this->mappedBy = true; return $this; } public function isInversedBy() : ?string { return $this->inversedBy; } public function asInversedBy() : self { $this->inversedBy = true; return $this; } public function getOnDelete() : ?string { return $this->onDelete; } public function setOnDelete(?string $qilcg) : self { $this->onDelete = $qilcg; return $this; } public function getOnUpdate() : ?string { return $this->onUpdate; } public function setOnUpdate(?string $Qtjdd) : self { $this->onUpdate = $Qtjdd; return $this; } public function getOn() : ?string { return $this->on; } public function setOn(?string $nnPFc) : self { $this->on = $nnPFc; return $this; } public function getReferences() : ?string { return $this->references; } public function setReferences(?string $yZqQA) : self { $this->references = $yZqQA; return $this; } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\ORM\DB\Field;
+
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString;
+
+class Foreign extends Field
+{
+    const ONE_TO_ONE = "\x6f\156\x65\x74\157\x6f\156\145";
+    const ONE_TO_MANY = "\157\156\x65\x74\x6f\x6d\141\156\x79";
+    const MANY_TO_ONE = "\155\141\x6e\x79\164\157\157\156\145";
+    const MANY_TO_MANY = "\x6d\141\156\171\164\x6f\x6d\x61\156\x79";
+    
+    protected ?string $on = null;
+    
+    protected ?string $class = null;
+    
+    protected bool $mappedBy = false;
+    
+    protected ?string $references = "\x69\x64";
+    
+    protected ?string $inversedBy = null;
+    
+    protected ?string $relation = self::ONE_TO_ONE;
+    
+    protected ?string $onDelete = "\116\117\40\x41\103\x54\111\117\116";
+    
+    protected ?string $onUpdate = "\x4e\x4f\x20\x41\103\x54\x49\x4f\x4e";
+    
+    public function __construct(string $aokagokqyuysuksm, ?string $meqocwsecsywiiqs = null)
+    {
+        parent::__construct("\x66\157\x72\145\x69\x67\156", $aokagokqyuysuksm, $meqocwsecsywiiqs);
+    }
+    
+    public function yeoakayeygwguyus() : ?string
+    {
+        return $this->relation;
+    }
+    
+    private function qemiokeaqceqkgso(?string $ayegqaqygsqsmews) : self
+    {
+        $this->relation = $ayegqaqygsqsmews;
+        return $this;
+    }
+    
+    public function geimymogiqyssawi() : self
+    {
+        return $this->qemiokeaqceqkgso(self::ONE_TO_ONE);
+    }
+    
+    public function ckgquisaimmgwuyu() : self
+    {
+        $this->kkeymosoimmgsaug()->acokiqqgsmoqaeyu();
+        return $this->qemiokeaqceqkgso(self::ONE_TO_MANY);
+    }
+    
+    public function ckmqkgwcusyaegmm() : self
+    {
+        return $this->qemiokeaqceqkgso(self::MANY_TO_MANY);
+    }
+    
+    public function wuuqgaekqeymecag() : self
+    {
+        goto auucmoqsmsouecag;
+        qywgscciuywgmaia:
+        wp_die(sprintf(__("\x46\x6f\162\145\x69\147\x6e\x20\x6b\x65\x79\40\x25\x73\x20\155\165\x73\x74\x20\145\x6e\x64\x20\x77\151\164\x68\40\45\163\40\x70\x6f\163\164\146\x69\170", PR__CMN__FOUNDATION), $this->mwikyscisascoeea(), self::_ID));
+        goto wiqmoimycyeesqse;
+        euiiaygickweagiw:
+        if (ManipulateString::ykemmsoumouomkqm($this->mwikyscisascoeea(), self::_ID)) {
+            goto muooqqykkmuismwk;
+        }
+        goto qywgscciuywgmaia;
+        wiqmoimycyeesqse:
+        muooqqykkmuismwk:
+        goto kaewigguiigmcsoe;
+        auucmoqsmsouecag:
+        $this->wakqsiacyacmumuw();
+        goto euiiaygickweagiw;
+        kaewigguiigmcsoe:
+        return $this->qemiokeaqceqkgso(self::MANY_TO_ONE);
+        goto wmoqoeyuaikokayu;
+        wmoqoeyuaikokayu:
+    }
+    
+    public function eiyqqesoywqkegwu() : bool
+    {
+        return $this->yeoakayeygwguyus() == self::MANY_TO_ONE;
+    }
+    
+    public function gumeeckcowwoyoci() : bool
+    {
+        return $this->yeoakayeygwguyus() == self::ONE_TO_MANY;
+    }
+    
+    public function wmomygggskkoqess() : bool
+    {
+        return $this->yeoakayeygwguyus() == self::ONE_TO_ONE;
+    }
+    
+    public function ygswmewosceowmya() : bool
+    {
+        return $this->yeoakayeygwguyus() == self::MANY_TO_MANY;
+    }
+    
+    public function uecyuoauykiqqkey() : ?string
+    {
+        return $this->class;
+    }
+    
+    public function uwmyqckcyamwaiww(?string $egkyssmuqcwaciya) : self
+    {
+        $this->class = $egkyssmuqcwaciya;
+        return $this;
+    }
+    
+    public function iueigwuckeaswyuu() : bool
+    {
+        return $this->mappedBy;
+    }
+    
+    public function kkeymosoimmgsaug() : self
+    {
+        $this->mappedBy = true;
+        return $this;
+    }
+    
+    public function aumgkcogqygmwsqy() : ?string
+    {
+        return $this->inversedBy;
+    }
+    
+    public function wakqsiacyacmumuw() : self
+    {
+        $this->inversedBy = true;
+        return $this;
+    }
+    
+    public function giqekaueqsgsmkgo() : ?string
+    {
+        return $this->onDelete;
+    }
+    
+    public function eewuieiqoqmekwmw(?string $smgycasaqmgcaekq) : self
+    {
+        $this->onDelete = $smgycasaqmgcaekq;
+        return $this;
+    }
+    
+    public function ucqugkkuiooayqie() : ?string
+    {
+        return $this->onUpdate;
+    }
+    
+    public function uumaqsukuwmougwk(?string $muegsmmicsqsgucm) : self
+    {
+        $this->onUpdate = $muegsmmicsqsgucm;
+        return $this;
+    }
+    
+    public function miosasgcmguoamem() : ?string
+    {
+        return $this->on;
+    }
+    
+    public function wqykgeksiuoqcwqe(?string $koegqoagisewcica) : self
+    {
+        $this->on = $koegqoagisewcica;
+        return $this;
+    }
+    
+    public function syccewqoeggkkgke() : ?string
+    {
+        return $this->references;
+    }
+    
+    public function gqseocequggskgww(?string $ykqcceqiqygieeks) : self
+    {
+        $this->references = $ykqcceqiqygieeks;
+        return $this;
+    }
+}

@@ -1,2 +1,144 @@
 <?php
- namespace Pmpr\Common\Foundation\FormMaker\Admin\Field; use Pmpr\Common\Foundation\Manipulate\Theme\ManipulateHTML; class Button extends Field { protected ?string $link = null; protected ?string $element = null; protected ?string $target = null; protected ?string $label = null; protected ?string $icon = null; protected ?string $action = null; public function __construct(?string $CDV1j, ?string $RW9QB, ?string $Ym4v7 = null) { parent::__construct("\x62\165\164\164\157\156", $CDV1j, '', $Ym4v7); $this->setLabel($RW9QB)->setElement("\x62\165\164\164\x6f\156"); } public function setTitle(?string $hTPi6 = null) : self { return $this->addAttribute("\164\x69\164\x6c\x65", $hTPi6); } public function primary() { return $this->addClass("\x62\165\164\x74\x6f\x6e\55\x70\x72\151\155\141\x72\171"); } public function setLabel(?string $RW9QB) : self { $this->label = $RW9QB; return $this; } public function getLabel() : ?string { return $this->label; } public function setLink(?string $geN9n) : self { goto CYaWw; qE6On: return $this; goto FEJIK; wEMt3: $this->setElement("\141"); goto qE6On; CYaWw: $this->link = $geN9n; goto wEMt3; FEJIK: } public function setIcon(?string $cbVPu) : self { $this->icon = $cbVPu; return $this; } public function setAction(?string $KcJWJ) : self { $this->action = $KcJWJ; return $this; } public function setTarget(?string $dyyPs) : self { $this->target = $dyyPs; return $this; } private function setElement(?string $zrqKX) : self { $this->element = $zrqKX; return $this; } public function asAction() : self { return $this->addParentClass("\x70\x72\55\141\143\x74\x69\157\x6e"); } public function setColor($pjZ2H, $ua8fA = false) : self { $ua8fA = $ua8fA ? "\x2d\157\x75\164\154\151\x6e\x65" : ''; return $this->addClass("\142\x74\x6e\40\142\164\x6e{$ua8fA}\55{$pjZ2H}"); } public function asDanger($ua8fA = false) : self { return $this->setColor("\144\x61\x6e\147\x65\x72", $ua8fA); } public function asWarning($ua8fA = false) : self { return $this->setColor("\x77\141\162\x6e\151\156\x67", $ua8fA); } public function asInfo($ua8fA = false) : self { return $this->setColor("\x69\x6e\146\x6f", $ua8fA); } public function asPrimary($ua8fA = false) : self { return $this->setColor("\160\x72\x69\155\141\162\171", $ua8fA); } public function asSecondary($ua8fA = false) : self { return $this->setColor("\x73\x65\143\157\x6e\144\141\162\171", $ua8fA); } public function asSuccess($ua8fA = false) : self { return $this->setColor("\x73\x75\x63\143\145\x73\x73", $ua8fA); } public function addNonce(string $GRTXF) : self { return $this->addAttribute("\x64\141\164\x61\x2d\x6e\x6f\x6e\x63\x65", wp_create_nonce($GRTXF)); } public function asConfirmable($DrjAW = [], $zrqKX = "\x62\165\164\164\x6f\x6e") : self { $this->addClass("\160\x72\55\x63\157\x6e\x66\151\162\155\x61\142\x6c\145\x2d\141\x63\x74\x69\157\156"); return $this->replaceAttribute("\144\x61\164\x61\x2d\x63\157\156\146\x69\147", ManipulateHTML::prepareModalArgs($DrjAW, $zrqKX)); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\FormMaker\Admin\Field;
+
+use Pmpr\Common\Foundation\Manipulate\Theme\ManipulateHTML;
+
+class Button extends Field
+{
+    
+    protected ?string $link = null;
+    
+    protected ?string $element = null;
+    
+    protected ?string $target = null;
+    
+    protected ?string $label = null;
+    
+    protected ?string $icon = null;
+    
+    protected ?string $action = null;
+    
+    public function __construct(?string $aokagokqyuysuksm, ?string $pkyyagewkiyckmwy, ?string $mkqqqewsokcswckc = null)
+    {
+        parent::__construct("\x62\165\164\x74\157\156", $aokagokqyuysuksm, '', $mkqqqewsokcswckc);
+        $this->eqggmusacqoqcwuk($pkyyagewkiyckmwy)->comqsuwokcsmkcau("\x62\x75\164\x74\x6f\x6e");
+    }
+    
+    public function gswweykyogmsyawy(?string $meqocwsecsywiiqs = null) : self
+    {
+        return $this->igmaewykumgwoaoy("\x74\151\164\x6c\145", $meqocwsecsywiiqs);
+    }
+    
+    public function micmwmywmkguiyyk()
+    {
+        return $this->qigsyyqgewgskemg("\x62\165\x74\164\157\x6e\55\160\162\151\155\141\162\171");
+    }
+    
+    public function eqggmusacqoqcwuk(?string $pkyyagewkiyckmwy) : self
+    {
+        $this->label = $pkyyagewkiyckmwy;
+        return $this;
+    }
+    
+    public function uikgwcuascgeissw() : ?string
+    {
+        return $this->label;
+    }
+    
+    public function qoowicksguscqyks(?string $iwywmkygwewiamwm) : self
+    {
+        goto ekisckcuoqqosgsg;
+        kqwmiakcsoaskmeu:
+        $this->comqsuwokcsmkcau("\141");
+        goto kkogamqweysaskie;
+        kkogamqweysaskie:
+        return $this;
+        goto iuyuyeasowcwgogq;
+        ekisckcuoqqosgsg:
+        $this->link = $iwywmkygwewiamwm;
+        goto kqwmiakcsoaskmeu;
+        iuyuyeasowcwgogq:
+    }
+    
+    public function saemoowcasogykak(?string $wkaqekwwgqsqwcoi) : self
+    {
+        $this->icon = $wkaqekwwgqsqwcoi;
+        return $this;
+    }
+    
+    public function cwqickkaaokiquuo(?string $aiamqeawckcsuaou) : self
+    {
+        $this->action = $aiamqeawckcsuaou;
+        return $this;
+    }
+    
+    public function oockkiieqcwiocga(?string $ccamueccusigaaio) : self
+    {
+        $this->target = $ccamueccusigaaio;
+        return $this;
+    }
+    
+    private function comqsuwokcsmkcau(?string $kqywgoqsmuswammk) : self
+    {
+        $this->element = $kqywgoqsmuswammk;
+        return $this;
+    }
+    
+    public function ygagwkucacyassau() : self
+    {
+        return $this->usoqcyyugsuyiewc("\160\162\55\141\143\x74\151\x6f\x6e");
+    }
+    
+    public function gioaiiyakuoimewa($qoiwmokisgikggia, $quyoyomkimissiqu = false) : self
+    {
+        $quyoyomkimissiqu = $quyoyomkimissiqu ? "\55\x6f\165\x74\x6c\x69\x6e\x65" : '';
+        return $this->qigsyyqgewgskemg("\x62\164\156\x20\x62\x74\x6e{$quyoyomkimissiqu}\x2d{$qoiwmokisgikggia}");
+    }
+    
+    public function muywawimuacwmkgw($quyoyomkimissiqu = false) : self
+    {
+        return $this->gioaiiyakuoimewa("\144\141\156\147\145\x72", $quyoyomkimissiqu);
+    }
+    
+    public function wksqkiomigqkkcgu($quyoyomkimissiqu = false) : self
+    {
+        return $this->gioaiiyakuoimewa("\x77\141\x72\x6e\x69\x6e\147", $quyoyomkimissiqu);
+    }
+    
+    public function miqekcqciusawwie($quyoyomkimissiqu = false) : self
+    {
+        return $this->gioaiiyakuoimewa("\151\x6e\146\157", $quyoyomkimissiqu);
+    }
+    
+    public function gmscmskmuissgywk($quyoyomkimissiqu = false) : self
+    {
+        return $this->gioaiiyakuoimewa("\x70\162\151\x6d\141\162\x79", $quyoyomkimissiqu);
+    }
+    
+    public function goqoickiksqsaeyk($quyoyomkimissiqu = false) : self
+    {
+        return $this->gioaiiyakuoimewa("\163\145\143\x6f\156\x64\x61\162\x79", $quyoyomkimissiqu);
+    }
+    
+    public function mweyuoqsqugqwcca($quyoyomkimissiqu = false) : self
+    {
+        return $this->gioaiiyakuoimewa("\163\x75\143\143\145\x73\x73", $quyoyomkimissiqu);
+    }
+    
+    public function igkwmqewuauogeus(string $gwgqcsmomamyqsmy) : self
+    {
+        return $this->igmaewykumgwoaoy("\144\141\164\x61\x2d\156\157\156\x63\x65", wp_create_nonce($gwgqcsmomamyqsmy));
+    }
+    
+    public function ukmcmuaawacquume($ywmkwiwkosakssii = [], $kqywgoqsmuswammk = "\142\165\x74\164\x6f\156") : self
+    {
+        $this->qigsyyqgewgskemg("\x70\x72\x2d\x63\157\156\146\x69\x72\155\141\x62\x6c\x65\55\x61\143\164\151\x6f\156");
+        return $this->qcgocuceocquqcuw("\144\x61\x74\141\55\143\157\156\146\151\x67", ManipulateHTML::uskieqmcqyecigmy($ywmkwiwkosakssii, $kqywgoqsmuswammk));
+    }
+}

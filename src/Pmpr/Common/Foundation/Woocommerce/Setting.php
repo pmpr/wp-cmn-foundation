@@ -1,2 +1,323 @@
 <?php
- namespace Pmpr\Common\Foundation\Woocommerce; use Pmpr\Common\Foundation\Manipulate\Plugin\ManipulateWoocommerce; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString; use WC_Admin_Settings; abstract class Setting extends Common { const WOOCOMMERCE_ = "\x77\x6f\x6f\143\157\x6d\x6d\x65\162\x63\145\137"; const STORED_ADDRESS = "\x73\164\x6f\x72\x65\x64\137\141\x64\x64\x72\x65\163\163"; const CATALOG_OPTIONS = "\x63\141\x74\141\154\157\x67\137\157\x70\164\151\157\156\x73"; const GENERAL_OPTIONS = "\x67\x65\156\145\162\141\x6c\137\157\160\x74\x69\x6f\x6e\163"; const PRICING_OPTIONS = "\160\162\151\143\151\x6e\x67\137\x6f\x70\164\151\x6f\156\x73"; const PRODUCT_RATING_OPTIONS = "\160\x72\x6f\x64\x75\x63\164\x5f\x72\141\x74\x69\156\x67\x5f\157\160\x74\151\x6f\156\x73"; const DIGITAL_DOWNLOAD_OPTIONS = "\x64\x69\x67\151\x74\141\x6c\x5f\x64\157\167\156\x6c\157\x61\x64\x5f\x6f\x70\164\151\x6f\156\x73"; const PRODUCT_INVENTORY_OPTIONS = "\x70\x72\157\144\x75\143\164\137\151\156\166\x65\156\x74\x6f\162\171\137\x6f\160\164\x69\157\x6e\163"; const PRODUCT_MEASUREMENT_OPTIONS = "\x70\162\x6f\x64\165\x63\x74\137\x6d\145\x61\163\x75\x72\145\155\x65\x6e\164\137\x6f\x70\x74\x69\x6f\156\163"; public function addFilters() { goto C5bXc; XKA5l: parent::addFilters(); goto EEQ1m; t4Kh8: pnX3a: goto XKA5l; ukKC4: foreach ($h7hiL as $KuWxx => $o0RX4) { goto hvL3Z; ufdK_: if (!is_array($o0RX4)) { goto nMEGW; } goto QBogO; i_EB2: t80En: goto ufdK_; QBogO: foreach ($o0RX4 as $YKT4a) { goto OUqpp; L_rrc: b2ByS: goto nzZ7r; OUqpp: $STVAO = ManipulateString::toCamel($KuWxx . "\x5f\163\x65\143\164\x69\x6f\156\x5f" . $YKT4a); goto uZcqO; nzZ7r: TL6yE: goto FW9h2; TFk4Q: if (!method_exists($this, "{$STVAO}\x45\x6e\144")) { goto b2ByS; } goto YkvjU; YkvjU: $this->addFilter("\167\x6f\x6f\x63\x6f\155\155\145\x72\x63\x65\x5f\x73\x65\x74\x74\151\156\147\x73\137{$YKT4a}\137\145\x6e\144", [$this, "{$STVAO}\x45\x6e\144"]); goto L_rrc; tg7AZ: $this->addFilter("\167\x6f\157\x63\157\155\x6d\145\x72\143\145\x5f\163\x65\x74\164\151\156\x67\163\x5f{$YKT4a}", [$this, "{$STVAO}\123\x74\x61\x72\x74"]); goto ThoI1; uZcqO: if (!method_exists($this, "{$STVAO}\x53\164\141\x72\164")) { goto BYzuI; } goto tg7AZ; ThoI1: BYzuI: goto TFk4Q; FW9h2: } goto qei0T; Vgai7: $KuWxx = $o0RX4; goto lBa3v; W97Mq: c6PZi: goto oFM6x; lBa3v: XzxFh: goto ZwRBZ; qei0T: dcjfL: goto OppC8; OppC8: nMEGW: goto W97Mq; ZwRBZ: $STVAO = ManipulateString::toCamel($KuWxx); goto YsIcD; YsIcD: if (!method_exists($this, $STVAO)) { goto t80En; } goto Efpar; hvL3Z: if (!is_numeric($KuWxx)) { goto XzxFh; } goto Vgai7; Efpar: $this->addFilter("\x77\157\x6f\143\x6f\155\x6d\x65\162\x63\x65\137{$KuWxx}\137\163\x65\x74\164\151\156\147\163", [$this, $STVAO]); goto i_EB2; oFM6x: } goto t4Kh8; C5bXc: $h7hiL = ["\147\145\156\145\162\x61\x6c" => [self::STORED_ADDRESS, self::GENERAL_OPTIONS, self::PRICING_OPTIONS], "\163\x68\151\x70\160\151\156\x67", "\151\156\166\x65\x6e\x74\157\x72\x79" => [self::PRODUCT_INVENTORY_OPTIONS], "\160\162\157\144\165\x63\x74\163\137\147\145\x6e\x65\162\141\154" => [self::CATALOG_OPTIONS, self::PRODUCT_RATING_OPTIONS, self::PRODUCT_MEASUREMENT_OPTIONS], "\x64\157\167\x6e\154\157\x61\x64\x61\x62\x6c\x65\x5f\160\162\x6f\144\x75\x63\x74\x73" => [self::DIGITAL_DOWNLOAD_OPTIONS], "\141\143\x63\x6f\165\x6e\164\137\x72\x65\147\x69\163\164\162\141\x74\151\x6f\x6e\137\157\x70\x74\151\x6f\156\x73"]; goto ukKC4; EEQ1m: } public final function renderFields($F9q7E = []) { WC_Admin_Settings::output_fields($F9q7E); } public final function renderField($mi3kO) { $this->renderFields([$mi3kO]); } public final function addField2Section($ZEhKe, $F9q7E, $YKT4a, $v7O3M = true) { return $this->addFields2Section([$ZEhKe], $F9q7E, $YKT4a, $v7O3M); } public function addFields2Section($ZEhKe, $F9q7E, $YKT4a, $v7O3M = true) { goto qn5gS; qBEpW: return $F9q7E; goto N843K; Wrhoc: if ($v7O3M) { goto LOsSa; } goto dVohO; KS5bK: LOsSa: goto BfDkR; Pcm9Q: Z4mgx: goto NGHyk; dVohO: $YKT4a++; goto KS5bK; BfDkR: array_splice($F9q7E, $YKT4a, 0, $ZEhKe); goto z9Xyu; qn5gS: foreach ($ZEhKe as $VIAHW => $mi3kO) { goto T51Mr; XpE4M: fgVj3: goto q2sI0; A2zIr: $mi3kO[self::TYPE] = ManipulateArray::get($mi3kO, self::TYPE, self::TEXT); goto jgr5l; jgr5l: $ZEhKe[$VIAHW] = $mi3kO; goto XpE4M; T51Mr: $mi3kO[self::ID] = ManipulateArray::get($mi3kO, self::ID, $VIAHW); goto A2zIr; q2sI0: } goto Pcm9Q; NGHyk: $YKT4a = $this->findSectionFiled($F9q7E, $YKT4a, $v7O3M); goto R1LEC; R1LEC: if (!is_numeric($YKT4a)) { goto piXvG; } goto Wrhoc; z9Xyu: piXvG: goto qBEpW; N843K: } public function findSectionFiled(array $F9q7E, string $YKT4a, $v7O3M = true) { goto Un0XI; KSRo9: T9IWg: goto fUBYM; Un0XI: foreach ($F9q7E as $VIAHW => $mi3kO) { goto AKdYI; rE1bT: $YKT4a = $VIAHW; goto HoGwA; vpJ7R: r3r7U: goto i_Q1s; i_Q1s: $dyyPs = "\x73\x65\143\164\151\x6f\156\x65\x6e\144"; goto gNtDD; qArwG: $CDV1j = ManipulateArray::get($mi3kO, self::ID); goto CBJF9; NPI4P: s1Uja: goto J2XyG; HoGwA: goto T9IWg; goto ajQs8; ajQs8: Y6o4M: goto NPI4P; ZFsvs: $dyyPs = self::TITLE; goto R9Rbq; gNtDD: h5JaY: goto qArwG; AKdYI: if ($v7O3M) { goto r3r7U; } goto ZFsvs; R9Rbq: goto h5JaY; goto vpJ7R; L7J42: if (!($CDV1j == $YKT4a && $j56jL === $dyyPs)) { goto Y6o4M; } goto rE1bT; CBJF9: $j56jL = ManipulateArray::get($mi3kO, self::TYPE); goto L7J42; J2XyG: } goto KSRo9; fUBYM: return $YKT4a; goto wX8BN; wX8BN: } public static function getSetting($bUHaw, $Ql_ZF = null, $rbWrz = self::WOOCOMMERCE_) { goto cin8z; OABNR: RXr4C: goto fQ29J; cin8z: if (!($rbWrz && substr($bUHaw, 0, strlen($rbWrz)) === $rbWrz)) { goto RXr4C; } goto jluor; jluor: $rbWrz = ''; goto OABNR; fQ29J: return ManipulateWoocommerce::getOption($bUHaw, $Ql_ZF, $rbWrz); goto gYjPV; gYjPV: } protected static function getEnableOptions($bUHaw, $JU8tX = []) { goto Q5nsJ; ki0At: if (!(is_array($JU8tX) && is_array($Vq_fk))) { goto IfDxc; } goto OoLlv; B2KgR: return $hS_Rv; goto Yio8r; Q5nsJ: $Vq_fk = self::getSetting($bUHaw); goto ZSVS6; tKnie: IfDxc: goto eYFRn; OoLlv: $hS_Rv = array_intersect_key($JU8tX, $Vq_fk); goto tKnie; HWbIb: N8bVP: goto DNagN; DNagN: $Vq_fk = array_flip($Vq_fk); goto qVbEW; qVbEW: $hS_Rv = []; goto ki0At; bDsVv: $hS_Rv = $Vq_fk; goto BfFka; BfFka: goto fCB1F; goto HWbIb; eYFRn: fCB1F: goto B2KgR; ZSVS6: if (is_array($Vq_fk) && $Vq_fk && is_array($JU8tX) && $JU8tX) { goto N8bVP; } goto bDsVv; Yio8r: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Woocommerce;
+
+use Pmpr\Common\Foundation\Manipulate\ManipulateValidation;
+use Pmpr\Common\Foundation\Manipulate\Plugin\ManipulateWoocommerce;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString;
+use WC_Admin_Settings;
+
+abstract class Setting extends Common
+{
+    const WOOCOMMERCE_ = "\167\157\157\x63\x6f\x6d\155\x65\162\143\x65\137";
+    const STORED_ADDRESS = "\163\x74\157\162\x65\x64\x5f\141\144\x64\x72\x65\x73\163";
+    const CATALOG_OPTIONS = "\143\x61\x74\141\x6c\x6f\147\137\x6f\x70\x74\x69\x6f\156\163";
+    const GENERAL_OPTIONS = "\147\145\x6e\x65\162\141\x6c\137\157\160\164\x69\157\x6e\x73";
+    const PRICING_OPTIONS = "\x70\162\x69\x63\x69\x6e\147\x5f\x6f\x70\x74\151\x6f\156\163";
+    const PRODUCT_RATING_OPTIONS = "\160\162\x6f\x64\165\143\x74\x5f\x72\x61\164\151\x6e\x67\137\157\160\164\151\157\156\x73";
+    const DIGITAL_DOWNLOAD_OPTIONS = "\x64\x69\147\151\164\141\x6c\137\x64\x6f\167\x6e\154\157\x61\x64\137\x6f\160\x74\151\x6f\x6e\x73";
+    const PRODUCT_INVENTORY_OPTIONS = "\160\162\x6f\144\x75\143\164\137\151\156\x76\145\x6e\x74\157\162\x79\x5f\x6f\x70\x74\151\x6f\x6e\163";
+    const PRODUCT_MEASUREMENT_OPTIONS = "\160\162\x6f\144\x75\143\164\x5f\x6d\x65\141\x73\x75\x72\145\155\145\156\164\137\x6f\160\164\x69\x6f\x6e\163";
+    public function kgquecmsgcouyaya()
+    {
+        goto mkskmcusskkouyyi;
+        mkskmcusskkouyyi:
+        $ywoucyskcquysiwc = ["\147\x65\156\x65\x72\141\x6c" => [self::STORED_ADDRESS, self::GENERAL_OPTIONS, self::PRICING_OPTIONS], "\163\150\x69\160\160\x69\156\x67", "\151\156\x76\145\x6e\164\x6f\162\171" => [self::PRODUCT_INVENTORY_OPTIONS], "\160\162\157\x64\x75\x63\x74\163\x5f\147\145\x6e\x65\x72\141\x6c" => [self::CATALOG_OPTIONS, self::PRODUCT_RATING_OPTIONS, self::PRODUCT_MEASUREMENT_OPTIONS], "\144\157\167\156\154\x6f\x61\x64\141\x62\154\x65\137\160\x72\x6f\x64\165\143\164\x73" => [self::DIGITAL_DOWNLOAD_OPTIONS], "\x61\x63\x63\x6f\x75\x6e\x74\x5f\162\x65\147\151\163\x74\x72\x61\164\151\157\x6e\x5f\157\x70\164\151\157\156\x73"];
+        goto swuomeuwkcgwekss;
+        scmkeeaewmeqguac:
+        parent::kgquecmsgcouyaya();
+        goto qqeiuucaguymmsws;
+        swuomeuwkcgwekss:
+        foreach ($ywoucyskcquysiwc as $cciauwuwuqaywgce => $mgiqqesweuqmsymo) {
+            goto cukkwcqimawsesga;
+            eseyuoaaskemwycm:
+            if (!is_array($mgiqqesweuqmsymo)) {
+                goto ymygyumokgcugqco;
+            }
+            goto akccmuykyisokmqm;
+            cumkyeqakeicycqy:
+            $cciauwuwuqaywgce = $mgiqqesweuqmsymo;
+            goto smecgcsaskaiyqwg;
+            ouakugqyqismmmwq:
+            aaoueeomccwsoycq:
+            goto eseyuoaaskemwycm;
+            qmeuekyqssiomcyy:
+            wggkwquawceyksmk:
+            goto eyimcucoicmimiao;
+            smecgcsaskaiyqwg:
+            mmyckscscsmqsqwo:
+            goto kwqqookuogugoeoc;
+            kwqqookuogugoeoc:
+            $ekiuyucoiagmscgy = ManipulateString::qoqowykumameucwa($cciauwuwuqaywgce);
+            goto iwcqqisaagoyaoyq;
+            cukkwcqimawsesga:
+            if (!is_numeric($cciauwuwuqaywgce)) {
+                goto mmyckscscsmqsqwo;
+            }
+            goto cumkyeqakeicycqy;
+            eyimcucoicmimiao:
+            ymygyumokgcugqco:
+            goto eaeowkksqokeigsq;
+            yeyuwakqagwqqmuc:
+            $this->cecaguuoecmccuse("\167\x6f\x6f\143\x6f\x6d\155\x65\x72\143\145\137{$cciauwuwuqaywgce}\x5f\x73\145\164\164\x69\156\147\163", [$this, $ekiuyucoiagmscgy]);
+            goto ouakugqyqismmmwq;
+            akccmuykyisokmqm:
+            foreach ($mgiqqesweuqmsymo as $awcmekyiwwkeyisq) {
+                goto ikqqueokumaakwmk;
+                oysgkcoiouaikyys:
+                $this->cecaguuoecmccuse("\167\x6f\157\x63\x6f\155\155\145\162\143\145\137\x73\145\x74\164\x69\156\147\163\137{$awcmekyiwwkeyisq}", [$this, $amcsoieoyceiwyiy]);
+                goto gikmiimsmmugmewi;
+                ikuyuccwmwasokmy:
+                $amcsoieoyceiwyiy = "{$ekiuyucoiagmscgy}\x53\164\x61\162\164";
+                goto gmwcswqmcyogosia;
+                oesieyemekcikmuo:
+                ggscugaoyeccwaoq:
+                goto okcicyakakceigwe;
+                gmwcswqmcyogosia:
+                $oqeqeekoomwgugqi = "{$ekiuyucoiagmscgy}\x45\x6e\x64";
+                goto aiegomwmomwugkaa;
+                aiegomwmomwugkaa:
+                if (!($amcsoieoyceiwyiy = ManipulateValidation::pwcgsiswecasgkgs($this, $amcsoieoyceiwyiy))) {
+                    goto gciymsqoaosekywi;
+                }
+                goto oysgkcoiouaikyys;
+                gikmiimsmmugmewi:
+                gciymsqoaosekywi:
+                goto ycwkcyukyieusyce;
+                ycwkcyukyieusyce:
+                if (!($oqeqeekoomwgugqi = ManipulateValidation::pwcgsiswecasgkgs($this, $oqeqeekoomwgugqi))) {
+                    goto caawoosasoogaiwa;
+                }
+                goto ywskqocaomieoeuo;
+                ikqqueokumaakwmk:
+                $ekiuyucoiagmscgy = ManipulateString::qoqowykumameucwa("{$cciauwuwuqaywgce}\x5f\163\145\143\x74\151\157\x6e\137{$awcmekyiwwkeyisq}");
+                goto ikuyuccwmwasokmy;
+                ywskqocaomieoeuo:
+                $this->cecaguuoecmccuse("\x77\x6f\157\x63\157\155\155\x65\x72\143\145\137\x73\145\164\164\151\156\x67\x73\x5f{$awcmekyiwwkeyisq}\137\145\156\144", [$this, $oqeqeekoomwgugqi]);
+                goto yqysoqweammswcea;
+                yqysoqweammswcea:
+                caawoosasoogaiwa:
+                goto oesieyemekcikmuo;
+                okcicyakakceigwe:
+            }
+            goto qmeuekyqssiomcyy;
+            eaeowkksqokeigsq:
+            mseiksmausoaqecy:
+            goto qcmiieemioisoyyi;
+            iwcqqisaagoyaoyq:
+            if (!($ekiuyucoiagmscgy = ManipulateValidation::pwcgsiswecasgkgs($this, $ekiuyucoiagmscgy))) {
+                goto aaoueeomccwsoycq;
+            }
+            goto yeyuwakqagwqqmuc;
+            qcmiieemioisoyyi:
+        }
+        goto ccwwqiosmasqqqwu;
+        ccwwqiosmasqqqwu:
+        psqooaaoocusoyag:
+        goto scmkeeaewmeqguac;
+        qqeiuucaguymmsws:
+    }
+    
+    public final function iuaucuookgoqiiio($ikgwqyuyckaewsow = [])
+    {
+        WC_Admin_Settings::output_fields($ikgwqyuyckaewsow);
+    }
+    
+    public final function qkauysqeioauswys($aiowsaccomcoikus)
+    {
+        $this->iuaucuookgoqiiio([$aiowsaccomcoikus]);
+    }
+    
+    public final function gmqowegieyawsgau($uwomkgseoiegeume, $ikgwqyuyckaewsow, $awcmekyiwwkeyisq, $qmeuaeiseuacgiqc = true)
+    {
+        return $this->ucgocwsamgumcyiq([$uwomkgseoiegeume], $ikgwqyuyckaewsow, $awcmekyiwwkeyisq, $qmeuaeiseuacgiqc);
+    }
+    
+    public function ucgocwsamgumcyiq($uwomkgseoiegeume, $ikgwqyuyckaewsow, $awcmekyiwwkeyisq, $qmeuaeiseuacgiqc = true)
+    {
+        goto gcywqkqkwkcmoawo;
+        mcyamakgwewogwqi:
+        return $ikgwqyuyckaewsow;
+        goto aqamaqggiseeioqq;
+        gmoykcyssieuqueu:
+        $awcmekyiwwkeyisq = $this->gkookkaogucisskc($ikgwqyuyckaewsow, $awcmekyiwwkeyisq, $qmeuaeiseuacgiqc);
+        goto iywiyewymemgqacq;
+        kyaiywcwwmeqwyaw:
+        if ($qmeuaeiseuacgiqc) {
+            goto kwmgoowcwggsyokw;
+        }
+        goto maswyugssquqqggq;
+        gcywqkqkwkcmoawo:
+        foreach ($uwomkgseoiegeume as $momcykaoccoymeig => $aiowsaccomcoikus) {
+            goto okgweyikqgcceggq;
+            okgweyikqgcceggq:
+            $aiowsaccomcoikus[self::ID] = ManipulateArray::get($aiowsaccomcoikus, self::ID, $momcykaoccoymeig);
+            goto csisksagguuywuia;
+            ycucsikocgkiesgi:
+            $uwomkgseoiegeume[$momcykaoccoymeig] = $aiowsaccomcoikus;
+            goto kquqieqqiieakmoa;
+            kquqieqqiieakmoa:
+            kqueakeekumokwoe:
+            goto usakoyequcyysywo;
+            csisksagguuywuia:
+            $aiowsaccomcoikus[self::TYPE] = ManipulateArray::get($aiowsaccomcoikus, self::TYPE, self::TEXT);
+            goto ycucsikocgkiesgi;
+            usakoyequcyysywo:
+        }
+        goto cmcwskwgaiauugws;
+        cmcwskwgaiauugws:
+        owqiausosmeaugay:
+        goto gmoykcyssieuqueu;
+        gwucakcwqkiiqyyg:
+        okamgiuocakyggwo:
+        goto mcyamakgwewogwqi;
+        iywiyewymemgqacq:
+        if (!is_numeric($awcmekyiwwkeyisq)) {
+            goto okamgiuocakyggwo;
+        }
+        goto kyaiywcwwmeqwyaw;
+        egcycueumoemiuai:
+        kwmgoowcwggsyokw:
+        goto miyggyguyamiggcm;
+        miyggyguyamiggcm:
+        array_splice($ikgwqyuyckaewsow, $awcmekyiwwkeyisq, 0, $uwomkgseoiegeume);
+        goto gwucakcwqkiiqyyg;
+        maswyugssquqqggq:
+        $awcmekyiwwkeyisq++;
+        goto egcycueumoemiuai;
+        aqamaqggiseeioqq:
+    }
+    
+    public function gkookkaogucisskc(array $ikgwqyuyckaewsow, string $awcmekyiwwkeyisq, $qmeuaeiseuacgiqc = true) : string
+    {
+        goto uysqwomcuuccagkq;
+        uysqwomcuuccagkq:
+        foreach ($ikgwqyuyckaewsow as $momcykaoccoymeig => $aiowsaccomcoikus) {
+            goto swuquosuguoomaeq;
+            swuquosuguoomaeq:
+            if ($qmeuaeiseuacgiqc) {
+                goto icksskeigsiugace;
+            }
+            goto occaiwsgmaykoqey;
+            akkecgwmiimmeqmy:
+            eyaesumwwwgisaym:
+            goto kmykwuqougkwauiy;
+            kuwecmygikeyisuq:
+            $aokagokqyuysuksm = ManipulateArray::get($aiowsaccomcoikus, self::ID);
+            goto augwgqgcukgkywiw;
+            swwmkisacmieqiae:
+            $ccamueccusigaaio = "\x73\x65\143\x74\x69\157\x6e\x65\x6e\x64";
+            goto imqeimsscmwgasys;
+            mweoqymwyuimuakm:
+            icksskeigsiugace:
+            goto swwmkisacmieqiae;
+            occaiwsgmaykoqey:
+            $ccamueccusigaaio = self::TITLE;
+            goto iuikeaqqcukamyqm;
+            imqeimsscmwgasys:
+            ceyygoicaeoqwwio:
+            goto kuwecmygikeyisuq;
+            augwgqgcukgkywiw:
+            $sqeykgyoooqysmca = ManipulateArray::get($aiowsaccomcoikus, self::TYPE);
+            goto kmkoiwuimosekikq;
+            iuikeaqqcukamyqm:
+            goto ceyygoicaeoqwwio;
+            goto mweoqymwyuimuakm;
+            kmkoiwuimosekikq:
+            if (!($aokagokqyuysuksm == $awcmekyiwwkeyisq && $sqeykgyoooqysmca === $ccamueccusigaaio)) {
+                goto eyaesumwwwgisaym;
+            }
+            goto msmiaayuagocuswc;
+            msmiaayuagocuswc:
+            $awcmekyiwwkeyisq = $momcykaoccoymeig;
+            goto ugwysoaqswaocsuu;
+            kmykwuqougkwauiy:
+            siuuokwymeygcosy:
+            goto qeieqkqcyuasgqqk;
+            ugwysoaqswaocsuu:
+            goto sskkiisoqmmsocic;
+            goto akkecgwmiimmeqmy;
+            qeieqkqcyuasgqqk:
+        }
+        goto sucekaeksayiwooe;
+        scykswkumgcoqgcc:
+        return $awcmekyiwwkeyisq;
+        goto wsksakoqeqwkigoq;
+        sucekaeksayiwooe:
+        sskkiisoqmmsocic:
+        goto scykswkumgcoqgcc;
+        wsksakoqeqwkigoq:
+    }
+    
+    public static function eiwcuqigayigimak($uusmaiomayssaecw, $ggauoeuaesiymgee = null, $yuwymayicwwqiske = self::WOOCOMMERCE_)
+    {
+        goto mioseimsuqaqiqae;
+        ewecikeyyqmewkgy:
+        auiaaeeakqkocmqu:
+        goto eugoueaksseemowq;
+        mioseimsuqaqiqae:
+        if (!($yuwymayicwwqiske && substr($uusmaiomayssaecw, 0, strlen($yuwymayicwwqiske)) === $yuwymayicwwqiske)) {
+            goto auiaaeeakqkocmqu;
+        }
+        goto qisaayswqcmucoqg;
+        qisaayswqcmucoqg:
+        $yuwymayicwwqiske = '';
+        goto ewecikeyyqmewkgy;
+        eugoueaksseemowq:
+        return ManipulateWoocommerce::giiuwsmyumqwwiyq($uusmaiomayssaecw, $ggauoeuaesiymgee, $yuwymayicwwqiske);
+        goto awsqsasmmamcskkk;
+        awsqsasmmamcskkk:
+    }
+    
+    protected static function ossscgwwiwwqyuiy($uusmaiomayssaecw, $megmggkiokqkcwou = [])
+    {
+        goto mowimwgkwoymuoae;
+        yesymsikkwmuikuc:
+        wsiysogusuimayic:
+        goto gessacesaaekqkws;
+        siuaqaksaumkaeui:
+        $cmqeouisgweqguee = array_flip($cmqeouisgweqguee);
+        goto gkyuckeugacsewka;
+        cgksasyqkkiiowyg:
+        $oammesyieqmwuwyi = array_intersect_key($megmggkiokqkcwou, $cmqeouisgweqguee);
+        goto yesymsikkwmuikuc;
+        ukmkcwicoqcoyqog:
+        iyuiasiuowggciss:
+        goto siuaqaksaumkaeui;
+        gkyuckeugacsewka:
+        $oammesyieqmwuwyi = [];
+        goto caeucwusaisgqaoe;
+        yyyuemkeyacsssye:
+        return $oammesyieqmwuwyi;
+        goto eqeosomseicwmwqu;
+        gqaecycgekomqqgu:
+        $oammesyieqmwuwyi = $cmqeouisgweqguee;
+        goto cygqsmeoqscsscqm;
+        mowimwgkwoymuoae:
+        $cmqeouisgweqguee = self::eiwcuqigayigimak($uusmaiomayssaecw);
+        goto yukcsywomcgeqoiq;
+        caeucwusaisgqaoe:
+        if (!(is_array($megmggkiokqkcwou) && is_array($cmqeouisgweqguee))) {
+            goto wsiysogusuimayic;
+        }
+        goto cgksasyqkkiiowyg;
+        yukcsywomcgeqoiq:
+        if (is_array($cmqeouisgweqguee) && $cmqeouisgweqguee && is_array($megmggkiokqkcwou) && $megmggkiokqkcwou) {
+            goto iyuiasiuowggciss;
+        }
+        goto gqaecycgekomqqgu;
+        gessacesaaekqkws:
+        yquwqeooeyyociqm:
+        goto yyyuemkeyacsssye;
+        cygqsmeoqscsscqm:
+        goto yquwqeooeyyociqm;
+        goto ukmkcwicoqcoyqog;
+        eqeosomseicwmwqu:
+    }
+}

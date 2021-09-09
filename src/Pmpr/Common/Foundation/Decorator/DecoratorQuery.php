@@ -1,2 +1,143 @@
 <?php
- namespace Pmpr\Common\Foundation\Decorator; class DecoratorQuery extends Decorator { public static function getObject() { return get_queried_object(); } public static function getSearch($mYrDS = true) { return get_search_query($mYrDS); } public static function getObjectId() { return get_queried_object_id(); } public static function is404() : bool { return is_404(); } public static function isSingular($FyD_R = '') : bool { return is_singular($FyD_R); } public static function isSingle($post = '') : bool { return is_single($post); } public static function isTag() : bool { return is_tag(); } public static function isAuthor() : bool { return is_author(); } public static function isTax($fvLkx = '', $OnhXQ = '') : bool { return is_tax($fvLkx, $OnhXQ); } public static function isCategory() : bool { return is_category(); } public static function isHome() : bool { return is_home(); } public static function addArg(...$DrjAW) { return add_query_arg(...$DrjAW); } public static function removeArg(...$DrjAW) { return remove_query_arg(...$DrjAW); } public static function getVar($Jeq40, $Ql_ZF = '') { return get_query_var($Jeq40, $Ql_ZF); } public static function isSearch() : bool { return is_search(); } public static function isYear() : bool { return is_year(); } public static function isDate() : bool { return is_date(); } public static function isDay() : bool { return is_day(); } public static function isMonth() : bool { return is_month(); } public static function isArchive() : bool { return is_archive(); } public static function isTheLoop() : bool { return in_the_loop(); } public static function isDoingCron() : bool { return function_exists("\x77\160\x5f\144\157\x69\x6e\147\x5f\x63\162\157\156") && wp_doing_cron(); } public static function isFrontPage() : bool { return is_front_page(); } public static function isAttachment() : bool { return is_attachment(); } public static function isPage($vs_36 = null) : bool { return is_page($vs_36); } public static function isPostTypeArchive($j56jL = '') : bool { return is_post_type_archive($j56jL); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Decorator;
+
+
+class DecoratorQuery extends Decorator
+{
+    
+    public static function imgymusqgccqsqqq()
+    {
+        return get_queried_object();
+    }
+    
+    public static function siiwuwaswckkuoya($ygogqywsaqoukoqy = true)
+    {
+        return get_search_query($ygogqywsaqoukoqy);
+    }
+    
+    public static function keeuqgyooycqoygw()
+    {
+        return get_queried_object_id();
+    }
+    
+    public static function kmmyuiwaogukwqqi() : bool
+    {
+        return is_404();
+    }
+    
+    public static function cukiusasccucgwqc($useksmwkuswkwcqg = '') : bool
+    {
+        return is_singular($useksmwkuswkwcqg);
+    }
+    
+    public static function kccakwkaqugygwmq($post = '') : bool
+    {
+        return is_single($post);
+    }
+    
+    public static function ocwoeosukggumggw() : bool
+    {
+        return is_tag();
+    }
+    
+    public static function mykygowqgwcuecua() : bool
+    {
+        return is_author();
+    }
+    
+    public static function qmssqeyayicowkgy($kesssewsiegssiya = '', $iwewcwusemqaiggk = '') : bool
+    {
+        return is_tax($kesssewsiegssiya, $iwewcwusemqaiggk);
+    }
+    
+    public static function sgayqmgoigoseaoo() : bool
+    {
+        return is_category();
+    }
+    
+    public static function seokosgecygsmqau() : bool
+    {
+        return is_home();
+    }
+    
+    public static function yqymaqmqiqmmmsoo(...$ywmkwiwkosakssii)
+    {
+        return add_query_arg(...$ywmkwiwkosakssii);
+    }
+    
+    public static function oiamiqcuyksmmomm(...$ywmkwiwkosakssii)
+    {
+        return remove_query_arg(...$ywmkwiwkosakssii);
+    }
+    
+    public static function qaumqeeagueuqkcg($gygawogosumsgmme, $ggauoeuaesiymgee = '')
+    {
+        return get_query_var($gygawogosumsgmme, $ggauoeuaesiymgee);
+    }
+    
+    public static function gouusicsisumuiei() : bool
+    {
+        return is_search();
+    }
+    
+    public static function qwakseskocsyiyks() : bool
+    {
+        return is_year();
+    }
+    
+    public static function oowkceqysamwygwu() : bool
+    {
+        return is_date();
+    }
+    
+    public static function wqscegcksyocaias() : bool
+    {
+        return is_day();
+    }
+    
+    public static function mgkmukikygowogsm() : bool
+    {
+        return is_month();
+    }
+    
+    public static function migkyseymeomymmy() : bool
+    {
+        return is_archive();
+    }
+    
+    public static function eyokaicigoeymwoo() : bool
+    {
+        return in_the_loop();
+    }
+    
+    public static function cgquaaukmyeomgms() : bool
+    {
+        return function_exists("\167\x70\137\x64\157\151\156\x67\137\x63\162\157\x6e") && wp_doing_cron();
+    }
+    
+    public static function takycgcamoacksqw() : bool
+    {
+        return is_front_page();
+    }
+    
+    public static function aauyuieeeaakygki() : bool
+    {
+        return is_attachment();
+    }
+    
+    public static function sgeaogakoscmysgc($suaemuyiacqyugsm = null) : bool
+    {
+        return is_page($suaemuyiacqyugsm);
+    }
+    
+    public static function moegwqkekcawsggs($sqeykgyoooqysmca = '') : bool
+    {
+        return is_post_type_archive($sqeykgyoooqysmca);
+    }
+}

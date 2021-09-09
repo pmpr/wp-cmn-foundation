@@ -1,2 +1,18 @@
 <?php
- namespace Pmpr\Common\Foundation\ORM\DB\Field; class Json extends Field { public function __construct(string $CDV1j, ?string $hTPi6 = null) { parent::__construct("\152\x73\x6f\x6e", $CDV1j, $hTPi6); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\ORM\DB\Field;
+
+
+class Json extends Field
+{
+    
+    public function __construct(string $aokagokqyuysuksm, ?string $meqocwsecsywiiqs = null)
+    {
+        parent::__construct("\x6a\163\x6f\156", $aokagokqyuysuksm, $meqocwsecsywiiqs);
+    }
+}

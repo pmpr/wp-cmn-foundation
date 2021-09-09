@@ -1,2 +1,207 @@
 <?php
- namespace Pmpr\Common\Foundation\FormMaker\Admin\Element\Shortcode; use Pmpr\Common\Foundation\FormMaker\Admin\Element\Modal\Modal; use Pmpr\Common\Foundation\FormMaker\FormMaker; use Pmpr\Common\Foundation\Manipulate\Post\ManipulatePost; abstract class Shortcode extends Modal { public ?string $icon = null; public bool $isRendered = false; public bool $isButtonRendered = false; public function getIcon() : string { return $this->icon; } public function setIcon(string $cbVPu) : self { $this->icon = $cbVPu; return $this; } public function isRendered() : bool { return $this->isRendered; } public function setIsRendered(bool $bjC3O) : self { $this->isRendered = $bjC3O; return $this; } public function isButtonRendered() : bool { return $this->isButtonRendered; } public function setIsButtonRendered(bool $NSub3) : self { $this->isButtonRendered = $NSub3; return $this; } public function addActions() { $this->addAction("\x69\156\x69\x74", [$this, "\x72\145\x67\151\163\164\145\162"])->addAction("\x74\150\x65\137\x63\x6f\x6e\164\x65\x6e\164", [$this, "\162\145\155\157\166\x65\120\x61\162\x61\147\x72\x61\160\x68"], 0)->addAction("\x6d\x65\144\x69\141\137\142\x75\x74\x74\157\156\x73", [$this, "\x72\x65\x6e\x64\145\x72\102\165\164\164\x6f\156"], 20); parent::addActions(); } public function removeParagraph($BQ_ob) { goto CCbMW; fYUCA: return $BQ_ob; goto im9Pg; bkovl: $LUSrE = sprintf("\x2f\74\160\x5b\x5e\76\x5d\x2a\77\76\45\x73\x3c\x5c\x2f\x70\76\57", $LUSrE); goto Gtj5Z; CCbMW: $LUSrE = get_shortcode_regex(); goto bkovl; Gtj5Z: $BQ_ob = preg_replace($LUSrE, "\133\44\61\x24\x32\44\x33\x24\64\44\65\x24\x36\44\x37\44\70\x5d", $BQ_ob); goto fYUCA; im9Pg: } public function getSegments() : array { goto syD6G; pUo6E: foreach ($DS6Ls as $NA0fo) { goto Wcruc; mnwg1: zBOE2: goto ZaBFP; ogF1Y: $hS_Rv[$NA0fo->getName()] = $NA0fo; goto mnwg1; NA2Yh: $NA0fo->addButton(__("\x49\x6e\163\x65\162\164\40\x53\x68\x6f\162\x74\143\157\144\x65", PR__CMN__FOUNDATION), ["\143\154\141\163\163" => "\x73\x68\157\x72\x74\143\x6f\x64\x65\x2d\142\x75\x74\x74\157\156\55\151\156\x73\x65\162\164"]); goto ogF1Y; NCibl: if (!($dyyPs === self::ALL || is_array($dyyPs) && self::isEditorPage($dyyPs))) { goto zBOE2; } goto NA2Yh; txRq6: $dyyPs = $NA0fo->getTarget(); goto NCibl; Wcruc: if (!$NA0fo instanceof Segment) { goto VFXKO; } goto txRq6; ZaBFP: VFXKO: goto shYMA; shYMA: hT0el: goto xEVSn; xEVSn: } goto M6VbK; xxbiL: return $hS_Rv; goto LSwFr; n4bQy: $DS6Ls = parent::getSegments(); goto pUo6E; M6VbK: bWxwo: goto xxbiL; syD6G: $hS_Rv = []; goto n4bQy; LSwFr: } public function renderButton($eIip_) { goto m7ThQ; eEJF2: $this->setIsButtonRendered(true); goto O0411; O0411: HvJJ5: goto CjN6S; Q_kpZ: echo $this->getButton(); goto eEJF2; m7ThQ: if (!($eIip_ == "\x63\x6f\156\x74\145\x6e\164" && $this->isEditorPage() && !$this->isRendered() && $this->hasSegment())) { goto HvJJ5; } goto Q_kpZ; CjN6S: } public function getButton() { return $this->renderTemplate("\x62\x75\x74\164\x6f\x6e", ["\x74\x69\x74\x6c\145" => $this->getTitle(), "\156\141\155\x65" => $this->getKey()], ["\x63\x6c\x61\163\163" => self::class]); } public function isEditorPage($dyyPs = []) { goto OcoSh; OcoSh: if ($dyyPs) { goto XEWKQ; } goto FJLBL; nJZtz: XEWKQ: goto IwGoQ; FJLBL: $dyyPs = ManipulatePost::getTypes(); goto nJZtz; IwGoQ: return ManipulatePost::isEditorPage($dyyPs); goto l23wm; l23wm: } public function enqueue() { goto DIoLA; LaWs3: global $shortcode_tags; goto Im84z; Im84z: $JPxwG->addAdminLocalize("\x73\x68\157\162\x74\x63\x6f\x64\145", ["\156\141\x6d\145\163" => array_keys($shortcode_tags)]); goto uZYrW; uZYrW: parent::enqueue(); goto Bqthu; DIoLA: $JPxwG = FormMaker::getInstance()->getAssetManager(); goto aQSRL; aQSRL: $JPxwG->addAdminSource($JPxwG->getScriptSource("\x73\x68\x6f\x72\164\x63\157\x64\145", $JPxwG->get("\163\150\x6f\162\164\143\157\x64\x65\56\152\x73"))->addDependency($JPxwG->getDependencyName("\x67\x6c\157\x62\141\154"))->addDependency("\x77\x70\55\x74\x69\x6e\171\155\143\x65")->addDependency("\x6a\x71\x75\x65\162\x79")); goto LaWs3; Bqthu: } public function register($M2xJv = []) { $this->segments = $this->applyFilters("{$this->getName()}\x5f\162\145\x67\x69\163\x74\145\162\137\163\x68\x6f\162\x74\143\x6f\x64\x65\x73", $M2xJv); } public function getKey() : ?string { return parent::getKey() . "\x5f\x73\150\x6f\x72\164\x63\x6f\x64\x65"; } public function canRender() : bool { return parent::canRender() && $this->isEditorPage(); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\FormMaker\Admin\Element\Shortcode;
+
+use Pmpr\Common\Foundation\FormMaker\Admin\Element\Modal\Modal;
+use Pmpr\Common\Foundation\FormMaker\FormMaker;
+use Pmpr\Common\Foundation\Manipulate\Post\ManipulatePost;
+
+abstract class Shortcode extends Modal
+{
+    
+    public ?string $icon = null;
+    
+    public bool $isRendered = false;
+    
+    public bool $isButtonRendered = false;
+    
+    public function eyamqkqiykagecsw() : string
+    {
+        return $this->icon;
+    }
+    
+    public function saemoowcasogykak(string $wkaqekwwgqsqwcoi) : self
+    {
+        $this->icon = $wkaqekwwgqsqwcoi;
+        return $this;
+    }
+    
+    public function gakuqssqwcuekqqi() : bool
+    {
+        return $this->isRendered;
+    }
+    
+    public function eqesqooyciwmagsa(bool $gakuqssqwcuekqqi) : self
+    {
+        $this->isRendered = $gakuqssqwcuekqqi;
+        return $this;
+    }
+    
+    public function ocmescguywiskicc() : bool
+    {
+        return $this->isButtonRendered;
+    }
+    
+    public function ywmaqqqoiueymkyu(bool $ocmescguywiskicc) : self
+    {
+        $this->isButtonRendered = $ocmescguywiskicc;
+        return $this;
+    }
+    public function wigskegsqequoeks()
+    {
+        $this->qcsmikeggeemccuu("\151\156\151\x74", [$this, "\x72\145\x67\151\x73\x74\145\x72"])->qcsmikeggeemccuu("\164\150\x65\137\143\157\156\x74\x65\156\164", [$this, "\167\x75\155\x65\x65\x69\167\x67\x79\165\155\x6d\155\171\x79\143"], 0)->qcsmikeggeemccuu("\155\x65\144\x69\141\137\142\x75\x74\164\157\x6e\x73", [$this, "\x73\x65\167\161\x73\x77\145\147\x63\x77\171\x77\141\x6d\165\167"], 20);
+        parent::wigskegsqequoeks();
+    }
+    
+    public function wumeeiwgyummmyyc($ewgwqamkygiqaawc)
+    {
+        goto qesuygwuaaegeswm;
+        qesuygwuaaegeswm:
+        $ucccueqywigcukcc = get_shortcode_regex();
+        goto ecqcyykogswwckcy;
+        qmaiieksomkoyuyi:
+        return preg_replace($ucccueqywigcukcc, "\x5b\44\x31\44\62\44\x33\x24\x34\44\65\44\x36\44\67\44\x38\135", $ewgwqamkygiqaawc);
+        goto keqamwmqakacwwoe;
+        ecqcyykogswwckcy:
+        $ucccueqywigcukcc = sprintf("\57\74\x70\133\136\x3e\135\52\x3f\76\45\163\74\134\57\x70\x3e\x2f", $ucccueqywigcukcc);
+        goto qmaiieksomkoyuyi;
+        keqamwmqakacwwoe:
+    }
+    
+    public function gsesiocqciggmauo() : array
+    {
+        goto okamwaeykoyomecq;
+        cmociugasewqkuem:
+        $wsqkgswwooewwekw = parent::gsesiocqciggmauo();
+        goto uusmocykkkksqiua;
+        wwmmyaugeaiumkiw:
+        return $oammesyieqmwuwyi;
+        goto mcsoqawmisuqokgy;
+        yiamkiackwgqymyq:
+        cqogucaumkswcmmi:
+        goto wwmmyaugeaiumkiw;
+        uusmocykkkksqiua:
+        foreach ($wsqkgswwooewwekw as $oceoauekaygmuoko) {
+            goto qguqwygiosouksua;
+            gkqkqkyiikmyoyes:
+            $ccamueccusigaaio = $oceoauekaygmuoko->squsacgomqgkakaw();
+            goto iqwgsigqsoaqemoq;
+            qguqwygiosouksua:
+            if (!$oceoauekaygmuoko instanceof Segment) {
+                goto oukumaiywisqysue;
+            }
+            goto gkqkqkyiikmyoyes;
+            iqwgsigqsoaqemoq:
+            if (!($ccamueccusigaaio === self::ALL || is_array($ccamueccusigaaio) && self::uqwgsuysegkweago($ccamueccusigaaio))) {
+                goto ykkieooomgmyscgg;
+            }
+            goto mkamqcmusuweioak;
+            aacasqsuuqoogeqi:
+            oukumaiywisqysue:
+            goto kwkymuwcawyykqmy;
+            mkamqcmusuweioak:
+            $oceoauekaygmuoko->igmamuiesywmkgeu(__("\x49\156\x73\145\x72\x74\x20\123\x68\157\x72\x74\x63\157\x64\145", PR__CMN__FOUNDATION), ["\x63\154\x61\x73\163" => "\x73\150\157\162\164\143\157\144\145\55\142\x75\164\164\x6f\156\55\151\x6e\x73\x65\x72\x74"]);
+            goto iquummqymwyukwcq;
+            iquummqymwyukwcq:
+            $oammesyieqmwuwyi[$oceoauekaygmuoko->aakmagwggmkoiiyu()] = $oceoauekaygmuoko;
+            goto wccsuuqokyomaoqs;
+            kwkymuwcawyykqmy:
+            aimekgqcsgskeiss:
+            goto qyoggesicagmmmca;
+            wccsuuqokyomaoqs:
+            ykkieooomgmyscgg:
+            goto aacasqsuuqoogeqi;
+            qyoggesicagmmmca:
+        }
+        goto yiamkiackwgqymyq;
+        okamwaeykoyomecq:
+        $oammesyieqmwuwyi = [];
+        goto cmociugasewqkuem;
+        mcsoqawmisuqokgy:
+    }
+    
+    public function sewqswegcwywamuw($igwkwmgowquoucyk)
+    {
+        goto qysqycokygquuggm;
+        assygwiykikyqiko:
+        echo $this->cyeuiyggkcqmoecc();
+        goto mmsaugsyiwoeeook;
+        mmsaugsyiwoeeook:
+        $this->ywmaqqqoiueymkyu(true);
+        goto seoiyskcwgmysyyu;
+        qysqycokygquuggm:
+        if (!($igwkwmgowquoucyk == "\x63\x6f\x6e\164\x65\x6e\x74" && $this->uqwgsuysegkweago() && !$this->gakuqssqwcuekqqi() && $this->skgwcckoyoqsascq())) {
+            goto kcyqywycuysksaws;
+        }
+        goto assygwiykikyqiko;
+        seoiyskcwgmysyyu:
+        kcyqywycuysksaws:
+        goto ckemesyoeaoqggmc;
+        ckemesyoeaoqggmc:
+    }
+    
+    public function cyeuiyggkcqmoecc() : string
+    {
+        return $this->iuygowkemiiwqmiw("\x62\165\x74\x74\x6f\x6e", ["\164\x69\x74\x6c\145" => $this->qcgakseyaikigqco(), "\x6e\x61\155\x65" => $this->cisyiemkeykgkomc()], ["\x63\x6c\141\163\163" => self::class]);
+    }
+    
+    public function uqwgsuysegkweago($ccamueccusigaaio = []) : bool
+    {
+        goto cemgcsgywukgwumc;
+        koqikcoqcoaguoou:
+        uoaoeecwkiwcyocu:
+        goto ukykouywmkccqeoq;
+        omuwgeccqksimyey:
+        $ccamueccusigaaio = ManipulatePost::mwoyqeeigwqoamiw();
+        goto koqikcoqcoaguoou;
+        cemgcsgywukgwumc:
+        if ($ccamueccusigaaio) {
+            goto uoaoeecwkiwcyocu;
+        }
+        goto omuwgeccqksimyey;
+        ukykouywmkccqeoq:
+        return ManipulatePost::uqwgsuysegkweago($ccamueccusigaaio);
+        goto wyqgycaawqceccem;
+        wyqgycaawqceccem:
+    }
+    public function enqueue()
+    {
+        goto ywkiskkeoqykoqaw;
+        omqagaqgauuyyicw:
+        global $shortcode_tags;
+        goto eawqikuuwwqiawok;
+        iaagwiqkugqsscgc:
+        $eygsasmqycagyayw->ayeieigcckcmsikq($eygsasmqycagyayw->owygwqwawqoiusis("\163\150\x6f\x72\x74\x63\157\x64\145", $eygsasmqycagyayw->get("\163\x68\157\162\x74\143\x6f\144\x65\x2e\152\163"))->ayuciigykaswwqeo($eygsasmqycagyayw->yomasssaasmawcso("\147\154\x6f\x62\141\x6c"))->ayuciigykaswwqeo("\167\160\55\x74\151\x6e\171\x6d\x63\145")->ayuciigykaswwqeo("\x6a\161\165\x65\x72\171"));
+        goto omqagaqgauuyyicw;
+        eawqikuuwwqiawok:
+        $eygsasmqycagyayw->ikqyiskqaaymscgw("\163\150\x6f\162\164\x63\157\144\145", ["\156\x61\x6d\145\163" => array_keys($shortcode_tags)]);
+        goto skuqeisegcaaieqa;
+        ywkiskkeoqykoqaw:
+        $eygsasmqycagyayw = FormMaker::symcgieuakksimmu()->miocmcoykayoyyau();
+        goto iaagwiqkugqsscgc;
+        skuqeisegcaaieqa:
+        parent::enqueue();
+        goto eeoaoaugmmauawuu;
+        eeoaoaugmmauawuu:
+    }
+    
+    public function register($makuywykoiqicmym = [])
+    {
+        $this->segments = $this->sscegwueamckwmcy("{$this->aakmagwggmkoiiyu()}\x5f\162\x65\x67\151\163\164\145\162\137\x73\150\157\162\164\143\157\x64\x65\x73", $makuywykoiqicmym);
+    }
+    
+    public function cisyiemkeykgkomc() : ?string
+    {
+        return parent::cisyiemkeykgkomc() . "\137\163\x68\x6f\162\164\x63\x6f\144\145";
+    }
+    
+    public function qoqyomiqwooaeoiy() : bool
+    {
+        return parent::qoqyomiqwooaeoiy() && $this->uqwgsuysegkweago();
+    }
+}

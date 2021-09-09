@@ -1,2 +1,121 @@
 <?php
- namespace Pmpr\Common\Foundation\Woocommerce\Attribute; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; use Pmpr\Common\Foundation\ORM\DB\Model as BaseClass; use stdClass; class Model extends BaseClass { const ATTRIBUTE_ID = "\x61\164\x74\x72\x69\142\x75\164\x65\x5f\151\144"; public $timestamps = false; public function initializeRegister() { goto WQu9L; WQu9L: $s7T9l = self::getRegisteredComponentName(); goto Fcnwg; Fcnwg: $this->getRegister()->setName("\x61\x74\x74\162\x69\x62\x75\164\145\x5f\155\x65\x74\141")->setPlural(__("\101\164\x74\x72\x69\x62\165\164\145\x20\115\145\x74\141\x73", PR__CMN__FOUNDATION))->setSingular(__("\101\164\x74\162\x69\x62\x75\x74\145\40\x4d\145\x74\141", PR__CMN__FOUNDATION))->asPrivate()->setPrefix($s7T9l); goto fswlg; fswlg: parent::initializeRegister(); goto bV4YV; bV4YV: } public function getSchemasConfig($fPQ1W = []) : array { return [$this->getBigIntField(self::ATTRIBUTE_ID)->setTitle(__("\x41\x74\x74\162\151\x62\x75\164\145", PR__CMN__FOUNDATION)), $this->getTextField(self::META_KEY)->setTitle(__("\115\x65\x74\x61\40\113\x65\171", PR__CMN__FOUNDATION)), $this->getTextField(self::META_VALUE)->setTitle(__("\115\145\x74\x61\x20\126\x61\x6c\165\145", PR__CMN__FOUNDATION))]; } public function saveMetadata($chQYT, $bUHaw, $yjbyt) { goto xQKlD; N5GVn: if (!(ManipulateArray::get($vCZSL, self::META_VALUE) === $yjbyt)) { goto VqU3q; } goto ClXUH; ClXUH: return; goto nj1Kw; lvoba: $vCZSL = [self::META_KEY => $bUHaw, self::META_VALUE => $yjbyt, self::ATTRIBUTE_ID => $chQYT]; goto xZ580; SiY_9: $this->persistOrUpdate((array) $vCZSL); goto JaSnm; nj1Kw: VqU3q: goto XLljj; JaSnm: q1NGp: goto lbXhP; EkWQ0: ManipulateArray::set($vCZSL, [self::META_VALUE => maybe_serialize($yjbyt)]); goto SiY_9; ydepV: if (!$vCZSL) { goto Xvek0; } goto N5GVn; zU3qw: Xvek0: goto lvoba; sMfX0: $vCZSL = $this->getByAttributeAndKey($chQYT, $bUHaw); goto ydepV; xQKlD: if (!($chQYT && $bUHaw)) { goto q1NGp; } goto sMfX0; XLljj: goto umD1M; goto zU3qw; xZ580: umD1M: goto EkWQ0; lbXhP: } public function getByAttributeAndKey($chQYT, $bUHaw) { goto hvE3x; zZIqB: return $QsfZH; goto p5D7Y; Fo96_: UJC8T: goto zZIqB; NJtzI: $yjbyt = maybe_unserialize(ManipulateArray::get($QsfZH, self::META_VALUE)); goto CzVhq; v2SbK: if (!$QsfZH) { goto UJC8T; } goto NJtzI; hvE3x: $QsfZH = $this->getSingleByMultiple([self::META_KEY => $bUHaw, self::ATTRIBUTE_ID => $chQYT]); goto v2SbK; CzVhq: $QsfZH = ManipulateArray::set($QsfZH, [self::META_VALUE => $yjbyt]); goto Fo96_; p5D7Y: } public function getMetaValueBy($chQYT, $bUHaw) { $QsfZH = $this->getByAttributeAndKey($chQYT, $bUHaw); return ManipulateArray::get($QsfZH, self::META_VALUE); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Woocommerce\Attribute;
+
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
+use Pmpr\Common\Foundation\ORM\DB\Model as BaseClass;
+use stdClass;
+
+class Model extends BaseClass
+{
+    const ATTRIBUTE_ID = "\141\x74\164\x72\151\142\165\x74\145\x5f\151\x64";
+    public $timestamps = false;
+    public function ckgmycmaukqgkosk()
+    {
+        goto gcqeuqmciwqwqisq;
+        gcqeuqmciwqwqisq:
+        $quowyokcwswmuois = self::akuociswqmoigkas();
+        goto okmuocsmgiyuiggc;
+        okmuocsmgiyuiggc:
+        $this->oyeskqayoscwciem()->usuqmwksoeaayaig("\x61\x74\164\x72\x69\x62\x75\x74\145\x5f\x6d\145\164\141")->muuwuqssqkaieqge(__("\101\164\x74\162\x69\142\x75\164\x65\40\x4d\145\164\141\163", PR__CMN__FOUNDATION))->guiaswksukmgageq(__("\101\x74\x74\x72\151\142\165\x74\145\x20\x4d\145\164\x61", PR__CMN__FOUNDATION))->myysgyqcumekoueo()->okgmqaeuaeymaocm($quowyokcwswmuois);
+        goto umkugowakqmaakky;
+        umkugowakqmaakky:
+        parent::ckgmycmaukqgkosk();
+        goto ggyguomagomqcmkq;
+        ggyguomagomqcmkq:
+    }
+    
+    public function eucukwckumgiyyww($oyuikeusicgqgwak = []) : array
+    {
+        return [$this->mekgiwmysqksocmy(self::ATTRIBUTE_ID)->gswweykyogmsyawy(__("\x41\164\x74\x72\151\142\165\x74\145", PR__CMN__FOUNDATION)), $this->ymuegqgyuagyucws(self::META_KEY)->gswweykyogmsyawy(__("\x4d\x65\x74\141\x20\113\145\171", PR__CMN__FOUNDATION)), $this->ymuegqgyuagyucws(self::META_VALUE)->gswweykyogmsyawy(__("\x4d\x65\164\x61\40\x56\141\x6c\165\145", PR__CMN__FOUNDATION))];
+    }
+    
+    public function aawsuyueaaimeqsm($ymkomoccmymcoiea, $uusmaiomayssaecw, $eqgoocgaqwqcimie)
+    {
+        goto coukkakgwkwmoyou;
+        myiuoyiycqukwuus:
+        goto ogcysuekkcyswiku;
+        goto oqckmkkyuymqomww;
+        oasuqwiwsowakwam:
+        koeyooaqusayoskm:
+        goto akcmkmaymmcekecu;
+        coukkakgwkwmoyou:
+        if (!($ymkomoccmymcoiea && $uusmaiomayssaecw)) {
+            goto koeyooaqusayoskm;
+        }
+        goto mqmqcqqgqcmiqeyu;
+        wmyggsuagwosceiu:
+        wuuqakiyccsuwswc:
+        goto myiuoyiycqukwuus;
+        yuyamyuwcskywmgg:
+        
+        return;
+        goto wmyggsuagwosceiu;
+        sqkqeueggemiwaqi:
+        if (!$icwicymcioeyeyek) {
+            goto ccccywcecqgsswqk;
+        }
+        goto aiggskceoswousgw;
+        oqckmkkyuymqomww:
+        ccccywcecqgsswqk:
+        goto gmqqsceqqmkeuwsg;
+        aiggskceoswousgw:
+        if (!(ManipulateArray::get($icwicymcioeyeyek, self::META_VALUE) === $eqgoocgaqwqcimie)) {
+            goto wuuqakiyccsuwswc;
+        }
+        goto yuyamyuwcskywmgg;
+        mmoceucgeiaguqsm:
+        ogcysuekkcyswiku:
+        goto sgyysmcsyuaucmau;
+        mqmqcqqgqcmiqeyu:
+        $icwicymcioeyeyek = $this->ggckwgeqwseoemwg($ymkomoccmymcoiea, $uusmaiomayssaecw);
+        goto sqkqeueggemiwaqi;
+        sgyysmcsyuaucmau:
+        ManipulateArray::set($icwicymcioeyeyek, [self::META_VALUE => maybe_serialize($eqgoocgaqwqcimie)]);
+        goto yauqaiisowsgmsau;
+        gmqqsceqqmkeuwsg:
+        $icwicymcioeyeyek = [self::META_KEY => $uusmaiomayssaecw, self::META_VALUE => $eqgoocgaqwqcimie, self::ATTRIBUTE_ID => $ymkomoccmymcoiea];
+        goto mmoceucgeiaguqsm;
+        yauqaiisowsgmsau:
+        $this->gscuuyuyauokoyuo((array) $icwicymcioeyeyek);
+        goto oasuqwiwsowakwam;
+        akcmkmaymmcekecu:
+    }
+    
+    public function ggckwgeqwseoemwg($ymkomoccmymcoiea, $uusmaiomayssaecw)
+    {
+        goto wuaogegqaecwwkyo;
+        imoksosqowqmimoc:
+        $mksyucucyswaukig = ManipulateArray::set($mksyucucyswaukig, [self::META_VALUE => $eqgoocgaqwqcimie]);
+        goto omscsmekaceaeico;
+        ueiewmqseyuugaum:
+        $eqgoocgaqwqcimie = maybe_unserialize(ManipulateArray::get($mksyucucyswaukig, self::META_VALUE));
+        goto imoksosqowqmimoc;
+        gakocaasskoagogo:
+        if (!$mksyucucyswaukig) {
+            goto qcogmismkiigwkcy;
+        }
+        goto ueiewmqseyuugaum;
+        omscsmekaceaeico:
+        qcogmismkiigwkcy:
+        goto cwkowmwgwyakkmki;
+        cwkowmwgwyakkmki:
+        return $mksyucucyswaukig;
+        goto qwqaqqqqiksaqkss;
+        wuaogegqaecwwkyo:
+        $mksyucucyswaukig = $this->oqomcmyuuakigusk([self::META_KEY => $uusmaiomayssaecw, self::ATTRIBUTE_ID => $ymkomoccmymcoiea]);
+        goto gakocaasskoagogo;
+        qwqaqqqqiksaqkss:
+    }
+    
+    public function eukesgmuogimqwaa($ymkomoccmymcoiea, $uusmaiomayssaecw)
+    {
+        $mksyucucyswaukig = $this->ggckwgeqwseoemwg($ymkomoccmymcoiea, $uusmaiomayssaecw);
+        return ManipulateArray::get($mksyucucyswaukig, self::META_VALUE);
+    }
+}

@@ -1,2 +1,209 @@
 <?php
- namespace Pmpr\Common\Foundation\ORM\View; use Pmpr\Common\Foundation\Manipulate\Theme\ManipulateHTML; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString; use Pmpr\Common\Foundation\Media\Icon\Interfaces\IconFontawesomeInterface; use Pmpr\Common\Foundation\ORM\DB\Field\Field; use Pmpr\Common\Foundation\ORM\DB\Field\Foreign; use Pmpr\Common\Foundation\ORM\DB\Model; class Show extends ObjectAware { const PAGINATION_QUERY_VAR = "\x70\x61\147\x65\x6e\x75\x6d"; public function render() { goto nvj_y; Vj_k4: HclFo: goto IKZmc; ZxIq0: $sUMia[] = ManipulateHTML::generateCloseableElement("\x61", ["\x68\x72\x65\x66" => "\x23", "\x63\154\141\x73\163" => "\x62\164\x6e\x20\164\x65\170\x74\55\144\145\143\157\162\x61\164\x69\157\156\x2d\156\x6f\x6e\145\40\x62\x74\156\x2d\144\x61\x6e\x67\x65\162\40\160\162\55\143\x6f\x6e\x66\151\162\155\x61\142\x6c\x65\x2d\141\143\164\151\157\x6e", "\x64\141\x74\x61\x2d\x63\157\x6e\146\151\x67" => $igeY_->getDeleteModalConfig($igeY_->getDeleteLink($CDV1j))], $this->getRegister()->getLabel("\x72\145\x6d\157\x76\x65\x5f\151\x74\145\155")); goto WHr62; IKZmc: echo $this->renderTemplate("\163\150\x6f\x77", ["\x74\141\142\163" => $this->applyFilters($this->generateHook("\x6f\162\155\137\166\151\145\167\x5f\163\150\157\167\137{$igeY_->getRegisterName()}\x5f\x74\141\142\x73"), $h7hiL, $QsfZH), "\156\141\x6d\145" => $this->getName(), "\157\x62\x6a\145\x63\x74" => $QsfZH, "\155\x6f\144\145\154" => $this->getModel(), "\151\x74\x65\x6d\x73" => array_filter($igeY_->prepareShowItems($QsfZH, $WG_aG)), "\x74\x69\164\154\145" => $this->getPageTitle("\166\x69\x65\167\x5f\x69\x74\145\155"), "\142\x75\x74\164\157\x6e\x73" => $sUMia, "\x6d\x61\x69\156\x5f\153\145\x79" => "\x6f\x76\x65\162\166\x69\x65\x77"]); goto Xdrwu; RASbg: $WG_aG = array_filter(array_keys((array) $QsfZH)); goto wnaLi; zExf6: if (!$igeY_->canDelete()) { goto uPiew; } goto ZxIq0; Vm9yD: foreach ($igeY_->getRegister()->getSchemas() as $lK2Qk) { goto YNylj; RWc0y: zXkqL: goto UYn6h; xD9TK: $BB5tA = []; goto vbamf; ket0B: $BQ_ob = ManipulateHTML::getCardBlock([self::CONTENT => ManipulateHTML::generateStrong(sprintf(__("\x54\150\145\162\145\x20\141\x72\145\40\156\x6f\x74\40\x25\163\40\171\x65\x74\x2e", PR__CMN__FOUNDATION), $gwy0F->getRegister()->getSingular()))]); goto wTlsn; C1j7l: if (!$gwy0F instanceof Model) { goto lGtV1; } goto u8AH9; mvdb3: $gwy0F = $jg5rc::getInstance(); goto C1j7l; dPNIT: Rwos8: goto Vmn32; UYn6h: V1c6p: goto uNH98; kIO6z: $vCZSL = $igeY_->getRelationData($lK2Qk->getId(), $QsfZH); goto OkXXa; YNylj: if (!($lK2Qk instanceof Foreign && $lK2Qk->isOneToMany())) { goto zXkqL; } goto RtF7u; VRJku: if (!$VIAHW instanceof Index) { goto Rwos8; } goto kIO6z; G8DCU: lGtV1: goto YF7VY; OkXXa: if (!$vCZSL) { goto fkxjx; } goto xD9TK; YF7VY: $h7hiL[$lK2Qk->getId()] = [self::ICON => $gwy0F->getRegister()->getMenuIcon(), self::TITLE => $lK2Qk->getTitle(), self::CONTENT => $BQ_ob]; goto RWc0y; RtF7u: $BQ_ob = ''; goto QwY3F; oTLzL: $BQ_ob = ManipulateHTML::generateTable($BB5tA, $GvIfW, ["\x63\x6c\141\x73\x73" => "\x74\x61\142\x6c\145\55\x62\157\x72\144\145\162\154\x65\163\x73\40\164\141\142\x6c\145\x2d\x73\164\162\151\x70\145\x64\40\x66\x6f\156\164\55\x31\x36"]); goto b3VsK; QwY3F: $jg5rc = $lK2Qk->getClass(); goto mvdb3; b3VsK: fkxjx: goto dPNIT; u8AH9: $VIAHW = $gwy0F->getView("\151\156\x64\x65\x78"); goto VRJku; c8xDG: ManipulateArray::unset($GvIfW, ["\x63\142", ManipulateString::toSnake(ManipulateString::getClassName($igeY_)) . self::_ID]); goto VzAWQ; VzAWQ: foreach ($vCZSL as $VIAHW => $uXZtg) { goto qWS0n; KzXQi: XK5Mh: goto wgTEn; Gbj5o: foreach ($GvIfW as $k_nkJ => $hTPi6) { $BB5tA[$VIAHW][$k_nkJ] = $gwy0F->filterColumnValue($k_nkJ, ManipulateArray::get($uXZtg, $k_nkJ), $uXZtg); Wh7xX: } goto KzXQi; wgTEn: $geN9n = $gwy0F->getShowLink($CDV1j); goto MqHbT; qWS0n: $CDV1j = ManipulateArray::get($uXZtg, $gwy0F->getPrimaryKey()); goto Gbj5o; TXJDl: aoMrH: goto LtXXt; MhhZs: ckIwV: goto TXJDl; MqHbT: if (!$geN9n) { goto ckIwV; } goto sRUgJ; sRUgJ: $BB5tA[$VIAHW]["\x74\x72\x5f\x61\x74\164\x72\163"] = ["\144\x61\164\141\x2d\x68\162\145\146" => $geN9n]; goto MhhZs; LtXXt: } goto iyR2I; wTlsn: a3mpI: goto G8DCU; iyR2I: BJGzd: goto oTLzL; vbamf: $GvIfW = $VIAHW->getListTable()->get_columns(); goto c8xDG; Vmn32: if ($BQ_ob) { goto a3mpI; } goto ket0B; uNH98: } goto Vj_k4; Xdrwu: YTf5R: goto ln_Sa; h6bgA: $sUMia = []; goto N8omb; ot8M3: $QsfZH = $this->getObject(); goto iEJLP; iEJLP: if (!$QsfZH) { goto YTf5R; } goto M3ZMZ; EdY5F: $sUMia[] = [self::LABEL => $this->getRegister()->getLabel("\145\x64\x69\164\137\x69\164\145\x6d"), self::COLOR => self::WARNING, self::LINK => $igeY_->getEditLink($CDV1j)]; goto yIepm; nvj_y: parent::render(); goto FyxwA; M3ZMZ: $igeY_ = $this->getModel(); goto RASbg; FyxwA: $CDV1j = $this->getId(); goto ot8M3; N8omb: if (!$igeY_->canEdit()) { goto ACTaf; } goto EdY5F; WHr62: uPiew: goto u3Kh4; u3Kh4: $h7hiL = ["\x6f\x76\145\162\166\x69\x65\x77" => [self::ICON => IconFontawesomeInterface::ICON_EYE, self::TITLE => __("\117\x76\145\x72\x76\151\145\x77", PR__CMN__FOUNDATION)]]; goto Vm9yD; YMFzt: $WG_aG = $igeY_->getShowViewItemsKeys($WG_aG); goto h6bgA; yIepm: ACTaf: goto zExf6; wnaLi: ManipulateArray::unset($WG_aG, [self::ID]); goto YMFzt; ln_Sa: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\ORM\View;
+
+use Pmpr\Common\Foundation\Manipulate\Theme\ManipulateHTML;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString;
+use Pmpr\Common\Foundation\Media\Icon\Interfaces\IconFontawesomeInterface;
+use Pmpr\Common\Foundation\ORM\DB\Field\Field;
+use Pmpr\Common\Foundation\ORM\DB\Field\Foreign;
+use Pmpr\Common\Foundation\ORM\DB\Model;
+
+class Show extends ObjectAware
+{
+    const PAGINATION_QUERY_VAR = "\x70\141\147\x65\156\165\x6d";
+    public function render()
+    {
+        goto eweaaismksecwagy;
+        yyqygaokeccgugos:
+        foreach ($meywaqqsugaoeyys->oyeskqayoscwciem()->aeosueemgsygqese() as $aaqqkgyougeiueyq) {
+            goto aquqkiggamaoegoo;
+            mykiyqcqiegkiqys:
+            $ewgwqamkygiqaawc = '';
+            goto agemwookwseyycqo;
+            ykqsuiyyosyeyscc:
+            $ywoucyskcquysiwc[$aaqqkgyougeiueyq->mwikyscisascoeea()] = [self::ICON => $ywoyoawciekocqao->oyeskqayoscwciem()->qyyikeaseoskcacm(), self::TITLE => $aaqqkgyougeiueyq->qcgakseyaikigqco(), self::CONTENT => $ewgwqamkygiqaawc];
+            goto ugogoekeckgcmuaw;
+            isewysikysqewkis:
+            cwswueuqoamqasya:
+            goto wiwoiyoakywqyaiy;
+            mqimkwickkgqqeoi:
+            if (!$icwicymcioeyeyek) {
+                goto cwswueuqoamqasya;
+            }
+            goto kwyimqumkuuyaiku;
+            mceucsaeouuwyumm:
+            ManipulateArray::unset($uykgysuswksgmwqy, ["\x63\x62", ManipulateString::ogimogiceeekegoi(ManipulateString::mkwcwqkqeqkqyggc($meywaqqsugaoeyys)) . self::_ID]);
+            goto ceiuqsiqgiuiekem;
+            igmmqwyawcuuckkq:
+            if ($ewgwqamkygiqaawc) {
+                goto suuskagowwgsouqw;
+            }
+            goto eouwacqiommmeaqc;
+            saauykgakaeiyoua:
+            if (!$momcykaoccoymeig instanceof Index) {
+                goto kgmeiwiakwicgkkk;
+            }
+            goto qwemkcoaseywkuuc;
+            agemwookwseyycqo:
+            $egkyssmuqcwaciya = $aaqqkgyougeiueyq->uecyuoauykiqqkey();
+            goto cquecqekuucwoumw;
+            ugogoekeckgcmuaw:
+            csieaismmmocyacu:
+            goto egesuwkqkmaigaoe;
+            kwyimqumkuuyaiku:
+            $essikcmqiyqaqoaq = [];
+            goto gkqiqaqecmoogmaa;
+            wiwoiyoakywqyaiy:
+            kgmeiwiakwicgkkk:
+            goto igmmqwyawcuuckkq;
+            gkqiqaqecmoogmaa:
+            $uykgysuswksgmwqy = $momcykaoccoymeig->waeasakssissiuqg()->get_columns();
+            goto mceucsaeouuwyumm;
+            ugykmcouiwiscoqu:
+            $ewgwqamkygiqaawc = ManipulateHTML::kuumcaywkqiasisk($essikcmqiyqaqoaq, $uykgysuswksgmwqy, ["\x63\154\x61\x73\163" => "\164\141\x62\154\145\x2d\x62\x6f\162\x64\145\162\154\145\x73\163\x20\164\x61\142\154\x65\x2d\163\164\162\151\x70\x65\144\x20\146\157\x6e\x74\x2d\x31\66"]);
+            goto isewysikysqewkis;
+            cquecqekuucwoumw:
+            $ywoyoawciekocqao = $egkyssmuqcwaciya::symcgieuakksimmu();
+            goto koiscokkkaimiecq;
+            owuuuiekkaeoeacq:
+            $momcykaoccoymeig = $ywoyoawciekocqao->cgswceaawqgeskua("\151\156\144\x65\x78");
+            goto saauykgakaeiyoua;
+            gsymkkskwsgggoic:
+            ooqksueucyagyuoe:
+            goto ugykmcouiwiscoqu;
+            koiscokkkaimiecq:
+            if (!$ywoyoawciekocqao instanceof Model) {
+                goto omykokikgocoikec;
+            }
+            goto owuuuiekkaeoeacq;
+            egesuwkqkmaigaoe:
+            yssqmyoaokkksukc:
+            goto syusgosewwkoagoq;
+            sqwuqegeiisoiiuq:
+            suuskagowwgsouqw:
+            goto uscokkmquayiukag;
+            qwemkcoaseywkuuc:
+            $icwicymcioeyeyek = $meywaqqsugaoeyys->iscemaoqqckmkago($aaqqkgyougeiueyq->mwikyscisascoeea(), $mksyucucyswaukig);
+            goto mqimkwickkgqqeoi;
+            aquqkiggamaoegoo:
+            if (!($aaqqkgyougeiueyq instanceof Foreign && $aaqqkgyougeiueyq->gumeeckcowwoyoci())) {
+                goto csieaismmmocyacu;
+            }
+            goto mykiyqcqiegkiqys;
+            eouwacqiommmeaqc:
+            $ewgwqamkygiqaawc = ManipulateHTML::wegccueewucwyaew([self::CONTENT => ManipulateHTML::ciuuiyckmsygceis(sprintf(__("\124\150\x65\x72\145\x20\141\x72\x65\40\156\x6f\x74\40\x25\x73\x20\171\x65\x74\56", PR__CMN__FOUNDATION), $ywoyoawciekocqao->oyeskqayoscwciem()->giiayuqckuiecosm()))]);
+            goto sqwuqegeiisoiiuq;
+            uscokkmquayiukag:
+            omykokikgocoikec:
+            goto ykqsuiyyosyeyscc;
+            ceiuqsiqgiuiekem:
+            foreach ($icwicymcioeyeyek as $momcykaoccoymeig => $igqsaukqcqscimok) {
+                goto kqyoakickmseyyeq;
+                ykwasaaoeeiuomim:
+                $iwywmkygwewiamwm = $ywoyoawciekocqao->uesweuocqoywoyms($aokagokqyuysuksm);
+                goto acggikioyeueeowg;
+                micceocwuwkyusic:
+                foreach ($uykgysuswksgmwqy as $qgoqiacsiccwoawi => $meqocwsecsywiiqs) {
+                    $essikcmqiyqaqoaq[$momcykaoccoymeig][$qgoqiacsiccwoawi] = $ywoyoawciekocqao->kamyqikiiuwqiiuw($qgoqiacsiccwoawi, ManipulateArray::get($igqsaukqcqscimok, $qgoqiacsiccwoawi), $igqsaukqcqscimok);
+                    iauwuugggmegwisk:
+                }
+                goto iwueukqcywkiyqge;
+                kqyoakickmseyyeq:
+                $aokagokqyuysuksm = ManipulateArray::get($igqsaukqcqscimok, $ywoyoawciekocqao->kumuygiiqswoyasy());
+                goto micceocwuwkyusic;
+                egaymskkosukqeao:
+                aukucaieceiwesmm:
+                goto kaiesowkgwogqseg;
+                kaiesowkgwogqseg:
+                osmmoyqkqoucsgow:
+                goto kicwiowcogmauwiy;
+                cwikoaeqmmoimmso:
+                $essikcmqiyqaqoaq[$momcykaoccoymeig]["\x74\x72\137\x61\x74\x74\162\163"] = ["\x64\141\164\x61\x2d\x68\x72\145\146" => $iwywmkygwewiamwm];
+                goto egaymskkosukqeao;
+                iwueukqcywkiyqge:
+                wgiygcmqaokywuqa:
+                goto ykwasaaoeeiuomim;
+                acggikioyeueeowg:
+                if (!$iwywmkygwewiamwm) {
+                    goto aukucaieceiwesmm;
+                }
+                goto cwikoaeqmmoimmso;
+                kicwiowcogmauwiy:
+            }
+            goto gsymkkskwsgggoic;
+            syusgosewwkoagoq:
+        }
+        goto oeusomaaeekakake;
+        icumkkykaoqycqqu:
+        $aokagokqyuysuksm = $this->mwikyscisascoeea();
+        goto oeamoqweiueaueay;
+        eweaaismksecwagy:
+        parent::render();
+        goto icumkkykaoqycqqu;
+        oeusomaaeekakake:
+        sckioayasmkcoeoo:
+        goto kwuckkyqaygwgcuy;
+        owgsameoayaogsma:
+        if (!$mksyucucyswaukig) {
+            goto mcqucouuiuoagqwc;
+        }
+        goto kyiwsiakwgiwouyi;
+        qkyciyiwkmgkmquk:
+        $ccowyogiqwikkkie[] = [self::LABEL => $this->oyeskqayoscwciem()->uikgwcuascgeissw("\145\144\x69\x74\x5f\151\164\145\x6d"), self::COLOR => self::WARNING, self::LINK => $meywaqqsugaoeyys->yyykkcyiksewsoqy($aokagokqyuysuksm)];
+        goto sksgcusuyqcwqswe;
+        aoaqwygkaagiuuws:
+        $yygmoeguaqyumuui = $meywaqqsugaoeyys->giiqwciomksuiymm($yygmoeguaqyumuui);
+        goto esagiiawomyacuiw;
+        sksgcusuyqcwqswe:
+        yuoeumyiuqkuouey:
+        goto ayceeyuocgowqwsa;
+        iuwkiyimqmgguose:
+        $ccowyogiqwikkkie[] = ManipulateHTML::uuccukgasskgimsq("\x61", ["\150\x72\145\x66" => "\43", "\143\x6c\x61\x73\x73" => "\142\x74\x6e\x20\164\145\170\164\55\144\x65\x63\x6f\162\x61\x74\x69\x6f\156\x2d\156\157\x6e\x65\40\x62\x74\156\x2d\x64\141\156\147\x65\162\x20\x70\162\x2d\143\157\156\146\x69\162\155\141\x62\154\x65\55\x61\143\x74\x69\x6f\156", "\x64\x61\164\x61\55\x63\x6f\x6e\x66\151\x67" => $meywaqqsugaoeyys->ymaommgoigkakyes($meywaqqsugaoeyys->cgccmsewskigcuig($aokagokqyuysuksm))], $this->oyeskqayoscwciem()->uikgwcuascgeissw("\162\x65\155\157\x76\145\x5f\151\164\x65\x6d"));
+        goto yggseoaommssscwo;
+        oeamoqweiueaueay:
+        $mksyucucyswaukig = $this->imgymusqgccqsqqq();
+        goto owgsameoayaogsma;
+        gqimwsyemoewagcy:
+        ManipulateArray::unset($yygmoeguaqyumuui, [self::ID]);
+        goto aoaqwygkaagiuuws;
+        ayceeyuocgowqwsa:
+        if (!$meywaqqsugaoeyys->mukyysqkgaimcygs()) {
+            goto eyiwqgqcsqakwqss;
+        }
+        goto iuwkiyimqmgguose;
+        giuccakymqymawgk:
+        mcqucouuiuoagqwc:
+        goto sicgyiyiocyygkoc;
+        esagiiawomyacuiw:
+        $ccowyogiqwikkkie = [];
+        goto maaisuqwkymeguys;
+        awgmegueeqeyqamu:
+        $yygmoeguaqyumuui = array_filter(array_keys((array) $mksyucucyswaukig));
+        goto gqimwsyemoewagcy;
+        yggseoaommssscwo:
+        eyiwqgqcsqakwqss:
+        goto aeiemwacaiygemmg;
+        maaisuqwkymeguys:
+        if (!$meywaqqsugaoeyys->ggwyugcggywuwcse()) {
+            goto yuoeumyiuqkuouey;
+        }
+        goto qkyciyiwkmgkmquk;
+        kwuckkyqaygwgcuy:
+        echo $this->iuygowkemiiwqmiw("\x73\x68\157\x77", ["\164\141\x62\x73" => $this->sscegwueamckwmcy($this->ygyygikyocoymgaw("\157\x72\155\137\166\151\x65\167\x5f\x73\150\157\167\x5f{$meywaqqsugaoeyys->miwqiiqeegeqcwis()}\137\164\141\x62\163"), $ywoucyskcquysiwc, $mksyucucyswaukig), "\x6e\141\155\x65" => $this->aakmagwggmkoiiyu(), "\x6f\142\152\145\x63\x74" => $mksyucucyswaukig, "\155\x6f\x64\x65\154" => $this->mgogaykgkoogasim(), "\x69\x74\145\x6d\x73" => array_filter($meywaqqsugaoeyys->eukyqwmmeyakcyoo($mksyucucyswaukig, $yygmoeguaqyumuui)), "\x74\151\x74\154\145" => $this->mmqossqsksemasay("\x76\x69\x65\167\137\x69\x74\145\155"), "\142\165\164\164\157\156\x73" => $ccowyogiqwikkkie, "\x6d\141\x69\156\137\x6b\145\x79" => "\157\x76\x65\x72\x76\151\x65\x77"]);
+        goto giuccakymqymawgk;
+        aeiemwacaiygemmg:
+        $ywoucyskcquysiwc = ["\x6f\x76\x65\162\x76\x69\145\x77" => [self::ICON => IconFontawesomeInterface::ICON_EYE, self::TITLE => __("\x4f\x76\x65\162\166\151\x65\167", PR__CMN__FOUNDATION)]];
+        goto yyqygaokeccgugos;
+        kyiwsiakwgiwouyi:
+        $meywaqqsugaoeyys = $this->mgogaykgkoogasim();
+        goto awgmegueeqeyqamu;
+        sicgyiyiocyygkoc:
+    }
+}

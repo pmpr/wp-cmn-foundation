@@ -1,2 +1,56 @@
 <?php
- namespace Pmpr\Common\Foundation\Page\Admin; abstract class Tab extends Common { protected ?string $id = null; protected int $priority = 0; protected ?string $title = null; protected ?string $description = null; public function getId() : ?string { return $this->id; } public function getPriority() : int { return $this->priority; } public function getTitle() : ?string { return $this->title; } public function getDescription() : ?string { return $this->description; } public function addActions() { $this->addAction($this->generateHook("\x70\141\147\x65\x5f\x61\144\155\x69\156\137\157\x75\164\x70\x75\x74\x5f{$this->getId()}\137\164\x61\x62"), [$this, "\x72\x65\x6e\144\x65\x72"]); parent::addActions(); } public function beforeRender() { } public function render() { $this->beforeRender(); echo $this->renderTemplate($this->getId(), $this->getParameters()); } public abstract function getParameters(); }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Page\Admin;
+
+
+abstract class Tab extends Common
+{
+    
+    protected ?string $id = null;
+    
+    protected int $priority = 0;
+    
+    protected ?string $title = null;
+    
+    protected ?string $description = null;
+    
+    public function mwikyscisascoeea() : ?string
+    {
+        return $this->id;
+    }
+    
+    public function yywskysiycwkwsgw() : int
+    {
+        return $this->priority;
+    }
+    
+    public function qcgakseyaikigqco() : ?string
+    {
+        return $this->title;
+    }
+    
+    public function meqceykmywmqgoym() : ?string
+    {
+        return $this->description;
+    }
+    public function wigskegsqequoeks()
+    {
+        $this->qcsmikeggeemccuu($this->ygyygikyocoymgaw("\160\141\x67\145\x5f\141\144\155\151\156\x5f\x6f\x75\x74\x70\x75\x74\137{$this->mwikyscisascoeea()}\x5f\x74\141\142"), [$this, "\162\145\156\x64\x65\x72"]);
+        parent::wigskegsqequoeks();
+    }
+    public function eiieguqemowyacgi()
+    {
+    }
+    public function render()
+    {
+        $this->eiieguqemowyacgi();
+        echo $this->iuygowkemiiwqmiw($this->mwikyscisascoeea(), $this->gayqqwwuycceosii());
+    }
+    
+    public abstract function gayqqwwuycceosii();
+}

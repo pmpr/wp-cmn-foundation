@@ -1,2 +1,96 @@
 <?php
- namespace Pmpr\Common\Foundation\ORM\View; use Pmpr\Common\Foundation\Manipulate\ManipulateServer; class ObjectAware extends View { protected ?int $id = 0; protected ?object $object = null; public function setId(?int $CDV1j) : self { $this->id = $CDV1j; return $this; } public function getId() : int { return $this->id; } public function setObject(?object $QsfZH) : self { $this->object = $QsfZH; return $this; } public function getObject() : ?object { return $this->object; } public function initialize() { goto nvoja; t0B2b: exit; goto LmW04; ZXdYX: eLc9e: goto V8dUS; nvoja: parent::initialize(); goto VfX2l; iY8s2: $this->setObject($this->getModel()->getBuilder()->find($this->getId())); goto uHNZB; utqHw: $CDV1j = ManipulateServer::get($igeY_->getPrimaryKey(), false); goto VzRz5; VzRz5: if (!$CDV1j) { goto eLc9e; } goto Xh2mq; VfX2l: $igeY_ = $this->getModel(); goto utqHw; pOxgM: s2WW2: goto ZXdYX; Xh2mq: $this->setId((int) $CDV1j); goto IwWsy; IwWsy: if ($this->getId()) { goto Vlr20; } goto l47KV; LmW04: Vlr20: goto iY8s2; uHNZB: if ($this->getObject()) { goto s2WW2; } goto r8ZNs; r8ZNs: wp_die(__("\131\157\165\40\x61\164\x74\x65\155\160\164\x65\x64\x20\x74\x6f\40\x65\144\151\164\40\141\x6e\x20\151\x74\x65\155\40\164\150\x61\x74\40\x64\157\x65\x73\x6e\47\x74\40\145\x78\x69\x73\x74\x2e\40\x50\145\162\x68\x61\160\x73\x20\x69\x74\x20\167\141\163\40\144\x65\x6c\145\x74\145\144\77", PR__CMN__FOUNDATION)); goto pOxgM; l47KV: wp_redirect($igeY_->getIndexLink()); goto t0B2b; V8dUS: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\ORM\View;
+
+use Pmpr\Common\Foundation\Manipulate\ManipulateServer;
+
+class ObjectAware extends View
+{
+    
+    protected ?int $id = 0;
+    
+    protected ?object $object = null;
+    
+    public function ggiaseqygioygumq(?int $aokagokqyuysuksm) : self
+    {
+        $this->id = $aokagokqyuysuksm;
+        return $this;
+    }
+    
+    public function mwikyscisascoeea() : int
+    {
+        return $this->id;
+    }
+    
+    public function kwmiaokywwmwecuc(?object $mksyucucyswaukig) : self
+    {
+        $this->object = $mksyucucyswaukig;
+        return $this;
+    }
+    
+    public function imgymusqgccqsqqq() : ?object
+    {
+        return $this->object;
+    }
+    public function mqyuagguukgcoeka()
+    {
+        goto gcucsowqoeiwmyyq;
+        ssywsaaqqaucesau:
+        wp_die(__("\131\x6f\165\40\x61\164\x74\x65\x6d\x70\164\x65\144\x20\164\157\x20\x65\x64\x69\x74\x20\x61\x6e\x20\x69\x74\x65\155\x20\x74\150\x61\164\40\x64\x6f\x65\x73\x6e\x27\x74\40\x65\x78\151\x73\164\56\x20\120\145\x72\150\x61\160\163\40\x69\x74\x20\x77\141\x73\40\x64\145\x6c\x65\x74\145\144\77", PR__CMN__FOUNDATION));
+        goto ygcgoaokauigwuus;
+        mugscgugcogcasue:
+        $this->kwmiaokywwmwecuc($this->mgogaykgkoogasim()->gqaysymikgeawkqa()->ksiyqouuaoymsycg($this->mwikyscisascoeea()));
+        goto qyyyycwaookqaoke;
+        ysiqakyaiooyscwy:
+        eqiiaokcgakicaye:
+        goto auumaoycmsmsgigs;
+        omuauimgkygcecsc:
+        
+        $this->ggiaseqygioygumq((int) $aokagokqyuysuksm);
+        goto wwcqoeuwskquakwy;
+        wwcqoeuwskquakwy:
+        
+        if ($this->mwikyscisascoeea()) {
+            goto cyosacayacumuaks;
+        }
+        goto quamuugoocyyceec;
+        iymaiwqimisgacmk:
+        cyosacayacumuaks:
+        goto mugscgugcogcasue;
+        oasggeyceiyieuuo:
+        if (!$aokagokqyuysuksm) {
+            goto eqiiaokcgakicaye;
+        }
+        goto omuauimgkygcecsc;
+        quamuugoocyyceec:
+        wp_redirect($meywaqqsugaoeyys->comogmawyoiquwis());
+        goto qcssigmcayuyweiy;
+        qyyyycwaookqaoke:
+        
+        if ($this->imgymusqgccqsqqq()) {
+            goto ikcwmsgocyuqiumc;
+        }
+        goto ssywsaaqqaucesau;
+        ygcgoaokauigwuus:
+        ikcwmsgocyuqiumc:
+        goto ysiqakyaiooyscwy;
+        gcucsowqoeiwmyyq:
+        parent::mqyuagguukgcoeka();
+        goto kyiuewcikkqagwwg;
+        kyiuewcikkqagwwg:
+        $meywaqqsugaoeyys = $this->mgogaykgkoogasim();
+        goto aumowowgewgqmwci;
+        aumowowgewgqmwci:
+        $aokagokqyuysuksm = ManipulateServer::get($meywaqqsugaoeyys->kumuygiiqswoyasy(), false);
+        goto oasggeyceiyieuuo;
+        qcssigmcayuyweiy:
+        exit;
+        goto iymaiwqimisgacmk;
+        auumaoycmsmsgigs:
+    }
+}

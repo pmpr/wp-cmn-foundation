@@ -1,2 +1,33 @@
 <?php
- namespace Pmpr\Common\Foundation\Decorator\Post; class DecoratorAuthor extends Common { public static function get() { return get_the_author(); } public static function getLink() { return get_the_author_link(); } public static function getMeta($mi3kO, $pbR1v = null) { return get_the_author_meta($mi3kO, $pbR1v); } public static function getPostsURL($pbR1v = null, $vPl9z = '') { return get_author_posts_url($pbR1v, $vPl9z); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Decorator\Post;
+
+
+class DecoratorAuthor extends Common
+{
+    
+    public static function get()
+    {
+        return get_the_author();
+    }
+    
+    public static function qmgcisuuikgmqcsu()
+    {
+        return get_the_author_link();
+    }
+    
+    public static function igawqaomowicuayw($aiowsaccomcoikus, $qscaoekmoooeuyqg = null)
+    {
+        return get_the_author_meta($aiowsaccomcoikus, $qscaoekmoooeuyqg);
+    }
+    
+    public static function mkaiaewoyaimieqg($qscaoekmoooeuyqg = null, $ymqmyyeuycgmigyo = '')
+    {
+        return get_author_posts_url($qscaoekmoooeuyqg, $ymqmyyeuycgmigyo);
+    }
+}

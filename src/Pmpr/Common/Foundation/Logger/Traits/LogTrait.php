@@ -1,2 +1,71 @@
 <?php
- namespace Pmpr\Common\Foundation\Logger\Traits; use Pmpr\Common\Foundation\Logger\Engine; use Pmpr\Common\Foundation\Logger\Logger; trait LogTrait { protected ?string $logChannel = null; public function getLogChannel() : ?string { return $this->logChannel; } public function getLoggerObject() : Engine { return Engine::getInstance(); } public function errorLog(?string $k4mxF, array $vCZSL = []) { $this->addLog($k4mxF, $vCZSL, Engine::ERROR); error_log($k4mxF, 0); } public function infoLog(?string $k4mxF, array $vCZSL = []) { $this->addLog($k4mxF, $vCZSL, Engine::INFO); } public function debugLog(?string $k4mxF, array $vCZSL = []) { $this->addLog($k4mxF, $vCZSL, Engine::DEBUG); } public function warningLog(?string $k4mxF, array $vCZSL = []) { $this->addLog($k4mxF, $vCZSL, Engine::WARNING); } private function addLog($k4mxF, $YG1GM = [], $N6E3u = Engine::DEBUG) { goto w0LK7; dOneW: if ($vu83x) { goto jVXGl; } goto LTMiD; damxr: $this->getLoggerObject()->addRecord($vu83x, $N6E3u, $k4mxF, $YG1GM); goto jAbC_; LTMiD: $vu83x = Logger::DEFAULT_CHANNEL; goto zwqTZ; zwqTZ: jVXGl: goto damxr; w0LK7: $vu83x = $this->getLogChannel(); goto dOneW; jAbC_: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Logger\Traits;
+
+use Pmpr\Common\Foundation\Logger\Engine;
+use Pmpr\Common\Foundation\Logger\Logger;
+
+trait LogTrait
+{
+    
+    protected ?string $logChannel = null;
+    
+    public function cycuaskkikweaoym() : ?string
+    {
+        return $this->logChannel;
+    }
+    
+    public function ygaescewwyaseaoy() : Engine
+    {
+        return Engine::symcgieuakksimmu();
+    }
+    
+    public function saqqeqmcyyoeqici(?string $uamcoiueqaamsqma, array $icwicymcioeyeyek = [])
+    {
+        $this->giaekemmcwcgswce($uamcoiueqaamsqma, $icwicymcioeyeyek, Engine::ERROR_CODE);
+        
+    }
+    
+    public function uiagwusgwcassqua(?string $uamcoiueqaamsqma, array $icwicymcioeyeyek = [])
+    {
+        $this->giaekemmcwcgswce($uamcoiueqaamsqma, $icwicymcioeyeyek, Engine::INFO_CODE);
+    }
+    
+    public function oaumimwssciwumys(?string $uamcoiueqaamsqma, array $icwicymcioeyeyek = [])
+    {
+        $this->giaekemmcwcgswce($uamcoiueqaamsqma, $icwicymcioeyeyek);
+    }
+    
+    public function ciyuwccsawgygkie(?string $uamcoiueqaamsqma, array $icwicymcioeyeyek = [])
+    {
+        $this->giaekemmcwcgswce($uamcoiueqaamsqma, $icwicymcioeyeyek, Engine::WARNING_CODE);
+    }
+    
+    private function giaekemmcwcgswce($uamcoiueqaamsqma, $mgkceomocowocqyo = [], $iqaosyayeiuaisqi = Engine::DEBUG_CODE)
+    {
+        goto awkgycqimgayoaiy;
+        ogeeaauygcocqgee:
+        if ($iwcsiuuqeaaaeees) {
+            goto uossiqykiaouimca;
+        }
+        goto eecukukickgoweyc;
+        awkgycqimgayoaiy:
+        $iwcsiuuqeaaaeees = $this->cycuaskkikweaoym();
+        goto ogeeaauygcocqgee;
+        eecukukickgoweyc:
+        $iwcsiuuqeaaaeees = Logger::DEFAULT_CHANNEL;
+        goto eagucokgqqgkukew;
+        wcsiyammsoaoeska:
+        $this->ygaescewwyaseaoy()->uimukyawykswgwsm($iwcsiuuqeaaaeees, $iqaosyayeiuaisqi, $uamcoiueqaamsqma, $mgkceomocowocqyo);
+        goto iwuyueygqsceyguc;
+        eagucokgqqgkukew:
+        uossiqykiaouimca:
+        goto wcsiyammsoaoeska;
+        iwuyueygqsceyguc:
+    }
+}

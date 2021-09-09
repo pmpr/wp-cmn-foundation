@@ -1,2 +1,18 @@
 <?php
- namespace Pmpr\Common\Foundation\ORM\DB\Field; class Timestamp extends Field { public function __construct(string $CDV1j, ?string $hTPi6 = null) { parent::__construct("\164\x69\155\x65\163\x74\x61\155\160", $CDV1j, $hTPi6); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\ORM\DB\Field;
+
+
+class Timestamp extends Field
+{
+    
+    public function __construct(string $aokagokqyuysuksm, ?string $meqocwsecsywiiqs = null)
+    {
+        parent::__construct("\164\x69\155\x65\x73\164\x61\x6d\160", $aokagokqyuysuksm, $meqocwsecsywiiqs);
+    }
+}

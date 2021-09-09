@@ -1,2 +1,269 @@
 <?php
- namespace Pmpr\Common\Foundation\FormMaker\Admin\Element; use Pmpr\Common\Foundation\FormMaker\Admin\Element\Interfaces\ElementInterface; use Pmpr\Common\Foundation\FormMaker\Admin\MetaTab; use Pmpr\Common\Foundation\FormMaker\Admin\Traits\FieldTrait; use Pmpr\Common\Foundation\FormMaker\Admin\Traits\ElementTrait; use Pmpr\Common\Foundation\FormMaker\Admin\Common; use CMB2_Field; use Pmpr\Common\Foundation\Traits\ToArrayTrait; class Element extends Common implements ElementInterface { use FieldTrait, ToArrayTrait, ElementTrait; protected int $priority = 0; protected bool $show = true; protected ?string $id = null; protected ?string $name = null; protected ?string $title = null; protected bool $showNames = false; protected $objectType = "\x6f\160\x74\x69\157\x6e\x73\x2d\160\x61\147\x65"; protected ?string $capability = null; protected array $configuration = []; public function __construct($CDV1j = null) { goto uI1cg; qMWUG: $this->capability = "\155\141\x6e\x61\x67\145\137\157\160\x74\151\157\156\163"; goto S2X37; S2X37: $this->configuration = []; goto g3yZd; i78VP: $this->showNames = true; goto qMWUG; g3yZd: parent::__construct(); goto BfhVU; uI1cg: $this->id = $CDV1j; goto i78VP; BfhVU: } public function addActions() { $this->addAction("\x77\x70", [$this, "\167\160"], 99)->addAction("\151\x6e\x69\164", [$this, "\x69\156\x69\164"], 99)->addAction("\x61\x64\155\151\x6e\137\x69\x6e\x69\164", [$this, "\x61\x64\x6d\151\x6e\x49\156\x69\164"], 99); parent::addActions(); } public function setTranslationProps() { } public function init() { $this->setTranslationProps(); } public function adminInit() { } public function wp() { } public function isShow() : bool { return $this->show; } public function setShow($Qbr8s = true) : self { $this->show = $Qbr8s; return $this; } public function getCapability() : ?string { return $this->capability; } public function setCapability(string $rr5as) : self { $this->capability = $rr5as; return $this; } public function getObjectType() { return $this->objectType; } public function setObjectType($TSqL1) : self { $this->objectType = $TSqL1; return $this; } public function forTerm(array $wwIOq = []) { $this->addConfig("\x74\141\170\x6f\156\x6f\x6d\x69\145\x73", $wwIOq); return $this->setObjectType("\164\x65\162\155"); } public function getTitle() : ?string { return $this->title; } public function setTitle(?string $hTPi6) : self { $this->title = $hTPi6; return $this; } public function generateForm() { } public function getName() : ?string { return $this->name; } public function setName(string $vPl9z) : self { $this->name = $vPl9z; return $this; } public function isShowNames() : ?bool { return $this->showNames; } public function setShowNames(bool $U42eT) : self { $this->showNames = $U42eT; return $this; } public function getId() : ?string { return $this->id; } public function setId(string $CDV1j) : self { $this->id = $CDV1j; return $this; } public function getPriority() : ?int { return $this->priority; } public function setPriority(int $pwEST) : self { $this->priority = $pwEST; return $this; } public function getKey() : ?string { goto ihHLL; HbCIQ: YY7Xe: goto Arh3s; Nlxhh: lM_8c: goto z1L5B; DM493: if ($vPl9z) { goto Sc1UL; } goto PRhoU; g3VJW: if ($CDV1j) { goto lM_8c; } goto DM493; enW1g: goto YY7Xe; goto Ue_69; Arh3s: return ''; goto aZJDv; Ue_69: Sc1UL: goto wYt0i; njIcX: $CDV1j = $this->getId(); goto g3VJW; wYt0i: return $vPl9z; goto HbCIQ; PRhoU: goto YY7Xe; goto Nlxhh; z1L5B: return $CDV1j; goto enW1g; ihHLL: $vPl9z = $this->getName(); goto njIcX; aZJDv: } public function initMetaTab() : ?bool { return true; } public function getConfiguration() : array { return $this->configuration; } public function addConfigs($fPQ1W) : self { goto OiSiL; w2Zll: return $this; goto SDkYN; OiSiL: foreach ($fPQ1W as $bUHaw => $Cr_NK) { $this->addConfig($bUHaw, $Cr_NK); Rf5ye: } goto yISzW; yISzW: lRjEE: goto w2Zll; SDkYN: } public function addConfig($bUHaw, $yjbyt) : self { goto KzNAG; KzNAG: if (isset($this->configuration[$bUHaw])) { goto j6GEO; } goto ggyp_; Sz4yx: j6GEO: goto L0HZl; ggyp_: $this->configuration[$bUHaw] = $yjbyt; goto Sz4yx; L0HZl: return $this; goto nrPDd; nrPDd: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\FormMaker\Admin\Element;
+
+use Pmpr\Common\Foundation\FormMaker\Admin\Element\Interfaces\ElementInterface;
+use Pmpr\Common\Foundation\FormMaker\Admin\MetaTab;
+use Pmpr\Common\Foundation\FormMaker\Admin\Traits\FieldTrait;
+use Pmpr\Common\Foundation\FormMaker\Admin\Traits\ElementTrait;
+use Pmpr\Common\Foundation\FormMaker\Admin\Common;
+use CMB2_Field;
+use Pmpr\Common\Foundation\Traits\ToArrayTrait;
+
+class Element extends Common implements ElementInterface
+{
+    use FieldTrait, ToArrayTrait, ElementTrait;
+    
+    protected int $priority = 0;
+    
+    protected bool $show = true;
+    
+    protected ?string $id = null;
+    
+    protected ?string $name = null;
+    
+    protected ?string $title = null;
+    
+    protected bool $showNames = false;
+    
+    protected $objectType = "\x6f\x70\164\x69\157\156\x73\55\160\x61\147\x65";
+    
+    protected ?string $capability = null;
+    
+    protected array $configuration = [];
+    
+    public function __construct($aokagokqyuysuksm = null)
+    {
+        goto oekcuiaykkcusgkm;
+        wimkqoekscwcoauw:
+        $this->capability = "\155\141\x6e\x61\x67\x65\x5f\157\160\x74\151\157\156\x73";
+        goto ikemwmsywqqqiqsa;
+        ggymiommyoaqkwko:
+        parent::__construct();
+        goto wweyewgicswqweyq;
+        ikemwmsywqqqiqsa:
+        $this->configuration = [];
+        goto ggymiommyoaqkwko;
+        oekcuiaykkcusgkm:
+        $this->id = $aokagokqyuysuksm;
+        goto oakygoegqigkcwug;
+        oakygoegqigkcwug:
+        $this->showNames = true;
+        goto wimkqoekscwcoauw;
+        wweyewgicswqweyq:
+    }
+    public function wigskegsqequoeks()
+    {
+        $this->qcsmikeggeemccuu("\167\160", [$this, "\x67\157\163\x6d\161\143\155\155\157\x6d\153\161\167\x6d\x69\163"], 99)->qcsmikeggeemccuu("\x69\156\x69\x74", [$this, "\x69\156\151\x74"], 99)->qcsmikeggeemccuu("\x61\x64\x6d\151\156\137\x69\156\x69\164", [$this, "\x79\x65\171\151\x67\x75\x79\145\x67\155\x6d\x79\165\x73\145\x61"], 99);
+        parent::wigskegsqequoeks();
+    }
+    public function gogaagekwoisaqgu()
+    {
+    }
+    public function init()
+    {
+        $this->gogaagekwoisaqgu();
+    }
+    public function yeyiguyegmmyusea()
+    {
+    }
+    public function gosmqcmmomkqwmis()
+    {
+    }
+    
+    public function wkkcmkuiigsukyik() : bool
+    {
+        return $this->show;
+    }
+    
+    public function wiukukykqcgssssq($ekcswiguywieeeoc = true) : self
+    {
+        $this->show = $ekcswiguywieeeoc;
+        return $this;
+    }
+    
+    public function gwaeeegmgggawiyi() : ?string
+    {
+        return $this->capability;
+    }
+    
+    public function womysscuckiacoua(string $eogowigeyucaauig) : self
+    {
+        $this->capability = $eogowigeyucaauig;
+        return $this;
+    }
+    
+    public function aaamyckgicycisqq()
+    {
+        return $this->objectType;
+    }
+    
+    public function ycgswwsswoyyeqgc($mqyaskyaekmkegmg) : self
+    {
+        $this->objectType = $mqyaskyaekmkegmg;
+        return $this;
+    }
+    
+    public function ekwcyuwcmeeoyqqm(array $seyqqsmuaiegkeeq = []) : self
+    {
+        $this->wcweamocuicuusky("\x74\x61\x78\157\x6e\157\x6d\151\x65\163", $seyqqsmuaiegkeeq);
+        return $this->ycgswwsswoyyeqgc("\x74\x65\x72\155");
+    }
+    
+    public function qcgakseyaikigqco() : ?string
+    {
+        return $this->title;
+    }
+    
+    public function gswweykyogmsyawy(?string $meqocwsecsywiiqs) : self
+    {
+        $this->title = $meqocwsecsywiiqs;
+        return $this;
+    }
+    public function ecwgiiuacoaokqkw()
+    {
+    }
+    
+    public function aakmagwggmkoiiyu() : ?string
+    {
+        return $this->name;
+    }
+    
+    public function usuqmwksoeaayaig(string $ymqmyyeuycgmigyo) : self
+    {
+        $this->name = $ymqmyyeuycgmigyo;
+        return $this;
+    }
+    
+    public function eoceqqugyiaqqayw() : ?bool
+    {
+        return $this->showNames;
+    }
+    
+    public function eioykqwseqsqaskq(bool $egmsqkuugooyouuu) : self
+    {
+        $this->showNames = $egmsqkuugooyouuu;
+        return $this;
+    }
+    
+    public function mwikyscisascoeea() : ?string
+    {
+        return $this->id;
+    }
+    
+    public function ggiaseqygioygumq(string $aokagokqyuysuksm) : self
+    {
+        $this->id = $aokagokqyuysuksm;
+        return $this;
+    }
+    
+    public function yywskysiycwkwsgw() : ?int
+    {
+        return $this->priority;
+    }
+    
+    public function jyumyyugiwwiqomk(int $sqqewmoeaekuyyas) : self
+    {
+        $this->priority = $sqqewmoeaekuyyas;
+        return $this;
+    }
+    
+    public function cisyiemkeykgkomc() : ?string
+    {
+        goto ysuwseamckigmoge;
+        qiiyiqwyoomsueuq:
+        if ($ymqmyyeuycgmigyo) {
+            goto qesmouyqgeigoyay;
+        }
+        goto squwouwckwiwquyu;
+        cawcqogqmaaiaeim:
+        $aokagokqyuysuksm = $this->mwikyscisascoeea();
+        goto ckiesggkeyocyoia;
+        komeykuoomsymayc:
+        return '';
+        goto wiuoyosaiuqqmiss;
+        yawsiksqqgmeeiws:
+        goto cgmociyqmykaqmya;
+        goto iiauuwmeoiiqeigi;
+        ckiesggkeyocyoia:
+        if ($aokagokqyuysuksm) {
+            goto imksqaayamqiwwuw;
+        }
+        goto qiiyiqwyoomsueuq;
+        iiauuwmeoiiqeigi:
+        qesmouyqgeigoyay:
+        goto wgguesgmyqgyescc;
+        wgguesgmyqgyescc:
+        return $ymqmyyeuycgmigyo;
+        goto sockicoiuuuygkyo;
+        huuswamyiwgiymou:
+        imksqaayamqiwwuw:
+        goto aqocckgoumwuoyco;
+        squwouwckwiwquyu:
+        goto cgmociyqmykaqmya;
+        goto huuswamyiwgiymou;
+        sockicoiuuuygkyo:
+        cgmociyqmykaqmya:
+        goto komeykuoomsymayc;
+        aqocckgoumwuoyco:
+        return $aokagokqyuysuksm;
+        goto yawsiksqqgmeeiws;
+        ysuwseamckigmoge:
+        $ymqmyyeuycgmigyo = $this->aakmagwggmkoiiyu();
+        goto cawcqogqmaaiaeim;
+        wiuoyosaiuqqmiss:
+    }
+    
+    public function icwmkesyskgskquu() : ?bool
+    {
+        return true;
+    }
+    
+    public function weqsyyuyccsemacu() : array
+    {
+        return $this->configuration;
+    }
+    
+    public function megwuoouecmkuaqm($oyuikeusicgqgwak) : self
+    {
+        goto oqecugiicgkgisyi;
+        gaykosyqceuygmiq:
+        return $this;
+        goto gmeksiaumseqkqug;
+        usweuqkmumcwckoo:
+        iqacckgckyoioccs:
+        goto gaykosyqceuygmiq;
+        oqecugiicgkgisyi:
+        foreach ($oyuikeusicgqgwak as $uusmaiomayssaecw => $uiewakwqscemywuo) {
+            $this->wcweamocuicuusky($uusmaiomayssaecw, $uiewakwqscemywuo);
+            weqqwqaoyugaiaqs:
+        }
+        goto usweuqkmumcwckoo;
+        gmeksiaumseqkqug:
+    }
+    
+    public function wcweamocuicuusky($uusmaiomayssaecw, $eqgoocgaqwqcimie) : self
+    {
+        goto mmiwmgwcsgqoemws;
+        aysoywgeacaeuyao:
+        return $this;
+        goto oeyoocigmyyssieq;
+        qomimwecwqaeyqwu:
+        $this->configuration[$uusmaiomayssaecw] = $eqgoocgaqwqcimie;
+        goto cwcqmsuqqsauemuw;
+        cwcqmsuqqsauemuw:
+        eiuugowioueiceoc:
+        goto aysoywgeacaeuyao;
+        mmiwmgwcsgqoemws:
+        if (isset($this->configuration[$uusmaiomayssaecw])) {
+            goto eiuugowioueiceoc;
+        }
+        goto qomimwecwqaeyqwu;
+        oeyoocigmyyssieq:
+    }
+}

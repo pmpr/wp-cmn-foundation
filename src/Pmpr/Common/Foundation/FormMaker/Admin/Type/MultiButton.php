@@ -1,2 +1,43 @@
 <?php
- namespace Pmpr\Common\Foundation\FormMaker\Admin\Type; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; class MultiButton extends Button { public function render($mi3kO, $yjbyt, $QGv_b, $TSqL1, $EEXBk) { goto S1c0I; rMPm2: rbOqH: goto gEYA9; GbPCs: if (!(is_array($DSkvj) && $DSkvj)) { goto rbOqH; } goto yTc8U; yTc8U: echo $EEXBk->_desc(true); goto rcOGa; S1c0I: $DSkvj = ManipulateArray::get($mi3kO->args, "\x62\x75\x74\x74\x6f\x6e\x73", []); goto GbPCs; RtQi1: GTsTL: goto rMPm2; rcOGa: foreach ($DSkvj as $t5cUn) { echo $this->generate($t5cUn, $EEXBk); GlFde: } goto RtQi1; gEYA9: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\FormMaker\Admin\Type;
+
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
+
+class MultiButton extends Button
+{
+    
+    public function render($aiowsaccomcoikus, $eqgoocgaqwqcimie, $kqokimuosyuyyucg, $mqyaskyaekmkegmg, $ymygiwwuwyuakysk)
+    {
+        goto eweqcaymckiwaccw;
+        emeoasammuwaesws:
+        qycwawiicimecwsq:
+        goto mqmowgywwygssysy;
+        qcqgakkooouyiooi:
+        foreach ($qyukicweqoisimwg as $gskauacumcmekigs) {
+            echo $this->sywokgmoskcocqgy($gskauacumcmekigs, $ymygiwwuwyuakysk);
+            yysewcsossqsackg:
+        }
+        goto mokkeuemqauoaskk;
+        mokkeuemqauoaskk:
+        aceouusygqicksgk:
+        goto emeoasammuwaesws;
+        emooiegicmmqkwsg:
+        echo $ymygiwwuwyuakysk->_desc(true);
+        goto qcqgakkooouyiooi;
+        maokeqaksuookoao:
+        if (!(is_array($qyukicweqoisimwg) && $qyukicweqoisimwg)) {
+            goto qycwawiicimecwsq;
+        }
+        goto emooiegicmmqkwsg;
+        eweqcaymckiwaccw:
+        $qyukicweqoisimwg = ManipulateArray::get($aiowsaccomcoikus->args, "\x62\165\164\x74\x6f\156\x73", []);
+        goto maokeqaksuookoao;
+        mqmowgywwygssysy:
+    }
+}

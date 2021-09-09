@@ -1,2 +1,101 @@
 <?php
- namespace Pmpr\Common\Foundation\Decorator; class DecoratorUser extends Decorator { public static function isLoggedIn() : bool { if (!function_exists("\151\x73\x5f\x75\163\145\x72\x5f\x6c\x6f\x67\147\145\x64\x5f\x69\x6e")) { include_once ABSPATH . "\x77\x70\x2d\151\x6e\143\154\x75\144\145\163\57\160\x6c\165\x67\147\x61\142\154\x65\56\x70\150\160"; } return is_user_logged_in(); } public static function getBy($mi3kO, $yjbyt) { return get_user_by($mi3kO, $yjbyt); } public static function getList($DrjAW = []) { return get_users($DrjAW); } public static function canRichEdit() : bool { return user_can_richedit(); } public static function getLocale($de1aq = null) : string { return function_exists("\x67\145\x74\137\x75\x73\145\162\x5f\x6c\x6f\143\x61\154\145") ? get_user_locale($de1aq) : get_locale(); } public static function getEditLink($de1aq) : ?string { return get_edit_user_link($de1aq); } public static function getEditProfileURL($de1aq) : ?string { return get_edit_profile_url($de1aq); } public static function getAvatar($de1aq, $pDZ3Y = 64, $Ql_ZF = '', $szDcY = '', $DrjAW = []) { return get_avatar($de1aq, $pDZ3Y, $Ql_ZF, $szDcY, $DrjAW); } public static function getCurrentId() : int { return get_current_user_id(); } public static function deleteMeta($bUHaw, $de1aq = null, $yjbyt = '') { return delete_user_meta($de1aq, $bUHaw, $yjbyt); } public static function getMeta($bUHaw, $de1aq = null, $R9bYZ = true) { return get_user_meta($de1aq, $bUHaw, $R9bYZ); } public static function getAvatarURL($de1aq = null, $DrjAW = []) : bool { return get_avatar_url($de1aq, $DrjAW); } public static function getOption($czd3T, $de1aq = 0) { return get_user_option($czd3T, $de1aq); } public static function addMeta($bUHaw, $yjbyt, $de1aq = null, $e4jvG = true) { return add_user_meta($de1aq, $bUHaw, $yjbyt, $e4jvG); } public static function updateMeta($bUHaw, $yjbyt = '', $de1aq = null, $Daf1U = '') { return update_user_meta($de1aq, $bUHaw, $yjbyt, $Daf1U); } public static function currentCan($rr5as = "\155\141\156\x61\x67\145\x5f\x6f\160\164\151\157\x6e\163", ...$DrjAW) : bool { return function_exists("\143\x75\x72\162\145\x6e\x74\137\x75\x73\145\x72\137\x63\141\x6e") && current_user_can($rr5as, ...$DrjAW); } public static function can($de1aq = null, $rr5as = "\x6d\x61\156\141\147\145\x5f\157\160\x74\151\x6f\x6e\163", ...$DrjAW) : bool { return user_can($de1aq, $rr5as, ...$DrjAW); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Decorator;
+
+
+class DecoratorUser extends Decorator
+{
+    
+    public static function ksgkoukcicwkkaum() : bool
+    {
+        if (!function_exists("\x69\163\x5f\x75\x73\145\162\x5f\154\x6f\147\147\145\x64\x5f\151\x6e")) {
+            include_once ABSPATH . "\167\160\x2d\151\156\x63\x6c\165\144\145\x73\57\x70\154\165\147\147\141\x62\154\145\x2e\x70\x68\160";
+        }
+        return is_user_logged_in();
+    }
+    
+    public static function woimamkkeyoyauoa($aiowsaccomcoikus, $eqgoocgaqwqcimie)
+    {
+        return get_user_by($aiowsaccomcoikus, $eqgoocgaqwqcimie);
+    }
+    
+    public static function ciugwooasaqcywas($ywmkwiwkosakssii = [])
+    {
+        return get_users($ywmkwiwkosakssii);
+    }
+    
+    public static function kccaogemggeogags() : bool
+    {
+        return user_can_richedit();
+    }
+    
+    public static function iyouigcsiacgwksc($mkucggyaiaukqoce = null) : string
+    {
+        return function_exists("\147\x65\x74\137\165\163\145\x72\x5f\x6c\x6f\143\141\154\x65") ? get_user_locale($mkucggyaiaukqoce) : get_locale();
+    }
+    
+    public static function yyykkcyiksewsoqy($mkucggyaiaukqoce) : ?string
+    {
+        return get_edit_user_link($mkucggyaiaukqoce);
+    }
+    
+    public static function ekqiayaoseqcygmo($mkucggyaiaukqoce) : ?string
+    {
+        return get_edit_profile_url($mkucggyaiaukqoce);
+    }
+    
+    public static function ogcwgigqwycqswms($mkucggyaiaukqoce, $oiegiwogmwmawkeo = 64, $ggauoeuaesiymgee = '', $gkykacccamuwowwc = '', $ywmkwiwkosakssii = [])
+    {
+        return get_avatar($mkucggyaiaukqoce, $oiegiwogmwmawkeo, $ggauoeuaesiymgee, $gkykacccamuwowwc, $ywmkwiwkosakssii);
+    }
+    
+    public static function iccqaqcagacsuukg() : int
+    {
+        return get_current_user_id();
+    }
+    
+    public static function smqukgcyacswysqa($uusmaiomayssaecw, $mkucggyaiaukqoce = null, $eqgoocgaqwqcimie = '')
+    {
+        return delete_user_meta($mkucggyaiaukqoce, $uusmaiomayssaecw, $eqgoocgaqwqcimie);
+    }
+    
+    public static function igawqaomowicuayw($uusmaiomayssaecw, $mkucggyaiaukqoce = null, $cuyooiakswegosog = true)
+    {
+        return get_user_meta($mkucggyaiaukqoce, $uusmaiomayssaecw, $cuyooiakswegosog);
+    }
+    
+    public static function aeymcyaqkmmukomc($mkucggyaiaukqoce = null, $ywmkwiwkosakssii = []) : bool
+    {
+        return get_avatar_url($mkucggyaiaukqoce, $ywmkwiwkosakssii);
+    }
+    
+    public static function giiuwsmyumqwwiyq($omkysikckkcieckq, $mkucggyaiaukqoce = 0)
+    {
+        return get_user_option($omkysikckkcieckq, $mkucggyaiaukqoce);
+    }
+    
+    public static function giwmekimakcaawsq($uusmaiomayssaecw, $eqgoocgaqwqcimie, $mkucggyaiaukqoce = null, $omasqoksqewuwwkq = true)
+    {
+        return add_user_meta($mkucggyaiaukqoce, $uusmaiomayssaecw, $eqgoocgaqwqcimie, $omasqoksqewuwwkq);
+    }
+    
+    public static function ksmqawcowkmegigw($uusmaiomayssaecw, $eqgoocgaqwqcimie = '', $mkucggyaiaukqoce = null, $swwmymiaiosiyqis = '')
+    {
+        return update_user_meta($mkucggyaiaukqoce, $uusmaiomayssaecw, $eqgoocgaqwqcimie, $swwmymiaiosiyqis);
+    }
+    
+    public static function scmcyesmmikkucie($eogowigeyucaauig = "\155\141\156\141\147\145\x5f\x6f\x70\164\x69\157\156\x73", ...$ywmkwiwkosakssii) : bool
+    {
+        return function_exists("\143\x75\x72\x72\x65\156\x74\x5f\x75\x73\x65\162\x5f\143\141\156") && current_user_can($eogowigeyucaauig, ...$ywmkwiwkosakssii);
+    }
+    
+    public static function yciaosuiyeieceug($mkucggyaiaukqoce = null, $eogowigeyucaauig = "\x6d\141\156\x61\147\x65\x5f\x6f\x70\164\151\157\x6e\163", ...$ywmkwiwkosakssii) : bool
+    {
+        return user_can($mkucggyaiaukqoce, $eogowigeyucaauig, ...$ywmkwiwkosakssii);
+    }
+}

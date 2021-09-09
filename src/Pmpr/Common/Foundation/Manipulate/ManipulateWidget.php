@@ -1,2 +1,39 @@
 <?php
- namespace Pmpr\Common\Foundation\Manipulate; use Pmpr\Common\Foundation\Decorator\DecoratorHook; use Pmpr\Common\Foundation\Decorator\DecoratorWidget; class ManipulateWidget extends Manipulate { public static function registerSidebar($CDV1j, $vPl9z, $DrjAW = []) { $DrjAW = array_merge($DrjAW, ["\151\144" => $CDV1j, "\156\141\x6d\x65" => $vPl9z]); DecoratorWidget::registerSidebar($DrjAW); } public static function getWidget($BZBc_, $jfqIH = [], $DrjAW = []) { goto WMqCq; WNwHy: return DecoratorHook::applyFilters(ManipulateHook::generateHook("\x77\151\x64\147\145\164\137\x68\164\155\154"), $SzEyC, $BZBc_); goto n30HA; nmUnH: the_widget($BZBc_, $jfqIH, $DrjAW); goto R9RlS; WMqCq: ob_start(); goto nmUnH; R9RlS: $SzEyC = ob_get_clean(); goto WNwHy; n30HA: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Manipulate;
+
+use Pmpr\Common\Foundation\Decorator\DecoratorHook;
+use Pmpr\Common\Foundation\Decorator\DecoratorWidget;
+
+class ManipulateWidget extends Manipulate
+{
+    
+    public static function ymaywccaiscsmsik($aokagokqyuysuksm, $ymqmyyeuycgmigyo, $ywmkwiwkosakssii = [])
+    {
+        $ywmkwiwkosakssii = array_merge($ywmkwiwkosakssii, ["\x69\144" => $aokagokqyuysuksm, "\x6e\141\x6d\x65" => $ymqmyyeuycgmigyo]);
+        DecoratorWidget::ymaywccaiscsmsik($ywmkwiwkosakssii);
+    }
+    
+    public static function acsmmesauemikksg($assameyusgwogmce, $owgumcsyqsamiemg = [], $ywmkwiwkosakssii = [])
+    {
+        goto omauogsusekemsmm;
+        iqwsweskgqqmewui:
+        $nsmgceoqaqogqmuw = ob_get_clean();
+        goto ogywgiaccuewaaws;
+        eomaoeoioiwqsuoy:
+        the_widget($assameyusgwogmce, $owgumcsyqsamiemg, $ywmkwiwkosakssii);
+        goto iqwsweskgqqmewui;
+        omauogsusekemsmm:
+        ob_start();
+        goto eomaoeoioiwqsuoy;
+        ogywgiaccuewaaws:
+        return DecoratorHook::sscegwueamckwmcy(ManipulateHook::ygyygikyocoymgaw("\x77\x69\144\147\x65\x74\137\x68\x74\x6d\x6c"), $nsmgceoqaqogqmuw, $assameyusgwogmce);
+        goto iigksosycwsowisw;
+        iigksosycwsowisw:
+    }
+}

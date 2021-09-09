@@ -1,2 +1,345 @@
 <?php
- namespace Pmpr\Common\Foundation\ORM\DB\Field; use Pmpr\Common\Foundation\Interfaces\ConstantInterface; use Pmpr\Common\Foundation\Traits\ToArrayTrait; class Field implements ConstantInterface { use ToArrayTrait; protected ?int $length = null; protected bool $key = false; protected ?string $id = null; protected int $priority = 25; protected bool $showUI = true; protected array $options = []; protected bool $unique = false; protected ?string $type = null; protected bool $binary = false; protected ?string $title = null; protected ?string $format = null; protected ?string $domain = null; protected bool $nullable = true; protected bool $unsigned = false; protected bool $zerofill = false; protected ?string $charset = null; protected ?string $collect = null; protected ?string $default = null; protected ?string $decimals = null; protected bool $primaryKey = false; protected bool $autoIncrement = false; public function __construct(string $j56jL = null, string $CDV1j = null, ?string $hTPi6 = null, ?string $ePNVH = null) { goto dEM3I; hebUZ: $this->type = $j56jL; goto anIRK; j9BWy: $this->domain = $ePNVH; goto auBCg; anIRK: $this->title = $hTPi6; goto j9BWy; dEM3I: $this->id = $CDV1j; goto hebUZ; auBCg: } public function getDomain() : ?string { return $this->domain; } public function setDomain(?string $ePNVH) : self { $this->domain = $ePNVH; return $this; } public function isKey() : bool { return $this->key; } public function isShowUI() : ?bool { return $this->showUI; } public function setShowUi(bool $uQLQe) : self { $this->showUI = $uQLQe; return $this; } public function dontShowUI() : self { return $this->setShowUi(false); } public function setKey(bool $bUHaw) : self { $this->key = $bUHaw; return $this; } public function getTitle() : ?string { return __($this->title, $this->getDomain()); } public function setTitle(?string $hTPi6) : self { $this->title = $hTPi6; return $this; } public function getId() : ?string { return $this->id; } public function setId(?string $CDV1j) : self { $this->id = $CDV1j; return $this; } public function getType() : ?string { return $this->type; } public function setType(?string $j56jL) : self { $this->type = $j56jL; return $this; } public function getPriority() : ?int { return $this->priority; } public function setPriority(int $pwEST) : self { $this->priority = $pwEST; return $this; } public function getDefault() { return $this->default; } public function setDefault($Ql_ZF) : self { $this->default = $Ql_ZF; return $this; } public function setUnsigned(bool $KVBk3) : self { $this->unsigned = $KVBk3; return $this; } public function isUnsigned() : ?bool { return $this->unsigned; } public function setZerofill(bool $rKljA) : self { $this->zerofill = $rKljA; return $this; } public function isZerofill() : ?bool { return $this->zerofill; } public function getDecimals() : ?string { return $this->decimals; } public function setDecimals(?string $LTCOS) : self { $this->decimals = $LTCOS; return $this; } public function getFormat() : ?string { return $this->format; } public function setFormat(?string $PWVlC) : self { $this->format = $PWVlC; return $this; } public function getLength() : ?int { return $this->length; } public function setLength(int $q0atf) : self { $this->length = $q0atf; return $this; } public function isNullable() : ?bool { return $this->nullable; } public function setNullable(bool $TzaqG) : self { $this->nullable = $TzaqG; return $this; } public function asNullable() : self { return $this->setNullable(true); } public function asNotNullable() : self { return $this->setNullable(false); } public function asUnique() : self { return $this->setUnique(true); } public function isPrimaryKey() : ?bool { return $this->primaryKey; } public function setPrimaryKey(bool $ynehd) : self { $this->primaryKey = $ynehd; return $this; } public function isAutoIncrement() : ?bool { return $this->autoIncrement; } public function setAutoIncrement(bool $lFr3F = true) : self { $this->autoIncrement = $lFr3F; return $this; } public function isBinary() : ?bool { return $this->binary; } public function setBinary(bool $Dyasz) : self { $this->binary = $Dyasz; return $this; } public function getOptions() : ?array { return $this->options; } public function addOption($bUHaw, $yjbyt) : self { $this->options[$bUHaw] = $yjbyt; return $this; } public function addOptions($sJYGe = []) : self { goto Pe9fd; Sljz_: return $this; goto rA2bD; Pe9fd: foreach ($sJYGe as $bUHaw => $czd3T) { $this->addOption($bUHaw, $czd3T); F5xZK: } goto G8h8J; G8h8J: HgBAD: goto Sljz_; rA2bD: } public function getCharset() : ?string { return $this->charset; } public function setCharset(?string $mhiLV) : self { $this->charset = $mhiLV; return $this; } public function getCollect() : ?string { return $this->collect; } public function setCollect(?string $lbkyL) : self { $this->collect = $lbkyL; return $this; } public function isUnique() : ?bool { return $this->unique; } public function setUnique(bool $e4jvG) : self { $this->unique = $e4jvG; return $this; } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\ORM\DB\Field;
+
+use Pmpr\Common\Foundation\Interfaces\ConstantInterface;
+use Pmpr\Common\Foundation\Traits\ToArrayTrait;
+
+class Field implements ConstantInterface
+{
+    use ToArrayTrait;
+    
+    protected ?int $length = null;
+    
+    protected bool $key = false;
+    
+    protected ?string $id = null;
+    
+    protected int $priority = 25;
+    
+    protected bool $showUI = true;
+    
+    protected array $options = [];
+    
+    protected bool $unique = false;
+    
+    protected ?string $type = null;
+    
+    protected bool $binary = false;
+    
+    protected ?string $title = null;
+    
+    protected ?string $format = null;
+    
+    protected ?string $domain = null;
+    
+    protected bool $nullable = true;
+    
+    protected bool $unsigned = false;
+    
+    protected bool $zerofill = false;
+    
+    protected ?string $charset = null;
+    
+    protected ?string $collect = null;
+    
+    protected ?string $default = null;
+    
+    protected ?string $decimals = null;
+    
+    protected bool $primaryKey = false;
+    
+    protected bool $autoIncrement = false;
+    
+    public function __construct(string $sqeykgyoooqysmca = null, string $aokagokqyuysuksm = null, ?string $meqocwsecsywiiqs = null, ?string $mokawwccycoiqeka = null)
+    {
+        goto ugwyeeockousskag;
+        ooqqyyewioyccuww:
+        $this->type = $sqeykgyoooqysmca;
+        goto umasasgawwamkisc;
+        ugwyeeockousskag:
+        $this->id = $aokagokqyuysuksm;
+        goto ooqqyyewioyccuww;
+        iqsoeqgwemgyiimg:
+        $this->domain = $mokawwccycoiqeka;
+        goto qqkqiioqwkekqsoq;
+        umasasgawwamkisc:
+        $this->title = $meqocwsecsywiiqs;
+        goto iqsoeqgwemgyiimg;
+        qqkqiioqwkekqsoq:
+    }
+    
+    public function wwawisckiqeueoua() : ?string
+    {
+        return $this->domain;
+    }
+    
+    public function suyquyoaausqsuay(?string $mokawwccycoiqeka) : self
+    {
+        $this->domain = $mokawwccycoiqeka;
+        return $this;
+    }
+    
+    public function qkasssoaikwegkyg() : bool
+    {
+        return $this->key;
+    }
+    
+    public function uwaascqoguwkwiaw() : ?bool
+    {
+        return $this->showUI;
+    }
+    
+    public function eiuqywygcwawksug(bool $ciooooeuokmogsaq) : self
+    {
+        $this->showUI = $ciooooeuokmogsaq;
+        return $this;
+    }
+    
+    public function acokiqqgsmoqaeyu() : self
+    {
+        return $this->eiuqywygcwawksug(false);
+    }
+    
+    public function gcgmwakaoecqcuwo(bool $uusmaiomayssaecw) : self
+    {
+        $this->key = $uusmaiomayssaecw;
+        return $this;
+    }
+    
+    public function qcgakseyaikigqco() : ?string
+    {
+        return __($this->title, $this->wwawisckiqeueoua());
+    }
+    
+    public function gswweykyogmsyawy(?string $meqocwsecsywiiqs) : self
+    {
+        $this->title = $meqocwsecsywiiqs;
+        return $this;
+    }
+    
+    public function mwikyscisascoeea() : ?string
+    {
+        return $this->id;
+    }
+    
+    public function ggiaseqygioygumq(?string $aokagokqyuysuksm) : self
+    {
+        $this->id = $aokagokqyuysuksm;
+        return $this;
+    }
+    
+    public function gueasuouwqysmomu() : ?string
+    {
+        return $this->type;
+    }
+    
+    public function aseocggwwegcmqes(?string $sqeykgyoooqysmca) : self
+    {
+        $this->type = $sqeykgyoooqysmca;
+        return $this;
+    }
+    
+    public function yywskysiycwkwsgw() : ?int
+    {
+        return $this->priority;
+    }
+    
+    public function jyumyyugiwwiqomk(int $sqqewmoeaekuyyas) : self
+    {
+        $this->priority = $sqqewmoeaekuyyas;
+        return $this;
+    }
+    
+    public function oiswysuiioecsaae()
+    {
+        return $this->default;
+    }
+    
+    public function eyygsasuqmommkua($ggauoeuaesiymgee) : self
+    {
+        $this->default = $ggauoeuaesiymgee;
+        return $this;
+    }
+    
+    public function sqoceewuaeaiqmco(bool $umkuayeugioqkaac) : self
+    {
+        $this->unsigned = $umkuayeugioqkaac;
+        return $this;
+    }
+    
+    public function qumigiaaeieaemgy() : ?bool
+    {
+        return $this->unsigned;
+    }
+    
+    public function migckeygiiaeogou(bool $emsmukwmouqwsywo) : self
+    {
+        $this->zerofill = $emsmukwmouqwsywo;
+        return $this;
+    }
+    
+    public function easacyeoquiwamwq() : ?bool
+    {
+        return $this->zerofill;
+    }
+    
+    public function siamswkmsqckqgeu() : ?string
+    {
+        return $this->decimals;
+    }
+    
+    public function imyyyeaaismecmwg(?string $yeiuyssiamkeoiwm) : self
+    {
+        $this->decimals = $yeiuyssiamkeoiwm;
+        return $this;
+    }
+    
+    public function gyecsegqciqykomu() : ?string
+    {
+        return $this->format;
+    }
+    
+    public function kqycymyaykoacywo(?string $saqmwwmqiwmkiwaa) : self
+    {
+        $this->format = $saqmwwmqiwmkiwaa;
+        return $this;
+    }
+    
+    public function qamkswcgsoeggmau() : ?int
+    {
+        return $this->length;
+    }
+    
+    public function acceqyqygswoecwe(int $ykiwomimkkuiigoq) : self
+    {
+        $this->length = $ykiwomimkkuiigoq;
+        return $this;
+    }
+    
+    public function yseywyqacmugimme() : ?bool
+    {
+        return $this->nullable;
+    }
+    
+    public function qkwyekmiceaogwci(bool $iisoauwukouugkec) : self
+    {
+        $this->nullable = $iisoauwukouugkec;
+        return $this;
+    }
+    
+    public function qcssowoqeqysosca() : self
+    {
+        return $this->qkwyekmiceaogwci(true);
+    }
+    
+    public function aguakyuusmksagai() : self
+    {
+        return $this->qkwyekmiceaogwci(false);
+    }
+    
+    public function eccqsggkcosmqumc() : self
+    {
+        return $this->saquckwoqqowmqoo(true);
+    }
+    
+    public function iqekkemuyuqokwqs() : ?bool
+    {
+        return $this->primaryKey;
+    }
+    
+    public function yusomaossiaeqoiu(bool $ceiwsaacewygcsqg) : self
+    {
+        $this->primaryKey = $ceiwsaacewygcsqg;
+        return $this;
+    }
+    
+    public function oikqausqaykqkmqi() : ?bool
+    {
+        return $this->autoIncrement;
+    }
+    
+    public function mowcagqccyeiekqe(bool $wcciqoyscugmucms = true) : self
+    {
+        $this->autoIncrement = $wcciqoyscugmucms;
+        return $this;
+    }
+    
+    public function pkkeieykmguakeuw() : ?bool
+    {
+        return $this->binary;
+    }
+    
+    public function ysmcmaosamoowgsu(bool $oycsmgwakcoowkyq) : self
+    {
+        $this->binary = $oycsmgwakcoowkyq;
+        return $this;
+    }
+    
+    public function gkwkqmwweiawigae() : ?array
+    {
+        return $this->options;
+    }
+    
+    public function kesomeowemmyygey($uusmaiomayssaecw, $eqgoocgaqwqcimie) : self
+    {
+        $this->options[$uusmaiomayssaecw] = $eqgoocgaqwqcimie;
+        return $this;
+    }
+    
+    public function acauweqyyugwisqc($qiouiwasaauyaaue = []) : self
+    {
+        goto gewecumqwgcuwikk;
+        aewqyqksisqayska:
+        ckugukmoqamgcwci:
+        goto ayegqigqcsuoqess;
+        gewecumqwgcuwikk:
+        foreach ($qiouiwasaauyaaue as $uusmaiomayssaecw => $omkysikckkcieckq) {
+            $this->kesomeowemmyygey($uusmaiomayssaecw, $omkysikckkcieckq);
+            omeukkwiesseygwy:
+        }
+        goto aewqyqksisqayska;
+        ayegqigqcsuoqess:
+        return $this;
+        goto scqwioawomamygwa;
+        scqwioawomamygwa:
+    }
+    
+    public function ogmguwgoqkqkkisa() : ?string
+    {
+        return $this->charset;
+    }
+    
+    public function womiayakiieiaiso(?string $guuwoyaeoeeaauug) : self
+    {
+        $this->charset = $guuwoyaeoeeaauug;
+        return $this;
+    }
+    
+    public function yuwwmewqqauckiky() : ?string
+    {
+        return $this->collect;
+    }
+    
+    public function waaisgakayeuywsw(?string $kokmwkcqkgkewiuw) : self
+    {
+        $this->collect = $kokmwkcqkgkewiuw;
+        return $this;
+    }
+    
+    public function kweqqkiwiugikyam() : ?bool
+    {
+        return $this->unique;
+    }
+    
+    public function saquckwoqqowmqoo(bool $omasqoksqewuwwkq) : self
+    {
+        $this->unique = $omasqoksqewuwwkq;
+        return $this;
+    }
+}

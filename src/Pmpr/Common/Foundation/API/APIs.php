@@ -1,2 +1,24 @@
 <?php
- namespace Pmpr\Common\Foundation\API; use Pmpr\Common\Foundation\API\Translate\Translate; class APIs extends Common { public function __construct() { $this->loadRequirement(); parent::__construct(); } public function loadRequirement() { Translate::getInstance(); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\API;
+
+use Pmpr\Common\Foundation\API\Translate\Translate;
+
+class APIs extends Common
+{
+    
+    public function __construct()
+    {
+        parent::__construct();
+        $this->iemaakgqgqosiecm();
+    }
+    public function iemaakgqgqosiecm()
+    {
+        Translate::symcgieuakksimmu();
+    }
+}

@@ -1,2 +1,188 @@
 <?php
- namespace Pmpr\Common\Foundation\Traits; use Pmpr\Common\Foundation\Manipulate\Theme\ManipulateHTML; trait AttributeTrait { protected ?array $attributes = []; public function getAttributes() : ?array { return $this->attributes; } public function getAttribute($bUHaw) : ?string { goto N8MyC; N8MyC: $chQYT = null; goto vDMc3; vDMc3: $lgX7G = $this->getAttributes(); goto lo7tE; oA4B8: xIxSA: goto bTBA9; bTBA9: return $chQYT; goto lSSVD; lo7tE: if (!isset($lgX7G[$bUHaw])) { goto xIxSA; } goto k4rWr; k4rWr: $chQYT = $lgX7G[$bUHaw]; goto oA4B8; lSSVD: } public function addClass(?string $jg5rc) : self { return $this->addAttribute("\143\154\x61\x73\163", $jg5rc); } public function addAttribute($bUHaw, $yjbyt) : self { $this->attributes = ManipulateHTML::addAttribute($this->getAttributes(), $bUHaw, esc_attr($yjbyt)); return $this; } public function addClasses(array $tsmcK) : self { goto tWnhQ; tWnhQ: foreach ($tsmcK as $jg5rc) { $this->addClass($jg5rc); XCwi2: } goto kaq_V; uCuNN: return $this; goto FEHmS; kaq_V: Q4Gvi: goto uCuNN; FEHmS: } public function removeClass(string $jg5rc) : self { return $this->removeAttribute("\143\154\141\163\x73", $jg5rc); } public function hasClass(string $jg5rc) : bool { return $this->hasAttribute("\143\x6c\141\163\163", $jg5rc); } public function removeAttribute($bUHaw, $yjbyt) : self { $this->attributes = ManipulateHTML::removeAttribute($this->getAttributes(), $bUHaw, $yjbyt); return $this; } public function hasAttribute($bUHaw, $yjbyt = '') : bool { goto zx08X; NPTA1: if (!$bUHaw) { goto MvTpg; } goto pRvcS; hR184: $osLW7 = !empty($chQYT); goto D2gK0; A4F1d: $osLW7 = in_array($yjbyt, $chQYT); goto j8xQT; IqQkX: if (is_array($chQYT)) { goto PDbR3; } goto w6kpG; D2gK0: goto PVRRe; goto eLoHW; e_uAz: if ($yjbyt && $chQYT) { goto hJSjY; } goto hR184; eLoHW: hJSjY: goto IqQkX; j8xQT: PVRRe: goto NkdAE; NkdAE: MvTpg: goto VNgsc; w6kpG: $chQYT = explode("\40", $chQYT); goto D74Fo; zx08X: $osLW7 = false; goto NPTA1; VNgsc: return $osLW7; goto aW8Bh; pRvcS: $chQYT = $this->getAttribute($bUHaw); goto e_uAz; D74Fo: PDbR3: goto A4F1d; aW8Bh: } public function replaceAttribute($bUHaw, $yjbyt) : self { $this->attributes = ManipulateHTML::replaceAttribute($this->getAttributes(), $bUHaw, esc_attr($yjbyt)); return $this; } public function addAttributes(array $lgX7G) : self { goto mrUAd; QECtg: Caqw7: goto njDOh; mrUAd: foreach ($lgX7G as $bUHaw => $yjbyt) { $this->addAttribute($bUHaw, $yjbyt); SuXXo: } goto QECtg; njDOh: return $this; goto rteF9; rteF9: } public function replaceAttributes(array $lgX7G) : self { goto lOnFI; FW7KR: return $this; goto Zh_l8; PbcfT: DV3CU: goto FW7KR; lOnFI: foreach ($lgX7G as $bUHaw => $yjbyt) { $this->replaceAttribute($bUHaw, $yjbyt); ihPMS: } goto PbcfT; Zh_l8: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Traits;
+
+use Pmpr\Common\Foundation\Manipulate\Theme\ManipulateHTML;
+
+trait AttributeTrait
+{
+    
+    protected ?array $attributes = [];
+    
+    public function ccekeuwwqqoiwuwy() : ?array
+    {
+        return $this->attributes;
+    }
+    
+    public function waecsyqmwascmqoa($uusmaiomayssaecw) : ?string
+    {
+        goto somsmcmoyaiiwuyk;
+        somsmcmoyaiiwuyk:
+        $ymkomoccmymcoiea = null;
+        goto msqmakqaiawgqeau;
+        msqmakqaiawgqeau:
+        $siquossayskcwkea = $this->ccekeuwwqqoiwuwy();
+        goto iuukukcykqykisaa;
+        qamicqyikayyacok:
+        return $ymkomoccmymcoiea;
+        goto oasqosiqcsiyyaye;
+        wugqaoggyqusmaoa:
+        qmukeceewgmekoae:
+        goto qamicqyikayyacok;
+        iuukukcykqykisaa:
+        if (!isset($siquossayskcwkea[$uusmaiomayssaecw])) {
+            goto qmukeceewgmekoae;
+        }
+        goto aaoekkysuimcamyu;
+        aaoekkysuimcamyu:
+        $ymkomoccmymcoiea = $siquossayskcwkea[$uusmaiomayssaecw];
+        goto wugqaoggyqusmaoa;
+        oasqosiqcsiyyaye:
+    }
+    
+    public function qigsyyqgewgskemg(?string $egkyssmuqcwaciya) : self
+    {
+        return $this->igmaewykumgwoaoy("\x63\x6c\x61\163\x73", $egkyssmuqcwaciya);
+    }
+    
+    public function igmaewykumgwoaoy($uusmaiomayssaecw, $eqgoocgaqwqcimie) : self
+    {
+        $this->attributes = ManipulateHTML::igmaewykumgwoaoy($this->ccekeuwwqqoiwuwy(), $uusmaiomayssaecw, esc_attr($eqgoocgaqwqcimie));
+        return $this;
+    }
+    
+    public function gagmgeyoeegieuso(array $cmkqisoeyioisqaw) : self
+    {
+        goto kuusyaqguycoyiia;
+        ggiiuoqggyauekgs:
+        return $this;
+        goto yyeiqoiuweqikyyq;
+        kuusyaqguycoyiia:
+        foreach ($cmkqisoeyioisqaw as $egkyssmuqcwaciya) {
+            $this->qigsyyqgewgskemg($egkyssmuqcwaciya);
+            kuwwysummgiakgwo:
+        }
+        goto imiqucuaiyoaeaka;
+        imiqucuaiyoaeaka:
+        oaymmkagwocukmyq:
+        goto ggiiuoqggyauekgs;
+        yyeiqoiuweqikyyq:
+    }
+    
+    public function mykogkuaqwmycgog(string $egkyssmuqcwaciya) : self
+    {
+        return $this->ogaeogwycyqqckeu("\x63\x6c\x61\x73\163", $egkyssmuqcwaciya);
+    }
+    
+    public function aeiayqcuemyeackg(string $egkyssmuqcwaciya) : bool
+    {
+        return $this->seeegkogcamaigga("\x63\x6c\141\x73\x73", $egkyssmuqcwaciya);
+    }
+    
+    public function ogaeogwycyqqckeu($uusmaiomayssaecw, $eqgoocgaqwqcimie) : self
+    {
+        $this->attributes = ManipulateHTML::ogaeogwycyqqckeu($this->ccekeuwwqqoiwuwy(), $uusmaiomayssaecw, $eqgoocgaqwqcimie);
+        return $this;
+    }
+    
+    public function seeegkogcamaigga($uusmaiomayssaecw, $eqgoocgaqwqcimie = '') : bool
+    {
+        goto ikqwewkaooqqcwmw;
+        ymcwgkmiysmukacs:
+        if ($eqgoocgaqwqcimie && $ymkomoccmymcoiea) {
+            goto myccwweewiwguqaa;
+        }
+        goto auycewyimycgsusg;
+        auycewyimycgsusg:
+        $umuecysoywoumgwo = !empty($ymkomoccmymcoiea);
+        goto eukmaswisycyiwik;
+        ikqwewkaooqqcwmw:
+        $umuecysoywoumgwo = false;
+        goto oyqwymwomuameswa;
+        ecyuccaigwwcquoq:
+        qqyqygkmkeeuaiss:
+        goto oesgammmiwwkggki;
+        iwsckisegswykacc:
+        cqokwokkmcecokwi:
+        goto aawsuekkqeecmsuu;
+        wiakkcgyggaeaeoa:
+        $ymkomoccmymcoiea = explode("\x20", $ymkomoccmymcoiea);
+        goto ecyuccaigwwcquoq;
+        uqckgkumgouqgcus:
+        return $umuecysoywoumgwo;
+        goto sgiyakiusoqeesgi;
+        oesgammmiwwkggki:
+        $umuecysoywoumgwo = in_array($eqgoocgaqwqcimie, $ymkomoccmymcoiea);
+        goto iwsckisegswykacc;
+        eukmaswisycyiwik:
+        goto cqokwokkmcecokwi;
+        goto ysgkwckuuwmeqmim;
+        aawsuekkqeecmsuu:
+        qgaoikokgokgqaqi:
+        goto uqckgkumgouqgcus;
+        oyqwymwomuameswa:
+        if (!$uusmaiomayssaecw) {
+            goto qgaoikokgokgqaqi;
+        }
+        goto ogmogeeogucogway;
+        ysgkwckuuwmeqmim:
+        myccwweewiwguqaa:
+        goto mokwmqowycmwwkem;
+        mokwmqowycmwwkem:
+        if (is_array($ymkomoccmymcoiea)) {
+            goto qqyqygkmkeeuaiss;
+        }
+        goto wiakkcgyggaeaeoa;
+        ogmogeeogucogway:
+        $ymkomoccmymcoiea = $this->waecsyqmwascmqoa($uusmaiomayssaecw);
+        goto ymcwgkmiysmukacs;
+        sgiyakiusoqeesgi:
+    }
+    
+    public function qcgocuceocquqcuw($uusmaiomayssaecw, $eqgoocgaqwqcimie) : self
+    {
+        $this->attributes = ManipulateHTML::qcgocuceocquqcuw($this->ccekeuwwqqoiwuwy(), $uusmaiomayssaecw, esc_attr($eqgoocgaqwqcimie));
+        return $this;
+    }
+    
+    public function sueyawuweyoqyeaq(array $siquossayskcwkea) : self
+    {
+        goto suigamkkgmwiaakg;
+        egekcweywqwukqwq:
+        mmkoaqwkqwweiuco:
+        goto sgkksaaokaceycie;
+        sgkksaaokaceycie:
+        return $this;
+        goto ouaaoissmeyugeye;
+        suigamkkgmwiaakg:
+        foreach ($siquossayskcwkea as $uusmaiomayssaecw => $eqgoocgaqwqcimie) {
+            $this->igmaewykumgwoaoy($uusmaiomayssaecw, $eqgoocgaqwqcimie);
+            wwwyuwogyaymawes:
+        }
+        goto egekcweywqwukqwq;
+        ouaaoissmeyugeye:
+    }
+    
+    public function eycskusaeseuwiyc(array $siquossayskcwkea) : self
+    {
+        goto iieiwkmcwkocasiq;
+        ucasywwoeiooacwk:
+        uyagiwoqkikiygme:
+        goto gkmoqsgamgwkwsas;
+        gkmoqsgamgwkwsas:
+        return $this;
+        goto kscecowaeuymysgo;
+        iieiwkmcwkocasiq:
+        foreach ($siquossayskcwkea as $uusmaiomayssaecw => $eqgoocgaqwqcimie) {
+            $this->qcgocuceocquqcuw($uusmaiomayssaecw, $eqgoocgaqwqcimie);
+            kogcmeyqyokimaqo:
+        }
+        goto ucasywwoeiooacwk;
+        kscecowaeuymysgo:
+    }
+}

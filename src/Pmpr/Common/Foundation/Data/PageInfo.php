@@ -1,2 +1,109 @@
 <?php
- namespace Pmpr\Common\Foundation\Data; class PageInfo extends Data { protected ?string $title = ''; protected ?string $type = ''; protected bool $isPaged = false; protected ?string $screen = ''; protected ?string $permalink = ''; protected ?int $priority = 0; protected bool $isCurrent = true; public function getPriority() : ?int { return $this->priority; } public function setPriority(?int $pwEST) : self { $this->priority = $pwEST; return $this; } public function getTitle() : ?string { return $this->title; } public function setTitle(?string $hTPi6) : self { $this->title = $hTPi6; return $this; } public function getType() : ?string { return $this->type; } public function setType(?string $j56jL) : self { $this->type = $j56jL; return $this; } public function getScreen() : ?string { return $this->screen; } public function setScreen(?string $t5ny6) : self { $this->screen = $t5ny6; return $this; } public function isPaged() : bool { return $this->isPaged; } public function setIsPaged(bool $v6DUt) : self { $this->isPaged = $v6DUt; return $this; } public function getPermalink() : ?string { return $this->permalink; } public function setPermalink(?string $urerG) : self { $this->permalink = $urerG; return $this; } public function isCurrent() : bool { return $this->isCurrent; } public function setIsCurrent(bool $d9vwe) : self { $this->isCurrent = $d9vwe; return $this; } public function is($t5ny6 = null, $j56jL = null) { return (!$t5ny6 || $this->getScreen() == $t5ny6) && (!$j56jL || $this->getType() == $j56jL); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Data;
+
+
+class PageInfo extends Data
+{
+    
+    protected ?string $title = '';
+    
+    protected ?string $type = '';
+    
+    protected bool $isPaged = false;
+    
+    protected ?string $screen = '';
+    
+    protected ?string $permalink = '';
+    
+    protected ?int $priority = 0;
+    
+    protected bool $isCurrent = true;
+    
+    public function yywskysiycwkwsgw() : ?int
+    {
+        return $this->priority;
+    }
+    
+    public function jyumyyugiwwiqomk(?int $sqqewmoeaekuyyas) : self
+    {
+        $this->priority = $sqqewmoeaekuyyas;
+        return $this;
+    }
+    
+    public function qcgakseyaikigqco() : ?string
+    {
+        return $this->title;
+    }
+    
+    public function gswweykyogmsyawy(?string $meqocwsecsywiiqs) : self
+    {
+        $this->title = $meqocwsecsywiiqs;
+        return $this;
+    }
+    
+    public function gueasuouwqysmomu() : ?string
+    {
+        return $this->type;
+    }
+    
+    public function aseocggwwegcmqes(?string $sqeykgyoooqysmca) : self
+    {
+        $this->type = $sqeykgyoooqysmca;
+        return $this;
+    }
+    
+    public function asuigsqoowmekwok() : ?string
+    {
+        return $this->screen;
+    }
+    
+    public function ugaqcouwcuiaemgo(?string $gcgsqcoqciockquc) : self
+    {
+        $this->screen = $gcgsqcoqciockquc;
+        return $this;
+    }
+    
+    public function esqicqsuigywkaqw() : bool
+    {
+        return $this->isPaged;
+    }
+    
+    public function cggwsuueqwqscgei(bool $esqicqsuigywkaqw) : self
+    {
+        $this->isPaged = $esqicqsuigywkaqw;
+        return $this;
+    }
+    
+    public function ycqquoiyyuesegsy() : ?string
+    {
+        return $this->permalink;
+    }
+    
+    public function qmueseocuuekommo(?string $migiiksoiymissge) : self
+    {
+        $this->permalink = $migiiksoiymissge;
+        return $this;
+    }
+    
+    public function maycusgiycegmmqs() : bool
+    {
+        return $this->isCurrent;
+    }
+    
+    public function uaomeggmwqmmeoki(bool $maycusgiycegmmqs) : self
+    {
+        $this->isCurrent = $maycusgiycegmmqs;
+        return $this;
+    }
+    
+    public function is($gcgsqcoqciockquc = null, $sqeykgyoooqysmca = null)
+    {
+        return (!$gcgsqcoqciockquc || $this->asuigsqoowmekwok() == $gcgsqcoqciockquc) && (!$sqeykgyoooqysmca || $this->gueasuouwqysmomu() == $sqeykgyoooqysmca);
+    }
+}

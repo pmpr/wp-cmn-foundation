@@ -1,2 +1,210 @@
 <?php
- namespace Pmpr\Common\Foundation\Logger; use Exception; use Pmpr\Common\Foundation\Manipulate\ManipulateFile; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; use Monolog\Handler\StreamHandler; use Monolog\Logger as MonologLogger; class Engine extends Common { const INFO = 200; const ERROR = 400; const DEBUG = 100; const ALERT = 550; const NOTICE = 250; const WARNING = 300; const CRITICAL = 500; const EMERGENCY = 600; const FILE_EXTENSION = "\56\154\x6f\x67"; protected array $channels = []; public function getLogDirectory() { return ManipulateFile::getConstant(self::PR__LOG__PATH); } public function getChannels() : array { return $this->channels; } public function getChannel($vPl9z) { $b8qW8 = self::getInstance()->getChannels(); return ManipulateArray::get($b8qW8, $vPl9z, false); } public function addChannel($vPl9z, $HguzZ) { try { goto R1_oZ; qtVFS: throw new Exception("{$HguzZ}\x20\x63\141\x6e\x6e\157\164\40\x61\144\144\x20\164\157\40\154\x6f\x67\147\145\x72\40\154\x69\163\164\x3a\x20\x43\x68\141\156\x6e\x65\154\40{$vPl9z}\40\x69\163\x20\141\x6c\162\145\141\144\171\40\145\x78\x69\163\164\x20\x69\156\x20\143\150\141\x6e\156\x65\x6c\40\154\151\x73\x74\x2e"); goto onClU; xoQZN: if ($this->getFilesystem()->exists($li0sF)) { goto wptkU; } goto eS6U1; R1_oZ: $HguzZ = rtrim($HguzZ, self::FILE_EXTENSION) . self::FILE_EXTENSION; goto NiOoK; eS6U1: $this->getFilesystem()->putContent($li0sF, "\123\x74\x61\162\164\x20\x4c\x6f\147\x20\x66\157\x72\72\x20" . $vPl9z . PHP_EOL); goto JY3O8; qUAre: JPGyG: goto OopHF; OopHF: $this->channels[$vPl9z] = new MonologLogger($vPl9z, [new StreamHandler($li0sF)]); goto YboXA; JY3O8: wptkU: goto KHJV1; NiOoK: $li0sF = $this->getLogDirectory() . "\57" . $HguzZ; goto xoQZN; YboXA: mwNtw: goto uXMzm; onClU: goto mwNtw; goto qUAre; KHJV1: if (!in_array($vPl9z, $this->getChannels())) { goto JPGyG; } goto qtVFS; uXMzm: } catch (Exception $gsWwP) { wp_die(__("\x53\x6f\x6d\145\x74\150\x69\156\x67\x20\151\163\40\x77\x72\x6f\x6e\x67\40\x69\156\x20\x61\x64\x64\x43\x68\x61\156\x6e\145\154\x20\x6f\x6e\x20\x6c\x6f\x67\147\145\162\56", PR__CMN__FOUNDATION)); } return $this; } public function addChannels($b8qW8) { foreach ($b8qW8 as $vPl9z => $HguzZ) { $this->addChannel($vPl9z, $HguzZ); uBIce: } GrxEw: } public function getChannelFile($vPl9z) { goto q2MQJ; epQft: $uN9Cn = $vu83x->getHandlers(); goto GU_Qd; q2MQJ: $Nr_3l = null; goto b9m_w; YOB73: $n7D4b = ManipulateArray::get($uN9Cn, 0); goto yA8AX; FlQrF: HhEAu: goto DH6jZ; bSrTp: return $Nr_3l; goto L73LD; b9m_w: $vu83x = self::getChannel($vPl9z); goto yI33O; DH6jZ: IL9rK: goto bSrTp; m9QX9: BovT_: goto FlQrF; Frg4A: $Nr_3l = $n7D4b->getUrl(); goto m9QX9; yI33O: if (!$vu83x instanceof MonologLogger) { goto IL9rK; } goto epQft; yA8AX: if (!$n7D4b instanceof StreamHandler) { goto BovT_; } goto Frg4A; GU_Qd: if (!(is_array($uN9Cn) && $uN9Cn)) { goto HhEAu; } goto YOB73; L73LD: } public function addRecord($vPl9z, $N6E3u, $k4mxF, $YG1GM = []) { goto ght43; VLsLM: $vK3Kh = self::getChannel($vPl9z); goto gF5zF; B_M2e: $N6E3u = strtolower(MonologLogger::getLevelName($N6E3u)); goto VLsLM; VXpEW: if (!in_array($N6E3u, $Rs7Io)) { goto n6e2Z; } goto B_M2e; s0SJ3: n6e2Z: goto z8O7T; SxHBv: if ($N6E3u) { goto hAfG5; } goto Yzpfz; w34FF: yuNK_: goto qxEgj; pLl2k: hAfG5: goto ThsKO; ght43: $Rs7Io = MonologLogger::getLevels(); goto VXpEW; QZXk1: goto yuNK_; goto pLl2k; ThsKO: $vK3Kh->{$N6E3u}($k4mxF, $YG1GM); goto w34FF; Yzpfz: $vK3Kh->error($k4mxF, $YG1GM); goto QZXk1; gF5zF: if (!$vK3Kh instanceof MonologLogger) { goto JvCEa; } goto SxHBv; qxEgj: JvCEa: goto s0SJ3; z8O7T: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Logger;
+
+use Exception;
+use Pmpr\Common\Foundation\Manipulate\ManipulateFile;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
+use Monolog\Handler\StreamHandler;
+use Monolog\Logger as MonologLogger;
+
+class Engine extends Common
+{
+    const INFO_CODE = 200;
+    const ERROR_CODE = 400;
+    const DEBUG_CODE = 100;
+    const ALERT_CODE = 550;
+    const NOTICE_CODE = 250;
+    const WARNING_CODE = 300;
+    const CRITICAL_CODE = 500;
+    const EMERGENCY_CODE = 600;
+    const FILE_EXTENSION = "\56\154\x6f\x67";
+    
+    protected array $channels = [];
+    
+    public function eqosmaiseggiwsqi()
+    {
+        return ManipulateFile::cmaecekuqkwmemms(self::PR__LOG__PATH);
+    }
+    
+    public function oquccoakoiimcoyk() : array
+    {
+        return $this->channels;
+    }
+    
+    public function meyuyyociockkgow($ymqmyyeuycgmigyo)
+    {
+        $esmqigouaegaycwg = self::symcgieuakksimmu()->oquccoakoiimcoyk();
+        return ManipulateArray::get($esmqigouaegaycwg, $ymqmyyeuycgmigyo, false);
+    }
+    
+    public function aeywacagikkcgoak($ymqmyyeuycgmigyo, $wkcwykowmmmwioqs) : self
+    {
+        try {
+            goto owisiqaowqeemuws;
+            meqygagoeowmwyek:
+            if ($this->kcciqwskewsuaemk()->exists($acqcekoeswseswws)) {
+                goto mgskawmqsikcgaoo;
+            }
+            goto emkywookycykucmu;
+            owisiqaowqeemuws:
+            $wkcwykowmmmwioqs = rtrim($wkcwykowmmmwioqs, self::FILE_EXTENSION) . self::FILE_EXTENSION;
+            goto eueowawgacsksksk;
+            agyygqioqggmgawy:
+            skiykgkiekmkcmwe:
+            goto gowuaykeqimwouio;
+            qggoyqomgwciiigc:
+            throw new Exception("{$wkcwykowmmmwioqs}\x20\x63\141\x6e\x6e\x6f\164\x20\x61\x64\x64\40\x74\x6f\x20\154\157\x67\x67\x65\162\40\154\x69\x73\x74\72\x20\103\150\141\156\156\x65\154\40{$ymqmyyeuycgmigyo}\40\x69\x73\40\141\154\x72\145\141\x64\x79\40\x65\170\x69\163\164\x20\x69\x6e\40\x63\150\141\x6e\x6e\x65\154\x20\154\x69\163\164\x2e");
+            goto qiusaiuaqusoqcgm;
+            owqkeeeamewcmaum:
+            
+            if (!in_array($ymqmyyeuycgmigyo, $this->oquccoakoiimcoyk())) {
+                goto qegqgskaeckoqaiq;
+            }
+            goto qggoyqomgwciiigc;
+            icgomugwscaugkgm:
+            qegqgskaeckoqaiq:
+            goto gceckcyyeqkgussg;
+            emkywookycykucmu:
+            $this->kcciqwskewsuaemk()->kwsmkgyoyaqecwuu($acqcekoeswseswws, "\123\x74\141\162\164\x20\x4c\157\x67\x20\x66\157\x72\x3a\x20" . $ymqmyyeuycgmigyo . PHP_EOL);
+            goto cymcgssycuaakwsu;
+            qiusaiuaqusoqcgm:
+            goto skiykgkiekmkcmwe;
+            goto icgomugwscaugkgm;
+            eueowawgacsksksk:
+            $acqcekoeswseswws = $this->eqosmaiseggiwsqi() . "\57" . $wkcwykowmmmwioqs;
+            goto meqygagoeowmwyek;
+            cymcgssycuaakwsu:
+            mgskawmqsikcgaoo:
+            goto owqkeeeamewcmaum;
+            gceckcyyeqkgussg:
+            $this->channels[$ymqmyyeuycgmigyo] = new MonologLogger($ymqmyyeuycgmigyo, [new StreamHandler($acqcekoeswseswws)]);
+            goto agyygqioqggmgawy;
+            gowuaykeqimwouio:
+        } catch (Exception $wgaoewqkwgomoaai) {
+            wp_die(__("\123\x6f\155\145\164\x68\151\156\x67\40\151\163\40\167\162\x6f\156\x67\x20\151\x6e\40\141\144\x64\x43\x68\x61\156\156\145\x6c\40\157\x6e\x20\154\x6f\147\147\x65\x72\x2e", PR__CMN__FOUNDATION));
+        }
+        return $this;
+    }
+    
+    public function kukckykeywuqakmu($esmqigouaegaycwg)
+    {
+        foreach ($esmqigouaegaycwg as $ymqmyyeuycgmigyo => $wkcwykowmmmwioqs) {
+            $this->aeywacagikkcgoak($ymqmyyeuycgmigyo, $wkcwykowmmmwioqs);
+            emqmissqcckcecsy:
+        }
+        qaksccygequmaaku:
+    }
+    
+    public function riwkcsuwoqaueoas($ymqmyyeuycgmigyo) : ?string
+    {
+        goto ouowckcwkscikcic;
+        ikekioqaccggcwko:
+        return $qogsmwakwacwqogk;
+        goto imciyymqukkwemqa;
+        yemqwgwwogceuekc:
+        $umawqwoyymwaicas = ManipulateArray::get($qgysocqcuoqmacuo, 0);
+        goto bowssiaeccamuiiq;
+        gooymcgycisyuowi:
+        iywceuecmmmqksuu:
+        goto ikekioqaccggcwko;
+        qkukcokaqekkoako:
+        
+        $qgysocqcuoqmacuo = $iwcsiuuqeaaaeees->getHandlers();
+        goto iyomiywaoqgiskcc;
+        iyomiywaoqgiskcc:
+        if (!(is_array($qgysocqcuoqmacuo) && $qgysocqcuoqmacuo)) {
+            goto wucoiwmyomgymyku;
+        }
+        goto yemqwgwwogceuekc;
+        kwmeeuiuqcaokkye:
+        if (!$iwcsiuuqeaaaeees instanceof MonologLogger) {
+            goto iywceuecmmmqksuu;
+        }
+        goto qkukcokaqekkoako;
+        mqseqwqcsesmmuag:
+        $iwcsiuuqeaaaeees = self::meyuyyociockkgow($ymqmyyeuycgmigyo);
+        goto kwmeeuiuqcaokkye;
+        bowssiaeccamuiiq:
+        if (!$umawqwoyymwaicas instanceof StreamHandler) {
+            goto vimsegsagoiwywys;
+        }
+        goto awgqqokeqkaaqsko;
+        ouowckcwkscikcic:
+        $qogsmwakwacwqogk = null;
+        goto mqseqwqcsesmmuag;
+        ieiwswkoqcqaykik:
+        vimsegsagoiwywys:
+        goto mgqumoaokymooyou;
+        mgqumoaokymooyou:
+        wucoiwmyomgymyku:
+        goto gooymcgycisyuowi;
+        awgqqokeqkaaqsko:
+        
+        $qogsmwakwacwqogk = $umawqwoyymwaicas->getUrl();
+        goto ieiwswkoqcqaykik;
+        imciyymqukkwemqa:
+    }
+    
+    public function uimukyawykswgwsm($ymqmyyeuycgmigyo, $iqaosyayeiuaisqi, $uamcoiueqaamsqma, $mgkceomocowocqyo = [])
+    {
+        goto wwsasogecmwwikws;
+        wwwkcwcigkeqiqwo:
+        saosiwmguyawuouy:
+        goto kkmeaociiyukweka;
+        ukeyisqesuoscwke:
+        if (!in_array($iqaosyayeiuaisqi, $xwwgygqkqwuaqwsa)) {
+            goto saosiwmguyawuouy;
+        }
+        goto qgwcisoeysiwakak;
+        icqkceioeysykgua:
+        if ($iqaosyayeiuaisqi) {
+            goto muakuckcsywcyuao;
+        }
+        goto kqkgwqkwqeokgagk;
+        wwsasogecmwwikws:
+        
+        $xwwgygqkqwuaqwsa = MonologLogger::getLevels();
+        goto ukeyisqesuoscwke;
+        gwwyoyaqosoggkcu:
+        ukwkqeoyuoageuwg:
+        goto wwwkcwcigkeqiqwo;
+        gaagyegguueymiec:
+        $eawuoscsaksyqwiw->{$iqaosyayeiuaisqi}($uamcoiueqaamsqma, $mgkceomocowocqyo);
+        goto sosqqwiqmeqkwcsm;
+        sosqqwiqmeqkwcsm:
+        oqwiceqiyckwgqkw:
+        goto gwwyoyaqosoggkcu;
+        kqkgwqkwqeokgagk:
+        
+        $eawuoscsaksyqwiw->error($uamcoiueqaamsqma, $mgkceomocowocqyo);
+        goto yaqgciyuusquaeea;
+        wkceacsqeyiimcus:
+        if (!$eawuoscsaksyqwiw instanceof MonologLogger) {
+            goto ukwkqeoyuoageuwg;
+        }
+        goto acycwqqmgeygymkw;
+        yaqgciyuusquaeea:
+        goto oqwiceqiyckwgqkw;
+        goto cewamoymcqkmsswi;
+        cewamoymcqkmsswi:
+        muakuckcsywcyuao:
+        goto gaagyegguueymiec;
+        acycwqqmgeygymkw:
+        $iqaosyayeiuaisqi = MonologLogger::eueeseywswqsawac($iqaosyayeiuaisqi);
+        goto qiayggmakgsuwwsm;
+        qiayggmakgsuwwsm:
+        $iqaosyayeiuaisqi = strtolower($iqaosyayeiuaisqi);
+        goto icqkceioeysykgua;
+        qgwcisoeysiwakak:
+        
+        $eawuoscsaksyqwiw = self::getChannel($ymqmyyeuycgmigyo);
+        goto wkceacsqeyiimcus;
+        kkmeaociiyukweka:
+    }
+}

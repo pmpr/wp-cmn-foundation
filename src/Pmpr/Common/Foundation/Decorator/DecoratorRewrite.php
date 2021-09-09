@@ -1,2 +1,29 @@
 <?php
- namespace Pmpr\Common\Foundation\Decorator; use Pmpr\Common\Foundation\Manipulate\Manipulate; class DecoratorRewrite extends Manipulate { public static function flushRules($Awqof = true) { flush_rewrite_rules($Awqof); } public static function addRule($LUSrE, $egX7w, $PEENP = "\x62\x6f\164\x74\x6f\155") { add_rewrite_rule($LUSrE, $egX7w, $PEENP); } public static function addEndpoint($vPl9z, $BaOPk, $d52Hv = true) { add_rewrite_endpoint($vPl9z, $BaOPk, $d52Hv); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Decorator;
+
+use Pmpr\Common\Foundation\Manipulate\Manipulate;
+
+class DecoratorRewrite extends Manipulate
+{
+    
+    public static function ggqucmukcaycuckk($wqgoeumkaeyqaiqu = true)
+    {
+        flush_rewrite_rules($wqgoeumkaeyqaiqu);
+    }
+    
+    public static function aimosgcaukumakge($ucccueqywigcukcc, $gqgemcmoicmgaqie, $miisqgccsqqcscia = "\142\157\164\x74\157\155")
+    {
+        add_rewrite_rule($ucccueqywigcukcc, $gqgemcmoicmgaqie, $miisqgccsqqcscia);
+    }
+    
+    public static function sqwyuucgyowmqcgc($ymqmyyeuycgmigyo, $wwqoakwweuiyqgco, $emmugacswycqccku = true)
+    {
+        add_rewrite_endpoint($ymqmyyeuycgmigyo, $wwqoakwweuiyqgco, $emmugacswycqccku);
+    }
+}

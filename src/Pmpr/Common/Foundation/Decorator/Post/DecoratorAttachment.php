@@ -1,2 +1,68 @@
 <?php
- namespace Pmpr\Common\Foundation\Decorator\Post; class DecoratorAttachment extends Common { public static function getURL($OGgM7) { return wp_get_attachment_url($OGgM7); } public static function getMimetype($OGgM7) { return get_post_mime_type($OGgM7); } public static function isImage($OGgM7) : bool { return wp_attachment_is_image($OGgM7); } public static function updateMeta($OGgM7, $vCZSL) { return wp_update_attachment_metadata($OGgM7, $vCZSL); } public static function generateMetadata($OGgM7, $Nr_3l) { return wp_generate_attachment_metadata($OGgM7, $Nr_3l); } public static function getLink($post, $YOu5k = false) : ?string { return get_attachment_link($post, $YOu5k); } public static function getAttachedFile($OGgM7, $VKKTy = false) { return get_attached_file($OGgM7, $VKKTy); } public static function getImageURL($OGgM7, $pDZ3Y = "\x74\150\x75\155\x62\156\141\x69\x6c", $cbVPu = false) { return wp_get_attachment_image_url($OGgM7, $pDZ3Y, $cbVPu); } public static function getImageSrc($OGgM7, $pDZ3Y = "\x74\x68\165\155\x62\156\141\x69\154", $cbVPu = false) { return wp_get_attachment_image_src($OGgM7, $pDZ3Y, $cbVPu); } public static function getImage($OGgM7, $pDZ3Y = "\x74\150\165\155\x62\156\141\151\154", $JLWIV = [], $cbVPu = false) { return wp_get_attachment_image($OGgM7, $pDZ3Y, $cbVPu, $JLWIV); } public static function insert($DrjAW, $Nr_3l = false, $da8iE = 0, $Q7P4s = false, $aLDHS = true) { return wp_insert_attachment($DrjAW, $Nr_3l, $da8iE, $Q7P4s, $aLDHS); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Decorator\Post;
+
+
+class DecoratorAttachment extends Common
+{
+    
+    public static function oiucukewkckkwiqc($aiooqyausygaasqm)
+    {
+        return wp_get_attachment_url($aiooqyausygaasqm);
+    }
+    
+    public static function ikocqgeqiykwwyqs($aiooqyausygaasqm)
+    {
+        return get_post_mime_type($aiooqyausygaasqm);
+    }
+    
+    public static function qecqsmowoqmwgagu($aiooqyausygaasqm) : bool
+    {
+        return wp_attachment_is_image($aiooqyausygaasqm);
+    }
+    
+    public static function ksmqawcowkmegigw($aiooqyausygaasqm, $icwicymcioeyeyek)
+    {
+        return wp_update_attachment_metadata($aiooqyausygaasqm, $icwicymcioeyeyek);
+    }
+    
+    public static function smiqaaaecemiwugu($aiooqyausygaasqm, $qogsmwakwacwqogk)
+    {
+        return wp_generate_attachment_metadata($aiooqyausygaasqm, $qogsmwakwacwqogk);
+    }
+    
+    public static function qmgcisuuikgmqcsu($post, $mqsowqscuuoqyscy = false) : ?string
+    {
+        return get_attachment_link($post, $mqsowqscuuoqyscy);
+    }
+    
+    public static function ckoygqywcuqasqea($aiooqyausygaasqm, $beuoaqwyyugcgeas = false)
+    {
+        return get_attached_file($aiooqyausygaasqm, $beuoaqwyyugcgeas);
+    }
+    
+    public static function iaykyouimqoikagg($aiooqyausygaasqm, $oiegiwogmwmawkeo = "\x74\x68\165\155\142\x6e\141\151\154", $wkaqekwwgqsqwcoi = false)
+    {
+        return wp_get_attachment_image_url($aiooqyausygaasqm, $oiegiwogmwmawkeo, $wkaqekwwgqsqwcoi);
+    }
+    
+    public static function uikkssqcoewckces($aiooqyausygaasqm, $oiegiwogmwmawkeo = "\x74\x68\x75\x6d\142\x6e\141\151\154", $wkaqekwwgqsqwcoi = false)
+    {
+        return wp_get_attachment_image_src($aiooqyausygaasqm, $oiegiwogmwmawkeo, $wkaqekwwgqsqwcoi);
+    }
+    
+    public static function qaeeusqkgwagwaqc($aiooqyausygaasqm, $oiegiwogmwmawkeo = "\x74\x68\x75\155\x62\156\141\151\x6c", $wisgiwskwawciiee = [], $wkaqekwwgqsqwcoi = false)
+    {
+        return wp_get_attachment_image($aiooqyausygaasqm, $oiegiwogmwmawkeo, $wkaqekwwgqsqwcoi, $wisgiwskwawciiee);
+    }
+    
+    public static function insert($ywmkwiwkosakssii, $qogsmwakwacwqogk = false, $omwmuycmeqcqokom = 0, $wpError = false, $kasykqiskucawsyc = true)
+    {
+        return wp_insert_attachment($ywmkwiwkosakssii, $qogsmwakwacwqogk, $omwmuycmeqcqokom, $wpError, $kasykqiskucawsyc);
+    }
+}

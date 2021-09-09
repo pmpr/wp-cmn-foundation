@@ -1,2 +1,74 @@
 <?php
- namespace Pmpr\Common\Foundation\Manipulate\Type; use Pmpr\Common\Foundation\Decorator\DecoratorHook; use Pmpr\Common\Foundation\Manipulate\ManipulateSetting; class ManipulateDatetime extends Common { public static function isPassed($Hf6Dc) : bool { return strtotime($Hf6Dc) < time(); } public static function timeAgo($ujwgp) { goto w9bay; w9bay: $ujwgp = strtotime($ujwgp); goto ev4JM; junon: H93dz: goto zLw_8; Tg1ga: $n6RUr = DecoratorHook::applyFilters("\144\141\x74\145\137\164\151\x6d\x65\137\x61\147\x6f", date("\131\x2d\x6d\55\x64\x20\110\x3a\151", $ujwgp), ManipulateSetting::getDateFormat()); goto stV9S; ev4JM: $PxoP_ = (int) abs(time() - $ujwgp); goto hd51L; zLw_8: return DecoratorHook::applyFilters("\164\x69\x6d\145\x5f\x61\147\x6f", $n6RUr, $ujwgp); goto H26ek; hd51L: if ($ujwgp && $PxoP_ > 0 && $PxoP_ < DAY_IN_SECONDS) { goto h44xJ; } goto Tg1ga; Jf3E0: $n6RUr = sprintf(__("\x25\163\40\x61\147\157"), human_time_diff($ujwgp)); goto junon; KqQ4u: h44xJ: goto Jf3E0; stV9S: goto H93dz; goto KqQ4u; H26ek: } public static function isOverlap($hU834, $v7O3M, $Hf6Dc = "\x6e\x6f\167") : bool { goto SGYqX; SGYqX: $hU834 = strtotime($hU834); goto bChT3; bChT3: $v7O3M = strtotime($v7O3M); goto jVSU5; jVSU5: $DAn0A = strtotime($Hf6Dc); goto yqrHz; yqrHz: return $hU834 <= $DAn0A && $DAn0A <= $v7O3M; goto TPfd_; TPfd_: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Manipulate\Type;
+
+use Pmpr\Common\Foundation\Decorator\DecoratorHook;
+use Pmpr\Common\Foundation\Manipulate\ManipulateSetting;
+
+class ManipulateDatetime extends Common
+{
+    
+    public static function wguceomqgwouoyks($ocogsiouoiuuguym) : bool
+    {
+        return strtotime($ocogsiouoiuuguym) < time();
+    }
+    
+    public static function ikuqieqosemkwuio($cqgoimumaewouews)
+    {
+        goto oomiawgcsyaaqaao;
+        eymiaowquwyiggie:
+        goto ecuosiaqyaoqckao;
+        goto kgkameuwwcmaawwg;
+        qiqmamemmguaieiw:
+        if ($cqgoimumaewouews && $asuaciiookaciacq > 0 && $asuaciiookaciacq < DAY_IN_SECONDS) {
+            goto skoaowmysckmmocc;
+        }
+        goto owauaaeeaeoqgiii;
+        kamkksumiggskuay:
+        ecuosiaqyaoqckao:
+        goto iwqasgooqqmcyqmy;
+        ssooqmscuqwmcoeu:
+        $sieoyimycoskwwku = sprintf(__("\x25\163\40\141\147\x6f"), human_time_diff($cqgoimumaewouews));
+        goto kamkksumiggskuay;
+        wokmesqciaaskwoe:
+        $asuaciiookaciacq = (int) abs(time() - $cqgoimumaewouews);
+        goto qiqmamemmguaieiw;
+        iwqasgooqqmcyqmy:
+        return DecoratorHook::sscegwueamckwmcy("\x74\x69\x6d\145\x5f\141\x67\x6f", $sieoyimycoskwwku, $cqgoimumaewouews);
+        goto keuikgoukmwokcoa;
+        kgkameuwwcmaawwg:
+        skoaowmysckmmocc:
+        goto ssooqmscuqwmcoeu;
+        oomiawgcsyaaqaao:
+        $cqgoimumaewouews = strtotime($cqgoimumaewouews);
+        goto wokmesqciaaskwoe;
+        owauaaeeaeoqgiii:
+        $sieoyimycoskwwku = DecoratorHook::sscegwueamckwmcy("\x64\x61\164\145\137\164\x69\155\145\137\x61\147\x6f", date("\131\x2d\x6d\55\144\40\x48\72\151", $cqgoimumaewouews), ManipulateSetting::uyomwmskouyyqyyq());
+        goto eymiaowquwyiggie;
+        keuikgoukmwokcoa:
+    }
+    
+    public static function awesicwkasgqwwuo($ggkaciewmeqmgckg, $qmeuaeiseuacgiqc, $ocogsiouoiuuguym = "\156\157\167") : bool
+    {
+        goto yqccqmsucoukqkmw;
+        kgecwaiwqeacyqge:
+        
+        return $ggkaciewmeqmgckg <= $gioggcykgoikcwiy && $gioggcykgoikcwiy <= $qmeuaeiseuacgiqc;
+        goto wsasggmqwyisgoiq;
+        qwykccyeiymiomyi:
+        $qmeuaeiseuacgiqc = strtotime($qmeuaeiseuacgiqc);
+        goto asmkyaumussymycs;
+        yqccqmsucoukqkmw:
+        $ggkaciewmeqmgckg = strtotime($ggkaciewmeqmgckg);
+        goto qwykccyeiymiomyi;
+        asmkyaumussymycs:
+        $gioggcykgoikcwiy = strtotime($ocogsiouoiuuguym);
+        goto kgecwaiwqeacyqge;
+        wsasggmqwyisgoiq:
+    }
+}

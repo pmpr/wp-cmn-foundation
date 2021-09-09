@@ -1,2 +1,182 @@
 <?php
- namespace Pmpr\Common\Foundation\API; use Pmpr\Common\Foundation\Decorator\DecoratorOption; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; use Psr\Http\Message\ResponseInterface; class Cartridge extends API { const CURRENT_DOMAIN = "\x61\x70\x69\137\143\x75\162\162\x65\x6e\164\137\x64\x6f\155\x61\x69\156"; const LOCK_REQUEST_TRANSIENT = "\141\x70\151\x5f\154\157\143\x6b\137\162\145\x71\x75\145\163\164\x5f\x74\x72\141\x6e\x73\151\x65\x6e\x74"; protected array $domains = []; public function __construct() { $this->addOption("\x74\x69\155\x65\157\165\164", false); parent::__construct(); } public function getDomains() : array { return $this->domains; } public function addDomain(string $ePNVH) { $this->domains[] = $ePNVH; return $ePNVH; } public function next() : self { goto J55Gx; fV6S7: $ePNVH = ManipulateArray::get($S4ZCI, intval($VIAHW) + 1); goto njEA1; Yuash: $this->afterSwitch($ePNVH); goto jUz7c; xW3DI: set_transient(self::LOCK_REQUEST_TRANSIENT, 1, MINUTE_IN_SECONDS * 2); goto VXMcC; ekD93: $VIAHW = array_search($ePNVH, $S4ZCI); goto fV6S7; CPLQZ: $this->beforeSwitch($ePNVH); goto ekD93; yK_dg: $S4ZCI = $this->getDomains(); goto CPLQZ; rE2Ju: if (!$ePNVH) { goto yAqAw; } goto yK_dg; XZgRu: return $this; goto KzVj3; GpoD_: $this->errorLog("\x43\x61\x72\164\162\x69\144\147\145\x20\141\160\x69\40\x6c\157\143\153\x65\x64\40\x66\x6f\x72\40\x6e\x65\170\164\40\x32\60\x20\x6d\x69\x6e\x75\164\145\x73\56"); goto xW3DI; jUz7c: hbdlf: goto STHv5; VXMcC: DecoratorOption::delete(self::CURRENT_DOMAIN); goto VsIOe; VsIOe: goto hbdlf; goto BxEWh; STHv5: yAqAw: goto XZgRu; J55Gx: $ePNVH = $this->getDomain(); goto rE2Ju; yw4ye: DecoratorOption::update(self::CURRENT_DOMAIN, $ePNVH); goto Yuash; BxEWh: ggLFO: goto yw4ye; njEA1: if ($ePNVH) { goto ggLFO; } goto GpoD_; KzVj3: } public function getDomain() : ?string { goto Tfs0c; GUQuR: VKQkB: goto OLgKT; OLgKT: return $kkw1U; goto oQyPI; aZd64: if ($this->isLocked()) { goto VKQkB; } goto sUYm4; sUYm4: $kkw1U = DecoratorOption::get(self::CURRENT_DOMAIN, ManipulateArray::get($this->getDomains(), 0)); goto GUQuR; Tfs0c: $kkw1U = null; goto aZd64; oQyPI: } public function send($i7N_J, $sJYGe = [], $BA5nC = "\x67\x65\164") { goto aa2xE; ICHhU: $oLyzn = parent::send($i7N_J, $sJYGe, $BA5nC); goto HCYrA; HCYrA: if ($this->isSuccess($oLyzn, $W16SI)) { goto bfiga; } goto uoHbC; zh_zI: return $oLyzn; goto Ft3Sn; CE54r: $oLyzn = $this->send($i7N_J, $sJYGe, $BA5nC); goto VBi6V; zV4jr: B7ddu: goto ICHhU; aa2xE: if (!$this->isLocked()) { goto B7ddu; } goto JwNsn; VBi6V: bfiga: goto mNKPQ; IPBa4: goto Af8q7; goto zV4jr; uoHbC: $this->next(); goto vN26g; vN26g: sleep(2); goto CE54r; JwNsn: $oLyzn = null; goto IPBa4; mNKPQ: Af8q7: goto zh_zI; Ft3Sn: } public function isLocked() : bool { return false; } public function beforeSwitch($kkw1U) { } public function afterSwitch($kkw1U) { } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\API;
+
+use Pmpr\Common\Foundation\Decorator\DecoratorOption;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
+use Psr\Http\Message\ResponseInterface;
+
+class Cartridge extends API
+{
+    const CURRENT_DOMAIN = "\141\x70\151\x5f\x63\x75\162\x72\x65\156\164\x5f\x64\x6f\x6d\141\x69\x6e";
+    const LOCK_REQUEST_TRANSIENT = "\141\160\x69\x5f\x6c\157\x63\153\137\162\x65\161\165\145\163\164\137\164\x72\141\x6e\x73\151\x65\156\164";
+    
+    protected array $domains = [];
+    
+    public function __construct()
+    {
+        $this->kesomeowemmyygey("\164\151\x6d\145\157\x75\164", false);
+        parent::__construct();
+    }
+    
+    public function wiqumkmqkqoycqyi() : array
+    {
+        return $this->domains;
+    }
+    
+    public function iggeecowsiwyaooe(string $mokawwccycoiqeka) : string
+    {
+        $this->domains[] = $mokawwccycoiqeka;
+        return $mokawwccycoiqeka;
+    }
+    
+    public function next() : self
+    {
+        goto cucwqoikogogyiae;
+        sysyossykggwkgim:
+        $this->saqqeqmcyyoeqici("\x43\x61\162\x74\162\x69\144\x67\x65\40\x61\x70\151\40\154\x6f\x63\x6b\145\x64\x20\146\x6f\162\40\x6e\x65\170\x74\x20\62\x30\x20\x6d\x69\156\x75\x74\145\x73\x2e");
+        goto eaacgaouamsuwkga;
+        gmuemckgkssugeao:
+        return $this;
+        goto qkacaucsuuqmwssw;
+        ymsggkuocaouwqeg:
+        $momcykaoccoymeig = array_search($mokawwccycoiqeka, $wqogggcaamgeiwew);
+        goto myesgqoumasukcam;
+        mkowswyuyusgiwys:
+        DecoratorOption::update(self::CURRENT_DOMAIN, $mokawwccycoiqeka);
+        goto qmcqkyugmgcsqusu;
+        qqioismeqoaquugc:
+        $this->ucuoiawgsicougqu($mokawwccycoiqeka);
+        goto ymsggkuocaouwqeg;
+        qmcqkyugmgcsqusu:
+        $this->gyuwiwqqyesiekag($mokawwccycoiqeka);
+        goto eoikcysgayayyaik;
+        cyygmmqaimqqikya:
+        DecoratorOption::delete(self::CURRENT_DOMAIN);
+        goto eiqwgagequiueqqu;
+        swwewqamyieuaeyo:
+        if ($mokawwccycoiqeka) {
+            goto yeiggwkgkoeucuiw;
+        }
+        goto sysyossykggwkgim;
+        qeaqweiacsqaekao:
+        qeawowmmogmaiwiy:
+        goto gmuemckgkssugeao;
+        eoikcysgayayyaik:
+        gkwscmymwmeaqqwu:
+        goto qeaqweiacsqaekao;
+        mkkkugwkseusuoys:
+        yeiggwkgkoeucuiw:
+        goto mkowswyuyusgiwys;
+        aewqkyaucyssiaay:
+        if (!$mokawwccycoiqeka) {
+            goto qeawowmmogmaiwiy;
+        }
+        goto ksgmewmmokmawgcs;
+        ksgmewmmokmawgcs:
+        $wqogggcaamgeiwew = $this->wiqumkmqkqoycqyi();
+        goto qqioismeqoaquugc;
+        cucwqoikogogyiae:
+        $mokawwccycoiqeka = $this->wwawisckiqeueoua();
+        goto aewqkyaucyssiaay;
+        eiqwgagequiueqqu:
+        goto gkwscmymwmeaqqwu;
+        goto mkkkugwkseusuoys;
+        myesgqoumasukcam:
+        $mokawwccycoiqeka = ManipulateArray::get($wqogggcaamgeiwew, intval($momcykaoccoymeig) + 1);
+        goto swwewqamyieuaeyo;
+        eaacgaouamsuwkga:
+        
+        set_transient(self::LOCK_REQUEST_TRANSIENT, 1, MINUTE_IN_SECONDS * 2);
+        goto cyygmmqaimqqikya;
+        qkacaucsuuqmwssw:
+    }
+    
+    public function wwawisckiqeueoua() : ?string
+    {
+        goto owosugyaauewwmak;
+        iqeqsgmquuaakqas:
+        if ($this->yyqoaomsmcauuscg()) {
+            goto oamyuqkoaokkoakc;
+        }
+        goto qkgwsqyiqqyyqkuk;
+        sqeosuowqqmiygoe:
+        return $yeacayasgueouoqc;
+        goto oukamomweoyacmyy;
+        owosugyaauewwmak:
+        $yeacayasgueouoqc = null;
+        goto iqeqsgmquuaakqas;
+        qkgwsqyiqqyyqkuk:
+        $yeacayasgueouoqc = DecoratorOption::get(self::CURRENT_DOMAIN, ManipulateArray::get($this->wiqumkmqkqoycqyi(), 0));
+        goto myioiyiacgwyqgka;
+        myioiyiacgwyqgka:
+        oamyuqkoaokkoakc:
+        goto sqeosuowqqmiygoe;
+        oukamomweoyacmyy:
+    }
+    
+    public function send($xeciwimgioieayek, $qiouiwasaauyaaue = [], $qgciuiagkkguykgs = "\147\145\164") : ?ResponseInterface
+    {
+        goto usiagamiyyiciywo;
+        qgcqeawyaymwqmyu:
+        $this->next();
+        goto uasiwuwoekkugeoo;
+        qokuwssowkeimwio:
+        return $keccaugmemegoimu;
+        goto eqgkmgqumukyyuyg;
+        mmiuwggkkoukmcii:
+        $keccaugmemegoimu = $this->send($xeciwimgioieayek, $qiouiwasaauyaaue, $qgciuiagkkguykgs);
+        goto gykgossysqcskces;
+        oeiacaimywgymucg:
+        womemmoiqkyuyygi:
+        goto qokuwssowkeimwio;
+        memaegceciwcsuoe:
+        qagceekoguwswkym:
+        goto yucwgauyiuemgkoe;
+        gykgossysqcskces:
+        sqqgewuqsikkeoqc:
+        goto oeiacaimywgymucg;
+        usiagamiyyiciywo:
+        if (!$this->yyqoaomsmcauuscg()) {
+            goto qagceekoguwswkym;
+        }
+        goto qcceiumauoumwkas;
+        yucwgauyiuemgkoe:
+        $keccaugmemegoimu = parent::send($xeciwimgioieayek, $qiouiwasaauyaaue, $qgciuiagkkguykgs);
+        goto iueewwccugsweuau;
+        qqguqmkumwouusqg:
+        goto womemmoiqkyuyygi;
+        goto memaegceciwcsuoe;
+        uasiwuwoekkugeoo:
+        sleep(2);
+        goto mmiuwggkkoukmcii;
+        qcceiumauoumwkas:
+        $keccaugmemegoimu = null;
+        goto qqguqmkumwouusqg;
+        iueewwccugsweuau:
+        if ($this->occymigcemkqucuw($keccaugmemegoimu, $iswcokucwmiosiaq)) {
+            goto sqqgewuqsikkeoqc;
+        }
+        goto qgcqeawyaymwqmyu;
+        eqgkmgqumukyyuyg:
+    }
+    
+    public function yyqoaomsmcauuscg() : bool
+    {
+        
+        return false;
+    }
+    
+    public function ucuoiawgsicougqu($yeacayasgueouoqc)
+    {
+    }
+    
+    public function gyuwiwqqyesiekag($yeacayasgueouoqc)
+    {
+    }
+}

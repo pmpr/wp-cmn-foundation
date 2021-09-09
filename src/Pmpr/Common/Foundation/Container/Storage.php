@@ -1,2 +1,196 @@
 <?php
- namespace Pmpr\Common\Foundation\Container; use Exception; use Pmpr\Common\Foundation\Data\Component; use Pmpr\Common\Foundation\Interfaces\ConstantInterface; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; class Storage implements ConstantInterface { protected static array $instances = []; protected static array $components = [self::CMN => [], self::PKG => [], self::THM => [], self::CTM => []]; public static function getInstances() : ?array { return self::$instances; } public static function getComponents($j56jL = null) : array { goto rs94W; k3AeF: m984J: goto b2yvd; zZ6wf: goto m984J; goto N9j7E; m8GAW: $GP2p7 = ManipulateArray::get($GP2p7, $j56jL, []); goto k3AeF; N9j7E: MxLTK: goto m8GAW; HrbJT: $GP2p7 = ManipulateArray::flatten($GP2p7); goto zZ6wf; UpIbs: if ($j56jL) { goto MxLTK; } goto HrbJT; b2yvd: return $GP2p7; goto Dg4rd; rs94W: $GP2p7 = self::$components; goto UpIbs; Dg4rd: } public static function addComponent($QsfZH, $M7KqN) { goto qqwK8; KL4V4: if (!($j56jL && $vPl9z)) { goto ng5JX; } goto JSD9A; qqwK8: if (!$QsfZH instanceof Container) { goto vElLm; } goto RAmTH; JSD9A: self::$components[$j56jL][$vPl9z] = new Component($QsfZH, $j56jL, $vPl9z, $M7KqN); goto MVzFF; RAmTH: $vPl9z = $QsfZH::getRegisteredComponentName(); goto J9dUO; uhK97: vElLm: goto vmLlc; J9dUO: $j56jL = $QsfZH::getComponentType(); goto KL4V4; MVzFF: ng5JX: goto uhK97; vmLlc: } public static function has(string $diOPf) { return ManipulateArray::get(self::getInstances(), $diOPf); } public static function update(object $jfqIH) { goto SSzfL; SSzfL: $diOPf = $jfqIH::getClass(); goto U5x2C; Z17lF: self::add($diOPf, $jfqIH); goto W6JME; U5x2C: self::remove($diOPf); goto Z17lF; W6JME: } public static function getComponent($eY_VU = null) { goto Ukx5t; t63Pz: YLCvH: goto b4hnZ; Ukx5t: if (!(is_object($eY_VU) && method_exists($eY_VU, "\x67\x65\x74\x43\x6f\155\160\157\156\145\x6e\x74\116\x61\155\145"))) { goto YLCvH; } goto KRfJo; ZRrZp: return ManipulateArray::get($GP2p7, $eY_VU); goto OmwNf; b4hnZ: $GP2p7 = self::getComponents(); goto ZRrZp; KRfJo: $eY_VU = $eY_VU::getComponentName(); goto t63Pz; OmwNf: } public static function add(string $bUHaw, object $jfqIH) { self::$instances[$bUHaw] = $jfqIH; } public static function maybeOverrideClassAvailable($z347l) { return $z347l; } public static function remove(string $diOPf, $CDV1j = null) { $bUHaw = self::getKey($diOPf, $CDV1j); return ManipulateArray::unset(self::$instances, $bUHaw); } public static function get(string $jg5rc, ?string $CDV1j = null, ...$DrjAW) { goto vqCHJ; MePDO: $jg5rc = self::maybeOverrideClassAvailable($jg5rc); goto RAQFL; L3qF6: return $jfqIH; goto JEc8m; MUONb: $jfqIH = new $jg5rc(...$DrjAW); goto DFm5q; DFm5q: self::add($bUHaw, $jfqIH); goto ccmrt; BWgXb: zOkLV: goto MUONb; vqCHJ: $bUHaw = self::getKey($jg5rc, $CDV1j); goto vzCrg; dCwQH: $DrjAW[] = $CDV1j; goto BWgXb; RAQFL: if (!$CDV1j) { goto zOkLV; } goto dCwQH; KT4EH: if ($jfqIH) { goto Sytbt; } goto MePDO; ccmrt: Sytbt: goto L3qF6; vzCrg: $jfqIH = self::has($bUHaw); goto KT4EH; JEc8m: } public static function getKey(string $jg5rc, ?string $CDV1j = null) : string { return "{$jg5rc}{$CDV1j}"; } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Container;
+
+use Exception;
+use Pmpr\Common\Foundation\Data\Component;
+use Pmpr\Common\Foundation\Interfaces\ConstantInterface;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
+
+class Storage implements ConstantInterface
+{
+    
+    protected static array $instances = [];
+    
+    protected static array $components = [self::CMN => [], self::PKG => [], self::THM => [], self::CTM => []];
+    
+    public static function iawcusqgkeieicug() : ?array
+    {
+        return self::$instances;
+    }
+    
+    public static function misumgawyweoagic($sqeykgyoooqysmca = null) : array
+    {
+        goto maisiwgiyemcksso;
+        maisiwgiyemcksso:
+        $mqkkuqaimswumeww = self::$components;
+        goto cakgesecyaemgueq;
+        ywgmykeycoyogqco:
+        $mqkkuqaimswumeww = ManipulateArray::get($mqkkuqaimswumeww, $sqeykgyoooqysmca, []);
+        goto ucakuayukmgmyegg;
+        ucakuayukmgmyegg:
+        uyqyioeqeoqcuykq:
+        goto ukeoaugaookyquee;
+        iigosmqysegggsau:
+        goto uyqyioeqeoqcuykq;
+        goto iuqmcesucmkqckmo;
+        cakgesecyaemgueq:
+        if ($sqeykgyoooqysmca) {
+            goto uwqkmayasqiymkcw;
+        }
+        goto wmscaqqokaamkyiq;
+        ukeoaugaookyquee:
+        return $mqkkuqaimswumeww;
+        goto uqeyauiimkymqkqo;
+        wmscaqqokaamkyiq:
+        $mqkkuqaimswumeww = ManipulateArray::kaucoswaceqcuyam($mqkkuqaimswumeww);
+        goto iigosmqysegggsau;
+        iuqmcesucmkqckmo:
+        uwqkmayasqiymkcw:
+        goto ywgmykeycoyogqco;
+        uqeyauiimkymqkqo:
+    }
+    
+    public static function kmsomwiqwmoyoeci($mksyucucyswaukig, $couygeouymagssgw)
+    {
+        goto gaueqomusygaqaia;
+        gwywgyiccasyeyuc:
+        self::$components[$sqeykgyoooqysmca][$ymqmyyeuycgmigyo] = new Component($mksyucucyswaukig, $sqeykgyoooqysmca, $ymqmyyeuycgmigyo, $couygeouymagssgw);
+        goto cccqicomasamemuq;
+        weyikuomgeyimyay:
+        imioswwmquauqkia:
+        goto qywgyeaiwcumsouk;
+        cccqicomasamemuq:
+        ouiusiyeswawsgyc:
+        goto weyikuomgeyimyay;
+        gaueqomusygaqaia:
+        if (!$mksyucucyswaukig instanceof Container) {
+            goto imioswwmquauqkia;
+        }
+        goto ocyiqkkgoiqcgoiy;
+        ywsssccywigceiyi:
+        $sqeykgyoooqysmca = $mksyucucyswaukig::yegwayqakokyuiok();
+        goto mwmieoicwuqyuygy;
+        ocyiqkkgoiqcgoiy:
+        $ymqmyyeuycgmigyo = $mksyucucyswaukig::akuociswqmoigkas();
+        goto ywsssccywigceiyi;
+        mwmieoicwuqyuygy:
+        if (!($sqeykgyoooqysmca && $ymqmyyeuycgmigyo)) {
+            goto ouiusiyeswawsgyc;
+        }
+        goto gwywgyiccasyeyuc;
+        qywgyeaiwcumsouk:
+    }
+    
+    public static function umuecysoywoumgwo(string $aiieyweysaukqemc)
+    {
+        return ManipulateArray::get(self::iawcusqgkeieicug(), $aiieyweysaukqemc);
+    }
+    
+    public static function update(object $owgumcsyqsamiemg)
+    {
+        goto meookcgmmeqeumim;
+        aqeiyioooucwqgmg:
+        self::add($aiieyweysaukqemc, $owgumcsyqsamiemg);
+        goto mswywuwysiwmewwg;
+        kgyqyegwmomouqws:
+        self::remove($aiieyweysaukqemc);
+        goto aqeiyioooucwqgmg;
+        meookcgmmeqeumim:
+        $aiieyweysaukqemc = $owgumcsyqsamiemg::uecyuoauykiqqkey();
+        goto kgyqyegwmomouqws;
+        mswywuwysiwmewwg:
+    }
+    
+    public static function cqusmgskowmesgcg($wksoawcgagcgoask = null)
+    {
+        goto kwmacaaskumakkmi;
+        nosacyaasaucscou:
+        return ManipulateArray::get($mqkkuqaimswumeww, $wksoawcgagcgoask);
+        goto sqigskysuqcqamsw;
+        kwmacaaskumakkmi:
+        if (!(is_object($wksoawcgagcgoask) && method_exists($wksoawcgagcgoask, "\153\x77\161\163\147\x75\151\x69\x6f\143\x6f\157\165\163\x75\161"))) {
+            goto oaaguckuyyqiuysg;
+        }
+        goto wiwyqiiuqiecaagq;
+        auusomqggyqoeows:
+        $mqkkuqaimswumeww = self::misumgawyweoagic();
+        goto nosacyaasaucscou;
+        wiwyqiiuqiecaagq:
+        $wksoawcgagcgoask = $wksoawcgagcgoask::kwqsguiiocoousuq();
+        goto kgmuuggwcomgisoq;
+        kgmuuggwcomgisoq:
+        oaaguckuyyqiuysg:
+        goto auusomqggyqoeows;
+        sqigskysuqcqamsw:
+    }
+    
+    public static function add(string $uusmaiomayssaecw, object $owgumcsyqsamiemg)
+    {
+        self::$instances[$uusmaiomayssaecw] = $owgumcsyqsamiemg;
+    }
+    
+    public static function iigqkgiamcykcwcm($iakkeikwceeomgyq)
+    {
+        return $iakkeikwceeomgyq;
+    }
+    
+    public static function remove(string $aiieyweysaukqemc, $aokagokqyuysuksm = null)
+    {
+        $uusmaiomayssaecw = self::cisyiemkeykgkomc($aiieyweysaukqemc, $aokagokqyuysuksm);
+        return ManipulateArray::unset(self::$instances, $uusmaiomayssaecw);
+    }
+    
+    public static function get(string $egkyssmuqcwaciya, ?string $aokagokqyuysuksm = null, ...$ywmkwiwkosakssii)
+    {
+        goto qqiyoegsyuioeckw;
+        ckigcgskuimkcaqw:
+        if ($owgumcsyqsamiemg) {
+            goto wweogomakqeumaem;
+        }
+        goto gicwyacksgiucaem;
+        mkmusqguaqaoiiie:
+        wweogomakqeumaem:
+        goto kaekwemuauqsseee;
+        akcswkssaqkqmuai:
+        $owgumcsyqsamiemg = new $egkyssmuqcwaciya(...$ywmkwiwkosakssii);
+        goto akewkwcuoimqkaqw;
+        kaekwemuauqsseee:
+        return $owgumcsyqsamiemg;
+        goto wcegwageayaaskqu;
+        akewkwcuoimqkaqw:
+        self::add($uusmaiomayssaecw, $owgumcsyqsamiemg);
+        goto mkmusqguaqaoiiie;
+        uogkyukgkuagagce:
+        $ywmkwiwkosakssii[] = $aokagokqyuysuksm;
+        goto umgugakmykkciguc;
+        gicwyacksgiucaem:
+        $egkyssmuqcwaciya = self::iigqkgiamcykcwcm($egkyssmuqcwaciya);
+        goto gcumkowycakiggag;
+        qkgquayemucsyyuk:
+        $owgumcsyqsamiemg = self::umuecysoywoumgwo($uusmaiomayssaecw);
+        goto ckigcgskuimkcaqw;
+        gcumkowycakiggag:
+        if (!$aokagokqyuysuksm) {
+            goto kgoiamsswecauwkw;
+        }
+        goto uogkyukgkuagagce;
+        umgugakmykkciguc:
+        kgoiamsswecauwkw:
+        goto akcswkssaqkqmuai;
+        qqiyoegsyuioeckw:
+        $uusmaiomayssaecw = self::cisyiemkeykgkomc($egkyssmuqcwaciya, $aokagokqyuysuksm);
+        goto qkgquayemucsyyuk;
+        wcegwageayaaskqu:
+    }
+    
+    public static function cisyiemkeykgkomc(string $egkyssmuqcwaciya, ?string $aokagokqyuysuksm = null) : string
+    {
+        return "{$egkyssmuqcwaciya}{$aokagokqyuysuksm}";
+    }
+}

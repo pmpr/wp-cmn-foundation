@@ -1,2 +1,383 @@
 <?php
- namespace Pmpr\Common\Foundation; use Pmpr\Common\Foundation\Container\Container; use Pmpr\Common\Foundation\Decorator\DecoratorUser; use Pmpr\Common\Foundation\Manipulate\ManipulateFormat; use Pmpr\Common\Foundation\Manipulate\ManipulateUser; use Pmpr\Common\Foundation\Manipulate\Theme\ManipulateBootstrap; use Pmpr\Common\Foundation\Manipulate\Theme\ManipulateHTML; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; class Notice extends Container { const NOTICE_FIELD = "\156\x6f\x74\151\143\145\137\155\145\163\163\141\x67\x65\163\x5f\x6c\151\163\x74"; const NOTICE_INFO = "\x69\156\x66\x6f"; const NOTICE_ERROR = "\145\x72\x72\x6f\x72"; const NOTICE_WARNING = "\x77\x61\x72\156\151\x6e\x67"; const NOTICE_SUCCESS = "\x73\165\x63\x63\x65\163\x73"; public function addActions() { $this->addAction("\162\x65\156\x64\145\x72\137\156\x6f\164\x69\143\x65\x73", [$this, "\x72\145\156\x64\145\162"])->addAction("\141\144\x6d\x69\x6e\x5f\156\157\x74\x69\x63\145\163", [$this, "\x61\x64\x6d\x69\x6e\116\157\x74\151\143\145"]); parent::addActions(); } public static function info($k4mxF, $CDV1j = null) { self::notice($k4mxF, self::NOTICE_INFO, $CDV1j); } public static function error($k4mxF, $CDV1j = null) { self::notice($k4mxF, self::NOTICE_ERROR, $CDV1j); } public static function warning($k4mxF, $CDV1j = null) { self::notice($k4mxF, self::NOTICE_WARNING, $CDV1j); } public static function success($k4mxF, $CDV1j = null) { self::notice($k4mxF, self::NOTICE_SUCCESS, $CDV1j); } public function get($CDV1j) { return ManipulateArray::get($this->getAll(), $CDV1j, null); } public function getAll() { goto bB6GJ; bB6GJ: if (DecoratorUser::isLoggedIn()) { goto E863i; } goto MXUJc; U466I: goto GXku8; goto FFqqe; FFqqe: E863i: goto WI3L8; kkT6g: U2iwR: goto U466I; WI3L8: $JU8tX = ManipulateUser::getMeta(self::NOTICE_FIELD); goto D_fwT; yMX91: $JU8tX = json_decode(stripslashes($JU8tX), true); goto kkT6g; cKeGP: if (!$JU8tX) { goto U2iwR; } goto yMX91; MXUJc: $JU8tX = ManipulateArray::get($_COOKIE, self::NOTICE_FIELD, []); goto cKeGP; D_fwT: GXku8: goto RcYqn; RcYqn: return $JU8tX; goto UL9Ik; UL9Ik: } public function remove($CDV1j) { goto FkdSV; X1cZX: ManipulateArray::unset($xMweD, $CDV1j); goto V4PtR; Vxn1O: $this->setCookie($xMweD); goto ifnez; V4PtR: if (DecoratorUser::isLoggedIn()) { goto qmkoZ; } goto Vxn1O; ifnez: goto kFJAK; goto F0j68; DKfqm: ManipulateUser::updateMeta(self::NOTICE_FIELD, $xMweD); goto maIUy; F0j68: qmkoZ: goto DKfqm; wJA9k: if (!$xMweD) { goto skbrX; } goto X1cZX; MLaMP: skbrX: goto b3BPH; maIUy: kFJAK: goto MLaMP; FkdSV: $xMweD = $this->getAll(); goto wJA9k; b3BPH: } public function adminNotice() { goto JNf9G; HX6Sk: foreach ($eFf1T as $CDV1j => $efMs_) { goto dnriI; dnriI: $efMs_["\x69\x64"] = $CDV1j; goto k1gFl; k1gFl: $this->generate($efMs_); goto hqste; hqste: sb1S0: goto E8RQv; E8RQv: } goto CO2y7; CO2y7: GnF2D: goto qapoi; JNf9G: $eFf1T = DecoratorUser::getMeta(self::NOTICE_FIELD); goto eWai6; S3G7X: ziPMN: goto LhGu3; qapoi: DecoratorUser::deleteMeta(self::NOTICE_FIELD); goto S3G7X; eWai6: if (!$eFf1T) { goto ziPMN; } goto HX6Sk; LhGu3: } public static function has($CDV1j) : bool { return (bool) self::getInstance()->get($CDV1j); } public function generate($DrjAW = []) : string { goto IjvG8; WtpoZ: $k4mxF = $DrjAW["\155\x65\163\163\141\x67\145"]; goto o7MDl; FEFI_: $efMs_ = ''; goto uWL0k; HJej0: $efMs_ = ManipulateHTML::generateAlert($k4mxF, $N6E3u, ["\151\144" => $CDV1j, "\x63\x6c\141\x73\x73" => "\x6d\x79\55\x32"]); goto w8VIm; wI2SL: return $efMs_; goto GDlH9; t00mM: echo $efMs_; goto Zkujs; Zkujs: HeSE7: goto wI2SL; uWL0k: $N6E3u = $DrjAW["\154\145\x76\x65\154"]; goto Z2xFf; SNzKM: if (!$DrjAW["\x65\143\150\x6f"]) { goto HeSE7; } goto t00mM; Z2xFf: $CDV1j = $DrjAW["\151\144"] ?: $N6E3u; goto WtpoZ; o7MDl: if (!$k4mxF) { goto SxSuW; } goto HJej0; IjvG8: $DrjAW = ManipulateFormat::parseArgs($DrjAW, ["\x64\x69\163\x6d\151\x73\x73" => true, "\x6d\145\x73\x73\141\147\x65" => '', "\154\145\x76\145\154" => self::NOTICE_INFO, "\x65\x63\x68\x6f" => true, "\151\144" => '']); goto FEFI_; w8VIm: SxSuW: goto SNzKM; GDlH9: } public function render($CDV1j, $DrjAW = []) : string { goto uqZgX; wMmg8: if ($CDV1j) { goto dyySB; } goto kp3m9; dCjgs: mPeJ2: goto AcuXN; oWVAx: aQX4a: goto cWtuO; kp3m9: $xMweD = $this->getAll(); goto J4BTA; RY_g5: $efMs_ = $this->getMessage($CDV1j, $k4mxF, $DrjAW); goto DX8fH; LiJmC: AC_Oi: goto Q0r2h; fTzNN: $k4mxF = $this->get($CDV1j); goto cJsna; uqZgX: $efMs_ = ''; goto wMmg8; Ey0Sk: $this->setCookie([]); goto yhEn7; DX8fH: LUIUT: goto LiJmC; D54LC: Zluq1: goto yCk8e; xhBY_: goto AC_Oi; goto HMhM2; cWtuO: nslrd: goto xhBY_; AcuXN: DecoratorUser::deleteMeta(self::NOTICE_FIELD); goto oWVAx; HS4qw: $this->remove($CDV1j); goto RY_g5; cJsna: if (!$k4mxF) { goto LUIUT; } goto HS4qw; yCk8e: if (DecoratorUser::isLoggedIn()) { goto mPeJ2; } goto Ey0Sk; yhEn7: goto aQX4a; goto dCjgs; Q0r2h: return $efMs_; goto rf3tV; HMhM2: dyySB: goto fTzNN; ihoLC: foreach ($xMweD as $CDV1j => $k4mxF) { $efMs_ = $this->getMessage($CDV1j, $k4mxF, $DrjAW); IjkWb: } goto D54LC; J4BTA: if (!$xMweD) { goto nslrd; } goto ihoLC; rf3tV: } private function getMessage($CDV1j, $k4mxF, $DrjAW) : ?string { goto BKo0U; vQXFz: $k4mxF = $this->generate(ManipulateFormat::parseArgs($DrjAW, ["\x69\144" => $CDV1j, "\x6c\145\x76\x65\154" => ManipulateArray::get($k4mxF, "\154\x65\x76\x65\x6c", self::NOTICE_INFO), "\155\145\x73\x73\x61\x67\x65" => ManipulateArray::get($k4mxF, "\x6d\x65\x73\x73\141\x67\145", self::NOTICE_INFO)])); goto Vpu4_; Vpu4_: QGwmj: goto bvsbC; BKo0U: if (!$k4mxF) { goto QGwmj; } goto vQXFz; bvsbC: return $k4mxF; goto c0eP2; c0eP2: } private function setCookie(array $xMweD = []) { setcookie(self::NOTICE_FIELD, json_encode($xMweD), 0, COOKIEPATH, COOKIE_DOMAIN, false, false); } public static function add($k4mxF, $CDV1j, $N6E3u) { goto GZ4i4; SYlV2: $xMweD = [$CDV1j => ["\x6c\x65\x76\x65\154" => $N6E3u, "\x6d\145\163\163\141\x67\x65" => $k4mxF]]; goto w3FIJ; O9w9H: if (DecoratorUser::isLoggedIn()) { goto xn2MU; } goto IHh58; GZ4i4: $jfqIH = self::getInstance(); goto SYlV2; Xu1Hj: if (!$JU8tX) { goto xZNmP; } goto C_bls; IHh58: $jfqIH->setCookie($xMweD); goto KRUwP; KRUwP: goto ctPo4; goto eE2ZZ; O663p: xZNmP: goto O9w9H; og_Oc: ctPo4: goto Y5Obl; I9pUx: ManipulateUser::updateMeta(self::NOTICE_FIELD, $xMweD); goto og_Oc; eE2ZZ: xn2MU: goto I9pUx; C_bls: $xMweD = array_merge($xMweD, $JU8tX); goto O663p; w3FIJ: $JU8tX = $jfqIH->getAll(); goto Xu1Hj; Y5Obl: } public static function notice($k4mxF, $N6E3u = self::NOTICE_SUCCESS, $CDV1j = null) { self::getInstance()->add($k4mxF, $CDV1j, $N6E3u); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation;
+
+use Pmpr\Common\Foundation\Container\Container;
+use Pmpr\Common\Foundation\Decorator\DecoratorUser;
+use Pmpr\Common\Foundation\Manipulate\ManipulateFormat;
+use Pmpr\Common\Foundation\Manipulate\ManipulateUser;
+use Pmpr\Common\Foundation\Manipulate\Theme\ManipulateBootstrap;
+use Pmpr\Common\Foundation\Manipulate\Theme\ManipulateHTML;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
+
+class Notice extends Container
+{
+    const NOTICE_FIELD = "\156\x6f\x74\151\143\145\137\x6d\x65\163\163\141\147\x65\x73\x5f\x6c\x69\163\164";
+    const NOTICE_INFO = "\151\x6e\146\157";
+    const NOTICE_ERROR = "\x65\162\x72\x6f\162";
+    const NOTICE_WARNING = "\167\x61\x72\x6e\x69\x6e\x67";
+    const NOTICE_SUCCESS = "\163\165\x63\143\x65\x73\x73";
+    public function wigskegsqequoeks()
+    {
+        $this->qcsmikeggeemccuu("\x72\145\x6e\144\x65\x72\137\x6e\x6f\164\x69\143\145\x73", [$this, "\162\145\156\x64\145\162"])->qcsmikeggeemccuu("\x61\144\155\x69\156\137\156\x6f\x74\151\143\x65\163", [$this, "\167\141\151\155\167\145\141\x73\165\x69\145\x6d\x6b\x6d\x65\145"]);
+        parent::wigskegsqequoeks();
+    }
+    
+    public static function info($uamcoiueqaamsqma, $aokagokqyuysuksm = null)
+    {
+        self::ycyucwoysmwkgiui($uamcoiueqaamsqma, self::NOTICE_INFO, $aokagokqyuysuksm);
+    }
+    
+    public static function iswcokucwmiosiaq($uamcoiueqaamsqma, $aokagokqyuysuksm = null)
+    {
+        self::ycyucwoysmwkgiui($uamcoiueqaamsqma, self::NOTICE_ERROR, $aokagokqyuysuksm);
+    }
+    
+    public static function eumukgqciqgksuiq($uamcoiueqaamsqma, $aokagokqyuysuksm = null)
+    {
+        self::ycyucwoysmwkgiui($uamcoiueqaamsqma, self::NOTICE_WARNING, $aokagokqyuysuksm);
+    }
+    
+    public static function kigowwqauiumummw($uamcoiueqaamsqma, $aokagokqyuysuksm = null)
+    {
+        self::ycyucwoysmwkgiui($uamcoiueqaamsqma, self::NOTICE_SUCCESS, $aokagokqyuysuksm);
+    }
+    
+    public function get($aokagokqyuysuksm)
+    {
+        return ManipulateArray::get($this->kasiqqyyaswsgics(), $aokagokqyuysuksm, null);
+    }
+    
+    public function kasiqqyyaswsgics()
+    {
+        goto mqqsyewyymsekyai;
+        gkkagswkwmummiiy:
+        cimeeqaiweeqawam:
+        goto uwaecasqomqsismq;
+        mqqsyewyymsekyai:
+        if (DecoratorUser::ksgkoukcicwkkaum()) {
+            goto ccwikwaicwwsewyc;
+        }
+        goto emmuasmesyuaymkc;
+        eakgoqeusssawkiy:
+        oqgegyekomogicem:
+        goto ksaquyioqskqgemw;
+        wyusiimusqwqkkay:
+        if (!$megmggkiokqkcwou) {
+            goto cimeeqaiweeqawam;
+        }
+        goto osikekkwkwccuosu;
+        ksaquyioqskqgemw:
+        return $megmggkiokqkcwou;
+        goto owmmyggcqikgwmqi;
+        qwoiqiaiueeksuea:
+        $megmggkiokqkcwou = ManipulateUser::igawqaomowicuayw(self::NOTICE_FIELD);
+        goto eakgoqeusssawkiy;
+        uwaecasqomqsismq:
+        goto oqgegyekomogicem;
+        goto suweqsmuqmoqiqka;
+        emmuasmesyuaymkc:
+        $megmggkiokqkcwou = ManipulateArray::get($_COOKIE, self::NOTICE_FIELD, []);
+        goto wyusiimusqwqkkay;
+        suweqsmuqmoqiqka:
+        ccwikwaicwwsewyc:
+        goto qwoiqiaiueeksuea;
+        osikekkwkwccuosu:
+        $megmggkiokqkcwou = json_decode(stripslashes($megmggkiokqkcwou), true);
+        goto gkkagswkwmummiiy;
+        owmmyggcqikgwmqi:
+    }
+    
+    public function remove($aokagokqyuysuksm)
+    {
+        goto yumsukgwuyomocge;
+        ygmuqycgaqsukwug:
+        $this->ycasmmgsmaaumweg($wumguikkgaigkoee);
+        goto geucmycgqkuqcgss;
+        igysiemcggkiekyo:
+        uimwkmsekogcooks:
+        goto qwggsgwkeckokmce;
+        qowksiiacauekqiw:
+        if (DecoratorUser::ksgkoukcicwkkaum()) {
+            goto ocaecwowkcsoocci;
+        }
+        goto ygmuqycgaqsukwug;
+        geucmycgqkuqcgss:
+        goto wscmeqgusioeqece;
+        goto oeaccykmeaiamqkw;
+        yumsukgwuyomocge:
+        $wumguikkgaigkoee = $this->kasiqqyyaswsgics();
+        goto qsioegocesimcqee;
+        qsioegocesimcqee:
+        if (!$wumguikkgaigkoee) {
+            goto uimwkmsekogcooks;
+        }
+        goto qsewamsaqkuuowas;
+        qsewamsaqkuuowas:
+        ManipulateArray::unset($wumguikkgaigkoee, $aokagokqyuysuksm);
+        goto qowksiiacauekqiw;
+        mqmcyogeociuooau:
+        ManipulateUser::ksmqawcowkmegigw(self::NOTICE_FIELD, $wumguikkgaigkoee);
+        goto ouaomcekuycgkesk;
+        oeaccykmeaiamqkw:
+        ocaecwowkcsoocci:
+        goto mqmcyogeociuooau;
+        ouaomcekuycgkesk:
+        wscmeqgusioeqece:
+        goto igysiemcggkiekyo;
+        qwggsgwkeckokmce:
+    }
+    
+    public function waimweasuiemkmee()
+    {
+        goto ieqomucoayqoemog;
+        kauowiucwweueecy:
+        foreach ($goyemikogeuskgas as $aokagokqyuysuksm => $ycyucwoysmwkgiui) {
+            goto osumceweusuqiycu;
+            okoaqqegqeeqqsgw:
+            iikiemieyocgiswa:
+            goto cmykqwcwsgcoouiu;
+            osumceweusuqiycu:
+            $ycyucwoysmwkgiui["\151\x64"] = $aokagokqyuysuksm;
+            goto mykaamwaiguuckgu;
+            mykaamwaiguuckgu:
+            $this->sywokgmoskcocqgy($ycyucwoysmwkgiui);
+            goto okoaqqegqeeqqsgw;
+            cmykqwcwsgcoouiu:
+        }
+        goto eicgugqewsqoeqyq;
+        cmmagyiwukeyqwsy:
+        ooocyiciwokoqucy:
+        goto sicyosycsmuqsysq;
+        ieqomucoayqoemog:
+        $goyemikogeuskgas = DecoratorUser::igawqaomowicuayw(self::NOTICE_FIELD);
+        goto qwiwekqsmmeakmuw;
+        eicgugqewsqoeqyq:
+        ueqwwycwakwsqgma:
+        goto mioukcqeukuoiowc;
+        mioukcqeukuoiowc:
+        DecoratorUser::smqukgcyacswysqa(self::NOTICE_FIELD);
+        goto cmmagyiwukeyqwsy;
+        qwiwekqsmmeakmuw:
+        if (!$goyemikogeuskgas) {
+            goto ooocyiciwokoqucy;
+        }
+        goto kauowiucwweueecy;
+        sicyosycsmuqsysq:
+    }
+    
+    public static function umuecysoywoumgwo($aokagokqyuysuksm) : bool
+    {
+        return (bool) self::symcgieuakksimmu()->get($aokagokqyuysuksm);
+    }
+    
+    public function sywokgmoskcocqgy($ywmkwiwkosakssii = []) : string
+    {
+        goto wwuccwuuawkiywgk;
+        qccywycocsamgkqi:
+        qksaqkeugsqscias:
+        goto uaamwamsuakywoqc;
+        eeiweeggimkmqoqg:
+        $ycyucwoysmwkgiui = ManipulateHTML::oockkqiqsssakuug($uamcoiueqaamsqma, $iqaosyayeiuaisqi, ["\x69\x64" => $aokagokqyuysuksm, "\143\x6c\x61\x73\x73" => "\x6d\x79\x2d\62"]);
+        goto qccywycocsamgkqi;
+        qowesgcsaiysuagc:
+        $iqaosyayeiuaisqi = $ywmkwiwkosakssii["\154\145\x76\x65\x6c"];
+        goto wmmsqcgygcuuaycy;
+        cywkigiikmcqaskw:
+        return $ycyucwoysmwkgiui;
+        goto ssuagkigqokwaekc;
+        ecqkyymaqewoquuu:
+        gmowomwyecacouuw:
+        goto cywkigiikmcqaskw;
+        wwuccwuuawkiywgk:
+        $ywmkwiwkosakssii = ManipulateFormat::omaawkkwwyesqwcc($ywmkwiwkosakssii, ["\144\x69\163\155\151\x73\x73" => true, "\x6d\x65\163\x73\141\x67\145" => '', "\154\145\x76\145\x6c" => self::NOTICE_INFO, "\145\x63\x68\x6f" => true, "\x69\x64" => '']);
+        goto gameegaekuiikoww;
+        yccqswiseqwmqqyg:
+        echo $ycyucwoysmwkgiui;
+        goto ecqkyymaqewoquuu;
+        uaamwamsuakywoqc:
+        if (!$ywmkwiwkosakssii["\x65\143\x68\157"]) {
+            goto gmowomwyecacouuw;
+        }
+        goto yccqswiseqwmqqyg;
+        gameegaekuiikoww:
+        $ycyucwoysmwkgiui = '';
+        goto qowesgcsaiysuagc;
+        cmieikgaiegwmycs:
+        $uamcoiueqaamsqma = $ywmkwiwkosakssii["\155\x65\x73\163\x61\x67\145"];
+        goto aieyemueueyscaym;
+        wmmsqcgygcuuaycy:
+        $aokagokqyuysuksm = $ywmkwiwkosakssii["\151\x64"] ?: $iqaosyayeiuaisqi;
+        goto cmieikgaiegwmycs;
+        aieyemueueyscaym:
+        if (!$uamcoiueqaamsqma) {
+            goto qksaqkeugsqscias;
+        }
+        goto eeiweeggimkmqoqg;
+        ssuagkigqokwaekc:
+    }
+    
+    public function render($aokagokqyuysuksm, $ywmkwiwkosakssii = []) : string
+    {
+        goto aeagssqaiwooeoei;
+        qiuucioewqyqqwok:
+        if (DecoratorUser::ksgkoukcicwkkaum()) {
+            goto usuaqaeacooqoqeg;
+        }
+        goto cekiucuusaiieqyy;
+        figsecwawwycsiia:
+        iukwaymqsaukgucc:
+        goto ioqcemkiiscgiseo;
+        aaayqmggygqagqes:
+        if (!$uamcoiueqaamsqma) {
+            goto uumwyacekksycmcy;
+        }
+        goto coukaukykckssymw;
+        uiagegwaiiacsqoo:
+        uumwyacekksycmcy:
+        goto qmygamkeyyeweaug;
+        gcgmcwkcywoeqyua:
+        return $ycyucwoysmwkgiui;
+        goto gqmomswmsooweyco;
+        cekiucuusaiieqyy:
+        $this->ycasmmgsmaaumweg([]);
+        goto wscecwieywoacuyc;
+        aeagssqaiwooeoei:
+        $ycyucwoysmwkgiui = '';
+        goto cusmimwmwgscqeku;
+        gogmaqgwwsoekumo:
+        foreach ($wumguikkgaigkoee as $aokagokqyuysuksm => $uamcoiueqaamsqma) {
+            $ycyucwoysmwkgiui = $this->sagusgigmkeysock($aokagokqyuysuksm, $uamcoiueqaamsqma, $ywmkwiwkosakssii);
+            mskkcyugwccmgmue:
+        }
+        goto wucqauasuekkoayw;
+        eygewmcawygoamqm:
+        $ycyucwoysmwkgiui = $this->sagusgigmkeysock($aokagokqyuysuksm, $uamcoiueqaamsqma, $ywmkwiwkosakssii);
+        goto uiagegwaiiacsqoo;
+        iqcsqkgycusqgswk:
+        cwqecoyeuseoiyee:
+        goto iueqqswmweckwaui;
+        ioqcemkiiscgiseo:
+        $uamcoiueqaamsqma = $this->get($aokagokqyuysuksm);
+        goto aaayqmggygqagqes;
+        wekieycqkqmgagyq:
+        if (!$wumguikkgaigkoee) {
+            goto cwqecoyeuseoiyee;
+        }
+        goto gogmaqgwwsoekumo;
+        qmygamkeyyeweaug:
+        oukcgieuakaagsaw:
+        goto gcgmcwkcywoeqyua;
+        cusmimwmwgscqeku:
+        if ($aokagokqyuysuksm) {
+            goto iukwaymqsaukgucc;
+        }
+        goto egcqemgwyuoosmuq;
+        coukaukykckssymw:
+        $this->remove($aokagokqyuysuksm);
+        goto eygewmcawygoamqm;
+        wscecwieywoacuyc:
+        goto icaaymowyygqqwsa;
+        goto mooukkaawioceqgu;
+        mooukkaawioceqgu:
+        usuaqaeacooqoqeg:
+        goto gaweywgyiqymqqae;
+        iueqqswmweckwaui:
+        goto oukcgieuakaagsaw;
+        goto figsecwawwycsiia;
+        ecssgmuciqiskkme:
+        icaaymowyygqqwsa:
+        goto iqcsqkgycusqgswk;
+        wucqauasuekkoayw:
+        wigkaokkwyecekic:
+        goto qiuucioewqyqqwok;
+        egcqemgwyuoosmuq:
+        $wumguikkgaigkoee = $this->kasiqqyyaswsgics();
+        goto wekieycqkqmgagyq;
+        gaweywgyiqymqqae:
+        DecoratorUser::smqukgcyacswysqa(self::NOTICE_FIELD);
+        goto ecssgmuciqiskkme;
+        gqmomswmsooweyco:
+    }
+    
+    private function sagusgigmkeysock($aokagokqyuysuksm, $uamcoiueqaamsqma, $ywmkwiwkosakssii) : ?string
+    {
+        goto kiagckcoykiwemaq;
+        oucyomommkeoegkm:
+        $uamcoiueqaamsqma = $this->sywokgmoskcocqgy(ManipulateFormat::omaawkkwwyesqwcc($ywmkwiwkosakssii, ["\151\x64" => $aokagokqyuysuksm, "\154\x65\x76\x65\154" => ManipulateArray::get($uamcoiueqaamsqma, "\154\x65\x76\x65\x6c", self::NOTICE_INFO), "\x6d\x65\163\163\141\147\x65" => ManipulateArray::get($uamcoiueqaamsqma, "\x6d\145\x73\x73\141\147\145", self::NOTICE_INFO)]));
+        goto quwomueueaekwyqo;
+        ymgmkyymcokcqcge:
+        return $uamcoiueqaamsqma;
+        goto qcacqoowkyyyeies;
+        kiagckcoykiwemaq:
+        if (!$uamcoiueqaamsqma) {
+            goto scqewiwsusqceycg;
+        }
+        goto oucyomommkeoegkm;
+        quwomueueaekwyqo:
+        scqewiwsusqceycg:
+        goto ymgmkyymcokcqcge;
+        qcacqoowkyyyeies:
+    }
+    
+    private function ycasmmgsmaaumweg(array $wumguikkgaigkoee = [])
+    {
+        setcookie(self::NOTICE_FIELD, json_encode($wumguikkgaigkoee), 0, COOKIEPATH, COOKIE_DOMAIN, false, false);
+    }
+    
+    public static function add($uamcoiueqaamsqma, $aokagokqyuysuksm, $iqaosyayeiuaisqi)
+    {
+        goto aeksiqkwsmsqqkem;
+        iawkamauikumcukc:
+        soacwieaayswiusy:
+        goto cmoyaiiqasygkgwo;
+        skygcamewiewwsoe:
+        ukucugmwieqomaii:
+        goto giiysqgsikwwiqoe;
+        cawauskkiaoeqigk:
+        $owgumcsyqsamiemg->ycasmmgsmaaumweg($wumguikkgaigkoee);
+        goto wuewsqueiuoiwmqw;
+        cmoyaiiqasygkgwo:
+        ManipulateUser::ksmqawcowkmegigw(self::NOTICE_FIELD, $wumguikkgaigkoee);
+        goto skygcamewiewwsoe;
+        iuweayiqouuegcgq:
+        $wumguikkgaigkoee = array_merge($wumguikkgaigkoee, $megmggkiokqkcwou);
+        goto mqauewesgmogaowc;
+        wawekyqmeyuiuuwo:
+        $megmggkiokqkcwou = $owgumcsyqsamiemg->kasiqqyyaswsgics();
+        goto mqwciycqokgiaask;
+        aeksiqkwsmsqqkem:
+        $owgumcsyqsamiemg = self::symcgieuakksimmu();
+        goto swcoukyskageuyec;
+        mqwciycqokgiaask:
+        if (!$megmggkiokqkcwou) {
+            goto mgwwogkgkaycgokq;
+        }
+        goto iuweayiqouuegcgq;
+        wuewsqueiuoiwmqw:
+        goto ukucugmwieqomaii;
+        goto iawkamauikumcukc;
+        ioyeuscyccuwmqqs:
+        if (DecoratorUser::ksgkoukcicwkkaum()) {
+            goto soacwieaayswiusy;
+        }
+        goto cawauskkiaoeqigk;
+        mqauewesgmogaowc:
+        mgwwogkgkaycgokq:
+        goto ioyeuscyccuwmqqs;
+        swcoukyskageuyec:
+        $wumguikkgaigkoee = [$aokagokqyuysuksm => ["\x6c\x65\x76\145\x6c" => $iqaosyayeiuaisqi, "\x6d\145\x73\x73\141\x67\x65" => $uamcoiueqaamsqma]];
+        goto wawekyqmeyuiuuwo;
+        giiysqgsikwwiqoe:
+    }
+    
+    public static function ycyucwoysmwkgiui($uamcoiueqaamsqma, $iqaosyayeiuaisqi = self::NOTICE_SUCCESS, $aokagokqyuysuksm = null)
+    {
+        self::symcgieuakksimmu()->add($uamcoiueqaamsqma, $aokagokqyuysuksm, $iqaosyayeiuaisqi);
+    }
+}

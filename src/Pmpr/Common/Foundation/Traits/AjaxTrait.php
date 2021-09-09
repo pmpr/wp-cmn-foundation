@@ -1,2 +1,51 @@
 <?php
- namespace Pmpr\Common\Foundation\Traits; use Pmpr\Common\Foundation\Manipulate\ManipulateAjax; trait AjaxTrait { public function isValidAjaxRequest(&$W16SI, $mi3kO = self::AJAX_NONCE_KEY) : bool { goto obrIO; cHbh4: return $llbsT; goto hS42u; zs4fv: QSqVj: goto cdov0; T1MJH: goto bXWk1; goto zs4fv; obrIO: $llbsT = false; goto Ulhir; vFfH9: $llbsT = true; goto T1MJH; oNuRe: bXWk1: goto cHbh4; Ulhir: if (!ManipulateAjax::checkReferer(self::AJAX_NONCE, $mi3kO)) { goto QSqVj; } goto vFfH9; cdov0: $W16SI = __("\x52\x65\x71\x75\145\x73\164\40\151\x73\x20\156\157\164\40\x76\x61\154\x69\144\x2c\x20\160\x6c\x65\x61\163\x65\40\162\145\x6c\157\141\x64\40\x70\141\147\x65\40\x61\x6e\x64\40\164\162\x79\40\141\x67\x61\x69\156\x2e", PR__CMN__FOUNDATION); goto oNuRe; hS42u: } public final function sendAjaxResponse($xo2mD, $oLyzn) { ManipulateAjax::sendResponse($oLyzn, $xo2mD); } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Traits;
+
+use Pmpr\Common\Foundation\Manipulate\ManipulateAjax;
+
+trait AjaxTrait
+{
+    
+    public function miueaekaaugaccmg(&$iswcokucwmiosiaq, $aiowsaccomcoikus = self::AJAX_NONCE_KEY) : bool
+    {
+        goto sagosckgcimciqya;
+        eugsieawaqqskgam:
+        ucwcmgeksyiggaqi:
+        goto eawgawckwmwauyoe;
+        moqoommaoiemcoqk:
+        $eisqsskqimiigkay = true;
+        goto cqiuouaccqyaiogc;
+        eawgawckwmwauyoe:
+        return $eisqsskqimiigkay;
+        goto qqucyysuwawsqsyi;
+        wcwsogoecyummieu:
+        owqsmgycisgmmasg:
+        goto ycaqgqcgsaogwqey;
+        sagosckgcimciqya:
+        $eisqsskqimiigkay = false;
+        goto ysgecwqkekegmywg;
+        cqiuouaccqyaiogc:
+        goto ucwcmgeksyiggaqi;
+        goto wcwsogoecyummieu;
+        ysgecwqkekegmywg:
+        if (!ManipulateAjax::wqsmsuyggkkyyocc(self::AJAX_NONCE, $aiowsaccomcoikus)) {
+            goto owqsmgycisgmmasg;
+        }
+        goto moqoommaoiemcoqk;
+        ycaqgqcgsaogwqey:
+        $iswcokucwmiosiaq = __("\122\145\161\x75\145\163\x74\40\151\x73\x20\x6e\x6f\164\x20\166\141\x6c\151\144\x2c\40\x70\x6c\x65\x61\163\x65\40\162\x65\x6c\x6f\x61\x64\x20\x70\x61\x67\x65\x20\141\x6e\x64\x20\x74\x72\x79\40\141\x67\141\x69\x6e\56", PR__CMN__FOUNDATION);
+        goto eugsieawaqqskgam;
+        qqucyysuwawsqsyi:
+    }
+    
+    public final function uaggqsoeugksgooc($occymigcemkqucuw, $keccaugmemegoimu)
+    {
+        ManipulateAjax::imkyucqsciqykkee($keccaugmemegoimu, $occymigcemkqucuw);
+    }
+}

@@ -1,2 +1,98 @@
 <?php
- namespace Pmpr\Common\Foundation\Manipulate; use Pmpr\Common\Foundation\Interfaces\ConstantInterface; use ReflectionClass; use ReflectionException; abstract class Manipulate implements ConstantInterface { public static function hasConstant(string $vPl9z) : bool { return @defined($vPl9z); } public static function setConstant(string $vPl9z, $yjbyt) { goto WQXvq; p6h2I: return $GZ2SR; goto JNTl9; WQXvq: if (!self::hasConstant($vPl9z)) { goto BcIbv; } goto X_L26; X_L26: $GZ2SR = self::getConstant($vPl9z); goto eUzNl; xmEVV: $GZ2SR = @define($vPl9z, $yjbyt); goto uDnin; bigvZ: BcIbv: goto xmEVV; eUzNl: goto CPvCe; goto bigvZ; uDnin: CPvCe: goto p6h2I; JNTl9: } public static function getConstant(string $vPl9z, $Ql_ZF = null, $jg5rc = null) { goto ejdD4; Prv9o: try { $TE9SX = new ReflectionClass($jg5rc); $g_6fU = $TE9SX->getConstant($vPl9z); } catch (ReflectionException $gsWwP) { $g_6fU = $Ql_ZF; } goto McOpc; Uao2Z: return $g_6fU; goto IYZbT; nXalv: TcJEs: goto Uao2Z; xHVHW: if (self::hasConstant($vPl9z)) { goto M4N82; } goto ngH2a; McOpc: goto TcJEs; goto SMhMV; SMhMV: M4N82: goto xNI6H; ngH2a: $g_6fU = $Ql_ZF; goto zrtn1; zrtn1: goto TcJEs; goto uMeKN; xNI6H: $g_6fU = constant($vPl9z); goto nXalv; ejdD4: if ($jg5rc) { goto ib_IJ; } goto xHVHW; uMeKN: ib_IJ: goto Prv9o; IYZbT: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Manipulate;
+
+use Pmpr\Common\Foundation\Interfaces\ConstantInterface;
+use ReflectionClass;
+use ReflectionException;
+
+abstract class Manipulate implements ConstantInterface
+{
+    
+    public static function qmmaqwgyasgicmec(string $ymqmyyeuycgmigyo) : bool
+    {
+        return @defined($ymqmyyeuycgmigyo);
+    }
+    
+    public static function wwckmeoskuagomki(string $ymqmyyeuycgmigyo, $eqgoocgaqwqcimie)
+    {
+        goto syauycikyosiscgs;
+        uiyuycigkskokcco:
+        $ksaameoqigiaoigg = @define($ymqmyyeuycgmigyo, $eqgoocgaqwqcimie);
+        goto suqyiooacuiiqcuk;
+        wgiakoeckyswemak:
+        faiesskquaeiqqom:
+        goto uiyuycigkskokcco;
+        iqkgeamgsuwqkckg:
+        goto wayoumqqasqeowsk;
+        goto wgiakoeckyswemak;
+        iqiwskswayisages:
+        $ksaameoqigiaoigg = self::cmaecekuqkwmemms($ymqmyyeuycgmigyo);
+        goto iqkgeamgsuwqkckg;
+        suqyiooacuiiqcuk:
+        wayoumqqasqeowsk:
+        goto iygakaaakekgyeqy;
+        iygakaaakekgyeqy:
+        return $ksaameoqigiaoigg;
+        goto ewqwyuuyegqukcmw;
+        syauycikyosiscgs:
+        if (!self::qmmaqwgyasgicmec($ymqmyyeuycgmigyo)) {
+            goto faiesskquaeiqqom;
+        }
+        goto iqiwskswayisages;
+        ewqwyuuyegqukcmw:
+    }
+    
+    public static function cmaecekuqkwmemms(string $ymqmyyeuycgmigyo, $ggauoeuaesiymgee = null, $egkyssmuqcwaciya = null)
+    {
+        goto mumcqcssasmyqmca;
+        mumcqcssasmyqmca:
+        if ($egkyssmuqcwaciya) {
+            goto yaioeuewuagwmaym;
+        }
+        goto iiugkqmswuikwcuo;
+        sckagcuweuycciog:
+        suuocycsksmcsqsm:
+        goto yimcyeuemqyssysu;
+        aocacgkcisiuosug:
+        giuwumskimssakwo:
+        goto csmwsuakqgukaqkm;
+        ggwgiusgggqqckqw:
+        yaioeuewuagwmaym:
+        goto ioecigquiawyecis;
+        ioecigquiawyecis:
+        try {
+            $oqkmoekaagukcwia = new ReflectionClass($egkyssmuqcwaciya);
+            $gqkqacakewkecqie = $oqkmoekaagukcwia->cmaecekuqkwmemms($ymqmyyeuycgmigyo);
+        } catch (ReflectionException $wgaoewqkwgomoaai) {
+            $gqkqacakewkecqie = $ggauoeuaesiymgee;
+        }
+        goto aikomgoeseyekwqa;
+        wycsycuaymkqqgce:
+        goto suuocycsksmcsqsm;
+        goto ggwgiusgggqqckqw;
+        yimcyeuemqyssysu:
+        return $gqkqacakewkecqie;
+        goto towiyceuykgmeooc;
+        iiugkqmswuikwcuo:
+        if (self::qmmaqwgyasgicmec($ymqmyyeuycgmigyo)) {
+            goto giuwumskimssakwo;
+        }
+        goto sweyywawiwkgsqkw;
+        aikomgoeseyekwqa:
+        goto suuocycsksmcsqsm;
+        goto aocacgkcisiuosug;
+        sweyywawiwkgsqkw:
+        $gqkqacakewkecqie = $ggauoeuaesiymgee;
+        goto wycsycuaymkqqgce;
+        csmwsuakqgukaqkm:
+        $gqkqacakewkecqie = constant($ymqmyyeuycgmigyo);
+        goto sckagcuweuycciog;
+        towiyceuykgmeooc:
+    }
+}

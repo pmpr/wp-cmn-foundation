@@ -1,2 +1,246 @@
 <?php
- namespace Pmpr\Common\Foundation\ORM; use Pmpr\Common\Foundation\Decorator\DecoratorUser; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; use Pmpr\Common\Foundation\ORM\DB\Model; use Illuminate\Database\Eloquent\Collection; class Form extends Common { protected ?Model $model = null; public function getModel() : ?Model { return $this->model; } public function setModel(Model $igeY_) : self { $this->model = $igeY_; return $this; } public function addActions() { $this->addAction("\x61\144\x6d\151\x6e\137\151\x6e\151\164", [$this, "\141\144\x6d\151\156\111\x6e\x69\164"], 0, 1)->addAction("\x61\144\144\x5f\155\145\x74\141\137\x62\x6f\x78\x65\163", [$this, "\x61\x64\144\x4d\x65\164\141\x42\157\170\x65\x73"], 10, 2)->addAction($this->generateHook("\163\141\166\x65\137\x6f\142\x6a\145\x63\164", Model::class), [$this, "\x73\141\x76\145\x4f\142\152\x65\143\x74"], 10, 2); parent::addActions(); } public function addFilters() { $this->addFilter("\x63\x6d\142\x32\x5f\157\166\x65\162\162\x69\x64\x65\x5f\155\x65\x74\141\137\166\x61\154\165\x65", [$this, "\x6f\x76\145\x72\162\151\144\x65\x4d\x65\x74\141\126\x61\x6c\x75\145"], 10, 4); parent::addFilters(); } public function adminInit() { goto NMQUl; Ue7hM: EO1XP: goto VtGv8; nTGyi: if (!($vs_36 && ($aZnoR = $this->getModel()->getView("\145\144\151\x74")))) { goto zuwNH; } goto KVYKc; B6blr: $cmb2Override = false; goto WsQyw; KVYKc: if (!($vs_36 === $aZnoR->getSlug())) { goto DS9LW; } goto Zj8Ru; Zj8Ru: $cmb2Override = true; goto Zir0X; WsQyw: if (!($pagenow === "\x61\144\x6d\x69\156\x2e\160\x68\x70")) { goto EO1XP; } goto yiXEi; Zir0X: DS9LW: goto AggKh; AggKh: zuwNH: goto Ue7hM; yiXEi: $vs_36 = ManipulateArray::get($_GET, "\x70\141\x67\x65"); goto nTGyi; NMQUl: global $cmb2Override, $pagenow; goto B6blr; VtGv8: } public function saveObject($QGv_b, $QsfZH) { goto xAdWq; osMby: if (!class_exists("\x43\x4d\x42\x32")) { goto FM8Iz; } goto zQo6G; Gi5y1: $cmb2Override = true; goto bVB1L; PyD27: FM8Iz: goto ivxN9; zQo6G: if (!DecoratorUser::currentCan("\x65\x64\151\164\137\151\x74\145\x6d", $QGv_b)) { goto pb560; } goto Gi5y1; xAdWq: global $cmb2Override; goto osMby; Ltxjw: uw5BA: goto NUmk5; NUmk5: pb560: goto PyD27; bVB1L: foreach (CMB2_Boxes::get_all() as $tx846) { goto ZPsL9; ZPsL9: if (!in_array($this->getModel()->getRegisterName(), $tx846->meta_box["\x6f\142\x6a\x65\143\x74\137\164\171\160\145\163"])) { goto hK9ac; } goto P_KO1; inbMZ: fAGDk: goto pEy_R; P_KO1: $tx846->save_fields($QGv_b, "\160\157\163\x74", $_POST); goto KryWO; KryWO: hK9ac: goto inbMZ; pEy_R: } goto Ltxjw; ivxN9: } public function addMetaBoxes($o0e6r, $QsfZH) { goto NA3yH; NA3yH: global $cmb2Override; goto kSxHz; kSxHz: if (!$QsfZH) { goto eRtkh; } goto MnRwt; MnRwt: $ynehd = $this->getModel()->getPrimaryKey(); goto t8ELg; I23Mg: $cmb2Override = true; goto XFwix; XFwix: eRtkh: goto bBSel; t8ELg: $_REQUEST["\160\157\x73\x74"] = $QsfZH->{$ynehd}; goto I23Mg; bBSel: } public function overrideMetaValue($yjbyt, $CDV1j, $DrjAW, $mi3kO) { goto iNfF_; hROFR: $yjbyt = $mELn0; goto RS8mr; RS8mr: CQap_: goto kKkTG; p9kDb: return $yjbyt; goto YBUFR; iNfF_: global $cmb2Override; goto UOtoo; YBUFR: dRo0U: goto HnR21; w421d: $yjbyt = ManipulateArray::get($QsfZH, $DrjAW["\146\151\145\154\144\137\151\144"]); goto PxBsA; HnR21: if (!$mi3kO->group) { goto lK2OL; } goto Ydh1m; aeMQS: if (!ManipulateArray::get($QsfZH, $DrjAW["\146\x69\145\x6c\x64\137\151\144"])) { goto ZeISI; } goto w421d; GI2Pr: lK2OL: goto lpkLM; kKkTG: ZeISI: goto GI2Pr; Ydh1m: $QsfZH = $this->getModel()::find($CDV1j); goto aeMQS; PxBsA: if (!$yjbyt instanceof Collection) { goto CQap_; } goto yvY2F; B9j0h: RDc3E: goto hROFR; yvY2F: $mELn0 = []; goto qpJqM; UOtoo: if (!($cmb2Override !== true)) { goto dRo0U; } goto p9kDb; qpJqM: foreach ($yjbyt as $igeY_) { goto AnH73; AnH73: $ynehd = $igeY_->getPrimaryKey(); goto ULD_A; hGc21: CrCMt: goto Wr48D; ULD_A: $mELn0[] = (array) $igeY_->getBuilder()->find($igeY_->{$ynehd}); goto hGc21; Wr48D: } goto B9j0h; lpkLM: return $yjbyt; goto Lu2IG; Lu2IG: } }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\ORM;
+
+use CMB2_Boxes;
+use Pmpr\Common\Foundation\Decorator\DecoratorUser;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
+use Pmpr\Common\Foundation\ORM\DB\Model;
+use Illuminate\Database\Eloquent\Collection;
+
+class Form extends Common
+{
+    
+    protected ?Model $model = null;
+    
+    public function mgogaykgkoogasim() : ?Model
+    {
+        return $this->model;
+    }
+    
+    public function asumqyigwsqmyeoc(Model $meywaqqsugaoeyys) : self
+    {
+        $this->model = $meywaqqsugaoeyys;
+        return $this;
+    }
+    public function wigskegsqequoeks()
+    {
+        $this->qcsmikeggeemccuu("\x61\144\155\151\156\x5f\x69\156\x69\164", [$this, "\171\145\x79\x69\147\165\171\x65\x67\x6d\x6d\171\165\x73\145\141"], 0)->qcsmikeggeemccuu("\x61\x64\x64\x5f\155\x65\x74\141\137\x62\x6f\x78\145\x73", [$this, "\x6d\x75\147\x63\x63\145\151\x77\x6f\163\171\x63\x69\x77\157\x73"], 10, 2)->qcsmikeggeemccuu($this->ygyygikyocoymgaw("\x73\x61\x76\x65\x5f\x6f\x62\152\145\143\x74", Model::class), [$this, "\x67\x73\x65\x67\x73\x69\157\143\161\x6d\163\157\x61\171\151\151"], 10, 2);
+        parent::wigskegsqequoeks();
+    }
+    public function kgquecmsgcouyaya()
+    {
+        $this->cecaguuoecmccuse("\x63\x6d\142\x32\137\157\x76\x65\162\162\x69\x64\x65\137\x6d\x65\x74\x61\x5f\x76\141\154\x75\145", [$this, "\x61\x67\165\143\171\x69\163\151\153\x63\x73\155\145\x65\x75\x67"], 10, 4);
+        parent::kgquecmsgcouyaya();
+    }
+    public function yeyiguyegmmyusea()
+    {
+        goto wcuqgoiokweuwycq;
+        ywyceqcyssuuyauc:
+        if (!($suaemuyiacqyugsm === $qqomumygoacsmsie->aqcogscycyycgkuq())) {
+            goto cmwaakkwwqameeec;
+        }
+        goto gucokiskmccmsaac;
+        gucokiskmccmsaac:
+        $cmb2Override = true;
+        goto uokwiwsewewgcocy;
+        wcuqgoiokweuwycq:
+        global $cmb2Override, $pagenow;
+        goto caskecmuwociuumq;
+        uokwiwsewewgcocy:
+        cmwaakkwwqameeec:
+        goto qyeomiwmooookysu;
+        uckqwisqmyeuegei:
+        $suaemuyiacqyugsm = ManipulateArray::get($_GET, "\x70\x61\147\145");
+        goto gesaagokeamiwuws;
+        qcgyuksgqucyquwi:
+        
+        if (!($pagenow === "\141\x64\x6d\x69\x6e\x2e\x70\x68\160")) {
+            goto cecoqgqcckqoouwy;
+        }
+        goto uckqwisqmyeuegei;
+        caskecmuwociuumq:
+        
+        $cmb2Override = false;
+        goto qcgyuksgqucyquwi;
+        gesaagokeamiwuws:
+        if (!($suaemuyiacqyugsm && ($qqomumygoacsmsie = $this->mgogaykgkoogasim()->cgswceaawqgeskua("\x65\x64\x69\x74")))) {
+            goto ykgkuccgawoyquga;
+        }
+        goto ywyceqcyssuuyauc;
+        qyeomiwmooookysu:
+        ykgkuccgawoyquga:
+        goto oeoyiakocyacqsys;
+        oeoyiakocyacqsys:
+        cecoqgqcckqoouwy:
+        goto osamucgweicwoiqy;
+        osamucgweicwoiqy:
+    }
+    
+    public function gsegsiocqmsoayii($kqokimuosyuyyucg, $mksyucucyswaukig)
+    {
+        goto sgqackwokosksyua;
+        sgqackwokosksyua:
+        global $cmb2Override;
+        goto kiwacoqesuqmyiiu;
+        aimwoikqsqkyicsu:
+        if (!DecoratorUser::scmcyesmmikkucie("\x65\144\x69\x74\x5f\x69\164\x65\x6d", $kqokimuosyuyyucg)) {
+            goto iiwuqoagoqgmwwiq;
+        }
+        goto qiggceewmyagkisq;
+        kiwacoqesuqmyiiu:
+        
+        if (!class_exists("\103\x4d\102\62")) {
+            goto esewmcieucesaqcw;
+        }
+        goto aimwoikqsqkyicsu;
+        cmqmcaowowcccgka:
+        goemggymkikoquwi:
+        goto imcseqowgomyokwi;
+        semwcosqeukmgoey:
+        esewmcieucesaqcw:
+        goto oeyoiicmckkgoyqg;
+        imcseqowgomyokwi:
+        iiwuqoagoqgmwwiq:
+        goto semwcosqeukmgoey;
+        qiggceewmyagkisq:
+        $cmb2Override = true;
+        goto yaieemqskkgmcqou;
+        yaieemqskkgmcqou:
+        foreach (CMB2_Boxes::get_all() as $scegeeyqweaksmki) {
+            goto ycqcgaauyqmkwskc;
+            ycqcgaauyqmkwskc:
+            if (!in_array($this->mgogaykgkoogasim()->miwqiiqeegeqcwis(), $scegeeyqweaksmki->meta_box["\x6f\142\x6a\145\x63\x74\x5f\164\x79\160\x65\x73"])) {
+                goto quowmcomwmsmugqe;
+            }
+            goto gkaayykiiqqogeiw;
+            saoickmcegceesyw:
+            eosiakwgiemwwqwy:
+            goto quumuskukkcuuciu;
+            qwsmwwskogygagea:
+            quowmcomwmsmugqe:
+            goto saoickmcegceesyw;
+            gkaayykiiqqogeiw:
+            $scegeeyqweaksmki->save_fields($kqokimuosyuyyucg, "\160\x6f\163\164", $_POST);
+            goto qwsmwwskogygagea;
+            quumuskukkcuuciu:
+        }
+        goto cmqmcaowowcccgka;
+        oeyoiicmckkgoyqg:
+    }
+    
+    public function mugcceiwosyciwos($syeseoiyagmgumcy, $mksyucucyswaukig)
+    {
+        goto aqyweyyyygygswmy;
+        awwyuikkmaaomkqc:
+        if (!$mksyucucyswaukig) {
+            goto owkgksuymewqqiwu;
+        }
+        goto imquocywcscomayo;
+        qkusmocauegwwqwy:
+        
+        $cmb2Override = true;
+        goto qwwmqqkoeuywmqys;
+        qwwmqqkoeuywmqys:
+        
+        
+        goto soqakmcacqiqamku;
+        soqakmcacqiqamku:
+        owkgksuymewqqiwu:
+        goto ciksycqiaaueqaaq;
+        aqyweyyyygygswmy:
+        global $cmb2Override;
+        goto awwyuikkmaaomkqc;
+        imquocywcscomayo:
+        $ceiwsaacewygcsqg = $this->mgogaykgkoogasim()->kumuygiiqswoyasy();
+        goto gammkicacakosigu;
+        gammkicacakosigu:
+        
+        $_REQUEST["\160\x6f\x73\x74"] = $mksyucucyswaukig->{$ceiwsaacewygcsqg};
+        goto qkusmocauegwwqwy;
+        ciksycqiaaueqaaq:
+    }
+    
+    public function agucyisikcsmeeug($eqgoocgaqwqcimie, $aokagokqyuysuksm, $ywmkwiwkosakssii, $aiowsaccomcoikus)
+    {
+        goto cegokyqcmuuwyoey;
+        caccouegecmukqci:
+        if (!$aiowsaccomcoikus->group) {
+            goto kimwcesmkuqqyamq;
+        }
+        goto osouwwksqimikqqo;
+        qqywgucwkcwwwika:
+        return $eqgoocgaqwqcimie;
+        goto aickummaecoksgec;
+        cegokyqcmuuwyoey:
+        global $cmb2Override;
+        goto yayicayasmkmsemm;
+        eigusiimieqkeiuo:
+        foreach ($eqgoocgaqwqcimie as $meywaqqsugaoeyys) {
+            goto kucymsiiugmiooyo;
+            auakugikcequsiia:
+            
+            $uomewyckeuqoqocu[] = (array) $meywaqqsugaoeyys->gqaysymikgeawkqa()->ksiyqouuaoymsycg($meywaqqsugaoeyys->{$ceiwsaacewygcsqg});
+            goto igsweakykqomoqgi;
+            igsweakykqomoqgi:
+            cseucimaukwaskwk:
+            goto kqkcowkuqsuemmmc;
+            kucymsiiugmiooyo:
+            $ceiwsaacewygcsqg = $meywaqqsugaoeyys->kumuygiiqswoyasy();
+            goto auakugikcequsiia;
+            kqkcowkuqsuemmmc:
+        }
+        goto qiimegquckqywkaq;
+        iceweuyyswquiiea:
+        $eqgoocgaqwqcimie = $uomewyckeuqoqocu;
+        goto ymkwkqaswwcwaaog;
+        ymkwkqaswwcwaaog:
+        caeiwemymyceqqei:
+        goto rwekqsecucoaeyua;
+        ugiuakmiswagycwy:
+        kimwcesmkuqqyamq:
+        goto qqywgucwkcwwwika;
+        kaimmgsyuygocsos:
+        $uomewyckeuqoqocu = [];
+        goto eigusiimieqkeiuo;
+        qcgekwgksmkoamik:
+        return $eqgoocgaqwqcimie;
+        goto ekykiumoyeyamsew;
+        akqkquwcomkgeqcy:
+        $eqgoocgaqwqcimie = ManipulateArray::get($mksyucucyswaukig, $ywmkwiwkosakssii["\x66\x69\x65\154\144\137\x69\144"]);
+        goto kiaguokkqkaokqqw;
+        osouwwksqimikqqo:
+        $mksyucucyswaukig = $this->mgogaykgkoogasim()->cyyiiykmaeuqqgok($aokagokqyuysuksm);
+        goto icsukicuomwmqiyc;
+        rwekqsecucoaeyua:
+        ogwmeoaswuqwamim:
+        goto ugiuakmiswagycwy;
+        qiimegquckqywkaq:
+        meueuqeagkwkoiuk:
+        goto iceweuyyswquiiea;
+        ekykiumoyeyamsew:
+        ecoygmauwycmweyq:
+        goto caccouegecmukqci;
+        icsukicuomwmqiyc:
+        if (!ManipulateArray::get($mksyucucyswaukig, $ywmkwiwkosakssii["\146\x69\x65\154\x64\x5f\x69\x64"])) {
+            goto ogwmeoaswuqwamim;
+        }
+        goto akqkquwcomkgeqcy;
+        kiaguokkqkaokqqw:
+        if (!$eqgoocgaqwqcimie instanceof Collection) {
+            goto caeiwemymyceqqei;
+        }
+        goto kaimmgsyuygocsos;
+        yayicayasmkmsemm:
+        if (!($cmb2Override !== true)) {
+            goto ecoygmauwycmweyq;
+        }
+        goto qcgekwgksmkoamik;
+        aickummaecoksgec:
+    }
+}

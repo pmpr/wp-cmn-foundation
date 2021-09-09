@@ -1,2 +1,216 @@
 <?php
- namespace Pmpr\Common\Foundation\Process; use Pmpr\Common\Foundation\Container\Container; use Pmpr\Common\Foundation\Decorator\DecoratorQuery; use Pmpr\Common\Foundation\Manipulate\ManipulateAjax; use WP_Error; abstract class Async extends Container { protected ?string $prefix = "\x77\160"; protected ?string $action = "\x61\163\x79\x6e\x63\137\x72\145\x71\165\x65\x73\x74"; protected ?string $identifier = ''; protected ?array $data = []; public function getPrefix() : ?string { return $this->prefix; } public function getIdentifier() : ?string { return $this->identifier; } public function setIdentifier(string $jbxS5) : self { $this->identifier = $jbxS5; return $this; } public function getAction() : ?string { return $this->action; } public function setAction(string $KcJWJ) : self { $this->action = $KcJWJ; return $this; } public function getData() : array { return $this->data; } public function setData(array $vCZSL) : self { $this->data = $vCZSL; return $this; } public function __construct() { $this->setIdentifier($this->getPrefix() . "\x5f" . $this->getAction()); parent::__construct(); } public function addActions() { $this->addBothAjaxAction($this->getIdentifier(), [$this, "\x6d\141\x79\x62\x65\110\x61\156\x64\154\145"]); parent::addActions(); } public function dispatch() { goto CXQv4; JV8Wa: BbW_Y: goto v92dO; v92dO: return $oLyzn; goto QsS9Q; CXQv4: $dyyPs = DecoratorQuery::addArg($this->getQueryArgs(), $this->getQueryUrl()); goto q4o9C; UmvO9: if (!is_wp_error($oLyzn)) { goto BbW_Y; } goto zjW50; zjW50: $this->errorLog("\x50\162\157\x63\145\x73\163\40\144\151\x73\x70\x61\x74\x63\x68\x20\x69\163\x20\146\x61\151\x6c\x65\144\x3a\40{$oLyzn->get_error_message()}"); goto JV8Wa; q4o9C: $oLyzn = wp_remote_post(esc_url_raw($dyyPs), $this->getPostArgs()); goto UmvO9; QsS9Q: } public function maybeHandle() { goto dQPQP; d2Xil: if (!ManipulateAjax::checkReferer($this->getIdentifier(), "\156\157\156\143\x65")) { goto wNCU5; } goto mbvwy; jRZpS: wp_die(); goto m01r6; iVked: wNCU5: goto jRZpS; mbvwy: $this->handle(); goto iVked; dQPQP: session_write_close(); goto d2Xil; m01r6: } protected function getPostArgs() { goto pWmNP; bdfuj: goto wypZz; goto KiAZa; BGOG5: $DrjAW = ["\x62\x6f\144\x79" => $this->getData(), "\164\151\x6d\x65\157\165\x74" => 0.01, "\x63\x6f\157\x6b\x69\x65\163" => $_COOKIE, "\x62\x6c\x6f\x63\x6b\x69\x6e\147" => false, "\163\x73\154\x76\x65\x72\151\146\x79" => $this->applyFilters("\x68\164\164\160\x73\x5f\154\157\x63\x61\x6c\x5f\x73\x73\x6c\137\166\145\x72\151\146\171", false)]; goto bdfuj; pWmNP: if (isset($this->postArgs)) { goto lC05w; } goto BGOG5; fFif_: return $this->applyFilters("{$this->getIdentifier()}\137\160\x6f\x73\x74\x5f\141\162\x67\163", $DrjAW); goto lQ3jn; KiAZa: lC05w: goto k_JAP; tpodB: wypZz: goto fFif_; k_JAP: $DrjAW = $this->postArgs; goto tpodB; lQ3jn: } protected function getQueryUrl() { goto a1fHc; fxuHe: return $this->applyFilters("{$this->getIdentifier()}\x5f\x71\165\145\x72\171\x5f\x75\162\154", $GJw4l); goto DJshb; ZkAfi: mG7uz: goto fxuHe; W0YGN: $GJw4l = $this->queryUrl; goto ZkAfi; LFBlq: C07tk: goto W0YGN; a1fHc: if (isset($this->queryUrl)) { goto C07tk; } goto wZwOh; zvsr3: goto mG7uz; goto LFBlq; wZwOh: $GJw4l = ManipulateAjax::getURL(); goto zvsr3; DJshb: } protected function getQueryArgs() { goto Coion; DcfRO: goto Wy08w; goto xq5TP; I7d71: Wy08w: goto zB0Eb; zB0Eb: return $this->applyFilters("{$jbxS5}\x5f\x71\165\x65\162\171\x5f\x61\x72\x67\163", $DrjAW); goto FYYOa; Coion: $jbxS5 = $this->getIdentifier(); goto IZPQQ; IiG8x: $DrjAW = $this->queryArgs; goto I7d71; ApdNy: $DrjAW = ["\156\157\156\143\x65" => wp_create_nonce($jbxS5), "\141\x63\164\x69\x6f\156" => $jbxS5]; goto DcfRO; xq5TP: ru8cY: goto IiG8x; IZPQQ: if (isset($this->queryArgs)) { goto ru8cY; } goto ApdNy; FYYOa: } protected abstract function handle(); }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Process;
+
+use Pmpr\Common\Foundation\Container\Container;
+use Pmpr\Common\Foundation\Decorator\DecoratorQuery;
+use Pmpr\Common\Foundation\Manipulate\ManipulateAjax;
+use WP_Error;
+
+abstract class Async extends Container
+{
+    
+    protected ?string $prefix = "\167\x70";
+    
+    protected ?string $action = "\141\163\x79\156\x63\x5f\x72\x65\x71\165\145\163\164";
+    
+    protected ?string $identifier = '';
+    
+    protected ?array $data = [];
+    
+    public function ogqgmqymcwsqikme() : ?string
+    {
+        return $this->prefix;
+    }
+    
+    public function eiswegiqykyigwig() : ?string
+    {
+        return $this->identifier;
+    }
+    
+    public function siiuycgkowwuyuka(string $owqaeesoaygymmcy) : self
+    {
+        $this->identifier = $owqaeesoaygymmcy;
+        return $this;
+    }
+    
+    public function wqqseoqcmgkgoiug() : ?string
+    {
+        return $this->action;
+    }
+    
+    public function cwqickkaaokiquuo(string $aiamqeawckcsuaou) : self
+    {
+        $this->action = $aiamqeawckcsuaou;
+        return $this;
+    }
+    
+    public function seyyiqmgwymyumoq() : array
+    {
+        return $this->data;
+    }
+    
+    public function mgoekicaagiaeuki(array $icwicymcioeyeyek) : self
+    {
+        $this->data = $icwicymcioeyeyek;
+        return $this;
+    }
+    
+    public function __construct()
+    {
+        $this->siiuycgkowwuyuka($this->ogqgmqymcwsqikme() . "\x5f" . $this->wqqseoqcmgkgoiug());
+        parent::__construct();
+    }
+    public function wigskegsqequoeks()
+    {
+        $this->iqkqummseggmikgo($this->eiswegiqykyigwig(), [$this, "\x61\x71\163\153\161\145\141\x6b\157\141\x75\x77\x6f\x77\167\x6d"]);
+        parent::wigskegsqequoeks();
+    }
+    
+    public function ieyosyaaisyquesq()
+    {
+        goto qwoyicsekiisaaqm;
+        qwoyicsekiisaaqm:
+        $ccamueccusigaaio = DecoratorQuery::yqymaqmqiqmmmsoo($this->qaqaomkkmcmaamwm(), $this->smquasogcycsigis());
+        goto aqiagiqyqiaikgae;
+        wwoksycisiauaemc:
+        return $keccaugmemegoimu;
+        goto awekeisckwgiksmw;
+        kywqaioimyosmiui:
+        $this->saqqeqmcyyoeqici("\x50\162\157\143\145\x73\163\40\144\151\163\160\141\164\x63\x68\x20\151\x73\x20\x66\141\x69\154\x65\x64\x3a\40{$keccaugmemegoimu->get_error_message()}");
+        goto myoyukwoaecqcsuw;
+        myoyukwoaecqcsuw:
+        okmyyqowusoyusau:
+        goto wwoksycisiauaemc;
+        sqwqoquwewuwugsa:
+        if (!is_wp_error($keccaugmemegoimu)) {
+            goto okmyyqowusoyusau;
+        }
+        goto kywqaioimyosmiui;
+        aqiagiqyqiaikgae:
+        $keccaugmemegoimu = wp_remote_post(esc_url_raw($ccamueccusigaaio), $this->aoquwmukuokomaea());
+        goto sqwqoquwewuwugsa;
+        awekeisckwgiksmw:
+    }
+    
+    public function aqskqeakoauwowwm()
+    {
+        goto syeiaogwuowqeggi;
+        gqoiykcskgcqsikm:
+        mamcceoisymceocq:
+        goto eiecqmeuaaaiwgiq;
+        augcwakayywksmce:
+        if (!ManipulateAjax::wqsmsuyggkkyyocc($this->eiswegiqykyigwig(), "\x6e\157\156\x63\x65")) {
+            goto mamcceoisymceocq;
+        }
+        goto egmkkmiqwqgsyeyy;
+        syeiaogwuowqeggi:
+        
+        session_write_close();
+        goto augcwakayywksmce;
+        egmkkmiqwqgsyeyy:
+        $this->handle();
+        goto gqoiykcskgcqsikm;
+        eiecqmeuaaaiwgiq:
+        wp_die();
+        goto icisyikkoqqasowa;
+        icisyikkoqqasowa:
+    }
+    
+    protected function aoquwmukuokomaea()
+    {
+        goto csucwqwqcoiyeesk;
+        ikemoyeuukmcueoi:
+        iekieuqmokeakays:
+        goto awekmuqsuwwkemoa;
+        waowywqegyiieeke:
+        icmgkesuuwsmygme:
+        goto egksuoqocciukoaq;
+        csucwqwqcoiyeesk:
+        if (isset($this->postArgs)) {
+            goto icmgkesuuwsmygme;
+        }
+        goto kmmcmckqqsioiqes;
+        kmmcmckqqsioiqes:
+        $ywmkwiwkosakssii = ["\x62\157\144\171" => $this->seyyiqmgwymyumoq(), "\x74\x69\155\x65\157\165\164" => 0.01, "\x63\x6f\157\153\x69\x65\x73" => $_COOKIE, "\x62\x6c\x6f\143\153\151\x6e\x67" => false, "\163\163\154\x76\145\162\x69\x66\x79" => $this->sscegwueamckwmcy("\150\x74\x74\160\x73\137\x6c\157\143\141\x6c\137\x73\163\154\137\x76\x65\x72\x69\146\x79", false)];
+        goto miaqksuykcksyyuo;
+        egksuoqocciukoaq:
+        $ywmkwiwkosakssii = $this->postArgs;
+        goto ikemoyeuukmcueoi;
+        awekmuqsuwwkemoa:
+        return $this->sscegwueamckwmcy("{$this->eiswegiqykyigwig()}\x5f\x70\157\x73\164\x5f\141\162\147\x73", $ywmkwiwkosakssii);
+        goto qmcmiosogysemwsc;
+        miaqksuykcksyyuo:
+        goto iekieuqmokeakays;
+        goto waowywqegyiieeke;
+        qmcmiosogysemwsc:
+    }
+    
+    protected function smquasogcycsigis()
+    {
+        goto qeoeagouucmwsyqw;
+        oisqamuwmiswywko:
+        $eeamcawaiqocomwy = ManipulateAjax::oiucukewkckkwiqc();
+        goto oyiyakeisgumawcu;
+        ayysooqqqwcueuey:
+        return $this->sscegwueamckwmcy("{$this->eiswegiqykyigwig()}\x5f\161\165\145\162\171\137\x75\x72\x6c", $eeamcawaiqocomwy);
+        goto ycuaeigqqkcqywcm;
+        jkoscsaeoquakoss:
+        egkqsyyusoukuieu:
+        goto ayysooqqqwcueuey;
+        qeoeagouucmwsyqw:
+        if (isset($this->queryUrl)) {
+            goto eiaqgiaygokkeksu;
+        }
+        goto oisqamuwmiswywko;
+        ewcwmioqiiogasky:
+        eiaqgiaygokkeksu:
+        goto uymugyyimciiyuos;
+        uymugyyimciiyuos:
+        $eeamcawaiqocomwy = $this->queryUrl;
+        goto jkoscsaeoquakoss;
+        oyiyakeisgumawcu:
+        goto egkqsyyusoukuieu;
+        goto ewcwmioqiiogasky;
+        ycuaeigqqkcqywcm:
+    }
+    
+    protected function qaqaomkkmcmaamwm()
+    {
+        goto uggkyoamgoaywawg;
+        kkgyymqwugkcgoew:
+        ygyqcgyoyckqqqsk:
+        goto mcokememaqyocmww;
+        mcokememaqyocmww:
+        return $this->sscegwueamckwmcy("{$owqaeesoaygymmcy}\137\x71\x75\x65\162\x79\x5f\141\162\x67\163", $ywmkwiwkosakssii);
+        goto aaemagwasykayacy;
+        xiuwuuokasgwkicc:
+        $ywmkwiwkosakssii = ["\156\157\x6e\x63\x65" => wp_create_nonce($owqaeesoaygymmcy), "\141\x63\x74\151\157\156" => $owqaeesoaygymmcy];
+        goto wiqoigsossioeckw;
+        osocgummgayysiag:
+        $ywmkwiwkosakssii = $this->queryArgs;
+        goto kkgyymqwugkcgoew;
+        uggkyoamgoaywawg:
+        $owqaeesoaygymmcy = $this->eiswegiqykyigwig();
+        goto imswukmmekkkaeqo;
+        imswukmmekkkaeqo:
+        if (isset($this->queryArgs)) {
+            goto usogieysoyaiwmqu;
+        }
+        goto xiuwuuokasgwkicc;
+        wiqoigsossioeckw:
+        goto ygyqcgyoyckqqqsk;
+        goto imieoekoumoucuag;
+        imieoekoumoucuag:
+        usogieysoyaiwmqu:
+        goto osocgummgayysiag;
+        aaemagwasykayacy:
+    }
+    
+    protected abstract function handle();
+}

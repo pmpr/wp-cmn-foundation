@@ -1,2 +1,344 @@
 <?php
- namespace Pmpr\Common\Foundation\Woocommerce; use Pmpr\Common\Foundation\Decorator\DecoratorQuery; use Pmpr\Common\Foundation\FormMaker\Admin\Element\MetaBox; use Pmpr\Common\Foundation\FormMaker\Admin\Field\Group; use Pmpr\Common\Foundation\FormMaker\Front\MultiStepForm; use Pmpr\Common\Foundation\FormMaker\Front\Step; use Pmpr\Common\Foundation\Manipulate\ManipulateServer; use Pmpr\Common\Foundation\Manipulate\Plugin\ManipulateWoocommerce; use Pmpr\Common\Foundation\Manipulate\Post\ManipulatePost; use Pmpr\Common\Foundation\Manipulate\Theme\ManipulateHTML; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString; use Pmpr\Common\Foundation\Media\Icon\Interfaces\IconFontawesomeInterface; use WC_Product; use WC_Product_Simple; use WC_Product_Variable; abstract class MultiStepSingleProduct extends Common { const NEXT_STEP_BUTTON = "\156\145\x78\164\137\163\x74\145\x70\137\142\165\x74\164\x6f\x6e"; const PRODUCT_SINGLE_STEPS = "\160\x72\x6f\144\x75\x63\164\137\163\x69\x6e\147\x6c\x65\137\163\164\x65\160\163"; protected array $steps = []; protected ?int $product = null; protected ?MultiStepForm $form = null; public function addActions() { $this->addAction("\151\x6e\x69\x74", [$this, "\151\x6e\x69\164"])->addAction("\167\x70", [$this, "\162\x65\x67\151\163\164\145\x72\123\x74\145\x70\163"])->addAction("\x77\x6f\x6f\143\x6f\155\x6d\x65\x72\143\x65\x5f\x73\x69\x6e\147\154\x65\x5f\160\x72\157\144\165\x63\x74\137\x73\x75\x6d\155\x61\x72\x79", [$this, "\157\160\x65\156\x4d\165\x6c\x74\x69\x53\x74\x65\x70\106\x6f\x72\x6d"], 9)->addAction("\167\157\x6f\143\157\155\155\x65\x72\143\x65\137\163\151\x6e\147\x6c\145\x5f\x70\162\x6f\144\x75\143\x74\x5f\x73\x75\155\155\141\162\x79", [$this, "\143\154\157\x73\145\x4d\x75\x6c\x74\x69\x53\x74\145\160\106\157\162\155"], 501); parent::addActions(); } public function registerSteps() { goto zsyCC; wthj4: rELbm: goto rX0aU; nmRcP: foreach ($xqlNW as $PZ4C6) { goto rsPir; urvBu: RzKXI: goto JGwgW; rsPir: if (!(ManipulateArray::get($PZ4C6, self::TITLE) && ManipulateArray::get($PZ4C6, self::TEMPLATE))) { goto RzKXI; } goto fCHVq; fCHVq: $this->addStep($PZ4C6); goto urvBu; JGwgW: jQTrv: goto MVWOs; MVWOs: } goto IDCGy; IDCGy: OWo54: goto xUPbu; A00y1: zQTl8: goto wthj4; OSNg3: if (!($xqlNW && is_array($xqlNW))) { goto zQTl8; } goto nmRcP; xUPbu: $this->enqueue(); goto A00y1; dxNoP: $xqlNW = ManipulatePost::getMeta(self::PRODUCT_SINGLE_STEPS, $this->getProduct()); goto OSNg3; zsyCC: if (!$this->isSingleProduct()) { goto rELbm; } goto dxNoP; rX0aU: } public function init() { goto rlCpX; rlCpX: if (!$this->isEditProduct()) { goto Qf59K; } goto GfIyg; r5VzH: Qf59K: goto l4dil; GfIyg: MetaBox::getMetaBoxElement(self::PRODUCT_SINGLE_STEPS . "\137\x66\157\162\155", __("\x41\144\x64\40\124\x6f\40\x43\x61\x72\164\40\x53\164\x65\160\x73", PR__CMN__FOUNDATION), true)->addFields($this->getMetaBoxFields())->addPostType(self::PRODUCT)->normalContext()->setIcon(IconFontawesomeInterface::ICON_FORWARD_STEP); goto r5VzH; l4dil: } public function getForm() : ?MultiStepForm { goto Rwm7B; ozrcE: $this->form = $m8qRA; goto yD5wu; xCH95: $m8qRA = new MultiStepForm(ManipulateString::uniqid(5)); goto L41ba; Rwm7B: if ($this->form) { goto bNwJf; } goto xCH95; SiT0f: return $this->form; goto V1BwD; L41ba: $m8qRA->clickableSteps(); goto ozrcE; yD5wu: bNwJf: goto SiT0f; V1BwD: } public function getProduct() : ?int { return $this->product; } public function getProductObject() : ?WC_Product { return ManipulateWoocommerce::getProduct($this->getProduct()); } public function openMultiStepForm() { goto GS8Se; AXWJy: ob_start(); goto CzGAC; CzGAC: zRYik: goto A4yhA; GS8Se: if (!$this->isSingleProduct()) { goto zRYik; } goto AXWJy; A4yhA: } public function closeMultiStepForm() { goto o0R6o; rnH9g: if (!$this->getForm()->hasStep()) { goto bJlVd; } goto yDTm1; o0R6o: if (!$this->isSingleProduct()) { goto M0t2Q; } goto DUbOW; Itzfg: bJlVd: goto krMRg; yDTm1: $this->getForm()->render(["\x65\143\x68\x6f" => true]); goto Itzfg; krMRg: M0t2Q: goto aWM6z; DUbOW: ob_clean(); goto iJNkA; iJNkA: $this->initSteps(); goto rnH9g; aWM6z: } public function isEditProduct() : bool { $dyyPs = $this->getProduct(); return $dyyPs && is_admin() && (ManipulateServer::get("\141\143\x74\x69\x6f\156") == "\145\x64\151\164" && ManipulateServer::get(self::POST) == $dyyPs || ManipulateServer::getPost("\x61\143\164\x69\157\x6e") == "\x65\x64\151\164\x70\157\163\164"); } public function getGroupFiled() : Group { return MetaBox::getGroupField(self::PRODUCT_SINGLE_STEPS, __("\x53\x74\145\x70", PR__CMN__FOUNDATION))->addField(MetaBox::getCheckboxField(self::ENABLE, __("\105\156\x61\x62\x6c\x65", PR__CMN__FOUNDATION)))->addField(MetaBox::getTextField(self::TITLE, __("\x54\x69\x74\x6c\145", PR__CMN__FOUNDATION)))->addField(MetaBox::getTextareaField(self::DESCRIPTION, __("\x44\x65\163\x63\162\x69\x70\164\151\157\156", PR__CMN__FOUNDATION))->setRows(3))->addField(MetaBox::getRemoteBSSelectIconDropDown(self::ICON))->addField(MetaBox::getBSSelectField(self::TEMPLATE, __("\124\145\x6d\160\154\141\164\145", PR__CMN__FOUNDATION), $this->getTemplates()))->addField(MetaBox::getTextField(self::NEXT_STEP_BUTTON, __("\116\145\x78\164\40\x53\164\x65\x70\40\x42\x75\x74\x74\157\x6e\40\124\151\x74\x6c\x65", PR__CMN__FOUNDATION))->setDefault(__("\116\x65\170\164\40\x53\164\145\x70", PR__CMN__FOUNDATION)))->threeColumn()->addNonDuplicate([self::TEMPLATE]); } public function isSingleProduct() : bool { goto E1NZR; DF0_3: return $GZ2SR; goto Oa6oG; E1NZR: $GZ2SR = false; goto HSDsR; E_VKQ: $GZ2SR = $dyyPs && ManipulatePost::getId() === $dyyPs; goto ueCNZ; ueCNZ: ZqpUj: goto DF0_3; HSDsR: if (!DecoratorQuery::isSingular(self::PRODUCT)) { goto ZqpUj; } goto Qh2iv; Qh2iv: $dyyPs = $this->getProduct(); goto E_VKQ; Oa6oG: } public function getMetaBoxFields() : array { return [$this->getGroupFiled()]; } public function hasStep() : bool { return !empty($this->getSteps()); } public function addStep($PZ4C6) : self { $this->steps[] = $PZ4C6; return $this; } public function getSteps() : array { return $this->steps; } public function addSteps(array $xqlNW) : self { goto nihwS; T7H26: return $this; goto s7bec; nihwS: foreach ($xqlNW as $PZ4C6) { $this->addStep($PZ4C6); BLgHQ: } goto n5LSb; n5LSb: W8MXm: goto T7H26; s7bec: } public function initSteps() { goto woTSx; woTSx: $xqlNW = $this->getSteps(); goto AD5JP; AD5JP: if (!$xqlNW) { goto oM6fp; } goto zNi4W; BGe9W: GY4XE: goto xN_Mo; zNi4W: foreach ($xqlNW as $VIAHW => $PZ4C6) { goto cH17Y; tp_vw: CtBV0: goto DMyAV; dP8dU: A3t8M: goto GsJ7G; zLMZn: $j8DIZ = new Step($VIAHW + 1); goto Xne2b; Acd6C: if (!($JN6mg && $hTPi6 && $uWq9S)) { goto QPmiV; } goto zLMZn; w0LuX: $j8DIZ->setIcon($cbVPu)->setTitle($hTPi6)->setContent($Ym4v7 . $BQ_ob)->setDescription($Ym4v7); goto Ig5DU; cH17Y: $AtorR = ManipulateArray::gets($PZ4C6, [self::ENABLE, self::TITLE, self::ICON, self::DESCRIPTION, self::TEMPLATE, self::NEXT_STEP_BUTTON]); goto UE5NE; v7H1j: $j8DIZ->setNextButton($znh9P); goto tp_vw; Xne2b: $Ym4v7 = ManipulateHTML::generateCloseableElement("\160", ["\x63\x6c\141\163\163" => "\146\x6f\156\164\x2d\167\145\151\147\x68\x74\x2d\142\x6f\154\144\40\x66\157\156\x74\55\61\67\x20\x74\145\170\x74\x2d\155\165\164\x65\x64"], $Ym4v7); goto ShzXI; DMyAV: $this->getForm()->addStep($j8DIZ); goto WZilG; UE5NE: [$JN6mg, $hTPi6, $cbVPu, $Ym4v7, $uWq9S, $znh9P] = array_values($AtorR); goto Acd6C; ShzXI: $BQ_ob = $this->renderTemplate($uWq9S, $this->getTemplateParameters($uWq9S)); goto w0LuX; WZilG: QPmiV: goto dP8dU; Ig5DU: if (!$znh9P) { goto CtBV0; } goto v7H1j; GsJ7G: } goto BGe9W; xN_Mo: oM6fp: goto mXilp; mXilp: } public function enqueue() { $this->getForm()->enqueue(); } public function getTemplateParameters($uWq9S) : array { return []; } public abstract function getTemplates() : array; }
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             613a1be32d755             |
+    |_______________________________________|
+*/
+
+namespace Pmpr\Common\Foundation\Woocommerce;
+
+use Pmpr\Common\Foundation\Decorator\DecoratorQuery;
+use Pmpr\Common\Foundation\FormMaker\Admin\Element\MetaBox;
+use Pmpr\Common\Foundation\FormMaker\Admin\Field\Group;
+use Pmpr\Common\Foundation\FormMaker\Front\MultiStepForm;
+use Pmpr\Common\Foundation\FormMaker\Front\Step;
+use Pmpr\Common\Foundation\Manipulate\ManipulateServer;
+use Pmpr\Common\Foundation\Manipulate\Plugin\ManipulateWoocommerce;
+use Pmpr\Common\Foundation\Manipulate\Post\ManipulatePost;
+use Pmpr\Common\Foundation\Manipulate\Theme\ManipulateHTML;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
+use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString;
+use Pmpr\Common\Foundation\Media\Icon\Interfaces\IconFontawesomeInterface;
+use WC_Product;
+use WC_Product_Simple;
+use WC_Product_Variable;
+
+abstract class MultiStepSingleProduct extends Common
+{
+    const NEXT_STEP_BUTTON = "\156\x65\170\x74\x5f\x73\164\x65\x70\137\x62\x75\164\x74\157\x6e";
+    const PRODUCT_SINGLE_STEPS = "\x70\x72\x6f\x64\165\x63\164\137\163\151\x6e\x67\x6c\x65\137\163\164\x65\x70\163";
+    
+    protected array $steps = [];
+    
+    protected ?int $product = null;
+    
+    protected ?MultiStepForm $form = null;
+    public function wigskegsqequoeks()
+    {
+        $this->qcsmikeggeemccuu("\x69\156\151\164", [$this, "\151\x6e\151\164"])->qcsmikeggeemccuu("\x77\160", [$this, "\145\x6b\x67\x65\145\x63\157\x61\x63\x77\x6d\163\165\143\151\145"])->qcsmikeggeemccuu("\167\157\157\x63\x6f\x6d\x6d\145\x72\143\145\137\x73\x69\156\x67\x6c\x65\x5f\x70\162\x6f\x64\x75\x63\164\137\163\x75\x6d\x6d\141\162\x79", [$this, "\151\x69\167\151\x69\171\x6b\x73\145\x61\x75\161\161\x63\171\x71"], 9)->qcsmikeggeemccuu("\167\x6f\x6f\x63\x6f\155\x6d\145\162\x63\145\x5f\163\151\156\x67\x6c\145\137\160\x72\157\x64\x75\x63\x74\x5f\x73\165\x6d\155\x61\162\171", [$this, "\x69\x73\163\x71\145\x77\145\x73\147\x65\x63\145\x71\x67\x71\x6b"], 501);
+        parent::wigskegsqequoeks();
+    }
+    public function ekgeecoacwmsucie()
+    {
+        goto eocusimsawyoyaas;
+        geacgaisikkgqosu:
+        if (!($asuggasaseaacmqu && is_array($asuggasaseaacmqu))) {
+            goto yuwiekiseooqagqo;
+        }
+        goto aqykwekaooeoqgoa;
+        seasiecgqussuqkw:
+        $asuggasaseaacmqu = ManipulatePost::igawqaomowicuayw(self::PRODUCT_SINGLE_STEPS, $this->aqasygcsqysmmyke());
+        goto geacgaisikkgqosu;
+        geaeoccyqqkyocuw:
+        yuwiekiseooqagqo:
+        goto auqyeogymwsekuue;
+        aqykwekaooeoqgoa:
+        foreach ($asuggasaseaacmqu as $wyeyeaaekyoyimqu) {
+            goto icisiaukqqmgcwci;
+            qcysssoeueakqowq:
+            wgksasuisoeqasuk:
+            goto mookyeaauceccaga;
+            icisiaukqqmgcwci:
+            if (!(ManipulateArray::get($wyeyeaaekyoyimqu, self::TITLE) && ManipulateArray::get($wyeyeaaekyoyimqu, self::TEMPLATE))) {
+                goto wgksasuisoeqasuk;
+            }
+            goto qaggmqequkmcamma;
+            qaggmqequkmcamma:
+            $this->mgqggiyywoageqmo($wyeyeaaekyoyimqu);
+            goto qcysssoeueakqowq;
+            mookyeaauceccaga:
+            wksekwiuccskimmu:
+            goto qasccueceswyusgy;
+            qasccueceswyusgy:
+        }
+        goto sacawqskusgwkkyg;
+        sacawqskusgwkkyg:
+        ayaiiymgyagsoqia:
+        goto uckyuqsuyqwgswaa;
+        auqyeogymwsekuue:
+        usosooekkcgwmgkq:
+        goto owogoeykikyyqmck;
+        eocusimsawyoyaas:
+        if (!$this->cyeywmmccyoumgku()) {
+            goto usosooekkcgwmgkq;
+        }
+        goto seasiecgqussuqkw;
+        uckyuqsuyqwgswaa:
+        $this->enqueue();
+        goto geaeoccyqqkyocuw;
+        owogoeykikyyqmck:
+    }
+    public function init()
+    {
+        goto qkggwaukgmuiwose;
+        yuouykoggqagseog:
+        eiusewmkqqyyoqio:
+        goto sauwooccoqomkyei;
+        qkggwaukgmuiwose:
+        if (!$this->oiomuqiuyskqewke()) {
+            goto eiusewmkqqyyoqio;
+        }
+        goto owgsqkkemawskgos;
+        owgsqkkemawskgos:
+        MetaBox::cgygmuguceeosoey(self::PRODUCT_SINGLE_STEPS . "\x5f\146\157\162\155", __("\101\144\x64\40\124\x6f\x20\x43\141\162\x74\x20\123\x74\145\160\x73", PR__CMN__FOUNDATION), true)->ewweaossowcqywaw($this->qegwqkeqkmgeyouk())->mgieiwsmcswmmiim(self::PRODUCT)->maosyyqsuygkawma()->saemoowcasogykak(IconFontawesomeInterface::ICON_FORWARD_STEP);
+        goto yuouykoggqagseog;
+        sauwooccoqomkyei:
+    }
+    
+    public function yyoqecggyacaseko() : ?MultiStepForm
+    {
+        goto aqqwuwmasekigeus;
+        sooagyoeaycycmke:
+        $eaoumsseceiowgsk = new MultiStepForm(ManipulateString::uniqid(5));
+        goto msmgiksiqawcgkqe;
+        msmgiksiqawcgkqe:
+        $eaoumsseceiowgsk->iiqoooqcakkaeyiw();
+        goto iqgceguocmwqeowe;
+        iqgceguocmwqeowe:
+        $this->form = $eaoumsseceiowgsk;
+        goto cykouiuweogkyqee;
+        cykouiuweogkyqee:
+        uecmkwyokqqcysim:
+        goto ccsqcysqesqcmqqc;
+        aqqwuwmasekigeus:
+        if ($this->form) {
+            goto uecmkwyokqqcysim;
+        }
+        goto sooagyoeaycycmke;
+        ccsqcysqesqcmqqc:
+        return $this->form;
+        goto wgycoeqcyascweia;
+        wgycoeqcyascweia:
+    }
+    
+    public function aqasygcsqysmmyke() : ?int
+    {
+        return $this->product;
+    }
+    
+    public function yiagkoqoiemmqssu() : ?WC_Product
+    {
+        return ManipulateWoocommerce::aqasygcsqysmmyke($this->aqasygcsqysmmyke());
+    }
+    public function iiwiiykseauqqcyq()
+    {
+        goto wemkkueqksqmuyyk;
+        mowoyiecqoaiymym:
+        ob_start();
+        goto gsgiaiymawugosgi;
+        wemkkueqksqmuyyk:
+        if (!$this->cyeywmmccyoumgku()) {
+            goto ocuecygeseyssqum;
+        }
+        goto mowoyiecqoaiymym;
+        gsgiaiymawugosgi:
+        ocuecygeseyssqum:
+        goto ykokyisssyceccmy;
+        ykokyisssyceccmy:
+    }
+    public function issqewesgeceqgqk()
+    {
+        goto saueimgassmwoyka;
+        okuoucgkgyyseguu:
+        $this->yyoqecggyacaseko()->render(["\x65\x63\x68\x6f" => true]);
+        goto ymoeymaaemmysaam;
+        uawsmeqsickqqyww:
+        eqysgewmuookykug:
+        goto igiumgigysasioec;
+        ymoeymaaemmysaam:
+        oieaoouoioamiqme:
+        goto uawsmeqsickqqyww;
+        ssoawgymwwgamowo:
+        $this->esoeigiuggwycwiq();
+        goto kuyggkawoaiiwseo;
+        yeycmwocyqoegmaq:
+        ob_clean();
+        goto ssoawgymwwgamowo;
+        kuyggkawoaiiwseo:
+        if (!$this->yyoqecggyacaseko()->wmoeeiseqeecugmu()) {
+            goto oieaoouoioamiqme;
+        }
+        goto okuoucgkgyyseguu;
+        saueimgassmwoyka:
+        if (!$this->cyeywmmccyoumgku()) {
+            goto eqysgewmuookykug;
+        }
+        goto yeycmwocyqoegmaq;
+        igiumgigysasioec:
+    }
+    
+    public function oiomuqiuyskqewke() : bool
+    {
+        $ccamueccusigaaio = $this->aqasygcsqysmmyke();
+        return $ccamueccusigaaio && is_admin() && (ManipulateServer::get("\x61\x63\x74\151\x6f\156") == "\145\x64\x69\164" && ManipulateServer::get(self::POST) == $ccamueccusigaaio || ManipulateServer::ayueggmoqeeukqmq("\x61\143\x74\151\x6f\x6e") == "\x65\144\151\164\x70\157\163\x74");
+    }
+    
+    public function syguimaaeugakesm() : Group
+    {
+        return MetaBox::iseogkiymousogom(self::PRODUCT_SINGLE_STEPS, __("\123\164\x65\x70", PR__CMN__FOUNDATION))->mkksewyosgeumwsa(MetaBox::wcwmusaouiqaqeww(self::ENABLE, __("\x45\156\141\142\154\x65", PR__CMN__FOUNDATION)))->mkksewyosgeumwsa(MetaBox::ymuegqgyuagyucws(self::TITLE, __("\124\151\164\154\x65", PR__CMN__FOUNDATION)))->mkksewyosgeumwsa(MetaBox::uouyygwcgsmygaee(self::DESCRIPTION, __("\x44\145\x73\143\x72\151\160\x74\x69\x6f\x6e", PR__CMN__FOUNDATION))->qsecygiycssgacqs(3))->mkksewyosgeumwsa(MetaBox::scgissgkcwaumgky(self::ICON))->mkksewyosgeumwsa(MetaBox::ckuwucygcwsiawms(self::TEMPLATE, __("\x54\145\155\x70\x6c\141\x74\x65", PR__CMN__FOUNDATION), $this->swocoigyikkommyq()))->mkksewyosgeumwsa(MetaBox::ymuegqgyuagyucws(self::NEXT_STEP_BUTTON, __("\116\145\170\x74\40\x53\x74\145\160\x20\102\165\164\164\x6f\156\40\x54\151\164\154\145", PR__CMN__FOUNDATION))->eyygsasuqmommkua(__("\x4e\x65\170\164\x20\123\x74\x65\x70", PR__CMN__FOUNDATION)))->usosgsaaimqcysyk()->awaeegwoiqoisoam([self::TEMPLATE]);
+    }
+    
+    public function cyeywmmccyoumgku() : bool
+    {
+        goto gkkowgywckwwcoss;
+        owcweesegmoeogqc:
+        $ksaameoqigiaoigg = $ccamueccusigaaio && ManipulatePost::mwikyscisascoeea() === $ccamueccusigaaio;
+        goto yosmywouooecowyi;
+        yosmywouooecowyi:
+        cqiuwwcuouuigawo:
+        goto ieaayaguiywwyecq;
+        gkkowgywckwwcoss:
+        $ksaameoqigiaoigg = false;
+        goto sgskgsyiqcqsiwwe;
+        ieaayaguiywwyecq:
+        return $ksaameoqigiaoigg;
+        goto aecaygyqamswuqcu;
+        sgskgsyiqcqsiwwe:
+        if (!DecoratorQuery::cukiusasccucgwqc(self::PRODUCT)) {
+            goto cqiuwwcuouuigawo;
+        }
+        goto qoqasyeyeesqmoye;
+        qoqasyeyeesqmoye:
+        $ccamueccusigaaio = $this->aqasygcsqysmmyke();
+        goto owcweesegmoeogqc;
+        aecaygyqamswuqcu:
+    }
+    
+    public function qegwqkeqkmgeyouk() : array
+    {
+        return [$this->syguimaaeugakesm()];
+    }
+    
+    public function wmoeeiseqeecugmu() : bool
+    {
+        return !empty($this->guiyusikssumecwk());
+    }
+    
+    public function mgqggiyywoageqmo($wyeyeaaekyoyimqu) : self
+    {
+        $this->steps[] = $wyeyeaaekyoyimqu;
+        return $this;
+    }
+    
+    public function guiyusikssumecwk() : array
+    {
+        return $this->steps;
+    }
+    
+    public function maoomkygegkowemi(array $asuggasaseaacmqu) : self
+    {
+        goto eumaaywogiiuiyao;
+        iweimwuaemaquuse:
+        return $this;
+        goto sgsgokmagckcoock;
+        eumaaywogiiuiyao:
+        foreach ($asuggasaseaacmqu as $wyeyeaaekyoyimqu) {
+            $this->mgqggiyywoageqmo($wyeyeaaekyoyimqu);
+            ucigyuukqagoagak:
+        }
+        goto qcqgacsuskoiskcg;
+        qcqgacsuskoiskcg:
+        oyywmoceqiqwyyek:
+        goto iweimwuaemaquuse;
+        sgsgokmagckcoock:
+    }
+    public function esoeigiuggwycwiq()
+    {
+        goto aiqskweckwoegquq;
+        myyuyqequamqekoc:
+        qmgwqgkuucwysswc:
+        goto swcqqiyagauaogiy;
+        icmgwewmusucsooy:
+        gmkwekuakoueicws:
+        goto myyuyqequamqekoc;
+        oykmqmogcwumacqq:
+        foreach ($asuggasaseaacmqu as $momcykaoccoymeig => $wyeyeaaekyoyimqu) {
+            goto yegecewiqewskmgm;
+            awayeqowmyycaoqs:
+            [$oqkgomucoyswikgk, $meqocwsecsywiiqs, $wkaqekwwgqsqwcoi, $mkqqqewsokcswckc, $qqscaoyqikuyeoaw, $mkemseqwyqgsgsek] = array_values($qqswgiawgeaeoecu);
+            goto aquiaqiseuwyomay;
+            eyiigmyweugmgckw:
+            $this->yyoqecggyacaseko()->mgqggiyywoageqmo($oyoqqgcsgigcmqqu);
+            goto mgkgeuqasqcaimou;
+            iukkuoewgiwcoukw:
+            $ewgwqamkygiqaawc = $this->iuygowkemiiwqmiw($qqscaoyqikuyeoaw, $this->rsysgcucogueguuk($qqscaoyqikuyeoaw));
+            goto cgamwegmkwmmsoow;
+            cgamwegmkwmmsoow:
+            $oyoqqgcsgigcmqqu->saemoowcasogykak($wkaqekwwgqsqwcoi)->gswweykyogmsyawy($meqocwsecsywiiqs)->oguessuismosauuu($mkqqqewsokcswckc . $ewgwqamkygiqaawc)->gucwmccyimoagwcm($mkqqqewsokcswckc);
+            goto faeciyigcmyieesm;
+            aquiaqiseuwyomay:
+            if (!($oqkgomucoyswikgk && $meqocwsecsywiiqs && $qqscaoyqikuyeoaw)) {
+                goto qwyoggysuwmawqoo;
+            }
+            goto kysgsayqeakiwmic;
+            kysgsayqeakiwmic:
+            $oyoqqgcsgigcmqqu = new Step($momcykaoccoymeig + 1);
+            goto eeiseascemqaocmo;
+            yegecewiqewskmgm:
+            $qqswgiawgeaeoecu = ManipulateArray::gucyquqwoimkiiaq($wyeyeaaekyoyimqu, [self::ENABLE, self::TITLE, self::ICON, self::DESCRIPTION, self::TEMPLATE, self::NEXT_STEP_BUTTON]);
+            goto awayeqowmyycaoqs;
+            syycscyugcgsquwm:
+            cyguswquuckqoqcu:
+            goto wcsicmaoskwcaqou;
+            faeciyigcmyieesm:
+            if (!$mkemseqwyqgsgsek) {
+                goto euqaykgiqkmkaack;
+            }
+            goto qakcamuiqmiscugu;
+            mgkgeuqasqcaimou:
+            qwyoggysuwmawqoo:
+            goto syycscyugcgsquwm;
+            qakcamuiqmiscugu:
+            $oyoqqgcsgigcmqqu->gwwmcykumqueaosa($mkemseqwyqgsgsek);
+            goto qguqeweisuimgyqk;
+            eeiseascemqaocmo:
+            $mkqqqewsokcswckc = ManipulateHTML::uuccukgasskgimsq("\x70", ["\143\154\x61\163\163" => "\x66\157\x6e\164\x2d\167\145\x69\x67\150\164\x2d\x62\157\154\x64\40\x66\x6f\156\164\55\x31\x37\x20\x74\145\170\164\55\x6d\165\x74\x65\144"], $mkqqqewsokcswckc);
+            goto iukkuoewgiwcoukw;
+            qguqeweisuimgyqk:
+            euqaykgiqkmkaack:
+            goto eyiigmyweugmgckw;
+            wcsicmaoskwcaqou:
+        }
+        goto icmgwewmusucsooy;
+        aiqskweckwoegquq:
+        $asuggasaseaacmqu = $this->guiyusikssumecwk();
+        goto acyuamggaiuqmsoa;
+        acyuamggaiuqmsoa:
+        if (!$asuggasaseaacmqu) {
+            goto qmgwqgkuucwysswc;
+        }
+        goto oykmqmogcwumacqq;
+        swcqqiyagauaogiy:
+    }
+    public function enqueue()
+    {
+        $this->yyoqecggyacaseko()->enqueue();
+    }
+    
+    public function rsysgcucogueguuk($qqscaoyqikuyeoaw) : array
+    {
+        return [];
+    }
+    
+    public abstract function swocoigyikkommyq() : array;
+}
