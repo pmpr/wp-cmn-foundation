@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b2e4befc8c             |
+    |             613b30261f503             |
     |_______________________________________|
 */
 
@@ -17,43 +17,43 @@ class ManipulateQuery extends Manipulate
     
     function cgquaaukmyeomgms() : bool
     {
-        return DecoratorQuery::cgquaaukmyeomgms() || self::cmaecekuqkwmemms("\104\x4f\111\116\x47\x5f\103\x52\117\116");
+        return DecoratorQuery::cgquaaukmyeomgms() || self::cmaecekuqkwmemms("\104\x4f\x49\x4e\x47\137\103\122\117\x4e");
     }
     
     public static function aqwquwewocyewasw() : bool
     {
         goto yqcumeywukecmiey;
-        ugoeugewuucscmio:
-        auksmaiaiccmekam:
-        goto guousgemwcuecmqe;
-        ecogskgckaqscygu:
-        if (!($xeciwimgioieayek = ManipulateServer::giiecckwoyiawoyy("\122\105\x51\125\x45\x53\x54\x5f\125\122\111"))) {
-            goto auksmaiaiccmekam;
-        }
-        goto qgosqkumckekweig;
+        qmawiqqoigwiwyqs:
+        $uwqkkwmiiumuukoa = DecoratorHook::sscegwueamckwmcy("\x69\163\x5f\162\x65\x73\164\137\x61\x70\151\137\162\x65\161\165\145\x73\x74", $uwqkkwmiiumuukoa);
+        goto ugoeugewuucscmio;
         guousgemwcuecmqe:
         wquwyumimoaeeqkm:
         goto yccqiqeuguggucem;
-        yqcumeywukecmiey:
-        $uwqkkwmiiumuukoa = ManipulateWoocommerce::aqwquwewocyewasw();
-        goto cocuwykyogwqksuc;
-        qgosqkumckekweig:
-        $yuwymayicwwqiske = trailingslashit(rest_get_url_prefix());
-        goto wscmeosuswieugqc;
-        wscmeosuswieugqc:
-        $uwqkkwmiiumuukoa = false !== strpos($xeciwimgioieayek, $yuwymayicwwqiske);
-        goto qmawiqqoigwiwyqs;
-        qmawiqqoigwiwyqs:
-        $uwqkkwmiiumuukoa = DecoratorHook::sscegwueamckwmcy("\x69\x73\137\x72\145\163\164\x5f\141\x70\151\137\162\x65\x71\165\145\x73\164", $uwqkkwmiiumuukoa);
-        goto ugoeugewuucscmio;
-        yccqiqeuguggucem:
-        return $uwqkkwmiiumuukoa;
-        goto owkcoawgimcoyima;
         cocuwykyogwqksuc:
         if ($uwqkkwmiiumuukoa) {
             goto wquwyumimoaeeqkm;
         }
         goto ecogskgckaqscygu;
+        ugoeugewuucscmio:
+        auksmaiaiccmekam:
+        goto guousgemwcuecmqe;
+        ecogskgckaqscygu:
+        if (!($xeciwimgioieayek = ManipulateServer::giiecckwoyiawoyy("\122\x45\x51\125\x45\x53\124\x5f\125\x52\x49"))) {
+            goto auksmaiaiccmekam;
+        }
+        goto qgosqkumckekweig;
+        yccqiqeuguggucem:
+        return $uwqkkwmiiumuukoa;
+        goto owkcoawgimcoyima;
+        qgosqkumckekweig:
+        $yuwymayicwwqiske = trailingslashit(rest_get_url_prefix());
+        goto wscmeosuswieugqc;
+        yqcumeywukecmiey:
+        $uwqkkwmiiumuukoa = ManipulateWoocommerce::aqwquwewocyewasw();
+        goto cocuwykyogwqksuc;
+        wscmeosuswieugqc:
+        $uwqkkwmiiumuukoa = false !== strpos($xeciwimgioieayek, $yuwymayicwwqiske);
+        goto qmawiqqoigwiwyqs;
         owkcoawgimcoyima:
     }
     

@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b2e4befc8c             |
+    |             613b30261f503             |
     |_______________________________________|
 */
 
@@ -74,74 +74,74 @@ abstract class Page extends Common
             yoowqwwqgyoqusam:
         }
         goto hisossycecaayukk;
-        hisossycecaayukk:
-        imycaqewmusocike:
-        goto akweguyeywgimcii;
         akweguyeywgimcii:
         return $this;
         goto qksgckcogweyegiy;
+        hisossycecaayukk:
+        imycaqewmusocike:
+        goto akweguyeywgimcii;
         qksgckcogweyegiy:
     }
     public function wigskegsqequoeks()
     {
-        $iaakskwmyqceoscy = $this->ygyygikyocoymgaw("\x70\x61\x67\145\137\141\x64\x6d\x69\x6e\x5f\142\145\146\157\162\x65\x5f{$this->imkyoqyocosuqasu("\160\x61\x72\x65\x6e\164\137\163\154\165\x67")}\137\164\x61\142\163");
-        $this->qcsmikeggeemccuu($iaakskwmyqceoscy, [$this, "\153\x63\143\x67\145\x6b\151\x71\147\163\165\x77\155\x6f\x77\157"])->qcsmikeggeemccuu("\x61\144\x6d\x69\x6e\x5f\x6d\x65\156\x75", [$this, "\x65\165\161\147\167\151\163\143\167\147\161\x6b\161\153\x65\x63"]);
+        $iaakskwmyqceoscy = $this->ygyygikyocoymgaw("\x70\x61\x67\145\x5f\141\x64\155\x69\156\x5f\x62\x65\146\157\x72\x65\137{$this->imkyoqyocosuqasu("\160\x61\162\x65\x6e\164\137\163\x6c\165\x67")}\x5f\164\141\142\x73");
+        $this->qcsmikeggeemccuu($iaakskwmyqceoscy, [$this, "\153\x63\143\x67\145\x6b\151\161\x67\x73\x75\x77\x6d\x6f\x77\157"])->qcsmikeggeemccuu("\141\x64\155\151\x6e\x5f\x6d\145\156\165", [$this, "\145\165\161\x67\167\151\163\x63\167\x67\161\153\x71\153\x65\143"]);
     }
     public function euqgwiscwgqkqkec()
     {
         goto qymasoskamceuyga;
+        easmiuiiqscigksi:
+        mcyaaamaeyyuuyqc:
+        goto wquciuouwsqeaywy;
         qymasoskamceuyga:
         $ewuukoycimkekouc = $this->kooiucqkggeagccu();
         goto ccysimigeiasqcce;
+        qicaiiwqkuekisec:
+        ManipulateMenu::aemwscceysomkuea($ewuukoycimkekouc);
+        goto easmiuiiqscigksi;
         waossucmeakmcyqo:
-        $ewuukoycimkekouc["\x66\165\156\143\x74\151\157\156"] = [$this, "\x72\x65\156\x64\145\x72"];
+        $ewuukoycimkekouc["\146\165\x6e\143\164\x69\x6f\156"] = [$this, "\x72\145\156\144\x65\x72"];
         goto qicaiiwqkuekisec;
         ccysimigeiasqcce:
         if (!$ewuukoycimkekouc) {
             goto mcyaaamaeyyuuyqc;
         }
         goto waossucmeakmcyqo;
-        easmiuiiqscigksi:
-        mcyaaamaeyyuuyqc:
-        goto wquciuouwsqeaywy;
-        qicaiiwqkuekisec:
-        ManipulateMenu::aemwscceysomkuea($ewuukoycimkekouc);
-        goto easmiuiiqscigksi;
         wquciuouwsqeaywy:
     }
     public function render()
     {
         goto myksuyaasakqyemk;
-        eamocokcskeaowsy:
-        $cciauwuwuqaywgce = $this->qiuwgoaekqikgcci($aokagokqyuysuksm);
-        goto iimsyikswgcwgoim;
-        wweeowcauskgueqo:
-        $cciauwuwuqaywgce = null;
-        goto wkuiygkkiegeqmks;
-        iimsyikswgcwgoim:
-        qaiqycmkuwkyawoo:
-        goto ekmgygwagiwkumky;
         iwqggoqaweooecai:
         
         $ywoucyskcquysiwc = ManipulateArray::yaeiiwwyckwugsem($ywoucyskcquysiwc);
         goto iicmygykyuguyeku;
+        iimsyikswgcwgoim:
+        qaiqycmkuwkyawoo:
+        goto ekmgygwagiwkumky;
+        myksuyaasakqyemk:
+        $this->suicksywcwiggasc();
+        goto wweeowcauskgueqo;
+        iicmygykyuguyeku:
+        $aokagokqyuysuksm = ManipulateServer::get("\164\141\x62", key($ywoucyskcquysiwc));
+        goto eamocokcskeaowsy;
+        ekmgygwagiwkumky:
+        echo $this->iuygowkemiiwqmiw("\x69\x6e\x64\145\170", ["\x74\141\142\163" => $ywoucyskcquysiwc, "\160\141\147\145" => $this, "\141\143\164\151\157\156\163" => $this->ckiimaaecogswcsu(), "\x6c\151\163\x74\x5f\164\141\142\x6c\145" => $this->waeasakssissiuqg(), "\x63\x75\x72\x72\x65\x6e\x74\x5f\164\141\x62" => $cciauwuwuqaywgce, "\x63\165\x72\x72\145\x6e\x74\x5f\x70\x61\x67\x65\137\154\x69\156\153" => admin_url("\141\x64\x6d\151\x6e\x2e\x70\x68\160\x3f\160\x61\x67\145\x3d" . $this->imkyoqyocosuqasu("\155\145\156\165\x5f\163\154\165\147"))], ["\143\x6c\x61\163\x73" => self::class]);
+        goto iuqeycyiwoygwgyw;
+        eamocokcskeaowsy:
+        $cciauwuwuqaywgce = $this->qiuwgoaekqikgcci($aokagokqyuysuksm);
+        goto iimsyikswgcwgoim;
+        wkuiygkkiegeqmks:
+        $ywoucyskcquysiwc = $this->equiyaoamqmaeckc();
+        goto uecwikikoegwokma;
+        wweeowcauskgueqo:
+        $cciauwuwuqaywgce = null;
+        goto wkuiygkkiegeqmks;
         uecwikikoegwokma:
         if (!is_array($ywoucyskcquysiwc)) {
             goto qaiqycmkuwkyawoo;
         }
         goto iwqggoqaweooecai;
-        wkuiygkkiegeqmks:
-        $ywoucyskcquysiwc = $this->equiyaoamqmaeckc();
-        goto uecwikikoegwokma;
-        iicmygykyuguyeku:
-        $aokagokqyuysuksm = ManipulateServer::get("\164\141\142", key($ywoucyskcquysiwc));
-        goto eamocokcskeaowsy;
-        ekmgygwagiwkumky:
-        echo $this->iuygowkemiiwqmiw("\x69\156\x64\145\x78", ["\164\141\142\163" => $ywoucyskcquysiwc, "\160\x61\x67\x65" => $this, "\x61\143\x74\151\157\156\163" => $this->ckiimaaecogswcsu(), "\x6c\x69\163\164\x5f\x74\141\x62\x6c\x65" => $this->waeasakssissiuqg(), "\143\165\162\162\x65\156\x74\x5f\164\141\142" => $cciauwuwuqaywgce, "\143\x75\162\162\145\156\164\137\x70\x61\x67\145\x5f\x6c\151\x6e\153" => admin_url("\141\x64\x6d\151\156\56\160\150\160\77\160\141\x67\145\x3d" . $this->imkyoqyocosuqasu("\155\145\156\165\137\x73\x6c\x75\147"))], ["\143\x6c\141\x73\163" => self::class]);
-        goto iuqeycyiwoygwgyw;
-        myksuyaasakqyemk:
-        $this->suicksywcwiggasc();
-        goto wweeowcauskgueqo;
         iuqeycyiwoygwgyw:
     }
     
@@ -151,7 +151,7 @@ abstract class Page extends Common
     
     public final function qcsgmgoukiouuscw() : bool
     {
-        return ManipulateServer::get(self::PAGE) === $this->imkyoqyocosuqasu("\x6d\x65\x6e\165\x5f\163\x6c\165\x67");
+        return ManipulateServer::get(self::PAGE) === $this->imkyoqyocosuqasu("\x6d\145\156\165\137\163\154\165\147");
     }
     public function suicksywcwiggasc()
     {

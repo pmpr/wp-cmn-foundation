@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b2e4befc8c             |
+    |             613b30261f503             |
     |_______________________________________|
 */
 
@@ -13,23 +13,23 @@ class Tool extends Page
     public function __construct()
     {
         goto coysugskuiuggwke;
-        coysugskuiuggwke:
-        $this->type = "\x74\157\157\x6c\163";
-        goto cmqiucseesyaamww;
-        mqgqekesggaiiwss:
-        meqocakwgoyugmso:
-        goto csaykuwkommwweoy;
         cmqiucseesyaamww:
         if ($this->cgugaaoykcyiomuk()) {
             goto meqocakwgoyugmso;
         }
         goto oacssuuogqgskmgc;
+        oacssuuogqgskmgc:
+        $this->parentMenu = "\x74\x6f\157\x6c\x73\56\x70\x68\x70";
+        goto mqgqekesggaiiwss;
+        coysugskuiuggwke:
+        $this->type = "\164\157\157\x6c\x73";
+        goto cmqiucseesyaamww;
         csaykuwkommwweoy:
         parent::__construct();
         goto wgakokiswkmwewqk;
-        oacssuuogqgskmgc:
-        $this->parentMenu = "\x74\x6f\157\154\163\56\160\x68\x70";
-        goto mqgqekesggaiiwss;
+        mqgqekesggaiiwss:
+        meqocakwgoyugmso:
+        goto csaykuwkommwweoy;
         wgakokiswkmwewqk:
     }
 }

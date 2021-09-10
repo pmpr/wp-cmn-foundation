@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b2e4befc8c             |
+    |             613b30261f503             |
     |_______________________________________|
 */
 
@@ -19,6 +19,6 @@ class ManipulateAuthor extends Common
     
     public function cymkqeuyyqecoqia($qscaoekmoooeuyqg = null)
     {
-        return DecoratorAuthor::igawqaomowicuayw("\x6e\x69\x63\x6b\x6e\x61\x6d\145", $qscaoekmoooeuyqg);
+        return DecoratorAuthor::igawqaomowicuayw("\156\x69\143\x6b\x6e\141\x6d\x65", $qscaoekmoooeuyqg);
     }
 }

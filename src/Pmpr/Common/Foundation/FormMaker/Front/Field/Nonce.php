@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b2e4befc8c             |
+    |             613b30261f503             |
     |_______________________________________|
 */
 
@@ -13,7 +13,7 @@ class Nonce extends Html
     
     public function __construct(?string $aokagokqyuysuksm, ?string $ymqmyyeuycgmigyo, ?string $aiamqeawckcsuaou)
     {
-        $this->igmaewykumgwoaoy("\144\141\x74\x61\55\156\141\155\145", $ymqmyyeuycgmigyo)->igmaewykumgwoaoy("\x64\141\164\141\x2d\141\x63\164\x69\x6f\156", $aiamqeawckcsuaou)->qigsyyqgewgskemg("\x6e\157\x6e\143\x65\x2d\143\x6f\156\x74\141\x69\156\x65\162");
+        $this->igmaewykumgwoaoy("\144\141\164\141\x2d\x6e\x61\x6d\x65", $ymqmyyeuycgmigyo)->igmaewykumgwoaoy("\144\141\164\x61\x2d\x61\x63\x74\x69\157\156", $aiamqeawckcsuaou)->qigsyyqgewgskemg("\156\x6f\x6e\143\145\55\143\x6f\156\164\141\151\x6e\x65\162");
         parent::__construct($aokagokqyuysuksm);
     }
 }

@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b2e4befc8c             |
+    |             613b30261f503             |
     |_______________________________________|
 */
 
@@ -17,7 +17,7 @@ class DecoratorRewrite extends Manipulate
         flush_rewrite_rules($wqgoeumkaeyqaiqu);
     }
     
-    public static function aimosgcaukumakge($ucccueqywigcukcc, $gqgemcmoicmgaqie, $miisqgccsqqcscia = "\142\157\x74\164\157\x6d")
+    public static function aimosgcaukumakge($ucccueqywigcukcc, $gqgemcmoicmgaqie, $miisqgccsqqcscia = "\x62\x6f\x74\164\x6f\155")
     {
         add_rewrite_rule($ucccueqywigcukcc, $gqgemcmoicmgaqie, $miisqgccsqqcscia);
     }

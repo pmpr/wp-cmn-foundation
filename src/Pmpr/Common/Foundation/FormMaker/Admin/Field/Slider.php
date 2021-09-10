@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b2e4befc8c             |
+    |             613b30261f503             |
     |_______________________________________|
 */
 
@@ -27,7 +27,7 @@ class Slider extends Field
         $this->images = $somsiuiquigiqsmk;
         goto umguqywougaucwew;
         soacakggqekwwwiu:
-        parent::__construct("\x73\x6c\151\x64\145\162", $aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc);
+        parent::__construct("\163\154\151\144\x65\162", $aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc);
         goto cykoggeawyosiwuw;
         mcekqamqcmywscmu:
     }
@@ -67,7 +67,7 @@ class Slider extends Field
     
     public function uqawesackiomqgga($kkeqqkkkqwkocsyu, array $ywmkwiwkosakssii = []) : ?array
     {
-        $kkeqqkkkqwkocsyu["\151\x6d\x61\x67\x65\x2d\x61\x74\164\x72"] = $this->kkyeqssqcoqmoycc();
+        $kkeqqkkkqwkocsyu["\x69\x6d\x61\147\x65\55\141\x74\x74\x72"] = $this->kkyeqssqcoqmoycc();
         return parent::uqawesackiomqgga($kkeqqkkkqwkocsyu, $ywmkwiwkosakssii);
     }
 }

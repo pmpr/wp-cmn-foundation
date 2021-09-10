@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b2e4befc8c             |
+    |             613b30261f503             |
     |_______________________________________|
 */
 
@@ -118,7 +118,7 @@ class DecoratorQuery extends Decorator
     
     public static function cgquaaukmyeomgms() : bool
     {
-        return function_exists("\x77\160\137\x64\157\x69\156\147\x5f\x63\x72\157\156") && wp_doing_cron();
+        return function_exists("\167\x70\x5f\x64\x6f\x69\156\x67\x5f\x63\162\157\156") && wp_doing_cron();
     }
     
     public static function takycgcamoacksqw() : bool

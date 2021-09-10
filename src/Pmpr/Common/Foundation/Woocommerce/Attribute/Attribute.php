@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b2e4befc8c             |
+    |             613b30261f503             |
     |_______________________________________|
 */
 
@@ -19,38 +19,38 @@ class Attribute extends Common
     }
     public function wigskegsqequoeks()
     {
-        $this->qcsmikeggeemccuu("\x61\144\x6d\x69\x6e\x5f\151\156\151\164", [$this, "\171\x65\171\151\x67\165\171\145\147\x6d\x6d\171\x75\163\x65\x61"]);
+        $this->qcsmikeggeemccuu("\141\x64\x6d\151\x6e\x5f\151\156\151\x74", [$this, "\171\x65\x79\151\147\165\x79\x65\147\155\x6d\171\165\163\145\141"]);
         parent::wigskegsqequoeks();
     }
     public function yeyiguyegmmyusea()
     {
         goto sawkmwweawsciysi;
-        oagiismqgcciokqw:
-        qqwiwaamsuyeaymq:
-        goto ieaeyoewoiweuuys;
+        sawkmwweawsciysi:
+        $seyqqsmuaiegkeeq = DecoratorWoocommerce::mqsqiyqiceqasokq();
+        goto uiceasouwuawugsq;
         uiceasouwuawugsq:
         foreach ($seyqqsmuaiegkeeq as $momcykaoccoymeig => $kesssewsiegssiya) {
             Term::ocmycskcuiawkecq($momcykaoccoymeig, $kesssewsiegssiya);
             koicyiceoeymqyee:
         }
         goto oagiismqgcciokqw;
-        sawkmwweawsciysi:
-        $seyqqsmuaiegkeeq = DecoratorWoocommerce::mqsqiyqiceqasokq();
-        goto uiceasouwuawugsq;
+        oagiismqgcciokqw:
+        qqwiwaamsuyeaymq:
+        goto ieaeyoewoiweuuys;
         ieaeyoewoiweuuys:
     }
     public function iemaakgqgqosiecm()
     {
         goto ceecqioeaaiqgqsu;
-        ceecqioeaaiqgqsu:
-        Model::symcgieuakksimmu();
-        goto euimwgmwmmaogkcw;
-        euimwgmwmmaogkcw:
-        LocalAttribute::symcgieuakksimmu();
-        goto eekswukgkqgmecuk;
         eekswukgkqgmecuk:
         GlobalAttribute::symcgieuakksimmu();
         goto yyymkoaumewsqoum;
+        euimwgmwmmaogkcw:
+        LocalAttribute::symcgieuakksimmu();
+        goto eekswukgkqgmecuk;
+        ceecqioeaaiqgqsu:
+        Model::symcgieuakksimmu();
+        goto euimwgmwmmaogkcw;
         yyymkoaumewsqoum:
     }
 }

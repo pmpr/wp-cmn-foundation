@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b2e4befc8c             |
+    |             613b30261f503             |
     |_______________________________________|
 */
 
@@ -13,14 +13,14 @@ use Psr\Http\Message\ResponseInterface;
 
 class Cartridge extends API
 {
-    const CURRENT_DOMAIN = "\141\x70\151\x5f\x63\165\x72\x72\x65\x6e\x74\137\144\x6f\155\x61\x69\x6e";
-    const LOCK_REQUEST_TRANSIENT = "\x61\160\x69\x5f\x6c\x6f\143\153\x5f\x72\x65\x71\165\145\163\164\x5f\x74\x72\x61\156\x73\151\145\156\164";
+    const CURRENT_DOMAIN = "\x61\x70\151\x5f\x63\x75\x72\x72\145\156\164\137\144\x6f\155\141\151\x6e";
+    const LOCK_REQUEST_TRANSIENT = "\141\160\x69\137\154\157\x63\x6b\x5f\162\145\161\x75\x65\x73\x74\x5f\164\162\x61\x6e\163\151\x65\156\x74";
     
     protected array $domains = [];
     
     public function __construct()
     {
-        $this->kesomeowemmyygey("\164\151\x6d\145\157\x75\x74", false);
+        $this->kesomeowemmyygey("\164\151\x6d\x65\x6f\x75\164", false);
         parent::__construct();
     }
     
@@ -38,46 +38,36 @@ class Cartridge extends API
     public function next() : self
     {
         goto siimgcqgmymwoauo;
-        mkwssqgmseeueoei:
-        goto qsiqiykmmeooamai;
-        goto aaysmqyimgwwmswc;
-        wyuukkaqwkysasgk:
-        $momcykaoccoymeig = array_search($mokawwccycoiqeka, $wqogggcaamgeiwew);
-        goto cugkwkcgcwamkeek;
-        geowyegsewcqeyeg:
-        return $this;
-        goto keokimwocecqqykq;
-        ekwqsmwucymewqco:
-        $this->saqqeqmcyyoeqici("\x43\x61\162\x74\x72\x69\144\147\145\x20\141\160\x69\40\154\x6f\143\x6b\145\x64\40\x66\x6f\162\40\x6e\145\170\x74\x20\x32\x30\x20\155\x69\x6e\165\164\145\163\56");
-        goto iummmcuamoigqyye;
-        cugkwkcgcwamkeek:
-        $mokawwccycoiqeka = ManipulateArray::get($wqogggcaamgeiwew, intval($momcykaoccoymeig) + 1);
-        goto wkwqooeoiqqskigc;
-        yywwooiikmgqogsw:
-        momssyeueaumcmii:
-        goto geowyegsewcqeyeg;
-        aaysmqyimgwwmswc:
-        ewyyeyokouyicmom:
-        goto aqeuykaemmwcmkag;
-        iummmcuamoigqyye:
-        
-        set_transient(self::LOCK_REQUEST_TRANSIENT, 1, MINUTE_IN_SECONDS * 2);
-        goto iimckuqgqcmmaaus;
-        iimckuqgqcmmaaus:
-        DecoratorOption::delete(self::CURRENT_DOMAIN);
-        goto mkwssqgmseeueoei;
         qmoiyuckwyakswoy:
         $wqogggcaamgeiwew = $this->wiqumkmqkqoycqyi();
         goto owqgqgysciogcuwk;
-        siimgcqgmymwoauo:
-        $mokawwccycoiqeka = $this->wwawisckiqeueoua();
-        goto mawswmiuewqagcsa;
+        wyuukkaqwkysasgk:
+        $momcykaoccoymeig = array_search($mokawwccycoiqeka, $wqogggcaamgeiwew);
+        goto cugkwkcgcwamkeek;
+        iimckuqgqcmmaaus:
+        DecoratorOption::delete(self::CURRENT_DOMAIN);
+        goto mkwssqgmseeueoei;
+        mkwssqgmseeueoei:
+        goto qsiqiykmmeooamai;
+        goto aaysmqyimgwwmswc;
         owqgqgysciogcuwk:
         $this->ucuoiawgsicougqu($mokawwccycoiqeka);
         goto wyuukkaqwkysasgk;
+        yywwooiikmgqogsw:
+        momssyeueaumcmii:
+        goto geowyegsewcqeyeg;
+        cugkwkcgcwamkeek:
+        $mokawwccycoiqeka = ManipulateArray::get($wqogggcaamgeiwew, intval($momcykaoccoymeig) + 1);
+        goto wkwqooeoiqqskigc;
+        siimgcqgmymwoauo:
+        $mokawwccycoiqeka = $this->wwawisckiqeueoua();
+        goto mawswmiuewqagcsa;
         aqeuykaemmwcmkag:
         DecoratorOption::update(self::CURRENT_DOMAIN, $mokawwccycoiqeka);
         goto cgkkewwuoaesyckq;
+        ekwqsmwucymewqco:
+        $this->saqqeqmcyyoeqici("\x43\141\162\x74\162\151\x64\x67\145\x20\141\160\151\40\x6c\x6f\x63\x6b\145\144\40\146\x6f\162\40\x6e\x65\170\164\x20\x32\x30\x20\155\x69\156\165\164\x65\163\x2e");
+        goto iummmcuamoigqyye;
         ugcqckmoiguqaqyg:
         qsiqiykmmeooamai:
         goto yywwooiikmgqogsw;
@@ -86,9 +76,19 @@ class Cartridge extends API
             goto momssyeueaumcmii;
         }
         goto qmoiyuckwyakswoy;
+        geowyegsewcqeyeg:
+        return $this;
+        goto keokimwocecqqykq;
         cgkkewwuoaesyckq:
         $this->gyuwiwqqyesiekag($mokawwccycoiqeka);
         goto ugcqckmoiguqaqyg;
+        iummmcuamoigqyye:
+        
+        set_transient(self::LOCK_REQUEST_TRANSIENT, 1, MINUTE_IN_SECONDS * 2);
+        goto iimckuqgqcmmaaus;
+        aaysmqyimgwwmswc:
+        ewyyeyokouyicmom:
+        goto aqeuykaemmwcmkag;
         wkwqooeoiqqskigc:
         if ($mokawwccycoiqeka) {
             goto ewyyeyokouyicmom;
@@ -100,9 +100,15 @@ class Cartridge extends API
     public function wwawisckiqeueoua() : ?string
     {
         goto ooeisqqwmqwgaaky;
+        ooeisqqwmqwgaaky:
+        $yeacayasgueouoqc = null;
+        goto tosaeugqweaqkmkw;
         cekuuoakmewkciem:
         wkyowwwemoiseoke:
         goto cgikkekmwssakwme;
+        cmaiwqeugyoggqmu:
+        $yeacayasgueouoqc = DecoratorOption::get(self::CURRENT_DOMAIN, ManipulateArray::get($this->wiqumkmqkqoycqyi(), 0));
+        goto cekuuoakmewkciem;
         tosaeugqweaqkmkw:
         if ($this->yyqoaomsmcauuscg()) {
             goto wkyowwwemoiseoke;
@@ -111,58 +117,52 @@ class Cartridge extends API
         cgikkekmwssakwme:
         return $yeacayasgueouoqc;
         goto qwmaquiuiegowwqu;
-        ooeisqqwmqwgaaky:
-        $yeacayasgueouoqc = null;
-        goto tosaeugqweaqkmkw;
-        cmaiwqeugyoggqmu:
-        $yeacayasgueouoqc = DecoratorOption::get(self::CURRENT_DOMAIN, ManipulateArray::get($this->wiqumkmqkqoycqyi(), 0));
-        goto cekuuoakmewkciem;
         qwmaquiuiegowwqu:
     }
     
-    public function send($xeciwimgioieayek, $qiouiwasaauyaaue = [], $qgciuiagkkguykgs = "\x67\145\164") : ?ResponseInterface
+    public function send($xeciwimgioieayek, $qiouiwasaauyaaue = [], $qgciuiagkkguykgs = "\x67\x65\x74") : ?ResponseInterface
     {
         goto miyykescgesaauak;
-        qwkyqiemkeyeesow:
-        $keccaugmemegoimu = $this->send($xeciwimgioieayek, $qiouiwasaauyaaue, $qgciuiagkkguykgs);
-        goto guiasequyoqeqwiw;
         usiqwuciygicyqsi:
         sleep(2);
         goto qwkyqiemkeyeesow;
-        ogoyusqumokucecg:
-        return $keccaugmemegoimu;
-        goto qegwqosqeiaywqio;
-        uwcocoiugsyyigak:
-        $keccaugmemegoimu = null;
-        goto cisoskkacswwwgme;
-        cisoskkacswwwgme:
-        goto gecemgoaygoigwkq;
-        goto wiqwqecsuqsqisgm;
-        guiasequyoqeqwiw:
-        ooywaqmkyimkwigy:
-        goto cwmouqwqmkioeqiq;
-        iokigyiokgscmmyk:
-        $this->next();
-        goto usiqwuciygicyqsi;
-        wiqwqecsuqsqisgm:
-        famqscccoawysowy:
-        goto wauycggqcisyequc;
+        wauycggqcisyequc:
+        $keccaugmemegoimu = parent::send($xeciwimgioieayek, $qiouiwasaauyaaue, $qgciuiagkkguykgs);
+        goto qcggsaqoywyumieq;
         qcggsaqoywyumieq:
         if ($this->occymigcemkqucuw($keccaugmemegoimu, $iswcokucwmiosiaq)) {
             goto ooywaqmkyimkwigy;
         }
         goto iokigyiokgscmmyk;
-        wauycggqcisyequc:
-        $keccaugmemegoimu = parent::send($xeciwimgioieayek, $qiouiwasaauyaaue, $qgciuiagkkguykgs);
-        goto qcggsaqoywyumieq;
+        qwkyqiemkeyeesow:
+        $keccaugmemegoimu = $this->send($xeciwimgioieayek, $qiouiwasaauyaaue, $qgciuiagkkguykgs);
+        goto guiasequyoqeqwiw;
+        iokigyiokgscmmyk:
+        $this->next();
+        goto usiqwuciygicyqsi;
+        uwcocoiugsyyigak:
+        $keccaugmemegoimu = null;
+        goto cisoskkacswwwgme;
+        guiasequyoqeqwiw:
+        ooywaqmkyimkwigy:
+        goto cwmouqwqmkioeqiq;
+        ogoyusqumokucecg:
+        return $keccaugmemegoimu;
+        goto qegwqosqeiaywqio;
+        cisoskkacswwwgme:
+        goto gecemgoaygoigwkq;
+        goto wiqwqecsuqsqisgm;
+        cwmouqwqmkioeqiq:
+        gecemgoaygoigwkq:
+        goto ogoyusqumokucecg;
+        wiqwqecsuqsqisgm:
+        famqscccoawysowy:
+        goto wauycggqcisyequc;
         miyykescgesaauak:
         if (!$this->yyqoaomsmcauuscg()) {
             goto famqscccoawysowy;
         }
         goto uwcocoiugsyyigak;
-        cwmouqwqmkioeqiq:
-        gecemgoaygoigwkq:
-        goto ogoyusqumokucecg;
         qegwqosqeiaywqio:
     }
     
