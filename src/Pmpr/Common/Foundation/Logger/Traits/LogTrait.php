@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b1e8aa0c03             |
+    |             613b2e4befc8c             |
     |_______________________________________|
 */
 
@@ -48,24 +48,24 @@ trait LogTrait
     
     private function giaekemmcwcgswce($uamcoiueqaamsqma, $mgkceomocowocqyo = [], $iqaosyayeiuaisqi = Engine::DEBUG_CODE)
     {
-        goto qasccueceswyusgy;
-        seasiecgqussuqkw:
-        $this->ygaescewwyaseaoy()->uimukyawykswgwsm($iwcsiuuqeaaaeees, $iqaosyayeiuaisqi, $uamcoiueqaamsqma, $mgkceomocowocqyo);
-        goto geacgaisikkgqosu;
-        usosooekkcgwmgkq:
-        $iwcsiuuqeaaaeees = Logger::DEFAULT_CHANNEL;
         goto eocusimsawyoyaas;
-        eocusimsawyoyaas:
-        mookyeaauceccaga:
-        goto seasiecgqussuqkw;
-        qasccueceswyusgy:
-        $iwcsiuuqeaaaeees = $this->cycuaskkikweaoym();
-        goto yuwiekiseooqagqo;
-        yuwiekiseooqagqo:
+        seasiecgqussuqkw:
         if ($iwcsiuuqeaaaeees) {
-            goto mookyeaauceccaga;
+            goto usosooekkcgwmgkq;
         }
-        goto usosooekkcgwmgkq;
+        goto geacgaisikkgqosu;
+        sacawqskusgwkkyg:
+        $this->ygaescewwyaseaoy()->uimukyawykswgwsm($iwcsiuuqeaaaeees, $iqaosyayeiuaisqi, $uamcoiueqaamsqma, $mgkceomocowocqyo);
+        goto uckyuqsuyqwgswaa;
+        aqykwekaooeoqgoa:
+        usosooekkcgwmgkq:
+        goto sacawqskusgwkkyg;
+        eocusimsawyoyaas:
+        $iwcsiuuqeaaaeees = $this->cycuaskkikweaoym();
+        goto seasiecgqussuqkw;
         geacgaisikkgqosu:
+        $iwcsiuuqeaaaeees = Logger::DEFAULT_CHANNEL;
+        goto aqykwekaooeoqgoa;
+        uckyuqsuyqwgswaa:
     }
 }

@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b1e8aa0c03             |
+    |             613b2e4befc8c             |
     |_______________________________________|
 */
 
@@ -17,17 +17,17 @@ class Detector extends Common
     protected ?Mobile_Detect $device = null;
     public function __construct()
     {
-        goto qcaqeqscugwwgyci;
-        mcqoyigqsewkkwgc:
-        parent::__construct();
         goto eiguqiumekikicuw;
-        qcaqeqscugwwgyci:
-        $this->device = new Mobile_Detect();
-        goto qsikciasasogymew;
-        qsikciasasogymew:
+        wwauaucuwsokocmm:
         $this->browser = Browser::symcgieuakksimmu();
-        goto mcqoyigqsewkkwgc;
+        goto eccymasqomswiwug;
         eiguqiumekikicuw:
+        $this->device = new Mobile_Detect();
+        goto wwauaucuwsokocmm;
+        eccymasqomswiwug:
+        parent::__construct();
+        goto yaaisamcwuuowiua;
+        yaaisamcwuuowiua:
     }
     
     public function cyciimaqkakwcqqy($acsweksygkmmgggk) : bool
@@ -47,17 +47,17 @@ class Detector extends Common
     
     public function qawecuimqqcqwgsw() : bool
     {
-        return $this->is("\155\157\142\151\x6c\145");
+        return $this->is("\155\x6f\142\151\154\x65");
     }
     
     public function uggoocigiyiqkmww() : bool
     {
-        return $this->is("\x63\157\155\160\165\164\x65\x72");
+        return $this->is("\143\x6f\155\x70\x75\164\145\x72");
     }
     
     public function gsuucswsiuggysyw() : bool
     {
-        return $this->is("\164\141\142\154\145\x74");
+        return $this->is("\x74\141\x62\x6c\x65\164");
     }
     
     public function iwuicqgsgkaeikwa() : bool
@@ -67,52 +67,52 @@ class Detector extends Common
     
     public function yksyugcywqmuqgwo() : bool
     {
-        return $this->is("\106\x69\x72\x65\x66\157\x78");
+        return $this->is("\106\x69\x72\x65\x66\x6f\x78");
     }
     
     private function is($eqgoocgaqwqcimie) : bool
     {
-        goto yaaisamcwuuowiua;
-        ueiwqykysgmsogyo:
-        wwauaucuwsokocmm:
-        goto uqsauksiquqaiiiw;
-        acoqamisuacwkqyo:
-        $syowsmcowosssaos = $this->gekgcikwymwuuuog();
-        goto eugsgogsukuqwyou;
+        goto yeyskwsagaowouas;
+        iciimkyykgigcesk:
         eugsgogsukuqwyou:
+        goto skecwsguwggckqom;
+        yeyskwsagaowouas:
+        $quckouuiqiiowoei = $this->aagmmewiwysmgseq()->aagmmewiwysmgseq();
+        goto ueiwqykysgmsogyo;
+        uqsauksiquqaiiiw:
         switch ($eqgoocgaqwqcimie) {
-            case "\x63\x6f\155\x70\165\164\x65\x72":
+            case "\x63\x6f\155\x70\165\164\145\x72":
                 return !$syowsmcowosssaos->qawecuimqqcqwgsw();
-            case "\x74\x61\142\154\x65\x74":
+            case "\164\141\142\154\145\x74":
                 return $syowsmcowosssaos->gsuucswsiuggysyw();
-            case "\x6d\x6f\x62\x69\x6c\x65":
+            case "\155\x6f\142\151\154\145":
                 return $syowsmcowosssaos->qawecuimqqcqwgsw() && !$syowsmcowosssaos->gsuucswsiuggysyw();
-            case "\102\x72\141\x76\x65":
+            case "\x42\x72\x61\166\x65":
                 return Browser::BROWSER_BRAVE === $quckouuiqiiowoei;
-            case "\103\x68\x72\x6f\x6d\145":
+            case "\103\150\162\157\x6d\x65":
                 return Browser::BROWSER_CHROME === $quckouuiqiiowoei;
-            case "\x46\151\x72\x65\146\x6f\x78":
+            case "\106\x69\162\x65\146\157\170":
                 return Browser::BROWSER_FIREFOX === $quckouuiqiiowoei;
-            case "\105\x64\x67\x65":
+            case "\x45\x64\x67\x65":
                 return Browser::BROWSER_EDGE === $quckouuiqiiowoei;
-            case "\111\x6e\x74\x65\162\x6e\145\x74\40\x45\170\160\x6c\x6f\162\145\x72":
+            case "\111\156\x74\x65\x72\156\145\x74\40\105\170\160\x6c\157\162\145\x72":
                 return Browser::BROWSER_IE === $quckouuiqiiowoei;
-            case "\117\160\x65\162\x61":
+            case "\x4f\x70\145\162\x61":
                 return Browser::BROWSER_OPERA === $quckouuiqiiowoei;
-            case "\x53\x61\146\141\x72\151":
+            case "\123\x61\146\x61\162\x69":
                 return Browser::BROWSER_SAFARI === $quckouuiqiiowoei;
-            case "\123\x61\x66\x61\x72\151\40\157\x6e\40\x69\120\x68\x6f\156\x65":
+            case "\123\141\x66\x61\162\151\x20\157\156\x20\151\120\150\157\156\145":
                 return Browser::BROWSER_IPHONE === $quckouuiqiiowoei;
             default:
                 return true;
         }
-        goto yeyskwsagaowouas;
-        yaaisamcwuuowiua:
-        $quckouuiqiiowoei = $this->aagmmewiwysmgseq()->aagmmewiwysmgseq();
-        goto acoqamisuacwkqyo;
-        yeyskwsagaowouas:
-        eccymasqomswiwug:
-        goto ueiwqykysgmsogyo;
-        uqsauksiquqaiiiw:
+        goto iciimkyykgigcesk;
+        skecwsguwggckqom:
+        acoqamisuacwkqyo:
+        goto acwaqgoyqeucuaog;
+        ueiwqykysgmsogyo:
+        $syowsmcowosssaos = $this->gekgcikwymwuuuog();
+        goto uqsauksiquqaiiiw;
+        acwaqgoyqeucuaog:
     }
 }

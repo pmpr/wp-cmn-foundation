@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b1e8aa0c03             |
+    |             613b2e4befc8c             |
     |_______________________________________|
 */
 
@@ -13,7 +13,7 @@ class Hidden extends Field
     
     public function __construct(string $aokagokqyuysuksm, ?string $eqgoocgaqwqcimie = null)
     {
-        parent::__construct("\151\156\x70\165\x74", "\x68\151\144\144\x65\x6e", $aokagokqyuysuksm);
+        parent::__construct("\151\x6e\160\x75\x74", "\150\151\x64\144\x65\x6e", $aokagokqyuysuksm);
         $this->iygyugseyaqwywyg($eqgoocgaqwqcimie);
     }
 }

@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b1e8aa0c03             |
+    |             613b2e4befc8c             |
     |_______________________________________|
 */
 
@@ -13,321 +13,321 @@ class ManipulateArray extends Common
     
     public static function unset(&$uomewyckeuqoqocu, $uusmaiomayssaecw)
     {
-        goto eiseywwywkwcwgcq;
-        swagceggcwqkcgkg:
+        goto asumyiuqmmywiwyc;
+        ewkqiewssocsquuo:
         if (!($uomewyckeuqoqocu && is_array($uomewyckeuqoqocu))) {
+            goto yusagekewyiqqqyk;
+        }
+        goto qeaowsgcqsuccawg;
+        ywumqymqkuyegcae:
+        return $eqgoocgaqwqcimie;
+        goto ycesoqquooyiwusg;
+        qeaowsgcqsuccawg:
+        if (is_array($uusmaiomayssaecw)) {
+            goto eiseywwywkwcwgcq;
+        }
+        goto kamukeioemqucmmg;
+        esqkgmaasckugmqo:
+        eiseywwywkwcwgcq:
+        goto ygqaaocooiqkugos;
+        ewcysecswgsugswi:
+        goto swagceggcwqkcgkg;
+        goto esqkgmaasckugmqo;
+        yaawcswsqyucgsus:
+        agmgeuqwqyskeace:
+        goto ewcysecswgsugswi;
+        cksyaoquscmmscke:
+        swagceggcwqkcgkg:
+        goto gggogewkqkskuicm;
+        gggogewkqkskuicm:
+        yusagekewyiqqqyk:
+        goto ywumqymqkuyegcae;
+        mmgoicukswqwseoc:
+        unset($uomewyckeuqoqocu[$uusmaiomayssaecw]);
+        goto yaawcswsqyucgsus;
+        yaawiccsokmgweye:
+        $eqgoocgaqwqcimie = $uomewyckeuqoqocu[$uusmaiomayssaecw];
+        goto mmgoicukswqwseoc;
+        kamukeioemqucmmg:
+        if (!isset($uomewyckeuqoqocu[$uusmaiomayssaecw])) {
             goto agmgeuqwqyskeace;
         }
-        goto yusagekewyiqqqyk;
-        yaawiccsokmgweye:
-        goto acukcyqyqoyauieg;
-        goto mmgoicukswqwseoc;
-        yusagekewyiqqqyk:
-        if (is_array($uusmaiomayssaecw)) {
-            goto gwwocsgkqyycikau;
-        }
-        goto asumyiuqmmywiwyc;
-        kamukeioemqucmmg:
-        iowceqakcgogmssu:
         goto yaawiccsokmgweye;
-        mmgoicukswqwseoc:
-        gwwocsgkqyycikau:
-        goto yaawcswsqyucgsus;
         ygqaaocooiqkugos:
-        return $eqgoocgaqwqcimie;
-        goto cksyaoquscmmscke;
-        ewcysecswgsugswi:
-        acukcyqyqoyauieg:
-        goto esqkgmaasckugmqo;
-        eiseywwywkwcwgcq:
-        $eqgoocgaqwqcimie = null;
-        goto swagceggcwqkcgkg;
-        qeaowsgcqsuccawg:
-        unset($uomewyckeuqoqocu[$uusmaiomayssaecw]);
-        goto kamukeioemqucmmg;
-        yaawcswsqyucgsus:
         $uomewyckeuqoqocu = array_diff_key($uomewyckeuqoqocu, array_flip($uusmaiomayssaecw));
-        goto ewcysecswgsugswi;
+        goto cksyaoquscmmscke;
         asumyiuqmmywiwyc:
-        if (!isset($uomewyckeuqoqocu[$uusmaiomayssaecw])) {
-            goto iowceqakcgogmssu;
-        }
+        $eqgoocgaqwqcimie = null;
         goto ewkqiewssocsquuo;
-        esqkgmaasckugmqo:
-        agmgeuqwqyskeace:
-        goto ygqaaocooiqkugos;
-        ewkqiewssocsquuo:
-        $eqgoocgaqwqcimie = $uomewyckeuqoqocu[$uusmaiomayssaecw];
-        goto qeaowsgcqsuccawg;
-        cksyaoquscmmscke:
+        ycesoqquooyiwusg:
     }
     
     public static function set($oaiciiqoawkamweo, $uwomkgseoiegeume = [])
     {
-        goto kmawkwiiceqawowo;
-        wwykqesuwsqiwyiw:
-        return $oaiciiqoawkamweo;
-        goto aucikuqogioweysy;
-        gmmwicowkqiisogm:
-        gggogewkqkskuicm:
-        goto oogwiuueieywymio;
-        omggqawmwgeoiawc:
-        $awqscowmskeuymeu = is_object($oaiciiqoawkamweo);
         goto iawwywggiwmigeiy;
-        mgskwyqqysgqegwe:
+        aucikuqogioweysy:
+        kymsyoeswiuqoeam:
+        goto uykcicoeacqaykia;
+        gmmwicowkqiisogm:
         $casemmqcsgmemwyg = is_array($oaiciiqoawkamweo);
-        goto omggqawmwgeoiawc;
-        oogwiuueieywymio:
-        gmmukayqkigwksam:
-        goto wwykqesuwsqiwyiw;
+        goto oogwiuueieywymio;
+        cieamqmwwegyukgc:
+        return $oaiciiqoawkamweo;
+        goto cuqccemgkguqycgc;
         iawwywggiwmigeiy:
-        foreach ($uwomkgseoiegeume as $uusmaiomayssaecw => $eqgoocgaqwqcimie) {
-            goto swasyymuuuesyssc;
-            swasyymuuuesyssc:
-            if ($casemmqcsgmemwyg) {
-                goto kymsyoeswiuqoeam;
-            }
-            goto ogyecgyqquwgcugi;
-            cyewimeguwgissoe:
-            $oaiciiqoawkamweo->{$uusmaiomayssaecw} = $eqgoocgaqwqcimie;
-            goto uqkuaiqggmmqkwcg;
-            ogyecgyqquwgcugi:
-            if (!$awqscowmskeuymeu) {
-                goto ycesoqquooyiwusg;
-            }
-            goto cyewimeguwgissoe;
-            akiawysiwswoqmee:
-            oeoawwmyiaaaieoy:
-            goto sqeucqqqmoqcuuem;
-            mksesqkqwqwyiski:
-            goto oeoawwmyiaaaieoy;
-            goto ecoqoquwuygscmai;
-            sqeucqqqmoqcuuem:
-            ywumqymqkuyegcae:
-            goto ocguegwcwgegqugs;
-            ecoqoquwuygscmai:
-            kymsyoeswiuqoeam:
-            goto gooaiamwaqiueqag;
-            uqkuaiqggmmqkwcg:
-            ycesoqquooyiwusg:
-            goto mksesqkqwqwyiski;
-            gooaiamwaqiueqag:
-            $oaiciiqoawkamweo[$uusmaiomayssaecw] = $eqgoocgaqwqcimie;
-            goto akiawysiwswoqmee;
-            ocguegwcwgegqugs:
+        if (!(is_array($uwomkgseoiegeume) && $uwomkgseoiegeume)) {
+            goto omggqawmwgeoiawc;
         }
         goto gmmwicowkqiisogm;
-        kmawkwiiceqawowo:
-        if (!(is_array($uwomkgseoiegeume) && $uwomkgseoiegeume)) {
+        uykcicoeacqaykia:
+        omggqawmwgeoiawc:
+        goto cieamqmwwegyukgc;
+        wwykqesuwsqiwyiw:
+        foreach ($uwomkgseoiegeume as $uusmaiomayssaecw => $eqgoocgaqwqcimie) {
+            goto uqkuaiqggmmqkwcg;
+            sqeucqqqmoqcuuem:
+            ogyecgyqquwgcugi:
+            goto ocguegwcwgegqugs;
+            gooaiamwaqiueqag:
+            swasyymuuuesyssc:
+            goto akiawysiwswoqmee;
+            kmawkwiiceqawowo:
+            oeoawwmyiaaaieoy:
+            goto mgskwyqqysgqegwe;
+            mksesqkqwqwyiski:
+            if (!$awqscowmskeuymeu) {
+                goto swasyymuuuesyssc;
+            }
+            goto ecoqoquwuygscmai;
+            ocguegwcwgegqugs:
+            $oaiciiqoawkamweo[$uusmaiomayssaecw] = $eqgoocgaqwqcimie;
             goto gmmukayqkigwksam;
+            akiawysiwswoqmee:
+            goto cyewimeguwgissoe;
+            goto sqeucqqqmoqcuuem;
+            uqkuaiqggmmqkwcg:
+            if ($casemmqcsgmemwyg) {
+                goto ogyecgyqquwgcugi;
+            }
+            goto mksesqkqwqwyiski;
+            gmmukayqkigwksam:
+            cyewimeguwgissoe:
+            goto kmawkwiiceqawowo;
+            ecoqoquwuygscmai:
+            $oaiciiqoawkamweo->{$uusmaiomayssaecw} = $eqgoocgaqwqcimie;
+            goto gooaiamwaqiueqag;
+            mgskwyqqysgqegwe:
         }
-        goto mgskwyqqysgqegwe;
-        aucikuqogioweysy:
+        goto aucikuqogioweysy;
+        oogwiuueieywymio:
+        $awqscowmskeuymeu = is_object($oaiciiqoawkamweo);
+        goto wwykqesuwsqiwyiw;
+        cuqccemgkguqycgc:
     }
     
     public static function isset($uomewyckeuqoqocu, $yygmoeguaqyumuui) : bool
     {
-        goto oqsieegccekksmek;
-        uyqcwcgaswkaaqys:
+        goto qyuigkqusowucaqq;
+        aasyamqyqesqqwkm:
+        aoseoaeigamewkyg:
+        goto gomagoumaosyimii;
+        ucqcuosmqwiiwigm:
         foreach ($yygmoeguaqyumuui as $uusmaiomayssaecw) {
-            goto aoseoaeigamewkyg;
-            aoseoaeigamewkyg:
-            if (isset($uomewyckeuqoqocu[$uusmaiomayssaecw])) {
-                goto cuqccemgkguqycgc;
-            }
-            goto kuekasacwyquuiqy;
-            kuekasacwyquuiqy:
-            $ksaameoqigiaoigg = false;
-            goto gacoqocuigoymcam;
-            gacoqocuigoymcam:
-            goto uykcicoeacqaykia;
             goto muukgiowiywgysuy;
             iscuuwgoaosayimo:
-            cieamqmwwegyukgc:
+            $ksaameoqigiaoigg = false;
             goto umkkwyaciakygsgo;
-            muukgiowiywgysuy:
-            cuqccemgkguqycgc:
-            goto iscuuwgoaosayimo;
             umkkwyaciakygsgo:
-        }
-        goto oaiigcusecmsciso;
-        oaiigcusecmsciso:
-        uykcicoeacqaykia:
-        goto yucmysyskmgwsowg;
-        moceysouasysuwwk:
-        if (is_array($uomewyckeuqoqocu) && $uomewyckeuqoqocu && is_array($yygmoeguaqyumuui) && $yygmoeguaqyumuui) {
+            goto aoseoaeigamewkyg;
             goto waoqqaimmwkqikay;
+            muukgiowiywgysuy:
+            if (isset($uomewyckeuqoqocu[$uusmaiomayssaecw])) {
+                goto gacoqocuigoymcam;
+            }
+            goto iscuuwgoaosayimo;
+            waoqqaimmwkqikay:
+            gacoqocuigoymcam:
+            goto ocqymsowceymagky;
+            ocqymsowceymagky:
+            kuekasacwyquuiqy:
+            goto oqsieegccekksmek;
+            oqsieegccekksmek:
         }
-        goto wgccsswsaiqccecw;
-        oqsieegccekksmek:
-        $ksaameoqigiaoigg = true;
-        goto moceysouasysuwwk;
-        ucqcuosmqwiiwigm:
-        return $ksaameoqigiaoigg;
         goto aasyamqyqesqqwkm;
+        oaiigcusecmsciso:
+        goto wgccsswsaiqccecw;
+        goto yucmysyskmgwsowg;
+        gomagoumaosyimii:
         wgccsswsaiqccecw:
+        goto cucceeoseaagcoam;
+        cucceeoseaagcoam:
+        return $ksaameoqigiaoigg;
+        goto qsyimuywgcsoiecu;
+        uyqcwcgaswkaaqys:
         $ksaameoqigiaoigg = false;
-        goto qyuigkqusowucaqq;
+        goto oaiigcusecmsciso;
         yucmysyskmgwsowg:
-        ocqymsowceymagky:
+        moceysouasysuwwk:
         goto ucqcuosmqwiiwigm;
-        qyuigkqusowucaqq:
-        goto ocqymsowceymagky;
-        goto wscswagewsegyiyc;
         wscswagewsegyiyc:
-        waoqqaimmwkqikay:
+        if (is_array($uomewyckeuqoqocu) && $uomewyckeuqoqocu && is_array($yygmoeguaqyumuui) && $yygmoeguaqyumuui) {
+            goto moceysouasysuwwk;
+        }
         goto uyqcwcgaswkaaqys;
-        aasyamqyqesqqwkm:
+        qyuigkqusowucaqq:
+        $ksaameoqigiaoigg = true;
+        goto wscswagewsegyiyc;
+        qsyimuywgcsoiecu:
     }
     
     public static function gymccqywkegiqiiw($uomewyckeuqoqocu) : int
     {
-        goto cucceeoseaagcoam;
-        qsyimuywgcsoiecu:
-        if (!$uomewyckeuqoqocu) {
-            goto gomagoumaosyimii;
-        }
-        goto qeqwkkggucamquwc;
-        qeqwkkggucamquwc:
-        $iukyueweicuocgow = rand(0, count($uomewyckeuqoqocu) - 1);
         goto ksowgigyiiocmmay;
-        aokseecsgimieouu:
-        return $iukyueweicuocgow;
-        goto euqaywkcamscaugi;
         ksowgigyiiocmmay:
-        gomagoumaosyimii:
-        goto aokseecsgimieouu;
-        cucceeoseaagcoam:
         $iukyueweicuocgow = 0;
-        goto qsyimuywgcsoiecu;
+        goto aokseecsgimieouu;
+        cseioaeaywcuekge:
+        return $iukyueweicuocgow;
+        goto yokyoayigkwweqeg;
         euqaywkcamscaugi:
+        $iukyueweicuocgow = rand(0, count($uomewyckeuqoqocu) - 1);
+        goto ieiwqimgggeoaqwm;
+        ieiwqimgggeoaqwm:
+        qeqwkkggucamquwc:
+        goto cseioaeaywcuekge;
+        aokseecsgimieouu:
+        if (!$uomewyckeuqoqocu) {
+            goto qeqwkkggucamquwc;
+        }
+        goto euqaywkcamscaugi;
+        yokyoayigkwweqeg:
     }
     
     public static function uuegkqwagymmusiy($uomewyckeuqoqocu, $yygmoeguaqyumuui) : bool
     {
-        goto gouyoowcwkccwewk;
-        gouyoowcwkccwewk:
-        $ksaameoqigiaoigg = false;
-        goto qeyssuuycyyguuyo;
-        qigeyewuukwwousm:
-        qummwcsgemgwqwga:
-        goto imeiskyssuamssoq;
-        imeiskyssuamssoq:
-        return $ksaameoqigiaoigg;
-        goto ygseoaiecssiymec;
-        iqwsaiomwmyeusaq:
-        foreach ($yygmoeguaqyumuui as $uusmaiomayssaecw) {
-            goto ykyqsgogqywswoua;
-            hkokwccuegwgeegk:
-            yokyoayigkwweqeg:
-            goto qkcgewmwssuaewie;
-            ykyqsgogqywswoua:
-            if (self::get($uomewyckeuqoqocu, $uusmaiomayssaecw, false)) {
-                goto yokyoayigkwweqeg;
-            }
-            goto gmiacescgeoqcogu;
-            qkcgewmwssuaewie:
-            cseioaeaywcuekge:
-            goto iyociciyeiswkaqk;
-            gmiacescgeoqcogu:
-            $ksaameoqigiaoigg = true;
-            goto gwsqeeiwciqccasw;
-            gwsqeeiwciqccasw:
-            goto ieiwqimgggeoaqwm;
-            goto hkokwccuegwgeegk;
-            iyociciyeiswkaqk:
-        }
         goto kaoukeiiiuquqgsm;
-        qeyssuuycyyguuyo:
-        if (!($uomewyckeuqoqocu && $yygmoeguaqyumuui)) {
-            goto qummwcsgemgwqwga;
-        }
-        goto iqwsaiomwmyeusaq;
+        owswisaiecssuwwu:
+        return $ksaameoqigiaoigg;
+        goto oowwickgsmcqamqe;
         kaoukeiiiuquqgsm:
-        ieiwqimgggeoaqwm:
+        $ksaameoqigiaoigg = false;
         goto qigeyewuukwwousm;
+        qigeyewuukwwousm:
+        if (!($uomewyckeuqoqocu && $yygmoeguaqyumuui)) {
+            goto iqwsaiomwmyeusaq;
+        }
+        goto imeiskyssuamssoq;
         ygseoaiecssiymec:
+        ykyqsgogqywswoua:
+        goto agqgaiqiwcgowsoi;
+        imeiskyssuamssoq:
+        foreach ($yygmoeguaqyumuui as $uusmaiomayssaecw) {
+            goto hkokwccuegwgeegk;
+            qummwcsgemgwqwga:
+            gwsqeeiwciqccasw:
+            goto gouyoowcwkccwewk;
+            hkokwccuegwgeegk:
+            if (self::get($uomewyckeuqoqocu, $uusmaiomayssaecw, false)) {
+                goto gwsqeeiwciqccasw;
+            }
+            goto qkcgewmwssuaewie;
+            iyociciyeiswkaqk:
+            goto ykyqsgogqywswoua;
+            goto qummwcsgemgwqwga;
+            qkcgewmwssuaewie:
+            $ksaameoqigiaoigg = true;
+            goto iyociciyeiswkaqk;
+            gouyoowcwkccwewk:
+            gmiacescgeoqcogu:
+            goto qeyssuuycyyguuyo;
+            qeyssuuycyyguuyo:
+        }
+        goto ygseoaiecssiymec;
+        agqgaiqiwcgowsoi:
+        iqwsaiomwmyeusaq:
+        goto owswisaiecssuwwu;
+        oowwickgsmcqamqe:
     }
     
     public static function gyciysooayoqiisg(&$uomewyckeuqoqocu, $eqgoocgaqwqcimie)
     {
-        goto okmawomkamqiwesm;
-        okmawomkamqiwesm:
-        $qcgkuqesqqymcuui = null;
-        goto ugaoskycwsqcesko;
-        qucwqsuacqkymwsm:
-        owswisaiecssuwwu:
-        goto myissqmgymuauowq;
-        myissqmgymuauowq:
-        return $qcgkuqesqqymcuui;
-        goto scsgmyqiwwwkwayy;
-        rasgkseukaaqecam:
-        foreach ($eqgoocgaqwqcimie as $uiymkeeaukcyqqik) {
-            goto miqsgoqewuokegig;
-            geyksaceayaiwiiy:
-            kyaismgimkqkcmey:
-            goto ecqyggsgiqweeyee;
-            miqsgoqewuokegig:
-            $uusmaiomayssaecw = array_search($uiymkeeaukcyqqik, $uomewyckeuqoqocu);
-            goto smaisgmkkwgiqygi;
-            umyquqiugigqmkau:
-            $qcgkuqesqqymcuui = self::unset($uomewyckeuqoqocu, $uusmaiomayssaecw);
-            goto geyksaceayaiwiiy;
-            ecqyggsgiqweeyee:
-            oowwickgsmcqamqe:
-            goto qykwyyyeyygkiqmi;
-            smaisgmkkwgiqygi:
-            if (!($uusmaiomayssaecw !== false)) {
-                goto kyaismgimkqkcmey;
-            }
-            goto umyquqiugigqmkau;
-            qykwyyyeyygkiqmi:
-        }
-        goto qucwqsuacqkymwsm;
-        iswsmaumaacmwcwu:
-        $qcgkuqesqqymcuui = false;
-        goto rasgkseukaaqecam;
-        wyuommoqmyaeiswc:
-        $eqgoocgaqwqcimie = [$eqgoocgaqwqcimie];
         goto kocagcykiyimkmoa;
-        ugaoskycwsqcesko:
+        iswsmaumaacmwcwu:
         if (is_array($eqgoocgaqwqcimie)) {
-            goto agqgaiqiwcgowsoi;
+            goto kyaismgimkqkcmey;
         }
-        goto wyuommoqmyaeiswc;
+        goto rasgkseukaaqecam;
+        myissqmgymuauowq:
+        $qcgkuqesqqymcuui = false;
+        goto scsgmyqiwwwkwayy;
         kocagcykiyimkmoa:
-        agqgaiqiwcgowsoi:
+        $qcgkuqesqqymcuui = null;
         goto iswsmaumaacmwcwu;
+        rasgkseukaaqecam:
+        $eqgoocgaqwqcimie = [$eqgoocgaqwqcimie];
+        goto qucwqsuacqkymwsm;
+        uyyceeeqmoysskuw:
+        miqsgoqewuokegig:
+        goto ccgiykywckmyiscg;
+        ccgiykywckmyiscg:
+        return $qcgkuqesqqymcuui;
+        goto qqgsggygqommqmkw;
+        qucwqsuacqkymwsm:
+        kyaismgimkqkcmey:
+        goto myissqmgymuauowq;
         scsgmyqiwwwkwayy:
+        foreach ($eqgoocgaqwqcimie as $uiymkeeaukcyqqik) {
+            goto geyksaceayaiwiiy;
+            geyksaceayaiwiiy:
+            $uusmaiomayssaecw = array_search($uiymkeeaukcyqqik, $uomewyckeuqoqocu);
+            goto ecqyggsgiqweeyee;
+            ugaoskycwsqcesko:
+            smaisgmkkwgiqygi:
+            goto wyuommoqmyaeiswc;
+            qykwyyyeyygkiqmi:
+            $qcgkuqesqqymcuui = self::unset($uomewyckeuqoqocu, $uusmaiomayssaecw);
+            goto okmawomkamqiwesm;
+            ecqyggsgiqweeyee:
+            if (!($uusmaiomayssaecw !== false)) {
+                goto umyquqiugigqmkau;
+            }
+            goto qykwyyyeyygkiqmi;
+            okmawomkamqiwesm:
+            umyquqiugigqmkau:
+            goto ugaoskycwsqcesko;
+            wyuommoqmyaeiswc:
+        }
+        goto uyyceeeqmoysskuw;
+        qqgsggygqommqmkw:
     }
     
     public static function insert(&$uomewyckeuqoqocu, $kuuiuigeacouwmaa, $igqsaukqcqscimok)
     {
-        goto qqgsggygqommqmkw;
-        qqgsggygqommqmkw:
-        if (is_int($kuuiuigeacouwmaa)) {
-            goto uyyceeeqmoysskuw;
-        }
-        goto aiskggeswyweiogy;
-        imscgsmqiswkeyka:
-        ccgiykywckmyiscg:
-        goto oyqqsiciakemkgim;
-        aasiooeuekwqamyk:
-        $uomewyckeuqoqocu = array_merge(array_slice($uomewyckeuqoqocu, 0, $yuyowiyumyysomoy), $igqsaukqcqscimok, array_slice($uomewyckeuqoqocu, $yuyowiyumyysomoy));
         goto iosgqqoyoiqgsgks;
-        akequyeqowgagiek:
-        uyyceeeqmoysskuw:
-        goto eguqaygayksgkoyq;
-        aiskggeswyweiogy:
-        $yuyowiyumyysomoy = array_search($kuuiuigeacouwmaa, array_keys($uomewyckeuqoqocu));
-        goto aasiooeuekwqamyk;
         eguqaygayksgkoyq:
-        array_splice($uomewyckeuqoqocu, $kuuiuigeacouwmaa, 0, $igqsaukqcqscimok);
+        $uomewyckeuqoqocu = array_merge(array_slice($uomewyckeuqoqocu, 0, $yuyowiyumyysomoy), $igqsaukqcqscimok, array_slice($uomewyckeuqoqocu, $yuyowiyumyysomoy));
         goto imscgsmqiswkeyka;
-        iosgqqoyoiqgsgks:
-        goto ccgiykywckmyiscg;
-        goto akequyeqowgagiek;
+        imscgsmqiswkeyka:
+        goto aasiooeuekwqamyk;
+        goto oyqqsiciakemkgim;
         oyqqsiciakemkgim:
+        aiskggeswyweiogy:
+        goto emaakmmcykwmmeum;
+        quumskauyaouyyiy:
+        aasiooeuekwqamyk:
+        goto ocickgekowkiqyuo;
+        akequyeqowgagiek:
+        $yuyowiyumyysomoy = array_search($kuuiuigeacouwmaa, array_keys($uomewyckeuqoqocu));
+        goto eguqaygayksgkoyq;
+        iosgqqoyoiqgsgks:
+        if (is_int($kuuiuigeacouwmaa)) {
+            goto aiskggeswyweiogy;
+        }
+        goto akequyeqowgagiek;
+        emaakmmcykwmmeum:
+        array_splice($uomewyckeuqoqocu, $kuuiuigeacouwmaa, 0, $igqsaukqcqscimok);
+        goto quumskauyaouyyiy;
+        ocickgekowkiqyuo:
     }
     
     public static function gogeqwskoiiaocoe($uomewyckeuqoqocu) : bool
@@ -337,710 +337,710 @@ class ManipulateArray extends Common
     
     public static function wuoqgcwmkicakygs($uomewyckeuqoqocu) : bool
     {
-        goto quumskauyaouyyiy;
-        sygasaomgiqoqmqs:
-        emaakmmcykwmmeum:
-        goto kugoqmkkeqeoakik;
-        kugoqmkkeqeoakik:
-        return $wuoqgcwmkicakygs;
-        goto cgeimkqsoqqigogy;
-        ocickgekowkiqyuo:
-        if (!$uomewyckeuqoqocu) {
-            goto emaakmmcykwmmeum;
-        }
-        goto iqkysoyykewkkwes;
-        iqkysoyykewkkwes:
-        $wuoqgcwmkicakygs = array_keys($uomewyckeuqoqocu) !== range(0, count($uomewyckeuqoqocu) - 1);
         goto sygasaomgiqoqmqs;
-        quumskauyaouyyiy:
+        gocwqoqicukssssu:
+        return $wuoqgcwmkicakygs;
+        goto owasckmgeweqwsgq;
+        kugoqmkkeqeoakik:
+        if (!$uomewyckeuqoqocu) {
+            goto iqkysoyykewkkwes;
+        }
+        goto cgeimkqsoqqigogy;
+        ecawoqusqygmccmo:
+        iqkysoyykewkkwes:
+        goto gocwqoqicukssssu;
+        sygasaomgiqoqmqs:
         $wuoqgcwmkicakygs = false;
-        goto ocickgekowkiqyuo;
+        goto kugoqmkkeqeoakik;
         cgeimkqsoqqigogy:
+        $wuoqgcwmkicakygs = array_keys($uomewyckeuqoqocu) !== range(0, count($uomewyckeuqoqocu) - 1);
+        goto ecawoqusqygmccmo;
+        owasckmgeweqwsgq:
     }
     
     public static function yaeiiwwyckwugsem($uomewyckeuqoqocu, $igaagwuyasawwqms = self::PRIORITY)
     {
-        goto cqqywmesqogkseku;
-        iuumiyikcwiiwuqk:
-        return $uomewyckeuqoqocu;
-        goto aoeccsiuoeigmwkm;
-        eiakokiiwigccesk:
+        goto iuumiyikcwiiwuqk;
+        aoeccsiuoeigmwkm:
         uasort($uomewyckeuqoqocu, function ($mmeioagwmyscwumo, $csougakqegqiqsgi) use($igaagwuyasawwqms) {
-            goto ouseeusmwgswgayi;
-            ssgeyeewksygaeqm:
-            qgwmgswcikqsoymm:
-            goto owsywiygoiqkyeey;
-            owsywiygoiqkyeey:
-            goto okgmaysweamaymuk;
-            goto soaekkoykikagyqa;
-            mwewkecyyqycwcyi:
-            gocwqoqicukssssu:
-            goto guqmiyswawmaggqw;
-            gykceoyygmmeawws:
-            return $uiuykcweuosgmwki;
-            goto aocqwuakameoqqme;
+            goto gueiogkegsiymgie;
             nicoewqgywcusaci:
-            ecawoqusqygmccmo:
-            goto wmggooiesmiaymyw;
-            qwcsgqgmmsscgsaa:
-            if (is_object($mmeioagwmyscwumo) && is_object($csougakqegqiqsgi)) {
+            if (isset($mmeioagwmyscwumo->{$igaagwuyasawwqms}, $csougakqegqiqsgi->{$igaagwuyasawwqms})) {
                 goto mkggwgyaywmiaeue;
             }
-            goto ayoycomwascmkkkm;
-            gmoewkmwwyeaycgm:
-            okgmaysweamaymuk:
-            goto gykceoyygmmeawws;
+            goto wmggooiesmiaymyw;
             soaekkoykikagyqa:
-            mkggwgyaywmiaeue:
+            $uiuykcweuosgmwki = self::get($mmeioagwmyscwumo, $igaagwuyasawwqms) <=> self::get($csougakqegqiqsgi, $igaagwuyasawwqms);
             goto amamemmaewcmqmso;
-            wyymkuqsaikomumi:
-            owasckmgeweqwsgq:
-            goto gmoewkmwwyeaycgm;
-            ekmmomgayqemmaqm:
-            if (!(method_exists($mmeioagwmyscwumo, $igaagwuyasawwqms) && method_exists($csougakqegqiqsgi, $igaagwuyasawwqms))) {
-                goto ecawoqusqygmccmo;
-            }
-            goto qkiwmwgkosoiiqgo;
             amamemmaewcmqmso:
-            if (isset($mmeioagwmyscwumo->{$igaagwuyasawwqms}, $csougakqegqiqsgi->{$igaagwuyasawwqms})) {
-                goto gocwqoqicukssssu;
-            }
+            ouseeusmwgswgayi:
             goto ekmmomgayqemmaqm;
+            ekmmomgayqemmaqm:
+            goto ayoycomwascmkkkm;
+            goto qkiwmwgkosoiiqgo;
+            gmoewkmwwyeaycgm:
+            mkggwgyaywmiaeue:
+            goto gykceoyygmmeawws;
+            aykucyyeseggeeoy:
             ayoycomwascmkkkm:
-            if (!(is_array($mmeioagwmyscwumo) && is_array($csougakqegqiqsgi))) {
+            goto cqqywmesqogkseku;
+            guqmiyswawmaggqw:
+            qgwmgswcikqsoymm:
+            goto wyymkuqsaikomumi;
+            qkiwmwgkosoiiqgo:
+            qwcsgqgmmsscgsaa:
+            goto nicoewqgywcusaci;
+            wmggooiesmiaymyw:
+            if (!(method_exists($mmeioagwmyscwumo, $igaagwuyasawwqms) && method_exists($csougakqegqiqsgi, $igaagwuyasawwqms))) {
                 goto qgwmgswcikqsoymm;
             }
-            goto gueiogkegsiymgie;
-            gueiogkegsiymgie:
-            $uiuykcweuosgmwki = self::get($mmeioagwmyscwumo, $igaagwuyasawwqms) <=> self::get($csougakqegqiqsgi, $igaagwuyasawwqms);
-            goto ssgeyeewksygaeqm;
-            ouseeusmwgswgayi:
-            $uiuykcweuosgmwki = false;
-            goto qwcsgqgmmsscgsaa;
-            guqmiyswawmaggqw:
-            $uiuykcweuosgmwki = $mmeioagwmyscwumo->{$igaagwuyasawwqms} <=> $csougakqegqiqsgi->{$igaagwuyasawwqms};
-            goto wyymkuqsaikomumi;
-            wmggooiesmiaymyw:
-            goto owasckmgeweqwsgq;
             goto mwewkecyyqycwcyi;
-            qkiwmwgkosoiiqgo:
+            gueiogkegsiymgie:
+            $uiuykcweuosgmwki = false;
+            goto ssgeyeewksygaeqm;
+            mwewkecyyqycwcyi:
             $uiuykcweuosgmwki = $mmeioagwmyscwumo->{$igaagwuyasawwqms}() <=> $csougakqegqiqsgi->{$igaagwuyasawwqms}();
-            goto nicoewqgywcusaci;
+            goto guqmiyswawmaggqw;
+            cqqywmesqogkseku:
+            return $uiuykcweuosgmwki;
+            goto eiakokiiwigccesk;
+            ssgeyeewksygaeqm:
+            if (is_object($mmeioagwmyscwumo) && is_object($csougakqegqiqsgi)) {
+                goto qwcsgqgmmsscgsaa;
+            }
+            goto owsywiygoiqkyeey;
+            gykceoyygmmeawws:
+            $uiuykcweuosgmwki = $mmeioagwmyscwumo->{$igaagwuyasawwqms} <=> $csougakqegqiqsgi->{$igaagwuyasawwqms};
+            goto aocqwuakameoqqme;
             aocqwuakameoqqme:
-        });
-        goto aksioomuagcyawuk;
-        aksioomuagcyawuk:
-        aykucyyeseggeeoy:
-        goto iuumiyikcwiiwuqk;
-        cqqywmesqogkseku:
-        if (!is_array($uomewyckeuqoqocu)) {
+            okgmaysweamaymuk:
             goto aykucyyeseggeeoy;
+            wyymkuqsaikomumi:
+            goto okgmaysweamaymuk;
+            goto gmoewkmwwyeaycgm;
+            owsywiygoiqkyeey:
+            if (!(is_array($mmeioagwmyscwumo) && is_array($csougakqegqiqsgi))) {
+                goto ouseeusmwgswgayi;
+            }
+            goto soaekkoykikagyqa;
+            eiakokiiwigccesk:
+        });
+        goto ssmcciyyscekqosk;
+        iuumiyikcwiiwuqk:
+        if (!is_array($uomewyckeuqoqocu)) {
+            goto aksioomuagcyawuk;
         }
-        goto eiakokiiwigccesk;
-        aoeccsiuoeigmwkm:
+        goto aoeccsiuoeigmwkm;
+        yymqcwmasyyamagq:
+        return $uomewyckeuqoqocu;
+        goto iugskawkyskmcmyg;
+        ssmcciyyscekqosk:
+        aksioomuagcyawuk:
+        goto yymqcwmasyyamagq;
+        iugskawkyskmcmyg:
     }
     
     public static function get($oaiciiqoawkamweo, $uusmaiomayssaecw, $ggauoeuaesiymgee = null)
     {
-        goto yicuaiowomkyaueg;
+        goto qayogkgwkuoycsuy;
         uwoayuwcsqsekywg:
-        wsmwsckqgokueicw:
+        kuquyyieaicaecie:
         goto sewmgsmcyiacccoa;
-        qayogkgwkuoycsuy:
-        if (!isset($oaiciiqoawkamweo->{$uusmaiomayssaecw})) {
-            goto yymqcwmasyyamagq;
-        }
-        goto iaokmyigguukmcky;
-        iaokmyigguukmcky:
-        $sogksuscggsicmac = $oaiciiqoawkamweo->{$uusmaiomayssaecw};
-        goto cqgiaauymsygoomq;
-        ogqswkqkcosuewgg:
-        $sogksuscggsicmac = $oaiciiqoawkamweo[$uusmaiomayssaecw];
-        goto gueusoewgqkcwkuq;
         sewmgsmcyiacccoa:
-        if (!isset($oaiciiqoawkamweo[$uusmaiomayssaecw])) {
-            goto ssmcciyyscekqosk;
-        }
+        yicuaiowomkyaueg:
         goto ogqswkqkcosuewgg;
-        ewiqoyqagowquqqe:
-        return $sogksuscggsicmac;
-        goto qyaiyaqcqsskmwos;
-        useumocigsoceeus:
-        iugskawkyskmcmyg:
-        goto aewewmmweiaeuewi;
-        aewewmmweiaeuewi:
-        goto kuquyyieaicaecie;
-        goto uwoayuwcsqsekywg;
+        gueusoewgqkcwkuq:
         oeewiaeeicmwqyiw:
+        goto acyyqeqgusyqaook;
+        gcaoeocsuqqqyaym:
+        gcqeiwgakokeuouq:
+        goto ieqccoywksywcsky;
+        ewiqoyqagowquqqe:
+        $sogksuscggsicmac = $oaiciiqoawkamweo[$uusmaiomayssaecw];
+        goto qyaiyaqcqsskmwos;
+        qyaiyaqcqsskmwos:
+        wsmwsckqgokueicw:
+        goto gcaoeocsuqqqyaym;
+        cqgiaauymsygoomq:
+        if (!is_object($oaiciiqoawkamweo)) {
+            goto yicuaiowomkyaueg;
+        }
+        goto useumocigsoceeus;
+        ieqccoywksywcsky:
+        return $sogksuscggsicmac;
+        goto ocimykqskwaewuia;
+        iaokmyigguukmcky:
         if (is_array($oaiciiqoawkamweo)) {
+            goto oeewiaeeicmwqyiw;
+        }
+        goto cqgiaauymsygoomq;
+        useumocigsoceeus:
+        if (!isset($oaiciiqoawkamweo->{$uusmaiomayssaecw})) {
+            goto kuquyyieaicaecie;
+        }
+        goto aewewmmweiaeuewi;
+        acyyqeqgusyqaook:
+        if (!isset($oaiciiqoawkamweo[$uusmaiomayssaecw])) {
             goto wsmwsckqgokueicw;
         }
-        goto gcqeiwgakokeuouq;
-        yicuaiowomkyaueg:
-        $sogksuscggsicmac = $ggauoeuaesiymgee;
-        goto oeewiaeeicmwqyiw;
-        gueusoewgqkcwkuq:
-        ssmcciyyscekqosk:
-        goto acyyqeqgusyqaook;
-        gcqeiwgakokeuouq:
-        if (!is_object($oaiciiqoawkamweo)) {
-            goto iugskawkyskmcmyg;
-        }
-        goto qayogkgwkuoycsuy;
-        acyyqeqgusyqaook:
-        kuquyyieaicaecie:
         goto ewiqoyqagowquqqe;
-        cqgiaauymsygoomq:
-        yymqcwmasyyamagq:
-        goto useumocigsoceeus;
-        qyaiyaqcqsskmwos:
+        aewewmmweiaeuewi:
+        $sogksuscggsicmac = $oaiciiqoawkamweo->{$uusmaiomayssaecw};
+        goto uwoayuwcsqsekywg;
+        qayogkgwkuoycsuy:
+        $sogksuscggsicmac = $ggauoeuaesiymgee;
+        goto iaokmyigguukmcky;
+        ogqswkqkcosuewgg:
+        goto gcqeiwgakokeuouq;
+        goto gueusoewgqkcwkuq;
+        ocimykqskwaewuia:
     }
     
     public static function cswcewwmmicqesei($uomewyckeuqoqocu, $oegoegssokkyiqam) : array
     {
-        goto ocimykqskwaewuia;
-        yccuogewgykqkkys:
-        foreach ($oegoegssokkyiqam as $ymqmyyeuycgmigyo => $mkomwsiykqigmqca) {
-            $sogksuscggsicmac[$ymqmyyeuycgmigyo] = self::qamwegcyimgcqksw($uomewyckeuqoqocu, $mkomwsiykqigmqca);
-            ieqccoywksywcsky:
-        }
-        goto qqewqyiwuaqaakwk;
-        ocimykqskwaewuia:
-        $sogksuscggsicmac = [];
-        goto yccuogewgykqkkys;
-        qqewqyiwuaqaakwk:
-        gcaoeocsuqqqyaym:
         goto sewqmkouocccomww;
         sewqmkouocccomww:
-        return $sogksuscggsicmac;
+        $sogksuscggsicmac = [];
         goto mmmkqsukesoasosu;
+        qmsoeugoyqquamqk:
+        return $sogksuscggsicmac;
+        goto iwumyigiscuuwqik;
         mmmkqsukesoasosu:
+        foreach ($oegoegssokkyiqam as $ymqmyyeuycgmigyo => $mkomwsiykqigmqca) {
+            $sogksuscggsicmac[$ymqmyyeuycgmigyo] = self::qamwegcyimgcqksw($uomewyckeuqoqocu, $mkomwsiykqigmqca);
+            qqewqyiwuaqaakwk:
+        }
+        goto iauoeqkuisgyagqc;
+        iauoeqkuisgyagqc:
+        yccuogewgykqkkys:
+        goto qmsoeugoyqquamqk;
+        iwumyigiscuuwqik:
     }
     
     public static function qamwegcyimgcqksw($uomewyckeuqoqocu, $mkomwsiykqigmqca, $ggauoeuaesiymgee = null)
     {
-        goto sqwyqsciuaceoaaa;
-        ceckikeaaasskwmo:
+        goto aaqqggkciwcemugy;
+        saqyacsiqwmqgqkm:
         return $uomewyckeuqoqocu;
-        goto uwyckgawyyueaaym;
-        uwkaywsgkmicamom:
+        goto kkwcewqsaeyugawo;
+        yqisgeugiuokowgw:
+        scysiomisyamwocw:
+        goto ceckikeaaasskwmo;
+        uwyckgawyyueaaym:
+        $uomewyckeuqoqocu = $ggauoeuaesiymgee;
+        goto keoaaweuqeeoguyi;
+        kkgeeeaqoaoskogo:
         foreach ($yygmoeguaqyumuui as $uusmaiomayssaecw) {
-            goto skywgyiswsmassgq;
-            qaqemcccqogoummc:
-            $uomewyckeuqoqocu = null;
-            goto oucwaucwcoegeaco;
-            swiiumgaagycwyoa:
-            if (is_object($uomewyckeuqoqocu)) {
-                goto wkisqogwyuawwiqo;
-            }
-            goto uisiuwgqougckasg;
-            awyaiyumyosuyewi:
-            scysiomisyamwocw:
-            goto wquqgqsyiccogoac;
-            kcaqocqaugkyiyys:
-            $uomewyckeuqoqocu = $uomewyckeuqoqocu->{$uusmaiomayssaecw};
-            goto aqkgkwewsqkeyusm;
-            mkikcguagooeiace:
-            $uomewyckeuqoqocu =& $uomewyckeuqoqocu[$uusmaiomayssaecw];
-            goto awyaiyumyosuyewi;
-            wwqikmmkomakgaou:
-            goto oukqkimqsackseiw;
-            goto yqyqsioacayucksc;
-            isymsqwwkmwkamuy:
-            goto scysiomisyamwocw;
-            goto igoocsoeousssema;
+            goto ickouwcsecqeskwq;
             wquqgqsyiccogoac:
-            uguyeawasakeoekq:
-            goto kycykouooecoiyqw;
-            igeccyeusumcacea:
-            goto gwgukcuckigmwoes;
-            goto kwickmmwwyqigccu;
-            kwickmmwwyqigccu:
-            iycuugwwawmiewmq:
-            goto iiuwsswoayimgack;
-            qeqquaucmqkmsmoq:
-            kagckqkwssikyaay:
-            goto weekmyeyqukcoegg;
-            acgauasosqqysagi:
-            goto uguyeawasakeoekq;
-            goto qeqquaucmqkmsmoq;
-            aqkgkwewsqkeyusm:
             wwscaygcymkwcoas:
-            goto igeccyeusumcacea;
-            oucwaucwcoegeaco:
-            goto iauoeqkuisgyagqc;
-            goto wwaqsuwkskcooicq;
-            skywgyiswsmassgq:
-            if (is_array($uomewyckeuqoqocu)) {
-                goto kagckqkwssikyaay;
-            }
-            goto swiiumgaagycwyoa;
+            goto kycykouooecoiyqw;
+            oiikekyiqeqogkua:
+            goto kagckqkwssikyaay;
+            goto cmgayuowmaymuaiq;
             gwmwmaqgwkkamqmo:
-            if (method_exists($uomewyckeuqoqocu, $uusmaiomayssaecw)) {
-                goto iycuugwwawmiewmq;
-            }
+            goto scysiomisyamwocw;
             goto yukgigiiimqqwiyq;
-            yqyqsioacayucksc:
-            wkisqogwyuawwiqo:
-            goto gwmwmaqgwkkamqmo;
-            igoocsoeousssema:
-            iwumyigiscuuwqik:
-            goto mkikcguagooeiace;
-            ickouwcsecqeskwq:
-            goto iauoeqkuisgyagqc;
-            goto wwqikmmkomakgaou;
-            weekmyeyqukcoegg:
-            if (isset($uomewyckeuqoqocu[$uusmaiomayssaecw])) {
-                goto iwumyigiscuuwqik;
-            }
-            goto ucwyaykmcoikkkuo;
-            ucwyaykmcoikkkuo:
-            $uomewyckeuqoqocu = null;
-            goto aauqmqqqakiaqeqo;
-            iiuwsswoayimgack:
-            $uomewyckeuqoqocu = $uomewyckeuqoqocu->{$uusmaiomayssaecw}();
-            goto oiikekyiqeqogkua;
-            kycykouooecoiyqw:
-            qmsoeugoyqquamqk:
-            goto yqygigmwumoksekw;
-            wwaqsuwkskcooicq:
-            goto wwscaygcymkwcoas;
-            goto ymqseyksqoouycio;
             cmgayuowmaymuaiq:
             oukqkimqsackseiw:
             goto acgauasosqqysagi;
-            yukgigiiimqqwiyq:
-            if (isset($uomewyckeuqoqocu->{$uusmaiomayssaecw})) {
-                goto raqaugusyaieeuyi;
-            }
-            goto qaqemcccqogoummc;
-            uisiuwgqougckasg:
+            kycykouooecoiyqw:
+            $uomewyckeuqoqocu =& $uomewyckeuqoqocu[$uusmaiomayssaecw];
+            goto yqygigmwumoksekw;
+            yqyqsioacayucksc:
             $uomewyckeuqoqocu = null;
-            goto ickouwcsecqeskwq;
-            ymqseyksqoouycio:
-            raqaugusyaieeuyi:
-            goto kcaqocqaugkyiyys;
-            oiikekyiqeqogkua:
+            goto gwmwmaqgwkkamqmo;
+            iiuwsswoayimgack:
+            wkisqogwyuawwiqo:
+            goto oiikekyiqeqogkua;
+            igeccyeusumcacea:
             gwgukcuckigmwoes:
-            goto cmgayuowmaymuaiq;
-            aauqmqqqakiaqeqo:
-            goto iauoeqkuisgyagqc;
-            goto isymsqwwkmwkamuy;
+            goto kwickmmwwyqigccu;
+            acgauasosqqysagi:
+            $uomewyckeuqoqocu = $uomewyckeuqoqocu->{$uusmaiomayssaecw}();
+            goto qeqquaucmqkmsmoq;
+            weekmyeyqukcoegg:
+            skywgyiswsmassgq:
+            goto ucwyaykmcoikkkuo;
+            mkikcguagooeiace:
+            goto scysiomisyamwocw;
+            goto awyaiyumyosuyewi;
+            sqwyqsciuaceoaaa:
+            raqaugusyaieeuyi:
+            goto uwkaywsgkmicamom;
+            isymsqwwkmwkamuy:
+            if (isset($uomewyckeuqoqocu[$uusmaiomayssaecw])) {
+                goto wwscaygcymkwcoas;
+            }
+            goto igoocsoeousssema;
+            qeqquaucmqkmsmoq:
+            kagckqkwssikyaay:
+            goto weekmyeyqukcoegg;
+            ucwyaykmcoikkkuo:
+            goto uisiuwgqougckasg;
+            goto aauqmqqqakiaqeqo;
+            ickouwcsecqeskwq:
+            if (is_array($uomewyckeuqoqocu)) {
+                goto swiiumgaagycwyoa;
+            }
+            goto wwqikmmkomakgaou;
+            eceacmeaisaqssco:
+            uisiuwgqougckasg:
+            goto sqwyqsciuaceoaaa;
+            ymqseyksqoouycio:
+            $uomewyckeuqoqocu = null;
+            goto kcaqocqaugkyiyys;
+            kwickmmwwyqigccu:
+            $uomewyckeuqoqocu = $uomewyckeuqoqocu->{$uusmaiomayssaecw};
+            goto iiuwsswoayimgack;
+            wwqikmmkomakgaou:
+            if (is_object($uomewyckeuqoqocu)) {
+                goto uguyeawasakeoekq;
+            }
+            goto yqyqsioacayucksc;
+            yukgigiiimqqwiyq:
+            goto skywgyiswsmassgq;
+            goto qaqemcccqogoummc;
+            igoocsoeousssema:
+            $uomewyckeuqoqocu = null;
+            goto mkikcguagooeiace;
+            kcaqocqaugkyiyys:
+            goto scysiomisyamwocw;
+            goto aqkgkwewsqkeyusm;
             yqygigmwumoksekw:
-        }
-        goto oqmkiaqgogkikwes;
-        aaqqggkciwcemugy:
-        if ($uomewyckeuqoqocu) {
+            iycuugwwawmiewmq:
             goto eceacmeaisaqssco;
+            aqkgkwewsqkeyusm:
+            goto wkisqogwyuawwiqo;
+            goto igeccyeusumcacea;
+            oucwaucwcoegeaco:
+            if (method_exists($uomewyckeuqoqocu, $uusmaiomayssaecw)) {
+                goto oukqkimqsackseiw;
+            }
+            goto wwaqsuwkskcooicq;
+            wwaqsuwkskcooicq:
+            if (isset($uomewyckeuqoqocu->{$uusmaiomayssaecw})) {
+                goto gwgukcuckigmwoes;
+            }
+            goto ymqseyksqoouycio;
+            aauqmqqqakiaqeqo:
+            swiiumgaagycwyoa:
+            goto isymsqwwkmwkamuy;
+            awyaiyumyosuyewi:
+            goto iycuugwwawmiewmq;
+            goto wquqgqsyiccogoac;
+            qaqemcccqogoummc:
+            uguyeawasakeoekq:
+            goto oucwaucwcoegeaco;
+            uwkaywsgkmicamom:
         }
-        goto kkgeeeaqoaoskogo;
-        kkgeeeaqoaoskogo:
-        $uomewyckeuqoqocu = $ggauoeuaesiymgee;
         goto yqisgeugiuokowgw;
-        yqisgeugiuokowgw:
-        eceacmeaisaqssco:
-        goto ceckikeaaasskwmo;
+        keoaaweuqeeoguyi:
         oqmkiaqgogkikwes:
-        iauoeqkuisgyagqc:
-        goto aaqqggkciwcemugy;
-        sqwyqsciuaceoaaa:
-        $yygmoeguaqyumuui = explode("\x2e", $mkomwsiykqigmqca);
-        goto uwkaywsgkmicamom;
-        uwyckgawyyueaaym:
+        goto saqyacsiqwmqgqkm;
+        ceckikeaaasskwmo:
+        if ($uomewyckeuqoqocu) {
+            goto oqmkiaqgogkikwes;
+        }
+        goto uwyckgawyyueaaym;
+        aaqqggkciwcemugy:
+        $yygmoeguaqyumuui = explode("\56", $mkomwsiykqigmqca);
+        goto kkgeeeaqoaoskogo;
+        kkwcewqsaeyugawo:
     }
     
     public static function sagscekukkacqaaw($uomewyckeuqoqocu, $uusmaiomayssaecw, $uuyoeicyoayimaoa = -1) : array
     {
-        goto kkwcewqsaeyugawo;
+        goto ygsaygcskekuwgya;
+        iqgcumoueoaacgkc:
+        ewquwuoyeeiwkwuy:
+        goto yowsymiqiqgkmuuy;
         kqcusmuiyoqmeqwu:
-        saqyacsiqwmqgqkm:
+        if (!($uuyoeicyoayimaoa > 0)) {
+            goto amiessagaiiiiiei;
+        }
         goto auiwyymoguwkooew;
         auiwyymoguwkooew:
-        return $uomewyckeuqoqocu;
-        goto oaeweiaegakeieoi;
-        ygsaygcskekuwgya:
         $uomewyckeuqoqocu = array_slice($uomewyckeuqoqocu, 0, $uuyoeicyoayimaoa, true);
-        goto keqgmaemoceqssyy;
+        goto oaeweiaegakeieoi;
         keqgmaemoceqssyy:
-        keoaaweuqeeoguyi:
-        goto kqcusmuiyoqmeqwu;
-        ewquwuoyeeiwkwuy:
-        if (!($uuyoeicyoayimaoa > 0)) {
-            goto keoaaweuqeeoguyi;
-        }
-        goto ygsaygcskekuwgya;
-        kkwcewqsaeyugawo:
-        if (!is_array($uomewyckeuqoqocu)) {
-            goto saqyacsiqwmqgqkm;
-        }
-        goto amiessagaiiiiiei;
-        amiessagaiiiiiei:
         uasort($uomewyckeuqoqocu, function ($mmeioagwmyscwumo, $csougakqegqiqsgi) use($uusmaiomayssaecw) {
             return $mmeioagwmyscwumo[$uusmaiomayssaecw] <=> $csougakqegqiqsgi[$uusmaiomayssaecw];
         });
-        goto ewquwuoyeeiwkwuy;
+        goto kqcusmuiyoqmeqwu;
+        ygsaygcskekuwgya:
+        if (!is_array($uomewyckeuqoqocu)) {
+            goto ewquwuoyeeiwkwuy;
+        }
+        goto keqgmaemoceqssyy;
+        yowsymiqiqgkmuuy:
+        return $uomewyckeuqoqocu;
+        goto wewmsmwegeoqoeem;
         oaeweiaegakeieoi:
+        amiessagaiiiiiei:
+        goto iqgcumoueoaacgkc;
+        wewmsmwegeoqoeem:
     }
     
     public static function gucyquqwoimkiiaq($oaiciiqoawkamweo, $yygmoeguaqyumuui, $mywqgwsimwoeoawk = true, $ekiuyucoiagmscgy = null) : array
     {
-        goto kuiicmskwegaoggu;
-        wuuqskwuoeacgacg:
-        foreach ($yygmoeguaqyumuui as $ewyuweyoskiagksm => $uauoccoqcsaeggui) {
-            goto ggyqoucwiyqucqsi;
-            cuwayimcsiycgmim:
-            $uusmaiomayssaecw = $uauoccoqcsaeggui;
-            goto sgkayqyykwuagyiu;
-            ogmcsmoewwocmkme:
-            $ggauoeuaesiymgee = $uauoccoqcsaeggui;
-            goto kummaeaoeksaiasa;
-            wewusiqwsukukkms:
-            iymqokemgwcsgeiu:
-            goto aksaumeeuqawgwmi;
-            kgoeamguscusyywe:
-            $sogksuscggsicmac[$uusmaiomayssaecw] = $eqgoocgaqwqcimie;
-            goto wewusiqwsukukkms;
-            qgaeuqkwwoikwsus:
-            $uusmaiomayssaecw = $ewyuweyoskiagksm;
-            goto ogmcsmoewwocmkme;
-            sgkayqyykwuagyiu:
-            woagemomagskuyii:
-            goto nwckgaiueoigasee;
-            aksaumeeuqawgwmi:
-            yowsymiqiqgkmuuy:
-            goto qmuqwqmumcayeiku;
-            kummaeaoeksaiasa:
-            goto woagemomagskuyii;
-            goto cgoaqiqsuomgmysm;
-            cgoaqiqsuomgmysm:
-            wewmsmwegeoqoeem:
-            goto cuwayimcsiycgmim;
-            ikuauuskoukskkmo:
-            cusoaecwsaeckaie:
-            goto kgoeamguscusyywe;
-            nwckgaiueoigasee:
-            $eqgoocgaqwqcimie = self::get($oaiciiqoawkamweo, $uusmaiomayssaecw, $ggauoeuaesiymgee);
-            goto eocckcsgsycuywyi;
-            yesicceuyqcyysue:
-            goto iymqokemgwcsgeiu;
-            goto ikuauuskoukskkmo;
-            kgisumcygmcgyemm:
-            $sogksuscggsicmac[] = $eqgoocgaqwqcimie;
-            goto yesicceuyqcyysue;
-            eocckcsgsycuywyi:
-            if (!is_callable($ekiuyucoiagmscgy)) {
-                goto gqoiqscswogsymcu;
-            }
-            goto emiosiemcoyoeoou;
-            emiosiemcoyoeoou:
-            $eqgoocgaqwqcimie = call_user_func($ekiuyucoiagmscgy, $eqgoocgaqwqcimie, $uusmaiomayssaecw, $ggauoeuaesiymgee);
-            goto sscoeeyeeggsckyo;
-            qeggaicaycsqqkio:
-            if ($mywqgwsimwoeoawk) {
-                goto cusoaecwsaeckaie;
-            }
-            goto kgisumcygmcgyemm;
-            sscoeeyeeggsckyo:
-            gqoiqscswogsymcu:
-            goto qeggaicaycsqqkio;
-            ggyqoucwiyqucqsi:
-            if (is_numeric($ewyuweyoskiagksm)) {
-                goto wewmsmwegeoqoeem;
-            }
-            goto qgaeuqkwwoikwsus;
-            qmuqwqmumcayeiku:
-        }
-        goto keakmgioceekisuk;
-        keakmgioceekisuk:
-        iqgcumoueoaacgkc:
-        goto egaqukiucuckkqai;
-        ggiycasgekosqyqk:
-        if (!(is_array($oaiciiqoawkamweo) && is_array($yygmoeguaqyumuui))) {
-            goto mskqaucggqcumquk;
-        }
-        goto usggsqksmaaukmqq;
-        kuiicmskwegaoggu:
-        $sogksuscggsicmac = [];
-        goto ggiycasgekosqyqk;
-        usggsqksmaaukmqq:
-        $ggauoeuaesiymgee = '';
         goto wuuqskwuoeacgacg;
         osmciccqwowieume:
-        return $sogksuscggsicmac;
+        foreach ($yygmoeguaqyumuui as $ewyuweyoskiagksm => $uauoccoqcsaeggui) {
+            goto kummaeaoeksaiasa;
+            emiosiemcoyoeoou:
+            iymqokemgwcsgeiu:
+            goto sscoeeyeeggsckyo;
+            kgoeamguscusyywe:
+            $sogksuscggsicmac[] = $eqgoocgaqwqcimie;
+            goto wewusiqwsukukkms;
+            kgisumcygmcgyemm:
+            $eqgoocgaqwqcimie = call_user_func($ekiuyucoiagmscgy, $eqgoocgaqwqcimie, $uusmaiomayssaecw, $ggauoeuaesiymgee);
+            goto yesicceuyqcyysue;
+            wewusiqwsukukkms:
+            goto ogmcsmoewwocmkme;
+            goto aksaumeeuqawgwmi;
+            cgoaqiqsuomgmysm:
+            $uusmaiomayssaecw = $ewyuweyoskiagksm;
+            goto cuwayimcsiycgmim;
+            mskqaucggqcumquk:
+            ogmcsmoewwocmkme:
+            goto kuiicmskwegaoggu;
+            kummaeaoeksaiasa:
+            if (is_numeric($ewyuweyoskiagksm)) {
+                goto cusoaecwsaeckaie;
+            }
+            goto cgoaqiqsuomgmysm;
+            sgkayqyykwuagyiu:
+            goto iymqokemgwcsgeiu;
+            goto nwckgaiueoigasee;
+            aksaumeeuqawgwmi:
+            qgaeuqkwwoikwsus:
+            goto qmuqwqmumcayeiku;
+            kuiicmskwegaoggu:
+            gqoiqscswogsymcu:
+            goto ggiycasgekosqyqk;
+            ikuauuskoukskkmo:
+            if ($mywqgwsimwoeoawk) {
+                goto qgaeuqkwwoikwsus;
+            }
+            goto kgoeamguscusyywe;
+            yesicceuyqcyysue:
+            ggyqoucwiyqucqsi:
+            goto ikuauuskoukskkmo;
+            nwckgaiueoigasee:
+            cusoaecwsaeckaie:
+            goto eocckcsgsycuywyi;
+            qeggaicaycsqqkio:
+            if (!is_callable($ekiuyucoiagmscgy)) {
+                goto ggyqoucwiyqucqsi;
+            }
+            goto kgisumcygmcgyemm;
+            qmuqwqmumcayeiku:
+            $sogksuscggsicmac[$uusmaiomayssaecw] = $eqgoocgaqwqcimie;
+            goto mskqaucggqcumquk;
+            cuwayimcsiycgmim:
+            $ggauoeuaesiymgee = $uauoccoqcsaeggui;
+            goto sgkayqyykwuagyiu;
+            sscoeeyeeggsckyo:
+            $eqgoocgaqwqcimie = self::get($oaiciiqoawkamweo, $uusmaiomayssaecw, $ggauoeuaesiymgee);
+            goto qeggaicaycsqqkio;
+            eocckcsgsycuywyi:
+            $uusmaiomayssaecw = $uauoccoqcsaeggui;
+            goto emiosiemcoyoeoou;
+            ggiycasgekosqyqk:
+        }
         goto boekkoaekyqaemmq;
-        egaqukiucuckkqai:
-        mskqaucggqcumquk:
-        goto osmciccqwowieume;
+        eqqgiigwkciiksuo:
+        usggsqksmaaukmqq:
+        goto mcqimygcwcqcssky;
+        wuuqskwuoeacgacg:
+        $sogksuscggsicmac = [];
+        goto keakmgioceekisuk;
+        keakmgioceekisuk:
+        if (!(is_array($oaiciiqoawkamweo) && is_array($yygmoeguaqyumuui))) {
+            goto usggsqksmaaukmqq;
+        }
+        goto egaqukiucuckkqai;
+        mcqimygcwcqcssky:
+        return $sogksuscggsicmac;
+        goto awmyswwkwqgugmmy;
         boekkoaekyqaemmq:
+        woagemomagskuyii:
+        goto eqqgiigwkciiksuo;
+        egaqukiucuckkqai:
+        $ggauoeuaesiymgee = '';
+        goto osmciccqwowieume;
+        awmyswwkwqgugmmy:
     }
     
     public static function kaucoswaceqcuyam($uomewyckeuqoqocu, $xkqaigkogigocask = true, $sogksuscggsicmac = [])
     {
-        goto ygyugquqaqegwioo;
+        goto oywuqkssgiiumuis;
+        yksiaqaciswymeim:
+        kskoukygaaicomgy:
+        goto gsggsgayikymekok;
+        oywuqkssgiiumuis:
+        if (!(is_array($uomewyckeuqoqocu) && $uomewyckeuqoqocu)) {
+            goto ckeccumaeeuamqem;
+        }
+        goto ooyqgwsoeyqoucae;
         ooyqgwsoeyqoucae:
-        return $sogksuscggsicmac;
-        goto yksiaqaciswymeim;
-        komsqawwueueiuag:
         foreach ($uomewyckeuqoqocu as $uusmaiomayssaecw => $esquqsuaumgwoewu) {
-            goto akeowgkiskougikg;
-            iiigksqqskiumiqi:
-            goto muowkaagoqiyegme;
-            goto qywsmseiceqecigi;
-            kewcuamqaiyeayio:
-            goto kskoukygaaicomgy;
-            goto oeoaqooaouowkwec;
-            ugqsesmesggiqaos:
-            $sogksuscggsicmac[$uusmaiomayssaecw] = $esquqsuaumgwoewu;
-            goto kawkmiguwoooksec;
-            akeowgkiskougikg:
-            if (is_array($esquqsuaumgwoewu)) {
-                goto aoueogeoyisucaiq;
-            }
-            goto yiisikkiqosawsgu;
-            yiisikkiqosawsgu:
-            if ($xkqaigkogigocask) {
-                goto awmyswwkwqgugmmy;
-            }
-            goto qoeiqqmskcqeaiug;
-            qsieyoiaoiqaumus:
-            muowkaagoqiyegme:
-            goto mieaoqwgaukeysis;
-            kawkmiguwoooksec:
-            kskoukygaaicomgy:
-            goto iiigksqqskiumiqi;
-            oeoaqooaouowkwec:
-            awmyswwkwqgugmmy:
-            goto ugqsesmesggiqaos;
-            qywsmseiceqecigi:
-            aoueogeoyisucaiq:
-            goto gwqicekgscayqcuq;
-            gwqicekgscayqcuq:
-            $sogksuscggsicmac = self::kaucoswaceqcuyam($esquqsuaumgwoewu, $xkqaigkogigocask, $sogksuscggsicmac);
-            goto qsieyoiaoiqaumus;
-            qoeiqqmskcqeaiug:
-            $sogksuscggsicmac[] = $esquqsuaumgwoewu;
             goto kewcuamqaiyeayio;
             mieaoqwgaukeysis:
-            mcqimygcwcqcssky:
+            yiisikkiqosawsgu:
             goto kokuyqgigassuuoc;
+            kewcuamqaiyeayio:
+            if (is_array($esquqsuaumgwoewu)) {
+                goto yiisikkiqosawsgu;
+            }
+            goto oeoaqooaouowkwec;
+            ugqsesmesggiqaos:
+            $sogksuscggsicmac[] = $esquqsuaumgwoewu;
+            goto kawkmiguwoooksec;
+            gwqicekgscayqcuq:
+            akeowgkiskougikg:
+            goto qsieyoiaoiqaumus;
+            kawkmiguwoooksec:
+            goto akeowgkiskougikg;
+            goto iiigksqqskiumiqi;
             kokuyqgigassuuoc:
-        }
-        goto ckeccumaeeuamqem;
-        ckeccumaeeuamqem:
-        eqqgiigwkciiksuo:
-        goto oywuqkssgiiumuis;
-        ygyugquqaqegwioo:
-        if (!(is_array($uomewyckeuqoqocu) && $uomewyckeuqoqocu)) {
+            $sogksuscggsicmac = self::kaucoswaceqcuyam($esquqsuaumgwoewu, $xkqaigkogigocask, $sogksuscggsicmac);
             goto yaekwuquieusamyw;
+            iiigksqqskiumiqi:
+            muowkaagoqiyegme:
+            goto qywsmseiceqecigi;
+            yaekwuquieusamyw:
+            qoeiqqmskcqeaiug:
+            goto ygyugquqaqegwioo;
+            oeoaqooaouowkwec:
+            if ($xkqaigkogigocask) {
+                goto muowkaagoqiyegme;
+            }
+            goto ugqsesmesggiqaos;
+            qsieyoiaoiqaumus:
+            goto qoeiqqmskcqeaiug;
+            goto mieaoqwgaukeysis;
+            qywsmseiceqecigi:
+            $sogksuscggsicmac[$uusmaiomayssaecw] = $esquqsuaumgwoewu;
+            goto gwqicekgscayqcuq;
+            ygyugquqaqegwioo:
+            aoueogeoyisucaiq:
+            goto komsqawwueueiuag;
+            komsqawwueueiuag:
         }
-        goto komsqawwueueiuag;
-        oywuqkssgiiumuis:
-        yaekwuquieusamyw:
-        goto ooyqgwsoeyqoucae;
-        yksiaqaciswymeim:
+        goto yksiaqaciswymeim;
+        gsggsgayikymekok:
+        ckeccumaeeuamqem:
+        goto scgqkqkwimicokau;
+        scgqkqkwimicokau:
+        return $sogksuscggsicmac;
+        goto ouumywcisskmgyio;
+        ouumywcisskmgyio:
     }
     
     public static function qwgieqiwscoeaygs($uomewyckeuqoqocu, $ksiyqouuaoymsycg, $aumugyockeskamiq, $gymeemoisimggcww = true) : array
     {
-        goto kemciyisiqsemmwm;
-        qwyuicgesgumuuum:
-        ouumywcisskmgyio:
-        goto sgsmmgiuyuukgsyi;
-        iiiaciykaukmuiwu:
-        if ($gymeemoisimggcww) {
-            goto ouumywcisskmgyio;
-        }
-        goto wmwqumcksgkckeae;
-        qsemsoimoauiccmm:
-        ekwoimwoqucawyis:
-        goto ceqkmcaycyskmoia;
-        wmwqumcksgkckeae:
-        $ggkaciewmeqmgckg = array_slice($uomewyckeuqoqocu, 0, array_search($ksiyqouuaoymsycg, array_keys($uomewyckeuqoqocu)), true);
-        goto qayyssyasegwkuwi;
-        wsumwkwmcygcqyaa:
-        goto awsiakgwsaqyiggo;
-        goto gkwkcgcewcecmgoe;
-        sgsmmgiuyuukgsyi:
-        $ggkaciewmeqmgckg = array_splice($uomewyckeuqoqocu, 0, array_search($ksiyqouuaoymsycg, array_keys($uomewyckeuqoqocu)));
-        goto qsemsoimoauiccmm;
-        womkaomokgseakue:
-        $uomewyckeuqoqocu = $ggkaciewmeqmgckg + $aseguuimuokgcami + $uomewyckeuqoqocu;
-        goto agameskciseayqqy;
-        ceqkmcaycyskmoia:
-        unset($ggkaciewmeqmgckg[$aumugyockeskamiq]);
-        goto womkaomokgseakue;
-        ceimuucmqmuygqiu:
-        $aseguuimuokgcami = [$aumugyockeskamiq => $uomewyckeuqoqocu[$aumugyockeskamiq]];
         goto iiiaciykaukmuiwu;
+        qsemsoimoauiccmm:
+        goto awsiakgwsaqyiggo;
+        goto ceqkmcaycyskmoia;
         gkwkcgcewcecmgoe:
-        ewowkiosiisoacse:
+        $uomewyckeuqoqocu = $ggkaciewmeqmgckg + $aseguuimuokgcami + $uomewyckeuqoqocu;
         goto qaymskucssiyeasw;
-        gqwkiummucquoece:
+        qayyssyasegwkuwi:
+        $aseguuimuokgcami = [$aumugyockeskamiq => $uomewyckeuqoqocu[$aumugyockeskamiq]];
+        goto qwyuicgesgumuuum;
+        sgsmmgiuyuukgsyi:
+        $ggkaciewmeqmgckg = array_slice($uomewyckeuqoqocu, 0, array_search($ksiyqouuaoymsycg, array_keys($uomewyckeuqoqocu)), true);
+        goto qsemsoimoauiccmm;
+        uocisouiiqciywim:
+        ekwoimwoqucawyis:
+        goto smwmewocqywykcou;
+        agckaqmuskakeumg:
         return $uomewyckeuqoqocu;
-        goto uocisouiiqciywim;
-        agameskciseayqqy:
-        iqskmoysaamkuoim:
-        goto wsumwkwmcygcqyaa;
-        symyoqqgcwomyksw:
-        gsggsgayikymekok:
-        goto euayciwoioqckyoi;
-        euayciwoioqckyoi:
-        awsiakgwsaqyiggo:
-        goto gqwkiummucquoece;
-        kemciyisiqsemmwm:
-        if (is_array($aumugyockeskamiq)) {
-            goto ewowkiosiisoacse;
-        }
-        goto uowumqmesgawkcme;
-        uowumqmesgawkcme:
-        if (!isset($uomewyckeuqoqocu[$ksiyqouuaoymsycg], $uomewyckeuqoqocu[$aumugyockeskamiq])) {
-            goto iqskmoysaamkuoim;
-        }
-        goto ceimuucmqmuygqiu;
-        qaymskucssiyeasw:
+        goto emqiswoqkweuamuw;
+        gqwkiummucquoece:
         foreach ($aumugyockeskamiq as $igqsaukqcqscimok) {
             $uomewyckeuqoqocu = self::qwgieqiwscoeaygs($uomewyckeuqoqocu, $ksiyqouuaoymsycg, $igqsaukqcqscimok, $gymeemoisimggcww);
-            scgqkqkwimicokau:
+            iqskmoysaamkuoim:
         }
+        goto uocisouiiqciywim;
+        symyoqqgcwomyksw:
+        goto ceimuucmqmuygqiu;
+        goto euayciwoioqckyoi;
+        ceqkmcaycyskmoia:
+        ewowkiosiisoacse:
+        goto womkaomokgseakue;
+        womkaomokgseakue:
+        $ggkaciewmeqmgckg = array_splice($uomewyckeuqoqocu, 0, array_search($ksiyqouuaoymsycg, array_keys($uomewyckeuqoqocu)));
+        goto agameskciseayqqy;
+        agameskciseayqqy:
+        awsiakgwsaqyiggo:
+        goto wsumwkwmcygcqyaa;
+        euayciwoioqckyoi:
+        uowumqmesgawkcme:
+        goto gqwkiummucquoece;
+        smwmewocqywykcou:
+        ceimuucmqmuygqiu:
+        goto agckaqmuskakeumg;
+        wmwqumcksgkckeae:
+        if (!isset($uomewyckeuqoqocu[$ksiyqouuaoymsycg], $uomewyckeuqoqocu[$aumugyockeskamiq])) {
+            goto kemciyisiqsemmwm;
+        }
+        goto qayyssyasegwkuwi;
+        iiiaciykaukmuiwu:
+        if (is_array($aumugyockeskamiq)) {
+            goto uowumqmesgawkcme;
+        }
+        goto wmwqumcksgkckeae;
+        qaymskucssiyeasw:
+        kemciyisiqsemmwm:
         goto symyoqqgcwomyksw;
-        qayyssyasegwkuwi:
-        goto ekwoimwoqucawyis;
-        goto qwyuicgesgumuuum;
-        uocisouiiqciywim:
+        qwyuicgesgumuuum:
+        if ($gymeemoisimggcww) {
+            goto ewowkiosiisoacse;
+        }
+        goto sgsmmgiuyuukgsyi;
+        wsumwkwmcygcqyaa:
+        unset($ggkaciewmeqmgckg[$aumugyockeskamiq]);
+        goto gkwkcgcewcecmgoe;
+        emqiswoqkweuamuw:
     }
     
     public static function oooekmcokooqkcgg($uomewyckeuqoqocu, $oaukocmsckciqaok, $couiucmsqaieciue = []) : array
     {
-        goto gqkwumcquuuwoqkw;
-        ysyiewokqwgckeko:
-        foreach ($uomewyckeuqoqocu as $momcykaoccoymeig => $eqgoocgaqwqcimie) {
-            goto guseeaqsaueqcweo;
-            oeqecewccwqsqmmc:
-            if (!is_object($eqgoocgaqwqcimie)) {
-                goto emqiswoqkweuamuw;
-            }
-            goto kkmyoieguiwecakw;
-            uqgqukmekkieakco:
-            $aqeywoskqiugcmye = $momcykaoccoymeig;
-            goto gakuaukecwikgsmc;
-            ggcewuaywkywgcoa:
-            agckaqmuskakeumg:
-            goto wuiuuyooeukyiois;
-            gocscsauukioowcq:
-            iisiamyqqaaoykga:
-            goto iauekwigiwssawke;
-            gmwiocukkqksiwkk:
-            $giqggecqqikcysgq = $ykiwomimkkuiigoq;
-            goto saqmoqaeaoqmaaqo;
-            kmwckweaaawgkumy:
-            emqiswoqkweuamuw:
-            goto oqewauiqmkiiaiqe;
-            gkscusucwgaoooso:
-            $ykiwomimkkuiigoq = strlen($eqgoocgaqwqcimie);
-            goto yaacmieqceeiyuii;
-            oqewauiqmkiiaiqe:
-            if (!is_string($eqgoocgaqwqcimie)) {
-                goto iisiamyqqaaoykga;
-            }
-            goto gkscusucwgaoooso;
-            yaacmieqceeiyuii:
-            if (!($ykiwomimkkuiigoq > $giqggecqqikcysgq)) {
-                goto ogigeoakcogugeym;
-            }
-            goto gmwiocukkqksiwkk;
-            iauekwigiwssawke:
-            osckyscuccyeyiea:
-            goto ggcewuaywkywgcoa;
-            gakuaukecwikgsmc:
-            ogigeoakcogugeym:
-            goto gocscsauukioowcq;
-            saqmoqaeaoqmaaqo:
-            $uiymkeeaukcyqqik = $eqgoocgaqwqcimie;
-            goto uqgqukmekkieakco;
-            guseeaqsaueqcweo:
-            if (key_exists($momcykaoccoymeig, $couiucmsqaieciue)) {
-                goto osckyscuccyeyiea;
-            }
-            goto oeqecewccwqsqmmc;
-            kkmyoieguiwecakw:
-            $eqgoocgaqwqcimie = $eqgoocgaqwqcimie->{$oaukocmsckciqaok};
-            goto kmwckweaaawgkumy;
-            wuiuuyooeukyiois:
-        }
-        goto uqmsgooywggqywam;
-        yymmqiaisemuayke:
-        $aqeywoskqiugcmye = null;
         goto ysyiewokqwgckeko;
-        mooomiuasyggqsis:
-        return [$aqeywoskqiugcmye, $uiymkeeaukcyqqik];
-        goto quqkqymwqwywgesy;
-        gqkwumcquuuwoqkw:
-        $giqggecqqikcysgq = 0;
-        goto ykeogiauqegcimwm;
-        ykeogiauqegcimwm:
-        $uiymkeeaukcyqqik = null;
-        goto yymmqiaisemuayke;
         uqmsgooywggqywam:
-        smwmewocqywykcou:
+        $uiymkeeaukcyqqik = null;
         goto mooomiuasyggqsis;
         quqkqymwqwywgesy:
+        foreach ($uomewyckeuqoqocu as $momcykaoccoymeig => $eqgoocgaqwqcimie) {
+            goto kmwckweaaawgkumy;
+            gkscusucwgaoooso:
+            $eqgoocgaqwqcimie = $eqgoocgaqwqcimie->{$oaukocmsckciqaok};
+            goto yaacmieqceeiyuii;
+            gakuaukecwikgsmc:
+            $giqggecqqikcysgq = $ykiwomimkkuiigoq;
+            goto gocscsauukioowcq;
+            uqgqukmekkieakco:
+            if (!($ykiwomimkkuiigoq > $giqggecqqikcysgq)) {
+                goto guseeaqsaueqcweo;
+            }
+            goto gakuaukecwikgsmc;
+            oqewauiqmkiiaiqe:
+            if (!is_object($eqgoocgaqwqcimie)) {
+                goto osckyscuccyeyiea;
+            }
+            goto gkscusucwgaoooso;
+            saqmoqaeaoqmaaqo:
+            $ykiwomimkkuiigoq = strlen($eqgoocgaqwqcimie);
+            goto uqgqukmekkieakco;
+            wuiuuyooeukyiois:
+            oeqecewccwqsqmmc:
+            goto gqkwumcquuuwoqkw;
+            ykeogiauqegcimwm:
+            iisiamyqqaaoykga:
+            goto yymmqiaisemuayke;
+            kmwckweaaawgkumy:
+            if (key_exists($momcykaoccoymeig, $couiucmsqaieciue)) {
+                goto kkmyoieguiwecakw;
+            }
+            goto oqewauiqmkiiaiqe;
+            gmwiocukkqksiwkk:
+            if (!is_string($eqgoocgaqwqcimie)) {
+                goto oeqecewccwqsqmmc;
+            }
+            goto saqmoqaeaoqmaaqo;
+            ggcewuaywkywgcoa:
+            guseeaqsaueqcweo:
+            goto wuiuuyooeukyiois;
+            gqkwumcquuuwoqkw:
+            kkmyoieguiwecakw:
+            goto ykeogiauqegcimwm;
+            iauekwigiwssawke:
+            $aqeywoskqiugcmye = $momcykaoccoymeig;
+            goto ggcewuaywkywgcoa;
+            gocscsauukioowcq:
+            $uiymkeeaukcyqqik = $eqgoocgaqwqcimie;
+            goto iauekwigiwssawke;
+            yaacmieqceeiyuii:
+            osckyscuccyeyiea:
+            goto gmwiocukkqksiwkk;
+            yymmqiaisemuayke:
+        }
+        goto cmagkaygaemaaici;
+        mooomiuasyggqsis:
+        $aqeywoskqiugcmye = null;
+        goto quqkqymwqwywgesy;
+        cmagkaygaemaaici:
+        ogigeoakcogugeym:
+        goto wwiqmgogkuoaucyc;
+        wwiqmgogkuoaucyc:
+        return [$aqeywoskqiugcmye, $uiymkeeaukcyqqik];
+        goto siaagaokcmgeuimo;
+        ysyiewokqwgckeko:
+        $giqggecqqikcysgq = 0;
+        goto uqmsgooywggqywam;
+        siaagaokcmgeuimo:
     }
     
     public static function ksiyqouuaoymsycg(array $uomewyckeuqoqocu, string $mkomwsiykqigmqca, string $qwcmueausqgiwigy, $momcykaoccoymeig = false)
     {
-        goto qiakkkgsokqowqkg;
-        kumeocwaamwuggmy:
-        cmagkaygaemaaici:
         goto yyyqqsuawgwkayme;
+        agksoawkuoguyeio:
+        yukmmiscasoogmyu:
+        goto caumcscgkmkqgceq;
         yyyqqsuawgwkayme:
-        return $ksiyqouuaoymsycg;
+        $ksiyqouuaoymsycg = null;
         goto kimmqccoykmmokim;
-        guukcuckowqqgqag:
+        caumcscgkmkqgceq:
+        return $ksiyqouuaoymsycg;
+        goto ycywkayeqeumswqg;
+        kimmqccoykmmokim:
         foreach ($uomewyckeuqoqocu as $momcykaoccoymeig => $igqsaukqcqscimok) {
-            goto ucmuqycsksssuyku;
-            aaqiiwuwmyqqekwm:
-            usmksyiucoeycycc:
-            goto usomesuioqacuiwm;
-            ucmuqycsksssuyku:
-            $esoaccosseymguso = self::qamwegcyimgcqksw($igqsaukqcqscimok, $mkomwsiykqigmqca);
-            goto eoyqkmiwoiyecqiq;
-            yocoiwekswmeqosg:
-            $ksiyqouuaoymsycg = $igqsaukqcqscimok;
-            goto iaqaecisewceswme;
-            moigkuskomyqceuu:
-            goto cmagkaygaemaaici;
-            goto aaqiiwuwmyqqekwm;
-            yaumammegwowmsqu:
-            $ksiyqouuaoymsycg = $momcykaoccoymeig;
-            goto ycwsommucswweyww;
-            eoyqkmiwoiyecqiq:
-            if (!($esoaccosseymguso == $qwcmueausqgiwigy)) {
-                goto usmksyiucoeycycc;
-            }
-            goto uamoquqaiywkyigy;
-            uamoquqaiywkyigy:
-            if ($momcykaoccoymeig) {
-                goto siaagaokcmgeuimo;
-            }
             goto yocoiwekswmeqosg;
-            usomesuioqacuiwm:
-            wwiqmgogkuoaucyc:
-            goto sossqwuskoaguiie;
-            ayugswgkeymseuoe:
-            siaagaokcmgeuimo:
-            goto yaumammegwowmsqu;
+            yaumammegwowmsqu:
+            $ksiyqouuaoymsycg = $igqsaukqcqscimok;
+            goto ycwsommucswweyww;
             iaqaecisewceswme:
-            goto yukmmiscasoogmyu;
+            if (!($esoaccosseymguso == $qwcmueausqgiwigy)) {
+                goto uamoquqaiywkyigy;
+            }
             goto ayugswgkeymseuoe;
             ycwsommucswweyww:
-            yukmmiscasoogmyu:
+            goto eoyqkmiwoiyecqiq;
             goto moigkuskomyqceuu;
+            ayugswgkeymseuoe:
+            if ($momcykaoccoymeig) {
+                goto ucmuqycsksssuyku;
+            }
+            goto yaumammegwowmsqu;
+            aaqiiwuwmyqqekwm:
+            $ksiyqouuaoymsycg = $momcykaoccoymeig;
+            goto usomesuioqacuiwm;
+            guukcuckowqqgqag:
+            usmksyiucoeycycc:
+            goto kumeocwaamwuggmy;
+            qiakkkgsokqowqkg:
+            uamoquqaiywkyigy:
+            goto guukcuckowqqgqag;
+            usomesuioqacuiwm:
+            eoyqkmiwoiyecqiq:
+            goto sossqwuskoaguiie;
+            moigkuskomyqceuu:
+            ucmuqycsksssuyku:
+            goto aaqiiwuwmyqqekwm;
+            yocoiwekswmeqosg:
+            $esoaccosseymguso = self::qamwegcyimgcqksw($igqsaukqcqscimok, $mkomwsiykqigmqca);
+            goto iaqaecisewceswme;
             sossqwuskoaguiie:
+            goto yukmmiscasoogmyu;
+            goto qiakkkgsokqowqkg;
+            kumeocwaamwuggmy:
         }
-        goto kumeocwaamwuggmy;
-        qiakkkgsokqowqkg:
-        $ksiyqouuaoymsycg = null;
-        goto guukcuckowqqgqag;
-        kimmqccoykmmokim:
+        goto agksoawkuoguyeio;
+        ycywkayeqeumswqg:
     }
 }

@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b1e8aa0c03             |
+    |             613b2e4befc8c             |
     |_______________________________________|
 */
 
@@ -13,6 +13,6 @@ class Integer extends Field
     
     public function __construct(string $aokagokqyuysuksm, ?string $meqocwsecsywiiqs = null)
     {
-        parent::__construct("\151\156\x74\x65\147\145\162", $aokagokqyuysuksm, $meqocwsecsywiiqs);
+        parent::__construct("\x69\156\x74\145\147\145\x72", $aokagokqyuysuksm, $meqocwsecsywiiqs);
     }
 }

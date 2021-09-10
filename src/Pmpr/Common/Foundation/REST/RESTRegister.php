@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b1e8aa0c03             |
+    |             613b2e4befc8c             |
     |_______________________________________|
 */
 
@@ -14,40 +14,40 @@ abstract class RESTRegister extends Common
     protected array $controllers = [];
     public function wigskegsqequoeks()
     {
-        $this->qcsmikeggeemccuu("\x72\x65\x73\164\x5f\x61\x70\151\137\151\x6e\x69\164", [$this, "\164\151\x73\x77\141\x79\x73\161\x61\x77\x75\x63\x67\x67\x75\143"]);
+        $this->qcsmikeggeemccuu("\162\145\163\164\x5f\x61\160\151\x5f\151\x6e\151\164", [$this, "\164\x69\163\167\141\171\163\161\141\x77\165\x63\147\147\x75\143"]);
         parent::wigskegsqequoeks();
     }
     public function tiswaysqawucgguc()
     {
-        goto eyweqiugyoewuqks;
-        eyweqiugyoewuqks:
-        $this->gigwcakmiyayoigw();
-        goto ecgwiyooacwymoum;
-        ecgwiyooacwymoum:
+        goto wqgwguwaoomgaiik;
+        gyaowmgukagqyoeq:
         foreach ($this->ksmgmuacawsaomao() as $ioqmgqkiwqgmgcks) {
-            goto cggoissgmskoycqy;
-            mksiaogycqumieig:
-            qooeamikmycgiyse:
             goto sycmggisamuqcmqm;
-            cggoissgmskoycqy:
-            if (!$ioqmgqkiwqgmgcks instanceof RESTController) {
-                goto qooeamikmycgiyse;
-            }
-            goto waasqesguuugkyki;
             sycmggisamuqcmqm:
-            eccqqigoouugsysq:
+            if (!$ioqmgqkiwqgmgcks instanceof RESTController) {
+                goto mksiaogycqumieig;
+            }
             goto kqkwquycsmecsyoa;
-            waasqesguuugkyki:
+            kqkwquycsmecsyoa:
             
             $ioqmgqkiwqgmgcks->register_routes();
-            goto mksiaogycqumieig;
-            kqkwquycsmecsyoa:
+            goto eyweqiugyoewuqks;
+            ecgwiyooacwymoum:
+            waasqesguuugkyki:
+            goto oigccucsmoiegsic;
+            eyweqiugyoewuqks:
+            mksiaogycqumieig:
+            goto ecgwiyooacwymoum;
+            oigccucsmoiegsic:
         }
-        goto oigccucsmoiegsic;
-        oigccucsmoiegsic:
-        ausccuiqiucusomk:
-        goto wqgwguwaoomgaiik;
+        goto ucycmogwkmqoqycw;
         wqgwguwaoomgaiik:
+        $this->gigwcakmiyayoigw();
+        goto gyaowmgukagqyoeq;
+        ucycmogwkmqoqycw:
+        cggoissgmskoycqy:
+        goto maeqicokuuskkcac;
+        maeqicokuuskkcac:
     }
     
     public function ksmgmuacawsaomao() : array

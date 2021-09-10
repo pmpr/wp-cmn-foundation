@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b1e8aa0c03             |
+    |             613b2e4befc8c             |
     |_______________________________________|
 */
 
@@ -15,17 +15,17 @@ abstract class Callback extends Common
     
     public function __construct(Engine $eyoesceegakeygsi)
     {
-        goto ygawggoccwiqyaqy;
-        umuseoycuocwmkwq:
-        $this->iemaakgqgqosiecm();
         goto cygwqimwgaceaogu;
-        wiiyoqsikgcqqygi:
-        parent::__construct();
-        goto umuseoycuocwmkwq;
-        ygawggoccwiqyaqy:
-        $this->twig = $eyoesceegakeygsi;
-        goto wiiyoqsikgcqqygi;
         cygwqimwgaceaogu:
+        $this->twig = $eyoesceegakeygsi;
+        goto aakuioygmuqkiueu;
+        aakuioygmuqkiueu:
+        parent::__construct();
+        goto sceaocsemeoiyuge;
+        sceaocsemeoiyuge:
+        $this->iemaakgqgqosiecm();
+        goto sugmesswcyyuwame;
+        sugmesswcyyuwame:
     }
     
     public function yyyewgugioamwckw() : Engine

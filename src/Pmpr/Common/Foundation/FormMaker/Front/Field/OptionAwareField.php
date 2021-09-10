@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b1e8aa0c03             |
+    |             613b2e4befc8c             |
     |_______________________________________|
 */
 
@@ -32,19 +32,19 @@ class OptionAwareField extends Field
     
     public function acauweqyyugwisqc($qiouiwasaauyaaue) : self
     {
-        goto ksyuggwmykuiiooy;
-        aqiyqkqkeeaokeka:
-        return $this;
         goto csaumcaiqkmaosqw;
+        qkcawoouacuyaiiw:
         weckoamymcgsskke:
-        skwsosgqyumikwkm:
-        goto aqiyqkqkeeaokeka;
-        ksyuggwmykuiiooy:
+        goto zkqawssceymsouka;
+        zkqawssceymsouka:
+        return $this;
+        goto wgmoucsgmmgsoeks;
+        csaumcaiqkmaosqw:
         foreach ($qiouiwasaauyaaue as $uusmaiomayssaecw => $omkysikckkcieckq) {
             $this->kesomeowemmyygey($uusmaiomayssaecw, $omkysikckkcieckq);
-            umuqqcsocwogmmuw:
+            aqiyqkqkeeaokeka:
         }
-        goto weckoamymcgsskke;
-        csaumcaiqkmaosqw:
+        goto qkcawoouacuyaiiw;
+        wgmoucsgmmgsoeks:
     }
 }

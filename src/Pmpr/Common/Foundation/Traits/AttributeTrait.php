@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b1e8aa0c03             |
+    |             613b2e4befc8c             |
     |_______________________________________|
 */
 
@@ -21,33 +21,33 @@ trait AttributeTrait
     
     public function waecsyqmwascmqoa($uusmaiomayssaecw) : ?string
     {
-        goto qkuyaaweimgsaqww;
+        goto iyuykukkmuayayya;
+        umkuoceaqoiucmim:
+        return $ymkomoccmymcoiea;
+        goto iaawguyeskggqumi;
         iyuykukkmuayayya:
-        $ymkomoccmymcoiea = $siquossayskcwkea[$uusmaiomayssaecw];
+        $ymkomoccmymcoiea = null;
         goto qcococyiuemmqkyy;
         qcococyiuemmqkyy:
-        mwuaakaqmuaoceee:
-        goto cycegeagomyaqcyk;
-        yaagosqmegoeuayu:
-        if (!isset($siquossayskcwkea[$uusmaiomayssaecw])) {
-            goto mwuaakaqmuaoceee;
-        }
-        goto iyuykukkmuayayya;
-        cycegeagomyaqcyk:
-        return $ymkomoccmymcoiea;
-        goto ycmkeyowaosmeqcq;
-        aykqwyescqmocguo:
         $siquossayskcwkea = $this->ccekeuwwqqoiwuwy();
-        goto yaagosqmegoeuayu;
-        qkuyaaweimgsaqww:
-        $ymkomoccmymcoiea = null;
-        goto aykqwyescqmocguo;
+        goto cycegeagomyaqcyk;
+        swymgyikwmgeocwc:
+        yaagosqmegoeuayu:
+        goto umkuoceaqoiucmim;
+        cycegeagomyaqcyk:
+        if (!isset($siquossayskcwkea[$uusmaiomayssaecw])) {
+            goto yaagosqmegoeuayu;
+        }
+        goto ycmkeyowaosmeqcq;
         ycmkeyowaosmeqcq:
+        $ymkomoccmymcoiea = $siquossayskcwkea[$uusmaiomayssaecw];
+        goto swymgyikwmgeocwc;
+        iaawguyeskggqumi:
     }
     
     public function qigsyyqgewgskemg(?string $egkyssmuqcwaciya) : self
     {
-        return $this->igmaewykumgwoaoy("\x63\x6c\x61\x73\x73", $egkyssmuqcwaciya);
+        return $this->igmaewykumgwoaoy("\x63\154\x61\x73\163", $egkyssmuqcwaciya);
     }
     
     public function igmaewykumgwoaoy($uusmaiomayssaecw, $eqgoocgaqwqcimie) : self
@@ -58,25 +58,25 @@ trait AttributeTrait
     
     public function gagmgeyoeegieuso(array $cmkqisoeyioisqaw) : self
     {
-        goto iaawguyeskggqumi;
+        goto oiksuciayusgwsua;
+        sesewseggywgeamc:
+        return $this;
+        goto qmcwuyogkcugmqss;
+        yommcseewkuckumw:
         cmewqmeamawkiigk:
-        swymgyikwmgeocwc:
-        goto owcacaiiayyowwaq;
-        iaawguyeskggqumi:
+        goto sesewseggywgeamc;
+        oiksuciayusgwsua:
         foreach ($cmkqisoeyioisqaw as $egkyssmuqcwaciya) {
             $this->qigsyyqgewgskemg($egkyssmuqcwaciya);
-            umkuoceaqoiucmim:
+            owcacaiiayyowwaq:
         }
-        goto cmewqmeamawkiigk;
-        owcacaiiayyowwaq:
-        return $this;
-        goto oiksuciayusgwsua;
-        oiksuciayusgwsua:
+        goto yommcseewkuckumw;
+        qmcwuyogkcugmqss:
     }
     
     public function mykogkuaqwmycgog(string $egkyssmuqcwaciya) : self
     {
-        return $this->ogaeogwycyqqckeu("\143\154\x61\163\163", $egkyssmuqcwaciya);
+        return $this->ogaeogwycyqqckeu("\143\154\141\163\x73", $egkyssmuqcwaciya);
     }
     
     public function aeiayqcuemyeackg(string $egkyssmuqcwaciya) : bool
@@ -92,56 +92,56 @@ trait AttributeTrait
     
     public function seeegkogcamaigga($uusmaiomayssaecw, $eqgoocgaqwqcimie = '') : bool
     {
-        goto auuoioqaimmmwqaw;
-        iqiigaoyqmcsiyqu:
-        return $umuecysoywoumgwo;
-        goto ukumogccwqyimwyc;
-        gewsiguqiwckayiu:
+        goto gewsiguqiwckayiu;
+        ouemywaioiewaukw:
+        $umuecysoywoumgwo = !empty($ymkomoccmymcoiea);
+        goto yguywoyayoeuakim;
+        mgkogwayioiuqgcm:
+        $ymkomoccmymcoiea = explode("\x20", $ymkomoccmymcoiea);
+        goto yykoqaegsqocwkuo;
+        iyakugyowcmiuqoi:
         if ($eqgoocgaqwqcimie && $ymkomoccmymcoiea) {
-            goto sesewseggywgeamc;
+            goto auuoioqaimmmwqaw;
         }
-        goto sgsasqyooquayyss;
-        auuoioqaimmmwqaw:
+        goto ouemywaioiewaukw;
+        magceccaecooikmi:
+        return $umuecysoywoumgwo;
+        goto qsgwasmoumcwkekq;
+        sgsasqyooquayyss:
+        if (!$uusmaiomayssaecw) {
+            goto cqywgmagckmkauqi;
+        }
+        goto eoigswoesmsgwcsu;
+        oqikuaaakmwakkwi:
+        if (is_array($ymkomoccmymcoiea)) {
+            goto giscewmyyoyggqoc;
+        }
+        goto mgkogwayioiuqgcm;
+        iqiigaoyqmcsiyqu:
+        $umuecysoywoumgwo = in_array($eqgoocgaqwqcimie, $ymkomoccmymcoiea);
+        goto ukumogccwqyimwyc;
+        eoigswoesmsgwcsu:
+        $ymkomoccmymcoiea = $this->waecsyqmwascmqoa($uusmaiomayssaecw);
+        goto iyakugyowcmiuqoi;
+        gewsiguqiwckayiu:
         $umuecysoywoumgwo = false;
-        goto yocsqgeyaqesswcm;
+        goto sgsasqyooquayyss;
         yykoqaegsqocwkuo:
         giscewmyyoyggqoc:
         goto iqiigaoyqmcsiyqu;
-        ouemywaioiewaukw:
-        if (is_array($ymkomoccmymcoiea)) {
-            goto yommcseewkuckumw;
-        }
-        goto yguywoyayoeuakim;
-        oqikuaaakmwakkwi:
-        $umuecysoywoumgwo = in_array($eqgoocgaqwqcimie, $ymkomoccmymcoiea);
-        goto mgkogwayioiuqgcm;
-        sgsasqyooquayyss:
-        $umuecysoywoumgwo = !empty($ymkomoccmymcoiea);
-        goto eoigswoesmsgwcsu;
-        aeumaioaccqqsuog:
-        yommcseewkuckumw:
-        goto oqikuaaakmwakkwi;
-        yocsqgeyaqesswcm:
-        if (!$uusmaiomayssaecw) {
-            goto giscewmyyoyggqoc;
-        }
-        goto cqywgmagckmkauqi;
-        mgkogwayioiuqgcm:
-        qmcwuyogkcugmqss:
-        goto yykoqaegsqocwkuo;
+        skwewwiigkwyigwe:
         cqywgmagckmkauqi:
-        $ymkomoccmymcoiea = $this->waecsyqmwascmqoa($uusmaiomayssaecw);
-        goto gewsiguqiwckayiu;
-        eoigswoesmsgwcsu:
-        goto qmcwuyogkcugmqss;
-        goto iyakugyowcmiuqoi;
+        goto magceccaecooikmi;
+        aeumaioaccqqsuog:
+        auuoioqaimmmwqaw:
+        goto oqikuaaakmwakkwi;
         yguywoyayoeuakim:
-        $ymkomoccmymcoiea = explode("\x20", $ymkomoccmymcoiea);
+        goto yocsqgeyaqesswcm;
         goto aeumaioaccqqsuog;
-        iyakugyowcmiuqoi:
-        sesewseggywgeamc:
-        goto ouemywaioiewaukw;
         ukumogccwqyimwyc:
+        yocsqgeyaqesswcm:
+        goto skwewwiigkwyigwe;
+        qsgwasmoumcwkekq:
     }
     
     public function qcgocuceocquqcuw($uusmaiomayssaecw, $eqgoocgaqwqcimie) : self
@@ -152,37 +152,37 @@ trait AttributeTrait
     
     public function sueyawuweyoqyeaq(array $siquossayskcwkea) : self
     {
-        goto qsgwasmoumcwkekq;
-        igqqmukoqiuewgam:
-        skwewwiigkwyigwe:
-        goto wyaigkaacmyogusc;
-        wyaigkaacmyogusc:
-        return $this;
         goto mickaeggaoagsocg;
-        qsgwasmoumcwkekq:
+        mickaeggaoagsocg:
         foreach ($siquossayskcwkea as $uusmaiomayssaecw => $eqgoocgaqwqcimie) {
             $this->igmaewykumgwoaoy($uusmaiomayssaecw, $eqgoocgaqwqcimie);
-            magceccaecooikmi:
+            wyaigkaacmyogusc:
         }
-        goto igqqmukoqiuewgam;
-        mickaeggaoagsocg:
+        goto rookcyisouekusai;
+        aaeggsysesayskwc:
+        return $this;
+        goto kqqqeieaswiuykys;
+        rookcyisouekusai:
+        igqqmukoqiuewgam:
+        goto aaeggsysesayskwc;
+        kqqqeieaswiuykys:
     }
     
     public function eycskusaeseuwiyc(array $siquossayskcwkea) : self
     {
-        goto kqqqeieaswiuykys;
-        qsogsookkesyksee:
-        return $this;
         goto wcyikusayywiuiia;
-        kqqqeieaswiuykys:
+        weiswmsaqamyisoo:
+        ucmqwkqykgagwyim:
+        goto iggysouawgiwywau;
+        iggysouawgiwywau:
+        return $this;
+        goto qyyoqyesekyggyua;
+        wcyikusayywiuiia:
         foreach ($siquossayskcwkea as $uusmaiomayssaecw => $eqgoocgaqwqcimie) {
             $this->qcgocuceocquqcuw($uusmaiomayssaecw, $eqgoocgaqwqcimie);
-            aaeggsysesayskwc:
+            qsogsookkesyksee:
         }
-        goto ucmqwkqykgagwyim;
-        ucmqwkqykgagwyim:
-        rookcyisouekusai:
-        goto qsogsookkesyksee;
-        wcyikusayywiuiia:
+        goto weiswmsaqamyisoo;
+        qyyoqyesekyggyua:
     }
 }

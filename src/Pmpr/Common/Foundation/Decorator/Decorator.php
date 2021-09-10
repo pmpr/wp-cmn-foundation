@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b1e8aa0c03             |
+    |             613b2e4befc8c             |
     |_______________________________________|
 */
 
@@ -14,24 +14,24 @@ abstract class Decorator implements ConstantInterface
     
     public static function qyyygkguqcmgkmey($ekiuyucoiagmscgy, $ggauoeuaesiymgee = false, ...$ywmkwiwkosakssii)
     {
-        goto oiciueyaoucowgmw;
-        awuwaqciyuukqeag:
-        return $ksaameoqigiaoigg;
-        goto ymkwowqeeacsguym;
-        cwekckceoqoymiwm:
-        yyyamkcqacumuegm:
-        goto awuwaqciyuukqeag;
-        qokewqqmgqgmqaqy:
-        if (!function_exists($ekiuyucoiagmscgy)) {
-            goto yyyamkcqacumuegm;
-        }
-        goto sueyccoqkgccsoyw;
-        oiciueyaoucowgmw:
-        $ksaameoqigiaoigg = $ggauoeuaesiymgee;
-        goto qokewqqmgqgmqaqy;
-        sueyccoqkgccsoyw:
-        $ksaameoqigiaoigg = call_user_func($ekiuyucoiagmscgy, ...$ywmkwiwkosakssii);
         goto cwekckceoqoymiwm;
+        awuwaqciyuukqeag:
+        if (!function_exists($ekiuyucoiagmscgy)) {
+            goto sueyccoqkgccsoyw;
+        }
+        goto ymkwowqeeacsguym;
+        aekiswqkimmgcmac:
+        return $ksaameoqigiaoigg;
+        goto csaweyksigegicem;
         ymkwowqeeacsguym:
+        $ksaameoqigiaoigg = call_user_func($ekiuyucoiagmscgy, ...$ywmkwiwkosakssii);
+        goto ggqciukoakmkiauk;
+        cwekckceoqoymiwm:
+        $ksaameoqigiaoigg = $ggauoeuaesiymgee;
+        goto awuwaqciyuukqeag;
+        ggqciukoakmkiauk:
+        sueyccoqkgccsoyw:
+        goto aekiswqkimmgcmac;
+        csaweyksigegicem:
     }
 }

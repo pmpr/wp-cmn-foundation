@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b1e8aa0c03             |
+    |             613b2e4befc8c             |
     |_______________________________________|
 */
 
@@ -11,8 +11,8 @@ use Pmpr\Common\Foundation\Manipulate\ManipulateServer;
 
 class View extends Data
 {
-    const LIST_VIEW = "\154\x69\x73\164\137\166\x69\x65\167";
-    const GRID_VIEW = "\147\x72\151\144\x5f\166\x69\x65\x77";
+    const LIST_VIEW = "\154\151\163\164\137\x76\151\x65\x77";
+    const GRID_VIEW = "\147\x72\151\144\x5f\x76\151\x65\167";
     
     protected ?string $name = '';
     
