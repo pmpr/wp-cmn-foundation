@@ -1,45 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613bb98fa102d             |
+    |             613bbbf6a8fd8             |
     |_______________________________________|
 */
-
-namespace Pmpr\Common\Foundation\ORM;
-
-use Pmpr\Common\Foundation\Container\Container;
-
-class Common extends Container
-{
-    
-    public function homgcsoocssgwgym($smgioooysaacyigy = [], $eouokigcckggaywy = null, $qmiqqoqeakyeuuuw = null) : ?array
-    {
-        if (!is_array($eouokigcckggaywy)) {
-            $eouokigcckggaywy = [$eouokigcckggaywy, "{$eouokigcckggaywy}s"];
-        }
-        [$acasoawmkoksguqw, $qgmsmgywssakmiow] = $eouokigcckggaywy;
-        $ggauoeuaesiymgee = ['edit_item' => 'edit_' . $acasoawmkoksguqw, 'read_item' => 'read_' . $acasoawmkoksguqw, 'delete_item' => 'delete_' . $acasoawmkoksguqw, 'delete_items' => 'delete_' . $qgmsmgywssakmiow, 'edit_items' => 'edit_' . $qgmsmgywssakmiow, 'edit_others_items' => 'edit_others_' . $qgmsmgywssakmiow, 'publish_items' => 'publish_' . $qgmsmgywssakmiow, 'read_private_items' => 'read_private_' . $qgmsmgywssakmiow];
-        
-        if ($qmiqqoqeakyeuuuw) {
-            $ggmysogesocycwio = ['read' => 'read', 'delete_items' => 'delete_' . $qgmsmgywssakmiow, 'delete_private_items' => 'delete_private_' . $qgmsmgywssakmiow, 'delete_published_items' => 'delete_published_' . $qgmsmgywssakmiow, 'delete_others_items' => 'delete_others_' . $qgmsmgywssakmiow, 'edit_private_items' => 'edit_private_' . $qgmsmgywssakmiow, 'edit_published_items' => 'edit_published_' . $qgmsmgywssakmiow];
-            $ggauoeuaesiymgee = array_merge($ggauoeuaesiymgee, $ggmysogesocycwio);
-        }
-        $smgioooysaacyigy = array_merge($ggauoeuaesiymgee, $smgioooysaacyigy);
-        
-        if (!isset($smgioooysaacyigy['create_items'])) {
-            $smgioooysaacyigy['create_items'] = $smgioooysaacyigy['edit_items'];
-        }
-        
-        if ($qmiqqoqeakyeuuuw) {
-            global $metaCaps;
-            foreach ($smgioooysaacyigy as $oaeyummsoqeweuce => $ugugagoguiycqeys) {
-                if (in_array($oaeyummsoqeweuce, ['read_item', 'delete_item', 'edit_item'])) {
-                    $metaCaps[$ugugagoguiycqeys] = $oaeyummsoqeweuce;
-                }
-                qiaqsassksqiuyae:
-            }
-            cecuyayqoioasumi:
-        }
-        return $smgioooysaacyigy;
-    }
-}
+ namespace Pmpr\Common\Foundation\ORM; use Pmpr\Common\Foundation\Container\Container; class Common extends Container { public function homgcsoocssgwgym($smgioooysaacyigy = [], $eouokigcckggaywy = null, $qmiqqoqeakyeuuuw = null) : ?array { if (is_array($eouokigcckggaywy)) { goto cecuyayqoioasumi; } $eouokigcckggaywy = [$eouokigcckggaywy, "{$eouokigcckggaywy}\163"]; cecuyayqoioasumi: [$acasoawmkoksguqw, $qgmsmgywssakmiow] = $eouokigcckggaywy; $ggauoeuaesiymgee = ["\x65\x64\x69\x74\x5f\151\164\145\x6d" => "\x65\144\151\164\137" . $acasoawmkoksguqw, "\162\x65\141\144\x5f\151\164\x65\x6d" => "\162\145\x61\x64\137" . $acasoawmkoksguqw, "\x64\x65\154\145\x74\x65\x5f\151\x74\x65\x6d" => "\144\145\x6c\145\x74\145\137" . $acasoawmkoksguqw, "\144\145\x6c\145\x74\145\x5f\151\x74\x65\155\x73" => "\144\145\154\145\x74\145\x5f" . $qgmsmgywssakmiow, "\145\144\x69\164\x5f\151\164\145\x6d\163" => "\x65\x64\x69\x74\x5f" . $qgmsmgywssakmiow, "\x65\144\x69\164\x5f\x6f\x74\150\145\162\x73\137\x69\x74\x65\x6d\x73" => "\145\144\151\164\x5f\157\164\150\145\162\163\137" . $qgmsmgywssakmiow, "\x70\165\142\154\x69\163\150\x5f\151\x74\145\x6d\163" => "\x70\x75\x62\154\x69\163\x68\x5f" . $qgmsmgywssakmiow, "\162\145\141\x64\x5f\160\x72\151\166\141\164\x65\137\x69\x74\145\x6d\163" => "\x72\145\x61\144\x5f\x70\162\x69\x76\x61\x74\145\137" . $qgmsmgywssakmiow]; if (!$qmiqqoqeakyeuuuw) { goto qiaqsassksqiuyae; } $ggmysogesocycwio = ["\x72\x65\141\x64" => "\x72\x65\141\x64", "\x64\x65\x6c\x65\164\x65\137\151\x74\145\155\x73" => "\x64\145\x6c\x65\x74\145\x5f" . $qgmsmgywssakmiow, "\144\x65\x6c\145\x74\x65\137\160\162\151\x76\x61\x74\x65\137\151\x74\x65\155\x73" => "\144\145\x6c\145\x74\145\137\160\x72\x69\x76\x61\x74\145\x5f" . $qgmsmgywssakmiow, "\x64\145\154\145\164\x65\137\x70\165\142\154\x69\x73\x68\145\x64\x5f\x69\x74\145\x6d\x73" => "\x64\145\154\145\164\x65\137\160\x75\142\154\151\163\x68\145\x64\x5f" . $qgmsmgywssakmiow, "\x64\x65\154\145\x74\145\137\x6f\164\150\145\x72\x73\137\x69\164\145\x6d\163" => "\x64\x65\x6c\145\164\x65\x5f\x6f\x74\x68\145\162\x73\x5f" . $qgmsmgywssakmiow, "\x65\x64\151\x74\137\x70\162\x69\x76\x61\164\x65\137\x69\164\x65\155\x73" => "\x65\144\151\164\x5f\x70\162\x69\x76\141\164\145\137" . $qgmsmgywssakmiow, "\145\144\x69\164\x5f\160\x75\142\154\151\163\150\145\x64\137\151\164\x65\155\163" => "\x65\144\x69\x74\137\160\165\x62\x6c\x69\x73\x68\145\x64\137" . $qgmsmgywssakmiow]; $ggauoeuaesiymgee = array_merge($ggauoeuaesiymgee, $ggmysogesocycwio); qiaqsassksqiuyae: $smgioooysaacyigy = array_merge($ggauoeuaesiymgee, $smgioooysaacyigy); if (isset($smgioooysaacyigy["\x63\162\x65\141\x74\x65\137\151\x74\x65\155\x73"])) { goto qogqewiwmwiwskgm; } $smgioooysaacyigy["\143\x72\145\141\x74\x65\137\x69\x74\x65\155\x73"] = $smgioooysaacyigy["\145\x64\151\164\x5f\x69\164\x65\x6d\163"]; qogqewiwmwiwskgm: if (!$qmiqqoqeakyeuuuw) { goto asmecuqiyyswueqe; } global $metaCaps; foreach ($smgioooysaacyigy as $oaeyummsoqeweuce => $ugugagoguiycqeys) { if (!in_array($oaeyummsoqeweuce, ["\x72\145\x61\144\x5f\151\x74\145\x6d", "\144\145\x6c\145\x74\x65\x5f\x69\164\145\155", "\145\x64\151\x74\x5f\151\x74\145\155"])) { goto myoicgcuugciueis; } $metaCaps[$ugugagoguiycqeys] = $oaeyummsoqeweuce; myoicgcuugciueis: qwigomakwmyiwkgo: } qgoiooayqmqqsiok: asmecuqiyyswueqe: return $smgioooysaacyigy; } }

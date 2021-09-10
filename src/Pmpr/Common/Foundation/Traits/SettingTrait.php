@@ -1,53 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613bb98fa102d             |
+    |             613bbbf6a8fd8             |
     |_______________________________________|
 */
-
-namespace Pmpr\Common\Foundation\Traits;
-
-use Pmpr\Common\Foundation\FormMaker\Admin\Element\Setting;
-use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
-
-trait SettingTrait
-{
-    
-    protected ?Setting $settingObj = null;
-    
-    protected array $allSettings = [];
-    
-    public final function kmuweyayaqoeqiyw() : ?Setting
-    {
-        return $this->settingObj;
-    }
-    
-    public final function aoqykkmokwseeeie() : array
-    {
-        if (!$this->allSettings) {
-            $mksyucucyswaukig = $this->kmuweyayaqoeqiyw();
-            if ($mksyucucyswaukig) {
-                $qeqooyuoiasweuck = $mksyucucyswaukig::mywwyegkuymookeg();
-                if (is_array($qeqooyuoiasweuck)) {
-                    $this->allSettings = $qeqooyuoiasweuck;
-                }
-            }
-        }
-        return $this->allSettings;
-    }
-    
-    public final function weysguygiseoukqw(string $uusmaiomayssaecw, $ggauoeuaesiymgee = null)
-    {
-        $qeqooyuoiasweuck = $this->aoqykkmokwseeeie();
-        if (!$qeqooyuoiasweuck) {
-            $amakmumgguksgmum = $ggauoeuaesiymgee;
-            $mksyucucyswaukig = $this->kmuweyayaqoeqiyw();
-            if ($mksyucucyswaukig) {
-                $amakmumgguksgmum = $mksyucucyswaukig::eiwcuqigayigimak($uusmaiomayssaecw, $ggauoeuaesiymgee);
-            }
-        } else {
-            $amakmumgguksgmum = ManipulateArray::get($qeqooyuoiasweuck, $uusmaiomayssaecw, $ggauoeuaesiymgee);
-        }
-        return $amakmumgguksgmum;
-    }
-}
+ namespace Pmpr\Common\Foundation\Traits; use Pmpr\Common\Foundation\FormMaker\Admin\Element\Setting; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; trait SettingTrait { protected ?Setting $settingObj = null; protected array $allSettings = []; public final function kmuweyayaqoeqiyw() : ?Setting { return $this->settingObj; } public final function aoqykkmokwseeeie() : array { if ($this->allSettings) { goto kkieqqwwascekcmo; } $mksyucucyswaukig = $this->kmuweyayaqoeqiyw(); if (!$mksyucucyswaukig) { goto ggewkaiwwgkmkwgc; } $qeqooyuoiasweuck = $mksyucucyswaukig::mywwyegkuymookeg(); if (!is_array($qeqooyuoiasweuck)) { goto syuywgysqyckcqay; } $this->allSettings = $qeqooyuoiasweuck; syuywgysqyckcqay: ggewkaiwwgkmkwgc: kkieqqwwascekcmo: return $this->allSettings; } public final function weysguygiseoukqw(string $uusmaiomayssaecw, $ggauoeuaesiymgee = null) { $qeqooyuoiasweuck = $this->aoqykkmokwseeeie(); if (!$qeqooyuoiasweuck) { goto awimwukcyiceackk; } $amakmumgguksgmum = ManipulateArray::get($qeqooyuoiasweuck, $uusmaiomayssaecw, $ggauoeuaesiymgee); goto mugeiwyysiemwaym; awimwukcyiceackk: $amakmumgguksgmum = $ggauoeuaesiymgee; $mksyucucyswaukig = $this->kmuweyayaqoeqiyw(); if (!$mksyucucyswaukig) { goto ycueoqkeakismiqw; } $amakmumgguksgmum = $mksyucucyswaukig::eiwcuqigayigimak($uusmaiomayssaecw, $ggauoeuaesiymgee); ycueoqkeakismiqw: mugeiwyysiemwaym: return $amakmumgguksgmum; } }

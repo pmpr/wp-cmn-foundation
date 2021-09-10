@@ -1,41 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613bb98fa102d             |
+    |             613bbbf6a8fd8             |
     |_______________________________________|
 */
-
-namespace Pmpr\Common\Foundation\Manipulate\Type;
-
-use Pmpr\Common\Foundation\Decorator\DecoratorHook;
-use Pmpr\Common\Foundation\Manipulate\ManipulateSetting;
-
-class ManipulateDatetime extends Common
-{
-    
-    public static function wguceomqgwouoyks($ocogsiouoiuuguym) : bool
-    {
-        return strtotime($ocogsiouoiuuguym) < time();
-    }
-    
-    public static function ikuqieqosemkwuio($cqgoimumaewouews)
-    {
-        $cqgoimumaewouews = strtotime($cqgoimumaewouews);
-        $asuaciiookaciacq = (int) abs(time() - $cqgoimumaewouews);
-        if ($cqgoimumaewouews && $asuaciiookaciacq > 0 && $asuaciiookaciacq < DAY_IN_SECONDS) {
-            $sieoyimycoskwwku = sprintf(__('%s ago'), human_time_diff($cqgoimumaewouews));
-        } else {
-            $sieoyimycoskwwku = DecoratorHook::sscegwueamckwmcy('date_time_ago', date('Y-m-d H:i', $cqgoimumaewouews), ManipulateSetting::uyomwmskouyyqyyq());
-        }
-        return DecoratorHook::sscegwueamckwmcy('time_ago', $sieoyimycoskwwku, $cqgoimumaewouews);
-    }
-    
-    public static function awesicwkasgqwwuo($ggkaciewmeqmgckg, $qmeuaeiseuacgiqc, $ocogsiouoiuuguym = 'now') : bool
-    {
-        $ggkaciewmeqmgckg = strtotime($ggkaciewmeqmgckg);
-        $qmeuaeiseuacgiqc = strtotime($qmeuaeiseuacgiqc);
-        $gioggcykgoikcwiy = strtotime($ocogsiouoiuuguym);
-        
-        return $ggkaciewmeqmgckg <= $gioggcykgoikcwiy && $gioggcykgoikcwiy <= $qmeuaeiseuacgiqc;
-    }
-}
+ namespace Pmpr\Common\Foundation\Manipulate\Type; use Pmpr\Common\Foundation\Decorator\DecoratorHook; use Pmpr\Common\Foundation\Manipulate\ManipulateSetting; class ManipulateDatetime extends Common { public static function wguceomqgwouoyks($ocogsiouoiuuguym) : bool { return strtotime($ocogsiouoiuuguym) < time(); } public static function ikuqieqosemkwuio($cqgoimumaewouews) { $cqgoimumaewouews = strtotime($cqgoimumaewouews); $asuaciiookaciacq = (int) abs(time() - $cqgoimumaewouews); if ($cqgoimumaewouews && $asuaciiookaciacq > 0 && $asuaciiookaciacq < DAY_IN_SECONDS) { goto aqmauesokgqoyugm; } $sieoyimycoskwwku = DecoratorHook::sscegwueamckwmcy("\144\x61\x74\x65\x5f\164\151\155\145\x5f\x61\x67\x6f", date("\x59\x2d\x6d\55\x64\40\x48\72\151", $cqgoimumaewouews), ManipulateSetting::uyomwmskouyyqyyq()); goto scigcaogysowccsk; aqmauesokgqoyugm: $sieoyimycoskwwku = sprintf(__("\x25\x73\x20\141\147\x6f"), human_time_diff($cqgoimumaewouews)); scigcaogysowccsk: return DecoratorHook::sscegwueamckwmcy("\164\151\x6d\x65\137\141\147\157", $sieoyimycoskwwku, $cqgoimumaewouews); } public static function awesicwkasgqwwuo($ggkaciewmeqmgckg, $qmeuaeiseuacgiqc, $ocogsiouoiuuguym = "\156\157\x77") : bool { $ggkaciewmeqmgckg = strtotime($ggkaciewmeqmgckg); $qmeuaeiseuacgiqc = strtotime($qmeuaeiseuacgiqc); $gioggcykgoikcwiy = strtotime($ocogsiouoiuuguym); return $ggkaciewmeqmgckg <= $gioggcykgoikcwiy && $gioggcykgoikcwiy <= $qmeuaeiseuacgiqc; } }

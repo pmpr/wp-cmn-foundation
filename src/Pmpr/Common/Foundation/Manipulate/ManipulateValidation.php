@@ -1,58 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613bb98fa102d             |
+    |             613bbbf6a8fd8             |
     |_______________________________________|
 */
-
-namespace Pmpr\Common\Foundation\Manipulate;
-
-use Pmpr\Common\Foundation\DOMCrawler;
-use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString;
-
-class ManipulateValidation extends Manipulate
-{
-    
-    public static function wmcwegoisyeeosqu($sociqikgoyemqaac) : bool
-    {
-        return filter_var($sociqikgoyemqaac, FILTER_VALIDATE_URL);
-    }
-    
-    public static function uuksaskqamgouosy($sociqikgoyemqaac, $kqywgoqsmuswammk = null) : bool
-    {
-        $uuksaskqamgouosy = $sociqikgoyemqaac != strip_tags($sociqikgoyemqaac);
-        if ($uuksaskqamgouosy && $kqywgoqsmuswammk) {
-            $uuksaskqamgouosy = DOMCrawler::umuecysoywoumgwo($sociqikgoyemqaac, $kqywgoqsmuswammk);
-        }
-        return $uuksaskqamgouosy;
-    }
-    
-    public static function qeegmakycwwycmcm($sociqikgoyemqaac) : bool
-    {
-        return strlen($sociqikgoyemqaac) == strlen(utf8_decode($sociqikgoyemqaac));
-    }
-    
-    public static function qkgmsqgmwoamekyk($owaiikyuwwwmswgc) : bool
-    {
-        return is_email($owaiikyuwwwmswgc);
-    }
-    
-    public static function uqomuowmcuauuikc($auoeyussiyykosqg) : bool
-    {
-        return is_string($auoeyussiyykosqg) && preg_match('/^(\\+98?)?{?(0?9[0-9]{9}}?)$/', $auoeyussiyykosqg, $meyiiwcswqmuggyg);
-    }
-    
-    public static function pwcgsiswecasgkgs($mksyucucyswaukig, $qgciuiagkkguykgs)
-    {
-        $ksaameoqigiaoigg = false;
-        if (method_exists($mksyucucyswaukig, $qgciuiagkkguykgs)) {
-            $ksaameoqigiaoigg = $qgciuiagkkguykgs;
-        } else {
-            $ukuacigyikaisiwu = ManipulateString::scramble($qgciuiagkkguykgs);
-            if (method_exists($mksyucucyswaukig, $ukuacigyikaisiwu)) {
-                $ksaameoqigiaoigg = $ukuacigyikaisiwu;
-            }
-        }
-        return $ksaameoqigiaoigg;
-    }
-}
+ namespace Pmpr\Common\Foundation\Manipulate; use Pmpr\Common\Foundation\DOMCrawler; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString; class ManipulateValidation extends Manipulate { public static function wmcwegoisyeeosqu($sociqikgoyemqaac) : bool { return filter_var($sociqikgoyemqaac, FILTER_VALIDATE_URL); } public static function uuksaskqamgouosy($sociqikgoyemqaac, $kqywgoqsmuswammk = null) : bool { $uuksaskqamgouosy = $sociqikgoyemqaac != strip_tags($sociqikgoyemqaac); if (!($uuksaskqamgouosy && $kqywgoqsmuswammk)) { goto goimqkkiyegggysa; } $uuksaskqamgouosy = DOMCrawler::umuecysoywoumgwo($sociqikgoyemqaac, $kqywgoqsmuswammk); goimqkkiyegggysa: return $uuksaskqamgouosy; } public static function qeegmakycwwycmcm($sociqikgoyemqaac) : bool { return strlen($sociqikgoyemqaac) == strlen(utf8_decode($sociqikgoyemqaac)); } public static function qkgmsqgmwoamekyk($owaiikyuwwwmswgc) : bool { return is_email($owaiikyuwwwmswgc); } public static function uqomuowmcuauuikc($auoeyussiyykosqg) : bool { return is_string($auoeyussiyykosqg) && preg_match("\57\136\x28\x5c\53\71\x38\x3f\51\x3f\173\x3f\x28\60\x3f\71\133\x30\55\x39\x5d\x7b\71\175\175\77\x29\x24\57", $auoeyussiyykosqg, $meyiiwcswqmuggyg); } public static function pwcgsiswecasgkgs($mksyucucyswaukig, $qgciuiagkkguykgs) { $ksaameoqigiaoigg = false; if (method_exists($mksyucucyswaukig, $qgciuiagkkguykgs)) { goto wmgyemaskuuowuum; } $ukuacigyikaisiwu = ManipulateString::scramble($qgciuiagkkguykgs); if (!method_exists($mksyucucyswaukig, $ukuacigyikaisiwu)) { goto mkayykckiywayuko; } $ksaameoqigiaoigg = $ukuacigyikaisiwu; mkayykckiywayuko: goto ssqemoqcimayewqm; wmgyemaskuuowuum: $ksaameoqigiaoigg = $qgciuiagkkguykgs; ssqemoqcimayewqm: return $ksaameoqigiaoigg; } }

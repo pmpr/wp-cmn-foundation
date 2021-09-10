@@ -1,60 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613bb98fa102d             |
+    |             613bbbf6a8fd8             |
     |_______________________________________|
 */
-
-namespace Pmpr\Common\Foundation\ORM\View;
-
-use Pmpr\Common\Foundation\Manipulate\ManipulateServer;
-
-class ObjectAware extends View
-{
-    
-    protected ?int $id = 0;
-    
-    protected ?object $object = null;
-    
-    public function ggiaseqygioygumq(?int $aokagokqyuysuksm) : self
-    {
-        $this->id = $aokagokqyuysuksm;
-        return $this;
-    }
-    
-    public function mwikyscisascoeea() : int
-    {
-        return $this->id;
-    }
-    
-    public function kwmiaokywwmwecuc(?object $mksyucucyswaukig) : self
-    {
-        $this->object = $mksyucucyswaukig;
-        return $this;
-    }
-    
-    public function imgymusqgccqsqqq() : ?object
-    {
-        return $this->object;
-    }
-    public function mqyuagguukgcoeka()
-    {
-        parent::mqyuagguukgcoeka();
-        $meywaqqsugaoeyys = $this->mgogaykgkoogasim();
-        $aokagokqyuysuksm = ManipulateServer::get($meywaqqsugaoeyys->kumuygiiqswoyasy(), false);
-        if ($aokagokqyuysuksm) {
-            
-            $this->ggiaseqygioygumq((int) $aokagokqyuysuksm);
-            
-            if (!$this->mwikyscisascoeea()) {
-                wp_redirect($meywaqqsugaoeyys->comogmawyoiquwis());
-                exit;
-            }
-            $this->kwmiaokywwmwecuc($this->mgogaykgkoogasim()->akkkoiiymmamsauc($this->mwikyscisascoeea()));
-            
-            if (!$this->imgymusqgccqsqqq()) {
-                wp_die(__('You attempted to edit an item that doesn\'t exist. Perhaps it was deleted?', PR__CMN__FOUNDATION));
-            }
-        }
-    }
-}
+ namespace Pmpr\Common\Foundation\ORM\View; use Pmpr\Common\Foundation\Manipulate\ManipulateServer; class ObjectAware extends View { protected ?int $id = 0; protected ?object $object = null; public function ggiaseqygioygumq(?int $aokagokqyuysuksm) : self { $this->id = $aokagokqyuysuksm; return $this; } public function mwikyscisascoeea() : int { return $this->id; } public function kwmiaokywwmwecuc(?object $mksyucucyswaukig) : self { $this->object = $mksyucucyswaukig; return $this; } public function imgymusqgccqsqqq() : ?object { return $this->object; } public function mqyuagguukgcoeka() { parent::mqyuagguukgcoeka(); $meywaqqsugaoeyys = $this->mgogaykgkoogasim(); $aokagokqyuysuksm = ManipulateServer::get($meywaqqsugaoeyys->kumuygiiqswoyasy(), false); if (!$aokagokqyuysuksm) { goto ygcsmkuycoagwyou; } $this->ggiaseqygioygumq((int) $aokagokqyuysuksm); if ($this->mwikyscisascoeea()) { goto mosqsmqimqgqoase; } wp_redirect($meywaqqsugaoeyys->comogmawyoiquwis()); exit; mosqsmqimqgqoase: $this->kwmiaokywwmwecuc($this->mgogaykgkoogasim()->akkkoiiymmamsauc($this->mwikyscisascoeea())); if ($this->imgymusqgccqsqqq()) { goto omugkkesagcyagmk; } wp_die(__("\x59\x6f\x75\x20\141\164\164\145\155\x70\164\x65\x64\x20\x74\157\40\145\x64\151\164\x20\141\x6e\40\151\x74\x65\x6d\x20\164\x68\x61\x74\40\144\x6f\145\x73\156\x27\164\40\x65\170\x69\x73\164\x2e\x20\120\x65\162\150\x61\160\163\x20\151\x74\40\x77\x61\163\40\144\x65\154\145\164\x65\x64\77", PR__CMN__FOUNDATION)); omugkkesagcyagmk: ygcsmkuycoagwyou: } }

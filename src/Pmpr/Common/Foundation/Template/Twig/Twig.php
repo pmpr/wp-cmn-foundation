@@ -1,45 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613bb98fa102d             |
+    |             613bbbf6a8fd8             |
     |_______________________________________|
 */
-
-namespace Pmpr\Common\Foundation\Template\Twig;
-
-
-class Twig extends Common
-{
-    
-    protected ?Engine $engine = null;
-    
-    public function uykissogmuaaocsg() : ?Engine
-    {
-        return $this->engine;
-    }
-    public function __construct()
-    {
-        $this->engine = Engine::symcgieuakksimmu();
-        parent::__construct();
-    }
-    public function wigskegsqequoeks()
-    {
-        $this->qcsmikeggeemccuu('plugins_loaded', [$this, 'load'])->qcsmikeggeemccuu('after_setup_theme', [$this, 'kgkmwucmkcqaksmo'], 99, 2)->qcsmikeggeemccuu($this->ygyygikyocoymgaw('add_templating_path'), [$this, 'wkosicsekwkigyss'], 10, 2);
-        parent::wigskegsqequoeks();
-    }
-    public function load()
-    {
-        $this->uykissogmuaaocsg()->load();
-    }
-    
-    public function wkosicsekwkigyss($aiieyweysaukqemc, $mkomwsiykqigmqca)
-    {
-        $this->uykissogmuaaocsg()->wkosicsekwkigyss($aiieyweysaukqemc, $mkomwsiykqigmqca);
-    }
-    public function kgkmwucmkcqaksmo()
-    {
-        $goqqimcssiyagkwy = $this->uykissogmuaaocsg();
-        Filter::symcgieuakksimmu($goqqimcssiyagkwy);
-        Action::symcgieuakksimmu($goqqimcssiyagkwy);
-    }
-}
+ namespace Pmpr\Common\Foundation\Template\Twig; class Twig extends Common { protected ?Engine $engine = null; public function uykissogmuaaocsg() : ?Engine { return $this->engine; } public function __construct() { $this->engine = Engine::symcgieuakksimmu(); parent::__construct(); } public function wigskegsqequoeks() { $this->qcsmikeggeemccuu("\x70\x6c\165\x67\151\156\163\137\x6c\157\x61\144\x65\x64", [$this, "\x6c\x6f\x61\144"])->qcsmikeggeemccuu("\x61\146\x74\x65\162\137\x73\x65\164\x75\160\x5f\x74\150\x65\x6d\x65", [$this, "\x6b\147\153\x6d\167\165\143\x6d\153\x63\161\x61\153\163\155\x6f"], 99, 2)->qcsmikeggeemccuu($this->ygyygikyocoymgaw("\x61\144\x64\137\164\x65\155\160\154\141\164\151\x6e\x67\137\160\141\164\x68"), [$this, "\x77\x6b\157\x73\x69\143\163\x65\153\167\x6b\x69\x67\x79\163\x73"], 10, 2); parent::wigskegsqequoeks(); } public function load() { $this->uykissogmuaaocsg()->load(); } public function wkosicsekwkigyss($aiieyweysaukqemc, $mkomwsiykqigmqca) { $this->uykissogmuaaocsg()->wkosicsekwkigyss($aiieyweysaukqemc, $mkomwsiykqigmqca); } public function kgkmwucmkcqaksmo() { $goqqimcssiyagkwy = $this->uykissogmuaaocsg(); Filter::symcgieuakksimmu($goqqimcssiyagkwy); Action::symcgieuakksimmu($goqqimcssiyagkwy); } }

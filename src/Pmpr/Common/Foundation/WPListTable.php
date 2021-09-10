@@ -1,54 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613bb98fa102d             |
+    |             613bbbf6a8fd8             |
     |_______________________________________|
 */
-
-namespace Pmpr\Common\Foundation;
-
-use Pmpr\Common\Foundation\Interfaces\ConstantInterface;
-use Pmpr\Common\Foundation\Manipulate\ManipulateSetting;
-use Pmpr\Common\Foundation\Template\Traits\TemplateTrait;
-use Pmpr\Common\Foundation\Traits\ComponentTrait;
-use Pmpr\Common\Foundation\Traits\HookTrait;
-use Pmpr\Common\Foundation\Traits\TranslateTrait;
-use WP_List_Table;
-
-class WPListTable extends WP_List_Table implements ConstantInterface
-{
-    use TranslateTrait, ComponentTrait, TemplateTrait, HookTrait;
-    
-    protected int $count = 0;
-    
-    protected int $perPage = 10;
-    
-    public function wasgwsogmuquqeaa() : array
-    {
-        return $this->items;
-    }
-    
-    public function __construct($ywmkwiwkosakssii = [])
-    {
-        $this->perPage = ManipulateSetting::omkaowmygoqwsywq();
-        parent::__construct($ywmkwiwkosakssii);
-    }
-    
-    public function ygmcsmegcysyeoss() : int
-    {
-        return $this->count;
-    }
-    
-    public function sooksiiooeywkyaq() : int
-    {
-        return $this->perPage;
-    }
-    
-    public function prepare_items()
-    {
-        $gaeqamemwmwsyukm = $this->ygmcsmegcysyeoss();
-        $weyoqgcesqgeusiu = $this->sooksiiooeywkyaq();
-        $this->set_pagination_args(['per_page' => $weyoqgcesqgeusiu, 'total_pages' => ceil($gaeqamemwmwsyukm / $weyoqgcesqgeusiu), 'total_items' => $gaeqamemwmwsyukm]);
-        $this->_column_headers = [$this->get_columns(), [], $this->get_sortable_columns()];
-    }
-}
+ namespace Pmpr\Common\Foundation; use Pmpr\Common\Foundation\Interfaces\ConstantInterface; use Pmpr\Common\Foundation\Manipulate\ManipulateSetting; use Pmpr\Common\Foundation\Template\Traits\TemplateTrait; use Pmpr\Common\Foundation\Traits\ComponentTrait; use Pmpr\Common\Foundation\Traits\HookTrait; use Pmpr\Common\Foundation\Traits\TranslateTrait; use WP_List_Table; class WPListTable extends WP_List_Table implements ConstantInterface { use TranslateTrait, ComponentTrait, TemplateTrait, HookTrait; protected int $count = 0; protected int $perPage = 10; public function wasgwsogmuquqeaa() : array { return $this->items; } public function __construct($ywmkwiwkosakssii = []) { $this->perPage = ManipulateSetting::omkaowmygoqwsywq(); parent::__construct($ywmkwiwkosakssii); } public function ygmcsmegcysyeoss() : int { return $this->count; } public function sooksiiooeywkyaq() : int { return $this->perPage; } public function prepare_items() { $gaeqamemwmwsyukm = $this->ygmcsmegcysyeoss(); $weyoqgcesqgeusiu = $this->sooksiiooeywkyaq(); $this->set_pagination_args(["\160\x65\x72\137\x70\141\147\x65" => $weyoqgcesqgeusiu, "\x74\x6f\164\x61\154\x5f\160\x61\x67\x65\163" => ceil($gaeqamemwmwsyukm / $weyoqgcesqgeusiu), "\x74\x6f\x74\141\154\137\x69\x74\x65\155\x73" => $gaeqamemwmwsyukm]); $this->_column_headers = [$this->get_columns(), [], $this->get_sortable_columns()]; } }

@@ -1,46 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613bb98fa102d             |
+    |             613bbbf6a8fd8             |
     |_______________________________________|
 */
-
-namespace Pmpr\Common\Foundation\Traits;
-
-use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
-use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString;
-
-trait ToArrayTrait
-{
-    
-    public function qgsieamsswkgysow(array $ywmkwiwkosakssii = []) : void
-    {
-    }
-    
-    public function sacmkccceuywoqsq($tsuauommsquiesmk = false, array $ywmkwiwkosakssii = []) : array
-    {
-        $this->qgsieamsswkgysow($ywmkwiwkosakssii);
-        $kkeqqkkkqwkocsyu = get_object_vars($this);
-        foreach ($kkeqqkkkqwkocsyu as $uusmaiomayssaecw => $gygawogosumsgmme) {
-            if (is_object($gygawogosumsgmme) && method_exists($gygawogosumsgmme, 'sacmkccceuywoqsq')) {
-                $kkeqqkkkqwkocsyu[$uusmaiomayssaecw] = $gygawogosumsgmme->sacmkccceuywoqsq($tsuauommsquiesmk, $ywmkwiwkosakssii);
-            }
-            $gaoqiuwsaoayggsa = ManipulateString::kwuyaykukcmaqggg($uusmaiomayssaecw);
-            if ($gaoqiuwsaoayggsa !== $uusmaiomayssaecw) {
-                $kkeqqkkkqwkocsyu[$gaoqiuwsaoayggsa] = ManipulateArray::unset($kkeqqkkkqwkocsyu, $uusmaiomayssaecw);
-            }
-            qmkaeeomgkwggoyo:
-        }
-        gcckqucukawcasgk:
-        $kkeqqkkkqwkocsyu = $this->uqawesackiomqgga($kkeqqkkkqwkocsyu, $ywmkwiwkosakssii);
-        if ($tsuauommsquiesmk) {
-            $kkeqqkkkqwkocsyu = array_filter($kkeqqkkkqwkocsyu);
-        }
-        return $kkeqqkkkqwkocsyu;
-    }
-    
-    public function uqawesackiomqgga($kkeqqkkkqwkocsyu, array $ywmkwiwkosakssii = []) : ?array
-    {
-        return $kkeqqkkkqwkocsyu;
-    }
-}
+ namespace Pmpr\Common\Foundation\Traits; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString; trait ToArrayTrait { public function qgsieamsswkgysow(array $ywmkwiwkosakssii = []) : void { } public function sacmkccceuywoqsq($tsuauommsquiesmk = false, array $ywmkwiwkosakssii = []) : array { $this->qgsieamsswkgysow($ywmkwiwkosakssii); $kkeqqkkkqwkocsyu = get_object_vars($this); foreach ($kkeqqkkkqwkocsyu as $uusmaiomayssaecw => $gygawogosumsgmme) { if (!(is_object($gygawogosumsgmme) && method_exists($gygawogosumsgmme, "\163\x61\x63\155\153\143\143\143\x65\x75\171\x77\x6f\x71\163\161"))) { goto eucakkcoiiwkwsme; } $kkeqqkkkqwkocsyu[$uusmaiomayssaecw] = $gygawogosumsgmme->sacmkccceuywoqsq($tsuauommsquiesmk, $ywmkwiwkosakssii); eucakkcoiiwkwsme: $gaoqiuwsaoayggsa = ManipulateString::kwuyaykukcmaqggg($uusmaiomayssaecw); if (!($gaoqiuwsaoayggsa !== $uusmaiomayssaecw)) { goto iwsaaiggkciigsmc; } $kkeqqkkkqwkocsyu[$gaoqiuwsaoayggsa] = ManipulateArray::unset($kkeqqkkkqwkocsyu, $uusmaiomayssaecw); iwsaaiggkciigsmc: mcmcocyuugueaeww: } rgaagksgsewuwgmo: $kkeqqkkkqwkocsyu = $this->uqawesackiomqgga($kkeqqkkkqwkocsyu, $ywmkwiwkosakssii); if (!$tsuauommsquiesmk) { goto agsuaimomgsoyiem; } $kkeqqkkkqwkocsyu = array_filter($kkeqqkkkqwkocsyu); agsuaimomgsoyiem: return $kkeqqkkkqwkocsyu; } public function uqawesackiomqgga($kkeqqkkkqwkocsyu, array $ywmkwiwkosakssii = []) : ?array { return $kkeqqkkkqwkocsyu; } }

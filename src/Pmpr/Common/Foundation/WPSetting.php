@@ -1,44 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613bb98fa102d             |
+    |             613bbbf6a8fd8             |
     |_______________________________________|
 */
-
-namespace Pmpr\Common\Foundation;
-
-use Pmpr\Common\Foundation\Container\Container;
-use Pmpr\Common\Foundation\Decorator\DecoratorOption;
-use Pmpr\Common\Foundation\FormMaker\Admin\Element\MetaBox;
-use Pmpr\Common\Foundation\Manipulate\ManipulateFormat;
-
-class WPSetting extends Container
-{
-    public function wigskegsqequoeks()
-    {
-        $this->qcsmikeggeemccuu('admin_init', [$this, 'yeyiguyegmmyusea']);
-        parent::wigskegsqequoeks();
-    }
-    public function yeyiguyegmmyusea()
-    {
-        $qeqooyuoiasweuck = $this->sscegwueamckwmcy('wordpress_settings_fields', []);
-        foreach ($qeqooyuoiasweuck as $aokagokqyuysuksm => $amakmumgguksgmum) {
-            $amakmumgguksgmum = ManipulateFormat::omaawkkwwyesqwcc($amakmumgguksgmum, ['section' => 'default', 'title' => '', 'group' => 'general', 'args' => []]);
-            register_setting($amakmumgguksgmum['group'], $aokagokqyuysuksm);
-            $amakmumgguksgmum['args']['id'] = $aokagokqyuysuksm;
-            add_settings_field($aokagokqyuysuksm, $amakmumgguksgmum['title'], [$this, 'render'], $amakmumgguksgmum['group'], $amakmumgguksgmum['section'], $amakmumgguksgmum['args']);
-            kosaqwikueyksqmw:
-        }
-        mqkmcysgoiaouiwm:
-    }
-    
-    public function render($ywmkwiwkosakssii)
-    {
-        MetaBox::okmsgamiiemyesao(ManipulateFormat::omaawkkwwyesqwcc($ywmkwiwkosakssii, ['echo' => true]));
-    }
-    
-    public static function eiwcuqigayigimak($uusmaiomayssaecw, $ggauoeuaesiymgee = false)
-    {
-        return DecoratorOption::get($uusmaiomayssaecw, $ggauoeuaesiymgee);
-    }
-}
+ namespace Pmpr\Common\Foundation; use Pmpr\Common\Foundation\Container\Container; use Pmpr\Common\Foundation\Decorator\DecoratorOption; use Pmpr\Common\Foundation\FormMaker\Admin\Element\MetaBox; use Pmpr\Common\Foundation\Manipulate\ManipulateFormat; class WPSetting extends Container { public function wigskegsqequoeks() { $this->qcsmikeggeemccuu("\x61\144\155\x69\x6e\x5f\x69\156\x69\x74", [$this, "\x79\145\x79\x69\147\165\x79\145\147\155\155\x79\165\x73\145\141"]); parent::wigskegsqequoeks(); } public function yeyiguyegmmyusea() { $qeqooyuoiasweuck = $this->sscegwueamckwmcy("\167\157\162\x64\160\162\145\x73\163\x5f\x73\x65\164\164\x69\x6e\x67\x73\x5f\146\x69\145\154\144\163", []); foreach ($qeqooyuoiasweuck as $aokagokqyuysuksm => $amakmumgguksgmum) { $amakmumgguksgmum = ManipulateFormat::omaawkkwwyesqwcc($amakmumgguksgmum, ["\163\145\x63\164\x69\157\x6e" => "\144\x65\146\x61\165\154\x74", "\x74\151\164\154\145" => '', "\x67\162\x6f\165\160" => "\x67\x65\156\x65\162\x61\154", "\141\x72\147\163" => []]); register_setting($amakmumgguksgmum["\x67\x72\157\165\160"], $aokagokqyuysuksm); $amakmumgguksgmum["\141\x72\147\x73"]["\151\144"] = $aokagokqyuysuksm; add_settings_field($aokagokqyuysuksm, $amakmumgguksgmum["\x74\151\x74\154\x65"], [$this, "\x72\145\156\144\x65\162"], $amakmumgguksgmum["\x67\162\x6f\x75\x70"], $amakmumgguksgmum["\x73\x65\x63\164\x69\x6f\x6e"], $amakmumgguksgmum["\x61\x72\147\163"]); oqckuigyqswmqcqg: } ioiwoukauoeamuca: } public function render($ywmkwiwkosakssii) { MetaBox::okmsgamiiemyesao(ManipulateFormat::omaawkkwwyesqwcc($ywmkwiwkosakssii, ["\x65\x63\x68\x6f" => true])); } public static function eiwcuqigayigimak($uusmaiomayssaecw, $ggauoeuaesiymgee = false) { return DecoratorOption::get($uusmaiomayssaecw, $ggauoeuaesiymgee); } }

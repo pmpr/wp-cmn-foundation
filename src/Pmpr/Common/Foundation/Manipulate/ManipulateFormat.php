@@ -1,54 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613bb98fa102d             |
+    |             613bbbf6a8fd8             |
     |_______________________________________|
 */
-
-namespace Pmpr\Common\Foundation\Manipulate;
-
-use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
-
-class ManipulateFormat extends Manipulate
-{
-    
-    public static function aoaeiwswyagmesku($eeamcawaiqocomwy)
-    {
-        $egsumesakcaaukem = self::gooqqcmsyseiaikc(ManipulateServer::gmigwwwmwemyaayy());
-        $ccamueccusigaaio = self::gooqqcmsyseiaikc($eeamcawaiqocomwy);
-        $wkwsmsgmkcmugoya = ManipulateArray::get($egsumesakcaaukem, 'host');
-        $yukwwaakiyeueawg = ManipulateArray::get($ccamueccusigaaio, 'host');
-        return $egsumesakcaaukem && $wkwsmsgmkcmugoya && $ccamueccusigaaio && $yukwwaakiyeueawg && strcasecmp($yukwwaakiyeueawg, $wkwsmsgmkcmugoya) !== 0;
-    }
-    
-    public static function gooqqcmsyseiaikc($eeamcawaiqocomwy, $wksoawcgagcgoask = -1)
-    {
-        if (function_exists('wp_parse_url')) {
-            $yiasugywggckywoa = wp_parse_url($eeamcawaiqocomwy, $wksoawcgagcgoask);
-        } else {
-            $yiasugywggckywoa = parse_url($eeamcawaiqocomwy, $wksoawcgagcgoask);
-        }
-        return $yiasugywggckywoa;
-    }
-    
-    public static function omaawkkwwyesqwcc($ywmkwiwkosakssii, $ycmguuqqaiisymgg = [])
-    {
-        return wp_parse_args($ywmkwiwkosakssii, $ycmguuqqaiisymgg);
-    }
-    
-    public static function qugygsasyieckkoc(string $eeamcawaiqocomwy) : string
-    {
-        if (!strpos($eeamcawaiqocomwy, 'http://') !== false && !strpos($eeamcawaiqocomwy, 'https://') !== false) {
-            if (substr($eeamcawaiqocomwy, 0, 2) !== '//') {
-                $eeamcawaiqocomwy = '//' . $eeamcawaiqocomwy;
-            }
-            $eeamcawaiqocomwy = set_url_scheme($eeamcawaiqocomwy);
-        }
-        return $eeamcawaiqocomwy;
-    }
-    
-    public static function gokuyqsimauyacke($eeamcawaiqocomwy = '') : ?string
-    {
-        return str_replace(['http://', 'https://', '//'], '', $eeamcawaiqocomwy);
-    }
-}
+ namespace Pmpr\Common\Foundation\Manipulate; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; class ManipulateFormat extends Manipulate { public static function aoaeiwswyagmesku($eeamcawaiqocomwy) { $egsumesakcaaukem = self::gooqqcmsyseiaikc(ManipulateServer::gmigwwwmwemyaayy()); $ccamueccusigaaio = self::gooqqcmsyseiaikc($eeamcawaiqocomwy); $wkwsmsgmkcmugoya = ManipulateArray::get($egsumesakcaaukem, "\x68\157\x73\x74"); $yukwwaakiyeueawg = ManipulateArray::get($ccamueccusigaaio, "\x68\x6f\163\x74"); return $egsumesakcaaukem && $wkwsmsgmkcmugoya && $ccamueccusigaaio && $yukwwaakiyeueawg && strcasecmp($yukwwaakiyeueawg, $wkwsmsgmkcmugoya) !== 0; } public static function gooqqcmsyseiaikc($eeamcawaiqocomwy, $wksoawcgagcgoask = -1) { if (function_exists("\x77\x70\x5f\x70\141\162\x73\145\137\x75\x72\x6c")) { goto wococciimesuaeys; } $yiasugywggckywoa = parse_url($eeamcawaiqocomwy, $wksoawcgagcgoask); goto ygsoccgkwamsqewm; wococciimesuaeys: $yiasugywggckywoa = wp_parse_url($eeamcawaiqocomwy, $wksoawcgagcgoask); ygsoccgkwamsqewm: return $yiasugywggckywoa; } public static function omaawkkwwyesqwcc($ywmkwiwkosakssii, $ycmguuqqaiisymgg = []) { return wp_parse_args($ywmkwiwkosakssii, $ycmguuqqaiisymgg); } public static function qugygsasyieckkoc(string $eeamcawaiqocomwy) : string { if (!(!strpos($eeamcawaiqocomwy, "\150\x74\x74\160\72\57\x2f") !== false && !strpos($eeamcawaiqocomwy, "\150\x74\x74\160\163\72\x2f\x2f") !== false)) { goto smwcscokyasiosks; } if (!(substr($eeamcawaiqocomwy, 0, 2) !== "\57\57")) { goto skmyqomuuowkeeqe; } $eeamcawaiqocomwy = "\x2f\x2f" . $eeamcawaiqocomwy; skmyqomuuowkeeqe: $eeamcawaiqocomwy = set_url_scheme($eeamcawaiqocomwy); smwcscokyasiosks: return $eeamcawaiqocomwy; } public static function gokuyqsimauyacke($eeamcawaiqocomwy = '') : ?string { return str_replace(["\150\x74\x74\x70\72\x2f\57", "\150\x74\164\160\163\x3a\57\57", "\x2f\x2f"], '', $eeamcawaiqocomwy); } }

@@ -1,44 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613bb98fa102d             |
+    |             613bbbf6a8fd8             |
     |_______________________________________|
 */
-
-namespace Pmpr\Common\Foundation\Manipulate;
-
-use Pmpr\Common\Foundation\Decorator\DecoratorRewrite;
-use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
-
-class ManipulateRewrite extends Manipulate
-{
-    
-    public static function kcaoacekwkiqmaee(array $acqqmqmcquukaqsc = [], $uoumwucsgissassi = true, $wqgoeumkaeyqaiqu = true)
-    {
-        if ($acqqmqmcquukaqsc) {
-            foreach ($acqqmqmcquukaqsc as $ekuqiqmikiicgoss) {
-                $ucccueqywigcukcc = ManipulateArray::get($ekuqiqmikiicgoss, 'regex', ManipulateArray::get($ekuqiqmikiicgoss, 0, ''));
-                $gqgemcmoicmgaqie = ManipulateArray::get($ekuqiqmikiicgoss, 'query', ManipulateArray::get($ekuqiqmikiicgoss, 1, ''));
-                $miisqgccsqqcscia = ManipulateArray::get($ekuqiqmikiicgoss, 'after', ManipulateArray::get($ekuqiqmikiicgoss, 0, 'bottom'));
-                DecoratorRewrite::aimosgcaukumakge($ucccueqywigcukcc, $gqgemcmoicmgaqie, $miisqgccsqqcscia);
-                ismeikacqqyqcmqe:
-            }
-            cysgqimowcqoqqsc:
-        }
-        if ($uoumwucsgissassi) {
-            DecoratorRewrite::ggqucmukcaycuckk($wqgoeumkaeyqaiqu);
-        }
-    }
-    
-    public static function wqcwsicmeukcoqei(&$ucccueqywigcukcc, &$gqgemcmoicmgaqie, $meyiiwcswqmuggyg = 0)
-    {
-        global $wp_rewrite;
-        $ymiyawysimukkoso = $wp_rewrite->pagination_base;
-        if (!$meyiiwcswqmuggyg) {
-            $meyiiwcswqmuggyg = substr_count($gqgemcmoicmgaqie, '$matches');
-            $meyiiwcswqmuggyg = intval($meyiiwcswqmuggyg) + 1;
-        }
-        $ucccueqywigcukcc .= "{$ymiyawysimukkoso}/?([0-9]{1,})/";
-        $gqgemcmoicmgaqie .= "&paged=\$matches[{$meyiiwcswqmuggyg}]";
-    }
-}
+ namespace Pmpr\Common\Foundation\Manipulate; use Pmpr\Common\Foundation\Decorator\DecoratorRewrite; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; class ManipulateRewrite extends Manipulate { public static function kcaoacekwkiqmaee(array $acqqmqmcquukaqsc = [], $uoumwucsgissassi = true, $wqgoeumkaeyqaiqu = true) { if (!$acqqmqmcquukaqsc) { goto qwuwcoeiguyqekuy; } foreach ($acqqmqmcquukaqsc as $ekuqiqmikiicgoss) { $ucccueqywigcukcc = ManipulateArray::get($ekuqiqmikiicgoss, "\x72\x65\147\145\170", ManipulateArray::get($ekuqiqmikiicgoss, 0, '')); $gqgemcmoicmgaqie = ManipulateArray::get($ekuqiqmikiicgoss, "\x71\x75\145\162\x79", ManipulateArray::get($ekuqiqmikiicgoss, 1, '')); $miisqgccsqqcscia = ManipulateArray::get($ekuqiqmikiicgoss, "\141\x66\164\x65\x72", ManipulateArray::get($ekuqiqmikiicgoss, 0, "\x62\157\x74\164\x6f\155")); DecoratorRewrite::aimosgcaukumakge($ucccueqywigcukcc, $gqgemcmoicmgaqie, $miisqgccsqqcscia); oyeuoiqgeuioiqie: } mmoyseisgqkyouaq: qwuwcoeiguyqekuy: if (!$uoumwucsgissassi) { goto osskmmsaekmgemwc; } DecoratorRewrite::ggqucmukcaycuckk($wqgoeumkaeyqaiqu); osskmmsaekmgemwc: } public static function wqcwsicmeukcoqei(&$ucccueqywigcukcc, &$gqgemcmoicmgaqie, $meyiiwcswqmuggyg = 0) { global $wp_rewrite; $ymiyawysimukkoso = $wp_rewrite->pagination_base; if ($meyiiwcswqmuggyg) { goto eowskcomgqqwcyui; } $meyiiwcswqmuggyg = substr_count($gqgemcmoicmgaqie, "\44\155\141\x74\143\x68\145\163"); $meyiiwcswqmuggyg = intval($meyiiwcswqmuggyg) + 1; eowskcomgqqwcyui: $ucccueqywigcukcc .= "{$ymiyawysimukkoso}\57\x3f\50\x5b\60\x2d\x39\x5d\173\61\x2c\x7d\x29\x2f"; $gqgemcmoicmgaqie .= "\x26\160\x61\x67\145\x64\75\x24\x6d\x61\x74\x63\150\x65\x73\133{$meyiiwcswqmuggyg}\135"; } }

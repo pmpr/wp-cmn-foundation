@@ -1,44 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613bb98fa102d             |
+    |             613bbbf6a8fd8             |
     |_______________________________________|
 */
-
-namespace Pmpr\Common\Foundation\FormMaker\Admin\Field;
-
-
-class Checkbox extends Field
-{
-    
-    protected array $confirmable = [];
-    
-    public function __construct(?string $aokagokqyuysuksm, ?string $ymqmyyeuycgmigyo, ?string $mkqqqewsokcswckc = null)
-    {
-        parent::__construct('checkbox', $aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc);
-        $this->igmaewykumgwoaoy('data-toggle', 'switch')->igmaewykumgwoaoy('data-size', 'sm')->igmaewykumgwoaoy('data-onStyle', 'on')->igmaewykumgwoaoy('data-offStyle', 'off')->igmaewykumgwoaoy('data-on', __('Enable', PR__CMN__FOUNDATION))->igmaewykumgwoaoy('data-off', __('Disable', PR__CMN__FOUNDATION));
-        $this->usoqcyyugsuyiewc('pr-switch');
-    }
-    
-    public function eyygsasuqmommkua($ggauoeuaesiymgee) : Field
-    {
-        $ggauoeuaesiymgee = isset($_GET['post']) || isset($_GET['tag_ID']) ? '' : ($ggauoeuaesiymgee ? (string) $ggauoeuaesiymgee : '');
-        return parent::eyygsasuqmommkua($ggauoeuaesiymgee);
-    }
-    
-    public function agywyaaquwawwuiy($koegqoagisewcica = [], $yiygigeewmuiyceu = []) : Field
-    {
-        return $this->oeeumggeiyyckkom('on', $koegqoagisewcica)->oeeumggeiyyckkom('off', $yiygigeewmuiyceu);
-    }
-    
-    public function ooowowweyusommmm(string $meqocwsecsywiiqs, string $uamcoiueqaamsqma, $sqeykgyoooqysmca = 'warning') : self
-    {
-        $this->confirmable = ['type' => $sqeykgyoooqysmca, 'title' => $meqocwsecsywiiqs, 'message' => $uamcoiueqaamsqma];
-        return $this->qigsyyqgewgskemg('pr-confirmable-input');
-    }
-    
-    public function yeigkegagskeaaim() : self
-    {
-        return $this->ooowowweyusommmm(__('This could break things!', PR__CMN__FOUNDATION), __('If you notice any errors on your website after having activated this setting, just deactivate it again, and your site will be back to normal.', PR__CMN__FOUNDATION));
-    }
-}
+ namespace Pmpr\Common\Foundation\FormMaker\Admin\Field; class Checkbox extends Field { protected array $confirmable = []; public function __construct(?string $aokagokqyuysuksm, ?string $ymqmyyeuycgmigyo, ?string $mkqqqewsokcswckc = null) { parent::__construct("\x63\x68\145\x63\153\x62\x6f\170", $aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc); $this->igmaewykumgwoaoy("\144\x61\164\x61\x2d\164\157\x67\147\x6c\145", "\163\167\151\x74\x63\150")->igmaewykumgwoaoy("\x64\x61\164\141\55\x73\151\x7a\x65", "\x73\x6d")->igmaewykumgwoaoy("\x64\141\x74\141\x2d\x6f\x6e\123\x74\x79\x6c\145", "\157\156")->igmaewykumgwoaoy("\144\141\164\x61\x2d\157\x66\146\x53\x74\171\154\x65", "\157\x66\x66")->igmaewykumgwoaoy("\144\x61\x74\x61\x2d\x6f\x6e", __("\x45\156\x61\142\x6c\x65", PR__CMN__FOUNDATION))->igmaewykumgwoaoy("\x64\x61\x74\x61\55\157\146\x66", __("\104\151\x73\141\x62\154\x65", PR__CMN__FOUNDATION)); $this->usoqcyyugsuyiewc("\160\162\x2d\x73\x77\x69\x74\x63\150"); } public function eyygsasuqmommkua($ggauoeuaesiymgee) : Field { $ggauoeuaesiymgee = isset($_GET["\160\157\x73\164"]) || isset($_GET["\164\x61\x67\x5f\111\104"]) ? '' : ($ggauoeuaesiymgee ? (string) $ggauoeuaesiymgee : ''); return parent::eyygsasuqmommkua($ggauoeuaesiymgee); } public function agywyaaquwawwuiy($koegqoagisewcica = [], $yiygigeewmuiyceu = []) : Field { return $this->oeeumggeiyyckkom("\x6f\x6e", $koegqoagisewcica)->oeeumggeiyyckkom("\x6f\x66\146", $yiygigeewmuiyceu); } public function ooowowweyusommmm(string $meqocwsecsywiiqs, string $uamcoiueqaamsqma, $sqeykgyoooqysmca = "\167\141\x72\156\151\x6e\147") : self { $this->confirmable = ["\x74\x79\160\145" => $sqeykgyoooqysmca, "\x74\x69\164\x6c\x65" => $meqocwsecsywiiqs, "\155\x65\x73\163\141\x67\x65" => $uamcoiueqaamsqma]; return $this->qigsyyqgewgskemg("\160\162\x2d\143\x6f\156\x66\x69\162\x6d\141\142\x6c\145\x2d\x69\x6e\x70\165\x74"); } public function yeigkegagskeaaim() : self { return $this->ooowowweyusommmm(__("\x54\150\151\x73\40\143\157\x75\154\x64\x20\x62\162\145\x61\153\40\x74\150\x69\x6e\x67\x73\x21", PR__CMN__FOUNDATION), __("\111\x66\40\x79\x6f\x75\x20\x6e\x6f\x74\x69\143\x65\40\x61\x6e\x79\40\x65\162\162\157\162\x73\40\x6f\156\40\x79\x6f\165\162\x20\167\x65\142\x73\x69\x74\x65\40\141\x66\164\145\162\x20\150\141\166\151\x6e\x67\x20\141\143\x74\151\x76\141\164\x65\x64\40\164\150\151\x73\x20\163\x65\x74\x74\x69\x6e\147\x2c\40\152\165\163\164\40\144\x65\x61\x63\164\151\166\141\x74\x65\40\151\x74\x20\141\x67\141\151\x6e\54\x20\x61\156\x64\40\x79\x6f\165\162\40\x73\x69\x74\x65\x20\x77\x69\x6c\x6c\40\x62\x65\x20\142\141\143\153\x20\164\157\x20\x6e\x6f\x72\155\x61\x6c\56", PR__CMN__FOUNDATION)); } }

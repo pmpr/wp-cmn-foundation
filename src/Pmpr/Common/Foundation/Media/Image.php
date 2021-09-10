@@ -1,56 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613bb98fa102d             |
+    |             613bbbf6a8fd8             |
     |_______________________________________|
 */
-
-namespace Pmpr\Common\Foundation\Media;
-
-use Pmpr\Common\Foundation\Manipulate\Post\ManipulateAttachment;
-use Pmpr\Common\Foundation\Manipulate\Post\ManipulatePost;
-use Pmpr\Common\Foundation\Manipulate\Theme\ManipulateHTML;
-use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
-
-class Image extends Common
-{
-    const LARGE = 'large';
-    const MEDIUM = 'medium';
-    const THUMBNAIL = 'thumbnail';
-    const ASPECT_RATION_URLS = 'aspect_ratio_urls';
-    public function kgquecmsgcouyaya()
-    {
-        $this->cecaguuoecmccuse('wp_image_editors', [$this, 'iieciymgawsgwegs'])->cecaguuoecmccuse('wordpress_settings_fields', [$this, 'socqoiaiiqgkquoi'])->cecaguuoecmccuse('wp_get_attachment_image_attributes', [$this, 'mqyacwaaocgcsyag'], 99, 2)->cecaguuoecmccuse('wp_get_attachment_image_attributes', [$this, 'uoqqmsmgwuqmoigs'], 999, 3);
-    }
-    
-    public static function okmuegqmewwoieum($smqcaaeyaweakyoo)
-    {
-        array_unshift($smqcaaeyaweakyoo, Editor::class);
-        return $smqcaaeyaweakyoo;
-    }
-    
-    public function socqoiaiiqgkquoi($qeqooyuoiasweuck) : array
-    {
-        $aiwaackyimoamgmy = ['seo_settings_section' => ['group' => 'media', 'title' => __('SEO settings', PR__CMN__FOUNDATION), 'args' => ['type' => 'html', 'value' => ManipulateHTML::uuccukgasskgimsq('h2', ['class' => 'title'], __('Improve your seo by using these settings.', PR__CMN__FOUNDATION))]], self::ASPECT_RATION_URLS => ['group' => 'media', 'title' => __('Aspect ratio based URLs', PR__CMN__FOUNDATION), 'args' => ['type' => 'checkbox', 'desc' => sprintf('%s https://example.com/upload/1x1/image.jpg', __('Use aspect ratio based image URLs like', PR__CMN__FOUNDATION))]]];
-        return array_merge($qeqooyuoiasweuck, $aiwaackyimoamgmy);
-    }
-    
-    public function mqyacwaaocgcsyag($siquossayskcwkea, $aiooqyausygaasqm)
-    {
-        $siquossayskcwkea['data-id'] = ManipulatePost::mwikyscisascoeea($aiooqyausygaasqm);
-        return $siquossayskcwkea;
-    }
-    
-    public function uoqqmsmgwuqmoigs($siquossayskcwkea, $aiooqyausygaasqm, $oiegiwogmwmawkeo)
-    {
-        $wyicceigkekkkwgs = ManipulateAttachment::wgogyccwcysggaig();
-        if (is_string($oiegiwogmwmawkeo)) {
-            $oiegiwogmwmawkeo = ManipulateArray::get($wyicceigkekkkwgs, $oiegiwogmwmawkeo);
-            if ($oiegiwogmwmawkeo) {
-                $siquossayskcwkea['data-width'] = $oiegiwogmwmawkeo['width'];
-                $siquossayskcwkea['data-height'] = $oiegiwogmwmawkeo['height'];
-            }
-        }
-        return $siquossayskcwkea;
-    }
-}
+ namespace Pmpr\Common\Foundation\Media; use Pmpr\Common\Foundation\Manipulate\Post\ManipulateAttachment; use Pmpr\Common\Foundation\Manipulate\Post\ManipulatePost; use Pmpr\Common\Foundation\Manipulate\Theme\ManipulateHTML; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; class Image extends Common { const LARGE = "\x6c\141\x72\x67\145"; const MEDIUM = "\155\x65\144\x69\165\x6d"; const THUMBNAIL = "\x74\150\165\x6d\142\156\141\x69\154"; const ASPECT_RATION_URLS = "\x61\163\x70\x65\x63\164\137\162\141\x74\151\x6f\x5f\165\x72\x6c\163"; public function kgquecmsgcouyaya() { $this->cecaguuoecmccuse("\167\x70\137\x69\x6d\x61\x67\x65\137\x65\x64\151\x74\x6f\x72\163", [$this, "\151\x69\x65\x63\151\171\x6d\147\x61\x77\163\x67\167\x65\x67\163"])->cecaguuoecmccuse("\167\157\162\144\x70\x72\145\x73\163\x5f\163\145\164\164\x69\x6e\x67\163\137\146\151\145\x6c\144\163", [$this, "\163\x6f\x63\x71\157\151\x61\x69\x69\x71\147\x6b\161\x75\x6f\151"])->cecaguuoecmccuse("\x77\160\137\147\x65\x74\x5f\141\x74\164\x61\x63\150\x6d\x65\156\x74\x5f\151\x6d\141\147\x65\x5f\141\x74\164\x72\151\x62\x75\x74\x65\x73", [$this, "\155\x71\x79\x61\143\x77\141\x61\x6f\x63\x67\143\x73\171\141\147"], 99, 2)->cecaguuoecmccuse("\167\x70\x5f\147\145\164\137\141\164\164\141\x63\x68\x6d\x65\156\x74\x5f\x69\x6d\x61\x67\x65\137\x61\x74\x74\x72\x69\142\165\x74\145\x73", [$this, "\165\157\x71\x71\x6d\163\155\147\167\165\x71\155\x6f\151\x67\x73"], 999, 3); } public static function okmuegqmewwoieum($smqcaaeyaweakyoo) { array_unshift($smqcaaeyaweakyoo, Editor::class); return $smqcaaeyaweakyoo; } public function socqoiaiiqgkquoi($qeqooyuoiasweuck) : array { $aiwaackyimoamgmy = ["\x73\x65\157\x5f\163\145\x74\x74\x69\156\147\163\x5f\163\145\x63\x74\x69\157\156" => ["\147\x72\x6f\165\x70" => "\x6d\x65\144\x69\x61", "\x74\x69\x74\154\x65" => __("\123\x45\117\x20\x73\x65\x74\164\x69\156\147\163", PR__CMN__FOUNDATION), "\141\x72\x67\163" => ["\x74\x79\160\x65" => "\x68\x74\155\x6c", "\166\x61\154\x75\145" => ManipulateHTML::uuccukgasskgimsq("\150\62", ["\x63\x6c\141\163\x73" => "\164\151\164\x6c\x65"], __("\x49\x6d\160\x72\x6f\x76\x65\x20\x79\x6f\165\x72\40\x73\x65\x6f\40\142\171\40\x75\163\x69\x6e\147\40\x74\150\145\x73\x65\40\x73\145\164\164\151\156\147\163\x2e", PR__CMN__FOUNDATION))]], self::ASPECT_RATION_URLS => ["\147\162\157\x75\x70" => "\155\145\144\151\x61", "\x74\151\164\x6c\145" => __("\x41\163\x70\x65\x63\x74\40\x72\x61\x74\x69\x6f\40\x62\141\163\x65\144\40\x55\x52\114\163", PR__CMN__FOUNDATION), "\141\x72\x67\x73" => ["\x74\x79\160\145" => "\x63\x68\x65\143\153\142\x6f\170", "\x64\x65\x73\x63" => sprintf("\x25\163\x20\150\x74\x74\160\163\72\57\x2f\145\x78\141\x6d\x70\154\x65\x2e\143\157\155\57\165\160\x6c\x6f\141\x64\57\x31\170\x31\x2f\151\x6d\141\x67\x65\56\152\160\147", __("\x55\163\x65\40\x61\163\x70\145\143\164\x20\162\x61\164\x69\x6f\x20\x62\141\x73\x65\144\40\x69\155\x61\147\x65\40\125\x52\114\163\x20\x6c\151\x6b\145", PR__CMN__FOUNDATION))]]]; return array_merge($qeqooyuoiasweuck, $aiwaackyimoamgmy); } public function mqyacwaaocgcsyag($siquossayskcwkea, $aiooqyausygaasqm) { $siquossayskcwkea["\x64\141\x74\141\55\151\x64"] = ManipulatePost::mwikyscisascoeea($aiooqyausygaasqm); return $siquossayskcwkea; } public function uoqqmsmgwuqmoigs($siquossayskcwkea, $aiooqyausygaasqm, $oiegiwogmwmawkeo) { $wyicceigkekkkwgs = ManipulateAttachment::wgogyccwcysggaig(); if (!is_string($oiegiwogmwmawkeo)) { goto ascogkesqmuuaesq; } $oiegiwogmwmawkeo = ManipulateArray::get($wyicceigkekkkwgs, $oiegiwogmwmawkeo); if (!$oiegiwogmwmawkeo) { goto gsgkayokisiesciy; } $siquossayskcwkea["\x64\x61\x74\x61\55\x77\x69\x64\x74\150"] = $oiegiwogmwmawkeo["\167\151\x64\x74\150"]; $siquossayskcwkea["\144\x61\164\x61\55\150\x65\151\x67\x68\x74"] = $oiegiwogmwmawkeo["\x68\145\151\x67\x68\164"]; gsgkayokisiesciy: ascogkesqmuuaesq: return $siquossayskcwkea; } }

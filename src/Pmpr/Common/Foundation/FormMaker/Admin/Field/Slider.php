@@ -1,65 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613bb98fa102d             |
+    |             613bbbf6a8fd8             |
     |_______________________________________|
 */
-
-namespace Pmpr\Common\Foundation\FormMaker\Admin\Field;
-
-
-class Slider extends Field
-{
-    
-    protected array $images = [];
-    
-    protected array $flickity = [];
-    
-    protected array $imageAttributes = [];
-    
-    public function __construct(?string $aokagokqyuysuksm, ?string $ymqmyyeuycgmigyo, array $somsiuiquigiqsmk, array $ucwamkesemusoeyc = [], ?string $mkqqqewsokcswckc = null)
-    {
-        parent::__construct('slider', $aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc);
-        $this->images = $somsiuiquigiqsmk;
-        $this->imageAttributes = $ucwamkesemusoeyc;
-    }
-    
-    public function yumisumuwkywyyqk() : ?array
-    {
-        return $this->images;
-    }
-    
-    public function gusyugwmyiwwsmui($somsiuiquigiqsmk) : self
-    {
-        $this->images = $somsiuiquigiqsmk;
-        return $this;
-    }
-    
-    public function igqaeymkskkcckac() : ?array
-    {
-        return $this->flickity;
-    }
-    
-    public function quoekiugscwkoeoo($qweosuogcimgomwi) : self
-    {
-        $this->flickity = $qweosuogcimgomwi;
-        return $this;
-    }
-    
-    public function kkyeqssqcoqmoycc() : ?array
-    {
-        return $this->imageAttributes;
-    }
-    
-    public function omsioukysssesasy($ucwamkesemusoeyc) : self
-    {
-        $this->imageAttributes = $ucwamkesemusoeyc;
-        return $this;
-    }
-    
-    public function uqawesackiomqgga($kkeqqkkkqwkocsyu, array $ywmkwiwkosakssii = []) : ?array
-    {
-        $kkeqqkkkqwkocsyu['image-attr'] = $this->kkyeqssqcoqmoycc();
-        return parent::uqawesackiomqgga($kkeqqkkkqwkocsyu, $ywmkwiwkosakssii);
-    }
-}
+ namespace Pmpr\Common\Foundation\FormMaker\Admin\Field; class Slider extends Field { protected array $images = []; protected array $flickity = []; protected array $imageAttributes = []; public function __construct(?string $aokagokqyuysuksm, ?string $ymqmyyeuycgmigyo, array $somsiuiquigiqsmk, array $ucwamkesemusoeyc = [], ?string $mkqqqewsokcswckc = null) { parent::__construct("\x73\x6c\x69\144\x65\x72", $aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc); $this->images = $somsiuiquigiqsmk; $this->imageAttributes = $ucwamkesemusoeyc; } public function yumisumuwkywyyqk() : ?array { return $this->images; } public function gusyugwmyiwwsmui($somsiuiquigiqsmk) : self { $this->images = $somsiuiquigiqsmk; return $this; } public function igqaeymkskkcckac() : ?array { return $this->flickity; } public function quoekiugscwkoeoo($qweosuogcimgomwi) : self { $this->flickity = $qweosuogcimgomwi; return $this; } public function kkyeqssqcoqmoycc() : ?array { return $this->imageAttributes; } public function omsioukysssesasy($ucwamkesemusoeyc) : self { $this->imageAttributes = $ucwamkesemusoeyc; return $this; } public function uqawesackiomqgga($kkeqqkkkqwkocsyu, array $ywmkwiwkosakssii = []) : ?array { $kkeqqkkkqwkocsyu["\151\155\141\147\145\55\x61\164\164\162"] = $this->kkyeqssqcoqmoycc(); return parent::uqawesackiomqgga($kkeqqkkkqwkocsyu, $ywmkwiwkosakssii); } }

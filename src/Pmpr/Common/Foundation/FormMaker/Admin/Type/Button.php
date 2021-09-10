@@ -1,51 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613bb98fa102d             |
+    |             613bbbf6a8fd8             |
     |_______________________________________|
 */
-
-namespace Pmpr\Common\Foundation\FormMaker\Admin\Type;
-
-use Pmpr\Common\Foundation\Manipulate\Theme\ManipulateHTML;
-use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
-
-class Button extends Common
-{
-    
-    public function render($aiowsaccomcoikus, $eqgoocgaqwqcimie, $kqokimuosyuyyucg, $mqyaskyaekmkegmg, $ymygiwwuwyuakysk)
-    {
-        echo $this->sywokgmoskcocqgy($aiowsaccomcoikus->args, $ymygiwwuwyuakysk);
-    }
-    
-    public function sywokgmoskcocqgy($ywmkwiwkosakssii = [], $ymygiwwuwyuakysk = null) : string
-    {
-        $sqeykgyoooqysmca = $this->gueasuouwqysmomu();
-        $wwgucssaecqekuek = $ymygiwwuwyuakysk->parse_args($sqeykgyoooqysmca, ['id' => $ymygiwwuwyuakysk->_id(), 'type' => 'button', 'name' => $ymygiwwuwyuakysk->_name(), 'class' => 'button button-' . ManipulateArray::get($ywmkwiwkosakssii, 'button', ''), 'element' => ManipulateArray::get($ywmkwiwkosakssii, 'element', 'button')]);
-        $aiamqeawckcsuaou = ManipulateArray::get($ywmkwiwkosakssii, 'action');
-        if ($aiamqeawckcsuaou) {
-            $wwgucssaecqekuek['value'] = $aiamqeawckcsuaou;
-            $wwgucssaecqekuek['name'] = 'pr-action';
-            $wwgucssaecqekuek['type'] = 'submit';
-        }
-        $sqeykgyoooqysmca = ManipulateArray::get($ywmkwiwkosakssii, 'type');
-        if ($sqeykgyoooqysmca === 'link') {
-            $geecqyososceumsk = 'javascript:void(0);';
-            if (isset($ywmkwiwkosakssii['link'])) {
-                $geecqyososceumsk = $ywmkwiwkosakssii['link'];
-            }
-            $wwgucssaecqekuek['href'] = $geecqyososceumsk;
-            if (isset($ywmkwiwkosakssii['target'])) {
-                $wwgucssaecqekuek['target'] = $ywmkwiwkosakssii['target'];
-            }
-            $kqywgoqsmuswammk = 'a';
-        } else {
-            $kqywgoqsmuswammk = 'button';
-        }
-        $wkaqekwwgqsqwcoi = ManipulateArray::get($ywmkwiwkosakssii, 'icon', '');
-        if ($wkaqekwwgqsqwcoi) {
-            $wkaqekwwgqsqwcoi = ManipulateHTML::cuoygaaeqeqcuggu($wkaqekwwgqsqwcoi);
-        }
-        return sprintf('%s<%s %s>%s</%s>%s', $ymygiwwuwyuakysk->_desc(true), $kqywgoqsmuswammk, $ymygiwwuwyuakysk->concat_attrs($wwgucssaecqekuek), $wkaqekwwgqsqwcoi . (isset($ywmkwiwkosakssii['label']) && !empty($ywmkwiwkosakssii['label']) ? $ywmkwiwkosakssii['label'] : $ywmkwiwkosakssii['name']), $kqywgoqsmuswammk, $ywmkwiwkosakssii['message'] ?? ManipulateHTML::gmqyuaqwgiayskei('', ['id' => "{$ymygiwwuwyuakysk->_id()}_message", 'class' => 'message']));
-    }
-}
+ namespace Pmpr\Common\Foundation\FormMaker\Admin\Type; use Pmpr\Common\Foundation\Manipulate\Theme\ManipulateHTML; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; class Button extends Common { public function render($aiowsaccomcoikus, $eqgoocgaqwqcimie, $kqokimuosyuyyucg, $mqyaskyaekmkegmg, $ymygiwwuwyuakysk) { echo $this->sywokgmoskcocqgy($aiowsaccomcoikus->args, $ymygiwwuwyuakysk); } public function sywokgmoskcocqgy($ywmkwiwkosakssii = [], $ymygiwwuwyuakysk = null) : string { $sqeykgyoooqysmca = $this->gueasuouwqysmomu(); $wwgucssaecqekuek = $ymygiwwuwyuakysk->parse_args($sqeykgyoooqysmca, ["\x69\144" => $ymygiwwuwyuakysk->_id(), "\164\x79\x70\x65" => "\142\x75\x74\164\x6f\156", "\156\x61\x6d\x65" => $ymygiwwuwyuakysk->_name(), "\143\154\x61\x73\x73" => "\142\165\x74\x74\157\x6e\x20\142\165\164\164\157\156\55" . ManipulateArray::get($ywmkwiwkosakssii, "\x62\165\164\164\x6f\x6e", ''), "\x65\154\x65\155\x65\x6e\164" => ManipulateArray::get($ywmkwiwkosakssii, "\x65\x6c\145\x6d\x65\156\164", "\142\x75\164\164\157\156")]); $aiamqeawckcsuaou = ManipulateArray::get($ywmkwiwkosakssii, "\x61\x63\x74\x69\x6f\156"); if (!$aiamqeawckcsuaou) { goto kqsyqwwscwoswsgk; } $wwgucssaecqekuek["\166\x61\x6c\165\x65"] = $aiamqeawckcsuaou; $wwgucssaecqekuek["\156\x61\155\x65"] = "\160\x72\55\x61\143\164\151\x6f\156"; $wwgucssaecqekuek["\164\x79\x70\x65"] = "\163\x75\142\155\151\164"; kqsyqwwscwoswsgk: $sqeykgyoooqysmca = ManipulateArray::get($ywmkwiwkosakssii, "\x74\171\x70\145"); if ($sqeykgyoooqysmca === "\154\151\156\x6b") { goto kywmiquiiwmwgooy; } $kqywgoqsmuswammk = "\x62\165\164\x74\157\x6e"; goto syquiiogeymgicuy; kywmiquiiwmwgooy: $geecqyososceumsk = "\152\x61\x76\x61\163\143\162\151\160\164\72\x76\157\x69\x64\50\x30\x29\x3b"; if (!isset($ywmkwiwkosakssii["\x6c\151\156\x6b"])) { goto yemuiyokmqoqckwu; } $geecqyososceumsk = $ywmkwiwkosakssii["\x6c\151\x6e\153"]; yemuiyokmqoqckwu: $wwgucssaecqekuek["\150\x72\145\x66"] = $geecqyososceumsk; if (!isset($ywmkwiwkosakssii["\164\x61\162\147\x65\164"])) { goto qocmmyskykeuwsae; } $wwgucssaecqekuek["\164\141\162\147\x65\164"] = $ywmkwiwkosakssii["\x74\x61\x72\147\x65\x74"]; qocmmyskykeuwsae: $kqywgoqsmuswammk = "\x61"; syquiiogeymgicuy: $wkaqekwwgqsqwcoi = ManipulateArray::get($ywmkwiwkosakssii, "\x69\143\x6f\x6e", ''); if (!$wkaqekwwgqsqwcoi) { goto yquysamwsoyyqcya; } $wkaqekwwgqsqwcoi = ManipulateHTML::cuoygaaeqeqcuggu($wkaqekwwgqsqwcoi); yquysamwsoyyqcya: return sprintf("\x25\x73\x3c\45\x73\x20\x25\x73\x3e\45\163\74\57\x25\x73\x3e\45\163", $ymygiwwuwyuakysk->_desc(true), $kqywgoqsmuswammk, $ymygiwwuwyuakysk->concat_attrs($wwgucssaecqekuek), $wkaqekwwgqsqwcoi . (isset($ywmkwiwkosakssii["\x6c\x61\142\145\154"]) && !empty($ywmkwiwkosakssii["\x6c\x61\142\x65\154"]) ? $ywmkwiwkosakssii["\154\x61\142\145\154"] : $ywmkwiwkosakssii["\156\141\155\145"]), $kqywgoqsmuswammk, $ywmkwiwkosakssii["\x6d\145\163\163\141\x67\x65"] ?? ManipulateHTML::gmqyuaqwgiayskei('', ["\151\x64" => "{$ymygiwwuwyuakysk->_id()}\137\155\145\163\163\141\x67\145", "\x63\x6c\141\x73\163" => "\x6d\x65\163\163\141\x67\x65"])); } }

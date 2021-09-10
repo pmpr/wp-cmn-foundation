@@ -1,51 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613bb98fa102d             |
+    |             613bbbf6a8fd8             |
     |_______________________________________|
 */
-
-namespace Pmpr\Common\Foundation\Manipulate;
-
-use Pmpr\Common\Foundation\Decorator\DecoratorHook;
-use Pmpr\Common\Foundation\Decorator\DecoratorQuery;
-use Pmpr\Common\Foundation\Manipulate\Plugin\ManipulateWoocommerce;
-use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray;
-
-class ManipulateQuery extends Manipulate
-{
-    
-    function cgquaaukmyeomgms() : bool
-    {
-        return DecoratorQuery::cgquaaukmyeomgms() || self::cmaecekuqkwmemms('DOING_CRON');
-    }
-    
-    public static function aqwquwewocyewasw() : bool
-    {
-        $uwqkkwmiiumuukoa = ManipulateWoocommerce::aqwquwewocyewasw();
-        if (!$uwqkkwmiiumuukoa) {
-            if ($xeciwimgioieayek = ManipulateServer::giiecckwoyiawoyy('REQUEST_URI')) {
-                $yuwymayicwwqiske = trailingslashit(rest_get_url_prefix());
-                $uwqkkwmiiumuukoa = false !== strpos($xeciwimgioieayek, $yuwymayicwwqiske);
-                $uwqkkwmiiumuukoa = DecoratorHook::sscegwueamckwmcy('is_rest_api_request', $uwqkkwmiiumuukoa);
-            }
-        }
-        return $uwqkkwmiiumuukoa;
-    }
-    
-    public static function eewqyocggsagyuis() : bool
-    {
-        return (!is_admin() || ManipulateAjax::mcgoysmkqsqooceq()) && !DecoratorQuery::cgquaaukmyeomgms() && !self::aqwquwewocyewasw();
-    }
-    
-    public static function euqowsuwmgokuqqo() : bool
-    {
-        return is_admin() && !ManipulateAjax::mcgoysmkqsqooceq();
-    }
-    
-    public static function qooeaookuemoqecm($oaukocmsckciqaok, $ggauoeuaesiymgee = null)
-    {
-        global $wp_query;
-        return ManipulateArray::get($wp_query, $oaukocmsckciqaok, $ggauoeuaesiymgee);
-    }
-}
+ namespace Pmpr\Common\Foundation\Manipulate; use Pmpr\Common\Foundation\Decorator\DecoratorHook; use Pmpr\Common\Foundation\Decorator\DecoratorQuery; use Pmpr\Common\Foundation\Manipulate\Plugin\ManipulateWoocommerce; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; class ManipulateQuery extends Manipulate { function cgquaaukmyeomgms() : bool { return DecoratorQuery::cgquaaukmyeomgms() || self::cmaecekuqkwmemms("\x44\x4f\111\116\x47\137\x43\x52\117\116"); } public static function aqwquwewocyewasw() : bool { $uwqkkwmiiumuukoa = ManipulateWoocommerce::aqwquwewocyewasw(); if ($uwqkkwmiiumuukoa) { goto akkwoqycamwckeui; } if (!($xeciwimgioieayek = ManipulateServer::giiecckwoyiawoyy("\122\105\121\125\105\123\x54\x5f\x55\x52\111"))) { goto ksoygkwycsqicooa; } $yuwymayicwwqiske = trailingslashit(rest_get_url_prefix()); $uwqkkwmiiumuukoa = false !== strpos($xeciwimgioieayek, $yuwymayicwwqiske); $uwqkkwmiiumuukoa = DecoratorHook::sscegwueamckwmcy("\151\x73\x5f\162\x65\x73\x74\x5f\141\160\x69\137\x72\145\x71\165\x65\163\164", $uwqkkwmiiumuukoa); ksoygkwycsqicooa: akkwoqycamwckeui: return $uwqkkwmiiumuukoa; } public static function eewqyocggsagyuis() : bool { return (!is_admin() || ManipulateAjax::mcgoysmkqsqooceq()) && !DecoratorQuery::cgquaaukmyeomgms() && !self::aqwquwewocyewasw(); } public static function euqowsuwmgokuqqo() : bool { return is_admin() && !ManipulateAjax::mcgoysmkqsqooceq(); } public static function qooeaookuemoqecm($oaukocmsckciqaok, $ggauoeuaesiymgee = null) { global $wp_query; return ManipulateArray::get($wp_query, $oaukocmsckciqaok, $ggauoeuaesiymgee); } }

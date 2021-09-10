@@ -1,39 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613bb98fa102d             |
+    |             613bbbf6a8fd8             |
     |_______________________________________|
 */
-
-namespace Pmpr\Common\Foundation\Media\Icon\Interfaces;
-
-interface IconBankInterface
-{
-    const ICON_TOSEE_TAAVON = 'bank/Tosee_Taavon';
-    const ICON_MELALL = 'bank/Melall';
-    const ICON_FUTUREBANK = 'bank/Futurebank';
-    const ICON_SINA = 'bank/Sina';
-    const ICON_TOSEE_SADERAT = 'bank/Tosee_Saderat';
-    const ICON_DEY = 'bank/Dey';
-    const ICON_SANAT_MADAN = 'bank/Sanat_Madan';
-    const ICON_SADERAT = 'bank/Saderat';
-    const ICON_SARMAYEH = 'bank/Sarmayeh';
-    const ICON_SAMAN = 'bank/Saman';
-    const ICON_MELLI = 'bank/Melli';
-    const ICON_KARAFARIN = 'bank/Karafarin';
-    const ICON_ANSAR = 'bank/Ansar';
-    const ICON_PASARGAD = 'bank/Pasargad';
-    const ICON_EGHTESAD_NOVIN = 'bank/Eghtesad_Novin';
-    const ICON_NOOR = 'bank/Noor';
-    const ICON_AYANDEH = 'bank/Ayandeh';
-    const ICON_KESHAVARZI = 'bank/Keshavarzi';
-    const ICON_TAAVON_ESLAMI = 'bank/Taavon_Eslami';
-    const ICON_REFAH = 'bank/Refah';
-    const ICON_MASKAN = 'bank/Maskan';
-    const ICON_TEJARAT = 'bank/Tejarat';
-    const ICON_SEPAH = 'bank/Sepah';
-    const ICON_SHAHR = 'bank/Shahr';
-    const ICON_MELLAT = 'bank/Mellat';
-    const ICON_PARSIAN = 'bank/Parsian';
-    const ICON_POSTBANK = 'bank/Postbank';
-}
+ namespace Pmpr\Common\Foundation\Media\Icon\Interfaces; interface IconBankInterface { const ICON_TOSEE_TAAVON = "\x62\141\x6e\153\x2f\124\x6f\163\145\x65\137\x54\141\x61\x76\157\156"; const ICON_MELALL = "\142\x61\156\x6b\57\115\145\x6c\x61\x6c\154"; const ICON_FUTUREBANK = "\x62\141\156\x6b\x2f\x46\165\x74\x75\162\145\x62\141\x6e\x6b"; const ICON_SINA = "\x62\x61\156\153\57\x53\x69\156\141"; const ICON_TOSEE_SADERAT = "\142\141\x6e\153\x2f\124\x6f\163\145\145\x5f\123\141\x64\145\162\x61\164"; const ICON_DEY = "\142\x61\x6e\153\x2f\104\145\x79"; const ICON_SANAT_MADAN = "\142\x61\x6e\x6b\57\123\x61\x6e\x61\164\x5f\115\x61\x64\141\156"; const ICON_SADERAT = "\142\x61\x6e\x6b\57\123\x61\x64\x65\162\141\x74"; const ICON_SARMAYEH = "\x62\141\156\x6b\x2f\x53\141\162\x6d\x61\171\145\150"; const ICON_SAMAN = "\142\x61\156\153\57\x53\x61\x6d\x61\x6e"; const ICON_MELLI = "\x62\x61\156\153\57\x4d\145\154\154\x69"; const ICON_KARAFARIN = "\142\x61\x6e\153\x2f\113\141\x72\x61\146\141\162\151\x6e"; const ICON_ANSAR = "\x62\x61\x6e\x6b\57\x41\x6e\x73\141\162"; const ICON_PASARGAD = "\142\x61\x6e\153\57\120\141\163\141\x72\147\141\x64"; const ICON_EGHTESAD_NOVIN = "\x62\141\x6e\153\57\105\x67\150\164\145\163\141\x64\137\116\x6f\x76\x69\156"; const ICON_NOOR = "\x62\x61\156\153\x2f\x4e\x6f\157\162"; const ICON_AYANDEH = "\142\141\156\153\57\x41\x79\x61\x6e\x64\x65\150"; const ICON_KESHAVARZI = "\142\x61\x6e\153\x2f\x4b\145\163\x68\x61\166\141\162\x7a\151"; const ICON_TAAVON_ESLAMI = "\142\x61\x6e\153\x2f\x54\141\x61\x76\x6f\156\137\105\163\x6c\141\155\x69"; const ICON_REFAH = "\142\x61\x6e\153\57\x52\145\x66\x61\150"; const ICON_MASKAN = "\x62\141\156\x6b\57\x4d\141\x73\153\141\156"; const ICON_TEJARAT = "\142\x61\156\x6b\57\x54\x65\x6a\141\x72\141\x74"; const ICON_SEPAH = "\142\141\156\153\x2f\123\x65\160\x61\150"; const ICON_SHAHR = "\142\x61\156\153\x2f\123\150\141\x68\162"; const ICON_MELLAT = "\142\x61\156\153\57\x4d\145\x6c\x6c\141\164"; const ICON_PARSIAN = "\142\x61\x6e\153\x2f\x50\141\x72\x73\151\x61\156"; const ICON_POSTBANK = "\142\x61\x6e\x6b\57\x50\157\163\164\x62\141\156\x6b"; }
