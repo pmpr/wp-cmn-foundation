@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b5973b89a9             |
+    |             613b6c65a2d22             |
     |_______________________________________|
 */
 
@@ -15,22 +15,22 @@ class Radio extends OptionAwareField
     
     public function __construct(?string $aokagokqyuysuksm, ?string $ymqmyyeuycgmigyo, array $qiouiwasaauyaaue = [], ?string $mkqqqewsokcswckc = null)
     {
-        goto eekwggcsigwsyimk;
-        qyuwuawyyooewwmy:
-        ieesuqwoumyssgmi:
-        goto giseicyyywqmukwu;
-        giseicyyywqmukwu:
-        parent::__construct("\x72\141\144\x69\x6f", $aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc, $qiouiwasaauyaaue);
-        goto myuauieqiomyewkk;
-        oucueogegoykuuuy:
-        $this->eyygsasuqmommkua(key($qiouiwasaauyaaue));
-        goto qyuwuawyyooewwmy;
-        eekwggcsigwsyimk:
-        if (!(is_array($qiouiwasaauyaaue) && $qiouiwasaauyaaue)) {
-            goto ieesuqwoumyssgmi;
-        }
         goto oucueogegoykuuuy;
+        oucueogegoykuuuy:
+        if (!(is_array($qiouiwasaauyaaue) && $qiouiwasaauyaaue)) {
+            goto eekwggcsigwsyimk;
+        }
+        goto qyuwuawyyooewwmy;
+        qyuwuawyyooewwmy:
+        $this->eyygsasuqmommkua(key($qiouiwasaauyaaue));
+        goto giseicyyywqmukwu;
         myuauieqiomyewkk:
+        parent::__construct("\x72\x61\x64\151\x6f", $aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc, $qiouiwasaauyaaue);
+        goto owqcgayymwauiqaa;
+        giseicyyywqmukwu:
+        eekwggcsigwsyimk:
+        goto myuauieqiomyewkk;
+        owqcgayymwauiqaa:
     }
     
     public function wmociykwcyesssui() : ?bool
@@ -50,6 +50,6 @@ class Radio extends OptionAwareField
     }
     public function sqoiuykcoueiucgc($pkyyagewkiyckmwy, $wwgucssaecqekuek)
     {
-        return array_merge(["\154\141\x62\145\154" => $pkyyagewkiyckmwy], $wwgucssaecqekuek);
+        return array_merge(["\154\x61\142\145\154" => $pkyyagewkiyckmwy], $wwgucssaecqekuek);
     }
 }

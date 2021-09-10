@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b5973b89a9             |
+    |             613b6c65a2d22             |
     |_______________________________________|
 */
 
@@ -24,7 +24,7 @@ class Source extends Data
     
     protected ?string $inline = '';
     
-    protected string $media = "\141\154\x6c";
+    protected string $media = "\x61\x6c\x6c";
     
     protected bool $inFooter = true;
     
@@ -116,23 +116,20 @@ class Source extends Data
         owseqyqgagqaacmy:
         return $this;
         goto squkoccwioggcaye;
-        cyueaiekggqumaic:
-        womyiwaoigaequiw:
-        goto owseqyqgagqaacmy;
         wiaauiiuyogwauum:
         if (in_array($yeiguwcugmswcysy, $this->auskmiuqesyqemgc())) {
             goto womyiwaoigaequiw;
         }
         goto amwiioosseiocuic;
+        cyueaiekggqumaic:
+        womyiwaoigaequiw:
+        goto owseqyqgagqaacmy;
         squkoccwioggcaye:
     }
     
     public function kkqyswgcoseeawmu(array $ugmuiugkaygmsagq) : self
     {
         goto mcacwiaagqysweem;
-        oqokmmqoikgwmsai:
-        oocgwowiyomcosac:
-        goto yackuaqwsqcwciyo;
         yackuaqwsqcwciyo:
         return $this;
         goto yqiaqmigsoeqmgwo;
@@ -142,6 +139,9 @@ class Source extends Data
             ggywsksyyogoocie:
         }
         goto oqokmmqoikgwmsai;
+        oqokmmqoikgwmsai:
+        oocgwowiyomcosac:
+        goto yackuaqwsqcwciyo;
         yqiaqmigsoeqmgwo:
     }
     
@@ -170,9 +170,6 @@ class Source extends Data
     public function simqeemkoyaqkkwe() : bool
     {
         goto wuesuwyyyaesmkas;
-        wuesuwyyyaesmkas:
-        $wgcyssuyaqysoqya = $this->eeiaogaokoekgmeq();
-        goto uoeogwamkogoqoow;
         uoeogwamkogoqoow:
         if (!is_callable($wgcyssuyaqysoqya)) {
             goto aiswkmkmkckuociu;
@@ -181,6 +178,9 @@ class Source extends Data
         qykicwksywyiiqkk:
         aiswkmkmkckuociu:
         goto awiawgewcmmiugqm;
+        wuesuwyyyaesmkas:
+        $wgcyssuyaqysoqya = $this->eeiaogaokoekgmeq();
+        goto uoeogwamkogoqoow;
         awiawgewcmmiugqm:
         return (bool) $wgcyssuyaqysoqya;
         goto meayoamiqaqouykk;
@@ -220,18 +220,18 @@ class Source extends Data
     public function simswskycwagoeqy() : self
     {
         goto igsmkqcwksaogqaq;
-        igsmkqcwksaogqaq:
-        $qsaooqieuwgqwmmc = Foundation::symcgieuakksimmu()->miocmcoykayoyyau();
-        goto iekwmuigmiooiugw;
-        oscqsgwcimqawseu:
-        $this->kkqyswgcoseeawmu(["\x6a\x71\x75\x65\162\x79", $syqogysesqgmqoqi]);
-        goto ysqeawycwuosoawe;
         ysqeawycwuosoawe:
         return $this;
         goto omikseuuygmokqsw;
         iekwmuigmiooiugw:
-        $syqogysesqgmqoqi = $qsaooqieuwgqwmmc->yomasssaasmawcso("\147\x6c\x6f\x62\x61\154");
+        $syqogysesqgmqoqi = $qsaooqieuwgqwmmc->yomasssaasmawcso("\147\x6c\157\142\x61\x6c");
         goto oscqsgwcimqawseu;
+        igsmkqcwksaogqaq:
+        $qsaooqieuwgqwmmc = Foundation::symcgieuakksimmu()->miocmcoykayoyyau();
+        goto iekwmuigmiooiugw;
+        oscqsgwcimqawseu:
+        $this->kkqyswgcoseeawmu(["\152\x71\x75\145\x72\171", $syqogysesqgmqoqi]);
+        goto ysqeawycwuosoawe;
         omikseuuygmokqsw:
     }
 }

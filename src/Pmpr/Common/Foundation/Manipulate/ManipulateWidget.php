@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b5973b89a9             |
+    |             613b6c65a2d22             |
     |_______________________________________|
 */
 
@@ -15,25 +15,25 @@ class ManipulateWidget extends Manipulate
     
     public static function ymaywccaiscsmsik($aokagokqyuysuksm, $ymqmyyeuycgmigyo, $ywmkwiwkosakssii = [])
     {
-        $ywmkwiwkosakssii = array_merge($ywmkwiwkosakssii, ["\x61\x6f\x6b\141\x67\157\x6b\x71\171\165\171\163\165\153\x73\155" => $aokagokqyuysuksm, "\x79\x6d\161\155\171\171\x65\165\x79\x63\x67\155\151\x67\171\x6f" => $ymqmyyeuycgmigyo]);
+        $ywmkwiwkosakssii = array_merge($ywmkwiwkosakssii, ["\141\157\153\141\147\157\x6b\161\171\x75\171\163\165\x6b\x73\x6d" => $aokagokqyuysuksm, "\171\155\161\155\171\x79\x65\x75\171\x63\147\155\151\147\x79\x6f" => $ymqmyyeuycgmigyo]);
         DecoratorWidget::ymaywccaiscsmsik($ywmkwiwkosakssii);
     }
     
     public static function acsmmesauemikksg($assameyusgwogmce, $owgumcsyqsamiemg = [], $ywmkwiwkosakssii = [])
     {
-        goto msugciceoeaqyggk;
-        ecokmyyccossammg:
-        $nsmgceoqaqogqmuw = ob_get_clean();
-        goto keqmucqsyyuikoou;
-        keqmucqsyyuikoou:
-        return DecoratorHook::sscegwueamckwmcy(ManipulateHook::ygyygikyocoymgaw("\x77\151\x64\x67\x65\164\x5f\x68\164\155\x6c"), $nsmgceoqaqogqmuw, $assameyusgwogmce);
-        goto cgcagmggieimycaw;
-        msugciceoeaqyggk:
-        ob_start();
         goto awmwewyeqcgmmcyg;
+        keqmucqsyyuikoou:
+        $nsmgceoqaqogqmuw = ob_get_clean();
+        goto cgcagmggieimycaw;
         awmwewyeqcgmmcyg:
-        the_widget($assameyusgwogmce, $owgumcsyqsamiemg, $ywmkwiwkosakssii);
+        ob_start();
         goto ecokmyyccossammg;
+        ecokmyyccossammg:
+        the_widget($assameyusgwogmce, $owgumcsyqsamiemg, $ywmkwiwkosakssii);
+        goto keqmucqsyyuikoou;
         cgcagmggieimycaw:
+        return DecoratorHook::sscegwueamckwmcy(ManipulateHook::ygyygikyocoymgaw("\x77\x69\144\147\145\x74\x5f\150\164\155\154"), $nsmgceoqaqogqmuw, $assameyusgwogmce);
+        goto wuwkeggsaiumowug;
+        wuwkeggsaiumowug:
     }
 }

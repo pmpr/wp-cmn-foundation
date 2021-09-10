@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b5973b89a9             |
+    |             613b6c65a2d22             |
     |_______________________________________|
 */
 
@@ -31,33 +31,33 @@ class Component extends Data
     public function __construct(Container $mksyucucyswaukig, string $sqeykgyoooqysmca, string $ymqmyyeuycgmigyo, string $miawkwqioaeasiig)
     {
         goto sqackyqqakkykaus;
-        iuqoaqsqmamokiaa:
-        $this->object = $mksyucucyswaukig;
-        goto uquoikaaykqmayco;
-        yiqceakcgqweqwkq:
-        $this->name = $ymqmyyeuycgmigyo;
-        goto sgykyaiuwiykyqqc;
+        sgykyaiuwiykyqqc:
+        $this->type = $sqeykgyoooqysmca;
+        goto ggkkqomssqyqiquq;
         wiuqggsaqsscggyq:
         ManipulateFile::wwckmeoskuagomki($ooceusioyoimisig . self::__ROOT__PATH, $this->ikeqsmumgwwuqmkw());
         goto muuoiakkusqamoia;
         qemwkwgoywqqwscg:
         $ooceusioyoimisig = strtoupper($ymqmyyeuycgmigyo);
         goto csmemsmogwosqkks;
-        ggkkqomssqyqiquq:
-        $this->domain = $ymqmyyeuycgmigyo;
-        goto iuqoaqsqmamokiaa;
-        sqackyqqakkykaus:
-        $this->root = ManipulateFile::iygwwosmmgmouoyc($miawkwqioaeasiig);
-        goto yiqceakcgqweqwkq;
-        sgykyaiuwiykyqqc:
-        $this->type = $sqeykgyoooqysmca;
-        goto ggkkqomssqyqiquq;
-        csmemsmogwosqkks:
-        ManipulateFile::wwckmeoskuagomki($ooceusioyoimisig, $ymqmyyeuycgmigyo);
-        goto wiuqggsaqsscggyq;
         uquoikaaykqmayco:
         $this->shortname = ManipulateString::gumqicgiosoqweoy($ymqmyyeuycgmigyo);
         goto qemwkwgoywqqwscg;
+        yiqceakcgqweqwkq:
+        $this->name = $ymqmyyeuycgmigyo;
+        goto sgykyaiuwiykyqqc;
+        csmemsmogwosqkks:
+        ManipulateFile::wwckmeoskuagomki($ooceusioyoimisig, $ymqmyyeuycgmigyo);
+        goto wiuqggsaqsscggyq;
+        ggkkqomssqyqiquq:
+        $this->domain = $ymqmyyeuycgmigyo;
+        goto iuqoaqsqmamokiaa;
+        iuqoaqsqmamokiaa:
+        $this->object = $mksyucucyswaukig;
+        goto uquoikaaykqmayco;
+        sqackyqqakkykaus:
+        $this->root = ManipulateFile::iygwwosmmgmouoyc($miawkwqioaeasiig);
+        goto yiqceakcgqweqwkq;
         muuoiakkusqamoia:
     }
     
@@ -139,27 +139,27 @@ class Component extends Data
     public function aksiegmauqiaueis() : ?string
     {
         goto iqoqyuokokywiqsg;
+        cgewwoksiyocyiga:
+        ecsieaukkkskmiye:
+        goto qocgiimiggeksoky;
+        iqoqyuokokywiqsg:
+        $couygeouymagssgw = $this->ikeqsmumgwwuqmkw();
+        goto soqqgkywqwwiuymo;
+        qocgiimiggeksoky:
+        return $mkomwsiykqigmqca;
+        goto uwowyggggqcqiuao;
+        eeegygkcwmqmqyes:
+        
+        $mkomwsiykqigmqca = realpath("{$couygeouymagssgw}\57\56\56\x2f\56\x2e");
+        goto cgewwoksiyocyiga;
         mickaocycsqkssoi:
         if (is_dir($mkomwsiykqigmqca)) {
             goto ecsieaukkkskmiye;
         }
         goto eeegygkcwmqmqyes;
         soqqgkywqwwiuymo:
-        $mkomwsiykqigmqca = "{$couygeouymagssgw}\57\166\x65\156\x64\157\x72";
+        $mkomwsiykqigmqca = "{$couygeouymagssgw}\x2f\166\x65\x6e\144\157\162";
         goto mickaocycsqkssoi;
-        qocgiimiggeksoky:
-        return $mkomwsiykqigmqca;
-        goto uwowyggggqcqiuao;
-        iqoqyuokokywiqsg:
-        $couygeouymagssgw = $this->ikeqsmumgwwuqmkw();
-        goto soqqgkywqwwiuymo;
-        cgewwoksiyocyiga:
-        ecsieaukkkskmiye:
-        goto qocgiimiggeksoky;
-        eeegygkcwmqmqyes:
-        
-        $mkomwsiykqigmqca = realpath("{$couygeouymagssgw}\x2f\56\56\x2f\56\x2e");
-        goto cgewwoksiyocyiga;
         uwowyggggqcqiuao:
     }
 }

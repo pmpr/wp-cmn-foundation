@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b5973b89a9             |
+    |             613b6c65a2d22             |
     |_______________________________________|
 */
 
@@ -13,28 +13,28 @@ class ManipulateAsset extends Manipulate
     
     public static function omgkgiasggyoyiew(string $mkomwsiykqigmqca) : ?string
     {
-        goto cuqqecwymouycgau;
-        emiocgskkaieaygu:
-        if (!$cqswiiioaimeskoi) {
-            goto sgguweyyyiqmkakc;
-        }
-        goto ausgcikksecieweq;
-        syqumcoogeoweeys:
-        $cqswiiioaimeskoi = cmb2_utils();
-        goto emiocgskkaieaygu;
-        coyaogkqscweiqwk:
-        sgguweyyyiqmkakc:
-        goto iaiwayowckokiyiy;
-        cuqqecwymouycgau:
-        $eeamcawaiqocomwy = null;
         goto syqumcoogeoweeys;
-        ausgcikksecieweq:
+        kyecumuyuyygkoou:
+        return $eeamcawaiqocomwy;
+        goto eewyeiukoacqwemo;
+        coyaogkqscweiqwk:
         
         $eeamcawaiqocomwy = $cqswiiioaimeskoi::url($mkomwsiykqigmqca);
-        goto coyaogkqscweiqwk;
+        goto iaiwayowckokiyiy;
         iaiwayowckokiyiy:
-        return $eeamcawaiqocomwy;
+        cuqqecwymouycgau:
         goto kyecumuyuyygkoou;
-        kyecumuyuyygkoou:
+        syqumcoogeoweeys:
+        $eeamcawaiqocomwy = null;
+        goto emiocgskkaieaygu;
+        ausgcikksecieweq:
+        if (!$cqswiiioaimeskoi) {
+            goto cuqqecwymouycgau;
+        }
+        goto coyaogkqscweiqwk;
+        emiocgskkaieaygu:
+        $cqswiiioaimeskoi = cmb2_utils();
+        goto ausgcikksecieweq;
+        eewyeiukoacqwemo:
     }
 }

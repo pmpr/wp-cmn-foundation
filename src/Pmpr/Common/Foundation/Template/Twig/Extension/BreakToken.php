@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b5973b89a9             |
+    |             613b6c65a2d22             |
     |_______________________________________|
 */
 
@@ -17,30 +17,30 @@ class BreakToken extends AbstractTokenParser
     public function parse(Token $mgegoogckgsumooq) : BreakNode
     {
         goto omkocsuyieykumsw;
-        omkocsuyieykumsw:
-        
-        $mkgomsmocgwiwyui = $mgegoogckgsumooq->getLine();
-        goto iwoueqiswogoyeuk;
-        iwoueqiswogoyeuk:
-        
-        $maykoqyekaegigga = $this->parser->getStream();
-        goto ycyigosuicckquco;
-        ycyigosuicckquco:
-        
-        $maykoqyekaegigga->expect(Token::BLOCK_END_TYPE);
-        goto ygawggoccwiqyaqy;
-        wiiyoqsikgcqqygi:
-        return new BreakNode([], [], $mkgomsmocgwiwyui, $scwiymciagumsuiw);
-        goto umuseoycuocwmkwq;
         ygawggoccwiqyaqy:
         
         $scwiymciagumsuiw = $this->getTag();
         goto wiiyoqsikgcqqygi;
+        ycyigosuicckquco:
+        
+        $maykoqyekaegigga->expect(Token::BLOCK_END_TYPE);
+        goto ygawggoccwiqyaqy;
+        omkocsuyieykumsw:
+        
+        $mkgomsmocgwiwyui = $mgegoogckgsumooq->getLine();
+        goto iwoueqiswogoyeuk;
+        wiiyoqsikgcqqygi:
+        return new BreakNode([], [], $mkgomsmocgwiwyui, $scwiymciagumsuiw);
+        goto umuseoycuocwmkwq;
+        iwoueqiswogoyeuk:
+        
+        $maykoqyekaegigga = $this->parser->getStream();
+        goto ycyigosuicckquco;
         umuseoycuocwmkwq:
     }
     
     public function getTag() : string
     {
-        return "\x62\x72\145\x61\x6b";
+        return "\x62\x72\145\x61\153";
     }
 }

@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b5973b89a9             |
+    |             613b6c65a2d22             |
     |_______________________________________|
 */
 
@@ -18,26 +18,26 @@ class MultiButton extends Button
         wcsasgasgaoeiucc:
         ksscsamsaakkuaek:
         goto iegeckgokmkasqai;
-        meiikgkcswuuayug:
-        kgmmusocuywcamkm:
-        goto wcsasgasgaoeiucc;
-        yiycscagsqscmoec:
-        if (!(is_array($qyukicweqoisimwg) && $qyukicweqoisimwg)) {
-            goto ksscsamsaakkuaek;
-        }
-        goto aqgcokuwcsyieseo;
-        sywcgogayiwoguqo:
-        $qyukicweqoisimwg = ManipulateArray::get($aiowsaccomcoikus->args, "\x62\x75\x74\164\157\x6e\163", []);
-        goto yiycscagsqscmoec;
         aqgcokuwcsyieseo:
         echo $ymygiwwuwyuakysk->_desc(true);
         goto iakwuqcuyuyqisme;
+        sywcgogayiwoguqo:
+        $qyukicweqoisimwg = ManipulateArray::get($aiowsaccomcoikus->args, "\x62\165\x74\x74\157\x6e\163", []);
+        goto yiycscagsqscmoec;
         iakwuqcuyuyqisme:
         foreach ($qyukicweqoisimwg as $gskauacumcmekigs) {
             echo $this->sywokgmoskcocqgy($gskauacumcmekigs, $ymygiwwuwyuakysk);
             meyuecuukqqaagoy:
         }
         goto meiikgkcswuuayug;
+        yiycscagsqscmoec:
+        if (!(is_array($qyukicweqoisimwg) && $qyukicweqoisimwg)) {
+            goto ksscsamsaakkuaek;
+        }
+        goto aqgcokuwcsyieseo;
+        meiikgkcswuuayug:
+        kgmmusocuywcamkm:
+        goto wcsasgasgaoeiucc;
         iegeckgokmkasqai:
     }
 }

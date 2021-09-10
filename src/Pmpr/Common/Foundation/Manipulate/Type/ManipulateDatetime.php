@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b5973b89a9             |
+    |             613b6c65a2d22             |
     |_______________________________________|
 */
 
@@ -20,55 +20,55 @@ class ManipulateDatetime extends Common
     
     public static function ikuqieqosemkwuio($cqgoimumaewouews)
     {
-        goto ksuaoogkueqmaemg;
-        aeyyammmgywaakyi:
-        $sieoyimycoskwwku = sprintf(__("\x25\x73\x20\x61\x67\157"), human_time_diff($cqgoimumaewouews));
-        goto wikgayyaimyysqey;
-        cswawiceqkiyuwgy:
-        $sieoyimycoskwwku = DecoratorHook::sscegwueamckwmcy("\144\x61\164\145\x5f\x74\151\x6d\x65\137\x61\147\x6f", date("\131\55\x6d\x2d\144\40\x48\x3a\x69", $cqgoimumaewouews), ManipulateSetting::uyomwmskouyyqyyq());
-        goto sawwqwioeyseeaoo;
+        goto umawyuykgiuqwacs;
         ucoowgqsiscmocqm:
-        if ($cqgoimumaewouews && $asuaciiookaciacq > 0 && $asuaciiookaciacq < DAY_IN_SECONDS) {
-            goto kikikuoceiouiccg;
-        }
+        $asuaciiookaciacq = (int) abs(time() - $cqgoimumaewouews);
         goto cswawiceqkiyuwgy;
         sawwqwioeyseeaoo:
-        goto iwgcsqiqowaowska;
+        $sieoyimycoskwwku = DecoratorHook::sscegwueamckwmcy("\144\141\x74\145\137\x74\151\155\x65\x5f\141\147\157", date("\131\55\155\x2d\x64\40\x48\72\x69", $cqgoimumaewouews), ManipulateSetting::uyomwmskouyyqyyq());
         goto yskiooskcmuyewuy;
-        ksuaoogkueqmaemg:
-        $cqgoimumaewouews = strtotime($cqgoimumaewouews);
-        goto umawyuykgiuqwacs;
-        wikgayyaimyysqey:
-        iwgcsqiqowaowska:
-        goto usqykimeumyoosik;
         umawyuykgiuqwacs:
-        $asuaciiookaciacq = (int) abs(time() - $cqgoimumaewouews);
+        $cqgoimumaewouews = strtotime($cqgoimumaewouews);
         goto ucoowgqsiscmocqm;
         usqykimeumyoosik:
-        return DecoratorHook::sscegwueamckwmcy("\164\151\x6d\x65\137\141\147\x6f", $sieoyimycoskwwku, $cqgoimumaewouews);
+        ksuaoogkueqmaemg:
         goto sosacgwuicyiiesw;
-        yskiooskcmuyewuy:
-        kikikuoceiouiccg:
-        goto aeyyammmgywaakyi;
+        cswawiceqkiyuwgy:
+        if ($cqgoimumaewouews && $asuaciiookaciacq > 0 && $asuaciiookaciacq < DAY_IN_SECONDS) {
+            goto iwgcsqiqowaowska;
+        }
+        goto sawwqwioeyseeaoo;
+        aeyyammmgywaakyi:
+        iwgcsqiqowaowska:
+        goto wikgayyaimyysqey;
         sosacgwuicyiiesw:
+        return DecoratorHook::sscegwueamckwmcy("\164\x69\x6d\x65\137\x61\147\x6f", $sieoyimycoskwwku, $cqgoimumaewouews);
+        goto ymgikwoegucegmmq;
+        wikgayyaimyysqey:
+        $sieoyimycoskwwku = sprintf(__("\45\163\x20\x61\x67\x6f"), human_time_diff($cqgoimumaewouews));
+        goto usqykimeumyoosik;
+        yskiooskcmuyewuy:
+        goto ksuaoogkueqmaemg;
+        goto aeyyammmgywaakyi;
+        ymgikwoegucegmmq:
     }
     
-    public static function awesicwkasgqwwuo($ggkaciewmeqmgckg, $qmeuaeiseuacgiqc, $ocogsiouoiuuguym = "\156\x6f\x77") : bool
+    public static function awesicwkasgqwwuo($ggkaciewmeqmgckg, $qmeuaeiseuacgiqc, $ocogsiouoiuuguym = "\x6e\157\x77") : bool
     {
-        goto ymgikwoegucegmmq;
-        uusuqukowcsyeoek:
-        $gioggcykgoikcwiy = strtotime($ocogsiouoiuuguym);
-        goto qkaamssgqkeaumqm;
+        goto uimcguaiawcueoai;
         uimcguaiawcueoai:
-        $qmeuaeiseuacgiqc = strtotime($qmeuaeiseuacgiqc);
+        $ggkaciewmeqmgckg = strtotime($ggkaciewmeqmgckg);
         goto uusuqukowcsyeoek;
-        qkaamssgqkeaumqm:
+        uusuqukowcsyeoek:
+        $qmeuaeiseuacgiqc = strtotime($qmeuaeiseuacgiqc);
+        goto qkaamssgqkeaumqm;
+        akcoekimwmwkmoia:
         
         return $ggkaciewmeqmgckg <= $gioggcykgoikcwiy && $gioggcykgoikcwiy <= $qmeuaeiseuacgiqc;
+        goto kmyuewweeweyeogc;
+        qkaamssgqkeaumqm:
+        $gioggcykgoikcwiy = strtotime($ocogsiouoiuuguym);
         goto akcoekimwmwkmoia;
-        ymgikwoegucegmmq:
-        $ggkaciewmeqmgckg = strtotime($ggkaciewmeqmgckg);
-        goto uimcguaiawcueoai;
-        akcoekimwmwkmoia:
+        kmyuewweeweyeogc:
     }
 }

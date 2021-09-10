@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b5973b89a9             |
+    |             613b6c65a2d22             |
     |_______________________________________|
 */
 
@@ -28,8 +28,8 @@ class DecoratorFile extends Decorator
     
     public static function qsyguaycgacaggsu($qogsmwakwacwqogk = null, $qysuisecuceywamu = true, $cqgoimumaewouews = false) : array
     {
-        if (!function_exists("\x77\160\137\150\141\156\x64\x6c\145\x5f\163\151\144\x65\x6c\x6f\x61\144")) {
-            require_once ABSPATH . "\x77\160\x2d\141\x64\x6d\x69\156\57\151\x6e\x63\x6c\165\x64\x65\163\57\146\151\x6c\145\x2e\160\150\x70";
+        if (!function_exists("\x77\x70\137\150\141\156\144\x6c\x65\x5f\163\151\144\x65\154\157\141\144")) {
+            require_once ABSPATH . "\167\x70\55\x61\x64\155\151\156\x2f\x69\x6e\x63\154\165\x64\x65\x73\x2f\x66\x69\154\145\56\x70\x68\x70";
         }
         return wp_handle_sideload($qogsmwakwacwqogk, $qysuisecuceywamu, $cqgoimumaewouews);
     }

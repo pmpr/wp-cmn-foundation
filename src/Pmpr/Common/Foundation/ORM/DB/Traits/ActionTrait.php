@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b5973b89a9             |
+    |             613b6c65a2d22             |
     |_______________________________________|
 */
 
@@ -22,27 +22,27 @@ trait ActionTrait
     
     public function wqaqomooqiiaeoew() : array
     {
-        return ManipulateArray::get($this->sqgeouqsaemqsaoc(), "\141\x64\x64", []);
+        return ManipulateArray::get($this->sqgeouqsaemqsaoc(), "\141\144\x64", []);
     }
     
     private function oecasaciwaammwsa(?string $qqomumygoacsmsie, ?string $uusmaiomayssaecw, ?string $meqocwsecsywiiqs, ?array $wwgucssaecqekuek) : self
     {
         goto kwigwuwessmseqik;
+        qqowaeggkimumgei:
+        $this->viewActions[$qqomumygoacsmsie][$uusmaiomayssaecw] = ["\x77\x77\x67\165\x63\x73\163\x61\145\x63\161\145\153\165\x65\153" => $wwgucssaecqekuek, "\155\145\161\x6f\x63\x77\163\x65\143\163\171\167\x69\x69\161\163" => $meqocwsecsywiiqs];
+        goto kckkiuumaegucsqg;
         kwigwuwessmseqik:
-        $wwgucssaecqekuek = ManipulateHTML::igmaewykumgwoaoy($wwgucssaecqekuek, "\x63\x6c\141\163\163", "\x70\x61\147\x65\x2d\164\x69\x74\x6c\145\55\x61\x63\164\x69\x6f\156");
+        $wwgucssaecqekuek = ManipulateHTML::igmaewykumgwoaoy($wwgucssaecqekuek, "\143\x6c\x61\163\163", "\160\141\x67\145\55\164\x69\x74\154\145\55\141\x63\x74\x69\157\x6e");
         goto qqowaeggkimumgei;
         kckkiuumaegucsqg:
         return $this;
         goto yqqueamqmkcwimeq;
-        qqowaeggkimumgei:
-        $this->viewActions[$qqomumygoacsmsie][$uusmaiomayssaecw] = ["\x77\167\147\165\143\163\163\141\145\143\161\145\x6b\165\145\153" => $wwgucssaecqekuek, "\155\145\x71\x6f\x63\167\x73\145\143\163\171\x77\151\151\161\163" => $meqocwsecsywiiqs];
-        goto kckkiuumaegucsqg;
         yqqueamqmkcwimeq:
     }
     
     public function kecqycomykimqiim(?string $uusmaiomayssaecw, ?string $meqocwsecsywiiqs, ?array $wwgucssaecqekuek) : self
     {
-        return $this->oecasaciwaammwsa("\x61\x64\x64", $uusmaiomayssaecw, $meqocwsecsywiiqs, $wwgucssaecqekuek);
+        return $this->oecasaciwaammwsa("\x61\144\x64", $uusmaiomayssaecw, $meqocwsecsywiiqs, $wwgucssaecqekuek);
     }
     
     public function easkmgsoqaqeyayo() : array
@@ -52,16 +52,16 @@ trait ActionTrait
     
     public function icyamyikwyaaoqya(?string $uusmaiomayssaecw, ?string $meqocwsecsywiiqs, ?array $wwgucssaecqekuek) : self
     {
-        return $this->oecasaciwaammwsa("\x69\x6e\x64\145\170", $uusmaiomayssaecw, $meqocwsecsywiiqs, $wwgucssaecqekuek);
+        return $this->oecasaciwaammwsa("\151\x6e\x64\x65\170", $uusmaiomayssaecw, $meqocwsecsywiiqs, $wwgucssaecqekuek);
     }
     
     public function nwuqkwkgugcqsgyq() : array
     {
-        return ManipulateArray::get($this->sqgeouqsaemqsaoc(), "\x65\144\151\x74", []);
+        return ManipulateArray::get($this->sqgeouqsaemqsaoc(), "\145\144\x69\x74", []);
     }
     
     public function qeiuscikgegousks(?string $uusmaiomayssaecw, ?string $meqocwsecsywiiqs, ?array $wwgucssaecqekuek) : self
     {
-        return $this->oecasaciwaammwsa("\x65\144\x69\x74", $uusmaiomayssaecw, $meqocwsecsywiiqs, $wwgucssaecqekuek);
+        return $this->oecasaciwaammwsa("\x65\x64\x69\x74", $uusmaiomayssaecw, $meqocwsecsywiiqs, $wwgucssaecqekuek);
     }
 }

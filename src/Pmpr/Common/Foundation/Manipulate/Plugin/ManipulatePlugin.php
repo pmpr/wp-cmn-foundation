@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b5973b89a9             |
+    |             613b6c65a2d22             |
     |_______________________________________|
 */
 
@@ -17,7 +17,7 @@ class ManipulatePlugin extends Common
     
     public static function yicegakcoioyuwos() : array
     {
-        return (array) DecoratorOption::get("\141\143\x74\x69\x76\145\137\x70\x6c\x75\147\151\156\x73", []);
+        return (array) DecoratorOption::get("\x61\x63\164\x69\x76\145\x5f\x70\154\165\x67\x69\156\x73", []);
     }
     
     public static function ggocakcisguuokai(?string $mkysicwccoeicumg) : bool
@@ -27,42 +27,42 @@ class ManipulatePlugin extends Common
     
     public static function sskmceyamwugkaii($ywmkwiwkosakssii = []) : bool
     {
-        goto gaoycoykycqicwaq;
-        eoieikyaiucwwwas:
-        $gioggcykgoikcwiy = new WP_Requirements_Check($ywmkwiwkosakssii);
-        goto oeooskowyaoiesig;
-        gaoycoykycqicwaq:
-        $ywmkwiwkosakssii = ManipulateFormat::omaawkkwwyesqwcc($ywmkwiwkosakssii, ["\x70\150\x70" => "\x37\x2e\64", "\167\160" => "\65\x2e\x32"]);
         goto eoieikyaiucwwwas;
+        eoieikyaiucwwwas:
+        $ywmkwiwkosakssii = ManipulateFormat::omaawkkwwyesqwcc($ywmkwiwkosakssii, ["\160\x68\160" => "\67\x2e\64", "\x77\x70" => "\65\x2e\x32"]);
+        goto oeooskowyaoiesig;
         oeooskowyaoiesig:
-        return $gioggcykgoikcwiy->uysacksscoseuguc();
+        $gioggcykgoikcwiy = new WP_Requirements_Check($ywmkwiwkosakssii);
         goto awkycquykaigeoms;
         awkycquykaigeoms:
+        return $gioggcykgoikcwiy->uysacksscoseuguc();
+        goto oioygkocoumymyqa;
+        oioygkocoumymyqa:
     }
     
     public static function sioyqaykmwwugmgi(?string $mkysicwccoeicumg) : bool
     {
-        goto makoqausqoiwyouc;
-        skgguaeyousyogee:
-        $mseykiqqcmyesccu = DecoratorOption::kuaqqosyyoqiueym("\x61\143\164\151\166\145\x5f\x73\x69\x74\x65\167\x69\144\x65\x5f\160\154\165\147\x69\156\163");
-        goto gqqmmososkagcqco;
-        wuogwyququiiecaa:
+        goto ocgyqmccaskoieei;
+        scqwymaqqacaugqa:
         return $ggocakcisguuokai;
+        goto kmayiocekggkoyso;
+        wuogwyququiiecaa:
+        makoqausqoiwyouc:
         goto scqwymaqqacaugqa;
         asoqwsaqqyuoioac:
-        oioygkocoumymyqa:
-        goto wuogwyququiiecaa;
-        gqqmmososkagcqco:
         $ggocakcisguuokai = isset($mseykiqqcmyesccu[$mkysicwccoeicumg]);
-        goto asoqwsaqqyuoioac;
-        makoqausqoiwyouc:
-        $ggocakcisguuokai = false;
-        goto ocgyqmccaskoieei;
-        ocgyqmccaskoieei:
+        goto wuogwyququiiecaa;
+        skgguaeyousyogee:
         if (!is_multisite()) {
-            goto oioygkocoumymyqa;
+            goto makoqausqoiwyouc;
         }
+        goto gqqmmososkagcqco;
+        gqqmmososkagcqco:
+        $mseykiqqcmyesccu = DecoratorOption::kuaqqosyyoqiueym("\141\x63\164\x69\166\145\x5f\x73\x69\x74\x65\167\151\x64\145\137\x70\x6c\x75\x67\x69\x6e\163");
+        goto asoqwsaqqyuoioac;
+        ocgyqmccaskoieei:
+        $ggocakcisguuokai = false;
         goto skgguaeyousyogee;
-        scqwymaqqacaugqa:
+        kmayiocekggkoyso:
     }
 }

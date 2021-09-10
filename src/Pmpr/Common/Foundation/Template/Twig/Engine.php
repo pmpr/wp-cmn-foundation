@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b5973b89a9             |
+    |             613b6c65a2d22             |
     |_______________________________________|
 */
 
@@ -49,24 +49,14 @@ class Engine extends BaseClass
     {
         goto wwagacmausicisuq;
         omgqccwciyuekagc:
-        $mkomwsiykqigmqca = untrailingslashit($mkomwsiykqigmqca) . "\57\x74\145\155\x70\x6c\x61\x74\x65\x2f\164\x77\x69\x67";
+        $mkomwsiykqigmqca = untrailingslashit($mkomwsiykqigmqca) . "\x2f\x74\145\x6d\160\x6c\x61\x74\145\57\x74\x77\151\x67";
         goto wuiecqogyoemkmyo;
+        wwagacmausicisuq:
+        $ksaameoqigiaoigg = false;
+        goto omgqccwciyuekagc;
         wuiecqogyoemkmyo:
         try {
             goto rkqioecyciickiga;
-            ygasycygmaumayys:
-            
-            $this->loader->addPath($mkomwsiykqigmqca, $aiieyweysaukqemc);
-            goto cwcegeayeuuqccgs;
-            mkqikqqsikqoqgwy:
-            goto deigmocesygywwwq;
-            goto omusesiokggskasg;
-            egcsgekkgiikcmsc:
-            $ksaameoqigiaoigg = true;
-            goto somiowsyicsqgggg;
-            egukkoceuuaqqwqu:
-            $this->paths[$aiieyweysaukqemc] = $mkomwsiykqigmqca;
-            goto mkqikqqsikqoqgwy;
             hkcqsqgccmogcyim:
             if ($this->loader) {
                 goto kgkuyiqwqsyqques;
@@ -75,14 +65,27 @@ class Engine extends BaseClass
             cwcegeayeuuqccgs:
             deigmocesygywwwq:
             goto egcsgekkgiikcmsc;
-            omusesiokggskasg:
-            kgkuyiqwqsyqques:
-            goto ygasycygmaumayys;
+            mkqikqqsikqoqgwy:
+            goto deigmocesygywwwq;
+            goto omusesiokggskasg;
             rkqioecyciickiga:
             if (!$this->kcciqwskewsuaemk()->exists($mkomwsiykqigmqca)) {
                 goto awcawqaigquqqywo;
             }
             goto hkcqsqgccmogcyim;
+            ygasycygmaumayys:
+            
+            $this->loader->addPath($mkomwsiykqigmqca, $aiieyweysaukqemc);
+            goto cwcegeayeuuqccgs;
+            egukkoceuuaqqwqu:
+            $this->paths[$aiieyweysaukqemc] = $mkomwsiykqigmqca;
+            goto mkqikqqsikqoqgwy;
+            egcsgekkgiikcmsc:
+            $ksaameoqigiaoigg = true;
+            goto somiowsyicsqgggg;
+            omusesiokggskasg:
+            kgkuyiqwqsyqques:
+            goto ygasycygmaumayys;
             somiowsyicsqgggg:
             awcawqaigquqqywo:
             goto aoyasgammyaegmqk;
@@ -93,9 +96,6 @@ class Engine extends BaseClass
         nmkyycyeioimqmcc:
         return $ksaameoqigiaoigg;
         goto yoggkcicgggcyesq;
-        wwagacmausicisuq:
-        $ksaameoqigiaoigg = false;
-        goto omgqccwciyuekagc;
         yoggkcicgggcyesq:
     }
     
@@ -108,32 +108,24 @@ class Engine extends BaseClass
     {
         try {
             goto kwyiqscekoommuog;
-            asgweagmgkwuaeey:
+            ggmkcyyawgwomqmo:
+            cmkiiseesikwqgou:
+            goto esyqewcegauewswi;
+            kwyiqscekoommuog:
+            $oegoegssokkyiqam = $this->iwqysmawycmsmces();
+            goto geuasysqogwouqaa;
+            eakqkewcgqyewkee:
             
-            $this->environment->enableDebug();
-            goto awqyqyqeqkciygcg;
+            $this->environment->addExtension(new DebugExtension());
+            goto ggmkcyyawgwomqmo;
             macuoqyigoeqkkwa:
             if (!$esoowymaimwcuecq) {
                 goto cmkiiseesikwqgou;
             }
             goto asgweagmgkwuaeey;
-            ecoikiciouuikmgs:
-            uqucqgwcgoqomyuk:
-            goto yawqcawaywkgqkkq;
             cskuqsmksmimaewq:
-            $this->environment = new Environment($this->loader, ["\x63\x61\143\x68\145" => ManipulateFile::cmaecekuqkwmemms(self::PR__CACHE__PATH) . "\57\164\x77\151\x67", "\144\x65\x62\165\147" => $esoowymaimwcuecq]);
+            $this->environment = new Environment($this->loader, ["\x63\x61\x63\x68\x65" => ManipulateFile::cmaecekuqkwmemms(self::PR__CACHE__PATH) . "\x2f\164\x77\x69\x67", "\144\145\x62\x75\147" => $esoowymaimwcuecq]);
             goto macuoqyigoeqkkwa;
-            yawqcawaywkgqkkq:
-            igkaiscayyickgkg:
-            goto cskuqsmksmimaewq;
-            yauywgkiwqgwmoge:
-            if (!($oegoegssokkyiqam && is_array($oegoegssokkyiqam))) {
-                goto igkaiscayyickgkg;
-            }
-            goto aaiwsawyuaucyeas;
-            kwyiqscekoommuog:
-            $oegoegssokkyiqam = $this->iwqysmawycmsmces();
-            goto geuasysqogwouqaa;
             esyqewcegauewswi:
             
             $this->environment->addExtension(new Extension());
@@ -142,6 +134,10 @@ class Engine extends BaseClass
             
             $this->environment->enableAutoReload();
             goto eakqkewcgqyewkee;
+            asgweagmgkwuaeey:
+            
+            $this->environment->enableDebug();
+            goto awqyqyqeqkciygcg;
             geuasysqogwouqaa:
             $esoowymaimwcuecq = true;
             goto uwoyauwaiqakumuy;
@@ -152,17 +148,21 @@ class Engine extends BaseClass
                 eacucucugqmmwees:
             }
             goto ecoikiciouuikmgs;
+            yawqcawaywkgqkkq:
+            igkaiscayyickgkg:
+            goto cskuqsmksmimaewq;
+            yauywgkiwqgwmoge:
+            if (!($oegoegssokkyiqam && is_array($oegoegssokkyiqam))) {
+                goto igkaiscayyickgkg;
+            }
+            goto aaiwsawyuaucyeas;
+            ecoikiciouuikmgs:
+            uqucqgwcgoqomyuk:
+            goto yawqcawaywkgqkkq;
             uwoyauwaiqakumuy:
             
             $this->loader = new FilesystemLoader();
             goto yauywgkiwqgwmoge;
-            ggmkcyyawgwomqmo:
-            cmkiiseesikwqgou:
-            goto esyqewcegauewswi;
-            eakqkewcgqyewkee:
-            
-            $this->environment->addExtension(new DebugExtension());
-            goto ggmkcyyawgwomqmo;
             keyoygyawmmuiysi:
         } catch (Exception $wgaoewqkwgomoaai) {
             wp_die($this->kyacickkomkioeyu($wgaoewqkwgomoaai));
@@ -186,47 +186,47 @@ class Engine extends BaseClass
     public function siameoooqiiuqgsm($egkyssmuqcwaciya) : ?string
     {
         goto omwseuoiosmmksik;
+        gsikauqawyoasewq:
+        $aiieyweysaukqemc = implode(DIRECTORY_SEPARATOR, $uomewyckeuqoqocu);
+        goto wwuoaqqiaaguyyiu;
+        wwuiqmaaemswyeas:
+        eyeayegkquuoikii:
+        goto kwywuqumeioqgcme;
+        qwcmwosyocyqyomq:
+        if (!$wksoawcgagcgoask) {
+            goto muamuiocsyikcmou;
+        }
+        goto qouwgawyockmkiqw;
+        wqeeammwsuusmyum:
+        
+        $uomewyckeuqoqocu = array_slice($uomewyckeuqoqocu, 3);
+        goto gsikauqawyoasewq;
+        qouwgawyockmkiqw:
+        $uomewyckeuqoqocu = array_map([ManipulateString::class, "\153\x77\x75\x79\141\171\x6b\165\153\143\155\141\x71\x67\x67\x67"], $aiieyweysaukqemc);
+        goto wqeeammwsuusmyum;
+        omwseuoiosmmksik:
+        $mkomwsiykqigmqca = '';
+        goto ikaeueycwmsyseia;
+        waukqcouoysuesec:
+        if (!(is_array($aiieyweysaukqemc) && $aiieyweysaukqemc)) {
+            goto eyeayegkquuoikii;
+        }
+        goto caeakwsemagcwswc;
+        kwywuqumeioqgcme:
+        return $mkomwsiykqigmqca;
+        goto ueuqqoamggagceok;
+        caeakwsemagcwswc:
+        $wksoawcgagcgoask = $this::couwksyewgyeooqe($egkyssmuqcwaciya);
+        goto qwcmwosyocyqyomq;
         uccmgkcygwcoqqmc:
         muamuiocsyikcmou:
         goto wwuiqmaaemswyeas;
         ikaeueycwmsyseia:
         $aiieyweysaukqemc = explode("\134", $egkyssmuqcwaciya);
         goto waukqcouoysuesec;
-        waukqcouoysuesec:
-        if (!(is_array($aiieyweysaukqemc) && $aiieyweysaukqemc)) {
-            goto eyeayegkquuoikii;
-        }
-        goto caeakwsemagcwswc;
-        wqeeammwsuusmyum:
-        
-        $uomewyckeuqoqocu = array_slice($uomewyckeuqoqocu, 3);
-        goto gsikauqawyoasewq;
-        omwseuoiosmmksik:
-        $mkomwsiykqigmqca = '';
-        goto ikaeueycwmsyseia;
-        kwywuqumeioqgcme:
-        return $mkomwsiykqigmqca;
-        goto ueuqqoamggagceok;
         wwuoaqqiaaguyyiu:
         $mkomwsiykqigmqca = "{$wksoawcgagcgoask->aqkmwawoaaigkoyq()}\x2f{$aiieyweysaukqemc}";
         goto uccmgkcygwcoqqmc;
-        gsikauqawyoasewq:
-        $aiieyweysaukqemc = implode(DIRECTORY_SEPARATOR, $uomewyckeuqoqocu);
-        goto wwuoaqqiaaguyyiu;
-        qouwgawyockmkiqw:
-        $uomewyckeuqoqocu = array_map([ManipulateString::class, "\153\167\165\171\x61\x79\153\x75\153\143\155\x61\161\147\x67\147"], $aiieyweysaukqemc);
-        goto wqeeammwsuusmyum;
-        qwcmwosyocyqyomq:
-        if (!$wksoawcgagcgoask) {
-            goto muamuiocsyikcmou;
-        }
-        goto qouwgawyockmkiqw;
-        caeakwsemagcwswc:
-        $wksoawcgagcgoask = $this::couwksyewgyeooqe($egkyssmuqcwaciya);
-        goto qwcmwosyocyqyomq;
-        wwuiqmaaemswyeas:
-        eyeayegkquuoikii:
-        goto kwywuqumeioqgcme;
         ueuqqoamggagceok:
     }
     
@@ -235,10 +235,10 @@ class Engine extends BaseClass
         try {
             goto wwswgqyqcewsqkek;
             qcsiiiieegyokook:
-            $qookweymeqawmcwo = $this->sscegwueamckwmcy($this->ygyygikyocoymgaw("\x74\167\151\147\x5f\x72\145\156\144\x65\162\x5f\x70\141\162\141\x6d\145\164\145\x72\163"), $qookweymeqawmcwo, $uccgemuemkaygecm);
+            $qookweymeqawmcwo = $this->sscegwueamckwmcy($this->ygyygikyocoymgaw("\164\167\x69\147\137\x72\145\156\x64\145\162\137\160\x61\162\x61\x6d\145\x74\145\162\x73"), $qookweymeqawmcwo, $uccgemuemkaygecm);
             goto iaeuoauagoisyium;
             wwswgqyqcewsqkek:
-            $uccgemuemkaygecm = $this->sscegwueamckwmcy($this->ygyygikyocoymgaw("\164\167\x69\x67\x5f\162\x65\x6e\x64\x65\x72\137\146\151\x6c\x65\x6e\141\155\x65"), $uccgemuemkaygecm, $qookweymeqawmcwo);
+            $uccgemuemkaygecm = $this->sscegwueamckwmcy($this->ygyygikyocoymgaw("\164\167\x69\147\x5f\x72\x65\156\x64\145\162\137\146\x69\154\x65\156\x61\155\145"), $uccgemuemkaygecm, $qookweymeqawmcwo);
             goto qcsiiiieegyokook;
             iaeuoauagoisyium:
             
