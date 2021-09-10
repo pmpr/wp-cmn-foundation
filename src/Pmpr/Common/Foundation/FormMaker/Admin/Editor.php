@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b30261f503             |
+    |             613b3993be3fb             |
     |_______________________________________|
 */
 
@@ -13,27 +13,27 @@ class Editor extends Common
 {
     public function kgquecmsgcouyaya()
     {
-        $this->cecaguuoecmccuse("\155\143\145\137\145\x78\164\x65\x72\156\x61\x6c\137\x70\154\x75\147\151\x6e\163", [$this, "\x6f\141\x61\145\x61\x6f\x75\155\x79\x67\155\x67\143\145\x61\x73"]);
+        $this->cecaguuoecmccuse("\155\143\x65\x5f\x65\x78\164\145\x72\x6e\x61\154\x5f\x70\x6c\165\147\x69\156\x73", [$this, "\157\141\x61\x65\x61\157\x75\155\171\x67\155\x67\143\x65\x61\163"]);
         parent::kgquecmsgcouyaya();
     }
     
     public function oaaeaoumygmgceas($mseykiqqcmyesccu)
     {
-        goto uakwkocgsmmiqwic;
-        dwoiwsiguwwggeeo:
-        return $mseykiqqcmyesccu;
-        goto iwsammigwiwcoggi;
+        goto ekweswemiqiisoys;
         iqakeowoosikouai:
-        ogseoooqimcomuyi:
+        $mseykiqqcmyesccu["\x73\x68\x6f\x72\164\x63\x6f\144\x65"] = $this->miocmcoykayoyyau()->get("\x74\151\x6e\171\x6d\143\145\x2d\160\x6c\x75\x67\x69\156\x2e\x6a\163");
         goto dwoiwsiguwwggeeo;
         ekweswemiqiisoys:
-        $mseykiqqcmyesccu["\x73\150\x6f\162\x74\143\157\x64\x65"] = $this->miocmcoykayoyyau()->get("\164\151\x6e\x79\x6d\x63\145\55\x70\154\x75\147\151\156\x2e\x6a\163");
-        goto iqakeowoosikouai;
-        uakwkocgsmmiqwic:
         if (!ManipulatePost::uqwgsuysegkweago([])) {
-            goto ogseoooqimcomuyi;
+            goto uakwkocgsmmiqwic;
         }
-        goto ekweswemiqiisoys;
+        goto iqakeowoosikouai;
         iwsammigwiwcoggi:
+        return $mseykiqqcmyesccu;
+        goto yqciowyyaucoysgy;
+        dwoiwsiguwwggeeo:
+        uakwkocgsmmiqwic:
+        goto iwsammigwiwcoggi;
+        yqciowyyaucoysgy:
     }
 }

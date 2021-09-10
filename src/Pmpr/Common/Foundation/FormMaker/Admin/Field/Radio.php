@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b30261f503             |
+    |             613b3993be3fb             |
     |_______________________________________|
 */
 
@@ -15,22 +15,22 @@ class Radio extends OptionAwareField
     
     public function __construct(?string $aokagokqyuysuksm, ?string $ymqmyyeuycgmigyo, array $qiouiwasaauyaaue = [], ?string $mkqqqewsokcswckc = null)
     {
-        goto ieesuqwoumyssgmi;
-        oucueogegoykuuuy:
-        suweswocokiemugi:
-        goto qyuwuawyyooewwmy;
-        ieesuqwoumyssgmi:
-        if (!(is_array($qiouiwasaauyaaue) && $qiouiwasaauyaaue)) {
-            goto suweswocokiemugi;
-        }
         goto eekwggcsigwsyimk;
         qyuwuawyyooewwmy:
-        parent::__construct("\x72\141\144\151\157", $aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc, $qiouiwasaauyaaue);
+        ieesuqwoumyssgmi:
         goto giseicyyywqmukwu;
-        eekwggcsigwsyimk:
+        oucueogegoykuuuy:
         $this->eyygsasuqmommkua(key($qiouiwasaauyaaue));
-        goto oucueogegoykuuuy;
+        goto qyuwuawyyooewwmy;
         giseicyyywqmukwu:
+        parent::__construct("\162\x61\144\151\x6f", $aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc, $qiouiwasaauyaaue);
+        goto myuauieqiomyewkk;
+        eekwggcsigwsyimk:
+        if (!(is_array($qiouiwasaauyaaue) && $qiouiwasaauyaaue)) {
+            goto ieesuqwoumyssgmi;
+        }
+        goto oucueogegoykuuuy;
+        myuauieqiomyewkk:
     }
     
     public function wmociykwcyesssui() : ?bool
@@ -50,6 +50,6 @@ class Radio extends OptionAwareField
     }
     public function sqoiuykcoueiucgc($pkyyagewkiyckmwy, $wwgucssaecqekuek)
     {
-        return array_merge(["\154\x61\142\145\x6c" => $pkyyagewkiyckmwy], $wwgucssaecqekuek);
+        return array_merge(["\x6c\x61\142\x65\154" => $pkyyagewkiyckmwy], $wwgucssaecqekuek);
     }
 }

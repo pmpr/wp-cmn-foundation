@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b30261f503             |
+    |             613b3993be3fb             |
     |_______________________________________|
 */
 
@@ -19,7 +19,7 @@ class Attribute extends Common
     }
     public function wigskegsqequoeks()
     {
-        $this->qcsmikeggeemccuu("\141\x64\x6d\151\x6e\x5f\151\156\151\x74", [$this, "\171\x65\x79\151\147\165\x79\x65\147\155\x6d\171\165\163\145\141"]);
+        $this->qcsmikeggeemccuu("\141\144\x6d\x69\x6e\x5f\151\156\x69\x74", [$this, "\x79\145\171\151\x67\x75\x79\145\x67\155\155\x79\x75\163\145\141"]);
         parent::wigskegsqequoeks();
     }
     public function yeyiguyegmmyusea()
@@ -28,15 +28,15 @@ class Attribute extends Common
         sawkmwweawsciysi:
         $seyqqsmuaiegkeeq = DecoratorWoocommerce::mqsqiyqiceqasokq();
         goto uiceasouwuawugsq;
+        oagiismqgcciokqw:
+        qqwiwaamsuyeaymq:
+        goto ieaeyoewoiweuuys;
         uiceasouwuawugsq:
         foreach ($seyqqsmuaiegkeeq as $momcykaoccoymeig => $kesssewsiegssiya) {
             Term::ocmycskcuiawkecq($momcykaoccoymeig, $kesssewsiegssiya);
             koicyiceoeymqyee:
         }
         goto oagiismqgcciokqw;
-        oagiismqgcciokqw:
-        qqwiwaamsuyeaymq:
-        goto ieaeyoewoiweuuys;
         ieaeyoewoiweuuys:
     }
     public function iemaakgqgqosiecm()

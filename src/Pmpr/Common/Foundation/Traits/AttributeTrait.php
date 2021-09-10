@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b30261f503             |
+    |             613b3993be3fb             |
     |_______________________________________|
 */
 
@@ -25,15 +25,12 @@ trait AttributeTrait
         swymgyikwmgeocwc:
         yaagosqmegoeuayu:
         goto umkuoceaqoiucmim;
-        qcococyiuemmqkyy:
-        $siquossayskcwkea = $this->ccekeuwwqqoiwuwy();
-        goto cycegeagomyaqcyk;
-        umkuoceaqoiucmim:
-        return $ymkomoccmymcoiea;
-        goto iaawguyeskggqumi;
         iyuykukkmuayayya:
         $ymkomoccmymcoiea = null;
         goto qcococyiuemmqkyy;
+        qcococyiuemmqkyy:
+        $siquossayskcwkea = $this->ccekeuwwqqoiwuwy();
+        goto cycegeagomyaqcyk;
         cycegeagomyaqcyk:
         if (!isset($siquossayskcwkea[$uusmaiomayssaecw])) {
             goto yaagosqmegoeuayu;
@@ -42,6 +39,9 @@ trait AttributeTrait
         ycmkeyowaosmeqcq:
         $ymkomoccmymcoiea = $siquossayskcwkea[$uusmaiomayssaecw];
         goto swymgyikwmgeocwc;
+        umkuoceaqoiucmim:
+        return $ymkomoccmymcoiea;
+        goto iaawguyeskggqumi;
         iaawguyeskggqumi:
     }
     
@@ -59,15 +59,15 @@ trait AttributeTrait
     public function gagmgeyoeegieuso(array $cmkqisoeyioisqaw) : self
     {
         goto oiksuciayusgwsua;
-        sesewseggywgeamc:
-        return $this;
-        goto qmcwuyogkcugmqss;
         oiksuciayusgwsua:
         foreach ($cmkqisoeyioisqaw as $egkyssmuqcwaciya) {
             $this->qigsyyqgewgskemg($egkyssmuqcwaciya);
             owcacaiiayyowwaq:
         }
         goto yommcseewkuckumw;
+        sesewseggywgeamc:
+        return $this;
+        goto qmcwuyogkcugmqss;
         yommcseewkuckumw:
         cmewqmeamawkiigk:
         goto sesewseggywgeamc;
@@ -81,7 +81,7 @@ trait AttributeTrait
     
     public function aeiayqcuemyeackg(string $egkyssmuqcwaciya) : bool
     {
-        return $this->seeegkogcamaigga("\x63\x6c\x61\x73\163", $egkyssmuqcwaciya);
+        return $this->seeegkogcamaigga("\143\154\x61\x73\x73", $egkyssmuqcwaciya);
     }
     
     public function ogaeogwycyqqckeu($uusmaiomayssaecw, $eqgoocgaqwqcimie) : self
@@ -93,29 +93,46 @@ trait AttributeTrait
     public function seeegkogcamaigga($uusmaiomayssaecw, $eqgoocgaqwqcimie = '') : bool
     {
         goto gewsiguqiwckayiu;
-        yykoqaegsqocwkuo:
-        giscewmyyoyggqoc:
-        goto iqiigaoyqmcsiyqu;
-        mgkogwayioiuqgcm:
-        $ymkomoccmymcoiea = explode("\x20", $ymkomoccmymcoiea);
-        goto yykoqaegsqocwkuo;
+        skwewwiigkwyigwe:
+        cqywgmagckmkauqi:
+        goto magceccaecooikmi;
         aeumaioaccqqsuog:
         auuoioqaimmmwqaw:
         goto oqikuaaakmwakkwi;
+        mgkogwayioiuqgcm:
+        $ymkomoccmymcoiea = explode("\40", $ymkomoccmymcoiea);
+        goto yykoqaegsqocwkuo;
+        gewsiguqiwckayiu:
+        $umuecysoywoumgwo = false;
+        goto sgsasqyooquayyss;
+        yykoqaegsqocwkuo:
+        giscewmyyoyggqoc:
+        goto iqiigaoyqmcsiyqu;
+        ukumogccwqyimwyc:
+        yocsqgeyaqesswcm:
+        goto skwewwiigkwyigwe;
+        eoigswoesmsgwcsu:
+        $ymkomoccmymcoiea = $this->waecsyqmwascmqoa($uusmaiomayssaecw);
+        goto iyakugyowcmiuqoi;
         yguywoyayoeuakim:
         goto yocsqgeyaqesswcm;
         goto aeumaioaccqqsuog;
+        iyakugyowcmiuqoi:
+        if ($eqgoocgaqwqcimie && $ymkomoccmymcoiea) {
+            goto auuoioqaimmmwqaw;
+        }
+        goto ouemywaioiewaukw;
         sgsasqyooquayyss:
         if (!$uusmaiomayssaecw) {
             goto cqywgmagckmkauqi;
         }
         goto eoigswoesmsgwcsu;
+        iqiigaoyqmcsiyqu:
+        $umuecysoywoumgwo = in_array($eqgoocgaqwqcimie, $ymkomoccmymcoiea);
+        goto ukumogccwqyimwyc;
         ouemywaioiewaukw:
         $umuecysoywoumgwo = !empty($ymkomoccmymcoiea);
         goto yguywoyayoeuakim;
-        ukumogccwqyimwyc:
-        yocsqgeyaqesswcm:
-        goto skwewwiigkwyigwe;
         magceccaecooikmi:
         return $umuecysoywoumgwo;
         goto qsgwasmoumcwkekq;
@@ -124,23 +141,6 @@ trait AttributeTrait
             goto giscewmyyoyggqoc;
         }
         goto mgkogwayioiuqgcm;
-        skwewwiigkwyigwe:
-        cqywgmagckmkauqi:
-        goto magceccaecooikmi;
-        iqiigaoyqmcsiyqu:
-        $umuecysoywoumgwo = in_array($eqgoocgaqwqcimie, $ymkomoccmymcoiea);
-        goto ukumogccwqyimwyc;
-        gewsiguqiwckayiu:
-        $umuecysoywoumgwo = false;
-        goto sgsasqyooquayyss;
-        iyakugyowcmiuqoi:
-        if ($eqgoocgaqwqcimie && $ymkomoccmymcoiea) {
-            goto auuoioqaimmmwqaw;
-        }
-        goto ouemywaioiewaukw;
-        eoigswoesmsgwcsu:
-        $ymkomoccmymcoiea = $this->waecsyqmwascmqoa($uusmaiomayssaecw);
-        goto iyakugyowcmiuqoi;
         qsgwasmoumcwkekq:
     }
     
@@ -153,36 +153,36 @@ trait AttributeTrait
     public function sueyawuweyoqyeaq(array $siquossayskcwkea) : self
     {
         goto mickaeggaoagsocg;
+        rookcyisouekusai:
+        igqqmukoqiuewgam:
+        goto aaeggsysesayskwc;
+        aaeggsysesayskwc:
+        return $this;
+        goto kqqqeieaswiuykys;
         mickaeggaoagsocg:
         foreach ($siquossayskcwkea as $uusmaiomayssaecw => $eqgoocgaqwqcimie) {
             $this->igmaewykumgwoaoy($uusmaiomayssaecw, $eqgoocgaqwqcimie);
             wyaigkaacmyogusc:
         }
         goto rookcyisouekusai;
-        aaeggsysesayskwc:
-        return $this;
-        goto kqqqeieaswiuykys;
-        rookcyisouekusai:
-        igqqmukoqiuewgam:
-        goto aaeggsysesayskwc;
         kqqqeieaswiuykys:
     }
     
     public function eycskusaeseuwiyc(array $siquossayskcwkea) : self
     {
         goto wcyikusayywiuiia;
-        wcyikusayywiuiia:
-        foreach ($siquossayskcwkea as $uusmaiomayssaecw => $eqgoocgaqwqcimie) {
-            $this->qcgocuceocquqcuw($uusmaiomayssaecw, $eqgoocgaqwqcimie);
-            qsogsookkesyksee:
-        }
-        goto weiswmsaqamyisoo;
         weiswmsaqamyisoo:
         ucmqwkqykgagwyim:
         goto iggysouawgiwywau;
         iggysouawgiwywau:
         return $this;
         goto qyyoqyesekyggyua;
+        wcyikusayywiuiia:
+        foreach ($siquossayskcwkea as $uusmaiomayssaecw => $eqgoocgaqwqcimie) {
+            $this->qcgocuceocquqcuw($uusmaiomayssaecw, $eqgoocgaqwqcimie);
+            qsogsookkesyksee:
+        }
+        goto weiswmsaqamyisoo;
         qyyoqyesekyggyua:
     }
 }

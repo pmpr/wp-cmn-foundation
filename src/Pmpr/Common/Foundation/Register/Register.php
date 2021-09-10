@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b30261f503             |
+    |             613b3993be3fb             |
     |_______________________________________|
 */
 
@@ -118,17 +118,17 @@ abstract class Register
     
     public function wiskakymeaywyeuw($cyiwaggmwimigmcc) : self
     {
-        goto mqeacwmeqkoqmqko;
-        gecymmgumgauakae:
-        return $this;
-        goto ykoogomowmiquuem;
-        tkeoceysmquieskw:
-        $this->soeowumgcwuiaica(true);
-        goto gecymmgumgauakae;
-        mqeacwmeqkoqmqko:
+        goto woomeusquuuqekig;
+        woomeusquuuqekig:
         $this->showInMenu = $cyiwaggmwimigmcc;
-        goto tkeoceysmquieskw;
-        ykoogomowmiquuem:
+        goto mcwswowewmqqckqw;
+        uggeicmsysmmaqqc:
+        return $this;
+        goto qawueqwiyeiyecce;
+        mcwswowewmqqckqw:
+        $this->soeowumgcwuiaica(true);
+        goto uggeicmsysmmaqqc;
+        qawueqwiyeiyecce:
     }
     
     public function egockcwgmeocqeqc()
@@ -138,20 +138,20 @@ abstract class Register
     
     public function wsekoqmcyeuyegam() : self
     {
-        goto qaikucmemsqmosyg;
-        semmqugkwwqweawm:
-        $this->ckwgqocyuaysggma("\146\x65\145\144\163", true);
-        goto kaucouscgsawawys;
-        kaucouscgsawawys:
-        $this->ckwgqocyuaysggma("\x70\141\x67\x65\163", true);
-        goto ucsssaiqcemkkmkc;
-        ucsssaiqcemkkmkc:
-        return $this->ckwgqocyuaysggma("\x77\151\164\150\x5f\x66\x72\x6f\156\x74", true);
-        goto yuoiuagyeoygsycm;
-        qaikucmemsqmosyg:
+        goto oumqmgawoewueoio;
+        msouaocmygwukeos:
+        $this->ckwgqocyuaysggma("\x66\x65\145\144\163", true);
+        goto euyiicoiumuescuk;
+        gyauoqayaysycwwa:
+        return $this->ckwgqocyuaysggma("\x77\x69\x74\150\x5f\x66\x72\x6f\x6e\x74", true);
+        goto kcgykyaakyymmgca;
+        euyiicoiumuescuk:
+        $this->ckwgqocyuaysggma("\x70\141\x67\145\x73", true);
+        goto gyauoqayaysycwwa;
+        oumqmgawoewueoio:
         $this->zmqimouwawekqymc(true);
-        goto semmqugkwwqweawm;
-        yuoiuagyeoygsycm:
+        goto msouaocmygwukeos;
+        kcgykyaakyymmgca:
     }
     
     public function myysgyqcumekoueo() : self
@@ -167,17 +167,17 @@ abstract class Register
     
     public function zmqimouwawekqymc($ioqywyyeioqywogw = true) : self
     {
-        goto cocuuoguowasocye;
-        owswwyqyusisgwme:
-        return $this->swwukuywuokaeeoa($ioqywyyeioqywogw);
-        goto myggyowooawikgoi;
-        qakcaquyeuguwues:
+        goto agokgacocekqqaaw;
+        ugkwawscyiogikmg:
         $this->ooeieggkeaaqggki($ioqywyyeioqywogw);
-        goto owswwyqyusisgwme;
-        cocuuoguowasocye:
+        goto ouggemmeccgmecei;
+        ouggemmeccgmecei:
+        return $this->swwukuywuokaeeoa($ioqywyyeioqywogw);
+        goto sagesqcycossmmcy;
+        agokgacocekqqaaw:
         $this->iimaygsyckkaemwo($ioqywyyeioqywogw);
-        goto qakcaquyeuguwues;
-        myggyowooawikgoi:
+        goto ugkwawscyiogikmg;
+        sagesqcycossmmcy:
     }
     
     public function gucwmccyimoagwcm(string $ukwokcuqauuosmoo) : self
@@ -199,20 +199,20 @@ abstract class Register
     
     public function aciuwyaykiaeaske(array $iwkyyocymeukcceu) : self
     {
-        goto giaamqkcsgokqgqm;
-        kksaeyuekaaessaa:
+        goto ygyasaouaeomcook;
+        yoyuemoqqmcamysy:
         return $this;
-        goto yagmeysqkyagckyg;
-        giaamqkcsgokqgqm:
+        goto iaaakumgaeogkyau;
+        ygyasaouaeomcook:
         foreach ($iwkyyocymeukcceu as $uusmaiomayssaecw => $pkyyagewkiyckmwy) {
             $this->iwooyissgqockkka($uusmaiomayssaecw, $pkyyagewkiyckmwy);
-            iyuycauougyasiiq:
+            gyeoaqyauigkuyuw:
         }
-        goto kqieuqgsocqgaesw;
-        kqieuqgsocqgaesw:
-        iwwsukcmssaaeqoq:
-        goto kksaeyuekaaessaa;
-        yagmeysqkyagckyg:
+        goto kywsoesguwyeukuk;
+        kywsoesguwyeukuk:
+        kwkumyugkkscqsqa:
+        goto yoyuemoqqmcamysy;
+        iaaakumgaeogkyau:
     }
     
     public function uikgwcuascgeissw(string $uusmaiomayssaecw) : ?string
@@ -222,60 +222,60 @@ abstract class Register
     
     public function eoemoqciaweskqkk() : ?array
     {
-        goto kkawsaququwoqkga;
-        kkawsaququwoqkga:
+        goto qwckkegewuioawok;
+        qwckkegewuioawok:
         if ($this->labels) {
-            goto sowgacwmiukqyequ;
+            goto ywqqcwwikuaqgswy;
         }
-        goto kaeeaeaqemqkimki;
-        kaeeaeaqemqkimki:
+        goto gmiqeasocceqcmyy;
+        gmiqeasocceqcmyy:
         $this->jsgkawekewookomk();
-        goto iaagogeaaawgsacg;
-        iaagogeaaawgsacg:
-        sowgacwmiukqyequ:
-        goto uiyuqwmuyicmukgs;
-        uiyuqwmuyicmukgs:
+        goto oosmoaqgqegqmecm;
+        eksiecgiomucusou:
         return $this->labels;
-        goto wuiomwwygyismoke;
-        wuiomwwygyismoke:
+        goto gweewkicumqyakeo;
+        oosmoaqgqegqmecm:
+        ywqqcwwikuaqgswy:
+        goto eksiecgiomucusou;
+        gweewkicumqyakeo:
     }
     
     public function iqoguoscqueomqsk(array $sksmomeiauyqaomi) : self
     {
-        goto awyakmgqyaksucso;
-        soigaomwwmwqqsqe:
+        goto eeawuswkssoumcqq;
+        qwycyuqsagqcyeau:
+        ceooomymweuccyke:
+        goto wgagciiiyokkccaw;
+        wgagciiiyokkccaw:
         return $this;
-        goto gkeegeyqgwcqsaqi;
-        awyakmgqyaksucso:
+        goto swusasqsywoymauc;
+        eeawuswkssoumcqq:
         foreach ($sksmomeiauyqaomi as $uusmaiomayssaecw => $eogowigeyucaauig) {
             $this->ockgcoiccyiuuwue($uusmaiomayssaecw, $eogowigeyucaauig);
-            giwoykisgksecowe:
+            qsseaomwyuequyuc:
         }
-        goto xkqgegowecakaogy;
-        xkqgegowecakaogy:
-        qmaeagoqeukouayc:
-        goto soigaomwwmwqqsqe;
-        gkeegeyqgwcqsaqi:
+        goto qwycyuqsagqcyeau;
+        swusasqsywoymauc:
     }
     
     public function ggqekkkocygywmoy() : ?array
     {
-        goto miimeciguswkagcm;
-        mkkwcsmomimsckmo:
-        $this->ockgcoiccyiuuwue("\155\141\x6e\141\x67\145\x5f\x6f\160\164\x69\157\x6e\163");
-        goto yyoogmukueyocgeo;
-        yyoogmukueyocgeo:
-        ukiquuoaawuemuwm:
-        goto iougwygwasqmesuw;
-        iougwygwasqmesuw:
-        return $this->capabilities;
-        goto aiqykgkokmqqocwg;
-        miimeciguswkagcm:
+        goto kgeouqmockmeqamy;
+        muymgykqieiyymqq:
+        $this->ockgcoiccyiuuwue("\155\141\x6e\141\147\145\x5f\x6f\160\164\x69\x6f\156\x73");
+        goto caiggmogoqgosgka;
+        caiggmogoqgosgka:
+        yuqgckkmggeecmcu:
+        goto mggwwmagesiaegsg;
+        kgeouqmockmeqamy:
         if ($this->capabilities) {
-            goto ukiquuoaawuemuwm;
+            goto yuqgckkmggeecmcu;
         }
-        goto mkkwcsmomimsckmo;
-        aiqykgkokmqqocwg:
+        goto muymgykqieiyymqq;
+        mggwwmagesiaegsg:
+        return $this->capabilities;
+        goto aciwauiwiuckcckm;
+        aciwauiwiuckcckm:
     }
     
     public function gwaeeegmgggawiyi(string $uusmaiomayssaecw)
@@ -285,54 +285,54 @@ abstract class Register
     
     public function ockgcoiccyiuuwue(?string $uusmaiomayssaecw = null, string $eogowigeyucaauig = '') : self
     {
-        goto wigyoouuiyaysasc;
-        waeeesmmsacwaaoa:
-        goto igmogosqsaiksoya;
-        goto muqokomgakwuiisc;
-        heyuwyceiewkimiu:
-        $this->capabilities[$uusmaiomayssaecw] = $eogowigeyucaauig;
-        goto ciiouaecyaoqacak;
-        ywwmasggauwqgiys:
-        $this->capabilities[] = $eogowigeyucaauig;
-        goto waeeesmmsacwaaoa;
-        ciiouaecyaoqacak:
-        igmogosqsaiksoya:
-        goto esuyscuayyikcwwu;
-        muqokomgakwuiisc:
-        kwgwaowiuagqockc:
-        goto heyuwyceiewkimiu;
-        wigyoouuiyaysasc:
+        goto omskesmswmwcyqog;
+        omskesmswmwcyqog:
         if ($uusmaiomayssaecw) {
-            goto kwgwaowiuagqockc;
+            goto mukmqcgqiyskioqg;
         }
-        goto ywwmasggauwqgiys;
-        esuyscuayyikcwwu:
+        goto uiwwogwqcoyqgqws;
+        lemqkucuseomiegm:
+        goto qoywwuqkqwgkgomu;
+        goto kysegkcsysgsocum;
+        uukawameoimyycmi:
+        $this->capabilities[$uusmaiomayssaecw] = $eogowigeyucaauig;
+        goto mwuwcsuwecyqmyme;
+        kysegkcsysgsocum:
+        mukmqcgqiyskioqg:
+        goto uukawameoimyycmi;
+        mwuwcsuwecyqmyme:
+        qoywwuqkqwgkgomu:
+        goto kqoyicwkeiqacumi;
+        uiwwogwqcoyqgqws:
+        $this->capabilities[] = $eogowigeyucaauig;
+        goto lemqkucuseomiegm;
+        kqoyicwkeiqacumi:
         return $this;
-        goto coyiuicwequccqoy;
-        coyiuicwequccqoy:
+        goto euayuoscsqgcwoco;
+        euayuoscsqgcwoco:
     }
     
     public function ckwgqocyuaysggma(string $uusmaiomayssaecw, $eqgoocgaqwqcimie) : self
     {
-        goto mwmcmswsggukkcei;
-        miiiiqmymyqkkoos:
-        return $this;
-        goto uecqkgmguskwausu;
-        qeccuawaemcqssuk:
+        goto uuocckquiogqceuq;
+        mssgmiumamgawcik:
         $this->rewrite = [];
-        goto gksasoiwiaceowkg;
-        gksasoiwiaceowkg:
-        wakyiiuceqggyyyu:
-        goto maemyookcuoiqmik;
-        maemyookcuoiqmik:
+        goto ausccuiqiucusomk;
+        eccqqigoouugsysq:
         $this->rewrite[$uusmaiomayssaecw] = $eqgoocgaqwqcimie;
-        goto miiiiqmymyqkkoos;
-        mwmcmswsggukkcei:
+        goto qooeamikmycgiyse;
+        ausccuiqiucusomk:
+        uommomyecokquyes:
+        goto eccqqigoouugsysq;
+        uuocckquiogqceuq:
         if (is_array($this->rewrite)) {
-            goto wakyiiuceqggyyyu;
+            goto uommomyecokquyes;
         }
-        goto qeccuawaemcqssuk;
-        uecqkgmguskwausu:
+        goto mssgmiumamgawcik;
+        qooeamikmycgiyse:
+        return $this;
+        goto cggoissgmskoycqy;
+        cggoissgmskoycqy:
     }
     
     public function wqmmmaeygqosciii()
@@ -347,20 +347,20 @@ abstract class Register
     
     public function iosciegmiqwoaauk(array $yesgcwqgyogqwkum)
     {
-        goto esaggsqoamgyguem;
-        osgawwyuaegkasms:
-        aasoskwecamqssmy:
-        goto auegygmkkiqsgwsc;
-        auegygmkkiqsgwsc:
+        goto sycmggisamuqcmqm;
+        kqkwquycsmecsyoa:
+        waasqesguuugkyki:
+        goto eyweqiugyoewuqks;
+        eyweqiugyoewuqks:
         return $this;
-        goto iqocscomgkciyiwe;
-        esaggsqoamgyguem:
+        goto ecgwiyooacwymoum;
+        sycmggisamuqcmqm:
         foreach ($yesgcwqgyogqwkum as $uusmaiomayssaecw => $squgkkgwywimowua) {
             $this->ckwgqocyuaysggma($uusmaiomayssaecw, $squgkkgwywimowua);
-            ggwmmgogwmqokkoq:
+            mksiaogycqumieig:
         }
-        goto osgawwyuaegkasms;
-        iqocscomgkciyiwe:
+        goto kqkwquycsmecsyoa;
+        ecgwiyooacwymoum:
     }
     
     public function ooeieggkeaaqggki($emmugacswycqccku)
@@ -405,22 +405,22 @@ abstract class Register
     
     public function qgsieamsswkgysow(array $ywmkwiwkosakssii = []) : void
     {
-        goto gosgauymqceykgek;
-        uysygigskiiwsckq:
+        goto wqgwguwaoomgaiik;
+        gyaowmgukagqyoeq:
+        $this->ckwgqocyuaysggma("\x73\154\165\x67", $this->aakmagwggmkoiiyu());
+        goto ucycmogwkmqoqycw;
+        maeqicokuuskkcac:
         $this->jsgkawekewookomk();
-        goto woomeusquuuqekig;
-        gosgauymqceykgek:
-        if ($this->kuggecgwaickowwu("\x73\154\x75\x67")) {
-            goto yqqyiokywmggkmke;
+        goto cqgimwmuwikgaguk;
+        ucycmogwkmqoqycw:
+        oigccucsmoiegsic:
+        goto maeqicokuuskkcac;
+        wqgwguwaoomgaiik:
+        if ($this->kuggecgwaickowwu("\x73\154\165\147")) {
+            goto oigccucsmoiegsic;
         }
-        goto eyqggcokeuakaskk;
-        uqskcceawegkiakk:
-        yqqyiokywmggkmke:
-        goto uysygigskiiwsckq;
-        eyqggcokeuakaskk:
-        $this->ckwgqocyuaysggma("\x73\x6c\x75\147", $this->aakmagwggmkoiiyu());
-        goto uqskcceawegkiakk;
-        woomeusquuuqekig:
+        goto gyaowmgukagqyoeq;
+        cqgimwmuwikgaguk:
     }
     public abstract function jsgkawekewookomk();
 }

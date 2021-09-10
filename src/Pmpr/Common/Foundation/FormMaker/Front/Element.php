@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b30261f503             |
+    |             613b3993be3fb             |
     |_______________________________________|
 */
 
@@ -21,7 +21,7 @@ use Pmpr\Common\Foundation\Traits\ToArrayTrait;
 
 class Element implements ConstantInterface
 {
-    const CHILD_CONTENT = "\173\173\x20\x63\150\x69\x6c\144\137\143\157\156\164\145\x6e\x74\40\x7d\x7d";
+    const CHILD_CONTENT = "\x7b\x7b\40\x63\x68\x69\x6c\x64\137\x63\x6f\156\x74\x65\156\x74\40\175\175";
     use FieldTrait, ToArrayTrait, ElementTrait, TemplateTrait, ComponentTrait, AttributeTrait;
     
     protected ?string $id = null;
@@ -32,17 +32,17 @@ class Element implements ConstantInterface
     
     public function __construct(string $kqywgoqsmuswammk, ?string $aokagokqyuysuksm = null)
     {
-        goto ccaqwykysccwusuu;
-        ccaqwykysccwusuu:
-        $this->id = $aokagokqyuysuksm;
         goto aaweqykeggcaosyw;
-        iswwimckkkeokgcm:
+        massqqageicawcwa:
         $this->igmaewykumgwoaoy(self::ID, $aokagokqyuysuksm);
+        goto iuqqyoswkewaikma;
+        iswwimckkkeokgcm:
+        $this->element = $kqywgoqsmuswammk;
         goto massqqageicawcwa;
         aaweqykeggcaosyw:
-        $this->element = $kqywgoqsmuswammk;
+        $this->id = $aokagokqyuysuksm;
         goto iswwimckkkeokgcm;
-        massqqageicawcwa:
+        iuqqyoswkewaikma:
     }
     
     public function mwikyscisascoeea() : ?string
@@ -90,68 +90,68 @@ class Element implements ConstantInterface
     
     public function render($ywmkwiwkosakssii = []) : ?string
     {
-        goto egqwsykqosqsqmei;
-        auqymasgagkmkeqe:
-        $omwmuycmeqcqokom = $this->ygqycmmkoiuocoia();
-        goto xmiymoymswickcuu;
+        goto qegsskwcwiykcies;
         ecgeqsyqmqewqwao:
-        $nsmgceoqaqogqmuw = $this->ggiwigqywkaqogkk($nsmgceoqaqogqmuw);
-        goto auqymasgagkmkeqe;
-        eesyagkqmooggswo:
-        ekauocuwoyemsqsq:
-        goto omgkugwoikiiyouo;
-        qckiyyomwgamwowy:
-        if (!($nsmgceoqaqogqmuw && $qkqgooeegwokcmay && str_contains($qkqgooeegwokcmay, self::CHILD_CONTENT))) {
-            goto iuqqyoswkewaikma;
-        }
-        goto qsegmmyuaaegggwc;
-        iqaoqcwemuamiywa:
-        $wwgucssaecqekuek = array_filter($this->ccekeuwwqqoiwuwy());
-        goto gssiyeaqueiauaak;
-        eoeiuweemoocwwco:
-        echo $nsmgceoqaqogqmuw;
-        goto eesyagkqmooggswo;
-        qsegmmyuaaegggwc:
-        $nsmgceoqaqogqmuw = str_replace(self::CHILD_CONTENT, $nsmgceoqaqogqmuw, $qkqgooeegwokcmay);
-        goto ssmwsoeooqmocwoc;
-        gssiyeaqueiauaak:
         $nsmgceoqaqogqmuw = ManipulateHTML::qgsekwygcgawekeq($kqywgoqsmuswammk, $wwgucssaecqekuek, true, $this->souwykwwmyygqyqi());
-        goto ecgeqsyqmqewqwao;
+        goto auqymasgagkmkeqe;
+        auqymasgagkmkeqe:
+        $nsmgceoqaqogqmuw = $this->ggiwigqywkaqogkk($nsmgceoqaqogqmuw);
+        goto xmiymoymswickcuu;
         ssmwsoeooqmocwoc:
-        iuqqyoswkewaikma:
+        $nsmgceoqaqogqmuw = str_replace(self::CHILD_CONTENT, $nsmgceoqaqogqmuw, $qkqgooeegwokcmay);
         goto gqyasuaqiccikqiu;
-        ecegkmqcqocseacg:
-        $qkqgooeegwokcmay = $omwmuycmeqcqokom->render();
-        goto qckiyyomwgamwowy;
-        moqqkweuiqogoecm:
-        $nsmgceoqaqogqmuw = $this->eiieguqemowyacgi($nsmgceoqaqogqmuw);
-        goto amkmgqciseuyuswu;
         xmiymoymswickcuu:
-        if (!$omwmuycmeqcqokom) {
-            goto waisuqycssimesui;
-        }
+        $omwmuycmeqcqokom = $this->ygqycmmkoiuocoia();
         goto aymmqkugquckkuom;
-        omgkugwoikiiyouo:
-        return $nsmgceoqaqogqmuw;
-        goto msqyagckiemcggqi;
-        aymmqkugquckkuom:
-        $nsmgceoqaqogqmuw = $this->assmkuqekscwausm($nsmgceoqaqogqmuw);
-        goto ecegkmqcqocseacg;
-        amkmgqciseuyuswu:
-        if (!$ywmkwiwkosakssii["\x65\143\150\x6f"]) {
-            goto ekauocuwoyemsqsq;
-        }
-        goto eoeiuweemoocwwco;
         gqyasuaqiccikqiu:
         waisuqycssimesui:
         goto moqqkweuiqogoecm;
+        omgkugwoikiiyouo:
         egqwsykqosqsqmei:
-        $ywmkwiwkosakssii = ManipulateFormat::omaawkkwwyesqwcc($ywmkwiwkosakssii, ["\x65\143\150\157" => false]);
-        goto qegsskwcwiykcies;
-        qegsskwcwiykcies:
-        $kqywgoqsmuswammk = $this->qqimkcgcmeewwwei();
-        goto iqaoqcwemuamiywa;
+        goto msqyagckiemcggqi;
+        ecegkmqcqocseacg:
+        $nsmgceoqaqogqmuw = $this->assmkuqekscwausm($nsmgceoqaqogqmuw);
+        goto qckiyyomwgamwowy;
         msqyagckiemcggqi:
+        return $nsmgceoqaqogqmuw;
+        goto oewgqkuscaaqgocc;
+        aymmqkugquckkuom:
+        if (!$omwmuycmeqcqokom) {
+            goto ekauocuwoyemsqsq;
+        }
+        goto ecegkmqcqocseacg;
+        qegsskwcwiykcies:
+        $ywmkwiwkosakssii = ManipulateFormat::omaawkkwwyesqwcc($ywmkwiwkosakssii, ["\x65\143\150\157" => false]);
+        goto iqaoqcwemuamiywa;
+        eoeiuweemoocwwco:
+        if (!$ywmkwiwkosakssii["\145\143\150\x6f"]) {
+            goto egqwsykqosqsqmei;
+        }
+        goto eesyagkqmooggswo;
+        gssiyeaqueiauaak:
+        $wwgucssaecqekuek = array_filter($this->ccekeuwwqqoiwuwy());
+        goto ecgeqsyqmqewqwao;
+        eesyagkqmooggswo:
+        echo $nsmgceoqaqogqmuw;
+        goto omgkugwoikiiyouo;
+        iqaoqcwemuamiywa:
+        $kqywgoqsmuswammk = $this->qqimkcgcmeewwwei();
+        goto gssiyeaqueiauaak;
+        qsegmmyuaaegggwc:
+        if (!($nsmgceoqaqogqmuw && $qkqgooeegwokcmay && str_contains($qkqgooeegwokcmay, self::CHILD_CONTENT))) {
+            goto waisuqycssimesui;
+        }
+        goto ssmwsoeooqmocwoc;
+        amkmgqciseuyuswu:
+        $nsmgceoqaqogqmuw = $this->eiieguqemowyacgi($nsmgceoqaqogqmuw);
+        goto eoeiuweemoocwwco;
+        moqqkweuiqogoecm:
+        ekauocuwoyemsqsq:
+        goto amkmgqciseuyuswu;
+        qckiyyomwgamwowy:
+        $qkqgooeegwokcmay = $omwmuycmeqcqokom->render();
+        goto qsegmmyuaaegggwc;
+        oewgqkuscaaqgocc:
     }
     
     public function ggiwigqywkaqogkk(?string $nsmgceoqaqogqmuw) : ?string

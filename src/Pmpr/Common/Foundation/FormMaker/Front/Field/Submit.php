@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b30261f503             |
+    |             613b3993be3fb             |
     |_______________________________________|
 */
 
@@ -15,22 +15,22 @@ class Submit extends Button
     
     public function __construct(?string $aokagokqyuysuksm, string $pkyyagewkiyckmwy = null)
     {
-        goto cuuaywiycieugooq;
-        qikgswsucicammsu:
-        $this->qigsyyqgewgskemg("\x62\x74\x6e\55\x70\162\151\155\141\x72\171");
-        goto saooicamakkcaiie;
-        cuuaywiycieugooq:
-        parent::__construct($aokagokqyuysuksm, $pkyyagewkiyckmwy);
         goto qikgswsucicammsu;
+        qikgswsucicammsu:
+        parent::__construct($aokagokqyuysuksm, $pkyyagewkiyckmwy);
+        goto saooicamakkcaiie;
         saooicamakkcaiie:
-        $this->igmaewykumgwoaoy("\x74\171\160\145", "\x73\165\142\x6d\151\164");
+        $this->qigsyyqgewgskemg("\142\164\x6e\55\x70\x72\x69\x6d\141\x72\x79");
         goto iksmqqwswkyygmyw;
         iksmqqwswkyygmyw:
+        $this->igmaewykumgwoaoy("\x74\171\x70\145", "\163\165\x62\x6d\x69\x74");
+        goto gmomkuwegquasyku;
+        gmomkuwegquasyku:
     }
     
     public function ieoqemcqwqowuwie($eaoumsseceiowgsk) : self
     {
-        $this->igmaewykumgwoaoy("\146\157\162\x6d", $eaoumsseceiowgsk);
+        $this->igmaewykumgwoaoy("\x66\x6f\162\x6d", $eaoumsseceiowgsk);
         return $this;
     }
 }

@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b30261f503             |
+    |             613b3993be3fb             |
     |_______________________________________|
 */
 
@@ -12,24 +12,24 @@ class Tool extends Page
 {
     public function __construct()
     {
-        goto coysugskuiuggwke;
-        cmqiucseesyaamww:
-        if ($this->cgugaaoykcyiomuk()) {
-            goto meqocakwgoyugmso;
-        }
-        goto oacssuuogqgskmgc;
-        oacssuuogqgskmgc:
-        $this->parentMenu = "\x74\x6f\157\x6c\x73\56\x70\x68\x70";
-        goto mqgqekesggaiiwss;
-        coysugskuiuggwke:
-        $this->type = "\164\157\157\x6c\x73";
         goto cmqiucseesyaamww;
+        cmqiucseesyaamww:
+        $this->type = "\x74\157\x6f\x6c\163";
+        goto oacssuuogqgskmgc;
         csaykuwkommwweoy:
-        parent::__construct();
+        coysugskuiuggwke:
         goto wgakokiswkmwewqk;
+        oacssuuogqgskmgc:
+        if ($this->cgugaaoykcyiomuk()) {
+            goto coysugskuiuggwke;
+        }
+        goto mqgqekesggaiiwss;
         mqgqekesggaiiwss:
-        meqocakwgoyugmso:
+        $this->parentMenu = "\164\x6f\157\x6c\x73\x2e\x70\x68\160";
         goto csaykuwkommwweoy;
         wgakokiswkmwewqk:
+        parent::__construct();
+        goto iquugosgiekiimqa;
+        iquugosgiekiimqa:
     }
 }

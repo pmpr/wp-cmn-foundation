@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b30261f503             |
+    |             613b3993be3fb             |
     |_______________________________________|
 */
 
@@ -16,99 +16,99 @@ class ManipulateHook extends Manipulate
     
     public static function ygyygikyocoymgaw($ymqmyyeuycgmigyo, $quowyokcwswmuois = null, $ykuqcwwmuyqmkisq = true)
     {
-        goto ycyukikioeesmosk;
-        koywwayicykawmsw:
-        if (!$ykuqcwwmuyqmkisq) {
-            goto ogcucyqcaawqsikk;
-        }
-        goto iewuoiiumywkmwwi;
-        oigskyaeyywyscoi:
-        agwwockuoekeayoe:
-        goto asecysweauowukym;
-        sgsowgqykyceieqs:
-        if ($iaakskwmyqceoscy) {
-            goto pgkmykoemkssyciw;
-        }
-        goto uawiiskiyascymig;
-        ioaiogagwmswaiyu:
+        goto iugwomcaqisasuky;
+        ekumceoygmcomees:
         if ($icgkamwwakkgigsi) {
-            goto agwwockuoekeayoe;
+            goto eewyeiukoacqwemo;
         }
-        goto ckamssoyigceqkqe;
-        ikiqwwyuwiqkgoqq:
-        pgkmykoemkssyciw:
-        goto qqyeoguyyawwacyi;
-        iewuoiiumywkmwwi:
-        $icgkamwwakkgigsi[$iaakskwmyqceoscy] = $ymqmyyeuycgmigyo;
-        goto yiooaygkcosiouiq;
-        aceokuucoumoawei:
-        global $icgkamwwakkgigsi;
-        goto ioaiogagwmswaiyu;
-        uawiiskiyascymig:
-        if ($quowyokcwswmuois) {
-            goto ogoigckgkacomgsw;
-        }
-        goto mwgogaswksgaiggw;
-        igawggssmuyywoiw:
-        if (!in_array($ymqmyyeuycgmigyo, $icgkamwwakkgigsi)) {
-            goto maimcygiikgukege;
-        }
-        goto omsmasoumqusgusq;
-        asecysweauowukym:
-        $iaakskwmyqceoscy = '';
-        goto igawggssmuyywoiw;
-        cucceeyaayakweic:
-        maimcygiikgukege:
-        goto oqigaksscaygqcyg;
-        omsmasoumqusgusq:
-        $ksiyqouuaoymsycg = array_search($ymqmyyeuycgmigyo, $icgkamwwakkgigsi);
-        goto keoqugaesaeocwky;
-        oqigaksscaygqcyg:
-        cecqqywgssugeikg:
-        goto sgsowgqykyceieqs;
-        kyycgosayogwiose:
+        goto amseqymsmoukemqc;
+        skwaemgcggqqakyk:
         $iaakskwmyqceoscy = $ksiyqouuaoymsycg;
-        goto uikosuscmyagkucg;
-        oigewwwkwggioeom:
-        $iaakskwmyqceoscy = "{$quowyokcwswmuois}\x5f{$ymqmyyeuycgmigyo}";
-        goto gwciqqammeugmyic;
-        uikosuscmyagkucg:
-        qqcagaaisccuygwq:
-        goto cucceeyaayakweic;
-        eaesqqacyqsmmasw:
-        if (!$ykuqcwwmuyqmkisq) {
-            goto cecqqywgssugeikg;
-        }
-        goto aceokuucoumoawei;
-        keoqugaesaeocwky:
-        if (!$ksiyqouuaoymsycg) {
-            goto qqcagaaisccuygwq;
-        }
-        goto kyycgosayogwiose;
-        gwciqqammeugmyic:
-        aqqaecewqeqyecge:
-        goto koywwayicykawmsw;
-        mwgogaswksgaiggw:
-        $iaakskwmyqceoscy = $ymqmyyeuycgmigyo;
-        goto imkcoqicusaaieiq;
-        qqyeoguyyawwacyi:
+        goto ukqksoomoiqkqeuy;
+        qymqsuuewomqcaeo:
         return $iaakskwmyqceoscy;
-        goto waqguwsseiamucog;
-        ycyukikioeesmosk:
-        $iaakskwmyqceoscy = '';
-        goto eaesqqacyqsmmasw;
-        ckamssoyigceqkqe:
+        goto euaoayywcugwiqcs;
+        goikkusagcqiueia:
+        global $icgkamwwakkgigsi;
+        goto ekumceoygmcomees;
+        ssiskmwmkioiekyc:
+        gssggekuuyieykma:
+        goto wkcoeuicokyouscs;
+        ywmuaqcsgamygwmc:
+        $ksiyqouuaoymsycg = array_search($ymqmyyeuycgmigyo, $icgkamwwakkgigsi);
+        goto kaasmkwkyekaqmao;
+        oskcyycaeyocgkmk:
+        $iaakskwmyqceoscy = "{$quowyokcwswmuois}\137{$ymqmyyeuycgmigyo}";
+        goto ssiskmwmkioiekyc;
+        csaagucuusgmywum:
+        if (!in_array($ymqmyyeuycgmigyo, $icgkamwwakkgigsi)) {
+            goto aygsaywukmgmmmga;
+        }
+        goto ywmuaqcsgamygwmc;
+        amseqymsmoukemqc:
         $icgkamwwakkgigsi = [];
-        goto oigskyaeyywyscoi;
-        yiooaygkcosiouiq:
-        ogcucyqcaawqsikk:
-        goto ikiqwwyuwiqkgoqq;
-        imkcoqicusaaieiq:
-        goto aqqaecewqeqyecge;
-        goto eiugaasyaiggaoem;
-        eiugaasyaiggaoem:
-        ogoigckgkacomgsw:
-        goto oigewwwkwggioeom;
-        waqguwsseiamucog:
+        goto soiyeoosqoccwgok;
+        wumysioiwaowecwu:
+        $iaakskwmyqceoscy = '';
+        goto csaagucuusgmywum;
+        gygiwsukqcagwaag:
+        if ($iaakskwmyqceoscy) {
+            goto sqmsyiusquicscmk;
+        }
+        goto mqseemqskkccscao;
+        aceymkkwuiwokgqa:
+        if (!$ykuqcwwmuyqmkisq) {
+            goto qiayaasuoqeekmeo;
+        }
+        goto goikkusagcqiueia;
+        cyawyoyeemeumigc:
+        ussaosamaumyaucq:
+        goto sigkaiakeykkoqsu;
+        wkcoeuicokyouscs:
+        if (!$ykuqcwwmuyqmkisq) {
+            goto ussaosamaumyaucq;
+        }
+        goto iysgqwiceiuegqmm;
+        iysgqwiceiuegqmm:
+        $icgkamwwakkgigsi[$iaakskwmyqceoscy] = $ymqmyyeuycgmigyo;
+        goto cyawyoyeemeumigc;
+        kaasmkwkyekaqmao:
+        if (!$ksiyqouuaoymsycg) {
+            goto ioequayqasmcmsyw;
+        }
+        goto skwaemgcggqqakyk;
+        okkckkmewkiysyeg:
+        aygsaywukmgmmmga:
+        goto ywqeggecuccqewii;
+        soiyeoosqoccwgok:
+        eewyeiukoacqwemo:
+        goto wumysioiwaowecwu;
+        ywqeggecuccqewii:
+        qiayaasuoqeekmeo:
+        goto gygiwsukqcagwaag;
+        kiuosoowseuwkues:
+        goto gssggekuuyieykma;
+        goto gycossqqauwkeusa;
+        iugwomcaqisasuky:
+        $iaakskwmyqceoscy = '';
+        goto aceymkkwuiwokgqa;
+        mqseemqskkccscao:
+        if ($quowyokcwswmuois) {
+            goto owyskyccqsykiakm;
+        }
+        goto uckisgqukuaiesow;
+        sigkaiakeykkoqsu:
+        sqmsyiusquicscmk:
+        goto qymqsuuewomqcaeo;
+        uckisgqukuaiesow:
+        $iaakskwmyqceoscy = $ymqmyyeuycgmigyo;
+        goto kiuosoowseuwkues;
+        ukqksoomoiqkqeuy:
+        ioequayqasmcmsyw:
+        goto okkckkmewkiysyeg;
+        gycossqqauwkeusa:
+        owyskyccqsykiakm:
+        goto oskcyycaeyocgkmk;
+        euaoayywcugwiqcs:
     }
 }

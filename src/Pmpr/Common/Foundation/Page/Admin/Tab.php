@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b30261f503             |
+    |             613b3993be3fb             |
     |_______________________________________|
 */
 
@@ -40,7 +40,7 @@ abstract class Tab extends Common
     }
     public function wigskegsqequoeks()
     {
-        $this->qcsmikeggeemccuu($this->ygyygikyocoymgaw("\x70\141\147\x65\x5f\141\x64\155\x69\x6e\137\x6f\165\x74\160\x75\x74\x5f{$this->mwikyscisascoeea()}\137\164\141\x62"), [$this, "\x72\145\x6e\144\x65\162"]);
+        $this->qcsmikeggeemccuu($this->ygyygikyocoymgaw("\160\141\x67\145\x5f\141\x64\155\151\x6e\137\x6f\x75\164\160\x75\x74\137{$this->mwikyscisascoeea()}\137\164\x61\142"), [$this, "\162\x65\156\x64\x65\x72"]);
         parent::wigskegsqequoeks();
     }
     public function eiieguqemowyacgi()

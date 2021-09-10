@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b30261f503             |
+    |             613b3993be3fb             |
     |_______________________________________|
 */
 
@@ -23,7 +23,7 @@ class Engine extends Common
     const WARNING_CODE = 300;
     const CRITICAL_CODE = 500;
     const EMERGENCY_CODE = 600;
-    const FILE_EXTENSION = "\56\154\x6f\147";
+    const FILE_EXTENSION = "\x2e\x6c\157\x67";
     
     protected array $channels = [];
     
@@ -47,47 +47,47 @@ class Engine extends Common
     {
         try {
             goto eiusewmkqqyyoqio;
+            sauwooccoqomkyei:
+            geaeoccyqqkyocuw:
+            goto uecmkwyokqqcysim;
+            sooagyoeaycycmke:
+            goto owogoeykikyyqmck;
+            goto msmgiksiqawcgkqe;
+            aqqwuwmasekigeus:
+            throw new Exception("{$wkcwykowmmmwioqs}\x20\143\x61\x6e\156\x6f\164\x20\141\144\x64\40\164\x6f\x20\x6c\157\147\147\145\x72\x20\154\151\x73\x74\x3a\40\x43\150\x61\156\156\x65\154\x20{$ymqmyyeuycgmigyo}\40\x69\x73\x20\141\x6c\162\145\x61\x64\171\x20\x65\170\151\x73\x74\40\151\156\x20\x63\x68\141\156\156\x65\x6c\40\154\151\x73\164\56");
+            goto sooagyoeaycycmke;
+            iqgceguocmwqeowe:
+            $this->channels[$ymqmyyeuycgmigyo] = new MonologLogger($ymqmyyeuycgmigyo, [new StreamHandler($acqcekoeswseswws)]);
+            goto cykouiuweogkyqee;
+            eiusewmkqqyyoqio:
+            $wkcwykowmmmwioqs = rtrim($wkcwykowmmmwioqs, self::FILE_EXTENSION) . self::FILE_EXTENSION;
+            goto qkggwaukgmuiwose;
             uecmkwyokqqcysim:
             
             if (!in_array($ymqmyyeuycgmigyo, $this->oquccoakoiimcoyk())) {
                 goto auqyeogymwsekuue;
             }
             goto aqqwuwmasekigeus;
-            sauwooccoqomkyei:
-            geaeoccyqqkyocuw:
-            goto uecmkwyokqqcysim;
+            cykouiuweogkyqee:
+            owogoeykikyyqmck:
+            goto ccsqcysqesqcmqqc;
             qkggwaukgmuiwose:
-            $acqcekoeswseswws = $this->eqosmaiseggiwsqi() . "\57" . $wkcwykowmmmwioqs;
+            $acqcekoeswseswws = $this->eqosmaiseggiwsqi() . "\x2f" . $wkcwykowmmmwioqs;
             goto owgsqkkemawskgos;
-            sooagyoeaycycmke:
-            goto owogoeykikyyqmck;
-            goto msmgiksiqawcgkqe;
-            aqqwuwmasekigeus:
-            throw new Exception("{$wkcwykowmmmwioqs}\40\x63\141\x6e\156\x6f\164\40\x61\x64\144\x20\164\157\40\x6c\x6f\147\x67\x65\x72\40\x6c\x69\163\x74\72\x20\103\150\141\x6e\156\145\x6c\40{$ymqmyyeuycgmigyo}\x20\151\163\x20\x61\154\x72\x65\141\144\x79\40\x65\x78\x69\163\x74\40\151\x6e\x20\143\150\x61\156\x6e\145\x6c\40\x6c\151\x73\x74\56");
-            goto sooagyoeaycycmke;
+            msmgiksiqawcgkqe:
+            auqyeogymwsekuue:
+            goto iqgceguocmwqeowe;
+            yuouykoggqagseog:
+            $this->kcciqwskewsuaemk()->kwsmkgyoyaqecwuu($acqcekoeswseswws, "\x53\164\141\x72\164\x20\114\157\147\40\x66\157\162\x3a\40" . $ymqmyyeuycgmigyo . PHP_EOL);
+            goto sauwooccoqomkyei;
             owgsqkkemawskgos:
             if ($this->kcciqwskewsuaemk()->exists($acqcekoeswseswws)) {
                 goto geaeoccyqqkyocuw;
             }
             goto yuouykoggqagseog;
-            msmgiksiqawcgkqe:
-            auqyeogymwsekuue:
-            goto iqgceguocmwqeowe;
-            iqgceguocmwqeowe:
-            $this->channels[$ymqmyyeuycgmigyo] = new MonologLogger($ymqmyyeuycgmigyo, [new StreamHandler($acqcekoeswseswws)]);
-            goto cykouiuweogkyqee;
-            yuouykoggqagseog:
-            $this->kcciqwskewsuaemk()->kwsmkgyoyaqecwuu($acqcekoeswseswws, "\123\164\x61\162\x74\x20\114\x6f\147\40\146\157\162\72\x20" . $ymqmyyeuycgmigyo . PHP_EOL);
-            goto sauwooccoqomkyei;
-            eiusewmkqqyyoqio:
-            $wkcwykowmmmwioqs = rtrim($wkcwykowmmmwioqs, self::FILE_EXTENSION) . self::FILE_EXTENSION;
-            goto qkggwaukgmuiwose;
-            cykouiuweogkyqee:
-            owogoeykikyyqmck:
-            goto ccsqcysqesqcmqqc;
             ccsqcysqesqcmqqc:
         } catch (Exception $wgaoewqkwgomoaai) {
-            wp_die(__("\x53\x6f\x6d\x65\x74\150\151\156\147\x20\x69\163\x20\x77\x72\x6f\x6e\147\40\151\156\40\141\x64\144\x43\150\141\x6e\x6e\145\154\40\157\x6e\40\x6c\157\x67\147\145\162\56", PR__CMN__FOUNDATION));
+            wp_die(__("\123\x6f\155\145\x74\x68\151\x6e\147\40\151\163\x20\x77\162\x6f\156\x67\40\151\156\40\141\x64\x64\x43\x68\141\156\156\145\x6c\x20\x6f\x6e\40\x6c\x6f\147\x67\x65\x72\56", PR__CMN__FOUNDATION));
         }
         return $this;
     }
@@ -107,104 +107,104 @@ class Engine extends Common
         ymoeymaaemmysaam:
         wemkkueqksqmuyyk:
         goto uawsmeqsickqqyww;
-        okuoucgkgyyseguu:
-        
-        $qogsmwakwacwqogk = $umawqwoyymwaicas->getUrl();
-        goto ymoeymaaemmysaam;
-        oieaoouoioamiqme:
-        $iwcsiuuqeaaaeees = self::meyuyyociockkgow($ymqmyyeuycgmigyo);
-        goto eqysgewmuookykug;
-        uawsmeqsickqqyww:
-        mowoyiecqoaiymym:
-        goto igiumgigysasioec;
-        ssoawgymwwgamowo:
-        $umawqwoyymwaicas = ManipulateArray::get($qgysocqcuoqmacuo, 0);
-        goto kuyggkawoaiiwseo;
-        yeycmwocyqoegmaq:
-        if (!(is_array($qgysocqcuoqmacuo) && $qgysocqcuoqmacuo)) {
-            goto mowoyiecqoaiymym;
-        }
-        goto ssoawgymwwgamowo;
-        cqiuwwcuouuigawo:
-        return $qogsmwakwacwqogk;
-        goto gkkowgywckwwcoss;
-        ykokyisssyceccmy:
-        $qogsmwakwacwqogk = null;
-        goto oieaoouoioamiqme;
-        kuyggkawoaiiwseo:
-        if (!$umawqwoyymwaicas instanceof StreamHandler) {
-            goto wemkkueqksqmuyyk;
-        }
-        goto okuoucgkgyyseguu;
-        saueimgassmwoyka:
-        
-        $qgysocqcuoqmacuo = $iwcsiuuqeaaaeees->getHandlers();
-        goto yeycmwocyqoegmaq;
         eqysgewmuookykug:
         if (!$iwcsiuuqeaaaeees instanceof MonologLogger) {
             goto gsgiaiymawugosgi;
         }
         goto saueimgassmwoyka;
+        ssoawgymwwgamowo:
+        $umawqwoyymwaicas = ManipulateArray::get($qgysocqcuoqmacuo, 0);
+        goto kuyggkawoaiiwseo;
         igiumgigysasioec:
         gsgiaiymawugosgi:
         goto cqiuwwcuouuigawo;
+        yeycmwocyqoegmaq:
+        if (!(is_array($qgysocqcuoqmacuo) && $qgysocqcuoqmacuo)) {
+            goto mowoyiecqoaiymym;
+        }
+        goto ssoawgymwwgamowo;
+        ykokyisssyceccmy:
+        $qogsmwakwacwqogk = null;
+        goto oieaoouoioamiqme;
+        oieaoouoioamiqme:
+        $iwcsiuuqeaaaeees = self::meyuyyociockkgow($ymqmyyeuycgmigyo);
+        goto eqysgewmuookykug;
+        saueimgassmwoyka:
+        
+        $qgysocqcuoqmacuo = $iwcsiuuqeaaaeees->getHandlers();
+        goto yeycmwocyqoegmaq;
+        kuyggkawoaiiwseo:
+        if (!$umawqwoyymwaicas instanceof StreamHandler) {
+            goto wemkkueqksqmuyyk;
+        }
+        goto okuoucgkgyyseguu;
+        okuoucgkgyyseguu:
+        
+        $qogsmwakwacwqogk = $umawqwoyymwaicas->getUrl();
+        goto ymoeymaaemmysaam;
+        cqiuwwcuouuigawo:
+        return $qogsmwakwacwqogk;
+        goto gkkowgywckwwcoss;
+        uawsmeqsickqqyww:
+        mowoyiecqoaiymym:
+        goto igiumgigysasioec;
         gkkowgywckwwcoss:
     }
     
     public function uimukyawykswgwsm($ymqmyyeuycgmigyo, $iqaosyayeiuaisqi, $uamcoiueqaamsqma, $mgkceomocowocqyo = [])
     {
         goto ieaayaguiywwyecq;
-        aecaygyqamswuqcu:
-        if (!in_array($iqaosyayeiuaisqi, $xwwgygqkqwuaqwsa)) {
-            goto yosmywouooecowyi;
-        }
-        goto oyywmoceqiqwyyek;
-        sgsgokmagckcoock:
-        
-        $eawuoscsaksyqwiw->error($uamcoiueqaamsqma, $mgkceomocowocqyo);
-        goto gmkwekuakoueicws;
-        yegecewiqewskmgm:
-        owcweesegmoeogqc:
-        goto awayeqowmyycaoqs;
-        euqaykgiqkmkaack:
-        $eawuoscsaksyqwiw->{$iqaosyayeiuaisqi}($uamcoiueqaamsqma, $mgkceomocowocqyo);
-        goto qwyoggysuwmawqoo;
-        qcqgacsuskoiskcg:
-        $iqaosyayeiuaisqi = strtolower($iqaosyayeiuaisqi);
-        goto iweimwuaemaquuse;
-        ieaayaguiywwyecq:
-        
-        $xwwgygqkqwuaqwsa = MonologLogger::getLevels();
-        goto aecaygyqamswuqcu;
-        oyywmoceqiqwyyek:
-        
-        $eawuoscsaksyqwiw = self::getChannel($ymqmyyeuycgmigyo);
-        goto ucigyuukqagoagak;
-        gmkwekuakoueicws:
-        goto qoqasyeyeesqmoye;
-        goto cyguswquuckqoqcu;
-        awayeqowmyycaoqs:
-        yosmywouooecowyi:
-        goto aquiaqiseuwyomay;
-        cyguswquuckqoqcu:
-        sgskgsyiqcqsiwwe:
-        goto euqaykgiqkmkaack;
-        qwyoggysuwmawqoo:
-        qoqasyeyeesqmoye:
-        goto yegecewiqewskmgm;
-        ucigyuukqagoagak:
-        if (!$eawuoscsaksyqwiw instanceof MonologLogger) {
-            goto owcweesegmoeogqc;
-        }
-        goto eumaaywogiiuiyao;
-        eumaaywogiiuiyao:
-        $iqaosyayeiuaisqi = MonologLogger::eueeseywswqsawac($iqaosyayeiuaisqi);
-        goto qcqgacsuskoiskcg;
         iweimwuaemaquuse:
         if ($iqaosyayeiuaisqi) {
             goto sgskgsyiqcqsiwwe;
         }
         goto sgsgokmagckcoock;
+        yegecewiqewskmgm:
+        owcweesegmoeogqc:
+        goto awayeqowmyycaoqs;
+        qwyoggysuwmawqoo:
+        qoqasyeyeesqmoye:
+        goto yegecewiqewskmgm;
+        gmkwekuakoueicws:
+        goto qoqasyeyeesqmoye;
+        goto cyguswquuckqoqcu;
+        eumaaywogiiuiyao:
+        $iqaosyayeiuaisqi = MonologLogger::eueeseywswqsawac($iqaosyayeiuaisqi);
+        goto qcqgacsuskoiskcg;
+        ieaayaguiywwyecq:
+        
+        $xwwgygqkqwuaqwsa = MonologLogger::getLevels();
+        goto aecaygyqamswuqcu;
+        euqaykgiqkmkaack:
+        $eawuoscsaksyqwiw->{$iqaosyayeiuaisqi}($uamcoiueqaamsqma, $mgkceomocowocqyo);
+        goto qwyoggysuwmawqoo;
+        oyywmoceqiqwyyek:
+        
+        $eawuoscsaksyqwiw = self::getChannel($ymqmyyeuycgmigyo);
+        goto ucigyuukqagoagak;
+        sgsgokmagckcoock:
+        
+        $eawuoscsaksyqwiw->error($uamcoiueqaamsqma, $mgkceomocowocqyo);
+        goto gmkwekuakoueicws;
+        aecaygyqamswuqcu:
+        if (!in_array($iqaosyayeiuaisqi, $xwwgygqkqwuaqwsa)) {
+            goto yosmywouooecowyi;
+        }
+        goto oyywmoceqiqwyyek;
+        ucigyuukqagoagak:
+        if (!$eawuoscsaksyqwiw instanceof MonologLogger) {
+            goto owcweesegmoeogqc;
+        }
+        goto eumaaywogiiuiyao;
+        cyguswquuckqoqcu:
+        sgskgsyiqcqsiwwe:
+        goto euqaykgiqkmkaack;
+        qcqgacsuskoiskcg:
+        $iqaosyayeiuaisqi = strtolower($iqaosyayeiuaisqi);
+        goto iweimwuaemaquuse;
+        awayeqowmyycaoqs:
+        yosmywouooecowyi:
+        goto aquiaqiseuwyomay;
         aquiaqiseuwyomay:
     }
 }

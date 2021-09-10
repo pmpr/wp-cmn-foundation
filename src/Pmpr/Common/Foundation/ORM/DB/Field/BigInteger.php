@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b30261f503             |
+    |             613b3993be3fb             |
     |_______________________________________|
 */
 
@@ -13,6 +13,6 @@ class BigInteger extends Field
     
     public function __construct(string $aokagokqyuysuksm, ?string $meqocwsecsywiiqs = null)
     {
-        parent::__construct("\142\151\x67\111\x6e\x74\x65\x67\x65\162", $aokagokqyuysuksm, $meqocwsecsywiiqs);
+        parent::__construct("\142\x69\x67\111\156\164\145\x67\x65\x72", $aokagokqyuysuksm, $meqocwsecsywiiqs);
     }
 }

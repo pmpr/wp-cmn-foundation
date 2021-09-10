@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b30261f503             |
+    |             613b3993be3fb             |
     |_______________________________________|
 */
 
@@ -16,15 +16,15 @@ trait HookTrait
     public final function ygyygikyocoymgaw($ymqmyyeuycgmigyo, $ykuqcwwmuyqmkisq = true, $quowyokcwswmuois = null) : ?string
     {
         goto cmquiwyeuuqiukoq;
-        wiyqcmuawqcaiqii:
-        $quowyokcwswmuois = $this->akuociswqmoigkas();
-        goto mwuaakaqmuaoceee;
         qkuyaaweimgsaqww:
         return ManipulateHook::ygyygikyocoymgaw($ymqmyyeuycgmigyo, $quowyokcwswmuois, $ykuqcwwmuyqmkisq);
         goto aykqwyescqmocguo;
         mwuaakaqmuaoceee:
         ggsmiqmuykwukucu:
         goto qkuyaaweimgsaqww;
+        wiyqcmuawqcaiqii:
+        $quowyokcwswmuois = $this->akuociswqmoigkas();
+        goto mwuaakaqmuaoceee;
         cmquiwyeuuqiukoq:
         if ($quowyokcwswmuois) {
             goto ggsmiqmuykwukucu;
