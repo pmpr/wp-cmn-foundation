@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b499786a1b             |
+    |             613b5973b89a9             |
     |_______________________________________|
 */
 
@@ -13,12 +13,12 @@ class Common extends BaseClass
 {
     public function wigskegsqequoeks()
     {
-        $this->qcsmikeggeemccuu("\143\x6d\142\x32\137\x72\x65\x6e\144\145\x72\x5f{$this->gueasuouwqysmomu()}", [$this, "\162\145\x6e\x64\x65\x72"], 10, 5);
+        $this->qcsmikeggeemccuu("\143\x6d\x62\62\x5f\162\x65\156\144\145\x72\137{$this->gueasuouwqysmomu()}", [$this, "\162\x65\x6e\x64\x65\x72"], 10, 5);
         parent::wigskegsqequoeks();
     }
     public function kgquecmsgcouyaya()
     {
-        $this->cecaguuoecmccuse("\x63\155\x62\62\x5f\163\x61\x6e\151\164\x69\172\145\x5f{$this->gueasuouwqysmomu()}", [$this, "\171\x69\151\151\x71\145\x77\x73\x73\145\171\x77\145\155\161\x75"], 10, 2);
+        $this->cecaguuoecmccuse("\x63\x6d\x62\62\137\163\141\156\x69\164\x69\172\145\x5f{$this->gueasuouwqysmomu()}", [$this, "\x79\151\151\x69\x71\145\167\x73\163\x65\x79\x77\x65\x6d\161\165"], 10, 2);
         parent::kgquecmsgcouyaya();
     }
     

@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b499786a1b             |
+    |             613b5973b89a9             |
     |_______________________________________|
 */
 
@@ -17,7 +17,7 @@ class ManipulatePlugin extends Common
     
     public static function yicegakcoioyuwos() : array
     {
-        return (array) DecoratorOption::get("\x61\143\x74\x69\x76\145\x5f\160\154\x75\147\151\x6e\x73", []);
+        return (array) DecoratorOption::get("\141\143\x74\x69\x76\145\137\x70\x6c\x75\147\151\156\x73", []);
     }
     
     public static function ggocakcisguuokai(?string $mkysicwccoeicumg) : bool
@@ -28,31 +28,23 @@ class ManipulatePlugin extends Common
     public static function sskmceyamwugkaii($ywmkwiwkosakssii = []) : bool
     {
         goto gaoycoykycqicwaq;
-        oeooskowyaoiesig:
-        return $gioggcykgoikcwiy->uysacksscoseuguc();
-        goto awkycquykaigeoms;
         eoieikyaiucwwwas:
         $gioggcykgoikcwiy = new WP_Requirements_Check($ywmkwiwkosakssii);
         goto oeooskowyaoiesig;
         gaoycoykycqicwaq:
-        $ywmkwiwkosakssii = ManipulateFormat::omaawkkwwyesqwcc($ywmkwiwkosakssii, ["\160\150\160" => "\67\x2e\x34", "\167\x70" => "\65\56\x32"]);
+        $ywmkwiwkosakssii = ManipulateFormat::omaawkkwwyesqwcc($ywmkwiwkosakssii, ["\x70\150\x70" => "\x37\x2e\64", "\167\160" => "\65\x2e\x32"]);
         goto eoieikyaiucwwwas;
+        oeooskowyaoiesig:
+        return $gioggcykgoikcwiy->uysacksscoseuguc();
+        goto awkycquykaigeoms;
         awkycquykaigeoms:
     }
     
     public static function sioyqaykmwwugmgi(?string $mkysicwccoeicumg) : bool
     {
         goto makoqausqoiwyouc;
-        gqqmmososkagcqco:
-        $ggocakcisguuokai = isset($mseykiqqcmyesccu[$mkysicwccoeicumg]);
-        goto asoqwsaqqyuoioac;
-        ocgyqmccaskoieei:
-        if (!is_multisite()) {
-            goto oioygkocoumymyqa;
-        }
-        goto skgguaeyousyogee;
         skgguaeyousyogee:
-        $mseykiqqcmyesccu = DecoratorOption::kuaqqosyyoqiueym("\x61\x63\x74\151\166\145\x5f\163\151\x74\x65\x77\151\144\145\137\160\154\x75\x67\x69\x6e\x73");
+        $mseykiqqcmyesccu = DecoratorOption::kuaqqosyyoqiueym("\x61\143\164\151\166\145\x5f\x73\x69\x74\x65\167\x69\144\x65\x5f\160\154\165\147\x69\156\163");
         goto gqqmmososkagcqco;
         wuogwyququiiecaa:
         return $ggocakcisguuokai;
@@ -60,9 +52,17 @@ class ManipulatePlugin extends Common
         asoqwsaqqyuoioac:
         oioygkocoumymyqa:
         goto wuogwyququiiecaa;
+        gqqmmososkagcqco:
+        $ggocakcisguuokai = isset($mseykiqqcmyesccu[$mkysicwccoeicumg]);
+        goto asoqwsaqqyuoioac;
         makoqausqoiwyouc:
         $ggocakcisguuokai = false;
         goto ocgyqmccaskoieei;
+        ocgyqmccaskoieei:
+        if (!is_multisite()) {
+            goto oioygkocoumymyqa;
+        }
+        goto skgguaeyousyogee;
         scqwymaqqacaugqa:
     }
 }

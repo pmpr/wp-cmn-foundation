@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b499786a1b             |
+    |             613b5973b89a9             |
     |_______________________________________|
 */
 
@@ -24,7 +24,7 @@ class Source extends Data
     
     protected ?string $inline = '';
     
-    protected string $media = "\x61\x6c\154";
+    protected string $media = "\141\154\x6c";
     
     protected bool $inFooter = true;
     
@@ -38,12 +38,12 @@ class Source extends Data
         skkkocayisgiuaoq:
         $this->handle = $eueuqacmukymcyya;
         goto ykkuoyukeqkaiamg;
-        mgyqaewckasyuiie:
-        $this->src = $ogomymegcoacqisg;
-        goto qweasgqgummkgesw;
         qweasgqgummkgesw:
         $this->type = $sqeykgyoooqysmca;
         goto skkkocayisgiuaoq;
+        mgyqaewckasyuiie:
+        $this->src = $ogomymegcoacqisg;
+        goto qweasgqgummkgesw;
         ykkuoyukeqkaiamg:
     }
     
@@ -110,32 +110,32 @@ class Source extends Data
     public function ayuciigykaswwqeo(string $yeiguwcugmswcysy) : self
     {
         goto wiaauiiuyogwauum;
+        amwiioosseiocuic:
+        $this->dependencies[] = $yeiguwcugmswcysy;
+        goto cyueaiekggqumaic;
         owseqyqgagqaacmy:
         return $this;
         goto squkoccwioggcaye;
+        cyueaiekggqumaic:
+        womyiwaoigaequiw:
+        goto owseqyqgagqaacmy;
         wiaauiiuyogwauum:
         if (in_array($yeiguwcugmswcysy, $this->auskmiuqesyqemgc())) {
             goto womyiwaoigaequiw;
         }
         goto amwiioosseiocuic;
-        cyueaiekggqumaic:
-        womyiwaoigaequiw:
-        goto owseqyqgagqaacmy;
-        amwiioosseiocuic:
-        $this->dependencies[] = $yeiguwcugmswcysy;
-        goto cyueaiekggqumaic;
         squkoccwioggcaye:
     }
     
     public function kkqyswgcoseeawmu(array $ugmuiugkaygmsagq) : self
     {
         goto mcacwiaagqysweem;
-        yackuaqwsqcwciyo:
-        return $this;
-        goto yqiaqmigsoeqmgwo;
         oqokmmqoikgwmsai:
         oocgwowiyomcosac:
         goto yackuaqwsqcwciyo;
+        yackuaqwsqcwciyo:
+        return $this;
+        goto yqiaqmigsoeqmgwo;
         mcacwiaagqysweem:
         foreach ($ugmuiugkaygmsagq as $yeiguwcugmswcysy) {
             $this->ayuciigykaswwqeo($yeiguwcugmswcysy);
@@ -173,6 +173,11 @@ class Source extends Data
         wuesuwyyyaesmkas:
         $wgcyssuyaqysoqya = $this->eeiaogaokoekgmeq();
         goto uoeogwamkogoqoow;
+        uoeogwamkogoqoow:
+        if (!is_callable($wgcyssuyaqysoqya)) {
+            goto aiswkmkmkckuociu;
+        }
+        goto emyigiiocasusaea;
         qykicwksywyiiqkk:
         aiswkmkmkckuociu:
         goto awiawgewcmmiugqm;
@@ -182,11 +187,6 @@ class Source extends Data
         emyigiiocasusaea:
         $wgcyssuyaqysoqya = call_user_func($wgcyssuyaqysoqya);
         goto qykicwksywyiiqkk;
-        uoeogwamkogoqoow:
-        if (!is_callable($wgcyssuyaqysoqya)) {
-            goto aiswkmkmkckuociu;
-        }
-        goto emyigiiocasusaea;
         meayoamiqaqouykk:
     }
     
@@ -220,18 +220,18 @@ class Source extends Data
     public function simswskycwagoeqy() : self
     {
         goto igsmkqcwksaogqaq;
-        iekwmuigmiooiugw:
-        $syqogysesqgmqoqi = $qsaooqieuwgqwmmc->yomasssaasmawcso("\x67\154\157\x62\x61\154");
-        goto oscqsgwcimqawseu;
+        igsmkqcwksaogqaq:
+        $qsaooqieuwgqwmmc = Foundation::symcgieuakksimmu()->miocmcoykayoyyau();
+        goto iekwmuigmiooiugw;
         oscqsgwcimqawseu:
-        $this->kkqyswgcoseeawmu(["\x6a\161\165\145\162\x79", $syqogysesqgmqoqi]);
+        $this->kkqyswgcoseeawmu(["\x6a\x71\x75\x65\162\x79", $syqogysesqgmqoqi]);
         goto ysqeawycwuosoawe;
         ysqeawycwuosoawe:
         return $this;
         goto omikseuuygmokqsw;
-        igsmkqcwksaogqaq:
-        $qsaooqieuwgqwmmc = Foundation::symcgieuakksimmu()->miocmcoykayoyyau();
-        goto iekwmuigmiooiugw;
+        iekwmuigmiooiugw:
+        $syqogysesqgmqoqi = $qsaooqieuwgqwmmc->yomasssaasmawcso("\147\x6c\x6f\x62\x61\154");
+        goto oscqsgwcimqawseu;
         omikseuuygmokqsw:
     }
 }

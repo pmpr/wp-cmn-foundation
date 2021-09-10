@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b499786a1b             |
+    |             613b5973b89a9             |
     |_______________________________________|
 */
 
@@ -11,10 +11,10 @@ use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString;
 
 class Foreign extends Field
 {
-    const ONE_TO_ONE = "\157\156\x65\164\x6f\x6f\x6e\x65";
-    const ONE_TO_MANY = "\x6f\x6e\145\164\157\x6d\141\x6e\171";
-    const MANY_TO_ONE = "\x6d\141\x6e\x79\x74\x6f\x6f\x6e\x65";
-    const MANY_TO_MANY = "\x6d\141\x6e\171\x74\157\155\141\156\171";
+    const ONE_TO_ONE = "\x6f\156\x65\164\x6f\x6f\x6e\x65";
+    const ONE_TO_MANY = "\157\x6e\145\164\157\155\x61\156\x79";
+    const MANY_TO_ONE = "\x6d\141\156\171\x74\157\157\156\x65";
+    const MANY_TO_MANY = "\155\141\x6e\171\x74\x6f\155\141\156\171";
     
     protected ?string $on = null;
     
@@ -22,19 +22,19 @@ class Foreign extends Field
     
     protected bool $mappedBy = false;
     
-    protected ?string $references = "\151\x64";
+    protected ?string $references = "\151\144";
     
     protected ?string $inversedBy = null;
     
     protected ?string $relation = self::ONE_TO_ONE;
     
-    protected ?string $onDelete = "\x4e\x4f\x20\101\103\x54\x49\x4f\x4e";
+    protected ?string $onDelete = "\116\117\x20\101\x43\x54\111\x4f\x4e";
     
-    protected ?string $onUpdate = "\x4e\117\x20\x41\x43\124\x49\117\116";
+    protected ?string $onUpdate = "\x4e\117\x20\x41\x43\x54\111\117\116";
     
     public function __construct(string $aokagokqyuysuksm, ?string $meqocwsecsywiiqs = null)
     {
-        parent::__construct("\x66\x6f\x72\x65\x69\x67\x6e", $aokagokqyuysuksm, $meqocwsecsywiiqs);
+        parent::__construct("\146\x6f\x72\x65\x69\147\156", $aokagokqyuysuksm, $meqocwsecsywiiqs);
     }
     
     public function yeoakayeygwguyus() : ?string
@@ -67,23 +67,23 @@ class Foreign extends Field
     public function wuuqgaekqeymecag() : self
     {
         goto osiemgqgiycaymio;
+        osiemgqgiycaymio:
+        $this->wakqsiacyacmumuw();
+        goto magaykaioygmiciq;
         kmkwsqgumkwgemwc:
         jiiiygsseagcmycw:
         goto uiakqoyqmcwokgse;
-        uiakqoyqmcwokgse:
-        return $this->qemiokeaqceqkgso(self::MANY_TO_ONE);
-        goto oksimyciqsugcami;
-        qiokyyweaoysyeci:
-        wp_die(sprintf(__("\106\x6f\162\145\151\x67\x6e\x20\x6b\x65\x79\x20\45\163\x20\x6d\165\x73\164\40\x65\156\x64\x20\167\x69\x74\x68\x20\x25\163\40\x70\157\x73\164\146\x69\x78", PR__CMN__FOUNDATION), $this->mwikyscisascoeea(), self::_ID));
-        goto kmkwsqgumkwgemwc;
         magaykaioygmiciq:
         if (ManipulateString::ykemmsoumouomkqm($this->mwikyscisascoeea(), self::_ID)) {
             goto jiiiygsseagcmycw;
         }
         goto qiokyyweaoysyeci;
-        osiemgqgiycaymio:
-        $this->wakqsiacyacmumuw();
-        goto magaykaioygmiciq;
+        uiakqoyqmcwokgse:
+        return $this->qemiokeaqceqkgso(self::MANY_TO_ONE);
+        goto oksimyciqsugcami;
+        qiokyyweaoysyeci:
+        wp_die(sprintf(__("\x46\x6f\x72\145\x69\x67\156\x20\x6b\145\x79\40\x25\x73\x20\x6d\x75\x73\164\40\x65\x6e\144\x20\167\x69\x74\150\x20\45\x73\x20\x70\157\163\x74\x66\151\x78", PR__CMN__FOUNDATION), $this->mwikyscisascoeea(), self::_ID));
+        goto kmkwsqgumkwgemwc;
         oksimyciqsugcami:
     }
     

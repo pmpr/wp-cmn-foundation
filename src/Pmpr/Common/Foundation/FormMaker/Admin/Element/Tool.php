@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b499786a1b             |
+    |             613b5973b89a9             |
     |_______________________________________|
 */
 
@@ -16,20 +16,20 @@ class Tool extends Page
         csaykuwkommwweoy:
         coysugskuiuggwke:
         goto wgakokiswkmwewqk;
-        wgakokiswkmwewqk:
-        parent::__construct();
-        goto iquugosgiekiimqa;
+        cmqiucseesyaamww:
+        $this->type = "\164\157\157\x6c\163";
+        goto oacssuuogqgskmgc;
         oacssuuogqgskmgc:
         if ($this->cgugaaoykcyiomuk()) {
             goto coysugskuiuggwke;
         }
         goto mqgqekesggaiiwss;
         mqgqekesggaiiwss:
-        $this->parentMenu = "\x74\x6f\157\154\163\56\x70\150\x70";
+        $this->parentMenu = "\164\x6f\x6f\x6c\x73\56\160\x68\160";
         goto csaykuwkommwweoy;
-        cmqiucseesyaamww:
-        $this->type = "\x74\157\x6f\154\163";
-        goto oacssuuogqgskmgc;
+        wgakokiswkmwewqk:
+        parent::__construct();
+        goto iquugosgiekiimqa;
         iquugosgiekiimqa:
     }
 }

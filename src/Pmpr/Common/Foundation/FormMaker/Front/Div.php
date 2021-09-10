@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b499786a1b             |
+    |             613b5973b89a9             |
     |_______________________________________|
 */
 
@@ -13,7 +13,7 @@ class Div extends Element
     
     public function __construct(?string $aokagokqyuysuksm = null)
     {
-        parent::__construct("\x64\151\166", $aokagokqyuysuksm);
+        parent::__construct("\x64\x69\166", $aokagokqyuysuksm);
     }
     
     public function souwykwwmyygqyqi() : ?string
@@ -23,12 +23,12 @@ class Div extends Element
     
     public function cgwacqwsiowmwqug() : self
     {
-        return $this->qigsyyqgewgskemg("\146\x6f\x72\155\x2d\147\x72\157\x75\160");
+        return $this->qigsyyqgewgskemg("\146\157\162\155\55\x67\x72\x6f\165\x70");
     }
     
     public function render($ywmkwiwkosakssii = []) : ?string
     {
-        $ywmkwiwkosakssii["\x65\143\x68\157"] = false;
+        $ywmkwiwkosakssii["\145\143\150\157"] = false;
         return parent::render($ywmkwiwkosakssii);
     }
 }

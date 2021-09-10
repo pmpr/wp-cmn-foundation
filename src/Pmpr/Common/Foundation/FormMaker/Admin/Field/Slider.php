@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b499786a1b             |
+    |             613b5973b89a9             |
     |_______________________________________|
 */
 
@@ -20,15 +20,15 @@ class Slider extends Field
     public function __construct(?string $aokagokqyuysuksm, ?string $ymqmyyeuycgmigyo, array $somsiuiquigiqsmk, array $ucwamkesemusoeyc = [], ?string $mkqqqewsokcswckc = null)
     {
         goto cykoggeawyosiwuw;
-        mcekqamqcmywscmu:
-        $this->imageAttributes = $ucwamkesemusoeyc;
-        goto egcywciwasakksyg;
-        cykoggeawyosiwuw:
-        parent::__construct("\163\x6c\151\144\145\162", $aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc);
-        goto umguqywougaucwew;
         umguqywougaucwew:
         $this->images = $somsiuiquigiqsmk;
         goto mcekqamqcmywscmu;
+        cykoggeawyosiwuw:
+        parent::__construct("\163\x6c\x69\x64\x65\162", $aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc);
+        goto umguqywougaucwew;
+        mcekqamqcmywscmu:
+        $this->imageAttributes = $ucwamkesemusoeyc;
+        goto egcywciwasakksyg;
         egcywciwasakksyg:
     }
     
@@ -67,7 +67,7 @@ class Slider extends Field
     
     public function uqawesackiomqgga($kkeqqkkkqwkocsyu, array $ywmkwiwkosakssii = []) : ?array
     {
-        $kkeqqkkkqwkocsyu["\x69\x6d\x61\x67\145\55\x61\x74\x74\x72"] = $this->kkyeqssqcoqmoycc();
+        $kkeqqkkkqwkocsyu["\151\155\141\147\x65\x2d\141\x74\x74\162"] = $this->kkyeqssqcoqmoycc();
         return parent::uqawesackiomqgga($kkeqqkkkqwkocsyu, $ywmkwiwkosakssii);
     }
 }

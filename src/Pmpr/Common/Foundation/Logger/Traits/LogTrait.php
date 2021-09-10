@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b499786a1b             |
+    |             613b5973b89a9             |
     |_______________________________________|
 */
 
@@ -49,23 +49,23 @@ trait LogTrait
     private function giaekemmcwcgswce($uamcoiueqaamsqma, $mgkceomocowocqyo = [], $iqaosyayeiuaisqi = Engine::DEBUG_CODE)
     {
         goto eocusimsawyoyaas;
+        sacawqskusgwkkyg:
+        $this->ygaescewwyaseaoy()->uimukyawykswgwsm($iwcsiuuqeaaaeees, $iqaosyayeiuaisqi, $uamcoiueqaamsqma, $mgkceomocowocqyo);
+        goto uckyuqsuyqwgswaa;
         seasiecgqussuqkw:
         if ($iwcsiuuqeaaaeees) {
             goto usosooekkcgwmgkq;
         }
         goto geacgaisikkgqosu;
-        eocusimsawyoyaas:
-        $iwcsiuuqeaaaeees = $this->cycuaskkikweaoym();
-        goto seasiecgqussuqkw;
-        sacawqskusgwkkyg:
-        $this->ygaescewwyaseaoy()->uimukyawykswgwsm($iwcsiuuqeaaaeees, $iqaosyayeiuaisqi, $uamcoiueqaamsqma, $mgkceomocowocqyo);
-        goto uckyuqsuyqwgswaa;
         geacgaisikkgqosu:
         $iwcsiuuqeaaaeees = Logger::DEFAULT_CHANNEL;
         goto aqykwekaooeoqgoa;
         aqykwekaooeoqgoa:
         usosooekkcgwmgkq:
         goto sacawqskusgwkkyg;
+        eocusimsawyoyaas:
+        $iwcsiuuqeaaaeees = $this->cycuaskkikweaoym();
+        goto seasiecgqussuqkw;
         uckyuqsuyqwgswaa:
     }
 }

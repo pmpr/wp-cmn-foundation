@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b499786a1b             |
+    |             613b5973b89a9             |
     |_______________________________________|
 */
 
@@ -18,20 +18,20 @@ abstract class Decorator implements ConstantInterface
         qcaiegucqcakoguk:
         aekiswqkimmgcmac:
         goto gsyaeawoooqaaeee;
-        csaweyksigegicem:
-        $ksaameoqigiaoigg = $ggauoeuaesiymgee;
-        goto sgwwumsasamqmqky;
-        gsyaeawoooqaaeee:
-        return $ksaameoqigiaoigg;
-        goto oeqeikgwugwquskq;
-        kgsqmocueuiwmmcs:
-        $ksaameoqigiaoigg = call_user_func($ekiuyucoiagmscgy, ...$ywmkwiwkosakssii);
-        goto qcaiegucqcakoguk;
         sgwwumsasamqmqky:
         if (!function_exists($ekiuyucoiagmscgy)) {
             goto aekiswqkimmgcmac;
         }
         goto kgsqmocueuiwmmcs;
+        gsyaeawoooqaaeee:
+        return $ksaameoqigiaoigg;
+        goto oeqeikgwugwquskq;
+        csaweyksigegicem:
+        $ksaameoqigiaoigg = $ggauoeuaesiymgee;
+        goto sgwwumsasamqmqky;
+        kgsqmocueuiwmmcs:
+        $ksaameoqigiaoigg = call_user_func($ekiuyucoiagmscgy, ...$ywmkwiwkosakssii);
+        goto qcaiegucqcakoguk;
         oeqeikgwugwquskq:
     }
 }

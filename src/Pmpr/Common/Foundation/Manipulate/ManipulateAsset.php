@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b499786a1b             |
+    |             613b5973b89a9             |
     |_______________________________________|
 */
 
@@ -14,24 +14,24 @@ class ManipulateAsset extends Manipulate
     public static function omgkgiasggyoyiew(string $mkomwsiykqigmqca) : ?string
     {
         goto cuqqecwymouycgau;
-        cuqqecwymouycgau:
-        $eeamcawaiqocomwy = null;
-        goto syqumcoogeoweeys;
-        syqumcoogeoweeys:
-        $cqswiiioaimeskoi = cmb2_utils();
-        goto emiocgskkaieaygu;
         emiocgskkaieaygu:
         if (!$cqswiiioaimeskoi) {
             goto sgguweyyyiqmkakc;
         }
         goto ausgcikksecieweq;
+        syqumcoogeoweeys:
+        $cqswiiioaimeskoi = cmb2_utils();
+        goto emiocgskkaieaygu;
+        coyaogkqscweiqwk:
+        sgguweyyyiqmkakc:
+        goto iaiwayowckokiyiy;
+        cuqqecwymouycgau:
+        $eeamcawaiqocomwy = null;
+        goto syqumcoogeoweeys;
         ausgcikksecieweq:
         
         $eeamcawaiqocomwy = $cqswiiioaimeskoi::url($mkomwsiykqigmqca);
         goto coyaogkqscweiqwk;
-        coyaogkqscweiqwk:
-        sgguweyyyiqmkakc:
-        goto iaiwayowckokiyiy;
         iaiwayowckokiyiy:
         return $eeamcawaiqocomwy;
         goto kyecumuyuyygkoou;

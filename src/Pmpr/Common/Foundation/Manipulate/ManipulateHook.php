@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b499786a1b             |
+    |             613b5973b89a9             |
     |_______________________________________|
 */
 
@@ -17,70 +17,76 @@ class ManipulateHook extends Manipulate
     public static function ygyygikyocoymgaw($ymqmyyeuycgmigyo, $quowyokcwswmuois = null, $ykuqcwwmuyqmkisq = true)
     {
         goto iugwomcaqisasuky;
-        amseqymsmoukemqc:
-        $icgkamwwakkgigsi = [];
-        goto soiyeoosqoccwgok;
-        ekumceoygmcomees:
-        if ($icgkamwwakkgigsi) {
-            goto eewyeiukoacqwemo;
-        }
-        goto amseqymsmoukemqc;
-        uckisgqukuaiesow:
-        $iaakskwmyqceoscy = $ymqmyyeuycgmigyo;
-        goto kiuosoowseuwkues;
-        gygiwsukqcagwaag:
-        if ($iaakskwmyqceoscy) {
-            goto sqmsyiusquicscmk;
-        }
-        goto mqseemqskkccscao;
-        ukqksoomoiqkqeuy:
-        ioequayqasmcmsyw:
-        goto okkckkmewkiysyeg;
         qymqsuuewomqcaeo:
         return $iaakskwmyqceoscy;
         goto euaoayywcugwiqcs;
-        wkcoeuicokyouscs:
-        if (!$ykuqcwwmuyqmkisq) {
-            goto ussaosamaumyaucq;
-        }
-        goto iysgqwiceiuegqmm;
-        cyawyoyeemeumigc:
-        ussaosamaumyaucq:
-        goto sigkaiakeykkoqsu;
+        oskcyycaeyocgkmk:
+        $iaakskwmyqceoscy = "{$quowyokcwswmuois}\137{$ymqmyyeuycgmigyo}";
+        goto ssiskmwmkioiekyc;
         okkckkmewkiysyeg:
         aygsaywukmgmmmga:
         goto ywqeggecuccqewii;
-        skwaemgcggqqakyk:
-        $iaakskwmyqceoscy = $ksiyqouuaoymsycg;
-        goto ukqksoomoiqkqeuy;
-        ywqeggecuccqewii:
-        qiayaasuoqeekmeo:
-        goto gygiwsukqcagwaag;
-        wumysioiwaowecwu:
+        iugwomcaqisasuky:
         $iaakskwmyqceoscy = '';
-        goto csaagucuusgmywum;
+        goto aceymkkwuiwokgqa;
+        amseqymsmoukemqc:
+        $icgkamwwakkgigsi = [];
+        goto soiyeoosqoccwgok;
+        soiyeoosqoccwgok:
+        eewyeiukoacqwemo:
+        goto wumysioiwaowecwu;
         kaasmkwkyekaqmao:
         if (!$ksiyqouuaoymsycg) {
             goto ioequayqasmcmsyw;
         }
         goto skwaemgcggqqakyk;
-        iysgqwiceiuegqmm:
-        $icgkamwwakkgigsi[$iaakskwmyqceoscy] = $ymqmyyeuycgmigyo;
-        goto cyawyoyeemeumigc;
-        gycossqqauwkeusa:
-        owyskyccqsykiakm:
-        goto oskcyycaeyocgkmk;
-        sigkaiakeykkoqsu:
-        sqmsyiusquicscmk:
-        goto qymqsuuewomqcaeo;
-        ywmuaqcsgamygwmc:
-        $ksiyqouuaoymsycg = array_search($ymqmyyeuycgmigyo, $icgkamwwakkgigsi);
-        goto kaasmkwkyekaqmao;
+        ukqksoomoiqkqeuy:
+        ioequayqasmcmsyw:
+        goto okkckkmewkiysyeg;
         mqseemqskkccscao:
         if ($quowyokcwswmuois) {
             goto owyskyccqsykiakm;
         }
         goto uckisgqukuaiesow;
+        sigkaiakeykkoqsu:
+        sqmsyiusquicscmk:
+        goto qymqsuuewomqcaeo;
+        gycossqqauwkeusa:
+        owyskyccqsykiakm:
+        goto oskcyycaeyocgkmk;
+        wkcoeuicokyouscs:
+        if (!$ykuqcwwmuyqmkisq) {
+            goto ussaosamaumyaucq;
+        }
+        goto iysgqwiceiuegqmm;
+        goikkusagcqiueia:
+        global $icgkamwwakkgigsi;
+        goto ekumceoygmcomees;
+        ywmuaqcsgamygwmc:
+        $ksiyqouuaoymsycg = array_search($ymqmyyeuycgmigyo, $icgkamwwakkgigsi);
+        goto kaasmkwkyekaqmao;
+        uckisgqukuaiesow:
+        $iaakskwmyqceoscy = $ymqmyyeuycgmigyo;
+        goto kiuosoowseuwkues;
+        ssiskmwmkioiekyc:
+        gssggekuuyieykma:
+        goto wkcoeuicokyouscs;
+        aceymkkwuiwokgqa:
+        if (!$ykuqcwwmuyqmkisq) {
+            goto qiayaasuoqeekmeo;
+        }
+        goto goikkusagcqiueia;
+        ekumceoygmcomees:
+        if ($icgkamwwakkgigsi) {
+            goto eewyeiukoacqwemo;
+        }
+        goto amseqymsmoukemqc;
+        ywqeggecuccqewii:
+        qiayaasuoqeekmeo:
+        goto gygiwsukqcagwaag;
+        skwaemgcggqqakyk:
+        $iaakskwmyqceoscy = $ksiyqouuaoymsycg;
+        goto ukqksoomoiqkqeuy;
         csaagucuusgmywum:
         if (!in_array($ymqmyyeuycgmigyo, $icgkamwwakkgigsi)) {
             goto aygsaywukmgmmmga;
@@ -89,26 +95,20 @@ class ManipulateHook extends Manipulate
         kiuosoowseuwkues:
         goto gssggekuuyieykma;
         goto gycossqqauwkeusa;
-        aceymkkwuiwokgqa:
-        if (!$ykuqcwwmuyqmkisq) {
-            goto qiayaasuoqeekmeo;
+        cyawyoyeemeumigc:
+        ussaosamaumyaucq:
+        goto sigkaiakeykkoqsu;
+        gygiwsukqcagwaag:
+        if ($iaakskwmyqceoscy) {
+            goto sqmsyiusquicscmk;
         }
-        goto goikkusagcqiueia;
-        iugwomcaqisasuky:
+        goto mqseemqskkccscao;
+        iysgqwiceiuegqmm:
+        $icgkamwwakkgigsi[$iaakskwmyqceoscy] = $ymqmyyeuycgmigyo;
+        goto cyawyoyeemeumigc;
+        wumysioiwaowecwu:
         $iaakskwmyqceoscy = '';
-        goto aceymkkwuiwokgqa;
-        ssiskmwmkioiekyc:
-        gssggekuuyieykma:
-        goto wkcoeuicokyouscs;
-        oskcyycaeyocgkmk:
-        $iaakskwmyqceoscy = "{$quowyokcwswmuois}\x5f{$ymqmyyeuycgmigyo}";
-        goto ssiskmwmkioiekyc;
-        soiyeoosqoccwgok:
-        eewyeiukoacqwemo:
-        goto wumysioiwaowecwu;
-        goikkusagcqiueia:
-        global $icgkamwwakkgigsi;
-        goto ekumceoygmcomees;
+        goto csaagucuusgmywum;
         euaoayywcugwiqcs:
     }
 }

@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b499786a1b             |
+    |             613b5973b89a9             |
     |_______________________________________|
 */
 
@@ -25,21 +25,21 @@ class Type extends Common
         seocaaicqkcukgmk:
         BSSelect::symcgieuakksimmu();
         goto mysamiwgyemmmise;
-        eqaycqwokoquwogy:
-        Size::symcgieuakksimmu();
-        goto mykewkmwswqeymac;
         miukicuoyecquusw:
         Button::symcgieuakksimmu();
         goto eoauoeuywmyisiwe;
-        wewigwekyeiiesuo:
-        Display::symcgieuakksimmu();
-        goto seocaaicqkcukgmk;
-        mykewkmwswqeymac:
-        Html::symcgieuakksimmu();
-        goto miukicuoyecquusw;
+        eqaycqwokoquwogy:
+        Size::symcgieuakksimmu();
+        goto mykewkmwswqeymac;
         mysamiwgyemmmise:
         MultiButton::symcgieuakksimmu();
         goto ooqmaosgkcqwkoii;
+        mykewkmwswqeymac:
+        Html::symcgieuakksimmu();
+        goto miukicuoyecquusw;
+        wewigwekyeiiesuo:
+        Display::symcgieuakksimmu();
+        goto seocaaicqkcukgmk;
         ooqmaosgkcqwkoii:
     }
 }

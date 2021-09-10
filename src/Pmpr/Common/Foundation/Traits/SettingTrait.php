@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b499786a1b             |
+    |             613b5973b89a9             |
     |_______________________________________|
 */
 
@@ -25,60 +25,65 @@ trait SettingTrait
     public final function aoqykkmokwseeeie() : array
     {
         goto yuiowkeqksugiksa;
+        kayygiukegykiwas:
+        oismsssqukkqkyai:
+        goto uqqwyiemackamkca;
         yuiowkeqksugiksa:
         if ($this->allSettings) {
             goto oismsssqukkqkyai;
         }
         goto ugasccoeokgqkses;
+        ikseiooeakoewqqu:
+        if (!is_array($qeqooyuoiasweuck)) {
+            goto eucqcsogwusgkuim;
+        }
+        goto uqqqaqwamieuwuky;
         mmkooaugaqyqgyww:
         if (!$mksyucucyswaukig) {
             goto qesewiceagyggaia;
         }
         goto aeesioaqmuoeyoga;
-        kayygiukegykiwas:
-        oismsssqukkqkyai:
-        goto uqqwyiemackamkca;
         uqqqaqwamieuwuky:
         $this->allSettings = $qeqooyuoiasweuck;
         goto geaucesekwmkgusc;
-        aeesioaqmuoeyoga:
-        $qeqooyuoiasweuck = $mksyucucyswaukig::mywwyegkuymookeg();
-        goto ikseiooeakoewqqu;
         uqqwyiemackamkca:
         return $this->allSettings;
         goto miumuoummqkyeeom;
         ugasccoeokgqkses:
         $mksyucucyswaukig = $this->kmuweyayaqoeqiyw();
         goto mmkooaugaqyqgyww;
-        geaucesekwmkgusc:
-        eucqcsogwusgkuim:
-        goto mmkssgccamceekkq;
+        aeesioaqmuoeyoga:
+        $qeqooyuoiasweuck = $mksyucucyswaukig::mywwyegkuymookeg();
+        goto ikseiooeakoewqqu;
         mmkssgccamceekkq:
         qesewiceagyggaia:
         goto kayygiukegykiwas;
-        ikseiooeakoewqqu:
-        if (!is_array($qeqooyuoiasweuck)) {
-            goto eucqcsogwusgkuim;
-        }
-        goto uqqqaqwamieuwuky;
+        geaucesekwmkgusc:
+        eucqcsogwusgkuim:
+        goto mmkssgccamceekkq;
         miumuoummqkyeeom:
     }
     
     public final function weysguygiseoukqw(string $uusmaiomayssaecw, $ggauoeuaesiymgee = null)
     {
         goto mcoqyaoecgqswook;
+        aokygwoioiokcaoc:
+        return $amakmumgguksgmum;
+        goto mwyiogaoucouuymy;
         cqssqgewmeeiyqss:
         $amakmumgguksgmum = $mksyucucyswaukig::eiwcuqigayigimak($uusmaiomayssaecw, $ggauoeuaesiymgee);
         goto yuuqgqawgsycgggg;
-        qwcgeuyaymqioiue:
-        goto yauaumyywgiiweue;
-        goto ikwqycaoqgesokkm;
+        agqoooycekqkcygs:
+        if (!$qeqooyuoiasweuck) {
+            goto ogsasqwsmasgymkq;
+        }
+        goto mummysomwguemsmw;
         yuuqgqawgsycgggg:
         umisqysaiumusiew:
         goto kmsoucccawegguwq;
-        mummysomwguemsmw:
-        $amakmumgguksgmum = ManipulateArray::get($qeqooyuoiasweuck, $uusmaiomayssaecw, $ggauoeuaesiymgee);
-        goto qwcgeuyaymqioiue;
+        ikwqycaoqgesokkm:
+        ogsasqwsmasgymkq:
+        goto eauwuykuucsasmyi;
         ckkceskqiksqckms:
         if (!$mksyucucyswaukig) {
             goto umisqysaiumusiew;
@@ -87,26 +92,21 @@ trait SettingTrait
         eauwuykuucsasmyi:
         $amakmumgguksgmum = $ggauoeuaesiymgee;
         goto iqyocsmgummccuso;
-        iqyocsmgummccuso:
-        $mksyucucyswaukig = $this->kmuweyayaqoeqiyw();
-        goto ckkceskqiksqckms;
-        agqoooycekqkcygs:
-        if (!$qeqooyuoiasweuck) {
-            goto ogsasqwsmasgymkq;
-        }
-        goto mummysomwguemsmw;
-        ikwqycaoqgesokkm:
-        ogsasqwsmasgymkq:
-        goto eauwuykuucsasmyi;
-        mcoqyaoecgqswook:
-        $qeqooyuoiasweuck = $this->aoqykkmokwseeeie();
-        goto agqoooycekqkcygs;
         kmsoucccawegguwq:
         yauaumyywgiiweue:
         goto aokygwoioiokcaoc;
-        aokygwoioiokcaoc:
-        return $amakmumgguksgmum;
-        goto mwyiogaoucouuymy;
+        mcoqyaoecgqswook:
+        $qeqooyuoiasweuck = $this->aoqykkmokwseeeie();
+        goto agqoooycekqkcygs;
+        iqyocsmgummccuso:
+        $mksyucucyswaukig = $this->kmuweyayaqoeqiyw();
+        goto ckkceskqiksqckms;
+        mummysomwguemsmw:
+        $amakmumgguksgmum = ManipulateArray::get($qeqooyuoiasweuck, $uusmaiomayssaecw, $ggauoeuaesiymgee);
+        goto qwcgeuyaymqioiue;
+        qwcgeuyaymqioiue:
+        goto yauaumyywgiiweue;
+        goto ikwqycaoqgesokkm;
         mwyiogaoucouuymy:
     }
 }

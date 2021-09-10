@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b499786a1b             |
+    |             613b5973b89a9             |
     |_______________________________________|
 */
 
@@ -14,15 +14,15 @@ abstract class RESTRegister extends Common
     protected array $controllers = [];
     public function wigskegsqequoeks()
     {
-        $this->qcsmikeggeemccuu("\162\x65\163\x74\x5f\x61\160\151\x5f\151\156\x69\x74", [$this, "\164\151\x73\x77\x61\x79\x73\161\141\167\x75\143\147\x67\165\143"]);
+        $this->qcsmikeggeemccuu("\162\x65\163\164\x5f\141\160\151\137\151\156\x69\x74", [$this, "\164\151\x73\x77\141\x79\x73\x71\141\167\x75\143\x67\147\x75\x63"]);
         parent::wigskegsqequoeks();
     }
     public function tiswaysqawucgguc()
     {
         goto saikuiquwyasomue;
-        saikuiquwyasomue:
-        $this->gigwcakmiyayoigw();
-        goto wegygoseewgquwcs;
+        iwgacmgmqsoyyuiu:
+        iucwiggcmogeikck:
+        goto akoqyygqeiiikmco;
         wegygoseewgquwcs:
         foreach ($this->ksmgmuacawsaomao() as $ioqmgqkiwqgmgcks) {
             goto sucqiqmssemsygei;
@@ -30,6 +30,9 @@ abstract class RESTRegister extends Common
             
             $ioqmgqkiwqgmgcks->register_routes();
             goto iqymwucscyyeqcwa;
+            iqymwucscyyeqcwa:
+            ssegekmssqkgsoge:
+            goto eiscuqyckkwcscog;
             sucqiqmssemsygei:
             if (!$ioqmgqkiwqgmgcks instanceof RESTController) {
                 goto ssegekmssqkgsoge;
@@ -38,15 +41,12 @@ abstract class RESTRegister extends Common
             eiscuqyckkwcscog:
             cqygwmwkkiqqwquw:
             goto kiwskyeqwwokioks;
-            iqymwucscyyeqcwa:
-            ssegekmssqkgsoge:
-            goto eiscuqyckkwcscog;
             kiwskyeqwwokioks:
         }
         goto iwgacmgmqsoyyuiu;
-        iwgacmgmqsoyyuiu:
-        iucwiggcmogeikck:
-        goto akoqyygqeiiikmco;
+        saikuiquwyasomue:
+        $this->gigwcakmiyayoigw();
+        goto wegygoseewgquwcs;
         akoqyygqeiiikmco:
     }
     
