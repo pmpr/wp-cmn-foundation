@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b3993be3fb             |
+    |             613b499786a1b             |
     |_______________________________________|
 */
 
@@ -21,7 +21,7 @@ class DecoratorSanitize extends Decorator
         return sanitize_title_with_dashes($meqocwsecsywiiqs);
     }
     
-    public static function meqocwsecsywiiqs($meqocwsecsywiiqs, $cwugquwaukuuosaw = '', $mgkceomocowocqyo = "\x73\x61\166\145") : ?string
+    public static function meqocwsecsywiiqs($meqocwsecsywiiqs, $cwugquwaukuuosaw = '', $mgkceomocowocqyo = "\163\x61\166\x65") : ?string
     {
         return sanitize_title($meqocwsecsywiiqs, $cwugquwaukuuosaw, $mgkceomocowocqyo);
     }

@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b3993be3fb             |
+    |             613b499786a1b             |
     |_______________________________________|
 */
 
@@ -54,18 +54,18 @@ trait LogTrait
             goto usosooekkcgwmgkq;
         }
         goto geacgaisikkgqosu;
-        geacgaisikkgqosu:
-        $iwcsiuuqeaaaeees = Logger::DEFAULT_CHANNEL;
-        goto aqykwekaooeoqgoa;
-        sacawqskusgwkkyg:
-        $this->ygaescewwyaseaoy()->uimukyawykswgwsm($iwcsiuuqeaaaeees, $iqaosyayeiuaisqi, $uamcoiueqaamsqma, $mgkceomocowocqyo);
-        goto uckyuqsuyqwgswaa;
-        aqykwekaooeoqgoa:
-        usosooekkcgwmgkq:
-        goto sacawqskusgwkkyg;
         eocusimsawyoyaas:
         $iwcsiuuqeaaaeees = $this->cycuaskkikweaoym();
         goto seasiecgqussuqkw;
+        sacawqskusgwkkyg:
+        $this->ygaescewwyaseaoy()->uimukyawykswgwsm($iwcsiuuqeaaaeees, $iqaosyayeiuaisqi, $uamcoiueqaamsqma, $mgkceomocowocqyo);
+        goto uckyuqsuyqwgswaa;
+        geacgaisikkgqosu:
+        $iwcsiuuqeaaaeees = Logger::DEFAULT_CHANNEL;
+        goto aqykwekaooeoqgoa;
+        aqykwekaooeoqgoa:
+        usosooekkcgwmgkq:
+        goto sacawqskusgwkkyg;
         uckyuqsuyqwgswaa:
     }
 }

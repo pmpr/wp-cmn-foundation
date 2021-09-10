@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b3993be3fb             |
+    |             613b499786a1b             |
     |_______________________________________|
 */
 
@@ -15,25 +15,25 @@ class ManipulateWidget extends Manipulate
     
     public static function ymaywccaiscsmsik($aokagokqyuysuksm, $ymqmyyeuycgmigyo, $ywmkwiwkosakssii = [])
     {
-        $ywmkwiwkosakssii = array_merge($ywmkwiwkosakssii, ["\151\x64" => $aokagokqyuysuksm, "\x6e\x61\155\145" => $ymqmyyeuycgmigyo]);
+        $ywmkwiwkosakssii = array_merge($ywmkwiwkosakssii, ["\151\144" => $aokagokqyuysuksm, "\x6e\x61\155\x65" => $ymqmyyeuycgmigyo]);
         DecoratorWidget::ymaywccaiscsmsik($ywmkwiwkosakssii);
     }
     
     public static function acsmmesauemikksg($assameyusgwogmce, $owgumcsyqsamiemg = [], $ywmkwiwkosakssii = [])
     {
         goto msugciceoeaqyggk;
+        keqmucqsyyuikoou:
+        return DecoratorHook::sscegwueamckwmcy(ManipulateHook::ygyygikyocoymgaw("\x77\151\144\147\145\164\137\150\164\x6d\154"), $nsmgceoqaqogqmuw, $assameyusgwogmce);
+        goto cgcagmggieimycaw;
+        msugciceoeaqyggk:
+        ob_start();
+        goto awmwewyeqcgmmcyg;
         awmwewyeqcgmmcyg:
         the_widget($assameyusgwogmce, $owgumcsyqsamiemg, $ywmkwiwkosakssii);
         goto ecokmyyccossammg;
         ecokmyyccossammg:
         $nsmgceoqaqogqmuw = ob_get_clean();
         goto keqmucqsyyuikoou;
-        msugciceoeaqyggk:
-        ob_start();
-        goto awmwewyeqcgmmcyg;
-        keqmucqsyyuikoou:
-        return DecoratorHook::sscegwueamckwmcy(ManipulateHook::ygyygikyocoymgaw("\x77\151\x64\147\145\x74\137\x68\x74\x6d\x6c"), $nsmgceoqaqogqmuw, $assameyusgwogmce);
-        goto cgcagmggieimycaw;
         cgcagmggieimycaw:
     }
 }

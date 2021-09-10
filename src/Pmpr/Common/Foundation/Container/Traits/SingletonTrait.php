@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b3993be3fb             |
+    |             613b499786a1b             |
     |_______________________________________|
 */
 
@@ -28,17 +28,17 @@ trait SingletonTrait
     public function __construct()
     {
         goto wiwyqiiuqiecaagq;
+        wiwyqiiuqiecaagq:
+        if (!$this->kwyscakayqgsqosc()) {
+            goto kwmacaaskumakkmi;
+        }
+        goto kgmuuggwcomgisoq;
         auusomqggyqoeows:
         kwmacaaskumakkmi:
         goto nosacyaasaucscou;
         kgmuuggwcomgisoq:
         $this->gyqeoeemeemicgqi();
         goto auusomqggyqoeows;
-        wiwyqiiuqiecaagq:
-        if (!$this->kwyscakayqgsqosc()) {
-            goto kwmacaaskumakkmi;
-        }
-        goto kgmuuggwcomgisoq;
         nosacyaasaucscou:
     }
     
@@ -56,32 +56,34 @@ trait SingletonTrait
         wweogomakqeumaem:
         $this->filesystem = Filesystem::symcgieuakksimmu();
         goto qqiyoegsyuioeckw;
-        qqiyoegsyuioeckw:
-        sqigskysuqcqamsw:
-        goto qkgquayemucsyyuk;
         kgoiamsswecauwkw:
         if ($this->filesystem) {
             goto sqigskysuqcqamsw;
         }
         goto wweogomakqeumaem;
+        qqiyoegsyuioeckw:
+        sqigskysuqcqamsw:
+        goto qkgquayemucsyyuk;
         ckigcgskuimkcaqw:
     }
     
     public function miocmcoykayoyyau() : ?Manager
     {
         goto uogkyukgkuagagce;
-        akewkwcuoimqkaqw:
-        $this->assetManager = Manager::ocmycskcuiawkecq($wksoawcgagcgoask->aakmagwggmkoiiyu(), $wksoawcgagcgoask);
-        goto mkmusqguaqaoiiie;
-        umgugakmykkciguc:
-        $wksoawcgagcgoask = self::couwksyewgyeooqe();
-        goto akcswkssaqkqmuai;
         wcegwageayaaskqu:
         return $this->assetManager;
         goto asmkomwmsmsoiwwk;
-        kaekwemuauqsseee:
-        gcumkowycakiggag:
-        goto wcegwageayaaskqu;
+        umgugakmykkciguc:
+        $wksoawcgagcgoask = self::couwksyewgyeooqe();
+        goto akcswkssaqkqmuai;
+        akewkwcuoimqkaqw:
+        $this->assetManager = Manager::ocmycskcuiawkecq($wksoawcgagcgoask->aakmagwggmkoiiyu(), $wksoawcgagcgoask);
+        goto mkmusqguaqaoiiie;
+        uogkyukgkuagagce:
+        if ($this->assetManager) {
+            goto gcumkowycakiggag;
+        }
+        goto umgugakmykkciguc;
         akcswkssaqkqmuai:
         if (!$wksoawcgagcgoask) {
             goto gicwyacksgiucaem;
@@ -90,28 +92,26 @@ trait SingletonTrait
         mkmusqguaqaoiiie:
         gicwyacksgiucaem:
         goto kaekwemuauqsseee;
-        uogkyukgkuagagce:
-        if ($this->assetManager) {
-            goto gcumkowycakiggag;
-        }
-        goto umgugakmykkciguc;
+        kaekwemuauqsseee:
+        gcumkowycakiggag:
+        goto wcegwageayaaskqu;
         asmkomwmsmsoiwwk:
     }
     public final function gyqeoeemeemicgqi()
     {
         goto ugackekcsissoose;
-        wmmsikmaoayoqgoy:
-        $this->eogyyugasomygcma();
-        goto osmmgskussmswsaa;
         ugackekcsissoose:
         $this->wigskegsqequoeks();
         goto omoswqiiaeoowuqi;
-        osmmgskussmswsaa:
-        $this->kgewmaycsoykyaso();
-        goto auweucmeckcesaqa;
         omoswqiiaeoowuqi:
         $this->kgquecmsgcouyaya();
         goto wmmsikmaoayoqgoy;
+        osmmgskussmswsaa:
+        $this->kgewmaycsoykyaso();
+        goto auweucmeckcesaqa;
+        wmmsikmaoayoqgoy:
+        $this->eogyyugasomygcma();
+        goto osmmgskussmswsaa;
         auweucmeckcesaqa:
     }
     public function wigskegsqequoeks()
@@ -160,47 +160,33 @@ trait SingletonTrait
     public function wsmkmgikcacikiwe($iswcokucwmiosiaq) : array
     {
         goto muaogywawgisgwmc;
-        ecakskaumocsocya:
-        
-        $ueeagokqmgisgauy = $iswcokucwmiosiaq->get_error_messages();
-        goto ewueeegiikwuouac;
-        eyueqyuwqskeaukw:
-        return $ueeagokqmgisgauy;
-        goto qcygaeqosmmkcyiy;
         yquqammaasiiqwqs:
         if (!$iswcokucwmiosiaq instanceof WP_Error) {
             goto iiocswwmeucywyag;
         }
         goto ecakskaumocsocya;
-        muaogywawgisgwmc:
-        $ueeagokqmgisgauy = [];
-        goto yquqammaasiiqwqs;
         ewueeegiikwuouac:
         iiocswwmeucywyag:
         goto eyueqyuwqskeaukw;
+        eyueqyuwqskeaukw:
+        return $ueeagokqmgisgauy;
+        goto qcygaeqosmmkcyiy;
+        muaogywawgisgwmc:
+        $ueeagokqmgisgauy = [];
+        goto yquqammaasiiqwqs;
+        ecakskaumocsocya:
+        
+        $ueeagokqmgisgauy = $iswcokucwmiosiaq->get_error_messages();
+        goto ewueeegiikwuouac;
         qcygaeqosmmkcyiy:
     }
     
     public function uocccyeugiykcmes($iswcokucwmiosiaq, $wamcomkuwysqgwgk = null)
     {
         goto ciqssmeisowigooa;
-        ikggquuegwqcoqcg:
-        $uamcoiueqaamsqma = implode(PHP_EOL, $iswcokucwmiosiaq);
-        goto sswqekggikugcowi;
-        ysssiamakaswaooy:
-        $uamcoiueqaamsqma = sprintf($wamcomkuwysqgwgk, $uamcoiueqaamsqma);
-        goto omgsioiwgsagmwcm;
         yaioqmceccgsckuy:
         $this->yqkwsouguwgoywcw($uamcoiueqaamsqma);
         goto jkkyqgueaogqecqc;
-        ciqssmeisowigooa:
-        if (!$iswcokucwmiosiaq instanceof WP_Error) {
-            goto kcyoameekmymmgsc;
-        }
-        goto kgcauquceasaaoqs;
-        omgsioiwgsagmwcm:
-        gqskauqwasscayus:
-        goto yaioqmceccgsckuy;
         sswqekggikugcowi:
         if (!$wamcomkuwysqgwgk) {
             goto gqskauqwasscayus;
@@ -212,15 +198,30 @@ trait SingletonTrait
         kisysggyoousaysy:
         kcyoameekmymmgsc:
         goto ikggquuegwqcoqcg;
+        ikggquuegwqcoqcg:
+        $uamcoiueqaamsqma = implode(PHP_EOL, $iswcokucwmiosiaq);
+        goto sswqekggikugcowi;
+        ysssiamakaswaooy:
+        $uamcoiueqaamsqma = sprintf($wamcomkuwysqgwgk, $uamcoiueqaamsqma);
+        goto omgsioiwgsagmwcm;
+        omgsioiwgsagmwcm:
+        gqskauqwasscayus:
+        goto yaioqmceccgsckuy;
+        ciqssmeisowigooa:
+        if (!$iswcokucwmiosiaq instanceof WP_Error) {
+            goto kcyoameekmymmgsc;
+        }
+        goto kgcauquceasaaoqs;
         jkkyqgueaogqecqc:
     }
     
     public function kyacickkomkioeyu($wgaoewqkwgomoaai) : ?string
     {
         goto agsswcsmsugomcao;
-        yaacseqwycoiwscq:
-        return $uamcoiueqaamsqma;
-        goto miisgaoyumayooye;
+        yugggoyoqaaacaem:
+        
+        $uamcoiueqaamsqma = $wgaoewqkwgomoaai->getMessage();
+        goto ucmumgeqkewmqkqe;
         ucmumgeqkewmqkqe:
         yacgswmqesusicsi:
         goto yaacseqwycoiwscq;
@@ -232,10 +233,9 @@ trait SingletonTrait
         agsswcsmsugomcao:
         $uamcoiueqaamsqma = '';
         goto yqwegoiemuiassgc;
-        yugggoyoqaaacaem:
-        
-        $uamcoiueqaamsqma = $wgaoewqkwgomoaai->getMessage();
-        goto ucmumgeqkewmqkqe;
+        yaacseqwycoiwscq:
+        return $uamcoiueqaamsqma;
+        goto miisgaoyumayooye;
         miisgaoyumayooye:
     }
     

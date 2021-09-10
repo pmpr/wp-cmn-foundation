@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b3993be3fb             |
+    |             613b499786a1b             |
     |_______________________________________|
 */
 
@@ -16,29 +16,32 @@ class WPSetting extends Container
 {
     public function wigskegsqequoeks()
     {
-        $this->qcsmikeggeemccuu("\x61\144\x6d\151\156\x5f\x69\x6e\151\x74", [$this, "\x79\145\171\151\x67\165\171\x65\x67\x6d\x6d\x79\x75\x73\145\x61"]);
+        $this->qcsmikeggeemccuu("\141\x64\155\x69\x6e\137\151\x6e\x69\x74", [$this, "\171\145\171\151\x67\165\171\145\147\155\x6d\171\x75\163\145\141"]);
         parent::wigskegsqequoeks();
     }
     public function yeyiguyegmmyusea()
     {
         goto wakmmggoiykyuamq;
+        wakmmggoiykyuamq:
+        $qeqooyuoiasweuck = $this->sscegwueamckwmcy("\167\157\x72\x64\160\162\x65\163\x73\137\x73\145\x74\x74\151\156\x67\x73\x5f\146\x69\x65\x6c\144\163", []);
+        goto coqmamquawyaeyae;
         coqmamquawyaeyae:
         foreach ($qeqooyuoiasweuck as $aokagokqyuysuksm => $amakmumgguksgmum) {
             goto acikugwgomwemcmu;
-            mkggmsugkikwywom:
-            $amakmumgguksgmum["\x61\x72\147\163"]["\151\144"] = $aokagokqyuysuksm;
-            goto gkiikogcsmysucuc;
-            kamwemiweockugia:
-            register_setting($amakmumgguksgmum["\x67\x72\157\x75\160"], $aokagokqyuysuksm);
-            goto mkggmsugkikwywom;
             acikugwgomwemcmu:
-            $amakmumgguksgmum = ManipulateFormat::omaawkkwwyesqwcc($amakmumgguksgmum, ["\x73\145\x63\x74\x69\157\x6e" => "\144\145\x66\x61\x75\154\x74", "\164\151\164\x6c\145" => '', "\147\x72\157\x75\x70" => "\147\x65\x6e\145\x72\x61\154", "\x61\x72\x67\x73" => []]);
+            $amakmumgguksgmum = ManipulateFormat::omaawkkwwyesqwcc($amakmumgguksgmum, ["\163\145\143\x74\x69\157\x6e" => "\x64\x65\x66\141\x75\x6c\x74", "\164\x69\164\154\x65" => '', "\147\162\x6f\165\160" => "\147\145\156\x65\162\x61\x6c", "\141\162\x67\x73" => []]);
             goto kamwemiweockugia;
+            kamwemiweockugia:
+            register_setting($amakmumgguksgmum["\147\x72\157\165\160"], $aokagokqyuysuksm);
+            goto mkggmsugkikwywom;
+            mkggmsugkikwywom:
+            $amakmumgguksgmum["\x61\162\147\163"]["\151\144"] = $aokagokqyuysuksm;
+            goto gkiikogcsmysucuc;
             uywoegeimqomwqoa:
             aikaeokwagkiecao:
             goto yeomwmwumiieiywi;
             gkiikogcsmysucuc:
-            add_settings_field($aokagokqyuysuksm, $amakmumgguksgmum["\164\151\x74\154\x65"], [$this, "\x72\x65\156\x64\145\x72"], $amakmumgguksgmum["\147\x72\157\165\160"], $amakmumgguksgmum["\163\x65\143\x74\x69\x6f\x6e"], $amakmumgguksgmum["\141\x72\x67\163"]);
+            add_settings_field($aokagokqyuysuksm, $amakmumgguksgmum["\164\x69\164\154\145"], [$this, "\162\145\x6e\144\145\162"], $amakmumgguksgmum["\147\162\157\x75\x70"], $amakmumgguksgmum["\163\x65\x63\164\151\157\156"], $amakmumgguksgmum["\141\x72\147\163"]);
             goto uywoegeimqomwqoa;
             yeomwmwumiieiywi:
         }
@@ -46,15 +49,12 @@ class WPSetting extends Container
         ymsiicmasqigsymw:
         qywueemkicmwyoqg:
         goto yiyuuyewoweiaokc;
-        wakmmggoiykyuamq:
-        $qeqooyuoiasweuck = $this->sscegwueamckwmcy("\167\157\162\x64\160\x72\145\163\163\137\163\145\164\x74\151\x6e\147\163\137\146\x69\x65\154\144\163", []);
-        goto coqmamquawyaeyae;
         yiyuuyewoweiaokc:
     }
     
     public function render($ywmkwiwkosakssii)
     {
-        MetaBox::okmsgamiiemyesao(ManipulateFormat::omaawkkwwyesqwcc($ywmkwiwkosakssii, ["\x65\x63\150\157" => true]));
+        MetaBox::okmsgamiiemyesao(ManipulateFormat::omaawkkwwyesqwcc($ywmkwiwkosakssii, ["\x65\143\x68\x6f" => true]));
     }
     
     public static function eiwcuqigayigimak($uusmaiomayssaecw, $ggauoeuaesiymgee = false)

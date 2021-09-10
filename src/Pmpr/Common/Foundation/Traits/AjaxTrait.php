@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b3993be3fb             |
+    |             613b499786a1b             |
     |_______________________________________|
 */
 
@@ -15,9 +15,14 @@ trait AjaxTrait
     public function miueaekaaugaccmg(&$iswcokucwmiosiaq, $aiowsaccomcoikus = self::AJAX_NONCE_KEY) : bool
     {
         goto ossuaoyigeyoisgo;
-        igasikoyeqekomeq:
-        return $eisqsskqimiigkay;
-        goto miocsiqemcsmkmwe;
+        essyuyoweqekagsi:
+        if (!ManipulateAjax::wqsmsuyggkkyyocc(self::AJAX_NONCE, $aiowsaccomcoikus)) {
+            goto gouiyyuwcgwgsyis;
+        }
+        goto ogwiccocwuiuyyqk;
+        ogwiccocwuiuyyqk:
+        $eisqsskqimiigkay = true;
+        goto ygwykwccoweycoci;
         ikqmqsquoimqecsy:
         egmkgyusyyyaqcyu:
         goto igasikoyeqekomeq;
@@ -27,20 +32,15 @@ trait AjaxTrait
         ossuaoyigeyoisgo:
         $eisqsskqimiigkay = false;
         goto essyuyoweqekagsi;
-        ogwiccocwuiuyyqk:
-        $eisqsskqimiigkay = true;
-        goto ygwykwccoweycoci;
         smmwkkeukemsueco:
-        $iswcokucwmiosiaq = __("\122\x65\161\165\x65\x73\x74\x20\x69\163\40\156\x6f\x74\x20\x76\141\154\151\144\54\x20\160\x6c\145\141\x73\145\40\x72\x65\x6c\x6f\x61\x64\40\160\x61\147\x65\x20\x61\156\144\40\164\x72\x79\x20\141\147\x61\x69\156\x2e", PR__CMN__FOUNDATION);
+        $iswcokucwmiosiaq = __("\122\145\x71\x75\145\163\x74\x20\x69\163\40\156\157\164\x20\x76\141\x6c\151\x64\54\x20\160\x6c\145\x61\x73\145\x20\x72\145\x6c\157\x61\144\x20\x70\x61\147\145\40\141\156\144\x20\x74\x72\171\x20\141\147\x61\151\x6e\56", PR__CMN__FOUNDATION);
         goto ikqmqsquoimqecsy;
-        essyuyoweqekagsi:
-        if (!ManipulateAjax::wqsmsuyggkkyyocc(self::AJAX_NONCE, $aiowsaccomcoikus)) {
-            goto gouiyyuwcgwgsyis;
-        }
-        goto ogwiccocwuiuyyqk;
         ygwykwccoweycoci:
         goto egmkgyusyyyaqcyu;
         goto gsskeqkeaaoqcqua;
+        igasikoyeqekomeq:
+        return $eisqsskqimiigkay;
+        goto miocsiqemcsmkmwe;
         miocsiqemcsmkmwe:
     }
     

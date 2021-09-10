@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b3993be3fb             |
+    |             613b499786a1b             |
     |_______________________________________|
 */
 
@@ -19,27 +19,27 @@ class Type extends Common
     public function iemaakgqgqosiecm()
     {
         goto eqaycqwokoquwogy;
-        mysamiwgyemmmise:
-        MultiButton::symcgieuakksimmu();
-        goto ooqmaosgkcqwkoii;
-        mykewkmwswqeymac:
-        Html::symcgieuakksimmu();
-        goto miukicuoyecquusw;
         eoauoeuywmyisiwe:
         Select2::symcgieuakksimmu();
         goto wewigwekyeiiesuo;
-        miukicuoyecquusw:
-        Button::symcgieuakksimmu();
-        goto eoauoeuywmyisiwe;
-        wewigwekyeiiesuo:
-        Display::symcgieuakksimmu();
-        goto seocaaicqkcukgmk;
         seocaaicqkcukgmk:
         BSSelect::symcgieuakksimmu();
         goto mysamiwgyemmmise;
         eqaycqwokoquwogy:
         Size::symcgieuakksimmu();
         goto mykewkmwswqeymac;
+        miukicuoyecquusw:
+        Button::symcgieuakksimmu();
+        goto eoauoeuywmyisiwe;
+        wewigwekyeiiesuo:
+        Display::symcgieuakksimmu();
+        goto seocaaicqkcukgmk;
+        mykewkmwswqeymac:
+        Html::symcgieuakksimmu();
+        goto miukicuoyecquusw;
+        mysamiwgyemmmise:
+        MultiButton::symcgieuakksimmu();
+        goto ooqmaosgkcqwkoii;
         ooqmaosgkcqwkoii:
     }
 }

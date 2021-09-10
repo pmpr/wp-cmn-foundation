@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b3993be3fb             |
+    |             613b499786a1b             |
     |_______________________________________|
 */
 
@@ -47,18 +47,18 @@ class WPListTable extends WP_List_Table implements ConstantInterface
     public function prepare_items()
     {
         goto sooowgiqueeqkuey;
-        eukgyqwumyckyiyo:
-        $weyoqgcesqgeusiu = $this->sooksiiooeywkyaq();
-        goto waqsouimkiiiagis;
-        iegswgukwsmcasgs:
-        $this->_column_headers = [$this->get_columns(), [], $this->get_sortable_columns()];
-        goto msqiqgiuckeymuae;
-        waqsouimkiiiagis:
-        $this->set_pagination_args(["\160\x65\x72\x5f\160\141\147\x65" => $weyoqgcesqgeusiu, "\164\x6f\x74\141\x6c\137\x70\x61\x67\x65\163" => ceil($gaeqamemwmwsyukm / $weyoqgcesqgeusiu), "\164\157\164\x61\x6c\x5f\x69\164\x65\155\x73" => $gaeqamemwmwsyukm]);
-        goto iegswgukwsmcasgs;
         sooowgiqueeqkuey:
         $gaeqamemwmwsyukm = $this->ygmcsmegcysyeoss();
         goto eukgyqwumyckyiyo;
+        waqsouimkiiiagis:
+        $this->set_pagination_args(["\x70\145\x72\x5f\x70\141\147\145" => $weyoqgcesqgeusiu, "\164\157\x74\141\154\x5f\x70\141\x67\x65\163" => ceil($gaeqamemwmwsyukm / $weyoqgcesqgeusiu), "\164\x6f\164\x61\154\x5f\x69\x74\x65\155\x73" => $gaeqamemwmwsyukm]);
+        goto iegswgukwsmcasgs;
+        iegswgukwsmcasgs:
+        $this->_column_headers = [$this->get_columns(), [], $this->get_sortable_columns()];
+        goto msqiqgiuckeymuae;
+        eukgyqwumyckyiyo:
+        $weyoqgcesqgeusiu = $this->sooksiiooeywkyaq();
+        goto waqsouimkiiiagis;
         msqiqgiuckeymuae:
     }
 }

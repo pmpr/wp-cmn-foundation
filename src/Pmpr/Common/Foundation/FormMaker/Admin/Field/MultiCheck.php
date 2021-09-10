@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b3993be3fb             |
+    |             613b499786a1b             |
     |_______________________________________|
 */
 
@@ -14,8 +14,8 @@ class MultiCheck extends OptionAwareField
     
     public function __construct(?string $aokagokqyuysuksm, ?string $ymqmyyeuycgmigyo, ?array $qiouiwasaauyaaue, ?string $ukwokcuqauuosmoo = null)
     {
-        parent::__construct("\x6d\x75\154\164\x69\x63\150\x65\143\x6b", $aokagokqyuysuksm, $ymqmyyeuycgmigyo, $ukwokcuqauuosmoo, $qiouiwasaauyaaue);
-        $this->usoqcyyugsuyiewc("\160\162\x2d\x73\x77\x69\164\x63\150");
+        parent::__construct("\x6d\x75\154\164\151\143\150\x65\143\x6b", $aokagokqyuysuksm, $ymqmyyeuycgmigyo, $ukwokcuqauuosmoo, $qiouiwasaauyaaue);
+        $this->usoqcyyugsuyiewc("\x70\162\55\163\167\151\164\x63\150");
     }
     
     public function wmociykwcyesssui() : ?bool

@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b3993be3fb             |
+    |             613b499786a1b             |
     |_______________________________________|
 */
 
@@ -11,10 +11,10 @@ use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString;
 
 class Foreign extends Field
 {
-    const ONE_TO_ONE = "\157\156\145\x74\157\x6f\156\145";
-    const ONE_TO_MANY = "\x6f\x6e\x65\164\x6f\155\141\156\x79";
-    const MANY_TO_ONE = "\155\141\156\171\164\x6f\157\156\145";
-    const MANY_TO_MANY = "\x6d\x61\156\171\164\x6f\x6d\141\x6e\x79";
+    const ONE_TO_ONE = "\157\156\x65\164\x6f\x6f\x6e\x65";
+    const ONE_TO_MANY = "\x6f\x6e\145\164\157\x6d\141\x6e\171";
+    const MANY_TO_ONE = "\x6d\141\x6e\x79\x74\x6f\x6f\x6e\x65";
+    const MANY_TO_MANY = "\x6d\141\x6e\171\x74\157\155\141\156\171";
     
     protected ?string $on = null;
     
@@ -22,19 +22,19 @@ class Foreign extends Field
     
     protected bool $mappedBy = false;
     
-    protected ?string $references = "\x69\144";
+    protected ?string $references = "\151\x64";
     
     protected ?string $inversedBy = null;
     
     protected ?string $relation = self::ONE_TO_ONE;
     
-    protected ?string $onDelete = "\116\x4f\x20\101\x43\x54\111\x4f\116";
+    protected ?string $onDelete = "\x4e\x4f\x20\101\103\x54\x49\x4f\x4e";
     
-    protected ?string $onUpdate = "\x4e\117\x20\x41\103\x54\111\117\x4e";
+    protected ?string $onUpdate = "\x4e\117\x20\x41\x43\124\x49\117\116";
     
     public function __construct(string $aokagokqyuysuksm, ?string $meqocwsecsywiiqs = null)
     {
-        parent::__construct("\x66\157\x72\x65\151\147\156", $aokagokqyuysuksm, $meqocwsecsywiiqs);
+        parent::__construct("\x66\x6f\x72\x65\x69\x67\x6e", $aokagokqyuysuksm, $meqocwsecsywiiqs);
     }
     
     public function yeoakayeygwguyus() : ?string
@@ -67,6 +67,15 @@ class Foreign extends Field
     public function wuuqgaekqeymecag() : self
     {
         goto osiemgqgiycaymio;
+        kmkwsqgumkwgemwc:
+        jiiiygsseagcmycw:
+        goto uiakqoyqmcwokgse;
+        uiakqoyqmcwokgse:
+        return $this->qemiokeaqceqkgso(self::MANY_TO_ONE);
+        goto oksimyciqsugcami;
+        qiokyyweaoysyeci:
+        wp_die(sprintf(__("\106\x6f\162\145\151\x67\x6e\x20\x6b\x65\x79\x20\45\163\x20\x6d\165\x73\164\40\x65\156\x64\x20\167\x69\x74\x68\x20\x25\163\40\x70\157\x73\164\146\x69\x78", PR__CMN__FOUNDATION), $this->mwikyscisascoeea(), self::_ID));
+        goto kmkwsqgumkwgemwc;
         magaykaioygmiciq:
         if (ManipulateString::ykemmsoumouomkqm($this->mwikyscisascoeea(), self::_ID)) {
             goto jiiiygsseagcmycw;
@@ -75,15 +84,6 @@ class Foreign extends Field
         osiemgqgiycaymio:
         $this->wakqsiacyacmumuw();
         goto magaykaioygmiciq;
-        qiokyyweaoysyeci:
-        wp_die(sprintf(__("\106\x6f\162\x65\x69\147\156\x20\153\145\x79\40\x25\x73\40\x6d\165\x73\x74\40\x65\x6e\144\x20\167\x69\x74\x68\x20\x25\x73\40\160\157\x73\164\x66\x69\x78", PR__CMN__FOUNDATION), $this->mwikyscisascoeea(), self::_ID));
-        goto kmkwsqgumkwgemwc;
-        kmkwsqgumkwgemwc:
-        jiiiygsseagcmycw:
-        goto uiakqoyqmcwokgse;
-        uiakqoyqmcwokgse:
-        return $this->qemiokeaqceqkgso(self::MANY_TO_ONE);
-        goto oksimyciqsugcami;
         oksimyciqsugcami:
     }
     

@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b3993be3fb             |
+    |             613b499786a1b             |
     |_______________________________________|
 */
 
@@ -14,7 +14,7 @@ abstract class RESTRegister extends Common
     protected array $controllers = [];
     public function wigskegsqequoeks()
     {
-        $this->qcsmikeggeemccuu("\x72\x65\163\164\137\x61\x70\x69\137\x69\x6e\151\164", [$this, "\x74\x69\163\x77\x61\x79\163\161\141\x77\x75\x63\147\147\165\x63"]);
+        $this->qcsmikeggeemccuu("\162\x65\163\x74\x5f\x61\160\151\x5f\151\156\x69\x74", [$this, "\164\151\x73\x77\x61\x79\x73\161\141\167\x75\143\147\x67\165\143"]);
         parent::wigskegsqequoeks();
     }
     public function tiswaysqawucgguc()
@@ -26,21 +26,21 @@ abstract class RESTRegister extends Common
         wegygoseewgquwcs:
         foreach ($this->ksmgmuacawsaomao() as $ioqmgqkiwqgmgcks) {
             goto sucqiqmssemsygei;
+            ysuykwkygggkkuqc:
+            
+            $ioqmgqkiwqgmgcks->register_routes();
+            goto iqymwucscyyeqcwa;
             sucqiqmssemsygei:
             if (!$ioqmgqkiwqgmgcks instanceof RESTController) {
                 goto ssegekmssqkgsoge;
             }
             goto ysuykwkygggkkuqc;
-            iqymwucscyyeqcwa:
-            ssegekmssqkgsoge:
-            goto eiscuqyckkwcscog;
-            ysuykwkygggkkuqc:
-            
-            $ioqmgqkiwqgmgcks->register_routes();
-            goto iqymwucscyyeqcwa;
             eiscuqyckkwcscog:
             cqygwmwkkiqqwquw:
             goto kiwskyeqwwokioks;
+            iqymwucscyyeqcwa:
+            ssegekmssqkgsoge:
+            goto eiscuqyckkwcscog;
             kiwskyeqwwokioks:
         }
         goto iwgacmgmqsoyyuiu;

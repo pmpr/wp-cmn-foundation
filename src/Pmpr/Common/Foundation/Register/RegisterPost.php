@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b3993be3fb             |
+    |             613b499786a1b             |
     |_______________________________________|
 */
 
@@ -34,11 +34,11 @@ class RegisterPost extends Register
     
     protected ?bool $deleteWithUser = null;
     
-    protected ?string $capabilityType = "\x70\157\x73\x74";
+    protected ?string $capabilityType = "\x70\157\x73\164";
     
     protected ?bool $excludeFromSearch = null;
     
-    protected string $_editLink = "\160\157\163\x74\56\x70\x68\x70\x3f\160\x6f\163\164\x3d\x25\x64";
+    protected string $_editLink = "\160\157\163\164\56\x70\x68\x70\77\x70\157\163\x74\x3d\45\x64";
     
     public function jsgkawekewookomk() : self
     {
@@ -46,15 +46,15 @@ class RegisterPost extends Register
         waeeesmmsacwaaoa:
         $sisssumicskyceeg = $this->giiayuqckuiecosm();
         goto muqokomgakwuiisc;
-        heyuwyceiewkimiu:
-        return $this;
-        goto ciiouaecyaoqacak;
-        muqokomgakwuiisc:
-        $this->labels = ["\x6e\141\x6d\145" => _x($kcumookcwskcyqak, "\160\x6f\x73\164\40\x74\171\x70\x65\40\x67\145\x6e\x65\x72\x61\154\x20\156\141\x6d\x65", PR__CMN__FOUNDATION), "\141\x64\144\x5f\156\x65\x77" => sprintf(__("\101\x64\x64\x20\45\x73", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\x61\x72\x63\x68\151\166\145\x73" => sprintf(__("\45\x73\40\141\162\143\150\151\x76\145\x73", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\156\145\167\x5f\151\x74\145\x6d" => sprintf(__("\116\145\x77\40\45\x73", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\145\x64\x69\x74\137\151\x74\x65\x6d" => sprintf(__("\105\144\x69\x74\40\45\163", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\x6d\145\x6e\x75\137\x6e\x61\155\145" => _x($kcumookcwskcyqak, "\141\144\x6d\151\x6e\x20\x6d\x65\x6e\165", PR__CMN__FOUNDATION), "\166\x69\145\167\x5f\151\164\145\x6d" => sprintf(__("\126\151\x65\167\40\x25\x73", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\x61\154\154\137\151\164\x65\x6d\x73" => sprintf(__("\101\x6c\x6c\x20\45\163", PR__CMN__FOUNDATION), $kcumookcwskcyqak), "\156\157\x74\x5f\x66\157\165\156\x64" => sprintf(__("\116\157\40\x25\163\x20\x66\x6f\x75\x6e\144\x2e", PR__CMN__FOUNDATION), $kcumookcwskcyqak), "\x61\164\164\162\151\x62\165\x74\145\x73" => sprintf(__("\x25\x73\40\x61\164\164\162\x69\x62\x75\164\145\x73", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\166\151\145\167\137\x69\x74\145\x6d\163" => sprintf(__("\x56\151\145\x77\40\45\163", PR__CMN__FOUNDATION), $kcumookcwskcyqak), "\x69\x74\145\155\163\x5f\154\x69\x73\x74" => sprintf(__("\45\163\x20\154\151\163\164", PR__CMN__FOUNDATION), $kcumookcwskcyqak), "\x75\x70\144\x61\x74\x65\137\151\x74\x65\x6d" => sprintf(__("\125\160\144\141\164\x65\40\x25\x73", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\162\x65\155\x6f\166\x65\x5f\x69\x74\145\x6d" => sprintf(__("\122\145\x6d\157\166\145\x20\x25\x73", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\163\x65\141\162\143\150\137\151\x74\145\155\x73" => sprintf(__("\x53\x65\141\162\143\150\40\45\163", PR__CMN__FOUNDATION), $kcumookcwskcyqak), "\141\144\x64\137\x6e\145\x77\137\151\x74\x65\155" => sprintf(__("\101\x64\x64\x20\x4e\145\x77\40\45\163", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\x69\164\145\x6d\137\165\160\x64\x61\x74\145\x64" => sprintf(__("\45\163\x20\x75\160\144\141\x74\x65\144", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\x73\x69\x6e\147\x75\x6c\141\162\x5f\156\141\x6d\145" => _x($sisssumicskyceeg, "\160\157\x73\164\40\x74\x79\x70\x65\x20\x73\x69\x6e\147\x75\154\141\162\x20\x6e\x61\155\145", PR__CMN__FOUNDATION), "\160\154\x75\162\141\x6c\x5f\156\x61\155\x65" => _x($kcumookcwskcyqak, "\x70\157\x73\164\x20\x74\x79\x70\145\40\160\154\x75\x72\x61\x6c\40\156\x61\155\x65", PR__CMN__FOUNDATION), "\x69\x74\145\155\x5f\x70\x75\x62\x6c\x69\x73\x68\x65\144" => sprintf(__("\x25\x73\40\160\x75\x62\x6c\x69\x73\150\x65\144", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\151\164\145\155\x5f\163\143\150\145\144\x75\154\145\144" => sprintf(__("\45\163\40\x73\143\x68\145\x64\x75\154\145\x64", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\146\145\141\164\165\x72\145\x64\137\151\x6d\x61\x67\145" => sprintf(__("\x25\x73\x20\151\x6d\x61\147\x65", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\156\x61\155\x65\137\x61\x64\155\151\156\x5f\x62\x61\162" => _x($sisssumicskyceeg, "\141\x64\x64\x20\x6e\x65\x77\x20\157\x6e\40\141\x64\x6d\x69\156\40\142\141\162", PR__CMN__FOUNDATION), "\151\x6e\x73\145\162\x74\x5f\151\156\164\157\137\x69\164\145\155" => sprintf(__("\120\x75\x74\40\151\x6e\164\157\x20\45\163", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\x66\151\154\164\145\x72\x5f\x69\x74\145\155\x73\137\x6c\x69\x73\164" => sprintf(__("\106\151\x6c\x74\145\x72\40\x25\163\x20\x6c\151\x73\x74", PR__CMN__FOUNDATION), $kcumookcwskcyqak), "\160\141\x72\x65\156\x74\x5f\151\x74\x65\155\x5f\x63\x6f\x6c\157\156" => sprintf(__("\x50\x61\x72\x65\156\164\x20\x25\163\72", PR__CMN__FOUNDATION), $kcumookcwskcyqak), "\163\x65\164\137\x66\145\x61\164\x75\x72\x65\144\137\x69\x6d\141\x67\145" => sprintf(__("\123\x65\164\40\45\x73\40\151\155\x61\147\x65", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\156\157\x74\137\x66\157\x75\156\x64\x5f\151\x6e\137\x74\162\x61\163\x68" => sprintf(__("\116\157\40\x25\163\40\x66\x6f\x75\x6e\x64\40\151\x6e\x20\x54\162\141\x73\x68\x2e", PR__CMN__FOUNDATION), $kcumookcwskcyqak), "\x75\163\x65\x5f\146\145\x61\x74\165\x72\145\x64\x5f\x69\x6d\x61\x67\x65" => sprintf(__("\x55\163\145\40\x61\163\x20\x25\x73\x20\x69\x6d\141\147\x65", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\x75\x70\154\157\x61\144\x65\144\137\164\x6f\137\x74\x68\151\x73\x5f\x69\164\145\x6d" => sprintf(__("\125\160\x6c\157\141\x64\x65\x64\40\x74\157\40\x74\150\151\163\x20\45\x73", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\x72\x65\155\x6f\x76\x65\x5f\146\145\141\x74\165\162\x65\144\137\151\x6d\141\147\145" => sprintf(__("\122\145\155\x6f\166\145\40\45\x73\40\x69\155\141\x67\x65", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\151\164\x65\155\163\137\x6c\x69\163\x74\137\x6e\141\166\x69\x67\x61\x74\151\157\x6e" => sprintf(__("\x25\x73\40\x70\x61\147\x69\156\x61\x74\x69\x6f\156", PR__CMN__FOUNDATION), $kcumookcwskcyqak), "\x69\164\145\155\137\x72\145\166\x65\x72\x74\x65\144\137\164\x6f\x5f\x64\162\x61\x66\164" => sprintf(__("\45\163\x20\162\x65\166\x65\x72\x74\145\x64\40\164\157\40\144\162\141\146\164", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\151\x74\x65\155\137\160\x75\142\154\x69\163\x68\145\x64\x5f\x70\162\x69\x76\x61\164\x65\154\x79" => sprintf(__("\x25\163\40\160\165\142\x6c\151\163\150\x65\144\x20\160\x72\x69\166\141\x74\x65\x6c\x79", PR__CMN__FOUNDATION), $sisssumicskyceeg)];
-        goto heyuwyceiewkimiu;
         ywwmasggauwqgiys:
         $kcumookcwskcyqak = $this->qeeuwmmksmqiuywg();
         goto waeeesmmsacwaaoa;
+        muqokomgakwuiisc:
+        $this->labels = ["\x6e\x61\x6d\x65" => _x($kcumookcwskcyqak, "\x70\157\163\x74\40\x74\171\160\x65\40\x67\145\x6e\145\162\141\x6c\x20\x6e\141\155\x65", PR__CMN__FOUNDATION), "\141\144\x64\x5f\156\145\167" => sprintf(__("\x41\x64\x64\40\45\x73", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\141\162\x63\x68\x69\166\145\163" => sprintf(__("\x25\x73\x20\x61\x72\143\150\x69\166\145\163", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\x6e\x65\x77\137\151\164\x65\x6d" => sprintf(__("\x4e\x65\167\x20\x25\x73", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\145\144\151\x74\x5f\x69\164\145\x6d" => sprintf(__("\x45\144\x69\x74\x20\x25\x73", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\155\x65\x6e\165\x5f\156\141\155\145" => _x($kcumookcwskcyqak, "\141\144\155\151\x6e\x20\x6d\x65\x6e\x75", PR__CMN__FOUNDATION), "\166\151\145\x77\x5f\x69\164\x65\x6d" => sprintf(__("\x56\x69\x65\167\x20\x25\x73", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\x61\154\154\x5f\x69\x74\x65\x6d\x73" => sprintf(__("\101\x6c\x6c\40\x25\163", PR__CMN__FOUNDATION), $kcumookcwskcyqak), "\x6e\x6f\x74\137\146\x6f\x75\x6e\144" => sprintf(__("\116\157\40\x25\163\40\146\x6f\x75\156\144\56", PR__CMN__FOUNDATION), $kcumookcwskcyqak), "\141\x74\164\x72\x69\142\165\x74\x65\x73" => sprintf(__("\45\163\40\141\164\x74\162\151\142\165\164\x65\x73", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\166\x69\145\x77\x5f\151\164\x65\155\x73" => sprintf(__("\x56\151\x65\167\40\x25\x73", PR__CMN__FOUNDATION), $kcumookcwskcyqak), "\x69\164\145\155\163\137\154\151\163\164" => sprintf(__("\x25\163\40\x6c\151\x73\164", PR__CMN__FOUNDATION), $kcumookcwskcyqak), "\x75\x70\144\141\164\x65\x5f\x69\164\145\155" => sprintf(__("\125\x70\x64\141\164\145\40\45\x73", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\x72\145\x6d\x6f\166\145\x5f\151\164\145\155" => sprintf(__("\x52\x65\155\x6f\x76\x65\40\45\163", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\x73\145\141\x72\x63\x68\x5f\151\164\x65\x6d\163" => sprintf(__("\x53\145\141\162\x63\x68\40\x25\163", PR__CMN__FOUNDATION), $kcumookcwskcyqak), "\141\144\144\x5f\x6e\x65\x77\x5f\x69\164\x65\155" => sprintf(__("\101\x64\x64\x20\x4e\x65\x77\40\45\163", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\x69\x74\x65\x6d\137\165\x70\144\x61\164\x65\144" => sprintf(__("\x25\163\40\x75\160\144\x61\164\145\144", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\x73\x69\156\x67\x75\x6c\x61\162\137\x6e\141\155\145" => _x($sisssumicskyceeg, "\x70\x6f\x73\164\x20\x74\x79\x70\x65\x20\163\151\156\x67\165\x6c\x61\162\x20\156\141\155\x65", PR__CMN__FOUNDATION), "\x70\154\165\162\141\x6c\x5f\156\141\x6d\145" => _x($kcumookcwskcyqak, "\160\157\163\x74\x20\x74\x79\x70\145\40\160\154\165\x72\x61\x6c\40\x6e\141\155\145", PR__CMN__FOUNDATION), "\151\164\145\155\137\x70\165\x62\154\151\x73\150\x65\x64" => sprintf(__("\x25\x73\40\x70\x75\x62\154\151\x73\150\145\144", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\x69\x74\x65\x6d\x5f\163\x63\x68\x65\144\x75\154\145\144" => sprintf(__("\x25\x73\40\x73\143\150\145\x64\165\154\145\x64", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\x66\145\x61\164\x75\x72\x65\144\x5f\x69\155\x61\x67\145" => sprintf(__("\45\x73\x20\151\155\x61\147\145", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\156\x61\155\145\137\x61\x64\155\x69\156\x5f\142\x61\x72" => _x($sisssumicskyceeg, "\x61\x64\x64\x20\156\145\x77\40\x6f\156\40\141\144\155\x69\x6e\40\x62\141\162", PR__CMN__FOUNDATION), "\151\x6e\x73\x65\162\x74\137\151\156\164\x6f\x5f\x69\x74\x65\x6d" => sprintf(__("\120\165\x74\40\151\156\x74\157\x20\x25\163", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\146\x69\x6c\164\x65\x72\137\151\x74\x65\x6d\x73\x5f\154\151\x73\x74" => sprintf(__("\106\x69\x6c\164\145\162\40\x25\163\x20\x6c\x69\x73\164", PR__CMN__FOUNDATION), $kcumookcwskcyqak), "\x70\x61\162\145\x6e\x74\137\151\x74\x65\x6d\x5f\x63\x6f\154\x6f\x6e" => sprintf(__("\120\141\x72\x65\x6e\x74\40\45\163\72", PR__CMN__FOUNDATION), $kcumookcwskcyqak), "\x73\145\164\x5f\146\145\141\x74\x75\162\x65\x64\137\151\155\x61\147\145" => sprintf(__("\x53\x65\x74\x20\45\x73\40\x69\155\141\x67\x65", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\x6e\x6f\164\137\x66\x6f\x75\x6e\144\137\x69\156\x5f\164\x72\x61\x73\x68" => sprintf(__("\116\x6f\x20\x25\163\x20\146\x6f\x75\156\144\40\x69\x6e\40\x54\162\141\x73\150\x2e", PR__CMN__FOUNDATION), $kcumookcwskcyqak), "\165\163\145\x5f\x66\145\141\164\x75\x72\x65\x64\x5f\151\x6d\x61\x67\145" => sprintf(__("\125\x73\x65\x20\x61\163\x20\x25\163\x20\x69\x6d\141\147\x65", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\x75\x70\x6c\157\x61\144\145\x64\137\164\x6f\137\x74\150\151\163\x5f\x69\164\x65\155" => sprintf(__("\x55\160\154\157\141\x64\145\x64\40\164\157\40\164\x68\x69\x73\x20\45\163", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\162\145\x6d\157\166\145\x5f\146\x65\x61\164\165\x72\x65\x64\137\x69\x6d\141\x67\145" => sprintf(__("\122\145\155\x6f\166\145\x20\x25\163\40\151\x6d\x61\147\x65", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\x69\x74\145\155\x73\x5f\154\x69\163\x74\x5f\x6e\141\166\x69\147\x61\x74\x69\x6f\156" => sprintf(__("\45\x73\x20\160\x61\x67\151\x6e\x61\164\151\x6f\156", PR__CMN__FOUNDATION), $kcumookcwskcyqak), "\151\164\x65\x6d\x5f\162\145\x76\x65\162\x74\x65\144\137\x74\157\x5f\x64\162\141\146\x74" => sprintf(__("\x25\x73\x20\x72\x65\166\x65\x72\x74\x65\x64\40\164\157\x20\x64\x72\x61\x66\164", PR__CMN__FOUNDATION), $sisssumicskyceeg), "\x69\164\x65\155\x5f\160\165\142\154\x69\163\150\x65\144\x5f\x70\x72\151\x76\141\x74\145\x6c\x79" => sprintf(__("\x25\x73\40\160\x75\x62\154\151\163\x68\x65\x64\x20\x70\162\x69\166\x61\164\145\154\171", PR__CMN__FOUNDATION), $sisssumicskyceeg)];
+        goto heyuwyceiewkimiu;
+        heyuwyceiewkimiu:
+        return $this;
+        goto ciiouaecyaoqacak;
         ciiouaecyaoqacak:
     }
     
@@ -99,12 +99,12 @@ class RegisterPost extends Register
     public function ckaeqgiaiqwsccke(int $ukekeygkycawmkyc) : self
     {
         goto qeccuawaemcqssuk;
-        maemyookcuoiqmik:
-        return $this;
-        goto miiiiqmymyqkkoos;
         qeccuawaemcqssuk:
         $this->menuPosition = $ukekeygkycawmkyc;
         goto gksasoiwiaceowkg;
+        maemyookcuoiqmik:
+        return $this;
+        goto miiiiqmymyqkkoos;
         gksasoiwiaceowkg:
         $this->soeowumgcwuiaica(true);
         goto maemyookcuoiqmik;
@@ -136,18 +136,18 @@ class RegisterPost extends Register
     public function wakugsseussemkka(array $ckgaeiyesoqoemic) : self
     {
         goto ggwmmgogwmqokkoq;
-        esaggsqoamgyguem:
-        uecqkgmguskwausu:
-        goto osgawwyuaegkasms;
-        osgawwyuaegkasms:
-        return $this;
-        goto auegygmkkiqsgwsc;
         ggwmmgogwmqokkoq:
         foreach ($ckgaeiyesoqoemic as $kyiucqqkqiwkoksc) {
             $this->musuokisgmmamoua($kyiucqqkqiwkoksc);
             aasoskwecamqssmy:
         }
         goto esaggsqoamgyguem;
+        osgawwyuaegkasms:
+        return $this;
+        goto auegygmkkiqsgwsc;
+        esaggsqoamgyguem:
+        uecqkgmguskwausu:
+        goto osgawwyuaegkasms;
         auegygmkkiqsgwsc:
     }
     
@@ -178,18 +178,18 @@ class RegisterPost extends Register
     public function mieeukuyckssemsm(array $seyqqsmuaiegkeeq) : self
     {
         goto gosgauymqceykgek;
-        eyqggcokeuakaskk:
-        iqocscomgkciyiwe:
-        goto uqskcceawegkiakk;
-        uqskcceawegkiakk:
-        return $this;
-        goto uysygigskiiwsckq;
         gosgauymqceykgek:
         foreach ($seyqqsmuaiegkeeq as $kesssewsiegssiya) {
             $this->acqyqaaeeogkosoq($kesssewsiegssiya);
             yqqyiokywmggkmke:
         }
         goto eyqggcokeuakaskk;
+        uqskcceawegkiakk:
+        return $this;
+        goto uysygigskiiwsckq;
+        eyqggcokeuakaskk:
+        iqocscomgkciyiwe:
+        goto uqskcceawegkiakk;
         uysygigskiiwsckq:
     }
     

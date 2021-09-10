@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b3993be3fb             |
+    |             613b499786a1b             |
     |_______________________________________|
 */
 
@@ -13,11 +13,11 @@ class ManipulateNumber extends Common
     
     const THRESHOLDS = ['' => 900, "\x4b" => 900000, "\115" => 900000000, "\x42" => 900000000000, "\x54" => 90000000000000];
     
-    const DEFAULT_THRESHOLD = "\x39\x30\60\124\x2b";
+    const DEFAULT_THRESHOLD = "\x39\60\x30\124\x2b";
     
-    public static function uwwmyomsqkoaqawa($eqgoocgaqwqcimie, $geqcesmqwkeayoiu = "\x2c") : string
+    public static function uwwmyomsqkoaqawa($eqgoocgaqwqcimie, $geqcesmqwkeayoiu = "\54") : string
     {
-        return number_format($eqgoocgaqwqcimie, 0, "\x2e", $geqcesmqwkeayoiu);
+        return number_format($eqgoocgaqwqcimie, 0, "\56", $geqcesmqwkeayoiu);
     }
     
     public static function readable(float $eqgoocgaqwqcimie, int $cmyiqqsaoiwgqcay = 1) : string
@@ -43,12 +43,12 @@ class ManipulateNumber extends Common
             eemoqygegmakwkqs:
         }
         goto owieeykwisgmwsso;
-        owieeykwisgmwsso:
-        kmyuewweeweyeogc:
-        goto mkwiacyiwcggkayq;
         mkwiacyiwcggkayq:
         return self::DEFAULT_THRESHOLD;
         goto ymeksusogycekecy;
+        owieeykwisgmwsso:
+        kmyuewweeweyeogc:
+        goto mkwiacyiwcggkayq;
         ymeksusogycekecy:
     }
     
@@ -78,29 +78,29 @@ class ManipulateNumber extends Common
     public static function ywqgcuymeiswqyqc($ggkaciewmeqmgckg, $qmeuaeiseuacgiqc, $wyeyeaaekyoyimqu = 1, $eokscgekqusgueqm = 0) : array
     {
         goto isequkkmceeiaowc;
+        acussowuugkoqscy:
+        goto wyyokkeqakouoygm;
+        goto igmumkwsokguugia;
         smgwaikkyouqogwe:
         foreach (range($ggkaciewmeqmgckg, $qmeuaeiseuacgiqc) as $eusockqasqqmoess) {
             goto qseuyoyqyiamegok;
             eusuooimqkgqgiaa:
             aiseocoyqescoiwe:
             goto esyaomsqiccomyis;
-            goqquigewsgoaogg:
-            $ygmmaywsqqycaaok[$eusockqasqqmoess] = $eusockqasqqmoess;
-            goto eusuooimqkgqgiaa;
-            esyaomsqiccomyis:
-            swawmomoagmioomc:
-            goto gsyyyccyomacamyu;
             qseuyoyqyiamegok:
             if (!($eusockqasqqmoess > 0 && ($eokscgekqusgueqm % $eusockqasqqmoess == 0 || $eusockqasqqmoess % $eokscgekqusgueqm == 0))) {
                 goto aiseocoyqescoiwe;
             }
             goto goqquigewsgoaogg;
+            esyaomsqiccomyis:
+            swawmomoagmioomc:
+            goto gsyyyccyomacamyu;
+            goqquigewsgoaogg:
+            $ygmmaywsqqycaaok[$eusockqasqqmoess] = $eusockqasqqmoess;
+            goto eusuooimqkgqgiaa;
             gsyyyccyomacamyu:
         }
         goto uewcskcgceqqekmi;
-        siccsesmewocqecy:
-        $ygmmaywsqqycaaok = range($ggkaciewmeqmgckg, $qmeuaeiseuacgiqc, $wyeyeaaekyoyimqu);
-        goto acussowuugkoqscy;
         wymkeuwkccmeouiy:
         if ($eokscgekqusgueqm) {
             goto uwqsuakimauaecsk;
@@ -109,18 +109,18 @@ class ManipulateNumber extends Common
         isequkkmceeiaowc:
         $ygmmaywsqqycaaok = [];
         goto wymkeuwkccmeouiy;
-        qiocogaamemoisag:
-        wyyokkeqakouoygm:
-        goto akqcmicescemuoic;
-        akqcmicescemuoic:
-        return array_combine($ygmmaywsqqycaaok, $ygmmaywsqqycaaok);
-        goto ugceakweuqgwgywe;
         igmumkwsokguugia:
         uwqsuakimauaecsk:
         goto smgwaikkyouqogwe;
-        acussowuugkoqscy:
-        goto wyyokkeqakouoygm;
-        goto igmumkwsokguugia;
+        akqcmicescemuoic:
+        return array_combine($ygmmaywsqqycaaok, $ygmmaywsqqycaaok);
+        goto ugceakweuqgwgywe;
+        siccsesmewocqecy:
+        $ygmmaywsqqycaaok = range($ggkaciewmeqmgckg, $qmeuaeiseuacgiqc, $wyeyeaaekyoyimqu);
+        goto acussowuugkoqscy;
+        qiocogaamemoisag:
+        wyyokkeqakouoygm:
+        goto akqcmicescemuoic;
         uewcskcgceqqekmi:
         acqyogokyakwekak:
         goto qiocogaamemoisag;
@@ -130,12 +130,12 @@ class ManipulateNumber extends Common
     protected static function format(float $eqgoocgaqwqcimie, int $cmyiqqsaoiwgqcay, int $aoqagsqecokqqwqg, string $scqcgogsiaiksiiq) : string
     {
         goto iowceqakcgogmssu;
-        gwwocsgkqyycikau:
-        $eeiemcwqoeiqskis = strpos($sgsmkeiowiwiqkuc, "\56") === false ? $sgsmkeiowiwiqkuc : rtrim(rtrim($sgsmkeiowiwiqkuc, "\60"), "\x2e");
-        goto acukcyqyqoyauieg;
         iowceqakcgogmssu:
         $sgsmkeiowiwiqkuc = number_format($eqgoocgaqwqcimie / ($aoqagsqecokqqwqg / self::THRESHOLDS['']), $cmyiqqsaoiwgqcay);
         goto gwwocsgkqyycikau;
+        gwwocsgkqyycikau:
+        $eeiemcwqoeiqskis = strpos($sgsmkeiowiwiqkuc, "\x2e") === false ? $sgsmkeiowiwiqkuc : rtrim(rtrim($sgsmkeiowiwiqkuc, "\x30"), "\56");
+        goto acukcyqyqoyauieg;
         acukcyqyqoyauieg:
         return $eeiemcwqoeiqskis . $scqcgogsiaiksiiq;
         goto agmgeuqwqyskeace;

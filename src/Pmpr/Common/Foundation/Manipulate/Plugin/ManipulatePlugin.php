@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b3993be3fb             |
+    |             613b499786a1b             |
     |_______________________________________|
 */
 
@@ -17,7 +17,7 @@ class ManipulatePlugin extends Common
     
     public static function yicegakcoioyuwos() : array
     {
-        return (array) DecoratorOption::get("\141\x63\x74\x69\x76\x65\x5f\160\154\165\x67\x69\x6e\163", []);
+        return (array) DecoratorOption::get("\x61\143\x74\x69\x76\145\x5f\160\154\x75\147\151\x6e\x73", []);
     }
     
     public static function ggocakcisguuokai(?string $mkysicwccoeicumg) : bool
@@ -35,7 +35,7 @@ class ManipulatePlugin extends Common
         $gioggcykgoikcwiy = new WP_Requirements_Check($ywmkwiwkosakssii);
         goto oeooskowyaoiesig;
         gaoycoykycqicwaq:
-        $ywmkwiwkosakssii = ManipulateFormat::omaawkkwwyesqwcc($ywmkwiwkosakssii, ["\160\150\160" => "\67\56\64", "\x77\160" => "\65\56\62"]);
+        $ywmkwiwkosakssii = ManipulateFormat::omaawkkwwyesqwcc($ywmkwiwkosakssii, ["\160\150\160" => "\67\x2e\x34", "\167\x70" => "\65\56\x32"]);
         goto eoieikyaiucwwwas;
         awkycquykaigeoms:
     }
@@ -43,26 +43,26 @@ class ManipulatePlugin extends Common
     public static function sioyqaykmwwugmgi(?string $mkysicwccoeicumg) : bool
     {
         goto makoqausqoiwyouc;
-        skgguaeyousyogee:
-        $mseykiqqcmyesccu = DecoratorOption::kuaqqosyyoqiueym("\x61\x63\164\x69\166\145\x5f\x73\151\164\145\167\151\x64\145\137\160\154\x75\147\151\156\x73");
-        goto gqqmmososkagcqco;
+        gqqmmososkagcqco:
+        $ggocakcisguuokai = isset($mseykiqqcmyesccu[$mkysicwccoeicumg]);
+        goto asoqwsaqqyuoioac;
         ocgyqmccaskoieei:
         if (!is_multisite()) {
             goto oioygkocoumymyqa;
         }
         goto skgguaeyousyogee;
-        makoqausqoiwyouc:
-        $ggocakcisguuokai = false;
-        goto ocgyqmccaskoieei;
-        gqqmmososkagcqco:
-        $ggocakcisguuokai = isset($mseykiqqcmyesccu[$mkysicwccoeicumg]);
-        goto asoqwsaqqyuoioac;
+        skgguaeyousyogee:
+        $mseykiqqcmyesccu = DecoratorOption::kuaqqosyyoqiueym("\x61\x63\x74\151\166\145\x5f\163\151\x74\x65\x77\151\144\145\137\160\154\x75\x67\x69\x6e\x73");
+        goto gqqmmososkagcqco;
         wuogwyququiiecaa:
         return $ggocakcisguuokai;
         goto scqwymaqqacaugqa;
         asoqwsaqqyuoioac:
         oioygkocoumymyqa:
         goto wuogwyququiiecaa;
+        makoqausqoiwyouc:
+        $ggocakcisguuokai = false;
+        goto ocgyqmccaskoieei;
         scqwymaqqacaugqa:
     }
 }

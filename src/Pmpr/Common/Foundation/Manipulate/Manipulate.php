@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b3993be3fb             |
+    |             613b499786a1b             |
     |_______________________________________|
 */
 
@@ -22,44 +22,53 @@ abstract class Manipulate implements ConstantInterface
     public static function wwckmeoskuagomki(string $ymqmyyeuycgmigyo, $eqgoocgaqwqcimie)
     {
         goto swmmycgkeqaeswwq;
-        swmmycgkeqaeswwq:
-        if (!self::qmmaqwgyasgicmec($ymqmyyeuycgmigyo)) {
-            goto aykcawmeuucgmwea;
-        }
-        goto wuqwcogkmmqscwce;
-        wuqwcogkmmqscwce:
-        $ksaameoqigiaoigg = self::cmaecekuqkwmemms($ymqmyyeuycgmigyo);
-        goto umgqoisouauoeigc;
-        wgiegisukosmmeak:
-        iqegieggskwqccou:
-        goto ymikiweaoykkcyiw;
-        ymikiweaoykkcyiw:
-        return $ksaameoqigiaoigg;
-        goto aqqsoockoussgmqg;
-        wguiigwuqauaaoeu:
-        aykcawmeuucgmwea:
-        goto qecuwsgaqewyysai;
         umgqoisouauoeigc:
         goto iqegieggskwqccou;
         goto wguiigwuqauaaoeu;
         qecuwsgaqewyysai:
         $ksaameoqigiaoigg = @define($ymqmyyeuycgmigyo, $eqgoocgaqwqcimie);
         goto wgiegisukosmmeak;
+        wuqwcogkmmqscwce:
+        $ksaameoqigiaoigg = self::cmaecekuqkwmemms($ymqmyyeuycgmigyo);
+        goto umgqoisouauoeigc;
+        wguiigwuqauaaoeu:
+        aykcawmeuucgmwea:
+        goto qecuwsgaqewyysai;
+        swmmycgkeqaeswwq:
+        if (!self::qmmaqwgyasgicmec($ymqmyyeuycgmigyo)) {
+            goto aykcawmeuucgmwea;
+        }
+        goto wuqwcogkmmqscwce;
+        wgiegisukosmmeak:
+        iqegieggskwqccou:
+        goto ymikiweaoykkcyiw;
+        ymikiweaoykkcyiw:
+        return $ksaameoqigiaoigg;
+        goto aqqsoockoussgmqg;
         aqqsoockoussgmqg:
     }
     
     public static function cmaecekuqkwmemms(string $ymqmyyeuycgmigyo, $ggauoeuaesiymgee = null, $egkyssmuqcwaciya = null)
     {
         goto siymueswymqkwekm;
+        kscyscauewimmgme:
+        goto seasawiyoeiuucac;
+        goto ooqikkgwocykeiuu;
         kyyeiymsouaoaiga:
         seasawiyoeiuucac:
         goto eksoacmagqswgeuq;
-        paawyasioggcocqk:
-        goto seasawiyoeiuucac;
-        goto uiiyokqogawyeiec;
         sogiywcegssacgsu:
         $gqkqacakewkecqie = $ggauoeuaesiymgee;
         goto paawyasioggcocqk;
+        uiiyokqogawyeiec:
+        kkgceegequyiasgs:
+        goto ooimgcqywgokcika;
+        eksoacmagqswgeuq:
+        return $gqkqacakewkecqie;
+        goto aooqissygemgsigy;
+        paawyasioggcocqk:
+        goto seasawiyoeiuucac;
+        goto uiiyokqogawyeiec;
         ooimgcqywgokcika:
         try {
             $oqkmoekaagukcwia = new ReflectionClass($egkyssmuqcwaciya);
@@ -68,17 +77,14 @@ abstract class Manipulate implements ConstantInterface
             $gqkqacakewkecqie = $ggauoeuaesiymgee;
         }
         goto kscyscauewimmgme;
-        eksoacmagqswgeuq:
-        return $gqkqacakewkecqie;
-        goto aooqissygemgsigy;
-        ooqikkgwocykeiuu:
-        omgieamuywawmkgc:
-        goto gouysqqakyeugcyq;
         yoqmmikkokomsacw:
         if (self::qmmaqwgyasgicmec($ymqmyyeuycgmigyo)) {
             goto omgieamuywawmkgc;
         }
         goto sogiywcegssacgsu;
+        ooqikkgwocykeiuu:
+        omgieamuywawmkgc:
+        goto gouysqqakyeugcyq;
         gouysqqakyeugcyq:
         $gqkqacakewkecqie = constant($ymqmyyeuycgmigyo);
         goto kyyeiymsouaoaiga;
@@ -87,12 +93,6 @@ abstract class Manipulate implements ConstantInterface
             goto kkgceegequyiasgs;
         }
         goto yoqmmikkokomsacw;
-        kscyscauewimmgme:
-        goto seasawiyoeiuucac;
-        goto ooqikkgwocykeiuu;
-        uiiyokqogawyeiec:
-        kkgceegequyiasgs:
-        goto ooimgcqywgokcika;
         aooqissygemgsigy:
     }
 }

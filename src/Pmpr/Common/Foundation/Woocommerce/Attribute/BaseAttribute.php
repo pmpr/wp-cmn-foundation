@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b3993be3fb             |
+    |             613b499786a1b             |
     |_______________________________________|
 */
 
@@ -21,7 +21,7 @@ abstract class BaseAttribute extends Common
     protected ?string $name = null;
     public function kgquecmsgcouyaya()
     {
-        $this->cecaguuoecmccuse("\x77\x6f\x6f\x63\157\x6d\155\145\162\x63\x65\137\141\164\x74\x72\151\142\165\x74\145\137\157\x75\164\x70\165\x74", [$this, "\156\157\x71\165\x6d\x71\141\161\x69\x73\x6d\x6d\x6b\141\x63\165"], 99, 4);
+        $this->cecaguuoecmccuse("\x77\157\157\143\x6f\155\x6d\x65\x72\143\x65\x5f\141\164\x74\162\151\142\165\164\x65\137\157\x75\x74\160\165\x74", [$this, "\156\157\x71\165\155\x71\141\x71\151\x73\155\155\153\141\x63\x75"], 99, 4);
         parent::kgquecmsgcouyaya();
     }
     
@@ -32,7 +32,7 @@ abstract class BaseAttribute extends Common
     
     public function ugmceccgwaaaigiy($product = null) : array
     {
-        return (array) $this->sscegwueamckwmcy($this->ygyygikyocoymgaw("\x77\157\157\x63\x6f\x6d\155\x65\x72\x63\145\137{$this->aakmagwggmkoiiyu()}\137\141\164\164\x72\x69\x62\x75\x74\x65\137\x63\165\163\164\157\x6d\137\146\x69\145\154\144\163"), $this->fields, $product);
+        return (array) $this->sscegwueamckwmcy($this->ygyygikyocoymgaw("\167\157\157\x63\x6f\155\x6d\145\x72\143\145\137{$this->aakmagwggmkoiiyu()}\137\x61\x74\x74\162\x69\x62\165\x74\x65\x5f\x63\165\163\164\157\155\137\x66\x69\x65\x6c\144\163"), $this->fields, $product);
     }
     
     public function mkksewyosgeumwsa(Field $aiowsaccomcoikus) : self
@@ -44,18 +44,18 @@ abstract class BaseAttribute extends Common
     public function aqasygcsqysmmyke($aokagokqyuysuksm = null) : int
     {
         goto gscweoakqmmoeuki;
+        gscweoakqmmoeuki:
+        $product = ManipulateServer::ayueggmoqeeukqmq("\x70\x6f\x73\x74\137\x69\144");
+        goto mukimwqesmuuceii;
+        gmmcayeamkkksegg:
+        wqekysuysssisica:
+        goto okyewgwqccwumwew;
         okyewgwqccwumwew:
         return absint($product);
         goto gqkaemugiuqsakac;
         wumkcikqsegaceuy:
         $product = ManipulateWoocommerce::omwkqcuwceweymcc($aokagokqyuysuksm);
         goto gmmcayeamkkksegg;
-        gscweoakqmmoeuki:
-        $product = ManipulateServer::ayueggmoqeeukqmq("\x70\x6f\163\x74\x5f\x69\144");
-        goto mukimwqesmuuceii;
-        gmmcayeamkkksegg:
-        wqekysuysssisica:
-        goto okyewgwqccwumwew;
         mukimwqesmuuceii:
         if (!(!$product || $aokagokqyuysuksm)) {
             goto wqekysuysssisica;
@@ -67,65 +67,65 @@ abstract class BaseAttribute extends Common
     public function noqumqaqismmkacu($aqykuigiuwmmcieu, $ymkomoccmymcoiea, $product)
     {
         goto eyecumosyciiiooq;
-        sciuwmmsmaecigik:
-        kwyqumksiocogsue:
-        goto umueiqgeckuoywuw;
-        umueiqgeckuoywuw:
-        esmwwomccacsqywi:
-        goto wsyqaoimygmemgay;
-        eyecumosyciiiooq:
-        $product = $this->aqasygcsqysmmyke($product);
-        goto kwuiqqycqycswaku;
-        soqkyegaguykmcso:
-        foreach ($ikgwqyuyckaewsow as $uusmaiomayssaecw => $aiowsaccomcoikus) {
-            goto ykssueyoewywagwk;
-            moueuekwquacwkok:
-            gmwgckwgwcswwsys:
-            goto cgukcskqwgsmumcy;
-            qqsgiayqyskeisua:
-            $aqykuigiuwmmcieu[$uusmaiomayssaecw] = $this->qooeaookuemoqecm($aiowsaccomcoikus->mwikyscisascoeea(), $this->uqsmmauywmsuqais($ymkomoccmymcoiea));
-            goto wugmoiceuaawcoem;
-            smoiwyguceomewwy:
-            $uusmaiomayssaecw = $aiowsaccomcoikus->mwikyscisascoeea();
-            goto kkqkiieookquommo;
-            kkqkiieookquommo:
-            yawsicegksimgmco:
-            goto agiaqmmawekwgsky;
-            agiaqmmawekwgsky:
-            if (ManipulateArray::get($aqykuigiuwmmcieu, $uusmaiomayssaecw)) {
-                goto tawikeiumkmiyomw;
-            }
-            goto qqsgiayqyskeisua;
-            aiiskmcymwiakkgc:
-            yygceasikmuigagu:
-            goto moueuekwquacwkok;
-            iumwukayaosoaois:
-            if (!is_numeric($uusmaiomayssaecw)) {
-                goto yawsicegksimgmco;
-            }
-            goto smoiwyguceomewwy;
-            wugmoiceuaawcoem:
-            tawikeiumkmiyomw:
-            goto aiiskmcymwiakkgc;
-            ykssueyoewywagwk:
-            if (!$aiowsaccomcoikus instanceof Field) {
-                goto yygceasikmuigagu;
-            }
-            goto iumwukayaosoaois;
-            cgukcskqwgsmumcy:
-        }
-        goto sciuwmmsmaecigik;
         eqwqmiawekysseqe:
         $ikgwqyuyckaewsow = $this->ugmceccgwaaaigiy($product);
         goto soqkyegaguykmcso;
         wsyqaoimygmemgay:
         return $aqykuigiuwmmcieu;
         goto guqcykekieeiuyoc;
+        umueiqgeckuoywuw:
+        esmwwomccacsqywi:
+        goto wsyqaoimygmemgay;
+        sciuwmmsmaecigik:
+        kwyqumksiocogsue:
+        goto umueiqgeckuoywuw;
         kwuiqqycqycswaku:
         if (!$ymkomoccmymcoiea instanceof WC_Product_Attribute) {
             goto esmwwomccacsqywi;
         }
         goto eqwqmiawekysseqe;
+        soqkyegaguykmcso:
+        foreach ($ikgwqyuyckaewsow as $uusmaiomayssaecw => $aiowsaccomcoikus) {
+            goto ykssueyoewywagwk;
+            smoiwyguceomewwy:
+            $uusmaiomayssaecw = $aiowsaccomcoikus->mwikyscisascoeea();
+            goto kkqkiieookquommo;
+            kkqkiieookquommo:
+            yawsicegksimgmco:
+            goto agiaqmmawekwgsky;
+            wugmoiceuaawcoem:
+            tawikeiumkmiyomw:
+            goto aiiskmcymwiakkgc;
+            iumwukayaosoaois:
+            if (!is_numeric($uusmaiomayssaecw)) {
+                goto yawsicegksimgmco;
+            }
+            goto smoiwyguceomewwy;
+            agiaqmmawekwgsky:
+            if (ManipulateArray::get($aqykuigiuwmmcieu, $uusmaiomayssaecw)) {
+                goto tawikeiumkmiyomw;
+            }
+            goto qqsgiayqyskeisua;
+            ykssueyoewywagwk:
+            if (!$aiowsaccomcoikus instanceof Field) {
+                goto yygceasikmuigagu;
+            }
+            goto iumwukayaosoaois;
+            moueuekwquacwkok:
+            gmwgckwgwcswwsys:
+            goto cgukcskqwgsmumcy;
+            qqsgiayqyskeisua:
+            $aqykuigiuwmmcieu[$uusmaiomayssaecw] = $this->qooeaookuemoqecm($aiowsaccomcoikus->mwikyscisascoeea(), $this->uqsmmauywmsuqais($ymkomoccmymcoiea));
+            goto wugmoiceuaawcoem;
+            aiiskmcymwiakkgc:
+            yygceasikmuigagu:
+            goto moueuekwquacwkok;
+            cgukcskqwgsmumcy:
+        }
+        goto sciuwmmsmaecigik;
+        eyecumosyciiiooq:
+        $product = $this->aqasygcsqysmmyke($product);
+        goto kwuiqqycqycswaku;
         guqcykekieeiuyoc:
     }
     

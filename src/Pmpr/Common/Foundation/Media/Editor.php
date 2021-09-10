@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b3993be3fb             |
+    |             613b499786a1b             |
     |_______________________________________|
 */
 
@@ -9,8 +9,8 @@ namespace Pmpr\Common\Foundation\Media;
 
 use Pmpr\Common\Foundation\Decorator\DecoratorOption;
 use WP_Image_Editor_GD;
-require_once ABSPATH . WPINC . "\x2f\x63\154\141\163\163\x2d\167\x70\x2d\151\155\x61\147\145\55\145\144\151\164\157\x72\x2e\160\150\x70";
-require_once ABSPATH . WPINC . "\57\143\x6c\x61\163\163\x2d\x77\160\55\x69\x6d\x61\147\x65\x2d\x65\x64\x69\164\157\x72\x2d\x67\x64\56\160\x68\x70";
+require_once ABSPATH . WPINC . "\57\x63\x6c\141\x73\x73\x2d\x77\160\55\x69\x6d\x61\147\x65\x2d\145\x64\x69\x74\x6f\162\x2e\x70\150\160";
+require_once ABSPATH . WPINC . "\x2f\143\x6c\141\163\163\55\167\x70\x2d\151\x6d\141\x67\x65\x2d\145\144\151\164\x6f\162\x2d\147\x64\x2e\x70\150\x70";
 
 class Editor extends WP_Image_Editor_GD
 {
@@ -25,30 +25,130 @@ class Editor extends WP_Image_Editor_GD
     public function generate_filename($yuwymayicwwqiske = null, $dest_path = null, $uwumuuykwookaauo = null)
     {
         goto ooiaiemksqmaswks;
-        ioawmqwmiwwawcms:
-        $yuwymayicwwqiske = $this->get_suffix();
-        goto oooqmgaaiwkcyyyy;
-        qyqqmmieeeuceawg:
-        
-        return trailingslashit($miawkwqioaeasiig) . "{$mwweeceqggqmogwk}\x2f{$ymqmyyeuycgmigyo}\x2e{$new_ext}";
-        goto kwcwakssmquiykuc;
-        iwmgiqogkaqyoqck:
-        if (self::TOLERANCE >= abs($prefix_array[0] / $prefix_array[1] - 16 / 9)) {
-            goto sesuwiiwmyccwaum;
-        }
-        goto qmkyaaiuymgieqmy;
         gmkissoyacsksyko:
         
         $scqcgogsiaiksiiq = $this->get_suffix();
         goto eyasmquoaokeamwq;
-        cekyyawuusagaggk:
-        $mwweeceqggqmogwk = '';
-        goto mgukmsekywicuigc;
+        iqismgeasiycywoq:
+        $prefix_array[0] = (int) $prefix_array[0];
+        goto yimewosgeusckeeo;
+        qkcasgegweeoeqao:
+        ysmqigiqiwsyymcc:
+        goto meseuyammmyuuwgs;
+        gyqumicuqcwwcess:
+        eugokmswcmogmgik:
+        goto wwwcqcsimcgkkgqg;
+        weqsciomuwmoocke:
+        sesuwiiwmyccwaum:
+        goto suqkayoqgmsgqaqm;
+        xumakocukyysuseg:
+        $yucgcsieomwqgwws = $yyimiwcuegayoskq["\145\x78\x74\x65\x6e\163\x69\x6f\x6e"];
+        goto yigoymociiyaeeqe;
+        ieqcwaqqkgqecogy:
+        sggsqoimcswqyoii:
+        goto qyqqmmieeeuceawg;
+        yimewosgeusckeeo:
+        $prefix_array[1] = (int) $prefix_array[1];
+        goto iwmgiqogkaqyoqck;
+        sqwieygmgqomaksy:
+        goto imeseaegeeiguiqs;
+        goto gyqumicuqcwwcess;
+        ikuyswyameomqgyo:
+        $mwweeceqggqmogwk = "\x31\x78\61";
+        goto ciauiegykcqkccqq;
+        eyasmquoaokeamwq:
+        
+        return trailingslashit($miawkwqioaeasiig) . "{$ymqmyyeuycgmigyo}\55{$scqcgogsiaiksiiq}\56{$new_ext}";
+        goto qmmewcqkiaugaass;
+        oucqgwwoisakkgsa:
+        $mwweeceqggqmogwk = "\61\66\170\71";
+        goto rsgyucycsycgesiq;
+        gmyocwoeuugkoiyu:
+        if (self::TOLERANCE >= abs($prefix_array[0] / $prefix_array[1] - 1)) {
+            goto mkkwkugqkmyoqmuw;
+        }
+        goto eqmawsymeeaswsew;
+        caigegksaaycqqgy:
+        $miawkwqioaeasiig = $_dest_path;
+        goto woaeegswqqamukke;
+        yigoymociiyaeeqe:
+        
+        $ymqmyyeuycgmigyo = wp_basename($this->file, "\56{$yucgcsieomwqgwws}");
+        goto gcguaakuuuiymwci;
+        miwaociiwmomieeg:
+        if ('' != $mwweeceqggqmogwk) {
+            goto sggsqoimcswqyoii;
+        }
+        goto gmkissoyacsksyko;
+        rsgyucycsycgesiq:
+        aaqwwyccekouwawg:
+        goto sqwieygmgqomaksy;
+        mumqecckiuimiqei:
+        
+        if (!(!is_null($dest_path) && ($_dest_path = realpath($dest_path)))) {
+            goto kigmywmmywoouoge;
+        }
+        goto caigegksaaycqqgy;
+        qyqqmmieeeuceawg:
+        
+        return trailingslashit($miawkwqioaeasiig) . "{$mwweeceqggqmogwk}\57{$ymqmyyeuycgmigyo}\x2e{$new_ext}";
+        goto kwcwakssmquiykuc;
+        woaeegswqqamukke:
+        kigmywmmywoouoge:
+        goto miwaociiwmomieeg;
+        suqkayoqgmsgqaqm:
+        if (!(self::MIN_WIDTH_16_9 <= $prefix_array[0] && self::MIN_HEIGHT_16_9 <= $prefix_array[1])) {
+            goto aaqwwyccekouwawg;
+        }
+        goto oucqgwwoisakkgsa;
+        gcguaakuuuiymwci:
+        
+        $new_ext = strtolower($uwumuuykwookaauo ? $uwumuuykwookaauo : $yucgcsieomwqgwws);
+        goto mumqecckiuimiqei;
+        oooqmgaaiwkcyyyy:
+        myaageuswgawcqak:
+        goto ieosoksooeowgwuo;
+        meseuyammmyuuwgs:
+        goto imeseaegeeiguiqs;
+        goto cmmwsqyociiokaiu;
+        yeouiccygkgcauiq:
+        imeseaegeeiguiqs:
+        goto ayysiuycoqkgikks;
+        kwcwakssmquiykuc:
+        cmkicwoqsokugmuu:
+        goto uwseyususaysawwm;
+        ciauiegykcqkccqq:
+        qqsieucekawaiwww:
+        goto yeouiccygkgcauiq;
         kyoaukgysoyeawwi:
         if (!(self::MIN_WIDTH_1_1 <= $prefix_array[0] && self::MIN_HEIGHT_1_1 <= $prefix_array[1])) {
             goto qqsieucekawaiwww;
         }
         goto ikuyswyameomqgyo;
+        asqgmcaauoaeoeos:
+        
+        $yyimiwcuegayoskq = pathinfo($this->file);
+        goto ookqckwksqwoekiy;
+        cmmwsqyociiokaiu:
+        mkkwkugqkmyoqmuw:
+        goto kyoaukgysoyeawwi;
+        qmkyaaiuymgieqmy:
+        if (self::TOLERANCE >= abs($prefix_array[0] / $prefix_array[1] - 4 / 3)) {
+            goto eugokmswcmogmgik;
+        }
+        goto gmyocwoeuugkoiyu;
+        ooiaiemksqmaswks:
+        
+        if ($yuwymayicwwqiske) {
+            goto myaageuswgawcqak;
+        }
+        goto ioawmqwmiwwawcms;
+        cekyyawuusagaggk:
+        $mwweeceqggqmogwk = '';
+        goto mgukmsekywicuigc;
+        ioawmqwmiwwawcms:
+        $yuwymayicwwqiske = $this->get_suffix();
+        goto oooqmgaaiwkcyyyy;
         wwwcqcsimcgkkgqg:
         if (!(self::MIN_WIDTH_4_3 <= $prefix_array[0] && self::MIN_HEIGHT_4_3 <= $prefix_array[1])) {
             goto ysmqigiqiwsyymcc;
@@ -59,129 +159,29 @@ class Editor extends WP_Image_Editor_GD
             goto kskywmmcaugieuiw;
         }
         goto iqismgeasiycywoq;
-        ooiaiemksqmaswks:
-        
-        if ($yuwymayicwwqiske) {
-            goto myaageuswgawcqak;
-        }
-        goto ioawmqwmiwwawcms;
-        eqmawsymeeaswsew:
-        goto imeseaegeeiguiqs;
-        goto weqsciomuwmoocke;
-        qmmewcqkiaugaass:
-        goto cmkicwoqsokugmuu;
-        goto ieqcwaqqkgqecogy;
         ayysiuycoqkgikks:
         kskywmmcaugieuiw:
         goto asqgmcaauoaeoeos;
-        ieqcwaqqkgqecogy:
-        sggsqoimcswqyoii:
-        goto qyqqmmieeeuceawg;
-        ciauiegykcqkccqq:
-        qqsieucekawaiwww:
-        goto yeouiccygkgcauiq;
+        iwmgiqogkaqyoqck:
+        if (self::TOLERANCE >= abs($prefix_array[0] / $prefix_array[1] - 16 / 9)) {
+            goto sesuwiiwmyccwaum;
+        }
+        goto qmkyaaiuymgieqmy;
         gemykaoaqwicmeag:
-        $mwweeceqggqmogwk = "\x34\170\63";
+        $mwweeceqggqmogwk = "\64\170\x33";
         goto qkcasgegweeoeqao;
-        sqwieygmgqomaksy:
-        goto imeseaegeeiguiqs;
-        goto gyqumicuqcwwcess;
-        gyqumicuqcwwcess:
-        eugokmswcmogmgik:
-        goto wwwcqcsimcgkkgqg;
-        suqkayoqgmsgqaqm:
-        if (!(self::MIN_WIDTH_16_9 <= $prefix_array[0] && self::MIN_HEIGHT_16_9 <= $prefix_array[1])) {
-            goto aaqwwyccekouwawg;
-        }
-        goto oucqgwwoisakkgsa;
-        oooqmgaaiwkcyyyy:
-        myaageuswgawcqak:
-        goto ieosoksooeowgwuo;
-        woaeegswqqamukke:
-        kigmywmmywoouoge:
-        goto miwaociiwmomieeg;
-        mumqecckiuimiqei:
-        
-        if (!(!is_null($dest_path) && ($_dest_path = realpath($dest_path)))) {
-            goto kigmywmmywoouoge;
-        }
-        goto caigegksaaycqqgy;
-        eyasmquoaokeamwq:
-        
-        return trailingslashit($miawkwqioaeasiig) . "{$ymqmyyeuycgmigyo}\55{$scqcgogsiaiksiiq}\x2e{$new_ext}";
-        goto qmmewcqkiaugaass;
-        gmyocwoeuugkoiyu:
-        if (self::TOLERANCE >= abs($prefix_array[0] / $prefix_array[1] - 1)) {
-            goto mkkwkugqkmyoqmuw;
-        }
-        goto eqmawsymeeaswsew;
-        ikuyswyameomqgyo:
-        $mwweeceqggqmogwk = "\61\170\61";
-        goto ciauiegykcqkccqq;
-        caigegksaaycqqgy:
-        $miawkwqioaeasiig = $_dest_path;
-        goto woaeegswqqamukke;
-        qmkyaaiuymgieqmy:
-        if (self::TOLERANCE >= abs($prefix_array[0] / $prefix_array[1] - 4 / 3)) {
-            goto eugokmswcmogmgik;
-        }
-        goto gmyocwoeuugkoiyu;
-        yigoymociiyaeeqe:
-        
-        $ymqmyyeuycgmigyo = wp_basename($this->file, "\56{$yucgcsieomwqgwws}");
-        goto gcguaakuuuiymwci;
-        ieosoksooeowgwuo:
-        $prefix_array = explode("\x78", $yuwymayicwwqiske);
-        goto cekyyawuusagaggk;
-        meseuyammmyuuwgs:
-        goto imeseaegeeiguiqs;
-        goto cmmwsqyociiokaiu;
-        rsgyucycsycgesiq:
-        aaqwwyccekouwawg:
-        goto sqwieygmgqomaksy;
         ookqckwksqwoekiy:
-        $miawkwqioaeasiig = $yyimiwcuegayoskq["\x64\x69\x72\156\141\x6d\145"];
+        $miawkwqioaeasiig = $yyimiwcuegayoskq["\144\151\x72\156\141\x6d\x65"];
         goto xumakocukyysuseg;
-        asqgmcaauoaeoeos:
-        
-        $yyimiwcuegayoskq = pathinfo($this->file);
-        goto ookqckwksqwoekiy;
-        iqismgeasiycywoq:
-        $prefix_array[0] = (int) $prefix_array[0];
-        goto yimewosgeusckeeo;
-        cmmwsqyociiokaiu:
-        mkkwkugqkmyoqmuw:
-        goto kyoaukgysoyeawwi;
-        oucqgwwoisakkgsa:
-        $mwweeceqggqmogwk = "\61\x36\x78\71";
-        goto rsgyucycsycgesiq;
-        weqsciomuwmoocke:
-        sesuwiiwmyccwaum:
-        goto suqkayoqgmsgqaqm;
-        miwaociiwmomieeg:
-        if ('' != $mwweeceqggqmogwk) {
-            goto sggsqoimcswqyoii;
-        }
-        goto gmkissoyacsksyko;
-        qkcasgegweeoeqao:
-        ysmqigiqiwsyymcc:
-        goto meseuyammmyuuwgs;
-        gcguaakuuuiymwci:
-        
-        $new_ext = strtolower($uwumuuykwookaauo ? $uwumuuykwookaauo : $yucgcsieomwqgwws);
-        goto mumqecckiuimiqei;
-        yeouiccygkgcauiq:
-        imeseaegeeiguiqs:
-        goto ayysiuycoqkgikks;
-        kwcwakssmquiykuc:
-        cmkicwoqsokugmuu:
-        goto uwseyususaysawwm;
-        yimewosgeusckeeo:
-        $prefix_array[1] = (int) $prefix_array[1];
-        goto iwmgiqogkaqyoqck;
-        xumakocukyysuseg:
-        $yucgcsieomwqgwws = $yyimiwcuegayoskq["\145\x78\x74\x65\156\163\151\x6f\156"];
-        goto yigoymociiyaeeqe;
+        qmmewcqkiaugaass:
+        goto cmkicwoqsokugmuu;
+        goto ieqcwaqqkgqecogy;
+        ieosoksooeowgwuo:
+        $prefix_array = explode("\170", $yuwymayicwwqiske);
+        goto cekyyawuusagaggk;
+        eqmawsymeeaswsew:
+        goto imeseaegeeiguiqs;
+        goto weqsciomuwmoocke;
         uwseyususaysawwm:
     }
 }

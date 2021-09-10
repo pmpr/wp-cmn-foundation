@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b3993be3fb             |
+    |             613b499786a1b             |
     |_______________________________________|
 */
 
@@ -22,40 +22,40 @@ use WP_Widget;
 
 abstract class Widget extends WP_Widget implements ConstantInterface
 {
-    const OUTPUT_TEMPLATE = "\157\165\164\x70\165\164\x5f\x74\x65\155\x70\154\141\164\x65";
+    const OUTPUT_TEMPLATE = "\157\165\x74\x70\165\x74\137\164\x65\155\160\x6c\141\x74\145";
     use SingletonTrait, ComponentTrait, TranslateTrait, ElementTrait, FieldTrait, HookTrait;
     
     public function __construct(string $ymqmyyeuycgmigyo = null, string $mkqqqewsokcswckc = null, $aokagokqyuysuksm = null, $yqwciyekkgusiioi = [], $akcsikgoamcgoccg = [])
     {
         goto cgsgaakaykagyygo;
-        ocoiequaimceeeoy:
-        $yqwciyekkgusiioi = array_merge($yqwciyekkgusiioi, ["\x63\x6c\141\163\x73\x6e\x61\155\145" => ManipulateString::igcwuwuymeuomaqo("{$quowyokcwswmuois}\55{$aokagokqyuysuksm}"), self::DESCRIPTION => $mkqqqewsokcswckc]);
-        goto qawmkgkwgqogkagw;
+        sweugqqowwoamomc:
+        $this->gyqeoeemeemicgqi();
+        goto escickciciscoaec;
+        qawmkgkwgqogkagw:
+        parent::__construct("{$quowyokcwswmuois}\137{$aokagokqyuysuksm}", $ymqmyyeuycgmigyo, $yqwciyekkgusiioi, $akcsikgoamcgoccg);
+        goto sweugqqowwoamomc;
+        omousmkywwwkksay:
+        iooomaqggygwwuok:
+        goto quqiwccwsyawasoe;
+        emsmukwgwwusyueg:
+        $aokagokqyuysuksm = ManipulateString::ogimogiceeekegoi(self::ugwmakayykcmcmqa());
+        goto omousmkywwwkksay;
         cgsgaakaykagyygo:
         if ($aokagokqyuysuksm) {
             goto iooomaqggygwwuok;
         }
         goto emsmukwgwwusyueg;
+        ocoiequaimceeeoy:
+        $yqwciyekkgusiioi = array_merge($yqwciyekkgusiioi, ["\x63\154\x61\x73\163\x6e\141\155\145" => ManipulateString::igcwuwuymeuomaqo("{$quowyokcwswmuois}\x2d{$aokagokqyuysuksm}"), self::DESCRIPTION => $mkqqqewsokcswckc]);
+        goto qawmkgkwgqogkagw;
         quqiwccwsyawasoe:
         $quowyokcwswmuois = self::akuociswqmoigkas();
         goto ocoiequaimceeeoy;
-        sweugqqowwoamomc:
-        $this->gyqeoeemeemicgqi();
-        goto escickciciscoaec;
-        emsmukwgwwusyueg:
-        $aokagokqyuysuksm = ManipulateString::ogimogiceeekegoi(self::ugwmakayykcmcmqa());
-        goto omousmkywwwkksay;
-        qawmkgkwgqogkagw:
-        parent::__construct("{$quowyokcwswmuois}\x5f{$aokagokqyuysuksm}", $ymqmyyeuycgmigyo, $yqwciyekkgusiioi, $akcsikgoamcgoccg);
-        goto sweugqqowwoamomc;
-        omousmkywwwkksay:
-        iooomaqggygwwuok:
-        goto quqiwccwsyawasoe;
         escickciciscoaec:
     }
     public function wigskegsqequoeks()
     {
-        $this->qcsmikeggeemccuu("\x61\x64\x6d\x69\156\x5f\x69\x6e\151\164", [$this, "\x79\145\x79\x69\147\x75\171\x65\147\155\155\171\165\x73\145\x61"])->qcsmikeggeemccuu("\x77\x69\x64\x67\145\164\x73\137\151\x6e\151\x74", [$this, "\162\145\x67\x69\163\164\x65\x72"])->qcsmikeggeemccuu("\141\144\155\151\156\x5f\x66\157\157\x74\x65\x72\55\167\151\144\147\145\164\x73\56\x70\150\x70", [$this, "\147\x67\x73\153\x63\147\x67\141\141\145\141\x6b\x67\x61\x71\143"]);
+        $this->qcsmikeggeemccuu("\141\x64\x6d\151\x6e\137\151\156\x69\164", [$this, "\x79\145\x79\151\x67\165\171\145\x67\x6d\155\171\165\x73\145\141"])->qcsmikeggeemccuu("\x77\x69\x64\x67\145\x74\x73\137\151\156\x69\x74", [$this, "\162\145\x67\x69\x73\x74\x65\162"])->qcsmikeggeemccuu("\141\144\155\x69\156\x5f\146\x6f\157\164\145\x72\x2d\167\151\144\x67\145\164\163\56\160\150\x70", [$this, "\147\147\163\x6b\x63\147\147\x61\141\145\141\x6b\x67\x61\x71\143"]);
     }
     public function register()
     {
@@ -71,7 +71,7 @@ abstract class Widget extends WP_Widget implements ConstantInterface
         global $hook_suffix;
         goto gaaewsyiiysgawgu;
         gaaewsyiiysgawgu:
-        if (!($hook_suffix === "\x77\151\x64\147\x65\x74\x73\56\x70\150\x70")) {
+        if (!($hook_suffix === "\x77\151\144\x67\x65\x74\163\56\x70\x68\160")) {
             goto isyiocycgikqamoi;
         }
         goto moqawwqumcaawiac;
@@ -90,62 +90,92 @@ abstract class Widget extends WP_Widget implements ConstantInterface
     public function update($new_instance, $old_instance) : array
     {
         goto yqowgmmyogcameuo;
-        yqowgmmyogcameuo:
-        $owgumcsyqsamiemg = $old_instance;
-        goto wsyeeuisawusawwu;
         wsyeeuisawusawwu:
         $ikgwqyuyckaewsow = $this->ugmceccgwaaaigiy();
         goto qecqaigyggikwmeo;
-        igkqkkwwogciekqk:
-        return $owgumcsyqsamiemg;
-        goto qmqooggmccwuiumi;
+        mikouwykeswmseqa:
+        ckcwoiecmaaqauqu:
+        goto igkqkkwwogciekqk;
         qecqaigyggikwmeo:
         foreach ($ikgwqyuyckaewsow as $aokagokqyuysuksm => $aiowsaccomcoikus) {
             $owgumcsyqsamiemg[$aokagokqyuysuksm] = ManipulateArray::get($new_instance, $aokagokqyuysuksm);
             uwwiiqiikuusuocc:
         }
         goto mikouwykeswmseqa;
-        mikouwykeswmseqa:
-        ckcwoiecmaaqauqu:
-        goto igkqkkwwogciekqk;
+        igkqkkwwogciekqk:
+        return $owgumcsyqsamiemg;
+        goto qmqooggmccwuiumi;
+        yqowgmmyogcameuo:
+        $owgumcsyqsamiemg = $old_instance;
+        goto wsyeeuisawusawwu;
         qmqooggmccwuiumi:
     }
     
     public function form($owgumcsyqsamiemg)
     {
         goto cecukmgemigakuum;
-        usqeaouygcuiymaa:
-        ykkqammyacwiugwo:
-        goto yaewecqgykieauki;
         cecukmgemigakuum:
         $eaoumsseceiowgsk = [];
         goto uywocaygaeysmcsc;
-        gimiyacaiomgucuu:
-        self::iuaucuookgoqiiio($eaoumsseceiowgsk);
-        goto cueiywyuommyocey;
-        yaewecqgykieauki:
-        if (!$eaoumsseceiowgsk) {
-            goto jaaukakisoqesywi;
-        }
-        goto gimiyacaiomgucuu;
         cueiywyuommyocey:
         jaaukakisoqesywi:
         goto ysayeagkekiusmeu;
+        usqeaouygcuiymaa:
+        ykkqammyacwiugwo:
+        goto yaewecqgykieauki;
+        gimiyacaiomgucuu:
+        self::iuaucuookgoqiiio($eaoumsseceiowgsk);
+        goto cueiywyuommyocey;
         uywocaygaeysmcsc:
         $ikgwqyuyckaewsow = $this->ugmceccgwaaaigiy();
         goto cmqogyywaqmmmwss;
         cmqogyywaqmmmwss:
         foreach ($ikgwqyuyckaewsow as $aokagokqyuysuksm => $aiowsaccomcoikus) {
             goto wicugycksmwmokkm;
-            nkaqkoaswwgwkiea:
-            
-            if (in_array($aiowsaccomcoikus->gueasuouwqysmomu(), ["\143\150\145\x63\x6b\x62\157\x78", "\162\x61\144\151\157"])) {
-                goto guaokcsyycsuegkw;
-            }
-            goto oaymugomswyeqgms;
+            uaomcsauseuwaseg:
+            $aiowsaccomcoikus = self::okmsgamiiemyesao($aiowsaccomcoikus);
+            goto euuqicgakkyoayyo;
+            kayikiwuwkgyiowu:
+            goto qwgsqwmqmigwwwug;
+            goto yiqaaumgyoymwmwc;
             egsgkaascayskqmu:
             $eaoumsseceiowgsk[$aokagokqyuysuksm] = $aiowsaccomcoikus;
             goto cyyaeuauwoqoiswy;
+            siwmcmcqweiaiyka:
+            $aiowsaccomcoikus->iygyugseyaqwywyg($eqgoocgaqwqcimie);
+            goto oiikwqssmywyqmow;
+            scmasgusoqouumgu:
+            qwgsqwmqmigwwwug:
+            goto egsgkaascayskqmu;
+            wicugycksmwmokkm:
+            $aiowsaccomcoikus["\x69\144"] = $this->get_field_name($aokagokqyuysuksm);
+            goto uaomcsauseuwaseg;
+            oaymugomswyeqgms:
+            $aiowsaccomcoikus->yoimakcqmoqokkcu()->qcgocuceocquqcuw("\151\144", $this->get_field_id($aokagokqyuysuksm));
+            goto kayikiwuwkgyiowu;
+            euuqicgakkyoayyo:
+            if (!$aiowsaccomcoikus instanceof Field) {
+                goto wkuqsumgkuyygois;
+            }
+            goto qmeyqewkyigkqaua;
+            cyqmausswuokwsws:
+            ocaayuycwauaaggq:
+            goto cuiocwuoceciyecw;
+            iucacumsqyoimoqq:
+            $aiowsaccomcoikus->mkmssscwmeekwgqo();
+            goto scmasgusoqouumgu;
+            oiikwqssmywyqmow:
+            wgaeaqwwieyaqsyk:
+            goto nkaqkoaswwgwkiea;
+            yiqaaumgyoymwmwc:
+            guaokcsyycsuegkw:
+            goto iucacumsqyoimoqq;
+            nkaqkoaswwgwkiea:
+            
+            if (in_array($aiowsaccomcoikus->gueasuouwqysmomu(), ["\x63\x68\x65\x63\153\142\x6f\x78", "\162\141\x64\x69\157"])) {
+                goto guaokcsyycsuegkw;
+            }
+            goto oaymugomswyeqgms;
             cyyaeuauwoqoiswy:
             wkuqsumgkuyygois:
             goto cyqmausswuokwsws;
@@ -154,107 +184,77 @@ abstract class Widget extends WP_Widget implements ConstantInterface
                 goto wgaeaqwwieyaqsyk;
             }
             goto siwmcmcqweiaiyka;
-            yiqaaumgyoymwmwc:
-            guaokcsyycsuegkw:
-            goto iucacumsqyoimoqq;
-            euuqicgakkyoayyo:
-            if (!$aiowsaccomcoikus instanceof Field) {
-                goto wkuqsumgkuyygois;
-            }
-            goto qmeyqewkyigkqaua;
-            oaymugomswyeqgms:
-            $aiowsaccomcoikus->yoimakcqmoqokkcu()->qcgocuceocquqcuw("\x69\x64", $this->get_field_id($aokagokqyuysuksm));
-            goto kayikiwuwkgyiowu;
-            uaomcsauseuwaseg:
-            $aiowsaccomcoikus = self::okmsgamiiemyesao($aiowsaccomcoikus);
-            goto euuqicgakkyoayyo;
-            scmasgusoqouumgu:
-            qwgsqwmqmigwwwug:
-            goto egsgkaascayskqmu;
-            oiikwqssmywyqmow:
-            wgaeaqwwieyaqsyk:
-            goto nkaqkoaswwgwkiea;
-            wicugycksmwmokkm:
-            $aiowsaccomcoikus["\151\x64"] = $this->get_field_name($aokagokqyuysuksm);
-            goto uaomcsauseuwaseg;
-            cyqmausswuokwsws:
-            ocaayuycwauaaggq:
-            goto cuiocwuoceciyecw;
-            siwmcmcqweiaiyka:
-            $aiowsaccomcoikus->iygyugseyaqwywyg($eqgoocgaqwqcimie);
-            goto oiikwqssmywyqmow;
-            kayikiwuwkgyiowu:
-            goto qwgsqwmqmigwwwug;
-            goto yiqaaumgyoymwmwc;
-            iucacumsqyoimoqq:
-            $aiowsaccomcoikus->mkmssscwmeekwgqo();
-            goto scmasgusoqouumgu;
             cuiocwuoceciyecw:
         }
         goto usqeaouygcuiymaa;
+        yaewecqgykieauki:
+        if (!$eaoumsseceiowgsk) {
+            goto jaaukakisoqesywi;
+        }
+        goto gimiyacaiomgucuu;
         ysayeagkekiusmeu:
     }
     
     public final function widget($ywmkwiwkosakssii, $owgumcsyqsamiemg)
     {
         goto yquqkequgwgqogsk;
-        igkugseogmcgasoq:
-        echo ManipulateArray::get($ywmkwiwkosakssii, self::BEFORE_WIDGET, '');
-        goto qmysagiommykwiei;
         yquqkequgwgqogsk:
         if (!(is_array($ywmkwiwkosakssii) && is_array($owgumcsyqsamiemg))) {
             goto iiokyisowgqqswqo;
         }
         goto agmeaqeyawqaaqyk;
+        igkugseogmcgasoq:
+        echo ManipulateArray::get($ywmkwiwkosakssii, self::BEFORE_WIDGET, '');
+        goto qmysagiommykwiei;
+        qmysagiommykwiei:
+        echo $nsmgceoqaqogqmuw;
+        goto iqyiaauwmwcqocok;
+        agmeaqeyawqaaqyk:
+        $nsmgceoqaqogqmuw = $this->kooycocagkkmaiay($ywmkwiwkosakssii, $owgumcsyqsamiemg);
+        goto qcakmuaykqwiqmuu;
+        iqyiaauwmwcqocok:
+        echo ManipulateArray::get($ywmkwiwkosakssii, self::AFTER_WIDGET, '');
+        goto uwuygoyaaeskeoyy;
         qcakmuaykqwiqmuu:
         if (!$nsmgceoqaqogqmuw) {
             goto kouameayeguwoeos;
         }
         goto igkugseogmcgasoq;
-        iqyiaauwmwcqocok:
-        echo ManipulateArray::get($ywmkwiwkosakssii, self::AFTER_WIDGET, '');
-        goto uwuygoyaaeskeoyy;
         uwuygoyaaeskeoyy:
         kouameayeguwoeos:
         goto wmwyyaqogsqssyac;
-        agmeaqeyawqaaqyk:
-        $nsmgceoqaqogqmuw = $this->kooycocagkkmaiay($ywmkwiwkosakssii, $owgumcsyqsamiemg);
-        goto qcakmuaykqwiqmuu;
         wmwyyaqogsqssyac:
         iiokyisowgqqswqo:
         goto aomwquymwqgcewis;
-        qmysagiommykwiei:
-        echo $nsmgceoqaqogqmuw;
-        goto iqyiaauwmwcqocok;
         aomwquymwqgcewis:
     }
     
     public final function kooycocagkkmaiay(?array $ywmkwiwkosakssii = [], ?array $owgumcsyqsamiemg = []) : string
     {
         goto eqwkisceygagmmwi;
+        gsscwykyyykyqaey:
+        mcgyqoauweyweoyy:
+        goto ygweqayaqqeweiie;
         eqwkisceygagmmwi:
         $qookweymeqawmcwo = $this->gayqqwwuycceosii($ywmkwiwkosakssii, $owgumcsyqsamiemg);
         goto muwqiukyceakceog;
         ygweqayaqqeweiie:
         return $aqykuigiuwmmcieu;
         goto aecggwmiiueeiwqy;
-        muwqiukyceakceog:
-        $aqykuigiuwmmcieu = '';
-        goto yyskgqykggakkicm;
         euykeqcoiyuwwayu:
-        $aqykuigiuwmmcieu = $this->iuygowkemiiwqmiw($qqscaoyqikuyeoaw, $qookweymeqawmcwo, ["\x65\143\x68\x6f" => false]);
+        $aqykuigiuwmmcieu = $this->iuygowkemiiwqmiw($qqscaoyqikuyeoaw, $qookweymeqawmcwo, ["\145\143\150\157" => false]);
         goto gsscwykyyykyqaey;
-        gsscwykyyykyqaey:
-        mcgyqoauweyweoyy:
-        goto ygweqayaqqeweiie;
-        yyskgqykggakkicm:
-        $qqscaoyqikuyeoaw = ManipulateString::ogimogiceeekegoi(ManipulateArray::get($qookweymeqawmcwo, self::OUTPUT_TEMPLATE, self::ugwmakayykcmcmqa()));
-        goto yuiakguqekmiuamu;
         yuiakguqekmiuamu:
         if (!$this->qoqyomiqwooaeoiy($ywmkwiwkosakssii, $owgumcsyqsamiemg, $qookweymeqawmcwo)) {
             goto mcgyqoauweyweoyy;
         }
         goto euykeqcoiyuwwayu;
+        yyskgqykggakkicm:
+        $qqscaoyqikuyeoaw = ManipulateString::ogimogiceeekegoi(ManipulateArray::get($qookweymeqawmcwo, self::OUTPUT_TEMPLATE, self::ugwmakayykcmcmqa()));
+        goto yuiakguqekmiuamu;
+        muwqiukyceakceog:
+        $aqykuigiuwmmcieu = '';
+        goto yyskgqykggakkicm;
         aecggwmiiueeiwqy:
     }
     

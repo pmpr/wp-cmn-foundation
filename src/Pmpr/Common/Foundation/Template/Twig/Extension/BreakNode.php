@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b3993be3fb             |
+    |             613b499786a1b             |
     |_______________________________________|
 */
 
@@ -18,6 +18,6 @@ class BreakNode extends Node
         
         $wikuywwagioieuau->addDebugInfo($this);
         
-        $wikuywwagioieuau->write("\x62\x72\x65\x61\x6b\x3b\12");
+        $wikuywwagioieuau->write("\x62\162\145\x61\153\73\12");
     }
 }
