@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -13,6 +13,6 @@ class Timestamp extends Field
     
     public function __construct(string $aokagokqyuysuksm, ?string $meqocwsecsywiiqs = null)
     {
-        parent::__construct("\x74\151\x6d\145\163\x74\x61\155\x70", $aokagokqyuysuksm, $meqocwsecsywiiqs);
+        parent::__construct('timestamp', $aokagokqyuysuksm, $meqocwsecsywiiqs);
     }
 }

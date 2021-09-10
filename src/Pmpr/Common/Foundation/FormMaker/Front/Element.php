@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -21,7 +21,7 @@ use Pmpr\Common\Foundation\Traits\ToArrayTrait;
 
 class Element implements ConstantInterface
 {
-    const CHILD_CONTENT = "\173\173\40\x63\x68\x69\x6c\144\137\143\x6f\x6e\164\145\156\164\x20\175\x7d";
+    const CHILD_CONTENT = '{{ child_content }}';
     use FieldTrait, ToArrayTrait, ElementTrait, TemplateTrait, ComponentTrait, AttributeTrait;
     
     protected ?string $id = null;
@@ -32,17 +32,9 @@ class Element implements ConstantInterface
     
     public function __construct(string $kqywgoqsmuswammk, ?string $aokagokqyuysuksm = null)
     {
-        goto iswwimckkkeokgcm;
-        iswwimckkkeokgcm:
         $this->id = $aokagokqyuysuksm;
-        goto massqqageicawcwa;
-        iuqqyoswkewaikma:
-        $this->igmaewykumgwoaoy(self::ID, $aokagokqyuysuksm);
-        goto waisuqycssimesui;
-        massqqageicawcwa:
         $this->element = $kqywgoqsmuswammk;
-        goto iuqqyoswkewaikma;
-        waisuqycssimesui:
+        $this->igmaewykumgwoaoy(self::ID, $aokagokqyuysuksm);
     }
     
     public function mwikyscisascoeea() : ?string
@@ -90,68 +82,24 @@ class Element implements ConstantInterface
     
     public function render($ywmkwiwkosakssii = []) : ?string
     {
-        goto iqaoqcwemuamiywa;
-        ecegkmqcqocseacg:
-        if (!$omwmuycmeqcqokom) {
-            goto egqwsykqosqsqmei;
-        }
-        goto qckiyyomwgamwowy;
-        amkmgqciseuyuswu:
-        egqwsykqosqsqmei:
-        goto eoeiuweemoocwwco;
-        auqymasgagkmkeqe:
-        $nsmgceoqaqogqmuw = ManipulateHTML::qgsekwygcgawekeq($kqywgoqsmuswammk, $wwgucssaecqekuek, true, $this->souwykwwmyygqyqi());
-        goto xmiymoymswickcuu;
-        ssmwsoeooqmocwoc:
-        if (!($nsmgceoqaqogqmuw && $qkqgooeegwokcmay && str_contains($qkqgooeegwokcmay, self::CHILD_CONTENT))) {
-            goto ekauocuwoyemsqsq;
-        }
-        goto gqyasuaqiccikqiu;
-        gssiyeaqueiauaak:
+        $ywmkwiwkosakssii = ManipulateFormat::omaawkkwwyesqwcc($ywmkwiwkosakssii, ['echo' => false]);
         $kqywgoqsmuswammk = $this->qqimkcgcmeewwwei();
-        goto ecgeqsyqmqewqwao;
-        gqyasuaqiccikqiu:
-        $nsmgceoqaqogqmuw = str_replace(self::CHILD_CONTENT, $nsmgceoqaqogqmuw, $qkqgooeegwokcmay);
-        goto moqqkweuiqogoecm;
-        msqyagckiemcggqi:
-        qegsskwcwiykcies:
-        goto oewgqkuscaaqgocc;
-        moqqkweuiqogoecm:
-        ekauocuwoyemsqsq:
-        goto amkmgqciseuyuswu;
-        aymmqkugquckkuom:
-        $omwmuycmeqcqokom = $this->ygqycmmkoiuocoia();
-        goto ecegkmqcqocseacg;
-        eoeiuweemoocwwco:
-        $nsmgceoqaqogqmuw = $this->eiieguqemowyacgi($nsmgceoqaqogqmuw);
-        goto eesyagkqmooggswo;
-        eesyagkqmooggswo:
-        if (!$ywmkwiwkosakssii["\145\143\150\x6f"]) {
-            goto qegsskwcwiykcies;
-        }
-        goto omgkugwoikiiyouo;
-        qckiyyomwgamwowy:
-        $nsmgceoqaqogqmuw = $this->assmkuqekscwausm($nsmgceoqaqogqmuw);
-        goto qsegmmyuaaegggwc;
-        omgkugwoikiiyouo:
-        echo $nsmgceoqaqogqmuw;
-        goto msqyagckiemcggqi;
-        ecgeqsyqmqewqwao:
         $wwgucssaecqekuek = array_filter($this->ccekeuwwqqoiwuwy());
-        goto auqymasgagkmkeqe;
-        qsegmmyuaaegggwc:
-        $qkqgooeegwokcmay = $omwmuycmeqcqokom->render();
-        goto ssmwsoeooqmocwoc;
-        xmiymoymswickcuu:
+        $nsmgceoqaqogqmuw = ManipulateHTML::qgsekwygcgawekeq($kqywgoqsmuswammk, $wwgucssaecqekuek, true, $this->souwykwwmyygqyqi());
         $nsmgceoqaqogqmuw = $this->ggiwigqywkaqogkk($nsmgceoqaqogqmuw);
-        goto aymmqkugquckkuom;
-        iqaoqcwemuamiywa:
-        $ywmkwiwkosakssii = ManipulateFormat::omaawkkwwyesqwcc($ywmkwiwkosakssii, ["\145\x63\150\157" => false]);
-        goto gssiyeaqueiauaak;
-        oewgqkuscaaqgocc:
+        $omwmuycmeqcqokom = $this->ygqycmmkoiuocoia();
+        if ($omwmuycmeqcqokom) {
+            $nsmgceoqaqogqmuw = $this->assmkuqekscwausm($nsmgceoqaqogqmuw);
+            $qkqgooeegwokcmay = $omwmuycmeqcqokom->render();
+            if ($nsmgceoqaqogqmuw && $qkqgooeegwokcmay && str_contains($qkqgooeegwokcmay, self::CHILD_CONTENT)) {
+                $nsmgceoqaqogqmuw = str_replace(self::CHILD_CONTENT, $nsmgceoqaqogqmuw, $qkqgooeegwokcmay);
+            }
+        }
+        $nsmgceoqaqogqmuw = $this->eiieguqemowyacgi($nsmgceoqaqogqmuw);
+        if ($ywmkwiwkosakssii['echo']) {
+            echo $nsmgceoqaqogqmuw;
+        }
         return $nsmgceoqaqogqmuw;
-        goto qksawqasmoackeyi;
-        qksawqasmoackeyi:
     }
     
     public function ggiwigqywkaqogkk(?string $nsmgceoqaqogqmuw) : ?string

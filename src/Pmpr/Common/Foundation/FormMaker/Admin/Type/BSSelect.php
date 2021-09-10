@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -13,11 +13,11 @@ class BSSelect extends Select
     public function __construct()
     {
         parent::__construct();
-        $this->miocmcoykayoyyau()->ikqyiskqaaymscgw("\142\x73\163\x65\x6c\x65\x63\164", ["\x6c\x6f\x63\141\154\x65" => ["\145\x72\x72\x6f\162\124\x65\x78\164" => __("\x55\x6e\141\x62\154\145\40\x74\x6f\x20\162\x65\164\x72\x69\x65\x76\x65\x20\162\145\163\165\154\164\163", PR__CMN__FOUNDATION), "\x65\x6d\160\x74\171\124\151\x74\x6c\145" => __("\x53\145\154\145\143\x74\40\x61\x6e\x64\40\x62\x65\x67\151\156\40\164\171\x70\x69\156\x67", PR__CMN__FOUNDATION), "\163\164\141\x74\165\x73\124\157\x6f\123\150\x6f\x72\x74" => __("\x50\x6c\x65\141\x73\145\x20\x65\x6e\164\145\162\x20\x6d\157\162\x65\x20\x63\150\141\x72\x61\143\164\x65\x72\x73", PR__CMN__FOUNDATION), "\163\x74\x61\x74\165\x73\116\157\122\145\x73\165\154\164\x73" => __("\116\157\40\122\x65\x73\165\154\164\163", PR__CMN__FOUNDATION), "\x73\x74\141\x74\x75\x73\x53\x65\x61\x72\x63\x68\x69\x6e\x67" => __("\x53\145\141\x72\143\x68\151\156\147\x2e\56\56", PR__CMN__FOUNDATION), "\143\x75\x72\x72\x65\x6e\164\154\171\123\x65\x6c\x65\x63\x74\145\x64" => __("\x43\165\x72\162\145\x6e\x74\x6c\171\x20\x53\x65\x6c\145\143\164\145\144", PR__CMN__FOUNDATION), "\163\x65\x61\162\143\150\120\x6c\141\143\145\x68\x6f\x6c\x64\145\162" => __("\123\145\141\x72\x63\150\x69\x6e\x67\56\56\x2e", PR__CMN__FOUNDATION), "\x73\164\x61\x74\165\163\111\x6e\x69\x74\x69\x61\x6c\x69\x7a\x65\x64" => __("\123\x74\x61\162\x74\x20\x74\171\160\x69\x6e\x67\x20\x61\x20\x73\x65\141\162\143\150\40\161\x75\145\x72\171", PR__CMN__FOUNDATION)]]);
+        $this->miocmcoykayoyyau()->ikqyiskqaaymscgw('bsselect', ['locale' => ['errorText' => __('Unable to retrieve results', PR__CMN__FOUNDATION), 'emptyTitle' => __('Select and begin typing', PR__CMN__FOUNDATION), 'statusTooShort' => __('Please enter more characters', PR__CMN__FOUNDATION), 'statusNoResults' => __('No Results', PR__CMN__FOUNDATION), 'statusSearching' => __('Searching...', PR__CMN__FOUNDATION), 'currentlySelected' => __('Currently Selected', PR__CMN__FOUNDATION), 'searchPlaceholder' => __('Searching...', PR__CMN__FOUNDATION), 'statusInitialized' => __('Start typing a search query', PR__CMN__FOUNDATION)]]);
     }
     
     public function geecegsgyyayeouq() : string
     {
-        return "\x73\145\x6c\x65\x63\164\157\162\x2d\144\x72\x6f\160\144\x6f\167\x6e\x20\x70\162\x2d\142\163\x73\145\154\x65\143\x74";
+        return 'selector-dropdown pr-bsselect';
     }
 }

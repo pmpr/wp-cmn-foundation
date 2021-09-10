@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -13,6 +13,6 @@ class Json extends Field
     
     public function __construct(string $aokagokqyuysuksm, ?string $meqocwsecsywiiqs = null)
     {
-        parent::__construct("\x6a\163\x6f\156", $aokagokqyuysuksm, $meqocwsecsywiiqs);
+        parent::__construct('json', $aokagokqyuysuksm, $meqocwsecsywiiqs);
     }
 }

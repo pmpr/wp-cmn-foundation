@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -16,27 +16,15 @@ abstract class Modal extends Element
     protected array $segments = [];
     public function wigskegsqequoeks()
     {
-        $this->qcsmikeggeemccuu("\141\144\155\151\156\137\146\x6f\x6f\x74\x65\x72", [$this, "\157\x71\x6f\151\x63\165\x77\x77\151\163\171\x71\165\x67\x75\151"]);
+        $this->qcsmikeggeemccuu('admin_footer', [$this, 'oqoicuwwisyqugui']);
         parent::wigskegsqequoeks();
     }
     public function yeyiguyegmmyusea()
     {
-        goto okoeukggycasqmkw;
-        iuoccwowyukwyaki:
-        $this->enqueue();
-        goto siuqeccisecquqke;
-        kasycaqecmiqcocq:
-        parent::yeyiguyegmmyusea();
-        goto gggwgsymgguycoqq;
-        siuqeccisecquqke:
-        auewscgmseoysose:
-        goto kasycaqecmiqcocq;
-        okoeukggycasqmkw:
-        if (!$this->qoqyomiqwooaeoiy()) {
-            goto auewscgmseoysose;
+        if ($this->qoqyomiqwooaeoiy()) {
+            $this->enqueue();
         }
-        goto iuoccwowyukwyaki;
-        gggwgsymgguycoqq:
+        parent::yeyiguyegmmyusea();
     }
     
     public function gsesiocqciggmauo() : array
@@ -56,95 +44,33 @@ abstract class Modal extends Element
     }
     public function oqoicuwwisyqugui()
     {
-        goto eigkgeiikoeeucmq;
-        uiwukyyegyuyyowy:
-        geugmeammcwkocye:
-        goto ogooogkoigimwaeg;
-        scwcoyqkwcyacyqc:
-        $qookweymeqawmcwo = $this->eeisgyksyecuceue();
-        goto wegqugsauikaqqik;
-        wegqugsauikaqqik:
-        echo $this->iuygowkemiiwqmiw("\x6d\x6f\144\141\154", $qookweymeqawmcwo, ["\x63\154\141\x73\x73" => self::class]);
-        goto uiwukyyegyuyyowy;
-        eigkgeiikoeeucmq:
-        if (!$this->qoqyomiqwooaeoiy()) {
-            goto geugmeammcwkocye;
+        if ($this->qoqyomiqwooaeoiy()) {
+            $this->ecwgiiuacoaokqkw();
+            $qookweymeqawmcwo = $this->eeisgyksyecuceue();
+            echo $this->iuygowkemiiwqmiw('modal', $qookweymeqawmcwo, ['class' => self::class]);
         }
-        goto kskikaacakcmicms;
-        kskikaacakcmicms:
-        $this->ecwgiiuacoaokqkw();
-        goto scwcoyqkwcyacyqc;
-        ogooogkoigimwaeg:
     }
     
     public function eeisgyksyecuceue() : array
     {
-        goto aeyecoywqoueeuom;
-        wimkqoekscwcoauw:
-        foreach ($wsqkgswwooewwekw as $momcykaoccoymeig => $oceoauekaygmuoko) {
-            goto aiiacmowiewkwisi;
-            ekcmawkwuamiysos:
-            $oammesyieqmwuwyi["\150\141\x73\x5f\x70\141\162\145\x6e\x74"][$omwmuycmeqcqokom][] = $oceoauekaygmuoko;
-            goto moiaswoiewmmuyqc;
-            aiiacmowiewkwisi:
-            $omwmuycmeqcqokom = $oceoauekaygmuoko->ygqycmmkoiuocoia();
-            goto iuawweaasgimoeca;
-            igkymqyweeecaiaa:
-            $oammesyieqmwuwyi["\x6e\x6f\137\160\x61\162\x65\x6e\164"][] = $oceoauekaygmuoko;
-            goto sayckkksqcmgmeas;
-            iuawweaasgimoeca:
-            if ($omwmuycmeqcqokom && isset($eyagosskwwmgwmog[$omwmuycmeqcqokom])) {
-                goto uoqcywqgckaaqosy;
-            }
-            goto igkymqyweeecaiaa;
-            aukyogiwqccemcwi:
-            ukggciaukwksceyo:
-            goto iimwiiwywmmyiico;
-            yomsmyoaskgieieq:
-            uoqcywqgckaaqosy:
-            goto ekcmawkwuamiysos;
-            moiaswoiewmmuyqc:
-            gcqiaoykysucqicm:
-            goto aukyogiwqccemcwi;
-            sayckkksqcmgmeas:
-            goto gcqiaoykysucqicm;
-            goto yomsmyoaskgieieq;
-            iimwiiwywmmyiico:
-        }
-        goto ikemwmsywqqqiqsa;
-        ikemwmsywqqqiqsa:
-        meowaymmeecwskcw:
-        goto ggymiommyoaqkwko;
-        gakiswomawswuuyg:
-        $oammesyieqmwuwyi["\x6e\157\x5f\160\141\162\x65\x6e\164"] = $wsqkgswwooewwekw;
-        goto oekcuiaykkcusgkm;
-        iuiueyosywyeoqww:
-        $oammesyieqmwuwyi = ["\x61\154\154" => $wsqkgswwooewwekw, "\x6e\157\137\x70\x61\x72\145\x6e\x74" => [], "\x68\141\163\x5f\x70\x61\x72\x65\x6e\164" => []];
-        goto uouaaykomeuwokyc;
-        kkkqikqgoweaqaey:
-        $eyagosskwwmgwmog = $this->ckqaeiskasoyysmg();
-        goto iuiueyosywyeoqww;
-        wweyewgicswqweyq:
-        return [self::NAME => $this->cisyiemkeykgkomc(), self::TITLE => $this->qcgakseyaikigqco(), "\142\165\164\164\x6f\156\163" => $this->imswwiyicyksouus(), "\160\141\x72\x65\x6e\x74\163" => $eyagosskwwmgwmog, "\x73\x65\147\155\x65\x6e\x74\x73" => $oammesyieqmwuwyi, "\x63\154\157\163\x65\137\x69\x63\157\x6e" => IconFontawesomeInterface::ICON_XMARK, "\141\x72\x72\x6f\167\137\x69\143\157\x6e" => IconFontawesomeInterface::ICON_ANGLE_DOWN, "\x6c\151\x73\164\x5f\x74\x69\164\154\x65" => __("\103\157\156\x74\x65\x6e\164\163\40\114\x69\x73\x74", PR__CMN__FOUNDATION), "\143\x6c\x6f\x73\145\137\x6d\145\x73\x73\x61\x67\145" => __("\x43\154\157\163\x65\40\x4d\157\x64\141\x6c", PR__CMN__FOUNDATION)];
-        goto cgmociyqmykaqmya;
-        oekcuiaykkcusgkm:
-        goto ogoaaymaeukosmao;
-        goto oakygoegqigkcwug;
-        oakygoegqigkcwug:
-        ikkqemkoagsyccug:
-        goto wimkqoekscwcoauw;
-        ggymiommyoaqkwko:
-        ogoaaymaeukosmao:
-        goto wweyewgicswqweyq;
-        uouaaykomeuwokyc:
-        if ($eyagosskwwmgwmog) {
-            goto ikkqemkoagsyccug;
-        }
-        goto gakiswomawswuuyg;
-        aeyecoywqoueeuom:
         $wsqkgswwooewwekw = $this->gsesiocqciggmauo();
-        goto kkkqikqgoweaqaey;
-        cgmociyqmykaqmya:
+        $eyagosskwwmgwmog = $this->ckqaeiskasoyysmg();
+        $oammesyieqmwuwyi = ['all' => $wsqkgswwooewwekw, 'no_parent' => [], 'has_parent' => []];
+        if ($eyagosskwwmgwmog) {
+            foreach ($wsqkgswwooewwekw as $momcykaoccoymeig => $oceoauekaygmuoko) {
+                $omwmuycmeqcqokom = $oceoauekaygmuoko->ygqycmmkoiuocoia();
+                if ($omwmuycmeqcqokom && isset($eyagosskwwmgwmog[$omwmuycmeqcqokom])) {
+                    $oammesyieqmwuwyi['has_parent'][$omwmuycmeqcqokom][] = $oceoauekaygmuoko;
+                } else {
+                    $oammesyieqmwuwyi['no_parent'][] = $oceoauekaygmuoko;
+                }
+                qwemkcoaseywkuuc:
+            }
+            saauykgakaeiyoua:
+        } else {
+            $oammesyieqmwuwyi['no_parent'] = $wsqkgswwooewwekw;
+        }
+        return [self::NAME => $this->cisyiemkeykgkomc(), self::TITLE => $this->qcgakseyaikigqco(), 'buttons' => $this->imswwiyicyksouus(), 'parents' => $eyagosskwwmgwmog, 'segments' => $oammesyieqmwuwyi, 'close_icon' => IconFontawesomeInterface::ICON_XMARK, 'arrow_icon' => IconFontawesomeInterface::ICON_ANGLE_DOWN, 'list_title' => __('Contents List', PR__CMN__FOUNDATION), 'close_message' => __('Close Modal', PR__CMN__FOUNDATION)];
     }
     
     public function imswwiyicyksouus() : array
@@ -162,6 +88,6 @@ abstract class Modal extends Element
     
     public function ckqaeiskasoyysmg($eyagosskwwmgwmog = []) : array
     {
-        return $this->sscegwueamckwmcy($this->ygyygikyocoymgaw("\163\150\157\162\164\143\x6f\144\145\137\166\141\154\x69\144\x5f\160\141\x72\x65\x6e\x74\163"), $eyagosskwwmgwmog, $this);
+        return $this->sscegwueamckwmcy($this->ygyygikyocoymgaw('shortcode_valid_parents'), $eyagosskwwmgwmog, $this);
     }
 }

@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -19,61 +19,27 @@ class Form extends Element
     
     public function __construct(string $aokagokqyuysuksm = null)
     {
-        parent::__construct("\146\x6f\x72\155", $aokagokqyuysuksm);
-        $this->cukciuymuoaqgwic("\x50\117\123\124");
+        parent::__construct('form', $aokagokqyuysuksm);
+        $this->cukciuymuoaqgwic('POST');
     }
     
     public function souwykwwmyygqyqi() : ?string
     {
-        goto eawkaqqqaeooyyws;
-        auqkowcaacmmoqqk:
-        $ewgwqamkygiqaawc = str_replace(self::CHILD_CONTENT, $ewgwqamkygiqaawc, $skikiykssoocmmik->render());
-        goto skyosyooeugyimmm;
-        ggiqkimkqqwskeoa:
-        $skikiykssoocmmik = $this->kmiowswwgwcocguk();
-        goto awmcioiwswckueis;
-        gsgkgikagiuqeoie:
-        return $ewgwqamkygiqaawc;
-        goto ogqeqywosyqyaigy;
-        ioouuggmywygqauo:
-        foreach ($ikgwqyuyckaewsow as $aiowsaccomcoikus) {
-            goto swiqeuyomyeicqea;
-            mwskikiiuqwkeiqq:
-            $ewgwqamkygiqaawc .= $aiowsaccomcoikus->render();
-            goto aywemsgsqqwuwasc;
-            mqueqquuggcakwcy:
-            essaksagsgmwyccs:
-            goto mggewcywmuekqcaq;
-            aywemsgsqqwuwasc:
-            meqcqssumqokgkqc:
-            goto mqueqquuggcakwcy;
-            swiqeuyomyeicqea:
-            if (!$aiowsaccomcoikus instanceof Element) {
-                goto meqcqssumqokgkqc;
-            }
-            goto mwskikiiuqwkeiqq;
-            mggewcywmuekqcaq:
-        }
-        goto oiyywaikucqwquie;
-        skyosyooeugyimmm:
-        iakeaakmeqkaioeg:
-        goto gsgkgikagiuqeoie;
-        eawkaqqqaeooyyws:
         
         $ikgwqyuyckaewsow = ManipulateArray::yaeiiwwyckwugsem($this->ugmceccgwaaaigiy());
-        goto wykwsyuewigykqeg;
-        awmcioiwswckueis:
-        if (!$skikiykssoocmmik) {
-            goto iakeaakmeqkaioeg;
-        }
-        goto auqkowcaacmmoqqk;
-        oiyywaikucqwquie:
-        cgqcuiaiciwumqyy:
-        goto ggiqkimkqqwskeoa;
-        wykwsyuewigykqeg:
         $ewgwqamkygiqaawc = '';
-        goto ioouuggmywygqauo;
-        ogqeqywosyqyaigy:
+        foreach ($ikgwqyuyckaewsow as $aiowsaccomcoikus) {
+            if ($aiowsaccomcoikus instanceof Element) {
+                $ewgwqamkygiqaawc .= $aiowsaccomcoikus->render();
+            }
+            ysiqakyaiooyscwy:
+        }
+        ygcgoaokauigwuus:
+        $skikiykssoocmmik = $this->kmiowswwgwcocguk();
+        if ($skikiykssoocmmik) {
+            $ewgwqamkygiqaawc = str_replace(self::CHILD_CONTENT, $ewgwqamkygiqaawc, $skikiykssoocmmik->render());
+        }
+        return $ewgwqamkygiqaawc;
     }
     
     public function kmiowswwgwcocguk() : ?Div
@@ -99,68 +65,34 @@ class Form extends Element
     
     public function mkksewyosgeumwsa(Field $aiowsaccomcoikus) : self
     {
-        goto eeyueqsugiwsyiig;
-        eeyueqsugiwsyiig:
-        if (!(!$aiowsaccomcoikus->yywskysiycwkwsgw() && is_array($this->ugmceccgwaaaigiy()))) {
-            goto ysawesawywsauwoi;
+        if (!$aiowsaccomcoikus->yywskysiycwkwsgw() && is_array($this->ugmceccgwaaaigiy())) {
+            $aiowsaccomcoikus->jyumyyugiwwiqomk(count($this->ugmceccgwaaaigiy()) + 1);
         }
-        goto eemcaiwmeswmukso;
-        kimswwmiyciiwsuk:
-        return $this;
-        goto acaowkgayugqqgmk;
-        mogmqciagcakuqkw:
         $this->fields[$aiowsaccomcoikus->mwikyscisascoeea()] = $aiowsaccomcoikus;
-        goto kimswwmiyciiwsuk;
-        gasqiyouygwogiku:
-        ysawesawywsauwoi:
-        goto mogmqciagcakuqkw;
-        eemcaiwmeswmukso:
-        $aiowsaccomcoikus->jyumyyugiwwiqomk(count($this->ugmceccgwaaaigiy()) + 1);
-        goto gasqiyouygwogiku;
-        acaowkgayugqqgmk:
+        return $this;
     }
     
     public function ewweaossowcqywaw(array $ikgwqyuyckaewsow) : self
     {
-        goto wscymqowwagkecqk;
-        eeowmomscuckuoum:
-        scumgsosuakacmee:
-        goto auksmaiaiccmekam;
-        wscymqowwagkecqk:
         foreach ($ikgwqyuyckaewsow as $aiowsaccomcoikus) {
-            goto yyqqwsawsocusuqc;
-            yyqqwsawsocusuqc:
-            if (!$aiowsaccomcoikus instanceof Field) {
-                goto msmewamakoiksqok;
+            if ($aiowsaccomcoikus instanceof Field) {
+                $this->mkksewyosgeumwsa($aiowsaccomcoikus);
             }
-            goto ceaccikuogcywkaw;
-            ceaccikuogcywkaw:
-            $this->mkksewyosgeumwsa($aiowsaccomcoikus);
-            goto uywmokmuiikigyso;
-            awckqcsumswoggcm:
-            gaqqyqieyeoccskc:
-            goto kiwsaeeagagkwooc;
-            uywmokmuiikigyso:
-            msmewamakoiksqok:
-            goto awckqcsumswoggcm;
-            kiwsaeeagagkwooc:
+            ousmyagwsiooumos:
         }
-        goto eeowmomscuckuoum;
-        auksmaiaiccmekam:
+        auumaoycmsmsgigs:
         return $this;
-        goto wquwyumimoaeeqkm;
-        wquwyumimoaeeqkm:
     }
     
     public function cwqickkaaokiquuo(string $aiamqeawckcsuaou) : self
     {
-        $this->qcgocuceocquqcuw("\x61\143\164\151\157\x6e", $aiamqeawckcsuaou);
+        $this->qcgocuceocquqcuw('action', $aiamqeawckcsuaou);
         return $this;
     }
     
     public function cukciuymuoaqgwic(string $qgciuiagkkguykgs) : self
     {
-        $this->qcgocuceocquqcuw("\x6d\x65\164\x68\x6f\x64", $qgciuiagkkguykgs);
+        $this->qcgocuceocquqcuw('method', $qgciuiagkkguykgs);
         return $this;
     }
 }

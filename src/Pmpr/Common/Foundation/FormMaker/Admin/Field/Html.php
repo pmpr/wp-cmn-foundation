@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -15,7 +15,7 @@ class Html extends Field
     
     public function __construct(?string $aokagokqyuysuksm)
     {
-        parent::__construct("\150\164\155\154", $aokagokqyuysuksm);
+        parent::__construct('html', $aokagokqyuysuksm);
     }
     
     public function souwykwwmyygqyqi()

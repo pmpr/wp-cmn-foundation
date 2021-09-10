@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -46,19 +46,9 @@ class WPListTable extends WP_List_Table implements ConstantInterface
     
     public function prepare_items()
     {
-        goto eukgyqwumyckyiyo;
-        msqiqgiuckeymuae:
-        $this->_column_headers = [$this->get_columns(), [], $this->get_sortable_columns()];
-        goto eggyeisewmwoyogm;
-        waqsouimkiiiagis:
-        $weyoqgcesqgeusiu = $this->sooksiiooeywkyaq();
-        goto iegswgukwsmcasgs;
-        iegswgukwsmcasgs:
-        $this->set_pagination_args(["\x70\x65\x72\137\160\x61\147\x65" => $weyoqgcesqgeusiu, "\164\157\164\141\x6c\x5f\160\141\x67\145\163" => ceil($gaeqamemwmwsyukm / $weyoqgcesqgeusiu), "\164\157\x74\141\154\137\x69\x74\145\x6d\163" => $gaeqamemwmwsyukm]);
-        goto msqiqgiuckeymuae;
-        eukgyqwumyckyiyo:
         $gaeqamemwmwsyukm = $this->ygmcsmegcysyeoss();
-        goto waqsouimkiiiagis;
-        eggyeisewmwoyogm:
+        $weyoqgcesqgeusiu = $this->sooksiiooeywkyaq();
+        $this->set_pagination_args(['per_page' => $weyoqgcesqgeusiu, 'total_pages' => ceil($gaeqamemwmwsyukm / $weyoqgcesqgeusiu), 'total_items' => $gaeqamemwmwsyukm]);
+        $this->_column_headers = [$this->get_columns(), [], $this->get_sortable_columns()];
     }
 }

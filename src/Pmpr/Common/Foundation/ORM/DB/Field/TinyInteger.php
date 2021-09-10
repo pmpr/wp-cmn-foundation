@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -13,6 +13,6 @@ class TinyInteger extends Field
     
     public function __construct(string $aokagokqyuysuksm, ?string $meqocwsecsywiiqs = null)
     {
-        parent::__construct("\x74\x69\x6e\171\111\156\164\x65\147\x65\162", $aokagokqyuysuksm, $meqocwsecsywiiqs);
+        parent::__construct('tinyInteger', $aokagokqyuysuksm, $meqocwsecsywiiqs);
     }
 }

@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -22,20 +22,10 @@ class Size extends Data
     protected bool $isCrop = false;
     public function __construct(string $ymqmyyeuycgmigyo, int $qeswwaqqsyymqawg, int $cswemwoyesycwkuq = 0, bool $megcasiyeqqowmmi = false)
     {
-        goto wqwmkcisgiyyoyam;
-        wmaqigaciaqiikcy:
-        $this->width = $qeswwaqqsyymqawg;
-        goto gosgumwgamwesssq;
-        gosgumwgamwesssq:
-        $this->height = $cswemwoyesycwkuq;
-        goto makeckokeoicueia;
-        wqwmkcisgiyyoyam:
         $this->name = $ymqmyyeuycgmigyo;
-        goto wmaqigaciaqiikcy;
-        makeckokeoicueia:
+        $this->width = $qeswwaqqsyymqawg;
+        $this->height = $cswemwoyesycwkuq;
         $this->isCrop = $megcasiyeqqowmmi;
-        goto kkckckioiqcwoukw;
-        kkckckioiqcwoukw:
     }
     
     public function aakmagwggmkoiiyu() : ?string
@@ -93,28 +83,18 @@ class Size extends Data
         return $this;
     }
     
-    public function get($gkiuoymeukweiaaw = "\x77\151\x64\x74\150") : ?int
+    public function get($gkiuoymeukweiaaw = 'width') : ?int
     {
-        goto wmigqcwwousgyuqc;
-        kaycsosiqusqeiio:
-        oewkyegysuioqeuy:
-        goto eqgwseukuesiwuuq;
-        cyeauauawcaoqwsi:
-        return $qcgkuqesqqymcuui;
-        goto egkiiogswgakiack;
-        eqgwseukuesiwuuq:
-        zocygeecusggsqgy:
-        goto cyeauauawcaoqwsi;
-        wmigqcwwousgyuqc:
         switch ($gkiuoymeukweiaaw) {
-            case "\150\x65\151\147\x68\x74":
+            case 'height':
                 $qcgkuqesqqymcuui = $this->miskeyiwqsgcqwwo();
-                goto zocygeecusggsqgy;
+                goto gsygwgsiawgmqiyi;
             default:
                 $qcgkuqesqqymcuui = $this->qoqouugaaimaiqmi();
-                goto zocygeecusggsqgy;
+                goto gsygwgsiawgmqiyi;
         }
-        goto kaycsosiqusqeiio;
-        egkiiogswgakiack:
+        qsgqwyqaqiowkmco:
+        gsygwgsiawgmqiyi:
+        return $qcgkuqesqqymcuui;
     }
 }

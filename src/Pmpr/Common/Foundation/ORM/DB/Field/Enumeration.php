@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -13,7 +13,7 @@ class Enumeration extends Field
     
     public function __construct(string $aokagokqyuysuksm, array $qiouiwasaauyaaue, ?string $meqocwsecsywiiqs = null)
     {
-        parent::__construct("\x65\x6e\165\155", $aokagokqyuysuksm, $meqocwsecsywiiqs);
+        parent::__construct('enum', $aokagokqyuysuksm, $meqocwsecsywiiqs);
         $this->options = $qiouiwasaauyaaue;
     }
 }

@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -15,17 +15,9 @@ class Depended extends Checkbox
     
     public function __construct(?string $aokagokqyuysuksm, ?string $ymqmyyeuycgmigyo, array $cwucaoaqgwqcwews = [], ?string $mkqqqewsokcswckc = null)
     {
-        goto kgkckaeqcuaceuec;
-        isouaycmsuwaguek:
-        $this->yekmmasckowaowgc($cwucaoaqgwqcwews);
-        goto sskgisessswoogay;
-        sskgisessswoogay:
-        $this->usoqcyyugsuyiewc("\x64\145\160\145\156\144\145\x64");
-        goto cmcokscaskcamuuq;
-        kgkckaeqcuaceuec:
         parent::__construct($aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc);
-        goto isouaycmsuwaguek;
-        cmcokscaskcamuuq:
+        $this->yekmmasckowaowgc($cwucaoaqgwqcwews);
+        $this->usoqcyyugsuyiewc('depended');
     }
     
     public function qammgescyicuwouu() : ?array

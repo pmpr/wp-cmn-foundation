@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -27,22 +27,10 @@ abstract class Segment extends Element
     
     public function __construct()
     {
-        goto qesmouyqgeigoyay;
-        ysuwseamckigmoge:
-        $this->name = strtolower(self::ugwmakayykcmcmqa());
-        goto cawcqogqmaaiaeim;
-        qesmouyqgeigoyay:
-        if ($this->aakmagwggmkoiiyu()) {
-            goto imksqaayamqiwwuw;
+        if (!$this->aakmagwggmkoiiyu()) {
+            $this->name = strtolower(self::ugwmakayykcmcmqa());
         }
-        goto ysuwseamckigmoge;
-        cawcqogqmaaiaeim:
-        imksqaayamqiwwuw:
-        goto ckiesggkeyocyoia;
-        ckiesggkeyocyoia:
         parent::__construct();
-        goto qiiyiqwyoomsueuq;
-        qiiyiqwyoomsueuq:
     }
     
     public function eyamqkqiykagecsw() : ?string
@@ -63,34 +51,14 @@ abstract class Segment extends Element
     
     public function ewweaossowcqywaw(array $ikgwqyuyckaewsow) : self
     {
-        goto wiuoyosaiuqqmiss;
-        weqqwqaoyugaiaqs:
-        return $this;
-        goto oqecugiicgkgisyi;
-        wiuoyosaiuqqmiss:
         foreach ($ikgwqyuyckaewsow as $aiowsaccomcoikus) {
-            goto yawsiksqqgmeeiws;
-            wgguesgmyqgyescc:
-            aqocckgoumwuoyco:
-            goto sockicoiuuuygkyo;
-            sockicoiuuuygkyo:
-            huuswamyiwgiymou:
-            goto komeykuoomsymayc;
-            yawsiksqqgmeeiws:
-            if (!$aiowsaccomcoikus instanceof Field) {
-                goto aqocckgoumwuoyco;
+            if ($aiowsaccomcoikus instanceof Field) {
+                $this->mkksewyosgeumwsa($aiowsaccomcoikus);
             }
-            goto iiauuwmeoiiqeigi;
-            iiauuwmeoiiqeigi:
-            $this->mkksewyosgeumwsa($aiowsaccomcoikus);
-            goto wgguesgmyqgyescc;
-            komeykuoomsymayc:
+            kwyimqumkuuyaiku:
         }
-        goto iqacckgckyoioccs;
-        iqacckgckyoioccs:
-        squwouwckwiwquyu:
-        goto weqqwqaoyugaiaqs;
-        oqecugiicgkgisyi:
+        mqimkwickkgqqeoi:
+        return $this;
     }
     
     public function equiyaoamqmaeckc() : array
@@ -100,22 +68,10 @@ abstract class Segment extends Element
     
     public function aucimgwswmgaocae(?Tab $cciauwuwuqaywgce = null) : self
     {
-        goto gaykosyqceuygmiq;
-        gaykosyqceuygmiq:
-        if (!$cciauwuwuqaywgce) {
-            goto usweuqkmumcwckoo;
+        if ($cciauwuwuqaywgce) {
+            $this->tabs[$cciauwuwuqaywgce->mwikyscisascoeea()] = $cciauwuwuqaywgce;
         }
-        goto gmeksiaumseqkqug;
-        mmiwmgwcsgqoemws:
         return $this;
-        goto qomimwecwqaeyqwu;
-        eiuugowioueiceoc:
-        usweuqkmumcwckoo:
-        goto mmiwmgwcsgqoemws;
-        gmeksiaumseqkqug:
-        $this->tabs[$cciauwuwuqaywgce->mwikyscisascoeea()] = $cciauwuwuqaywgce;
-        goto eiuugowioueiceoc;
-        qomimwecwqaeyqwu:
     }
     
     public function imswwiyicyksouus() : array
@@ -130,86 +86,32 @@ abstract class Segment extends Element
     
     public function igmamuiesywmkgeu($meqocwsecsywiiqs, $wwgucssaecqekuek) : self
     {
-        goto cwcqmsuqqsauemuw;
-        cwcqmsuqqsauemuw:
-        $wwgucssaecqekuek = ManipulateHTML::igmaewykumgwoaoy($wwgucssaecqekuek, "\143\x6c\141\163\163", "\x62\165\164\x74\157\156\40\x62\165\x74\x74\157\156\55\154\x61\162\x67\145");
-        goto aysoywgeacaeuyao;
-        aysoywgeacaeuyao:
-        $this->buttons[] = ["\x6d\x65\161\x6f\143\x77\x73\145\143\x73\x79\x77\x69\151\161\163" => $meqocwsecsywiiqs, "\167\167\147\165\143\163\x73\x61\x65\143\x71\145\x6b\165\x65\x6b" => $wwgucssaecqekuek];
-        goto oeyoocigmyyssieq;
-        oeyoocigmyyssieq:
+        $wwgucssaecqekuek = ManipulateHTML::igmaewykumgwoaoy($wwgucssaecqekuek, 'class', 'button button-large');
+        $this->buttons[] = ['meqocwsecsywiiqs' => $meqocwsecsywiiqs, 'wwgucssaecqekuek' => $wwgucssaecqekuek];
         return $this;
-        goto uggiuigwgwokwgiq;
-        uggiuigwgwokwgiq:
     }
     
     public function ugmceccgwaaaigiy() : array
     {
-        goto zwyeiuiuwmomyaui;
-        egceiosgoikqmksy:
-        foreach ($ywoucyskcquysiwc as $cciauwuwuqaywgce) {
-            goto cmeuiweeoykyskow;
-            iuqayqiqyyyiaeuk:
-            weowiucswssseeoi:
-            goto uieuqmawsakguqua;
-            joguwmwqyuewsyiq:
-            gmuwcugusceigoky:
-            goto yywiqsiicysqcogw;
-            yywiqsiicysqcogw:
-            oskkwqymsyucwaow:
-            goto iuqayqiqyyyiaeuk;
-            ogukuswqqqwgaeui:
-            foreach ($cciauwuwuqaywgce->ugmceccgwaaaigiy() as $uusmaiomayssaecw => $aiowsaccomcoikus) {
-                goto awcgwaasyugkmkqy;
-                ciwysskisqauwcug:
-                aaimmucyosywoass:
-                goto acmaoiqemyycsaka;
-                awcgwaasyugkmkqy:
-                if (!$aiowsaccomcoikus instanceof Field) {
-                    goto geiamswcamageuyw;
-                }
-                goto wwgucckkqkmogugq;
-                kgkyaciicuyywmge:
-                $ikgwqyuyckaewsow[$uusmaiomayssaecw] = $aiowsaccomcoikus;
-                goto koagmgoqguqqksmy;
-                wwgucckkqkmogugq:
-                $aiowsaccomcoikus->ggiaseqygioygumq("{$this->cisyiemkeykgkomc()}\137{$aiowsaccomcoikus->mwikyscisascoeea()}")->yoimakcqmoqokkcu()->usoqcyyugsuyiewc("\160\164\x2d\x33");
-                goto kgkyaciicuyywmge;
-                koagmgoqguqqksmy:
-                geiamswcamageuyw:
-                goto ciwysskisqauwcug;
-                acmaoiqemyycsaka:
-            }
-            goto joguwmwqyuewsyiq;
-            cmeuiweeoykyskow:
-            if (!$cciauwuwuqaywgce instanceof Tab) {
-                goto oskkwqymsyucwaow;
-            }
-            goto ogukuswqqqwgaeui;
-            uieuqmawsakguqua:
-        }
-        goto ekucagwgcssmgqiu;
-        oggaskekyaokouua:
-        kwwuwmyeqcqsikws:
-        goto ygqymamcoygaeaio;
-        siuogwuegkksagas:
-        $ikgwqyuyckaewsow = $this->fields;
-        goto sigokuuaiuwmqmuw;
-        sigokuuaiuwmqmuw:
-        if (!$ywoucyskcquysiwc) {
-            goto kwwuwmyeqcqsikws;
-        }
-        goto egceiosgoikqmksy;
-        zwyeiuiuwmomyaui:
         $ywoucyskcquysiwc = $this->equiyaoamqmaeckc();
-        goto siuogwuegkksagas;
-        ekucagwgcssmgqiu:
-        sgocsssuiwqiauaq:
-        goto oggaskekyaokouua;
-        ygqymamcoygaeaio:
+        $ikgwqyuyckaewsow = $this->fields;
+        if ($ywoucyskcquysiwc) {
+            foreach ($ywoucyskcquysiwc as $cciauwuwuqaywgce) {
+                if ($cciauwuwuqaywgce instanceof Tab) {
+                    foreach ($cciauwuwuqaywgce->ugmceccgwaaaigiy() as $uusmaiomayssaecw => $aiowsaccomcoikus) {
+                        if ($aiowsaccomcoikus instanceof Field) {
+                            $aiowsaccomcoikus->ggiaseqygioygumq("{$this->cisyiemkeykgkomc()}_{$aiowsaccomcoikus->mwikyscisascoeea()}")->yoimakcqmoqokkcu()->usoqcyyugsuyiewc('pt-3');
+                            $ikgwqyuyckaewsow[$uusmaiomayssaecw] = $aiowsaccomcoikus;
+                        }
+                        gsymkkskwsgggoic:
+                    }
+                    ceiuqsiqgiuiekem:
+                }
+                mceucsaeouuwyumm:
+            }
+            gkqiqaqecmoogmaa:
+        }
         return $ikgwqyuyckaewsow;
-        goto mkkyuwckaeosicay;
-        mkkyuwckaeosicay:
     }
     
     public function ygqycmmkoiuocoia() : ?string
@@ -218,38 +120,14 @@ abstract class Segment extends Element
     }
     public function render()
     {
-        goto gyeemskiioowowag;
-        gyucwgwoiumceyks:
-        $ikgwqyuyckaewsow = $this->ugmceccgwaaaigiy();
-        goto qgiesqckowcksacg;
-        qgiesqckowcksacg:
-        if (!$ikgwqyuyckaewsow) {
-            goto qceciyagaeieoous;
-        }
-        goto aokmwkymqcqmyiym;
-        gyeemskiioowowag:
         $this->ecwgiiuacoaokqkw();
-        goto gyucwgwoiumceyks;
-        kqkicmysyusskuua:
-        qceciyagaeieoous:
-        goto yssakamqiieugqyk;
-        qmykwwkysceaysea:
-        $uiewakwqscemywuo["\x74\x61\x62\163"] = $this->equiyaoamqmaeckc();
-        goto iuiymememwkaqcuk;
-        aigumokaoqemqcyc:
-        if (!$this->equiyaoamqmaeckc()) {
-            goto qoeqoyciommaewgo;
+        $ikgwqyuyckaewsow = $this->ugmceccgwaaaigiy();
+        if ($ikgwqyuyckaewsow) {
+            $uiewakwqscemywuo = ['id' => $this->cisyiemkeykgkomc(), 'echo' => true, 'hookup' => false];
+            if ($this->equiyaoamqmaeckc()) {
+                $uiewakwqscemywuo['tabs'] = $this->equiyaoamqmaeckc();
+            }
+            self::iuaucuookgoqiiio($ikgwqyuyckaewsow, $uiewakwqscemywuo);
         }
-        goto qmykwwkysceaysea;
-        iuiymememwkaqcuk:
-        qoeqoyciommaewgo:
-        goto uomaegayqaycamwq;
-        aokmwkymqcqmyiym:
-        $uiewakwqscemywuo = ["\x69\144" => $this->cisyiemkeykgkomc(), "\x65\x63\150\x6f" => true, "\150\x6f\x6f\153\x75\160" => false];
-        goto aigumokaoqemqcyc;
-        uomaegayqaycamwq:
-        self::iuaucuookgoqiiio($ikgwqyuyckaewsow, $uiewakwqscemywuo);
-        goto kqkicmysyusskuua;
-        yssakamqiieugqyk:
     }
 }

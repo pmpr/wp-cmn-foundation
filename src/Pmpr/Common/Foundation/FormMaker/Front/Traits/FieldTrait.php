@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -15,47 +15,27 @@ trait FieldTrait
     
     public static function uikcsmyiqacmyoau() : Fields\Html
     {
-        goto ceyuasuaekaygkey;
-        ceyuasuaekaygkey:
-        $nsmgceoqaqogqmuw = new Fields\Html("\x6e\x6f\156\143\x65\x5f" . ManipulateString::uniqid(3));
-        goto yieqgyomcicomssk;
-        eeyucogkekkyiaam:
+        $nsmgceoqaqogqmuw = new Fields\Html('nonce_' . ManipulateString::uniqid(3));
+        $nsmgceoqaqogqmuw->qigsyyqgewgskemg('nonce-container');
         return $nsmgceoqaqogqmuw;
-        goto ysiyqywawmqqiqqk;
-        yieqgyomcicomssk:
-        $nsmgceoqaqogqmuw->qigsyyqgewgskemg("\x6e\x6f\x6e\143\145\55\x63\x6f\156\164\x61\x69\156\x65\x72");
-        goto eeyucogkekkyiaam;
-        ysiyqywawmqqiqqk:
     }
     
     public static function aikamsoikcwsewac($aokagokqyuysuksm = null) : Fields\Html
     {
-        goto scsekeeysgugouca;
-        iwusokgqiqkumeem:
-        $aokagokqyuysuksm = "\150\164\x6d\x6c\x5f" . ManipulateString::uniqid(3);
-        goto oqiaecgmqmaeeoei;
-        scsekeeysgugouca:
-        if ($aokagokqyuysuksm) {
-            goto wukwyumwsocgeusi;
+        if (!$aokagokqyuysuksm) {
+            $aokagokqyuysuksm = 'html_' . ManipulateString::uniqid(3);
         }
-        goto iwusokgqiqkumeem;
-        ccaqwykysccwusuu:
         return new Fields\Html($aokagokqyuysuksm);
-        goto aaweqykeggcaosyw;
-        oqiaecgmqmaeeoei:
-        wukwyumwsocgeusi:
-        goto ccaqwykysccwusuu;
-        aaweqykeggcaosyw:
     }
     
     public static function wowyaacgaccyeici(?string $meqocwsecsywiiqs = null) : Fields\Header
     {
-        return new Fields\Header("\150\x65\x61\144\x65\x72\x5f" . ManipulateString::uniqid(3), $meqocwsecsywiiqs);
+        return new Fields\Header('header_' . ManipulateString::uniqid(3), $meqocwsecsywiiqs);
     }
     
     public static function ewgquygaowykwacc(?string $ymqmyyeuycgmigyo, ?string $aiamqeawckcsuaou) : Fields\Nonce
     {
-        return new Fields\Nonce("\156\157\156\143\145\x5f" . ManipulateString::uniqid(3), $ymqmyyeuycgmigyo, $aiamqeawckcsuaou);
+        return new Fields\Nonce('nonce_' . ManipulateString::uniqid(3), $ymqmyyeuycgmigyo, $aiamqeawckcsuaou);
     }
     
     public static function qoeiescseggagsqs(string $aokagokqyuysuksm, string $pkyyagewkiyckmwy = null) : Fields\Button

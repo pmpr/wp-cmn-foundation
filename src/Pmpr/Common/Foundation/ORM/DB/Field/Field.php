@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -58,20 +58,10 @@ class Field implements ConstantInterface
     
     public function __construct(string $sqeykgyoooqysmca = null, string $aokagokqyuysuksm = null, ?string $meqocwsecsywiiqs = null, ?string $mokawwccycoiqeka = null)
     {
-        goto cwuakumskisqyogc;
-        ewaqcgwowgogwaqi:
-        $this->title = $meqocwsecsywiiqs;
-        goto cqeyqcauamscauiq;
-        ymiiquygeeucsgaq:
-        $this->type = $sqeykgyoooqysmca;
-        goto ewaqcgwowgogwaqi;
-        cqeyqcauamscauiq:
-        $this->domain = $mokawwccycoiqeka;
-        goto smqiciaewkmmyswu;
-        cwuakumskisqyogc:
         $this->id = $aokagokqyuysuksm;
-        goto ymiiquygeeucsgaq;
-        smqiciaewkmmyswu:
+        $this->type = $sqeykgyoooqysmca;
+        $this->title = $meqocwsecsywiiqs;
+        $this->domain = $mokawwccycoiqeka;
     }
     
     public function wwawisckiqeueoua() : ?string
@@ -294,20 +284,12 @@ class Field implements ConstantInterface
     
     public function acauweqyyugwisqc($qiouiwasaauyaaue = []) : self
     {
-        goto asgykkakkoeygiwm;
-        mwqqssomwmsmaaqk:
-        suwciqqmccskgmkg:
-        goto aguqiwwiooqqgywi;
-        asgykkakkoeygiwm:
         foreach ($qiouiwasaauyaaue as $uusmaiomayssaecw => $omkysikckkcieckq) {
             $this->kesomeowemmyygey($uusmaiomayssaecw, $omkysikckkcieckq);
-            isqiaewwwiusyaoy:
+            omugkkesagcyagmk:
         }
-        goto mwqqssomwmsmaaqk;
-        aguqiwwiooqqgywi:
+        mosqsmqimqgqoase:
         return $this;
-        goto egoyuuqcqmgkswyg;
-        egoyuuqcqmgkswyg:
     }
     
     public function ogmguwgoqkqkkisa() : ?string

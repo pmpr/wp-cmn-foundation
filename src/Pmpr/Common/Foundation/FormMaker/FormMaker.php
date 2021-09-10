@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -19,18 +19,8 @@ class FormMaker extends Common
     }
     public function iemaakgqgqosiecm()
     {
-        goto qqcequomiouiiimy;
-        qqcequomiouiiimy:
-        if (!is_admin()) {
-            goto aqaeicyackiqmuwk;
+        if (is_admin()) {
+            Admin::symcgieuakksimmu();
         }
-        goto qwuyegakwgekcwki;
-        wqmeqawiaawogoga:
-        aqaeicyackiqmuwk:
-        goto oiwesosswgwuuuwo;
-        qwuyegakwgekcwki:
-        Admin::symcgieuakksimmu();
-        goto wqmeqawiaawogoga;
-        oiwesosswgwuuuwo:
     }
 }

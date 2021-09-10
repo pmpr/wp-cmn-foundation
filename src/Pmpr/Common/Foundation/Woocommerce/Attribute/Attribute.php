@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -19,38 +19,22 @@ class Attribute extends Common
     }
     public function wigskegsqequoeks()
     {
-        $this->qcsmikeggeemccuu("\141\144\x6d\x69\156\x5f\151\x6e\151\x74", [$this, "\171\x65\x79\151\x67\x75\x79\145\147\x6d\x6d\x79\x75\x73\x65\x61"]);
+        $this->qcsmikeggeemccuu('admin_init', [$this, 'yeyiguyegmmyusea']);
         parent::wigskegsqequoeks();
     }
     public function yeyiguyegmmyusea()
     {
-        goto sawkmwweawsciysi;
-        oagiismqgcciokqw:
-        qqwiwaamsuyeaymq:
-        goto ieaeyoewoiweuuys;
-        uiceasouwuawugsq:
+        $seyqqsmuaiegkeeq = DecoratorWoocommerce::mqsqiyqiceqasokq();
         foreach ($seyqqsmuaiegkeeq as $momcykaoccoymeig => $kesssewsiegssiya) {
             Term::ocmycskcuiawkecq($momcykaoccoymeig, $kesssewsiegssiya);
-            koicyiceoeymqyee:
+            samwkqgwouggsguc:
         }
-        goto oagiismqgcciokqw;
-        sawkmwweawsciysi:
-        $seyqqsmuaiegkeeq = DecoratorWoocommerce::mqsqiyqiceqasokq();
-        goto uiceasouwuawugsq;
-        ieaeyoewoiweuuys:
+        oomguqikqokqwgku:
     }
     public function iemaakgqgqosiecm()
     {
-        goto ceecqioeaaiqgqsu;
-        eekswukgkqgmecuk:
-        GlobalAttribute::symcgieuakksimmu();
-        goto yyymkoaumewsqoum;
-        ceecqioeaaiqgqsu:
         Model::symcgieuakksimmu();
-        goto euimwgmwmmaogkcw;
-        euimwgmwmmaogkcw:
         LocalAttribute::symcgieuakksimmu();
-        goto eekswukgkqgmecuk;
-        yyymkoaumewsqoum:
+        GlobalAttribute::symcgieuakksimmu();
     }
 }

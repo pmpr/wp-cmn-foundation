@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -14,24 +14,10 @@ abstract class Decorator implements ConstantInterface
     
     public static function qyyygkguqcmgkmey($ekiuyucoiagmscgy, $ggauoeuaesiymgee = false, ...$ywmkwiwkosakssii)
     {
-        goto csaweyksigegicem;
-        qcaiegucqcakoguk:
-        aekiswqkimmgcmac:
-        goto gsyaeawoooqaaeee;
-        csaweyksigegicem:
         $ksaameoqigiaoigg = $ggauoeuaesiymgee;
-        goto sgwwumsasamqmqky;
-        gsyaeawoooqaaeee:
-        return $ksaameoqigiaoigg;
-        goto oeqeikgwugwquskq;
-        sgwwumsasamqmqky:
-        if (!function_exists($ekiuyucoiagmscgy)) {
-            goto aekiswqkimmgcmac;
+        if (function_exists($ekiuyucoiagmscgy)) {
+            $ksaameoqigiaoigg = call_user_func($ekiuyucoiagmscgy, ...$ywmkwiwkosakssii);
         }
-        goto kgsqmocueuiwmmcs;
-        kgsqmocueuiwmmcs:
-        $ksaameoqigiaoigg = call_user_func($ekiuyucoiagmscgy, ...$ywmkwiwkosakssii);
-        goto qcaiegucqcakoguk;
-        oeqeikgwugwquskq:
+        return $ksaameoqigiaoigg;
     }
 }

@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -34,17 +34,9 @@ class Database extends Common implements ConnectionInterface
     
     public function __construct()
     {
-        goto uckusgwkoycmkeam;
-        mieoguuqiwqioeqa:
-        parent::__construct();
-        goto qosswumywsaeyqus;
-        uckusgwkoycmkeam:
         global $wpdb;
-        goto gscyiqmmegqmqcoe;
-        gscyiqmmegqmqcoe:
         $this->db = $wpdb;
-        goto mieoguuqiwqioeqa;
-        qosswumywsaeyqus:
+        parent::__construct();
     }
     
     public function wwiwswsasquukoqs()
@@ -58,52 +50,28 @@ class Database extends Common implements ConnectionInterface
     }
     public function cymcyywycwkawmsi()
     {
-        goto swicauyqusmgeccu;
-        maguoggkqamaiuag:
+        $ooggeikkseeqyyek = $this->wwiwswsasquukoqs();
         $eygsasmqycagyayw = new Manager();
-        goto icoiqskygugkgmkm;
-        eekkcooqswqouoei:
-        
-        $eygsasmqycagyayw->setAsGlobal();
-        goto cuayqmasemsqsume;
-        cuayqmasemsqsume:
-        $this->manager = $eygsasmqycagyayw;
-        goto igmawmwssyskqqag;
-        icoiqskygugkgmkm:
-        $uiewakwqscemywuo = ["\144\162\151\166\145\x72" => "\155\171\x73\x71\x6c", "\x68\x6f\163\x74" => $ooggeikkseeqyyek->__get("\144\x62\x68\157\163\164"), "\144\x61\164\x61\x62\x61\163\145" => $ooggeikkseeqyyek->__get("\x64\x62\156\141\155\x65"), "\x75\163\145\162\x6e\x61\155\145" => $ooggeikkseeqyyek->__get("\144\x62\165\163\x65\x72"), "\x70\141\163\x73\167\157\162\144" => $ooggeikkseeqyyek->__get("\144\142\160\x61\x73\163\167\157\162\144"), "\160\x6f\162\164" => $ooggeikkseeqyyek->options, "\143\x68\x61\x72\x73\145\x74" => $ooggeikkseeqyyek->charset, "\x63\157\154\154\141\x74\151\x6f\x6e" => $ooggeikkseeqyyek->collate, "\160\162\145\146\151\x78" => $ooggeikkseeqyyek->prefix];
-        goto kocaieyauyiqmyiy;
-        kocaieyauyiqmyiy:
+        $uiewakwqscemywuo = ['driver' => 'mysql', 'host' => $ooggeikkseeqyyek->__get('dbhost'), 'database' => $ooggeikkseeqyyek->__get('dbname'), 'username' => $ooggeikkseeqyyek->__get('dbuser'), 'password' => $ooggeikkseeqyyek->__get('dbpassword'), 'port' => $ooggeikkseeqyyek->options, 'charset' => $ooggeikkseeqyyek->charset, 'collation' => $ooggeikkseeqyyek->collate, 'prefix' => $ooggeikkseeqyyek->prefix];
         
         $eygsasmqycagyayw->addConnection($uiewakwqscemywuo);
-        goto gcqssckowmywoesw;
-        gcqssckowmywoesw:
         
         $eygsasmqycagyayw->bootEloquent();
-        goto eekkcooqswqouoei;
-        swicauyqusmgeccu:
-        $ooggeikkseeqyyek = $this->wwiwswsasquukoqs();
-        goto maguoggkqamaiuag;
-        igmawmwssyskqqag:
+        
+        $eygsasmqycagyayw->setAsGlobal();
+        $this->manager = $eygsasmqycagyayw;
     }
     
     public function query() : Builder
     {
-        goto iomwkkieqcswkkaw;
-        ewsigoeswimiueqe:
-        return new Builder($this, $kooimksequwgsyqc, $wgqamiqkugoqsmes);
-        goto gaskcgoeywuyukke;
-        eussqkkimciywios:
-        $wgqamiqkugoqsmes = $this->yokcoiaqqaquwecc();
-        goto ewsigoeswimiueqe;
-        iomwkkieqcswkkaw:
         $kooimksequwgsyqc = $this->aqoymmcygkssqmmy();
-        goto eussqkkimciywios;
-        gaskcgoeywuyukke:
+        $wgqamiqkugoqsmes = $this->yokcoiaqqaquwecc();
+        return new Builder($this, $kooimksequwgsyqc, $wgqamiqkugoqsmes);
     }
     
     public function aakmagwggmkoiiyu() : ?string
     {
-        return $this->aceaeommyuooiqge("\156\x61\155\145");
+        return $this->aceaeommyuooiqge('name');
     }
     
     public function aqoymmcygkssqmmy() : Grammar
@@ -138,37 +106,17 @@ class Database extends Common implements ConnectionInterface
     
     public function iqekeywwkoksagke($gqgemcmoicmgaqie, $iykmscciaowcagqu = []) : array
     {
-        goto gqaqamewqeaqwcia;
-        sgkqgucguyccaaki:
-        return (array) $sogksuscggsicmac;
-        goto omuemegmkesqgwys;
-        okuqsqaiwwiigmyu:
-        $sogksuscggsicmac = $this->wwiwswsasquukoqs()->query($gmyoogwqukkgwiwk);
-        goto ksiwgckusukisueg;
-        ksiwgckusukisueg:
-        $this->quauggogguqkokkk($sogksuscggsicmac, $gmyoogwqukkgwiwk, $iykmscciaowcagqu);
-        goto sgkqgucguyccaaki;
-        gqaqamewqeaqwcia:
         $gmyoogwqukkgwiwk = $this->qyiiuyacuommoyso($gqgemcmoicmgaqie, $iykmscciaowcagqu);
-        goto okuqsqaiwwiigmyu;
-        omuemegmkesqgwys:
+        $sogksuscggsicmac = $this->wwiwswsasquukoqs()->query($gmyoogwqukkgwiwk);
+        $this->quauggogguqkokkk($sogksuscggsicmac, $gmyoogwqukkgwiwk, $iykmscciaowcagqu);
+        return (array) $sogksuscggsicmac;
     }
     
     private function quauggogguqkokkk($sogksuscggsicmac, $asiqcaccsgscgcyq, $iykmscciaowcagqu)
     {
-        goto cmsiuimsiycomyay;
-        cmsiuimsiycomyay:
-        if (!($sogksuscggsicmac === false || $this->wwiwswsasquukoqs()->last_error)) {
-            goto geyiosucqswaeasw;
+        if ($sogksuscggsicmac === false || $this->wwiwswsasquukoqs()->last_error) {
+            throw new QueryException($asiqcaccsgscgcyq, $iykmscciaowcagqu, new Exception($this->wwiwswsasquukoqs()->last_error));
         }
-        goto qmqmskywcgiqgygm;
-        ccgsycueagwegqeu:
-        geyiosucqswaeasw:
-        goto gmeiuoeewucukque;
-        qmqmskywcgiqgygm:
-        throw new QueryException($asiqcaccsgscgcyq, $iykmscciaowcagqu, new Exception($this->wwiwswsasquukoqs()->last_error));
-        goto ccgsycueagwegqeu;
-        gmeiuoeewucukque:
     }
     
     public function wcweamocuicuusky(string $uusmaiomayssaecw, $omkysikckkcieckq = null) : self
@@ -179,102 +127,35 @@ class Database extends Common implements ConnectionInterface
     
     private function qyiiuyacuommoyso($gqgemcmoicmgaqie, $iykmscciaowcagqu, $suckquwcuiuyiogc = false)
     {
-        goto yqqseqskcqeqkacm;
-        sockocsycmkaeosg:
-        $iykmscciaowcagqu = array_map(function ($moyaaaascoeowegu) {
-            goto ceaamccscgcmqgka;
-            igyesgemqesackws:
-            $moyaaaascoeowegu = "\156\165\x6c\154";
-            goto wiaymoucakyaikii;
-            wqwmuuicoqigqwyc:
-            return $moyaaaascoeowegu;
-            goto oqgymyiwckkwueuw;
-            omumkeywqqogwwue:
-            if (!($moyaaaascoeowegu === null)) {
-                goto sayqggaieocmskko;
-            }
-            goto igyesgemqesackws;
-            wiaymoucakyaikii:
-            sayqggaieocmskko:
-            goto ociesuicgmkekcue;
-            qiikwossequwiuom:
-            $moyaaaascoeowegu = "\47" . esc_sql($moyaaaascoeowegu) . "\x27";
-            goto gaouaiemokqqgssw;
-            ymucaguacemwsgsi:
-            qmguoqeawegcoeoa:
-            goto qiikwossequwiuom;
-            ceaamccscgcmqgka:
-            if (is_string($moyaaaascoeowegu)) {
-                goto qmguoqeawegcoeoa;
-            }
-            goto omumkeywqqogwwue;
-            gaouaiemokqqgssw:
-            ycecaauekkiqacuu:
-            goto wqwmuuicoqigqwyc;
-            ociesuicgmkekcue:
-            goto ycecaauekkiqacuu;
-            goto ymucaguacemwsgsi;
-            oqgymyiwckkwueuw:
-        }, $iykmscciaowcagqu);
-        goto ugkwqaywmwqucoeo;
-        kwasqmcyiswoaiuu:
-        return $gqgemcmoicmgaqie;
-        goto kiskwawumeiiieuk;
-        asoecuscmsyusmkg:
-        qywkykqkeeuccoui:
-        goto kwasqmcyiswoaiuu;
-        ywokggauuiosegog:
+        $gqgemcmoicmgaqie = str_replace('"', '`', $gqgemcmoicmgaqie);
         $iykmscciaowcagqu = $this->uooqikqsgykeymok($iykmscciaowcagqu);
-        goto uoewiggumomegksg;
-        ugkwqaywmwqucoeo:
-        $gqgemcmoicmgaqie = str_replace(["\x25", "\77"], ["\45\x25", "\x25\x73"], $gqgemcmoicmgaqie);
-        goto syisomgawcsqeemk;
-        yqqseqskcqeqkacm:
-        $gqgemcmoicmgaqie = str_replace("\x22", "\140", $gqgemcmoicmgaqie);
-        goto ywokggauuiosegog;
-        uoewiggumomegksg:
-        if (!$iykmscciaowcagqu) {
-            goto qywkykqkeeuccoui;
+        if ($iykmscciaowcagqu) {
+            $iykmscciaowcagqu = array_map(function ($moyaaaascoeowegu) {
+                if (is_string($moyaaaascoeowegu)) {
+                    $moyaaaascoeowegu = "'" . esc_sql($moyaaaascoeowegu) . "'";
+                } else {
+                    if ($moyaaaascoeowegu === null) {
+                        $moyaaaascoeowegu = "null";
+                    }
+                }
+                return $moyaaaascoeowegu;
+            }, $iykmscciaowcagqu);
+            $gqgemcmoicmgaqie = str_replace(['%', '?'], ['%%', '%s'], $gqgemcmoicmgaqie);
+            $gqgemcmoicmgaqie = vsprintf($gqgemcmoicmgaqie, $iykmscciaowcagqu);
         }
-        goto sockocsycmkaeosg;
-        syisomgawcsqeemk:
-        $gqgemcmoicmgaqie = vsprintf($gqgemcmoicmgaqie, $iykmscciaowcagqu);
-        goto asoecuscmsyusmkg;
-        kiskwawumeiiieuk:
+        return $gqgemcmoicmgaqie;
     }
     
     public function cokoiaeeomgssqgy(?string $aasascamegmwqmqk = null, $yuwymayicwwqiske = true) : ?string
     {
-        goto awuwuuuagqysukku;
-        ecgwgamiseokmise:
-        return $syeseoiyagmgumcy;
-        goto qkiyyywwuiuackao;
-        csaksaisgawusswg:
-        kkmuuoscccmokkiw:
-        goto ecgwgamiseokmise;
-        aqekkeqmmewoyawu:
-        if (!$yuwymayicwwqiske) {
-            goto oaqeoqsksuyyggmg;
-        }
-        goto mcqwuawosciucemq;
-        emeeocqaisksyioq:
-        oaqeoqsksuyyggmg:
-        goto maggecymmmesqmqs;
-        miugmimciywcgswm:
-        if (!$aasascamegmwqmqk) {
-            goto kkmuuoscccmokkiw;
-        }
-        goto aqekkeqmmewoyawu;
-        mcqwuawosciucemq:
-        $syeseoiyagmgumcy = $this->wwiwswsasquukoqs()->prefix;
-        goto emeeocqaisksyioq;
-        maggecymmmesqmqs:
-        $syeseoiyagmgumcy = $syeseoiyagmgumcy . ManipulateString::gumqicgiosoqweoy($aasascamegmwqmqk);
-        goto csaksaisgawusswg;
-        awuwuuuagqysukku:
         $syeseoiyagmgumcy = '';
-        goto miugmimciywcgswm;
-        qkiyyywwuiuackao:
+        if ($aasascamegmwqmqk) {
+            if ($yuwymayicwwqiske) {
+                $syeseoiyagmgumcy = $this->wwiwswsasquukoqs()->prefix;
+            }
+            $syeseoiyagmgumcy = $syeseoiyagmgumcy . ManipulateString::gumqicgiosoqweoy($aasascamegmwqmqk);
+        }
+        return $syeseoiyagmgumcy;
     }
     
     public function getPdo() : self
@@ -319,39 +200,19 @@ class Database extends Common implements ConnectionInterface
     
     public function affectingStatement($gqgemcmoicmgaqie, $iykmscciaowcagqu = []) : int
     {
-        goto gyskcwykkyakeims;
-        gyskcwykkyakeims:
         $gmyoogwqukkgwiwk = $this->qyiiuyacuommoyso($gqgemcmoicmgaqie, $iykmscciaowcagqu, true);
-        goto ossakckwskyqusmm;
-        mcagemacuqyskogs:
-        $this->quauggogguqkokkk($sogksuscggsicmac, $gmyoogwqukkgwiwk, $iykmscciaowcagqu);
-        goto aamgqoqyyooimqkm;
-        aamgqoqyyooimqkm:
-        return intval($sogksuscggsicmac);
-        goto cimascmiesomqgqs;
-        ossakckwskyqusmm:
         
         $sogksuscggsicmac = $this->wwiwswsasquukoqs()->query($gmyoogwqukkgwiwk);
-        goto mcagemacuqyskogs;
-        cimascmiesomqgqs:
+        $this->quauggogguqkokkk($sogksuscggsicmac, $gmyoogwqukkgwiwk, $iykmscciaowcagqu);
+        return intval($sogksuscggsicmac);
     }
     
     public function select($gqgemcmoicmgaqie, $iykmscciaowcagqu = [], $ykwkqeocyaeasoqy = true) : array
     {
-        goto easuiqiooiwgswmm;
-        saiuoomgskwgyeya:
-        $sogksuscggsicmac = $this->wwiwswsasquukoqs()->get_results($gqgemcmoicmgaqie);
-        goto kuuawiosmkgqsscy;
-        kwocaqggwcksesce:
-        return $sogksuscggsicmac;
-        goto momuweiasiwskekw;
-        kuuawiosmkgqsscy:
-        $this->quauggogguqkokkk($sogksuscggsicmac, $gqgemcmoicmgaqie, $iykmscciaowcagqu);
-        goto kwocaqggwcksesce;
-        easuiqiooiwgswmm:
         $gqgemcmoicmgaqie = $this->qyiiuyacuommoyso($gqgemcmoicmgaqie, $iykmscciaowcagqu);
-        goto saiuoomgskwgyeya;
-        momuweiasiwskekw:
+        $sogksuscggsicmac = $this->wwiwswsasquukoqs()->get_results($gqgemcmoicmgaqie);
+        $this->quauggogguqkokkk($sogksuscggsicmac, $gqgemcmoicmgaqie, $iykmscciaowcagqu);
+        return $sogksuscggsicmac;
     }
     
     public function cursor($gqgemcmoicmgaqie, $iykmscciaowcagqu = [], $ykwkqeocyaeasoqy = true)
@@ -360,20 +221,10 @@ class Database extends Common implements ConnectionInterface
     
     public function selectOne($gqgemcmoicmgaqie, $iykmscciaowcagqu = [], $ykwkqeocyaeasoqy = true)
     {
-        goto qaewauyekqucciyc;
-        agyooskogigyayws:
-        return $sogksuscggsicmac;
-        goto iiiwsgameuomumgw;
-        aucwccaiqwsmyuaq:
-        $this->quauggogguqkokkk($sogksuscggsicmac, $gqgemcmoicmgaqie, $iykmscciaowcagqu);
-        goto agyooskogigyayws;
-        qaewauyekqucciyc:
         $gqgemcmoicmgaqie = $this->qyiiuyacuommoyso($gqgemcmoicmgaqie, $iykmscciaowcagqu);
-        goto bgakaasgwwygosyi;
-        bgakaasgwwygosyi:
         $sogksuscggsicmac = $this->wwiwswsasquukoqs()->get_row($gqgemcmoicmgaqie);
-        goto aucwccaiqwsmyuaq;
-        iiiwsgameuomumgw:
+        $this->quauggogguqkokkk($sogksuscggsicmac, $gqgemcmoicmgaqie, $iykmscciaowcagqu);
+        return $sogksuscggsicmac;
     }
     
     public function unprepared($gqgemcmoicmgaqie) : bool
@@ -385,80 +236,30 @@ class Database extends Common implements ConnectionInterface
     
     public function prepareBindings(array $iykmscciaowcagqu) : array
     {
-        goto mmcikqikqecaeswu;
-        yaumwqeommqigswq:
-        return $iykmscciaowcagqu;
-        goto wiiqigwgyuiuksia;
-        wsqiqkiucakewgou:
-        mcukocaaoyuugoeu:
-        goto yaumwqeommqigswq;
-        mmcikqikqecaeswu:
         $kooimksequwgsyqc = $this->aqoymmcygkssqmmy();
-        goto ywsywoumuaykkeaa;
-        ywsywoumuaykkeaa:
         foreach ($iykmscciaowcagqu as $uusmaiomayssaecw => $eqgoocgaqwqcimie) {
-            goto mciumqyyossyiuyk;
-            mukwsuuuqcgesmwc:
-            
-            
-            
-            
-            $ocogsiouoiuuguym = $kooimksequwgsyqc->getDateFormat();
-            goto cqeoguiqiymkyweo;
-            ugikgkwuwmgymgus:
-            cgwokqwakqcmiieo:
-            goto gsgyayuaekgyoumc;
-            syykqmkiyoekqsek:
-            scockmiqikwwkqse:
-            goto aiqekkyauwswayyq;
-            acaeigkmigikeuyu:
-            if (is_scalar($eqgoocgaqwqcimie)) {
-                goto cgwokqwakqcmiieo;
-            }
-            goto kqyeukywmgismyaq;
-            kqyeukywmgismyaq:
-            if (!$eqgoocgaqwqcimie instanceof \DateTime) {
-                goto okycquokqoamsquy;
-            }
-            goto mukwsuuuqcgesmwc;
-            mciumqyyossyiuyk:
             
             if (is_bool($eqgoocgaqwqcimie)) {
-                goto kssuqmsgmaaeqigw;
+                $iykmscciaowcagqu[$uusmaiomayssaecw] = intval($eqgoocgaqwqcimie);
+            } else {
+                if (is_scalar($eqgoocgaqwqcimie)) {
+                    goto uukumskkeggaowck;
+                } else {
+                    if ($eqgoocgaqwqcimie instanceof \DateTime) {
+                        
+                        
+                        
+                        
+                        $ocogsiouoiuuguym = $kooimksequwgsyqc->getDateFormat();
+                        
+                        $iykmscciaowcagqu[$uusmaiomayssaecw] = $eqgoocgaqwqcimie->format($ocogsiouoiuuguym);
+                    }
+                }
             }
-            goto acaeigkmigikeuyu;
-            aeuosggumiiwoesm:
-            goto uwusswwekqcsisus;
-            goto wyqmeyoaggwuioak;
-            omgcsmsikaggaooc:
-            okycquokqoamsquy:
-            goto wykuosegisygosiq;
-            wykuosegisygosiq:
-            goto egwgyekaiqomyeaa;
-            goto ugikgkwuwmgymgus;
-            wyqmeyoaggwuioak:
-            kssuqmsgmaaeqigw:
-            goto uyksacasqywyessc;
-            sqmqwqeoygcmqcim:
-            uwusswwekqcsisus:
-            goto syykqmkiyoekqsek;
-            uyksacasqywyessc:
-            $iykmscciaowcagqu[$uusmaiomayssaecw] = intval($eqgoocgaqwqcimie);
-            goto sqmqwqeoygcmqcim;
-            gsgyayuaekgyoumc:
-            goto scockmiqikwwkqse;
-            goto omemqagskckoeoog;
-            cqeoguiqiymkyweo:
-            
-            $iykmscciaowcagqu[$uusmaiomayssaecw] = $eqgoocgaqwqcimie->format($ocogsiouoiuuguym);
-            goto omgcsmsikaggaooc;
-            omemqagskckoeoog:
-            egwgyekaiqomyeaa:
-            goto aeuosggumiiwoesm;
-            aiqekkyauwswayyq:
+            uukumskkeggaowck:
         }
-        goto wsqiqkiucakewgou;
-        wiiqigwgyuiuksia:
+        eequksumcoogyoem:
+        return $iykmscciaowcagqu;
     }
     
     public function transaction(Closure $ekiuyucoiagmscgy, $mogwwoaswuuykekc = 1)
@@ -466,18 +267,10 @@ class Database extends Common implements ConnectionInterface
         
         $this->beginTransaction();
         try {
-            goto mqoygcuqwacgycek;
-            mqoygcuqwacgycek:
             $icwicymcioeyeyek = $ekiuyucoiagmscgy();
-            goto agyycikucwgmysee;
-            aiukiwqmikscoswm:
-            return $icwicymcioeyeyek;
-            goto mcmkqgkwyqoiikcq;
-            agyycikucwgmysee:
             
             $this->commit();
-            goto aiukiwqmikscoswm;
-            mcmkqgkwyqoiikcq:
+            return $icwicymcioeyeyek;
         } catch (Exception $iewosgggaueeyymg) {
             
             $this->rollBack();
@@ -487,81 +280,33 @@ class Database extends Common implements ConnectionInterface
     
     public function beginTransaction()
     {
-        goto gskacikgkwcuauko;
-        qmegcmqemmywoqas:
-        ssyukuseoymackeo:
-        goto giooasyeqwaaocea;
-        kwiuqqwamsimqgme:
-        $this->transactionCount++;
-        goto qmegcmqemmywoqas;
-        gskacikgkwcuauko:
         
-        $ammuiskickemgqgc = $this->unprepared("\x53\x54\x41\x52\124\x20\x54\122\101\116\x53\x41\x43\124\111\x4f\116\73");
-        goto yyieomeeqycmikqw;
-        yyieomeeqycmikqw:
-        if (!(false !== $ammuiskickemgqgc)) {
-            goto ssyukuseoymackeo;
+        $ammuiskickemgqgc = $this->unprepared("START TRANSACTION;");
+        if (false !== $ammuiskickemgqgc) {
+            $this->transactionCount++;
         }
-        goto kwiuqqwamsimqgme;
-        giooasyeqwaaocea:
     }
     
     public function commit()
     {
-        goto qgyoesyiasqimcoe;
-        kiemqsgcmouqscao:
-        seieguyaaiqismgo:
-        goto wssaaemscmmiomee;
-        kkwqmewaksmokuqy:
-        
-        $ammuiskickemgqgc = $this->unprepared("\103\x4f\x4d\115\x49\x54\x3b");
-        goto gsgkayokisiesciy;
-        ascogkesqmuuaesq:
-        $this->transactionCount--;
-        goto askukaucmocewkgg;
-        askukaucmocewkgg:
-        uueywyysiicuauem:
-        goto kiemqsgcmouqscao;
-        gsgkayokisiesciy:
-        if (!(false !== $ammuiskickemgqgc)) {
-            goto uueywyysiicuauem;
+        if ($this->transactionCount >= 1) {
+            
+            $ammuiskickemgqgc = $this->unprepared("COMMIT;");
+            if (false !== $ammuiskickemgqgc) {
+                $this->transactionCount--;
+            }
         }
-        goto ascogkesqmuuaesq;
-        qgyoesyiasqimcoe:
-        if (!($this->transactionCount >= 1)) {
-            goto seieguyaaiqismgo;
-        }
-        goto kkwqmewaksmokuqy;
-        wssaaemscmmiomee:
     }
     
     public function rollBack()
     {
-        goto iusaeoimukymskgs;
-        meoweqcaaosoomeu:
-        $this->transactionCount--;
-        goto ywmoieqkigsykequ;
-        asciaakaoygususy:
-        
-        $ammuiskickemgqgc = $this->unprepared("\122\117\114\x4c\102\x41\x43\113\x3b");
-        goto eaggoasiwogmquwc;
-        ywmoieqkigsykequ:
-        meqmcgmksqiqcoyq:
-        goto iaousaauoawkqkkg;
-        iaousaauoawkqkkg:
-        euskosgaksmimgug:
-        goto kkwucaoumyayagcq;
-        eaggoasiwogmquwc:
-        if (!(false !== $ammuiskickemgqgc)) {
-            goto meqmcgmksqiqcoyq;
+        if ($this->transactionCount >= 1) {
+            
+            $ammuiskickemgqgc = $this->unprepared("ROLLBACK;");
+            if (false !== $ammuiskickemgqgc) {
+                $this->transactionCount--;
+            }
         }
-        goto meoweqcaaosoomeu;
-        iusaeoimukymskgs:
-        if (!($this->transactionCount >= 1)) {
-            goto euskosgaksmimgug;
-        }
-        goto asciaakaoygususy;
-        kkwucaoumyayagcq:
     }
     
     public function transactionLevel() : ?int
@@ -576,6 +321,6 @@ class Database extends Common implements ConnectionInterface
     
     public function getDatabaseName()
     {
-        return $this->wwiwswsasquukoqs()->__get("\144\x62\156\141\155\145");
+        return $this->wwiwswsasquukoqs()->__get('dbname');
     }
 }

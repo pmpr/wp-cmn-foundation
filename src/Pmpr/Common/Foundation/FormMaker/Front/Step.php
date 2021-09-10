@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -28,23 +28,11 @@ class Step extends Element
     
     public function __construct(int $eusockqasqqmoess = 1)
     {
-        goto iuacwsuwkigmuocu;
-        iuacwsuwkigmuocu:
         $this->number = $eusockqasqqmoess;
-        goto kqqaauoucyygooug;
-        ieyqeawyyscggouw:
-        $this->qigsyyqgewgskemg("\x73\x74\x65\160\55{$eusockqasqqmoess}");
-        goto wqugqqoisssiewoa;
-        wqugqqoisssiewoa:
-        parent::__construct("\144\151\x76", ManipulateString::uniqid(5));
-        goto eiecckkmaeggqusy;
-        kqqaauoucyygooug:
-        $this->gwwmcykumqueaosa(__("\x4e\x65\170\164\40\123\164\145\x70", PR__CMN__FOUNDATION));
-        goto eiseomciwegkimcw;
-        eiseomciwegkimcw:
-        $this->mskugockcmmyukus(__("\120\x72\145\x76\x69\x6f\165\163\x20\x53\164\x65\160", PR__CMN__FOUNDATION));
-        goto ieyqeawyyscggouw;
-        eiecckkmaeggqusy:
+        $this->gwwmcykumqueaosa(__('Next Step', PR__CMN__FOUNDATION));
+        $this->mskugockcmmyukus(__('Previous Step', PR__CMN__FOUNDATION));
+        $this->qigsyyqgewgskemg("step-{$eusockqasqqmoess}");
+        parent::__construct('div', ManipulateString::uniqid(5));
     }
     
     public function iyowqkwcwiuccgag() : int

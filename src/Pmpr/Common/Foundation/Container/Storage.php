@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -26,65 +26,24 @@ class Storage implements ConstantInterface
     
     public static function misumgawyweoagic($sqeykgyoooqysmca = null) : array
     {
-        goto omqiwwwiacockgqi;
-        kwyaykgmcuookkcw:
-        cqsgyyauoqyoywsu:
-        goto gsicykeesggkwsyw;
-        gsicykeesggkwsyw:
-        return $mqkkuqaimswumeww;
-        goto emeqkgwamumkcuii;
-        ekeagiqmwqmiigiw:
-        $mqkkuqaimswumeww = ManipulateArray::get($mqkkuqaimswumeww, $sqeykgyoooqysmca, []);
-        goto kwyaykgmcuookkcw;
-        syoisuiggkakuicc:
-        ykqyuoacigoewiee:
-        goto ekeagiqmwqmiigiw;
-        ekyycmgeggguuqmu:
-        goto cqsgyyauoqyoywsu;
-        goto syoisuiggkakuicc;
-        omqiwwwiacockgqi:
         $mqkkuqaimswumeww = self::$components;
-        goto iemqyuusqogscacm;
-        wakgeaysawoausoc:
-        $mqkkuqaimswumeww = ManipulateArray::kaucoswaceqcuyam($mqkkuqaimswumeww);
-        goto ekyycmgeggguuqmu;
-        iemqyuusqogscacm:
         if ($sqeykgyoooqysmca) {
-            goto ykqyuoacigoewiee;
+            $mqkkuqaimswumeww = ManipulateArray::get($mqkkuqaimswumeww, $sqeykgyoooqysmca, []);
+        } else {
+            $mqkkuqaimswumeww = ManipulateArray::kaucoswaceqcuyam($mqkkuqaimswumeww);
         }
-        goto wakgeaysawoausoc;
-        emeqkgwamumkcuii:
+        return $mqkkuqaimswumeww;
     }
     
     public static function kmsomwiqwmoyoeci($mksyucucyswaukig, $couygeouymagssgw)
     {
-        goto uccgigcqcqwsksmi;
-        swicmcmgakeuaueq:
-        mwigwkmoumcqyauu:
-        goto wggcwoesmigkqmqg;
-        eqiemywuquiseawy:
-        self::$components[$sqeykgyoooqysmca][$ymqmyyeuycgmigyo] = new Component($mksyucucyswaukig, $sqeykgyoooqysmca, $ymqmyyeuycgmigyo, $couygeouymagssgw);
-        goto swicmcmgakeuaueq;
-        msuuwaqwqmmwagmi:
-        $ymqmyyeuycgmigyo = $mksyucucyswaukig::akuociswqmoigkas();
-        goto igoukeaccigacuqy;
-        uccgigcqcqwsksmi:
-        if (!$mksyucucyswaukig instanceof Container) {
-            goto syqywaowckiiouck;
+        if ($mksyucucyswaukig instanceof Container) {
+            $ymqmyyeuycgmigyo = $mksyucucyswaukig::akuociswqmoigkas();
+            $sqeykgyoooqysmca = $mksyucucyswaukig::yegwayqakokyuiok();
+            if ($sqeykgyoooqysmca && $ymqmyyeuycgmigyo) {
+                self::$components[$sqeykgyoooqysmca][$ymqmyyeuycgmigyo] = new Component($mksyucucyswaukig, $sqeykgyoooqysmca, $ymqmyyeuycgmigyo, $couygeouymagssgw);
+            }
         }
-        goto msuuwaqwqmmwagmi;
-        wggcwoesmigkqmqg:
-        syqywaowckiiouck:
-        goto oqycagwciwqamqkk;
-        igoukeaccigacuqy:
-        $sqeykgyoooqysmca = $mksyucucyswaukig::yegwayqakokyuiok();
-        goto wisyigcyyuaoaiai;
-        wisyigcyyuaoaiai:
-        if (!($sqeykgyoooqysmca && $ymqmyyeuycgmigyo)) {
-            goto mwigwkmoumcqyauu;
-        }
-        goto eqiemywuquiseawy;
-        oqycagwciwqamqkk:
     }
     
     public static function umuecysoywoumgwo(string $aiieyweysaukqemc)
@@ -94,40 +53,18 @@ class Storage implements ConstantInterface
     
     public static function update(object $owgumcsyqsamiemg)
     {
-        goto cuwciymwsoaasaug;
-        aquwcmkckkiisggs:
-        self::remove($aiieyweysaukqemc);
-        goto eumagwacwacokkey;
-        cuwciymwsoaasaug:
         $aiieyweysaukqemc = $owgumcsyqsamiemg::uecyuoauykiqqkey();
-        goto aquwcmkckkiisggs;
-        eumagwacwacokkey:
+        self::remove($aiieyweysaukqemc);
         self::add($aiieyweysaukqemc, $owgumcsyqsamiemg);
-        goto kwgogcacqosaayag;
-        kwgogcacqosaayag:
     }
     
     public static function cqusmgskowmesgcg($wksoawcgagcgoask = null)
     {
-        goto wkoakyucusqiokuw;
-        ugemeyesygqiskic:
-        $mqkkuqaimswumeww = self::misumgawyweoagic();
-        goto ccscooiuewmaegyi;
-        mcggquasyuiygwui:
-        mmqamyegwcyamyos:
-        goto ugemeyesygqiskic;
-        ccscooiuewmaegyi:
-        return ManipulateArray::get($mqkkuqaimswumeww, $wksoawcgagcgoask);
-        goto ksomcksouggwacay;
-        wkoakyucusqiokuw:
-        if (!(is_object($wksoawcgagcgoask) && method_exists($wksoawcgagcgoask, "\153\167\x71\x73\x67\165\x69\x69\157\143\157\157\x75\x73\165\161"))) {
-            goto mmqamyegwcyamyos;
+        if (is_object($wksoawcgagcgoask) && method_exists($wksoawcgagcgoask, 'kwqsguiiocoousuq')) {
+            $wksoawcgagcgoask = $wksoawcgagcgoask::kwqsguiiocoousuq();
         }
-        goto ioyqkckmegiaawoo;
-        ioyqkckmegiaawoo:
-        $wksoawcgagcgoask = $wksoawcgagcgoask::kwqsguiiocoousuq();
-        goto mcggquasyuiygwui;
-        ksomcksouggwacay:
+        $mqkkuqaimswumeww = self::misumgawyweoagic();
+        return ManipulateArray::get($mqkkuqaimswumeww, $wksoawcgagcgoask);
     }
     
     public static function add(string $uusmaiomayssaecw, object $owgumcsyqsamiemg)
@@ -148,45 +85,17 @@ class Storage implements ConstantInterface
     
     public static function get(string $egkyssmuqcwaciya, ?string $aokagokqyuysuksm = null, ...$ywmkwiwkosakssii)
     {
-        goto mugcwkmqsweggcic;
-        cyeycessoayeoism:
-        $ywmkwiwkosakssii[] = $aokagokqyuysuksm;
-        goto emuqseyswwammumy;
-        eciiyuwciimgmakq:
-        $owgumcsyqsamiemg = self::umuecysoywoumgwo($uusmaiomayssaecw);
-        goto qqyeekywsyguucio;
-        wiiioykewquawmsu:
-        $egkyssmuqcwaciya = self::iigqkgiamcykcwcm($egkyssmuqcwaciya);
-        goto mqmooaikaumwewew;
-        ugaaqomusosqmquw:
-        wecycieacweseosm:
-        goto auaioqeaqmeueemi;
-        mqmooaikaumwewew:
-        if (!$aokagokqyuysuksm) {
-            goto iucowqewyoaomsuk;
-        }
-        goto cyeycessoayeoism;
-        auaioqeaqmeueemi:
-        return $owgumcsyqsamiemg;
-        goto kkcouemcsagaqiae;
-        emuqseyswwammumy:
-        iucowqewyoaomsuk:
-        goto aeogsokusmsqcuaa;
-        aeogsokusmsqcuaa:
-        $owgumcsyqsamiemg = new $egkyssmuqcwaciya(...$ywmkwiwkosakssii);
-        goto aocuemmuaaiiuiee;
-        aocuemmuaaiiuiee:
-        self::add($uusmaiomayssaecw, $owgumcsyqsamiemg);
-        goto ugaaqomusosqmquw;
-        qqyeekywsyguucio:
-        if ($owgumcsyqsamiemg) {
-            goto wecycieacweseosm;
-        }
-        goto wiiioykewquawmsu;
-        mugcwkmqsweggcic:
         $uusmaiomayssaecw = self::cisyiemkeykgkomc($egkyssmuqcwaciya, $aokagokqyuysuksm);
-        goto eciiyuwciimgmakq;
-        kkcouemcsagaqiae:
+        $owgumcsyqsamiemg = self::umuecysoywoumgwo($uusmaiomayssaecw);
+        if (!$owgumcsyqsamiemg) {
+            $egkyssmuqcwaciya = self::iigqkgiamcykcwcm($egkyssmuqcwaciya);
+            if ($aokagokqyuysuksm) {
+                $ywmkwiwkosakssii[] = $aokagokqyuysuksm;
+            }
+            $owgumcsyqsamiemg = new $egkyssmuqcwaciya(...$ywmkwiwkosakssii);
+            self::add($uusmaiomayssaecw, $owgumcsyqsamiemg);
+        }
+        return $owgumcsyqsamiemg;
     }
     
     public static function cisyiemkeykgkomc(string $egkyssmuqcwaciya, ?string $aokagokqyuysuksm = null) : string

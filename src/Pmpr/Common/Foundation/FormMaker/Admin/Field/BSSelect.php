@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -19,8 +19,8 @@ class BSSelect extends Select
     
     public function __construct(?string $aokagokqyuysuksm, ?string $ymqmyyeuycgmigyo, array $qiouiwasaauyaaue = [], ?string $mkqqqewsokcswckc = null)
     {
-        parent::__construct($aokagokqyuysuksm, $ymqmyyeuycgmigyo, $qiouiwasaauyaaue, $mkqqqewsokcswckc, "\x62\x73\x73\x65\x6c\145\143\164");
-        $this->qcgocuceocquqcuw("\144\141\164\141\55\154\151\x76\145\x2d\163\145\x61\x72\x63\150", "\x74\162\x75\145")->qcgocuceocquqcuw("\x64\x61\x74\141\55\x73\164\171\x6c\145", "\x62\x74\156\55\167\150\x69\164\145")->qigsyyqgewgskemg("\x70\162\x2d\142\x6f\x6f\x73\164\x72\x61\x70\x2d\x73\x65\x6c\145\x63\x74\40\x62\x6f\x6f\x73\164\162\x61\160\55\163\x65\x6c\x65\143\164");
+        parent::__construct($aokagokqyuysuksm, $ymqmyyeuycgmigyo, $qiouiwasaauyaaue, $mkqqqewsokcswckc, 'bsselect');
+        $this->qcgocuceocquqcuw('data-live-search', 'true')->qcgocuceocquqcuw('data-style', 'btn-white')->qigsyyqgewgskemg('pr-boostrap-select boostrap-select');
     }
     
     public function wasgwsogmuquqeaa() : ?array
@@ -42,77 +42,51 @@ class BSSelect extends Select
     
     public function wiweskwucmkcukcm($oammesyieqmwuwyi = []) : self
     {
-        goto wskwayesikacgimy;
-        eeosougaawskcqme:
-        muwkcogucacmioyk:
-        goto acquwsaqecuammqu;
-        useqokgmmisiguym:
-        usqogwuuyqisgqoy:
-        goto eeosougaawskcqme;
-        kcwywemwqiokmwqu:
-        foreach ($oammesyieqmwuwyi as $igqsaukqcqscimok) {
-            $this->oeewiaacscgyamai($igqsaukqcqscimok);
-            meqoykkccigcymuq:
+        if (is_array($oammesyieqmwuwyi) && $oammesyieqmwuwyi) {
+            foreach ($oammesyieqmwuwyi as $igqsaukqcqscimok) {
+                $this->oeewiaacscgyamai($igqsaukqcqscimok);
+                kaiesowkgwogqseg:
+            }
+            egaymskkosukqeao:
         }
-        goto useqokgmmisiguym;
-        wskwayesikacgimy:
-        if (!(is_array($oammesyieqmwuwyi) && $oammesyieqmwuwyi)) {
-            goto muwkcogucacmioyk;
-        }
-        goto kcwywemwqiokmwqu;
-        acquwsaqecuammqu:
         return $this;
-        goto mmgecsioimmsaese;
-        mmgecsioimmsaese:
     }
     
     public function ikgocaywoggomiak($giqggecqqikcysgq = null) : self
     {
-        goto eeugkasygsucwemg;
-        qwuwmceyoweoquwe:
-        return $this;
-        goto acgckkceoemekqye;
-        aqkqkawsoekoguwq:
-        $this->qcgocuceocquqcuw("\x64\141\164\141\x2d\155\x61\x78\55\157\160\x74\151\x6f\x6e\x73", (string) $giqggecqqikcysgq);
-        goto iywsuggwumemiueu;
-        eeugkasygsucwemg:
-        if (!$giqggecqqikcysgq) {
-            goto iuwckqmwgeegmkym;
+        if ($giqggecqqikcysgq) {
+            $this->qcgocuceocquqcuw('data-max-options', (string) $giqggecqqikcysgq);
         }
-        goto aqkqkawsoekoguwq;
-        iywsuggwumemiueu:
-        iuwckqmwgeegmkym:
-        goto qwuwmceyoweoquwe;
-        acgckkceoemekqye:
+        return $this;
     }
     
     public function soyqkauogoaqekos() : self
     {
-        $this->oockkiieqcwiocga("\x75\x73\x65\162\x73");
+        $this->oockkiieqcwiocga('users');
         return $this;
     }
     
     public function yyayequseyasoyks() : self
     {
-        $this->oockkiieqcwiocga("\x74\145\162\x6d\163");
+        $this->oockkiieqcwiocga('terms');
         return $this;
     }
     
     public function smmismmuuccmscya() : self
     {
-        $this->oockkiieqcwiocga("\x70\157\x73\164\163");
+        $this->oockkiieqcwiocga('posts');
         return $this;
     }
     
     public function wkqyoukciomqiyew() : self
     {
-        $this->oockkiieqcwiocga("\x6d\157\x64\x65\154\x73");
+        $this->oockkiieqcwiocga('models');
         return $this;
     }
     
     public function kacywqgmseagyuyu() : self
     {
-        $this->oockkiieqcwiocga("\151\x63\157\156\163");
+        $this->oockkiieqcwiocga('icons');
         return $this;
     }
     
@@ -123,7 +97,7 @@ class BSSelect extends Select
     
     public function imwouwmsiukakwqi() : self
     {
-        $this->oockkiieqcwiocga("\143\157\155\155\x65\156\164\x73");
+        $this->oockkiieqcwiocga('comments');
         return $this;
     }
     
@@ -135,22 +109,14 @@ class BSSelect extends Select
     
     public function eukmukacucooequu(array $ywmkwiwkosakssii = []) : self
     {
-        goto cywuoisiuqqycswk;
-        gekwsciqyqicqssw:
-        return $this;
-        goto iewmcmiquoyacgyq;
-        egkogyiekywscqky:
-        $this->qcgocuceocquqcuw("\144\141\x74\141\55\x61\x72\x67\163", $ywmkwiwkosakssii);
-        goto gekwsciqyqicqssw;
-        cywuoisiuqqycswk:
         $ywmkwiwkosakssii = json_encode($ywmkwiwkosakssii, JSON_UNESCAPED_SLASHES);
-        goto egkogyiekywscqky;
-        iewmcmiquoyacgyq:
+        $this->qcgocuceocquqcuw('data-args', $ywmkwiwkosakssii);
+        return $this;
     }
     
     public function osmkwgikieoyykwg() : self
     {
-        $this->oikgogcweiiaocka()->usoqcyyugsuyiewc("\163\x6f\x72\164\x61\x62\154\145\55\163\145\154\x65\x63\164")->qigsyyqgewgskemg("\163\x6f\162\x74\x61\x62\154\x65\55\163\x65\154\145\143\x74");
+        $this->oikgogcweiiaocka()->usoqcyyugsuyiewc('sortable-select')->qigsyyqgewgskemg('sortable-select');
         return $this;
     }
     
@@ -167,84 +133,40 @@ class BSSelect extends Select
     
     public function oikgogcweiiaocka() : self
     {
-        return $this->aseocggwwegcmqes("\155\165\x6c\164\151{$this->gueasuouwqysmomu()}")->iqiasugacuagiwcw();
+        return $this->aseocggwwegcmqes("multi{$this->gueasuouwqysmomu()}")->iqiasugacuagiwcw();
     }
     
     public function zosqeeykkcqmmkqs() : bool
     {
-        return strpos($this->gueasuouwqysmomu(), "\x6d\165\x6c\164\x69") !== false;
+        return strpos($this->gueasuouwqysmomu(), 'multi') !== false;
     }
     
     public function kyiucygqsgequoys(?string $iwiewowoqmoekyqi = null) : self
     {
-        return $this->qcgocuceocquqcuw("\164\x69\x74\154\x65", $iwiewowoqmoekyqi);
+        return $this->qcgocuceocquqcuw('title', $iwiewowoqmoekyqi);
     }
     
     public function iqiasugacuagiwcw($gaeqamemwmwsyukm = null) : self
     {
-        goto mwuueaqkukaikwki;
-        wcqcuygyssquoecu:
-        return $this->qcgocuceocquqcuw("\144\141\164\x61\55\x73\x65\x6c\x65\143\x74\x65\144\x2d\164\145\x78\164\x2d\x66\x6f\162\155\x61\164", $uiymkeeaukcyqqik);
-        goto amkuiuweeikqwmiy;
-        qmammsguewagcqkg:
-        if (!$gaeqamemwmwsyukm) {
-            goto wcqwgisyoeuosuyq;
+        $uiymkeeaukcyqqik = 'count';
+        if ($gaeqamemwmwsyukm) {
+            $uiymkeeaukcyqqik = "{$uiymkeeaukcyqqik} > {$gaeqamemwmwsyukm}";
         }
-        goto qwysywacqwqcqsoa;
-        qwysywacqwqcqsoa:
-        $uiymkeeaukcyqqik = "{$uiymkeeaukcyqqik}\x20\x3e\40{$gaeqamemwmwsyukm}";
-        goto kcsqwsswsemaumma;
-        kcsqwsswsemaumma:
-        wcqwgisyoeuosuyq:
-        goto wcqcuygyssquoecu;
-        mwuueaqkukaikwki:
-        $uiymkeeaukcyqqik = "\143\x6f\165\x6e\x74";
-        goto qmammsguewagcqkg;
-        amkuiuweeikqwmiy:
+        return $this->qcgocuceocquqcuw('data-selected-text-format', $uiymkeeaukcyqqik);
     }
     
     public function qgsieamsswkgysow(array $ywmkwiwkosakssii = []) : void
     {
-        goto wagiaqiqcimegwae;
-        wagiaqiqcimegwae:
         $oammesyieqmwuwyi = $this->wasgwsogmuquqeaa();
-        goto uaisequwcmsgwoek;
-        isskocqmuyoukaaq:
-        isqmsyisayasekmi:
-        goto scysisyaqygmiege;
-        imummuqgkwsswaqg:
-        cussqussoggmeosi:
-        goto kaksyamuwcoawuyi;
-        kamqckgacqaqymiu:
-        aqswwkimeemgqqig:
-        goto emwwmokiwkwyucwo;
-        scysisyaqygmiege:
+        if (is_array($oammesyieqmwuwyi)) {
+            if ($this->squsacgomqgkakaw()) {
+                $this->qcgocuceocquqcuw('data-target', $this->squsacgomqgkakaw());
+            }
+            $this->qcgocuceocquqcuw('data-items', json_encode($oammesyieqmwuwyi));
+        }
+        if (!$this->msmiagueogcsucgc()) {
+            $this->kyiucygqsgequoys(__('Choice on of following options...', PR__CMN__FOUNDATION))->qcgocuceocquqcuw('data-deselect-all-text', __('Deselect', PR__CMN__FOUNDATION));
+        }
         parent::qgsieamsswkgysow($ywmkwiwkosakssii);
-        goto quaceaqiyccsewwm;
-        mumiaqugqwusaqms:
-        $this->qcgocuceocquqcuw("\144\141\164\x61\55\x74\141\162\147\x65\x74", $this->squsacgomqgkakaw());
-        goto kamqckgacqaqymiu;
-        uaisequwcmsgwoek:
-        if (!is_array($oammesyieqmwuwyi)) {
-            goto cussqussoggmeosi;
-        }
-        goto maieoomciymaweag;
-        maieoomciymaweag:
-        if (!$this->squsacgomqgkakaw()) {
-            goto aqswwkimeemgqqig;
-        }
-        goto mumiaqugqwusaqms;
-        kaksyamuwcoawuyi:
-        if ($this->msmiagueogcsucgc()) {
-            goto isqmsyisayasekmi;
-        }
-        goto wayeccuwqcsagsku;
-        wayeccuwqcsagsku:
-        $this->kyiucygqsgequoys(__("\103\150\157\x69\143\x65\40\157\156\x20\157\x66\40\146\x6f\154\154\157\x77\x69\156\x67\x20\x6f\x70\164\x69\x6f\x6e\x73\56\x2e\x2e", PR__CMN__FOUNDATION))->qcgocuceocquqcuw("\x64\x61\164\141\x2d\144\145\x73\145\154\x65\x63\164\x2d\x61\154\154\x2d\x74\145\x78\164", __("\104\x65\x73\145\154\145\x63\x74", PR__CMN__FOUNDATION));
-        goto isskocqmuyoukaaq;
-        emwwmokiwkwyucwo:
-        $this->qcgocuceocquqcuw("\144\141\164\141\x2d\151\164\x65\155\163", json_encode($oammesyieqmwuwyi));
-        goto imummuqgkwsswaqg;
-        quaceaqiyccsewwm:
     }
 }

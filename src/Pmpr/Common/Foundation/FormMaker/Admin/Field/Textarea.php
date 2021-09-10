@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -15,12 +15,12 @@ class Textarea extends Text
     
     public function __construct(?string $aokagokqyuysuksm, ?string $ymqmyyeuycgmigyo, ?string $mkqqqewsokcswckc = null)
     {
-        parent::__construct($aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc, "\164\x65\x78\x74\141\162\145\x61");
+        parent::__construct($aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc, 'textarea');
     }
     
     public function qsecygiycssgacqs($essikcmqiyqaqoaq) : self
     {
-        $this->qcgocuceocquqcuw("\162\x6f\167\x73", (string) $essikcmqiyqaqoaq);
+        $this->qcgocuceocquqcuw('rows', (string) $essikcmqiyqaqoaq);
         return $this;
     }
     
@@ -37,21 +37,9 @@ class Textarea extends Text
     
     public function qgsieamsswkgysow(array $ywmkwiwkosakssii = []) : void
     {
-        goto iqoouguqkoyqgmky;
-        iqoouguqkoyqgmky:
         parent::qgsieamsswkgysow($ywmkwiwkosakssii);
-        goto qcesmwcoywieikko;
-        qcesmwcoywieikko:
-        if (!$this->isCode) {
-            goto kygskqcaswauoqck;
+        if ($this->isCode) {
+            $this->aseocggwwegcmqes('textarea_code');
         }
-        goto egyqgskwmiuqqusm;
-        oegiqcweqaommiye:
-        kygskqcaswauoqck:
-        goto ukaykumuckcewsmi;
-        egyqgskwmiuqqusm:
-        $this->aseocggwwegcmqes("\x74\x65\170\164\x61\x72\x65\x61\137\x63\x6f\x64\145");
-        goto oegiqcweqaommiye;
-        ukaykumuckcewsmi:
     }
 }

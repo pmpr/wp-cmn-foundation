@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -46,17 +46,17 @@ class DecoratorAttachment extends Common
         return get_attached_file($aiooqyausygaasqm, $beuoaqwyyugcgeas);
     }
     
-    public static function iaykyouimqoikagg($aiooqyausygaasqm, $oiegiwogmwmawkeo = "\x74\150\x75\155\x62\156\141\151\154", $wkaqekwwgqsqwcoi = false)
+    public static function iaykyouimqoikagg($aiooqyausygaasqm, $oiegiwogmwmawkeo = 'thumbnail', $wkaqekwwgqsqwcoi = false)
     {
         return wp_get_attachment_image_url($aiooqyausygaasqm, $oiegiwogmwmawkeo, $wkaqekwwgqsqwcoi);
     }
     
-    public static function uikkssqcoewckces($aiooqyausygaasqm, $oiegiwogmwmawkeo = "\x74\x68\165\155\142\156\x61\151\x6c", $wkaqekwwgqsqwcoi = false)
+    public static function uikkssqcoewckces($aiooqyausygaasqm, $oiegiwogmwmawkeo = 'thumbnail', $wkaqekwwgqsqwcoi = false)
     {
         return wp_get_attachment_image_src($aiooqyausygaasqm, $oiegiwogmwmawkeo, $wkaqekwwgqsqwcoi);
     }
     
-    public static function qaeeusqkgwagwaqc($aiooqyausygaasqm, $oiegiwogmwmawkeo = "\164\150\165\155\142\156\x61\x69\154", $wisgiwskwawciiee = [], $wkaqekwwgqsqwcoi = false)
+    public static function qaeeusqkgwagwaqc($aiooqyausygaasqm, $oiegiwogmwmawkeo = 'thumbnail', $wisgiwskwawciiee = [], $wkaqekwwgqsqwcoi = false)
     {
         return wp_get_attachment_image($aiooqyausygaasqm, $oiegiwogmwmawkeo, $wkaqekwwgqsqwcoi, $wisgiwskwawciiee);
     }

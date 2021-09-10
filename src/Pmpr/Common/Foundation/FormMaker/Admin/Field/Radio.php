@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -15,22 +15,10 @@ class Radio extends OptionAwareField
     
     public function __construct(?string $aokagokqyuysuksm, ?string $ymqmyyeuycgmigyo, array $qiouiwasaauyaaue = [], ?string $mkqqqewsokcswckc = null)
     {
-        goto oucueogegoykuuuy;
-        oucueogegoykuuuy:
-        if (!(is_array($qiouiwasaauyaaue) && $qiouiwasaauyaaue)) {
-            goto eekwggcsigwsyimk;
+        if (is_array($qiouiwasaauyaaue) && $qiouiwasaauyaaue) {
+            $this->eyygsasuqmommkua(key($qiouiwasaauyaaue));
         }
-        goto qyuwuawyyooewwmy;
-        qyuwuawyyooewwmy:
-        $this->eyygsasuqmommkua(key($qiouiwasaauyaaue));
-        goto giseicyyywqmukwu;
-        myuauieqiomyewkk:
-        parent::__construct("\x72\x61\x64\151\x6f", $aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc, $qiouiwasaauyaaue);
-        goto owqcgayymwauiqaa;
-        giseicyyywqmukwu:
-        eekwggcsigwsyimk:
-        goto myuauieqiomyewkk;
-        owqcgayymwauiqaa:
+        parent::__construct('radio', $aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc, $qiouiwasaauyaaue);
     }
     
     public function wmociykwcyesssui() : ?bool
@@ -50,6 +38,6 @@ class Radio extends OptionAwareField
     }
     public function sqoiuykcoueiucgc($pkyyagewkiyckmwy, $wwgucssaecqekuek)
     {
-        return array_merge(["\154\x61\142\145\154" => $pkyyagewkiyckmwy], $wwgucssaecqekuek);
+        return array_merge(['label' => $pkyyagewkiyckmwy], $wwgucssaecqekuek);
     }
 }

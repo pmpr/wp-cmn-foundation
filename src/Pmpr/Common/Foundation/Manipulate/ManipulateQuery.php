@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -17,44 +17,20 @@ class ManipulateQuery extends Manipulate
     
     function cgquaaukmyeomgms() : bool
     {
-        return DecoratorQuery::cgquaaukmyeomgms() || self::cmaecekuqkwmemms("\104\x4f\x49\116\x47\137\103\122\x4f\x4e");
+        return DecoratorQuery::cgquaaukmyeomgms() || self::cmaecekuqkwmemms('DOING_CRON');
     }
     
     public static function aqwquwewocyewasw() : bool
     {
-        goto ecogskgckaqscygu;
-        qgosqkumckekweig:
-        if ($uwqkkwmiiumuukoa) {
-            goto cocuwykyogwqksuc;
-        }
-        goto wscmeosuswieugqc;
-        guousgemwcuecmqe:
-        $uwqkkwmiiumuukoa = DecoratorHook::sscegwueamckwmcy("\x69\x73\x5f\162\x65\x73\164\x5f\x61\160\151\137\x72\x65\161\165\145\163\164", $uwqkkwmiiumuukoa);
-        goto yccqiqeuguggucem;
-        ecogskgckaqscygu:
         $uwqkkwmiiumuukoa = ManipulateWoocommerce::aqwquwewocyewasw();
-        goto qgosqkumckekweig;
-        qmawiqqoigwiwyqs:
-        $yuwymayicwwqiske = trailingslashit(rest_get_url_prefix());
-        goto ugoeugewuucscmio;
-        ugoeugewuucscmio:
-        $uwqkkwmiiumuukoa = false !== strpos($xeciwimgioieayek, $yuwymayicwwqiske);
-        goto guousgemwcuecmqe;
-        wscmeosuswieugqc:
-        if (!($xeciwimgioieayek = ManipulateServer::giiecckwoyiawoyy("\122\x45\121\x55\x45\x53\x54\137\x55\122\x49"))) {
-            goto yqcumeywukecmiey;
+        if (!$uwqkkwmiiumuukoa) {
+            if ($xeciwimgioieayek = ManipulateServer::giiecckwoyiawoyy('REQUEST_URI')) {
+                $yuwymayicwwqiske = trailingslashit(rest_get_url_prefix());
+                $uwqkkwmiiumuukoa = false !== strpos($xeciwimgioieayek, $yuwymayicwwqiske);
+                $uwqkkwmiiumuukoa = DecoratorHook::sscegwueamckwmcy('is_rest_api_request', $uwqkkwmiiumuukoa);
+            }
         }
-        goto qmawiqqoigwiwyqs;
-        owkcoawgimcoyima:
-        cocuwykyogwqksuc:
-        goto gwiyiyawcwasesgc;
-        yccqiqeuguggucem:
-        yqcumeywukecmiey:
-        goto owkcoawgimcoyima;
-        gwiyiyawcwasesgc:
         return $uwqkkwmiiumuukoa;
-        goto igiygcsmsmsaaqkq;
-        igiygcsmsmsaaqkq:
     }
     
     public static function eewqyocggsagyuis() : bool

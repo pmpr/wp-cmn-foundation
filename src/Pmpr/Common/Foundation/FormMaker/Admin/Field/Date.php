@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -17,17 +17,9 @@ class Date extends Field
     
     public function __construct(?string $aokagokqyuysuksm, ?string $ymqmyyeuycgmigyo = null, ?string $mkqqqewsokcswckc = null)
     {
-        goto agicwkeiuocqwcog;
-        agicwkeiuocqwcog:
-        parent::__construct("\x74\x65\170\x74\x5f\x64\141\164\x65", $aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc);
-        goto qiqgkqkyqugyesaq;
-        qiqgkqkyqugyesaq:
-        $this->qigsyyqgewgskemg("\x70\x72\55\144\141\164\x65\160\151\x63\153\145\x72");
-        goto ogseoooqimcomuyi;
-        ogseoooqimcomuyi:
+        parent::__construct('text_date', $aokagokqyuysuksm, $ymqmyyeuycgmigyo, $mkqqqewsokcswckc);
+        $this->qigsyyqgewgskemg('pr-datepicker');
         $this->masauymeceuiyceo();
-        goto uakwkocgsmmiqwic;
-        uakwkocgsmmiqwic:
     }
     
     public function meceicoawqkgwmoo() : ?string

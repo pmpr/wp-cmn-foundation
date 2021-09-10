@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -26,18 +26,18 @@ class Button extends Field
     
     public function __construct(?string $aokagokqyuysuksm, ?string $pkyyagewkiyckmwy, ?string $mkqqqewsokcswckc = null)
     {
-        parent::__construct("\x62\x75\x74\x74\x6f\x6e", $aokagokqyuysuksm, '', $mkqqqewsokcswckc);
-        $this->eqggmusacqoqcwuk($pkyyagewkiyckmwy)->comqsuwokcsmkcau("\x62\165\164\x74\157\x6e");
+        parent::__construct('button', $aokagokqyuysuksm, '', $mkqqqewsokcswckc);
+        $this->eqggmusacqoqcwuk($pkyyagewkiyckmwy)->comqsuwokcsmkcau('button');
     }
     
     public function gswweykyogmsyawy(?string $meqocwsecsywiiqs = null) : self
     {
-        return $this->igmaewykumgwoaoy("\164\x69\164\154\x65", $meqocwsecsywiiqs);
+        return $this->igmaewykumgwoaoy('title', $meqocwsecsywiiqs);
     }
     
     public function micmwmywmkguiyyk()
     {
-        return $this->qigsyyqgewgskemg("\x62\x75\164\164\x6f\156\55\160\x72\151\x6d\x61\x72\x79");
+        return $this->qigsyyqgewgskemg('button-primary');
     }
     
     public function eqggmusacqoqcwuk(?string $pkyyagewkiyckmwy) : self
@@ -53,17 +53,9 @@ class Button extends Field
     
     public function qoowicksguscqyks(?string $iwywmkygwewiamwm) : self
     {
-        goto kkiomqcmqcsoecag;
-        kkiomqcmqcsoecag:
         $this->link = $iwywmkygwewiamwm;
-        goto gygqsmoiqagyeguk;
-        gygqsmoiqagyeguk:
-        $this->comqsuwokcsmkcau("\141");
-        goto qqamsqiwmckymggm;
-        qqamsqiwmckymggm:
+        $this->comqsuwokcsmkcau('a');
         return $this;
-        goto iacysqqoouuqasgw;
-        iacysqqoouuqasgw:
     }
     
     public function saemoowcasogykak(?string $wkaqekwwgqsqwcoi) : self
@@ -92,53 +84,53 @@ class Button extends Field
     
     public function ygagwkucacyassau() : self
     {
-        return $this->usoqcyyugsuyiewc("\160\x72\x2d\x61\x63\x74\x69\157\156");
+        return $this->usoqcyyugsuyiewc('pr-action');
     }
     
     public function gioaiiyakuoimewa($qoiwmokisgikggia, $quyoyomkimissiqu = false) : self
     {
-        $quyoyomkimissiqu = $quyoyomkimissiqu ? "\x2d\157\165\x74\154\x69\x6e\145" : '';
-        return $this->qigsyyqgewgskemg("\142\164\x6e\x20\142\164\x6e{$quyoyomkimissiqu}\55{$qoiwmokisgikggia}");
+        $quyoyomkimissiqu = $quyoyomkimissiqu ? '-outline' : '';
+        return $this->qigsyyqgewgskemg("btn btn{$quyoyomkimissiqu}-{$qoiwmokisgikggia}");
     }
     
     public function muywawimuacwmkgw($quyoyomkimissiqu = false) : self
     {
-        return $this->gioaiiyakuoimewa("\144\141\156\147\x65\x72", $quyoyomkimissiqu);
+        return $this->gioaiiyakuoimewa('danger', $quyoyomkimissiqu);
     }
     
     public function wksqkiomigqkkcgu($quyoyomkimissiqu = false) : self
     {
-        return $this->gioaiiyakuoimewa("\167\x61\x72\x6e\x69\x6e\x67", $quyoyomkimissiqu);
+        return $this->gioaiiyakuoimewa('warning', $quyoyomkimissiqu);
     }
     
     public function miqekcqciusawwie($quyoyomkimissiqu = false) : self
     {
-        return $this->gioaiiyakuoimewa("\x69\156\x66\157", $quyoyomkimissiqu);
+        return $this->gioaiiyakuoimewa('info', $quyoyomkimissiqu);
     }
     
     public function gmscmskmuissgywk($quyoyomkimissiqu = false) : self
     {
-        return $this->gioaiiyakuoimewa("\160\162\151\x6d\x61\x72\171", $quyoyomkimissiqu);
+        return $this->gioaiiyakuoimewa('primary', $quyoyomkimissiqu);
     }
     
     public function goqoickiksqsaeyk($quyoyomkimissiqu = false) : self
     {
-        return $this->gioaiiyakuoimewa("\163\145\x63\157\x6e\144\x61\162\171", $quyoyomkimissiqu);
+        return $this->gioaiiyakuoimewa('secondary', $quyoyomkimissiqu);
     }
     
     public function mweyuoqsqugqwcca($quyoyomkimissiqu = false) : self
     {
-        return $this->gioaiiyakuoimewa("\x73\165\143\143\x65\163\163", $quyoyomkimissiqu);
+        return $this->gioaiiyakuoimewa('success', $quyoyomkimissiqu);
     }
     
     public function igkwmqewuauogeus(string $gwgqcsmomamyqsmy) : self
     {
-        return $this->igmaewykumgwoaoy("\144\x61\x74\141\55\156\157\156\x63\145", wp_create_nonce($gwgqcsmomamyqsmy));
+        return $this->igmaewykumgwoaoy('data-nonce', wp_create_nonce($gwgqcsmomamyqsmy));
     }
     
-    public function ukmcmuaawacquume($ywmkwiwkosakssii = [], $kqywgoqsmuswammk = "\142\x75\x74\x74\x6f\156") : self
+    public function ukmcmuaawacquume($ywmkwiwkosakssii = [], $kqywgoqsmuswammk = 'button') : self
     {
-        $this->qigsyyqgewgskemg("\160\x72\55\143\157\x6e\146\x69\162\155\141\142\x6c\145\55\x61\143\164\151\157\156");
-        return $this->qcgocuceocquqcuw("\144\141\164\141\55\143\x6f\x6e\146\151\147", ManipulateHTML::uskieqmcqyecigmy($ywmkwiwkosakssii, $kqywgoqsmuswammk));
+        $this->qigsyyqgewgskemg('pr-confirmable-action');
+        return $this->qcgocuceocquqcuw('data-config', ManipulateHTML::uskieqmcqyecigmy($ywmkwiwkosakssii, $kqywgoqsmuswammk));
     }
 }

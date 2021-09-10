@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -13,6 +13,6 @@ class Boolean extends Field
     
     public function __construct(string $aokagokqyuysuksm, ?string $meqocwsecsywiiqs = null)
     {
-        parent::__construct("\x62\157\157\154\145\141\156", $aokagokqyuysuksm, $meqocwsecsywiiqs);
+        parent::__construct('boolean', $aokagokqyuysuksm, $meqocwsecsywiiqs);
     }
 }

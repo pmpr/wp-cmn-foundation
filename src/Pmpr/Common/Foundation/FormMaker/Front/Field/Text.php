@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613b6c65a2d22             |
+    |             613bb98fa102d             |
     |_______________________________________|
 */
 
@@ -17,8 +17,8 @@ class Text extends Field
     
     public function __construct(?string $aokagokqyuysuksm, string $pkyyagewkiyckmwy = null, string $mkqqqewsokcswckc = null, string $sqeykgyoooqysmca = self::TEXT)
     {
-        parent::__construct("\x69\x6e\160\x75\164", $sqeykgyoooqysmca, $aokagokqyuysuksm, $pkyyagewkiyckmwy, $mkqqqewsokcswckc);
-        $this->qigsyyqgewgskemg("\x66\157\162\155\55\143\157\x6e\x74\162\x6f\154");
+        parent::__construct('input', $sqeykgyoooqysmca, $aokagokqyuysuksm, $pkyyagewkiyckmwy, $mkqqqewsokcswckc);
+        $this->qigsyyqgewgskemg('form-control');
     }
     
     public function eyamqkqiykagecsw() : ?string
@@ -35,17 +35,17 @@ class Text extends Field
     public function mkiaygiogeeyogqm() : self
     {
         $this->soqmwakwiegiceeo();
-        return $this->aseocggwwegcmqes("\145\x6d\x61\151\x6c");
+        return $this->aseocggwwegcmqes('email');
     }
     
     public function esakmaucmeoucami() : self
     {
-        return $this->aseocggwwegcmqes("\x73\x65\x61\162\x63\x68");
+        return $this->aseocggwwegcmqes('search');
     }
     
     public function smigkcmumwkgamkk() : self
     {
-        return $this->aseocggwwegcmqes("\164\x65\x6c");
+        return $this->aseocggwwegcmqes('tel');
     }
     
     public function xkgcwkwsqysqamic() : self
@@ -55,72 +55,33 @@ class Text extends Field
     
     public function sqsumkuougquscyg() : self
     {
-        return $this->aseocggwwegcmqes("\x70\x61\x73\x73\167\157\x72\x64");
+        return $this->aseocggwwegcmqes('password');
     }
     
     public function kyiucygqsgequoys(?string $iwiewowoqmoekyqi) : self
     {
         $this->gysckqgokmciyqcg($iwiewowoqmoekyqi);
-        return $this->qcgocuceocquqcuw("\160\154\x61\x63\145\x68\x6f\x6c\x64\x65\x72", $iwiewowoqmoekyqi);
+        return $this->qcgocuceocquqcuw('placeholder', $iwiewowoqmoekyqi);
     }
     
     public function umyeigwcmeakuqsu($qsuyiaikaquswaug = false) : self
     {
-        goto iegeiekyeqckmise;
-        gmmoskogsamiimaw:
-        $this->iygyugseyaqwywyg($eqgoocgaqwqcimie);
-        goto guemiwyaaiokymkk;
-        skeosquyqemagyii:
+        if (!$this->qooeaookuemoqecm()) {
+            $aokagokqyuysuksm = $this->mwikyscisascoeea();
+            if ($qsuyiaikaquswaug) {
+                $eqgoocgaqwqcimie = ManipulateServer::get($aokagokqyuysuksm);
+            } else {
+                $eqgoocgaqwqcimie = ManipulateServer::ayueggmoqeeukqmq($aokagokqyuysuksm);
+            }
+            $this->iygyugseyaqwywyg($eqgoocgaqwqcimie);
+        }
         return $this;
-        goto wmqgyceaymweimmu;
-        yiakeoiamgskcgwe:
-        wcmeymioukakwmii:
-        goto gmmoskogsamiimaw;
-        guemiwyaaiokymkk:
-        oqysqmwmogqewsgo:
-        goto skeosquyqemagyii;
-        iqsqgccwyeomyawk:
-        if ($qsuyiaikaquswaug) {
-            goto ugwqyegaaskmucay;
-        }
-        goto iokasswuskcumqkc;
-        kuycusakouywkiiw:
-        $eqgoocgaqwqcimie = ManipulateServer::get($aokagokqyuysuksm);
-        goto yiakeoiamgskcgwe;
-        iokasswuskcumqkc:
-        $eqgoocgaqwqcimie = ManipulateServer::ayueggmoqeeukqmq($aokagokqyuysuksm);
-        goto kakeaucaseukciea;
-        egsqoeumwyykkuuy:
-        $aokagokqyuysuksm = $this->mwikyscisascoeea();
-        goto iqsqgccwyeomyawk;
-        kakeaucaseukciea:
-        goto wcmeymioukakwmii;
-        goto qkuuooygeauqoqqm;
-        iegeiekyeqckmise:
-        if ($this->qooeaookuemoqecm()) {
-            goto oqysqmwmogqewsgo;
-        }
-        goto egsqoeumwyykkuuy;
-        qkuuooygeauqoqqm:
-        ugwqyegaaskmucay:
-        goto kuycusakouywkiiw;
-        wmqgyceaymweimmu:
     }
     
     public function qgsieamsswkgysow(array $ywmkwiwkosakssii = []) : void
     {
-        goto uqwgiykoaeaaiayu;
-        uqwgiykoaeaaiayu:
-        if (!$this->eyamqkqiykagecsw()) {
-            goto yeqeyiiywssgsyou;
+        if ($this->eyamqkqiykagecsw()) {
+            $this->saemoowcasogykak(FormMaker::symcgieuakksimmu()->miocmcoykayoyyau()->eyamqkqiykagecsw($this->eyamqkqiykagecsw()));
         }
-        goto mumskauyosuokigg;
-        yoscseoiqicoccku:
-        yeqeyiiywssgsyou:
-        goto syeissweoweigoug;
-        mumskauyosuokigg:
-        $this->saemoowcasogykak(FormMaker::symcgieuakksimmu()->miocmcoykayoyyau()->eyamqkqiykagecsw($this->eyamqkqiykagecsw()));
-        goto yoscseoiqicoccku;
-        syeissweoweigoug:
     }
 }
