@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613a1be32d755             |
+    |             613b1e8aa0c03             |
     |_______________________________________|
 */
 
@@ -17,44 +17,44 @@ class ManipulateQuery extends Manipulate
     
     function cgquaaukmyeomgms() : bool
     {
-        return DecoratorQuery::cgquaaukmyeomgms() || self::cmaecekuqkwmemms("\104\x4f\x49\116\107\x5f\103\122\x4f\x4e");
+        return DecoratorQuery::cgquaaukmyeomgms() || self::cmaecekuqkwmemms("\x44\117\x49\x4e\x47\137\103\x52\117\x4e");
     }
     
     public static function aqwquwewocyewasw() : bool
     {
-        goto iigikgyaeuikoggm;
-        iigikgyaeuikoggm:
-        $uwqkkwmiiumuukoa = ManipulateWoocommerce::aqwquwewocyewasw();
-        goto soqqkwceaykieigm;
-        auqwakoacamemaaw:
-        qmuwqwawwwwiaiyq:
-        goto uqsggeawaemaocua;
-        sccsewaywmwqoikg:
-        if (!($xeciwimgioieayek = ManipulateServer::giiecckwoyiawoyy("\122\x45\x51\125\105\x53\124\137\x55\122\111"))) {
-            goto eaigiqugoyomawia;
-        }
-        goto aygawequkeicqqkc;
-        soqqkwceaykieigm:
-        if ($uwqkkwmiiumuukoa) {
-            goto qmuwqwawwwwiaiyq;
-        }
-        goto sccsewaywmwqoikg;
-        aygawequkeicqqkc:
-        $yuwymayicwwqiske = trailingslashit(rest_get_url_prefix());
-        goto qyegguguqsoeccia;
-        qyegguguqsoeccia:
+        goto eeowmomscuckuoum;
+        ecogskgckaqscygu:
+        $uwqkkwmiiumuukoa = DecoratorHook::sscegwueamckwmcy("\x69\163\137\x72\x65\163\x74\137\x61\x70\x69\137\x72\145\x71\x75\145\163\x74", $uwqkkwmiiumuukoa);
+        goto qgosqkumckekweig;
+        cocuwykyogwqksuc:
         $uwqkkwmiiumuukoa = false !== strpos($xeciwimgioieayek, $yuwymayicwwqiske);
-        goto oguoauieggcougge;
-        uqsggeawaemaocua:
+        goto ecogskgckaqscygu;
+        eeowmomscuckuoum:
+        $uwqkkwmiiumuukoa = ManipulateWoocommerce::aqwquwewocyewasw();
+        goto auksmaiaiccmekam;
+        yqcumeywukecmiey:
+        $yuwymayicwwqiske = trailingslashit(rest_get_url_prefix());
+        goto cocuwykyogwqksuc;
+        qgosqkumckekweig:
+        kiwsaeeagagkwooc:
+        goto wscmeosuswieugqc;
+        auksmaiaiccmekam:
+        if ($uwqkkwmiiumuukoa) {
+            goto wscymqowwagkecqk;
+        }
+        goto wquwyumimoaeeqkm;
+        qmawiqqoigwiwyqs:
         return $uwqkkwmiiumuukoa;
-        goto okuwiumssgqqaggm;
-        gmossqyimoswkoms:
-        eaigiqugoyomawia:
-        goto auqwakoacamemaaw;
-        oguoauieggcougge:
-        $uwqkkwmiiumuukoa = DecoratorHook::sscegwueamckwmcy("\151\x73\x5f\x72\x65\x73\x74\137\x61\160\151\x5f\x72\145\161\x75\145\x73\164", $uwqkkwmiiumuukoa);
-        goto gmossqyimoswkoms;
-        okuwiumssgqqaggm:
+        goto ugoeugewuucscmio;
+        wscmeosuswieugqc:
+        wscymqowwagkecqk:
+        goto qmawiqqoigwiwyqs;
+        wquwyumimoaeeqkm:
+        if (!($xeciwimgioieayek = ManipulateServer::giiecckwoyiawoyy("\122\x45\x51\x55\x45\x53\124\137\x55\x52\x49"))) {
+            goto kiwsaeeagagkwooc;
+        }
+        goto yqcumeywukecmiey;
+        ugoeugewuucscmio:
     }
     
     public static function eewqyocggsagyuis() : bool

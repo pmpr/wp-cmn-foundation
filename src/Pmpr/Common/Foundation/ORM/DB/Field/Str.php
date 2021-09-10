@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613a1be32d755             |
+    |             613b1e8aa0c03             |
     |_______________________________________|
 */
 
@@ -13,6 +13,6 @@ class Str extends Field
     
     public function __construct(string $aokagokqyuysuksm, ?string $meqocwsecsywiiqs = null)
     {
-        parent::__construct("\x73\164\162\x69\x6e\147", $aokagokqyuysuksm, $meqocwsecsywiiqs);
+        parent::__construct("\163\164\162\151\156\x67", $aokagokqyuysuksm, $meqocwsecsywiiqs);
     }
 }

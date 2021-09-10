@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613a1be32d755             |
+    |             613b1e8aa0c03             |
     |_______________________________________|
 */
 
@@ -31,7 +31,7 @@ class Element extends Common implements ElementInterface
     
     protected bool $showNames = false;
     
-    protected $objectType = "\x6f\x70\164\x69\157\156\x73\55\160\x61\147\x65";
+    protected $objectType = "\x6f\160\164\151\x6f\156\x73\x2d\x70\141\147\145";
     
     protected ?string $capability = null;
     
@@ -39,27 +39,27 @@ class Element extends Common implements ElementInterface
     
     public function __construct($aokagokqyuysuksm = null)
     {
-        goto oekcuiaykkcusgkm;
-        wimkqoekscwcoauw:
-        $this->capability = "\155\141\x6e\x61\x67\x65\x5f\157\160\x74\151\157\156\x73";
-        goto ikemwmsywqqqiqsa;
-        ggymiommyoaqkwko:
-        parent::__construct();
-        goto wweyewgicswqweyq;
-        ikemwmsywqqqiqsa:
-        $this->configuration = [];
-        goto ggymiommyoaqkwko;
-        oekcuiaykkcusgkm:
-        $this->id = $aokagokqyuysuksm;
-        goto oakygoegqigkcwug;
-        oakygoegqigkcwug:
+        goto qmykwwkysceaysea;
+        uomaegayqaycamwq:
+        $this->capability = "\x6d\141\x6e\141\147\145\137\x6f\160\164\151\157\156\163";
+        goto kqkicmysyusskuua;
+        iuiymememwkaqcuk:
         $this->showNames = true;
-        goto wimkqoekscwcoauw;
-        wweyewgicswqweyq:
+        goto uomaegayqaycamwq;
+        yssakamqiieugqyk:
+        parent::__construct();
+        goto yqwgcuuuocyqysso;
+        qmykwwkysceaysea:
+        $this->id = $aokagokqyuysuksm;
+        goto iuiymememwkaqcuk;
+        kqkicmysyusskuua:
+        $this->configuration = [];
+        goto yssakamqiieugqyk;
+        yqwgcuuuocyqysso:
     }
     public function wigskegsqequoeks()
     {
-        $this->qcsmikeggeemccuu("\167\160", [$this, "\x67\157\163\x6d\161\143\155\155\157\x6d\153\161\167\x6d\x69\163"], 99)->qcsmikeggeemccuu("\x69\156\x69\x74", [$this, "\x69\156\151\x74"], 99)->qcsmikeggeemccuu("\x61\x64\x6d\151\156\137\x69\156\x69\164", [$this, "\x79\x65\171\151\x67\x75\x79\145\x67\155\x6d\x79\165\x73\145\x61"], 99);
+        $this->qcsmikeggeemccuu("\x77\x70", [$this, "\147\x6f\163\x6d\x71\x63\155\155\157\x6d\153\161\167\x6d\151\x73"], 99)->qcsmikeggeemccuu("\x69\156\151\x74", [$this, "\151\156\x69\164"], 99)->qcsmikeggeemccuu("\141\x64\155\151\156\x5f\151\x6e\x69\x74", [$this, "\x79\x65\x79\x69\147\165\171\x65\147\155\155\x79\165\163\145\141"], 99);
         parent::wigskegsqequoeks();
     }
     public function gogaagekwoisaqgu()
@@ -111,8 +111,8 @@ class Element extends Common implements ElementInterface
     
     public function ekwcyuwcmeeoyqqm(array $seyqqsmuaiegkeeq = []) : self
     {
-        $this->wcweamocuicuusky("\x74\x61\x78\157\x6e\157\x6d\151\x65\163", $seyqqsmuaiegkeeq);
-        return $this->ycgswwsswoyyeqgc("\x74\x65\x72\155");
+        $this->wcweamocuicuusky("\x74\x61\x78\x6f\156\x6f\x6d\151\x65\x73", $seyqqsmuaiegkeeq);
+        return $this->ycgswwsswoyyeqgc("\164\x65\162\x6d");
     }
     
     public function qcgakseyaikigqco() : ?string
@@ -175,48 +175,48 @@ class Element extends Common implements ElementInterface
     
     public function cisyiemkeykgkomc() : ?string
     {
-        goto ysuwseamckigmoge;
-        qiiyiqwyoomsueuq:
-        if ($ymqmyyeuycgmigyo) {
-            goto qesmouyqgeigoyay;
-        }
-        goto squwouwckwiwquyu;
-        cawcqogqmaaiaeim:
-        $aokagokqyuysuksm = $this->mwikyscisascoeea();
-        goto ckiesggkeyocyoia;
-        komeykuoomsymayc:
+        goto qyogwowwcogugweq;
+        uoeegwsgqyokwwws:
+        miekisauamqswgie:
+        goto ugssgcuiagwkicqq;
+        ugssgcuiagwkicqq:
         return '';
-        goto wiuoyosaiuqqmiss;
-        yawsiksqqgmeeiws:
-        goto cgmociyqmykaqmya;
-        goto iiauuwmeoiiqeigi;
-        ckiesggkeyocyoia:
-        if ($aokagokqyuysuksm) {
-            goto imksqaayamqiwwuw;
-        }
-        goto qiiyiqwyoomsueuq;
-        iiauuwmeoiiqeigi:
-        qesmouyqgeigoyay:
-        goto wgguesgmyqgyescc;
-        wgguesgmyqgyescc:
+        goto qcuiamcckoceggwu;
+        geywkoimqymqkyem:
         return $ymqmyyeuycgmigyo;
-        goto sockicoiuuuygkyo;
-        huuswamyiwgiymou:
-        imksqaayamqiwwuw:
-        goto aqocckgoumwuoyco;
-        squwouwckwiwquyu:
-        goto cgmociyqmykaqmya;
-        goto huuswamyiwgiymou;
-        sockicoiuuuygkyo:
-        cgmociyqmykaqmya:
-        goto komeykuoomsymayc;
-        aqocckgoumwuoyco:
+        goto uoeegwsgqyokwwws;
+        mqogcscwmowgogkm:
         return $aokagokqyuysuksm;
-        goto yawsiksqqgmeeiws;
-        ysuwseamckigmoge:
+        goto cgueqqgoouykmoes;
+        gcskwyqqyqmauwow:
+        amyqwcqwqccgwigq:
+        goto mqogcscwmowgogkm;
+        eeqaqskwawmqocaa:
+        $aokagokqyuysuksm = $this->mwikyscisascoeea();
+        goto caasqyskqsecuawu;
+        iyomyggaemmmucqq:
+        if ($ymqmyyeuycgmigyo) {
+            goto ccsemsumseigmmoa;
+        }
+        goto ckwwkkemmmccgcws;
+        ckwwkkemmmccgcws:
+        goto miekisauamqswgie;
+        goto gcskwyqqyqmauwow;
+        komwmwgumckimamm:
+        ccsemsumseigmmoa:
+        goto geywkoimqymqkyem;
+        qyogwowwcogugweq:
         $ymqmyyeuycgmigyo = $this->aakmagwggmkoiiyu();
-        goto cawcqogqmaaiaeim;
-        wiuoyosaiuqqmiss:
+        goto eeqaqskwawmqocaa;
+        caasqyskqsecuawu:
+        if ($aokagokqyuysuksm) {
+            goto amyqwcqwqccgwigq;
+        }
+        goto iyomyggaemmmucqq;
+        cgueqqgoouykmoes:
+        goto miekisauamqswgie;
+        goto komwmwgumckimamm;
+        qcuiamcckoceggwu:
     }
     
     public function icwmkesyskgskquu() : ?bool
@@ -231,39 +231,39 @@ class Element extends Common implements ElementInterface
     
     public function megwuoouecmkuaqm($oyuikeusicgqgwak) : self
     {
-        goto oqecugiicgkgisyi;
-        gaykosyqceuygmiq:
+        goto soisuocuwuwaaoig;
+        sugqcoagaisyeuge:
+        iiukuwmwimmiiiim:
+        goto ooaiowseiuogqeek;
+        ooaiowseiuogqeek:
         return $this;
-        goto gmeksiaumseqkqug;
-        usweuqkmumcwckoo:
-        iqacckgckyoioccs:
-        goto gaykosyqceuygmiq;
-        oqecugiicgkgisyi:
+        goto kwigscuqywmmyess;
+        soisuocuwuwaaoig:
         foreach ($oyuikeusicgqgwak as $uusmaiomayssaecw => $uiewakwqscemywuo) {
             $this->wcweamocuicuusky($uusmaiomayssaecw, $uiewakwqscemywuo);
-            weqqwqaoyugaiaqs:
+            ewukmsoywcsagcsg:
         }
-        goto usweuqkmumcwckoo;
-        gmeksiaumseqkqug:
+        goto sugqcoagaisyeuge;
+        kwigscuqywmmyess:
     }
     
     public function wcweamocuicuusky($uusmaiomayssaecw, $eqgoocgaqwqcimie) : self
     {
-        goto mmiwmgwcsgqoemws;
-        aysoywgeacaeuyao:
+        goto iusicoaiyamcoikg;
+        gyessymseyoiocey:
         return $this;
-        goto oeyoocigmyyssieq;
-        qomimwecwqaeyqwu:
+        goto uguigcssweukyeic;
+        gsaascomiaiemesg:
         $this->configuration[$uusmaiomayssaecw] = $eqgoocgaqwqcimie;
-        goto cwcqmsuqqsauemuw;
-        cwcqmsuqqsauemuw:
-        eiuugowioueiceoc:
-        goto aysoywgeacaeuyao;
-        mmiwmgwcsgqoemws:
+        goto egqgieqcwseicqki;
+        iusicoaiyamcoikg:
         if (isset($this->configuration[$uusmaiomayssaecw])) {
-            goto eiuugowioueiceoc;
+            goto qmqakowgsqgcqass;
         }
-        goto qomimwecwqaeyqwu;
-        oeyoocigmyyssieq:
+        goto gsaascomiaiemesg;
+        egqgieqcwseicqki:
+        qmqakowgsqgcqass:
+        goto gyessymseyoiocey;
+        uguigcssweukyeic:
     }
 }

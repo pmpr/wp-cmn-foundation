@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613a1be32d755             |
+    |             613b1e8aa0c03             |
     |_______________________________________|
 */
 
@@ -14,34 +14,34 @@ trait AjaxTrait
     
     public function miueaekaaugaccmg(&$iswcokucwmiosiaq, $aiowsaccomcoikus = self::AJAX_NONCE_KEY) : bool
     {
-        goto sagosckgcimciqya;
-        eugsieawaqqskgam:
-        ucwcmgeksyiggaqi:
-        goto eawgawckwmwauyoe;
-        moqoommaoiemcoqk:
-        $eisqsskqimiigkay = true;
-        goto cqiuouaccqyaiogc;
-        eawgawckwmwauyoe:
+        goto qyyoqyesekyggyua;
+        gsskeqkeaaoqcqua:
         return $eisqsskqimiigkay;
-        goto qqucyysuwawsqsyi;
-        wcwsogoecyummieu:
-        owqsmgycisgmmasg:
-        goto ycaqgqcgsaogwqey;
-        sagosckgcimciqya:
+        goto smmwkkeukemsueco;
+        qyyoqyesekyggyua:
         $eisqsskqimiigkay = false;
-        goto ysgecwqkekegmywg;
-        cqiuouaccqyaiogc:
-        goto ucwcmgeksyiggaqi;
-        goto wcwsogoecyummieu;
-        ysgecwqkekegmywg:
+        goto gouiyyuwcgwgsyis;
+        egmkgyusyyyaqcyu:
+        $eisqsskqimiigkay = true;
+        goto ossuaoyigeyoisgo;
+        ossuaoyigeyoisgo:
+        goto iggysouawgiwywau;
+        goto essyuyoweqekagsi;
+        ygwykwccoweycoci:
+        iggysouawgiwywau:
+        goto gsskeqkeaaoqcqua;
+        essyuyoweqekagsi:
+        weiswmsaqamyisoo:
+        goto ogwiccocwuiuyyqk;
+        ogwiccocwuiuyyqk:
+        $iswcokucwmiosiaq = __("\x52\x65\x71\165\145\x73\164\x20\x69\163\x20\x6e\x6f\164\x20\166\x61\x6c\151\x64\x2c\40\160\x6c\x65\x61\x73\145\40\162\145\x6c\157\141\x64\40\160\141\x67\145\40\141\156\x64\x20\164\162\171\40\141\147\141\x69\x6e\x2e", PR__CMN__FOUNDATION);
+        goto ygwykwccoweycoci;
+        gouiyyuwcgwgsyis:
         if (!ManipulateAjax::wqsmsuyggkkyyocc(self::AJAX_NONCE, $aiowsaccomcoikus)) {
-            goto owqsmgycisgmmasg;
+            goto weiswmsaqamyisoo;
         }
-        goto moqoommaoiemcoqk;
-        ycaqgqcgsaogwqey:
-        $iswcokucwmiosiaq = __("\122\145\161\x75\145\163\x74\40\151\x73\x20\x6e\x6f\164\x20\166\141\x6c\151\144\x2c\40\x70\x6c\x65\x61\163\x65\40\162\x65\x6c\x6f\x61\x64\x20\x70\x61\x67\x65\x20\141\x6e\x64\x20\x74\x72\x79\40\141\x67\141\x69\x6e\56", PR__CMN__FOUNDATION);
-        goto eugsieawaqqskgam;
-        qqucyysuwawsqsyi:
+        goto egmkgyusyyyaqcyu;
+        smmwkkeukemsueco:
     }
     
     public final function uaggqsoeugksgooc($occymigcemkqucuw, $keccaugmemegoimu)

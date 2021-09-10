@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613a1be32d755             |
+    |             613b1e8aa0c03             |
     |_______________________________________|
 */
 
@@ -46,7 +46,7 @@ class DecoratorTaxonomy extends Common
         return is_tax($kesssewsiegssiya, $iwewcwusemqaiggk);
     }
     
-    public static function ciugwooasaqcywas($ywmkwiwkosakssii = [], $aqykuigiuwmmcieu = self::NAMES, $cackiyicawmkyqqg = "\x61\x6e\x64")
+    public static function ciugwooasaqcywas($ywmkwiwkosakssii = [], $aqykuigiuwmmcieu = self::NAMES, $cackiyicawmkyqqg = "\x61\x6e\144")
     {
         return get_taxonomies($ywmkwiwkosakssii, $aqykuigiuwmmcieu, $cackiyicawmkyqqg);
     }

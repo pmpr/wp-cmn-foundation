@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613a1be32d755             |
+    |             613b1e8aa0c03             |
     |_______________________________________|
 */
 
@@ -14,52 +14,52 @@ class ManipulateFormat extends Manipulate
     
     public static function aoaeiwswyagmesku($eeamcawaiqocomwy)
     {
-        goto ekiaoywcsemmomqw;
-        ekiaoywcsemmomqw:
+        goto qiugceckoaiawsoi;
+        qiugceckoaiawsoi:
         $egsumesakcaaukem = self::gooqqcmsyseiaikc(ManipulateServer::gmigwwwmwemyaayy());
-        goto koaeoimocwqoguem;
-        koaeoimocwqoguem:
+        goto geusmeaowwsycmuc;
+        geusmeaowwsycmuc:
         $ccamueccusigaaio = self::gooqqcmsyseiaikc($eeamcawaiqocomwy);
-        goto yaiicikgkwuucyac;
-        awcsskayoyoqcuie:
+        goto ssoseykuwegsmyum;
+        ssoseykuwegsmyum:
+        $wkwsmsgmkcmugoya = ManipulateArray::get($egsumesakcaaukem, "\150\x6f\x73\x74");
+        goto mwqsossoseygkwmy;
+        igwqkcqgscwckiuk:
         return $egsumesakcaaukem && $wkwsmsgmkcmugoya && $ccamueccusigaaio && $yukwwaakiyeueawg && strcasecmp($yukwwaakiyeueawg, $wkwsmsgmkcmugoya) !== 0;
-        goto kwakioosoiemmiok;
-        yaiicikgkwuucyac:
-        $wkwsmsgmkcmugoya = ManipulateArray::get($egsumesakcaaukem, "\x68\x6f\x73\x74");
-        goto cwsacmayigiyqiim;
-        cwsacmayigiyqiim:
-        $yukwwaakiyeueawg = ManipulateArray::get($ccamueccusigaaio, "\150\157\x73\x74");
-        goto awcsskayoyoqcuie;
-        kwakioosoiemmiok:
+        goto cyomuiwaiksgqyis;
+        mwqsossoseygkwmy:
+        $yukwwaakiyeueawg = ManipulateArray::get($ccamueccusigaaio, "\x68\x6f\x73\x74");
+        goto igwqkcqgscwckiuk;
+        cyomuiwaiksgqyis:
     }
     
     public static function gooqqcmsyseiaikc($eeamcawaiqocomwy, $wksoawcgagcgoask = -1)
     {
-        goto aamysqsckaiwqayk;
-        aamysqsckaiwqayk:
-        if (function_exists("\x77\160\137\x70\x61\x72\163\145\x5f\x75\x72\154")) {
-            goto ckawikqsskikqiya;
-        }
-        goto ceusqkuwoqusqoug;
-        cysskkuqiccoycuk:
-        ckawikqsskikqiya:
-        goto micwmacyekkoumqe;
-        kcyiiwwsyagcyiic:
-        goto gegywycsimoakaei;
-        goto cysskkuqiccoycuk;
-        ceusqkuwoqusqoug:
+        goto lmguwygiwkqsssgg;
+        mcqousgoosgkwymi:
+        goto cmumiaooyqwsmeuo;
+        goto aaauiqoqqegqooay;
+        oweuewiycuqueioi:
+        cmumiaooyqwsmeuo:
+        goto eoguuwgwkauemioy;
+        soskiwqicumascii:
         $yiasugywggckywoa = parse_url($eeamcawaiqocomwy, $wksoawcgagcgoask);
-        goto kcyiiwwsyagcyiic;
-        micwmacyekkoumqe:
+        goto mcqousgoosgkwymi;
+        aaauiqoqqegqooay:
+        imkwkuoumqqysmmo:
+        goto ccgouqosggeqqywe;
+        lmguwygiwkqsssgg:
+        if (function_exists("\167\160\137\x70\x61\162\x73\145\137\x75\x72\x6c")) {
+            goto imkwkuoumqqysmmo;
+        }
+        goto soskiwqicumascii;
+        ccgouqosggeqqywe:
         $yiasugywggckywoa = wp_parse_url($eeamcawaiqocomwy, $wksoawcgagcgoask);
-        goto iqqsmugsquwuwmys;
-        qoagkeesiqqueeac:
+        goto oweuewiycuqueioi;
+        eoguuwgwkauemioy:
         return $yiasugywggckywoa;
-        goto syaceqoiqwmukkka;
-        iqqsmugsquwuwmys:
-        gegywycsimoakaei:
-        goto qoagkeesiqqueeac;
-        syaceqoiqwmukkka:
+        goto sauuoosgewomwsiy;
+        sauuoosgewomwsiy:
     }
     
     public static function omaawkkwwyesqwcc($ywmkwiwkosakssii, $ycmguuqqaiisymgg = [])
@@ -69,37 +69,37 @@ class ManipulateFormat extends Manipulate
     
     public static function qugygsasyieckkoc(string $eeamcawaiqocomwy) : string
     {
-        goto ywsmaykqgsqcascy;
-        wsekioqwsiuuemiu:
+        goto qgsuysqmamgkcamg;
+        auugmgyeukqkoecc:
+        miaesquumiwuikow:
+        goto geeygkawayuqsesa;
+        geeygkawayuqsesa:
         $eeamcawaiqocomwy = set_url_scheme($eeamcawaiqocomwy);
-        goto eqgaeioggggckcqy;
-        ywsmaykqgsqcascy:
-        if (!(!strpos($eeamcawaiqocomwy, "\x68\164\164\x70\x3a\57\57") !== false && !strpos($eeamcawaiqocomwy, "\x68\x74\164\160\163\x3a\x2f\57") !== false)) {
-            goto iymgcgmyoeuckqyq;
-        }
-        goto qeumeeoamsmgwgga;
-        qeumeeoamsmgwgga:
-        if (!(substr($eeamcawaiqocomwy, 0, 2) !== "\57\57")) {
-            goto eoiammowyewyyqog;
-        }
-        goto sycwismoacqosiiq;
-        sycwismoacqosiiq:
-        $eeamcawaiqocomwy = "\57\57" . $eeamcawaiqocomwy;
-        goto msywwusgwymwiwoo;
-        kwqigwcciguyuegu:
+        goto oeeaiusewwccaeca;
+        oeeaiusewwccaeca:
+        gocakccykoiugocw:
+        goto oamcwqaceqmoiimo;
+        oamcwqaceqmoiimo:
         return $eeamcawaiqocomwy;
-        goto qequskoucemymsom;
-        msywwusgwymwiwoo:
-        eoiammowyewyyqog:
-        goto wsekioqwsiuuemiu;
-        eqgaeioggggckcqy:
-        iymgcgmyoeuckqyq:
-        goto kwqigwcciguyuegu;
-        qequskoucemymsom:
+        goto wemsokoqyyyiemio;
+        qgsuysqmamgkcamg:
+        if (!(!strpos($eeamcawaiqocomwy, "\x68\164\x74\160\x3a\x2f\57") !== false && !strpos($eeamcawaiqocomwy, "\150\x74\x74\x70\x73\x3a\x2f\x2f") !== false)) {
+            goto gocakccykoiugocw;
+        }
+        goto ioyquegiawkuegmw;
+        ioyquegiawkuegmw:
+        if (!(substr($eeamcawaiqocomwy, 0, 2) !== "\x2f\x2f")) {
+            goto miaesquumiwuikow;
+        }
+        goto ckygqsyqoiuiqqgs;
+        ckygqsyqoiuiqqgs:
+        $eeamcawaiqocomwy = "\57\x2f" . $eeamcawaiqocomwy;
+        goto auugmgyeukqkoecc;
+        wemsokoqyyyiemio:
     }
     
     public static function gokuyqsimauyacke($eeamcawaiqocomwy = '') : ?string
     {
-        return str_replace(["\x68\164\x74\160\x3a\57\x2f", "\x68\164\x74\160\x73\72\57\x2f", "\x2f\x2f"], '', $eeamcawaiqocomwy);
+        return str_replace(["\x68\x74\x74\160\72\x2f\x2f", "\150\164\x74\160\163\x3a\57\x2f", "\57\57"], '', $eeamcawaiqocomwy);
     }
 }

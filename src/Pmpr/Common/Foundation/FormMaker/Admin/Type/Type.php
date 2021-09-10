@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613a1be32d755             |
+    |             613b1e8aa0c03             |
     |_______________________________________|
 */
 
@@ -18,28 +18,28 @@ class Type extends Common
     }
     public function iemaakgqgqosiecm()
     {
-        goto mcqoyigqsewkkwgc;
-        eiguqiumekikicuw:
-        Html::symcgieuakksimmu();
-        goto wwauaucuwsokocmm;
-        eccymasqomswiwug:
-        Select2::symcgieuakksimmu();
-        goto yaaisamcwuuowiua;
-        mcqoyigqsewkkwgc:
-        Size::symcgieuakksimmu();
-        goto eiguqiumekikicuw;
-        acoqamisuacwkqyo:
-        BSSelect::symcgieuakksimmu();
-        goto eugsgogsukuqwyou;
-        yaaisamcwuuowiua:
+        goto kqacsgsisiyqukwu;
+        uwamqwaqeaqameay:
         Display::symcgieuakksimmu();
-        goto acoqamisuacwkqyo;
-        wwauaucuwsokocmm:
+        goto wsuecywwyceswegu;
+        kqacsgsisiyqukwu:
+        Size::symcgieuakksimmu();
+        goto qwgqmamimkgqsggm;
+        wgqimukuuuiiuikw:
         Button::symcgieuakksimmu();
-        goto eccymasqomswiwug;
-        eugsgogsukuqwyou:
+        goto kaegcwywgugwmasy;
+        wsuecywwyceswegu:
+        BSSelect::symcgieuakksimmu();
+        goto eccoaekaywucywsm;
+        eccoaekaywucywsm:
         MultiButton::symcgieuakksimmu();
-        goto yeyskwsagaowouas;
-        yeyskwsagaowouas:
+        goto cwsumcqqsccgyymc;
+        qwgqmamimkgqsggm:
+        Html::symcgieuakksimmu();
+        goto wgqimukuuuiiuikw;
+        kaegcwywgugwmasy:
+        Select2::symcgieuakksimmu();
+        goto uwamqwaqeaqameay;
+        cwsumcqqsccgyymc:
     }
 }

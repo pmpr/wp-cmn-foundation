@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613a1be32d755             |
+    |             613b1e8aa0c03             |
     |_______________________________________|
 */
 
@@ -15,22 +15,22 @@ trait HookTrait
     
     public final function ygyygikyocoymgaw($ymqmyyeuycgmigyo, $ykuqcwwmuyqmkisq = true, $quowyokcwswmuois = null) : ?string
     {
-        goto aaaicwymgocaseis;
-        mgkwqmyqgswasocy:
+        goto cmigmsgqgyquimqk;
+        ggsmiqmuykwukucu:
+        scmqowwwcamqgmko:
+        goto cmquiwyeuuqiukoq;
+        cmquiwyeuuqiukoq:
         return ManipulateHook::ygyygikyocoymgaw($ymqmyyeuycgmigyo, $quowyokcwswmuois, $ykuqcwwmuyqmkisq);
-        goto iuimkcgcsyemcuei;
-        aaaicwymgocaseis:
-        if ($quowyokcwswmuois) {
-            goto syoyogomscqcsoyk;
-        }
-        goto aycyouisaiokysqw;
-        moequykwukcqmiga:
-        syoyogomscqcsoyk:
-        goto mgkwqmyqgswasocy;
-        aycyouisaiokysqw:
+        goto wiyqcmuawqcaiqii;
+        qcaquoiwoswywuoq:
         $quowyokcwswmuois = $this->akuociswqmoigkas();
-        goto moequykwukcqmiga;
-        iuimkcgcsyemcuei:
+        goto ggsmiqmuykwukucu;
+        cmigmsgqgyquimqk:
+        if ($quowyokcwswmuois) {
+            goto scmqowwwcamqgmko;
+        }
+        goto qcaquoiwoswywuoq;
+        wiyqcmuawqcaiqii:
     }
     
     public final function sscegwueamckwmcy(string $iaakskwmyqceoscy, ...$ywmkwiwkosakssii)

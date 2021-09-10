@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613a1be32d755             |
+    |             613b1e8aa0c03             |
     |_______________________________________|
 */
 
@@ -24,7 +24,7 @@ class Source extends Data
     
     protected ?string $inline = '';
     
-    protected string $media = "\141\154\x6c";
+    protected string $media = "\x61\x6c\154";
     
     protected bool $inFooter = true;
     
@@ -34,17 +34,17 @@ class Source extends Data
     
     public function __construct(string $eueuqacmukymcyya = '', $ogomymegcoacqisg = '', string $sqeykgyoooqysmca = self::SCRIPT)
     {
-        goto ygyqyeocqgucysak;
-        kqwioeqkgsgmmymg:
+        goto kkckckioiqcwoukw;
+        oewkyegysuioqeuy:
         $this->handle = $eueuqacmukymcyya;
-        goto ssiykmokuqwoukkq;
-        ceuqgimswukikqiq:
-        $this->type = $sqeykgyoooqysmca;
-        goto kqwioeqkgsgmmymg;
-        ygyqyeocqgucysak:
+        goto wmigqcwwousgyuqc;
+        kkckckioiqcwoukw:
         $this->src = $ogomymegcoacqisg;
-        goto ceuqgimswukikqiq;
-        ssiykmokuqwoukkq:
+        goto zocygeecusggsqgy;
+        zocygeecusggsqgy:
+        $this->type = $sqeykgyoooqysmca;
+        goto oewkyegysuioqeuy;
+        wmigqcwwousgyuqc:
     }
     
     public function mgaeeqsgeoukeokc()
@@ -109,40 +109,40 @@ class Source extends Data
     
     public function ayuciigykaswwqeo(string $yeiguwcugmswcysy) : self
     {
-        goto scgiymugkuqikuoo;
-        eqeggksucqsyyqgy:
-        return $this;
-        goto kiieeckyooaiakiy;
-        weookqwiumeyqgqe:
-        swwsoucgukwwokou:
-        goto eqeggksucqsyyqgy;
-        scgiymugkuqikuoo:
+        goto eqgwseukuesiwuuq;
+        egkiiogswgakiack:
+        kaycsosiqusqeiio:
+        goto mgyqaewckasyuiie;
+        eqgwseukuesiwuuq:
         if (in_array($yeiguwcugmswcysy, $this->auskmiuqesyqemgc())) {
-            goto swwsoucgukwwokou;
+            goto kaycsosiqusqeiio;
         }
-        goto kggqciusmciogeoc;
-        kggqciusmciogeoc:
+        goto cyeauauawcaoqwsi;
+        cyeauauawcaoqwsi:
         $this->dependencies[] = $yeiguwcugmswcysy;
-        goto weookqwiumeyqgqe;
-        kiieeckyooaiakiy:
+        goto egkiiogswgakiack;
+        mgyqaewckasyuiie:
+        return $this;
+        goto qweasgqgummkgesw;
+        qweasgqgummkgesw:
     }
     
     public function kkqyswgcoseeawmu(array $ugmuiugkaygmsagq) : self
     {
-        goto cwqgyckguaiciiam;
-        ekqawkaqkgwygyys:
+        goto womyiwaoigaequiw;
+        amwiioosseiocuic:
         return $this;
-        goto gaaikwwqsgaskqos;
-        qeeakiaqiwkogiki:
-        mkwcgkgauikuqkgs:
-        goto ekqawkaqkgwygyys;
-        cwqgyckguaiciiam:
+        goto cyueaiekggqumaic;
+        womyiwaoigaequiw:
         foreach ($ugmuiugkaygmsagq as $yeiguwcugmswcysy) {
             $this->ayuciigykaswwqeo($yeiguwcugmswcysy);
-            iekoocwecouagekw:
+            ykkuoyukeqkaiamg:
         }
-        goto qeeakiaqiwkogiki;
-        gaaikwwqsgaskqos:
+        goto wiaauiiuyogwauum;
+        wiaauiiuyogwauum:
+        skkkocayisgiuaoq:
+        goto amwiioosseiocuic;
+        cyueaiekggqumaic:
     }
     
     public function gueasuouwqysmomu() : string
@@ -169,25 +169,25 @@ class Source extends Data
     
     public function simqeemkoyaqkkwe() : bool
     {
-        goto scwgaeqqquyqoeey;
-        acqcuwoawoiqqcgw:
-        $wgcyssuyaqysoqya = call_user_func($wgcyssuyaqysoqya);
-        goto qqooskcsgmwcqmyo;
-        acymaqouwqmcmisy:
-        return (bool) $wgcyssuyaqysoqya;
-        goto kuusqsqwcyeicqcu;
-        qqooskcsgmwcqmyo:
-        guyaeuucuqosewwe:
-        goto acymaqouwqmcmisy;
-        muyyguewmgkysmqi:
+        goto squkoccwioggcaye;
+        oocgwowiyomcosac:
         if (!is_callable($wgcyssuyaqysoqya)) {
-            goto guyaeuucuqosewwe;
+            goto owseqyqgagqaacmy;
         }
-        goto acqcuwoawoiqqcgw;
-        scwgaeqqquyqoeey:
+        goto ggywsksyyogoocie;
+        mcacwiaagqysweem:
+        owseqyqgagqaacmy:
+        goto oqokmmqoikgwmsai;
+        oqokmmqoikgwmsai:
+        return (bool) $wgcyssuyaqysoqya;
+        goto yackuaqwsqcwciyo;
+        squkoccwioggcaye:
         $wgcyssuyaqysoqya = $this->eeiaogaokoekgmeq();
-        goto muyyguewmgkysmqi;
-        kuusqsqwcyeicqcu:
+        goto oocgwowiyomcosac;
+        ggywsksyyogoocie:
+        $wgcyssuyaqysoqya = call_user_func($wgcyssuyaqysoqya);
+        goto mcacwiaagqysweem;
+        yackuaqwsqcwciyo:
     }
     
     public function mmoosseiswcigswg() : ?string
@@ -219,19 +219,19 @@ class Source extends Data
     
     public function simswskycwagoeqy() : self
     {
-        goto yoigaymqwkcqioac;
-        gescaykeyikwwqos:
-        return $this;
-        goto eeaicwceqqsiymuq;
-        eusesuocygoggmyw:
-        $syqogysesqgmqoqi = $qsaooqieuwgqwmmc->yomasssaasmawcso("\147\154\x6f\x62\x61\154");
-        goto oyuyqykycywqikma;
-        yoigaymqwkcqioac:
+        goto yqiaqmigsoeqmgwo;
+        yqiaqmigsoeqmgwo:
         $qsaooqieuwgqwmmc = Foundation::symcgieuakksimmu()->miocmcoykayoyyau();
-        goto eusesuocygoggmyw;
-        oyuyqykycywqikma:
-        $this->kkqyswgcoseeawmu(["\152\161\x75\145\162\x79", $syqogysesqgmqoqi]);
-        goto gescaykeyikwwqos;
-        eeaicwceqqsiymuq:
+        goto aiswkmkmkckuociu;
+        wuesuwyyyaesmkas:
+        $this->kkqyswgcoseeawmu(["\152\161\x75\145\x72\171", $syqogysesqgmqoqi]);
+        goto uoeogwamkogoqoow;
+        uoeogwamkogoqoow:
+        return $this;
+        goto emyigiiocasusaea;
+        aiswkmkmkckuociu:
+        $syqogysesqgmqoqi = $qsaooqieuwgqwmmc->yomasssaasmawcso("\x67\154\157\x62\x61\x6c");
+        goto wuesuwyyyaesmkas;
+        emyigiiocasusaea:
     }
 }

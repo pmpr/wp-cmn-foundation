@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613a1be32d755             |
+    |             613b1e8aa0c03             |
     |_______________________________________|
 */
 
@@ -11,15 +11,15 @@ namespace Pmpr\Common\Foundation\Data;
 class Font extends Data
 {
     
-    protected ?string $display = "\146\x61\154\x6c\x62\x61\x63\x6b";
+    protected ?string $display = "\146\x61\154\x6c\142\141\x63\153";
     
     protected ?string $family = '';
     
-    protected ?string $weight = "\156\x6f\x72\x6d\141\154";
+    protected ?string $weight = "\x6e\157\x72\x6d\x61\x6c";
     
     protected ?string $style = '';
     
-    protected ?string $format = "\167\157\x66\x66\62";
+    protected ?string $format = "\x77\157\x66\146\62";
     
     protected ?array $locales = [];
     

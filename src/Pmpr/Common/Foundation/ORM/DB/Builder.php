@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             613a1be32d755             |
+    |             613b1e8aa0c03             |
     |_______________________________________|
 */
 
@@ -12,27 +12,27 @@ use Illuminate\Database\Query\Builder as BaseClass;
 class Builder extends BaseClass
 {
     
-    public function addWhereExistsQuery($gqgemcmoicmgaqie, $qsycuegoicqcqkmo = "\x61\x6e\x64", $mqogqgswmasasmik = false) : Builder
+    public function addWhereExistsQuery($gqgemcmoicmgaqie, $qsycuegoicqcqkmo = "\141\x6e\144", $mqogqgswmasasmik = false) : Builder
     {
-        goto ayeqwsqywosymiwu;
-        oemkgkauqekgkumy:
-        $this->wheres[] = compact("\164\x79\x70\x65", "\161\165\x65\162\x79", "\x62\x6f\157\154\x65\x61\x6e");
-        goto iuoayeiykmokiiys;
-        ayeqwsqywosymiwu:
-        $sqeykgyoooqysmca = $mqogqgswmasasmik ? "\116\x6f\164\x45\x78\x69\163\x74\x73" : "\x45\170\151\163\x74\x73";
-        goto oemkgkauqekgkumy;
-        ygegasgiwgmswaog:
-        return $this;
-        goto qiaaqckmooiayuae;
-        iuoayeiykmokiiys:
+        goto caccouegecmukqci;
+        icsukicuomwmqiyc:
         
         $iykmscciaowcagqu = $gqgemcmoicmgaqie->getBindings();
-        goto mmmgeukkswewyuoa;
-        mmmgeukkswewyuoa:
+        goto akqkquwcomkgeqcy;
+        kiaguokkqkaokqqw:
+        return $this;
+        goto kaimmgsyuygocsos;
+        akqkquwcomkgeqcy:
         
         $this->addBinding($iykmscciaowcagqu);
-        goto ygegasgiwgmswaog;
-        qiaaqckmooiayuae:
+        goto kiaguokkqkaokqqw;
+        caccouegecmukqci:
+        $sqeykgyoooqysmca = $mqogqgswmasasmik ? "\x4e\x6f\x74\105\170\151\x73\x74\x73" : "\x45\x78\x69\163\x74\163";
+        goto osouwwksqimikqqo;
+        osouwwksqimikqqo:
+        $this->wheres[] = compact("\x74\x79\160\x65", "\161\165\145\x72\171", "\x62\x6f\x6f\x6c\145\x61\156");
+        goto icsukicuomwmqiyc;
+        kaimmgsyuygocsos:
     }
     
     public function leftJoin($aasascamegmwqmqk, $sysgmomuyiiawwcm, $cackiyicawmkyqqg = null, $gcegymooyemmaysk = null) : Builder
@@ -44,26 +44,26 @@ class Builder extends BaseClass
     
     public function cokoiaeeomgssqgy($aasascamegmwqmqk) : string
     {
-        goto ayuwkwsuioumscca;
-        gswoagoguesomwyc:
-        if (!$mgcmmwqwguicsews instanceof Database) {
-            goto mswucuuigmosimuo;
-        }
-        goto ecomecoqggyssmsk;
-        ecomecoqggyssmsk:
-        
-        $aasascamegmwqmqk = $mgcmmwqwguicsews->getTableName($aasascamegmwqmqk);
-        goto agicooogqyeyoyqi;
-        osoukeawsoyqmwgo:
-        return $aasascamegmwqmqk;
-        goto wesooeakucoqmisw;
-        agicooogqyeyoyqi:
-        mswucuuigmosimuo:
-        goto osoukeawsoyqmwgo;
-        ayuwkwsuioumscca:
+        goto qiimegquckqywkaq;
+        rwekqsecucoaeyua:
+        eigusiimieqkeiuo:
+        goto ugiuakmiswagycwy;
+        qiimegquckqywkaq:
         
         $mgcmmwqwguicsews = $this->getConnection();
-        goto gswoagoguesomwyc;
-        wesooeakucoqmisw:
+        goto iceweuyyswquiiea;
+        ymkwkqaswwcwaaog:
+        
+        $aasascamegmwqmqk = $mgcmmwqwguicsews->getTableName($aasascamegmwqmqk);
+        goto rwekqsecucoaeyua;
+        iceweuyyswquiiea:
+        if (!$mgcmmwqwguicsews instanceof Database) {
+            goto eigusiimieqkeiuo;
+        }
+        goto ymkwkqaswwcwaaog;
+        ugiuakmiswagycwy:
+        return $aasascamegmwqmqk;
+        goto qqywgucwkcwwwika;
+        qqywgucwkcwwwika:
     }
 }
