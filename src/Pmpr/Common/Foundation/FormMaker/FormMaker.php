@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             614899bb6becb             |
+    |             6148af59305f3             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\FormMaker; use Pmpr\Common\Foundation\FormMaker\Admin\Admin; class FormMaker extends Common { public function __construct() { parent::__construct(); $this->iemaakgqgqosiecm(); } public function iemaakgqgqosiecm() { if (!is_admin()) { goto imwwaqcuqskiyeqc; } Admin::symcgieuakksimmu(); imwwaqcuqskiyeqc: } }
+ namespace Pmpr\Common\Foundation\FormMaker; use Pmpr\Common\Foundation\FormMaker\Admin\Admin; class FormMaker extends Common { public function __construct() { parent::__construct(); $this->iemaakgqgqosiecm(); } public function iemaakgqgqosiecm() { if (!is_admin()) { goto owsusyqkaqmcmkwu; } Admin::symcgieuakksimmu(); owsusyqkaqmcmkwu: } }
