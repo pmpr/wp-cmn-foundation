@@ -4,10 +4,11 @@
   "license": "proprietary",
   "description": "Generic and reusable component for other wordpress packages and themes",
   "keywords": [
-    "wordpress",
-    "moduel",
+    "module",
     "generic",
-    "reusable"
+    "reusable",
+    "wordpress",
+    "foundation"
   ],
   "require": {
     "php": ">=7.4",
