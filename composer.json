@@ -14,7 +14,7 @@
     "php": ">=7.4",
     "twig/twig": "^v3.0.5",
     "symfony/asset": "^v5.2.0",
-    "narmafzam/cmb2": "^v2.7.2",
+    "narmafzam/cmb2": "^v2.7.3",
     "monolog/monolog": "^2.2.0",
     "symfony/finder": "^v5.2.0",
     "guzzlehttp/guzzle": "^7.2",
