@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             614b7498748e8             |
+    |             614b797c47527             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\Template\Twig; abstract class Callback extends Common { protected ?Engine $twig = null; public function __construct(Engine $eyoesceegakeygsi) { goto osqiaawasseesgeu; osqiaawasseesgeu: $this->twig = $eyoesceegakeygsi; goto eqgwasegeiumuiwk; gwsquykmiyoueaem: $this->iemaakgqgqosiecm(); goto muqcakiqomgiouww; eqgwasegeiumuiwk: parent::__construct(); goto gwsquykmiyoueaem; muqcakiqomgiouww: } public function yyyewgugioamwckw() : Engine { return $this->twig; } public abstract function iemaakgqgqosiecm(); }
+ namespace Pmpr\Common\Foundation\Template\Twig; abstract class Callback extends Common { protected ?Engine $twig = null; public function __construct(Engine $eyoesceegakeygsi) { goto osqiaawasseesgeu; gwsquykmiyoueaem: $this->iemaakgqgqosiecm(); goto muqcakiqomgiouww; eqgwasegeiumuiwk: parent::__construct(); goto gwsquykmiyoueaem; osqiaawasseesgeu: $this->twig = $eyoesceegakeygsi; goto eqgwasegeiumuiwk; muqcakiqomgiouww: } public function yyyewgugioamwckw() : Engine { return $this->twig; } public abstract function iemaakgqgqosiecm(); }
