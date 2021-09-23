@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             614b9be7819d4             |
+    |             614c492c990fb             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Woocommerce\Attribute; use Pmpr\Common\Foundation\Woocommerce\Common as BaseClass; abstract class Common extends BaseClass { }
