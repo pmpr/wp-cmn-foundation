@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             614c5850e65e4             |
+    |             614c59e60d76e             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\FormMaker\Admin\Element; class Tool extends Page { public function __construct() { goto qgkmsokwcmmawiey; aouoeqamkuemyeqa: $this->parentMenu = "\164\x6f\157\x6c\163\56\160\150\160"; goto ukcyuqaycogiiiye; oiseukwsseayeamo: parent::__construct(); goto awcwocukswgsaymk; qgkmsokwcmmawiey: $this->type = "\x74\157\x6f\x6c\163"; goto ugiuoawueimimiwk; ugiuoawueimimiwk: if ($this->cgugaaoykcyiomuk()) { goto qweqcmkkiqkkukis; } goto aouoeqamkuemyeqa; ukcyuqaycogiiiye: qweqcmkkiqkkukis: goto oiseukwsseayeamo; awcwocukswgsaymk: } }
+ namespace Pmpr\Common\Foundation\FormMaker\Admin\Element; class Tool extends Page { public function __construct() { goto qgkmsokwcmmawiey; ukcyuqaycogiiiye: qweqcmkkiqkkukis: goto oiseukwsseayeamo; oiseukwsseayeamo: parent::__construct(); goto awcwocukswgsaymk; aouoeqamkuemyeqa: $this->parentMenu = "\x74\x6f\x6f\154\163\56\x70\150\160"; goto ukcyuqaycogiiiye; qgkmsokwcmmawiey: $this->type = "\164\x6f\x6f\154\x73"; goto ugiuoawueimimiwk; ugiuoawueimimiwk: if ($this->cgugaaoykcyiomuk()) { goto qweqcmkkiqkkukis; } goto aouoeqamkuemyeqa; awcwocukswgsaymk: } }
