@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             614c554b12422             |
+    |             614c5850e65e4             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Manipulate\Type; use Pmpr\Common\Foundation\Manipulate\Manipulate; abstract class Common extends Manipulate { }
