@@ -3,9 +3,9 @@
     {% for title, field in fields %}
         <tr class="form-field">
             <th scope="row">
-                <label for="{{ item.getId()|esc_attr }}" class="">{{ field.getAttribute('title')|raw }}</label>
+                <label for="{{ item.id|esc_attr }}" class="">{{ field|call('getAttribute', 'title')|raw }}</label>
             </th>
-            <td>{{ field.render()|raw }}</td>
+            <td>{{ field|call('render')|raw }}</td>
         </tr>
     {% endfor %}
 {% endif %}

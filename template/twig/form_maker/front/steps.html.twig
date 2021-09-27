@@ -1,12 +1,12 @@
 <nav class="steps-nav">
     <div class="steps-list" data-total-steps="{{ steps|length }}">
         {% for step in steps %}
-            <div class="step" id="{{ step.getId()|raw }}" data-step="{{ step.getNumber()|raw }}"
+            <div class="step" id="{{ step.id|raw }}" data-step="{{ step.number|raw }}"
                  data-state="{% if loop.first %}current{% else %}pending{% endif %}"
-                 data-target="#step_content_{{ step.getId()|raw }}">
+                 data-target="#step_content_{{ step.id|raw }}">
                 <div class="step-wrapper">
-                    <div class="step-icon pr-3">{{ get_icon(step.getIcon(), {class: 'icon-xl'})|raw }}</div>
-                    <div class="step-label">{{ step.getTitle()|raw }}</div>
+                    <div class="step-icon pr-3">{{ get_icon(step.icon, {class: 'icon-xl'})|raw }}</div>
+                    <div class="step-label">{{ step.title|raw }}</div>
                     <div class="invalid-icon ml-auto">{{ get_icon(invalid_icon, {class: 'icon-danger icon-lg'})|raw }}</div>
                 </div>
             </div>
@@ -18,23 +18,23 @@
     <div class="step-message-container"></div>
     <div class="card-body p-5">
         {% for step in steps %}
-            <div class="step-content" id="step_content_{{ step.getId()|raw }}"
+            <div class="step-content" id="step_content_{{ step.id|raw }}"
                  data-state="{% if loop.first %}current{% else %}pending{% endif %}">
                 <div class="d-flex justify-content-between flex-column h-100" style="min-height: 400px;">
-                    {{ step.render()|raw }}
+                    {{ step|call('render')|raw }}
                     <div class="step-actions">
                         {% set btn_common_class = 'btn px-5' %}
                         {% if loop.first %}
-                            {{ step.getNextButton({class: (btn_common_class ~ ' btn-primary float-right action-next'), type: 'button'})|raw }}
+                            {{ step|call('getNextButton', {class: (btn_common_class ~ ' btn-primary float-right action-next'), type: 'button'})|raw }}
                         {% else %}
                             <div class="d-flex justify-content-between">
-                                {{ step.getPrevButton({class: (btn_common_class ~ ' btn-secondary action-prev'), type: 'button'})|raw }}
+                                {{ step|call('getPrevButton', {class: (btn_common_class ~ ' btn-secondary action-prev'), type: 'button'})|raw }}
                                 {% if loop.last %}
 
-                                    {{ step.getNextButton({class: (btn_common_class ~ ' btn-success float-right action-submit'), type: 'submit'})|raw }}
+                                    {{ step|call('getNextButton', {class: (btn_common_class ~ ' btn-success float-right action-submit'), type: 'submit'})|raw }}
                                 {% else %}
 
-                                    {{ step.getNextButton({class: (btn_common_class ~ ' btn-primary action-next'), type: 'button'})|raw }}
+                                    {{ step|call('getNextButton', {class: (btn_common_class ~ ' btn-primary action-next'), type: 'button'})|raw }}
                                 {% endif %}
                             </div>
                         {% endif %}

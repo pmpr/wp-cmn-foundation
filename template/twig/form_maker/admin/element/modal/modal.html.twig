@@ -26,9 +26,9 @@
                                 {% for key, segment in segments.has_parent[key] %}
 
                                     {% include get_template('menu_item', _self) with {
-                                        key: segment.getKey(),
-                                        icon: segment.getIcon(),
-                                        title: segment.getTitle(),
+                                        key: segment|call('getKey'),
+                                        icon: segment.icon,
+                                        title: segment.title,
                                         is_parent: 0
                                     } %}
                                 {% endfor %}
@@ -41,9 +41,9 @@
                 {% for key, segment in segments.no_parent %}
 
                     {% include get_template('menu_item', _self) with {
-                        key: segment.getKey(),
-                        icon: segment.getIcon(),
-                        title: segment.getTitle(),
+                        key: segment|call('getKey'),
+                        icon: segment.icon,
+                        title: segment.title,
                         is_parent: 0
                     } %}
                 {% endfor %}
@@ -63,17 +63,17 @@
                 <div class="pr-ffm-modal-frame-contents{% if contents_class is not empty %} {{ contents_class|esc_attr }}{% endif %}">
                     {% for segment in segments.all %}
                         <div class="pr-ffm-modal-content"
-                             id="pr_ffm_{{ segment.getKey()|esc_attr }}_content">
-                            {{ segment.render()|raw }}
+                             id="pr_ffm_{{ segment|call('getKey')|esc_attr }}_content">
+                            {{ segment|call('render')|raw }}
                         </div>
                     {% endfor %}
                 </div>
                 <div class="pr-ffm-modal-frame-toolbar">
                     {% for segment in segments.all %}
                         <div class="pr-ffm-modal-toolbar"
-                             id="pr_ffm_{{ segment.getKey()|esc_attr }}_toolbar">
+                             id="pr_ffm_{{ segment|call('getKey')|esc_attr }}_toolbar">
                             <div class="pr-ffm-modal-toolbar-primary">
-                                {% for button in segment.getButtons() %}
+                                {% for button in segment|call('getButtons') %}
                                     <button type="button" {{ button.attrs|parse_attrs|raw }}>{{ button.title|raw }}</button>
                                 {% endfor %}
                             </div>

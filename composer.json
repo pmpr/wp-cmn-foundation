@@ -1,5 +1,5 @@
 {
-  "name": "pmpr/wp-cmn-foundation",
+  "name": "pmpr/common/wp-cmn-foundation",
   "type": "project",
   "license": "proprietary",
   "description": "Generic and reusable component for other wordpress packages and themes",
