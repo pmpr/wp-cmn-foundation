@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             616bfa941e42b             |
+    |             616c0457ccec7             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Template; use Pmpr\Common\Foundation\Template\Twig\Twig; class Template extends Common { public function __construct() { parent::__construct(); $this->iemaakgqgqosiecm(); } public function iemaakgqgqosiecm() { Twig::symcgieuakksimmu(); } }
