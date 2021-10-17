@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             616bf84f8d949             |
+    |             616bfa941e42b             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\Decorator; use Pmpr\Common\Foundation\Interfaces\ConstantInterface; abstract class Decorator implements ConstantInterface { public static function qyyygkguqcmgkmey($ekiuyucoiagmscgy, $ggauoeuaesiymgee = false, ...$ywmkwiwkosakssii) { goto escickciciscoaec; moqawwqumcaawiac: return $ksaameoqigiaoigg; goto iqicywyqosukgyom; ugsyqugoqmsmwmwc: $ksaameoqigiaoigg = call_user_func($ekiuyucoiagmscgy, ...$ywmkwiwkosakssii); goto gaaewsyiiysgawgu; escickciciscoaec: $ksaameoqigiaoigg = $ggauoeuaesiymgee; goto isyiocycgikqamoi; isyiocycgikqamoi: if (!function_exists($ekiuyucoiagmscgy)) { goto sweugqqowwoamomc; } goto ugsyqugoqmsmwmwc; gaaewsyiiysgawgu: sweugqqowwoamomc: goto moqawwqumcaawiac; iqicywyqosukgyom: } }
+ namespace Pmpr\Common\Foundation\Decorator; use Pmpr\Common\Foundation\Interfaces\ConstantInterface; abstract class Decorator implements ConstantInterface { public static function qyyygkguqcmgkmey($ekiuyucoiagmscgy, $ggauoeuaesiymgee = false, ...$ywmkwiwkosakssii) { goto isyiocycgikqamoi; isyiocycgikqamoi: $ksaameoqigiaoigg = $ggauoeuaesiymgee; goto ugsyqugoqmsmwmwc; iqicywyqosukgyom: return $ksaameoqigiaoigg; goto mcuskskiayekoamu; gaaewsyiiysgawgu: $ksaameoqigiaoigg = call_user_func($ekiuyucoiagmscgy, ...$ywmkwiwkosakssii); goto moqawwqumcaawiac; moqawwqumcaawiac: escickciciscoaec: goto iqicywyqosukgyom; ugsyqugoqmsmwmwc: if (!function_exists($ekiuyucoiagmscgy)) { goto escickciciscoaec; } goto gaaewsyiiysgawgu; mcuskskiayekoamu: } }
