@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             616d6b1849937             |
+    |             616fe2c161c0b             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\FormMaker; use Pmpr\Common\Foundation\FormMaker\Admin\Admin; class FormMaker extends Common { public function __construct() { parent::__construct(); $this->iemaakgqgqosiecm(); } public function iemaakgqgqosiecm() { goto gqkaemugiuqsakac; gmwgckwgwcswwsys: okyewgwqccwumwew: goto yawsicegksimgmco; kwyqumksiocogsue: Admin::symcgieuakksimmu(); goto gmwgckwgwcswwsys; gqkaemugiuqsakac: if (!is_admin()) { goto okyewgwqccwumwew; } goto kwyqumksiocogsue; yawsicegksimgmco: } }
+ namespace Pmpr\Common\Foundation\FormMaker; use Pmpr\Common\Foundation\FormMaker\Admin\Admin; class FormMaker extends Common { public function __construct() { parent::__construct(); $this->iemaakgqgqosiecm(); } public function iemaakgqgqosiecm() { goto wumkcikqsegaceuy; okyewgwqccwumwew: mukimwqesmuuceii: goto gqkaemugiuqsakac; wumkcikqsegaceuy: if (!is_admin()) { goto mukimwqesmuuceii; } goto gmmcayeamkkksegg; gmmcayeamkkksegg: Admin::symcgieuakksimmu(); goto okyewgwqccwumwew; gqkaemugiuqsakac: } }
