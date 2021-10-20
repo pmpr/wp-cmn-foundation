@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             616febac1ec3f             |
+    |             616ffcb3600ae             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\FormMaker\Front\Field; class Header extends Html { public function __construct(?string $aokagokqyuysuksm, ?string $meqocwsecsywiiqs) { $this->title = $meqocwsecsywiiqs; parent::__construct($aokagokqyuysuksm); } protected ?string $title = null; public function qcgakseyaikigqco() : ?string { return $this->title; } public function gswweykyogmsyawy(?string $meqocwsecsywiiqs) : self { $this->title = $meqocwsecsywiiqs; return $this; } }
