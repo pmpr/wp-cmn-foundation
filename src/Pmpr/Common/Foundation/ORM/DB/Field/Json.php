@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             616fe2c161c0b             |
+    |             616febac1ec3f             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\ORM\DB\Field; class Json extends Field { public function __construct(string $aokagokqyuysuksm, ?string $meqocwsecsywiiqs = null) { parent::__construct("\x6a\163\x6f\x6e", $aokagokqyuysuksm, $meqocwsecsywiiqs); } }
