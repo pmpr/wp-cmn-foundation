@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr Common Foundation\n"
-"POT-Creation-Date: 2021-10-12 23:52+0330\n"
-"PO-Revision-Date: 2021-10-12 23:58+0330\n"
+"POT-Creation-Date: 2021-11-10 00:52+0330\n"
+"PO-Revision-Date: 2021-11-10 00:52+0330\n"
 "Last-Translator:  Farshad Asgharzade <Farshad_asgharzade@hotmail.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -22,15 +22,15 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: lib\n"
 "X-Poedit-SearchPathExcluded-1: *.js\n"
 
-#: src/Pmpr/Common/Foundation/API/API.php:415
+#: src/Pmpr/Common/Foundation/API/API.php:454
 msgid "Response is not valid"
 msgstr "پاسخ معتبر نیست"
 
-#: src/Pmpr/Common/Foundation/API/API.php:438
+#: src/Pmpr/Common/Foundation/API/API.php:476
 msgid "Connection Error"
 msgstr "خطای اتصال به شبکه"
 
-#: src/Pmpr/Common/Foundation/API/API.php:468
+#: src/Pmpr/Common/Foundation/API/API.php:506
 msgid "Error Code"
 msgstr "کد خطا"
 
@@ -48,22 +48,22 @@ msgstr ""
 msgid "Ops! Something is wrong. Are you hacking?! :("
 msgstr "اوپس! اشکالی به وجود آمده است. :("
 
-#: src/Pmpr/Common/Foundation/Ajax.php:344
+#: src/Pmpr/Common/Foundation/Ajax.php:401
 #, php-format
 msgid "Name: %s"
 msgstr "نام:‌ %s"
 
-#: src/Pmpr/Common/Foundation/Ajax.php:345
+#: src/Pmpr/Common/Foundation/Ajax.php:402
 #, php-format
 msgid "Email: %s"
 msgstr "ایمیل: %s"
 
-#: src/Pmpr/Common/Foundation/Ajax.php:346
+#: src/Pmpr/Common/Foundation/Ajax.php:403
 #, php-format
 msgid "Roles: %s"
 msgstr "نقش‌های کاربری: %s"
 
-#: src/Pmpr/Common/Foundation/Ajax.php:347
+#: src/Pmpr/Common/Foundation/Ajax.php:404
 #, php-format
 msgid "Username: %s"
 msgstr "نام کاربری:‌ %s"
@@ -129,75 +129,21 @@ msgstr "مشاهده %s"
 msgid "Preview %s"
 msgstr "پیش‌نمایش %s"
 
-#: src/Pmpr/Common/Foundation/Filesystem.php:553
+#: src/Pmpr/Common/Foundation/Filesystem.php:557
 msgid "b"
 msgstr "بیت"
 
-#: src/Pmpr/Common/Foundation/Filesystem.php:554
+#: src/Pmpr/Common/Foundation/Filesystem.php:558
 msgid "KB"
 msgstr "کیلو‌بایت"
 
-#: src/Pmpr/Common/Foundation/Filesystem.php:555
+#: src/Pmpr/Common/Foundation/Filesystem.php:559
 msgid "MB"
 msgstr "مگابایت"
 
-#: src/Pmpr/Common/Foundation/Filesystem.php:556
+#: src/Pmpr/Common/Foundation/Filesystem.php:560
 msgid "GB"
 msgstr "گیگابایت"
-
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Admin.php:62
-msgid "White"
-msgstr "سفید"
-
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Admin.php:66
-msgid "Light Gray"
-msgstr "خاکستری روشن"
-
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Admin.php:70
-msgid "Gray"
-msgstr "خاکستری"
-
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Admin.php:74
-msgid "Dark Gray"
-msgstr "خاکستری تیره"
-
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Admin.php:78
-msgid "Black"
-msgstr "سیاه"
-
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Admin.php:97
-msgid "Background Color"
-msgstr "رنگ پس‌زمینه"
-
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Admin.php:98
-msgid "Text Color"
-msgstr "رنگ متن"
-
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Admin.php:100
-msgid ""
-"Any changes on this link or target content, would invalidate the purchased "
-"module or theme's license and your website's API key."
-msgstr ""
-"هر نوع دستکاری در لینک یا محتوای مقصد آن سبب حذف اعتبار لایسنس ماژول خریداری "
-"شده و کلید API سایت شما خواهد شد."
-
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Admin.php:101
-msgid ""
-"According to the discount you got during purchase of some modules or themes, "
-"a link with the following appearance settings will be added to your site "
-"footer."
-msgstr ""
-"با توجه به دریافت تخفیف مشروط به درج لینک، حین خرید برخی از ماژول‌ها یا "
-"پوسته‌ها، یک لینک با مشخصات ظاهری زیر، به فوتر سایت شما اضافه می‌شود."
-
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Admin.php:106
-#, php-format
-msgid "%s %s all rights reserved for %s"
-msgstr "%s %s تمامی حقوق برای %s محفوظ است"
-
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Admin.php:112
-msgid "Footer Backlink Style"
-msgstr "استایل بک لینک"
 
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Modal/Modal.php:113
 msgid "Contents List"
@@ -207,13 +153,13 @@ msgstr "فهرست"
 msgid "Close Modal"
 msgstr "بستن"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:121
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:122
 #, php-format
 msgid "To complete the installation of %s, enter this module's license key."
 msgstr ""
 "برای تکمیل فرآیند نصب ماژول %s، کلید لایسنس ماژول مورد نظر را وارد کنید."
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:163
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:162
 msgid "Your license key saved successfully."
 msgstr "کلید لایسنس شما با موفقیت ذخیره شد."
 
@@ -223,22 +169,22 @@ msgstr "کلید لایسنس شما با موفقیت ذخیره شد."
 msgid "Your license key is not valid."
 msgstr "پاسخ معتبر نیست"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:181
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:182
 #: src/Pmpr/Common/Foundation/ORM/View/Edit.php:159
 msgid "Save Changes"
 msgstr "ذخیره تغییرات"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:194
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:195
 msgid "License"
 msgstr "لایسنس"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:198
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:199
 #, fuzzy
 #| msgid "Site Key"
 msgid "License Key"
 msgstr "کلید عمومی"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:204
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:205
 #, fuzzy
 #| msgid "Save Changes"
 msgid "Save License"
@@ -263,7 +209,7 @@ msgid "Deselect"
 msgstr "چند  انتخابی"
 
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Field/Checkbox.php:31
-#: src/Pmpr/Common/Foundation/Woocommerce/MultiStepSingleProduct.php:211
+#: src/Pmpr/Common/Foundation/Woocommerce/MultiStepSingleProduct.php:217
 msgid "Enable"
 msgstr "فعال"
 
@@ -314,35 +260,35 @@ msgstr ""
 msgid "Settings Updated"
 msgstr "تنظیمات با موفقیت به روز شد"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:95
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:103
 msgid "Icon Size"
 msgstr "اندازه آیکون"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:624
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:631
 msgid "min"
 msgstr "دقیقه"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:625
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:632
 msgid "hr"
 msgstr "ساعت"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:636
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:643
 msgid "No Limit"
 msgstr "بدون محدودیت"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:763
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:771
 #: vendor/narmafzam/cmb2/includes/CMB2_Field.php:1448
 #: vendor/narmafzam/cmb2/includes/CMB2_Field.php:1452
 msgid "None"
 msgstr "هیچکدام"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:794
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:802
 msgid "Color"
 msgstr "رنگ"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:808
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:837
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:850
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:816
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:845
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:858
 msgid "Icon"
 msgstr "آیکون"
 
@@ -391,30 +337,42 @@ msgstr "ارتفاع"
 msgid "Loading"
 msgstr "بارگذاری"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Front/Field/Collection.php:117
+#: src/Pmpr/Common/Foundation/FormMaker/Front/Field/Collection.php:184
 #: src/Pmpr/Common/Foundation/ORM/View/Edit.php:330
 msgid "Add"
 msgstr "افزودن"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Front/Field/Collection.php:125
+#: src/Pmpr/Common/Foundation/FormMaker/Front/Field/Collection.php:194
 #: vendor/narmafzam/cmb2/includes/CMB2_JS.php:165
 #: vendor/narmafzam/cmb2/includes/CMB2_JS.php:210
 msgid "Clear"
 msgstr "پاک کردن"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Front/Field/Collection.php:144
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1929
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1955
-#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:124
+#: src/Pmpr/Common/Foundation/FormMaker/Front/Field/Collection.php:214
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1880
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1906
+#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:131
 msgid "Delete"
 msgstr "حذف"
+
+#: src/Pmpr/Common/Foundation/FormMaker/Front/Field/File.php:22
+msgid "Choose a file or drop it here..."
+msgstr "فایل را انتخاب کنید یا در این قسمت بندازید ..."
+
+#: src/Pmpr/Common/Foundation/FormMaker/Front/Field/File.php:23
+msgid "Drop file here..."
+msgstr "فایل را بندازید ..."
+
+#: src/Pmpr/Common/Foundation/FormMaker/Front/Field/Select.php:180
+msgid "Select some option"
+msgstr "انتخاب کنید"
 
 #: src/Pmpr/Common/Foundation/FormMaker/Front/MultiStepForm.php:35
 msgid "Submit"
 msgstr "تایید"
 
 #: src/Pmpr/Common/Foundation/FormMaker/Front/Step.php:56
-#: src/Pmpr/Common/Foundation/Woocommerce/MultiStepSingleProduct.php:235
+#: src/Pmpr/Common/Foundation/Woocommerce/MultiStepSingleProduct.php:241
 msgid "Next Step"
 msgstr "مرحله بعد"
 
@@ -438,45 +396,45 @@ msgstr ""
 msgid "%s at %s"
 msgstr "%s در %s"
 
-#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:543
+#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:689
 msgid "Image"
 msgstr "تصویر"
 
-#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:544
+#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:690
 msgid "Price"
 msgstr "قیمت"
 
-#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:545
+#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:691
 msgid "Add to cart"
 msgstr "افزودن به سبد خرید"
 
-#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:546
-#: src/Pmpr/Common/Foundation/Woocommerce/MultiStepSingleProduct.php:221
+#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:692
+#: src/Pmpr/Common/Foundation/Woocommerce/MultiStepSingleProduct.php:227
 #: vendor/narmafzam/cmb2/example-functions.php:543
 msgid "Description"
 msgstr "شرح"
 
-#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:547
+#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:693
 #, fuzzy
 #| msgid "Sun"
 msgid "Sku"
 msgstr "ی"
 
-#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:548
+#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:694
 msgid "Availability"
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:549
-#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:751
+#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:695
+#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:897
 msgid "Weight"
 msgstr "وزن"
 
-#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:550
-#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:758
+#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:696
+#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:904
 msgid "Dimensions"
 msgstr "ابعاد"
 
-#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:619
+#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:765
 msgid "In stock"
 msgstr ""
 
@@ -561,36 +519,90 @@ msgstr "متوسط"
 msgid "Large"
 msgstr "بزرگ"
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Field/Foreign.php:125
+#: src/Pmpr/Common/Foundation/MobileApp/Backward/Common.php:80
+msgid "White"
+msgstr "سفید"
+
+#: src/Pmpr/Common/Foundation/MobileApp/Backward/Common.php:84
+msgid "Light Gray"
+msgstr "خاکستری روشن"
+
+#: src/Pmpr/Common/Foundation/MobileApp/Backward/Common.php:88
+msgid "Gray"
+msgstr "خاکستری"
+
+#: src/Pmpr/Common/Foundation/MobileApp/Backward/Common.php:92
+msgid "Dark Gray"
+msgstr "خاکستری تیره"
+
+#: src/Pmpr/Common/Foundation/MobileApp/Backward/Common.php:96
+msgid "Black"
+msgstr "سیاه"
+
+#: src/Pmpr/Common/Foundation/MobileApp/Backward/PlugView.php:34
+msgid "Footer Backlink Style"
+msgstr "استایل بک لینک"
+
+#: src/Pmpr/Common/Foundation/MobileApp/Backward/PlugView.php:47
+msgid ""
+"According to the discount you got during purchase of some modules or themes, "
+"a link with the following appearance settings will be added to your site "
+"footer."
+msgstr ""
+"با توجه به دریافت تخفیف مشروط به درج لینک، حین خرید برخی از ماژول‌ها یا "
+"پوسته‌ها، یک لینک با مشخصات ظاهری زیر، به فوتر سایت شما اضافه می‌شود."
+
+#: src/Pmpr/Common/Foundation/MobileApp/Backward/PlugView.php:54
+msgid ""
+"Any changes on this link or target content, would invalidate the purchased "
+"module or theme's license and your website's API key."
+msgstr ""
+"هر نوع دستکاری در لینک یا محتوای مقصد آن سبب حذف اعتبار لایسنس ماژول خریداری "
+"شده و کلید API سایت شما خواهد شد."
+
+#: src/Pmpr/Common/Foundation/MobileApp/Backward/PlugView.php:79
+msgid "Background Color"
+msgstr "رنگ پس‌زمینه"
+
+#: src/Pmpr/Common/Foundation/MobileApp/Backward/PlugView.php:80
+msgid "Text Color"
+msgstr "رنگ متن"
+
+#: src/Pmpr/Common/Foundation/MobileApp/Backward/PlugView.php:175
+#, php-format
+msgid "%s %s all rights reserved for %s"
+msgstr "%s %s تمامی حقوق برای %s محفوظ است"
+
+#: src/Pmpr/Common/Foundation/ORM/DB/Field/Foreign.php:126
 #, php-format
 msgid "Foreign key %s must end with %s postfix"
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:458
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2005
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:375
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1956
 msgid "Created At"
 msgstr "تاریخ ایجاد"
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:461
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2006
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:378
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1957
 msgid "Updated At"
 msgstr "تاریخ به روزرسانی"
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:748
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:707
 msgid "All"
 msgstr "همه"
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1732
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1683
 #, php-format
 msgid "%s is unique and entered value already exist."
 msgstr "فیلد %s منحصر به فرد است و مقدار ورودی در حال حاضر وجود دارد."
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1737
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1688
 #, php-format
 msgid "%s cann't be empty, please fill it."
 msgstr "فیلد %s نمی‌تواند خالی باشد، لطفا آن را پر کنید."
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1934
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1885
 msgid "Are you sure you want to delete this item?"
 msgstr "در مورد حذف این آیتم مطمئن هستید؟"
 
@@ -654,30 +666,35 @@ msgstr "تعداد آیتم‌ها در هر صفحه:"
 msgid "Columns"
 msgstr "ستون‌ها"
 
-#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:107
+#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:114
 #, fuzzy, php-format
 #| msgid "Select Type"
 msgid "Select Item #%d"
 msgstr "انتخاب نوع"
 
-#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:108
+#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:115
 #, php-format
 msgid "&#8220;Item #%d&#8221; is locked"
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:236
+#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:242
 #, php-format
 msgid "Edit \"%s\""
 msgstr "ویرایش: %s"
 
-#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:246
+#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:250
 msgid "Show more details"
 msgstr "نمایش جزئیات بیشتر"
 
-#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:386
-#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:387
+#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:392
+#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:393
 msgid "Edit"
 msgstr "ویرایش"
+
+#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:400
+#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:401
+msgid "Show"
+msgstr "نمایش"
 
 #: src/Pmpr/Common/Foundation/ORM/View/ObjectAware.php:85
 msgid ""
@@ -694,12 +711,12 @@ msgstr "بررسی کلی"
 msgid "There are not %s yet."
 msgstr "هنوز %s وجود ندارد."
 
-#: src/Pmpr/Common/Foundation/Page/Page.php:59
+#: src/Pmpr/Common/Foundation/Page/Page.php:63
 #, php-format
 msgid "Page for %s"
 msgstr "صفحه %s"
 
-#: src/Pmpr/Common/Foundation/Page/Page.php:237
+#: src/Pmpr/Common/Foundation/Page/Page.php:251
 msgid "Sorry, you haven't access to edit this page."
 msgstr "شما دسترسی لازم برای مشاهده یا ویرایش این صفحه را ندارید."
 
@@ -881,6 +898,11 @@ msgstr "آواتار کاربر"
 msgid "Request is not valid, please reload page and try again."
 msgstr "درخواست شما معتبر نیست، لطفا صفحه را بارگذاری مجدد کنید."
 
+#: src/Pmpr/Common/Foundation/Woocommerce/Attribute/Attribute.php:58
+#: src/Pmpr/Common/Foundation/Woocommerce/Variation.php:216
+msgid "Indicator"
+msgstr ""
+
 #: src/Pmpr/Common/Foundation/Woocommerce/Attribute/GlobalAttribute.php:55
 msgid "Date"
 msgstr "تاریخ"
@@ -899,17 +921,17 @@ msgstr "نوع مقدار"
 msgid "Type of values"
 msgstr "نام یک %s را بنویسید"
 
-#: src/Pmpr/Common/Foundation/Woocommerce/Attribute/LocalAttribute.php:127
+#: src/Pmpr/Common/Foundation/Woocommerce/Attribute/LocalAttribute.php:137
 #, fuzzy
 #| msgid "Custom Name"
 msgid "Custom Fields"
 msgstr "نام سفارشی"
 
-#: src/Pmpr/Common/Foundation/Woocommerce/Attribute/LocalAttribute.php:130
+#: src/Pmpr/Common/Foundation/Woocommerce/Attribute/LocalAttribute.php:140
 msgid "Can not render fields correctly, please refresh page manually."
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/Woocommerce/Attribute/LocalAttribute.php:131
+#: src/Pmpr/Common/Foundation/Woocommerce/Attribute/LocalAttribute.php:141
 msgid "fields loaded correctly."
 msgstr ""
 
@@ -925,19 +947,19 @@ msgstr "تنظیمات ویژگی‌"
 msgid "Attribute Meta"
 msgstr "تنظیمات ویژگی‌"
 
-#: src/Pmpr/Common/Foundation/Woocommerce/Attribute/Model.php:41
+#: src/Pmpr/Common/Foundation/Woocommerce/Attribute/Model.php:36
 #, fuzzy
 #| msgid "Attribute Setting"
 msgid "Attribute"
 msgstr "تنظیمات ویژگی‌"
 
-#: src/Pmpr/Common/Foundation/Woocommerce/Attribute/Model.php:44
+#: src/Pmpr/Common/Foundation/Woocommerce/Attribute/Model.php:39
 #, fuzzy
 #| msgid "Secret Key"
 msgid "Meta Key"
 msgstr "کلید خصوصی"
 
-#: src/Pmpr/Common/Foundation/Woocommerce/Attribute/Model.php:47
+#: src/Pmpr/Common/Foundation/Woocommerce/Attribute/Model.php:42
 msgid "Meta Value"
 msgstr "مقدار متا"
 
@@ -1021,29 +1043,29 @@ msgstr ""
 msgid "Add To Cart Steps"
 msgstr "مراحل افزودن به سبد خرید"
 
-#: src/Pmpr/Common/Foundation/Woocommerce/MultiStepSingleProduct.php:207
+#: src/Pmpr/Common/Foundation/Woocommerce/MultiStepSingleProduct.php:213
 msgid "Step"
 msgstr "مرحله"
 
-#: src/Pmpr/Common/Foundation/Woocommerce/MultiStepSingleProduct.php:216
+#: src/Pmpr/Common/Foundation/Woocommerce/MultiStepSingleProduct.php:222
 msgid "Title"
 msgstr "عنوان"
 
-#: src/Pmpr/Common/Foundation/Woocommerce/MultiStepSingleProduct.php:228
+#: src/Pmpr/Common/Foundation/Woocommerce/MultiStepSingleProduct.php:234
 msgid "Template"
 msgstr "تمپلیت"
 
-#: src/Pmpr/Common/Foundation/Woocommerce/MultiStepSingleProduct.php:234
+#: src/Pmpr/Common/Foundation/Woocommerce/MultiStepSingleProduct.php:240
 msgid "Next Step Button Title"
 msgstr "متن دکمه مرحله بعد"
 
-#: src/Pmpr/Common/Foundation/Woocommerce/MultiStepSingleProduct.php:264
+#: src/Pmpr/Common/Foundation/Woocommerce/MultiStepSingleProduct.php:270
 #, fuzzy
 #| msgid "Template"
 msgid "Quick Templates"
 msgstr "تمپلیت"
 
-#: src/Pmpr/Common/Foundation/Woocommerce/MultiStepSingleProduct.php:265
+#: src/Pmpr/Common/Foundation/Woocommerce/MultiStepSingleProduct.php:271
 msgid "If you select some of this options, steps initialize automatically."
 msgstr ""
 
@@ -1817,6 +1839,9 @@ msgstr "افزودن یا آپلود فایل"
 msgid "No terms"
 msgstr "ترمی یافت نشد"
 
+#~ msgid "Select..."
+#~ msgstr "- انتخاب کنید -"
+
 #~ msgid "Your request is forbidden"
 #~ msgstr "درخواست شما ممنوع است"
 
@@ -1966,9 +1991,6 @@ msgstr "ترمی یافت نشد"
 
 #~ msgid "Create Account Date"
 #~ msgstr "تاریخ ایجاد حساب"
-
-#~ msgid "Profile Overview"
-#~ msgstr "مرور کلی پروفایل"
 
 #~ msgid "Personal Information"
 #~ msgstr "اطلاعات شخصی"
@@ -2446,9 +2468,6 @@ msgstr "ترمی یافت نشد"
 #~| msgid "Heading levels"
 #~ msgid "Heading Level %s (h%s)"
 #~ msgstr "عمق تیترها"
-
-#~ msgid "Show"
-#~ msgstr "نمایش"
 
 #, fuzzy
 #~| msgid "Already added"
@@ -3764,9 +3783,6 @@ msgstr "ترمی یافت نشد"
 #~ msgid "Specific Posts"
 #~ msgstr "نوشته‌های انتخابی"
 
-#~ msgid "Select some posts"
-#~ msgstr "انتخاب نوشته‌"
-
 #~ msgid "Limit of posts"
 #~ msgstr "محدودیت تعداد نوشته"
 
@@ -4950,9 +4966,6 @@ msgstr "ترمی یافت نشد"
 #~ msgid "%s year ago"
 #~ msgid_plural "%s years ago"
 #~ msgstr[0] "%s سال پیش"
-
-#~ msgid "- Select -"
-#~ msgstr "- انتخاب کنید -"
 
 #~ msgid "Product"
 #~ msgstr "محصول"
