@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             61b74f4dc7e1b             |
+    |             61b784ffc499c             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\FormMaker\Admin\Element; class Tool extends Page { public function __construct() { goto boekkoaekyqaemmq; eqqgiigwkciiksuo: if ($this->cgugaaoykcyiomuk()) { goto osmciccqwowieume; } goto mcqimygcwcqcssky; boekkoaekyqaemmq: $this->type = "\164\x6f\x6f\154\163"; goto eqqgiigwkciiksuo; mcqimygcwcqcssky: $this->parentMenu = "\164\x6f\157\154\163\x2e\160\150\160"; goto awmyswwkwqgugmmy; awmyswwkwqgugmmy: osmciccqwowieume: goto kskoukygaaicomgy; kskoukygaaicomgy: parent::__construct(); goto aoueogeoyisucaiq; aoueogeoyisucaiq: } }
+ namespace Pmpr\Common\Foundation\FormMaker\Admin\Element; class Tool extends Page { public function __construct() { goto kskoukygaaicomgy; yiisikkiqosawsgu: parent::__construct(); goto qoeiqqmskcqeaiug; muowkaagoqiyegme: $this->parentMenu = "\x74\157\x6f\154\163\56\x70\150\160"; goto akeowgkiskougikg; aoueogeoyisucaiq: if ($this->cgugaaoykcyiomuk()) { goto awmyswwkwqgugmmy; } goto muowkaagoqiyegme; akeowgkiskougikg: awmyswwkwqgugmmy: goto yiisikkiqosawsgu; kskoukygaaicomgy: $this->type = "\164\157\x6f\x6c\x73"; goto aoueogeoyisucaiq; qoeiqqmskcqeaiug: } }
