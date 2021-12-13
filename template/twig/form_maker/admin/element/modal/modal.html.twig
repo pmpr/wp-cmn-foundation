@@ -17,8 +17,8 @@
 
                             {% include get_template('menu_item', _self) with {
                                 key: 'modal_submenu_' ~ key,
-                                icon: parent.icon,
-                                title: parent.title,
+                                icon: parent|call('getIcon'),
+                                title: parent|call('getTitle'),
                                 is_parent: 1
                             } %}
 
@@ -27,8 +27,8 @@
 
                                     {% include get_template('menu_item', _self) with {
                                         key: segment|call('getKey'),
-                                        icon: segment.icon,
-                                        title: segment.title,
+                                        icon: segment|call('getIcon'),
+                                        title: segment|call('getTitle'),
                                         is_parent: 0
                                     } %}
                                 {% endfor %}
@@ -42,8 +42,8 @@
 
                     {% include get_template('menu_item', _self) with {
                         key: segment|call('getKey'),
-                        icon: segment.icon,
-                        title: segment.title,
+                        icon: segment|call('getIcon'),
+                        title: segment|call('getTitle'),
                         is_parent: 0
                     } %}
                 {% endfor %}

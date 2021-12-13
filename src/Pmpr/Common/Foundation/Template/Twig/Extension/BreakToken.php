@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             61b083e12a430             |
+    |             61b74f4dc7e1b             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\Template\Twig\Extension; use Twig\Error\SyntaxError; use Twig\Token; use Twig\TokenParser\AbstractTokenParser; class BreakToken extends AbstractTokenParser { public function parse(Token $mgegoogckgsumooq) : BreakNode { goto qwewqcaomcqwwaqg; qwewqcaomcqwwaqg: $mkgomsmocgwiwyui = $mgegoogckgsumooq->getLine(); goto cuoomamgiqewcaga; wcuqseiqgmkiagqo: $scwiymciagumsuiw = $this->getTag(); goto qaokmiyayqscsoey; cuoomamgiqewcaga: $maykoqyekaegigga = $this->parser->getStream(); goto imekyuaciwaewsyg; imekyuaciwaewsyg: $maykoqyekaegigga->expect(Token::BLOCK_END_TYPE); goto wcuqseiqgmkiagqo; qaokmiyayqscsoey: return new BreakNode([], [], $mkgomsmocgwiwyui, $scwiymciagumsuiw); goto sesuguskosoyouaq; sesuguskosoyouaq: } public function getTag() : string { return "\x62\162\x65\x61\x6b"; } }
+ namespace Pmpr\Common\Foundation\Template\Twig\Extension; use Twig\Error\SyntaxError; use Twig\Token; use Twig\TokenParser\AbstractTokenParser; class BreakToken extends AbstractTokenParser { public function parse(Token $mgegoogckgsumooq) : BreakNode { goto ksegwekckiamcwey; ksegwekckiamcwey: $mkgomsmocgwiwyui = $mgegoogckgsumooq->getLine(); goto wkgagkmogekswsaq; wkgagkmogekswsaq: $maykoqyekaegigga = $this->parser->getStream(); goto soaqkuqagcyakgie; kiguekumyiiqkyua: return new BreakNode([], [], $mkgomsmocgwiwyui, $scwiymciagumsuiw); goto saiokooswwqwcqwc; soaqkuqagcyakgie: $maykoqyekaegigga->expect(Token::BLOCK_END_TYPE); goto kigqkyyqusckyoug; kigqkyyqusckyoug: $scwiymciagumsuiw = $this->getTag(); goto kiguekumyiiqkyua; saiokooswwqwcqwc: } public function getTag() : string { return "\142\162\x65\141\x6b"; } }

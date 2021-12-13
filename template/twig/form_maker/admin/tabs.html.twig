@@ -4,10 +4,7 @@
         <div id="{{ cmb_id|esc_attr }}-tab-{{ tab.id|esc_attr }}"
              class="pr-tab" data-fields="{{ selectors|esc_attr }}">
             {{ tab|call('getIconHtml')|raw }}
-            {% set title = tab.title %}
-            {% if title is not empty %}
-                <span class="pr-tab-title">{{ title|raw }}</span>
-            {% endif %}
+            <span class="pr-tab-title">{{ tab|call('getTitle')|raw }}</span>
         </div>
     {% endfor %}
 </div>
