@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             61c027ea3c6f3             |
+    |             61c032aeeb8d7             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Data; class Meta extends Data { protected ?string $name = ''; protected ?string $title = ''; protected ?string $value = ''; protected ?string $origin = ''; protected ?string $icon = ''; protected ?int $priority = 1; public function aakmagwggmkoiiyu() : ?string { return $this->name; } public function usuqmwksoeaayaig(?string $ymqmyyeuycgmigyo) : self { $this->name = $ymqmyyeuycgmigyo; return $this; } public function qcgakseyaikigqco() : ?string { return $this->title; } public function gswweykyogmsyawy(?string $meqocwsecsywiiqs) : self { $this->title = $meqocwsecsywiiqs; return $this; } public function kmaeqisgkicagake(?string $iakkeikwceeomgyq) : self { $this->origin = $iakkeikwceeomgyq; return $this; } public function qooeaookuemoqecm() : ?string { return $this->value; } public function iygyugseyaqwywyg(?string $eqgoocgaqwqcimie) : self { $this->value = $eqgoocgaqwqcimie; return $this; } public function eyamqkqiykagecsw() : ?string { return $this->icon; } public function saemoowcasogykak(?string $wkaqekwwgqsqwcoi) : self { $this->icon = $wkaqekwwgqsqwcoi; return $this; } public function yywskysiycwkwsgw() : ?int { return $this->priority; } public function jyumyyugiwwiqomk(?int $sqqewmoeaekuyyas) : self { $this->priority = $sqqewmoeaekuyyas; return $this; } }
