@@ -1,6 +1,6 @@
 <div {{ container_attrs|parse_attrs|raw }}>
     <h2>{{ page_title|raw }}</h2>
-    <div class="pr-before-form">{{ do_action('form_maker_before_form', page) }}</div>
+    <div class="pr-before-form">{{ do_action('form_maker_before_tabs'|generate_hook, page) }}</div>
     <div id="poststuff">
         <div id="postbox-container-1" class="postbox-container">
             <h2 class="nav-tab-wrapper pr-tab-wrapper">{{ tabs|raw }}</h2>

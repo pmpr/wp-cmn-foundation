@@ -2,6 +2,7 @@
     {% if description is not empty %}
         <p>{{ description|raw }}</p>
     {% endif %}
+    {{ do_action(('form_maker_tab_content_' ~ id)|generate_hook) }}
     <div class="metabox-holder column-{{ column|raw }}">
         {% if column > 1 %}
             <div class="metabox-container" data-columns="1">

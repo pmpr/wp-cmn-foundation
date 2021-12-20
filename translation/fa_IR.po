@@ -6008,3 +6008,4 @@ msgstr "ترمی یافت نشد"
 
 #~ msgid "Change &amp; Save numbers to Farsi in Comments"
 #~ msgstr "تغییر و ذخیره عددها به فارسی در دیدگاه‌ها"
+
