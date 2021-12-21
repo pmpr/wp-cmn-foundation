@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             61c1b5b51cde3             |
+    |             61c1ba98ac1ad             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Decorator\Taxonomy; use Pmpr\Common\Foundation\Decorator\Decorator; abstract class Common extends Decorator { }
