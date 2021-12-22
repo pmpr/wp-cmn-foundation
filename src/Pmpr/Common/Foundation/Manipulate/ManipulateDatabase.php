@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             61c34de0723ae             |
+    |             61c369a89567a             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Manipulate; use WP_Query; use wpdb; class ManipulateDatabase extends Manipulate { public static function get($gygawogosumsgmme, $ggauoeuaesiymgee = '') { $gqgemcmoicmgaqie = self::owicscwgeuqcqaig(); $sogksuscggsicmac = $ggauoeuaesiymgee; if (!$gqgemcmoicmgaqie) { goto eygqeoiskweuiuqi; } $sogksuscggsicmac = $gqgemcmoicmgaqie->get($gygawogosumsgmme, $ggauoeuaesiymgee); eygqeoiskweuiuqi: return $sogksuscggsicmac; } public static function delete($aasascamegmwqmqk, $icsywsyukqcciiky, $saqmwwmqiwmkiwaa) { return self::uuqwaeygaeemceik()->delete($aasascamegmwqmqk, $icsywsyukqcciiky, $saqmwwmqiwmkiwaa); } public static function prepare(string $gqgemcmoicmgaqie, ...$ywmkwiwkosakssii) { return self::uuqwaeygaeemceik()->prepare($gqgemcmoicmgaqie, ...$ywmkwiwkosakssii); } private static function uuqwaeygaeemceik() : ?wpdb { global $wpdb; $ooggeikkseeqyyek = null; if (!$wpdb instanceof wpdb) { goto uykwmucgoywoesui; } $ooggeikkseeqyyek = $wpdb; uykwmucgoywoesui: return $ooggeikkseeqyyek; } private static function owicscwgeuqcqaig() : ?WP_Query { global $wp_query; $gqgemcmoicmgaqie = null; if (!$wp_query instanceof WP_Query) { goto iisieuaeyiqwckou; } $gqgemcmoicmgaqie = $wp_query; iisieuaeyiqwckou: return $gqgemcmoicmgaqie; } }
