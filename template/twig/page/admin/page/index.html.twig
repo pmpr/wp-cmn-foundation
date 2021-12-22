@@ -7,7 +7,7 @@
         </div>
     {% endif %}
     <hr class="wp-header-end">
-    {{ do_action('render_notices', 'page-notice') }}
+    {{ do_action('render_notices'|generate_hook, 'page-notice') }}
     {{ do_action(('page_admin_after_' ~ page.args.parent_slug ~ '_title')|generate_hook, page) }}
     {% if tabs is defined
         and tabs is not empty %}
