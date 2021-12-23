@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr Common Foundation\n"
-"POT-Creation-Date: 2021-12-12 22:04+0330\n"
-"PO-Revision-Date: 2021-12-12 22:14+0330\n"
+"POT-Creation-Date: 2021-12-23 10:08+0330\n"
+"PO-Revision-Date: 2021-12-23 10:09+0330\n"
 "Last-Translator:  Farshad Asgharzade <Farshad_asgharzade@hotmail.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -22,15 +22,15 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: lib\n"
 "X-Poedit-SearchPathExcluded-1: *.js\n"
 
-#: src/Pmpr/Common/Foundation/API/API.php:515
+#: src/Pmpr/Common/Foundation/API/API.php:550
 msgid "Response is not valid"
 msgstr "پاسخ معتبر نیست"
 
-#: src/Pmpr/Common/Foundation/API/API.php:537
+#: src/Pmpr/Common/Foundation/API/API.php:572
 msgid "Connection Error"
 msgstr "خطای اتصال به شبکه"
 
-#: src/Pmpr/Common/Foundation/API/API.php:567
+#: src/Pmpr/Common/Foundation/API/API.php:602
 msgid "Error Code"
 msgstr "کد خطا"
 
@@ -184,89 +184,93 @@ msgstr "فهرست"
 msgid "Close Modal"
 msgstr "بستن"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:151
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:162
 #, php-format
 msgid "%s Setting Template"
 msgstr "الگوی %s"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:191
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:216
 msgid "Enter license key"
 msgstr "کلید مجوز را وارد کنید"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:193
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:218
 #, php-format
 msgid "To complete the installation of %s, %s."
 msgstr "برای تکمیل فرآیند نصب %s، %s."
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:207
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:235
 #, php-format
 msgid "For convenience, setting templates can be selected via the %s tab"
 msgstr "به منظور سهولت، الگو‌های تنظیمات از طریق برگه %s قابل انتخاب است"
 
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:254
+msgid "Setting"
+msgstr "تنظیمات"
+
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:289
 #, php-format
 msgid "Setting options successfully change to %s"
 msgstr "تنظمیات با موفقیت به %s تغییر کرد"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:257
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:292
 #, fuzzy
 #| msgid "The Url you entered is not valid"
 msgid "Selected % is not valid"
 msgstr "پیوند وارد شده معتبر نیست"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:257
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:261
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:292
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:296
 msgid "Setting Type"
 msgstr "نوع تنظمات"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:261
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:296
 #, fuzzy, php-format
 #| msgid "Please enter at least 5."
 msgid "Please select an option in the %s"
 msgstr "لطفا بیش از ۱۵ کاراکتر وارد کنید."
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:279
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:327
 msgid "Your license key saved successfully."
 msgstr "کلید مجوز شما با موفقیت ذخیره شد."
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:283
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:331
 msgid "Your license key is not valid."
 msgstr "کلید مجوز شما معتبر نیست."
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:299
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:347
 msgid "Save Changes"
 msgstr "ذخیره تغییرات"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:319
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:367
 #, php-format
 msgid "Received license key for %s domain, from %s product."
 msgstr "دریافت کلید مجوز برای %s از طریق %s."
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:323
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:371
 msgid "Some licenses are free and unpaid."
 msgstr "برخی از مجوز‌ها رایگان و بدون نیاز به پرداخت هستند."
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:328
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:376
 msgid "License"
 msgstr "مجوز"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:332
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:380
 msgid "License Key"
 msgstr "کلید مجوز"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:337
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:385
 msgid "Save License"
 msgstr "ذخیره مجوز"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:356
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:404
 msgid "Setting Templates"
 msgstr "الگو‌های تنظیمات"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:360
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:408
 msgid "Setting Template"
 msgstr "الگو"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:365
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:413
 msgid "Change Settings"
 msgstr "تغییر تنظیمات"
 
@@ -286,26 +290,26 @@ msgstr "یک گزینه را انتخاب کنید..."
 msgid "Deselect"
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Field/Checkbox.php:31
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Field/Checkbox.php:34
 #: src/Pmpr/Common/Foundation/Woocommerce/MultiStepSingleProduct.php:217
 msgid "Enable"
 msgstr "فعال"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Field/Checkbox.php:32
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Field/Checkbox.php:35
 msgid "Disable"
 msgstr "غیر فعال"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Field/Checkbox.php:85
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Field/Checkbox.php:90
 msgid "This could break things!"
 msgstr "این گزینه می‌تواند بعضی چیز‌ها را دچار مشکل کند!"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Field/Checkbox.php:86
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Field/Checkbox.php:91
 msgid ""
 "If you notice any errors on your website after having activated this setting, "
 "just deactivate it again, and your site will be back to normal."
 msgstr ""
-"اگر پس از فعال کردن این گزینه در وب سایت خود خطایی مشاهده کردید، برای رفع مشکل "
-"فقط دوباره آن را غیرفعال کنید."
+"اگر پس از فعال کردن این گزینه در وب سایت خود خطایی مشاهده کردید، برای رفع "
+"مشکل فقط دوباره آن را غیرفعال کنید."
 
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Field/File.php:95
 #: vendor/narmafzam/cmb2/includes/types/CMB2_Type_File.php:76
@@ -321,8 +325,8 @@ msgstr "افزودن %s جدید"
 
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Field/Group.php:173
 msgid ""
-"Sorry, you can't submit form. Some field's value is duplicated in group, please "
-"fix errors and try again."
+"Sorry, you can't submit form. Some field's value is duplicated in group, "
+"please fix errors and try again."
 msgstr ""
 
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Field/Group.php:174
@@ -331,10 +335,10 @@ msgid ""
 "Sorry, you can't add new %s. Some field's value is duplicated, please fix "
 "errors and try again."
 msgstr ""
-"متاسفانه شما قادر به افزودن %s جدید نیستید. برخی از مقادیر فیلد‌ها تکراری هستند، "
-"لطفا خطا‌ها را اصلاح کرده و دوباره امتحان کنید."
+"متاسفانه شما قادر به افزودن %s جدید نیستید. برخی از مقادیر فیلد‌ها تکراری "
+"هستند، لطفا خطا‌ها را اصلاح کرده و دوباره امتحان کنید."
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/MetaTab.php:863
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/MetaTab.php:867
 msgid "Settings Updated"
 msgstr "تنظیمات با موفقیت به روز شد"
 
@@ -355,8 +359,8 @@ msgid "No Limit"
 msgstr "بدون محدودیت"
 
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:779
-#: vendor/narmafzam/cmb2/includes/CMB2_Field.php:1448
-#: vendor/narmafzam/cmb2/includes/CMB2_Field.php:1452
+#: vendor/narmafzam/cmb2/includes/CMB2_Field.php:1542
+#: vendor/narmafzam/cmb2/includes/CMB2_Field.php:1546
 msgid "None"
 msgstr "هیچکدام"
 
@@ -427,8 +431,8 @@ msgid "Clear"
 msgstr "پاک کردن"
 
 #: src/Pmpr/Common/Foundation/FormMaker/Front/Field/Collection.php:214
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1973
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1999
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1972
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1998
 #: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:131
 msgid "Delete"
 msgstr "حذف"
@@ -516,7 +520,7 @@ msgstr "ابعاد"
 msgid "In stock"
 msgstr "موجود در انبار"
 
-#: src/Pmpr/Common/Foundation/Manipulate/Theme/ManipulateBootstrap.php:64
+#: src/Pmpr/Common/Foundation/Manipulate/Theme/ManipulateBootstrap.php:65
 #: src/Pmpr/Common/Foundation/Manipulate/Theme/ManipulateHTML.php:225
 msgid "Close"
 msgstr "بستن"
@@ -597,23 +601,23 @@ msgstr "متوسط"
 msgid "Large"
 msgstr "بزرگ"
 
-#: src/Pmpr/Common/Foundation/MobileApp/Backward/Common.php:80
+#: src/Pmpr/Common/Foundation/MobileApp/Backward/Common.php:93
 msgid "White"
 msgstr "سفید"
 
-#: src/Pmpr/Common/Foundation/MobileApp/Backward/Common.php:84
+#: src/Pmpr/Common/Foundation/MobileApp/Backward/Common.php:97
 msgid "Light Gray"
 msgstr "خاکستری روشن"
 
-#: src/Pmpr/Common/Foundation/MobileApp/Backward/Common.php:88
+#: src/Pmpr/Common/Foundation/MobileApp/Backward/Common.php:101
 msgid "Gray"
 msgstr "خاکستری"
 
-#: src/Pmpr/Common/Foundation/MobileApp/Backward/Common.php:92
+#: src/Pmpr/Common/Foundation/MobileApp/Backward/Common.php:105
 msgid "Dark Gray"
 msgstr "خاکستری تیره"
 
-#: src/Pmpr/Common/Foundation/MobileApp/Backward/Common.php:96
+#: src/Pmpr/Common/Foundation/MobileApp/Backward/Common.php:109
 msgid "Black"
 msgstr "سیاه"
 
@@ -623,19 +627,20 @@ msgstr "استایل بک لینک"
 
 #: src/Pmpr/Common/Foundation/MobileApp/Backward/PlugView.php:47
 msgid ""
-"According to the discount you got during purchase of some modules or themes, a "
-"link with the following appearance settings will be added to your site footer."
+"According to the discount you got during purchase of some modules or themes, "
+"a link with the following appearance settings will be added to your site "
+"footer."
 msgstr ""
-"با توجه به دریافت تخفیف مشروط به درج لینک، حین خرید برخی از ماژول‌ها یا پوسته‌ها، "
-"یک لینک با مشخصات ظاهری زیر، به فوتر سایت شما اضافه می‌شود."
+"با توجه به دریافت تخفیف مشروط به درج لینک، حین خرید برخی از ماژول‌ها یا "
+"پوسته‌ها، یک لینک با مشخصات ظاهری زیر، به فوتر سایت شما اضافه می‌شود."
 
 #: src/Pmpr/Common/Foundation/MobileApp/Backward/PlugView.php:54
 msgid ""
 "Any changes on this link or target content, would invalidate the purchased "
 "module or theme's license and your website's API key."
 msgstr ""
-"هر نوع دستکاری در لینک یا محتوای مقصد آن سبب حذف اعتبار مجوز ماژول خریداری شده "
-"و کلید API سایت شما خواهد شد."
+"هر نوع دستکاری در لینک یا محتوای مقصد آن سبب حذف اعتبار مجوز ماژول خریداری "
+"شده و کلید API سایت شما خواهد شد."
 
 #: src/Pmpr/Common/Foundation/MobileApp/Backward/PlugView.php:79
 msgid "Background Color"
@@ -655,31 +660,31 @@ msgstr "%s %s تمامی حقوق برای %s محفوظ است"
 msgid "Foreign key %s must end with %s postfix"
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:433
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2049
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:432
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2048
 msgid "Created At"
 msgstr "تاریخ ایجاد"
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:436
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2050
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:435
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2049
 msgid "Updated At"
 msgstr "تاریخ به روزرسانی"
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:785
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:784
 msgid "All"
 msgstr "همه"
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1765
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1764
 #, php-format
 msgid "%s is unique and entered value already exist."
 msgstr "فیلد %s منحصر به فرد است و مقدار ورودی در حال حاضر وجود دارد."
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1770
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1769
 #, php-format
 msgid "%s cann't be empty, please fill it."
 msgstr "فیلد %s نمی‌تواند خالی باشد، لطفا آن را پر کنید."
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1978
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1977
 msgid "Are you sure you want to delete this item?"
 msgstr "در مورد حذف این آیتم مطمئن هستید؟"
 
@@ -771,7 +776,8 @@ msgid "Show"
 msgstr "نمایش"
 
 #: src/Pmpr/Common/Foundation/ORM/View/ObjectAware.php:85
-msgid "You attempted to edit an item that doesn't exist. Perhaps it was deleted?"
+msgid ""
+"You attempted to edit an item that doesn't exist. Perhaps it was deleted?"
 msgstr ""
 
 #: src/Pmpr/Common/Foundation/ORM/View/Show.php:53
@@ -1574,15 +1580,15 @@ msgstr ""
 msgid "Invalid %1$s method: %2$s"
 msgstr ""
 
-#: vendor/narmafzam/cmb2/includes/CMB2_Field.php:1415
+#: vendor/narmafzam/cmb2/includes/CMB2_Field.php:1505
 msgid "Add Group"
 msgstr ""
 
-#: vendor/narmafzam/cmb2/includes/CMB2_Field.php:1416
+#: vendor/narmafzam/cmb2/includes/CMB2_Field.php:1506
 msgid "Remove Group"
 msgstr "حذف گروه"
 
-#: vendor/narmafzam/cmb2/includes/CMB2_Field.php:1563
+#: vendor/narmafzam/cmb2/includes/CMB2_Field.php:1665
 msgid "Sorry, this field does not have a cmb_id specified."
 msgstr ""
 
@@ -1646,7 +1652,7 @@ msgstr "قبلی"
 
 #: vendor/narmafzam/cmb2/includes/CMB2_JS.php:208
 msgid "Today"
-msgstr ""
+msgstr "امروز"
 
 #: vendor/narmafzam/cmb2/includes/CMB2_JS.php:209
 #: vendor/narmafzam/cmb2/includes/CMB2_JS.php:219
@@ -1679,7 +1685,8 @@ msgstr "امروز"
 
 #: vendor/narmafzam/cmb2/includes/CMB2_JS.php:220
 msgctxt ""
-"Valid formatting string, as per http://trentrichardson.com/examples/timepicker/"
+"Valid formatting string, as per http://trentrichardson.com/examples/"
+"timepicker/"
 msgid "hh:mm TT"
 msgstr ""
 
@@ -1761,8 +1768,8 @@ msgstr ""
 
 #: vendor/narmafzam/cmb2/includes/rest-api/CMB2_REST_Controller.php:300
 msgid ""
-"No box found by that id. A box needs to be registered with the \"show_in_rest\" "
-"parameter configured."
+"No box found by that id. A box needs to be registered with the \"show_in_rest"
+"\" parameter configured."
 msgstr ""
 
 #: vendor/narmafzam/cmb2/includes/rest-api/CMB2_REST_Controller.php:378
@@ -1814,7 +1821,8 @@ msgid ""
 msgstr ""
 
 #: vendor/narmafzam/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:236
-msgid "CMB2 Field value cannot be updated without the value parameter specified."
+msgid ""
+"CMB2 Field value cannot be updated without the value parameter specified."
 msgstr ""
 
 #: vendor/narmafzam/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:297
@@ -1897,9 +1905,11 @@ msgstr "ترمی یافت نشد"
 #~ msgid "On"
 #~ msgstr "روشن"
 
-#~ msgid "Number of Column per row to show the items (just for vertical layouts)."
+#~ msgid ""
+#~ "Number of Column per row to show the items (just for vertical layouts)."
 #~ msgstr ""
-#~ "تعداد ستون‌هایی که می‌خواهید در هر سطر نمایش داده شود (فقط برای لایه‌های عمودی)."
+#~ "تعداد ستون‌هایی که می‌خواهید در هر سطر نمایش داده شود (فقط برای لایه‌های "
+#~ "عمودی)."
 
 #~ msgid "Link rel attribute value"
 #~ msgstr "مقدار rel لینک"
@@ -2346,8 +2356,8 @@ msgstr "ترمی یافت نشد"
 
 #~ msgid "Ask a feedback question, if user rate less than threshold."
 #~ msgstr ""
-#~ "در صورتی که کاربر کمتر از آستانه امتیاز دهد، یک فرم بازخورد نشان داده خواهد "
-#~ "شد."
+#~ "در صورتی که کاربر کمتر از آستانه امتیاز دهد، یک فرم بازخورد نشان داده "
+#~ "خواهد شد."
 
 #, fuzzy
 #~| msgid "Question"
@@ -2385,9 +2395,6 @@ msgstr "ترمی یافت نشد"
 #, fuzzy
 #~| msgid "Setting"
 #~ msgid "CMS Setting"
-#~ msgstr "تنظیمات"
-
-#~ msgid "Setting"
 #~ msgstr "تنظیمات"
 
 #, fuzzy
@@ -2604,8 +2611,8 @@ msgstr "ترمی یافت نشد"
 
 #~ msgid "Displayed to user if already sent a message."
 #~ msgstr ""
-#~ "در صورتی که کاربر قبل از اتمام محدودیت زمانی، پیام جدیدی را ارسال کند، نمایش "
-#~ "داده می‌شود."
+#~ "در صورتی که کاربر قبل از اتمام محدودیت زمانی، پیام جدیدی را ارسال کند، "
+#~ "نمایش داده می‌شود."
 
 #~ msgid "Information"
 #~ msgstr "اطلاعات"
@@ -3122,7 +3129,8 @@ msgstr "ترمی یافت نشد"
 #~ msgstr "فعال سازی استایل هد"
 
 #~ msgid "enable this option to ignore css file and just use style in head."
-#~ msgstr "با فعال کردن این گزینه همه استایل‌ها در هد صفحه اجرا می‌شوند (توصیه شده)"
+#~ msgstr ""
+#~ "با فعال کردن این گزینه همه استایل‌ها در هد صفحه اجرا می‌شوند (توصیه شده)"
 
 #~ msgid "Desktop screen sizes"
 #~ msgstr "سایز صفحه دسکتاپ"
@@ -3259,7 +3267,8 @@ msgstr "ترمی یافت نشد"
 #~| msgid "Check this item, if you want show code in right fo screen"
 #~ msgid "Check this item if you want minify %s."
 #~ msgstr ""
-#~ "با علامت زدن این گزینه، کد مورد نظر در قسمت سمت راست صفحه نمایش داده خواهد شد"
+#~ "با علامت زدن این گزینه، کد مورد نظر در قسمت سمت راست صفحه نمایش داده خواهد "
+#~ "شد"
 
 #~ msgid "Minify"
 #~ msgstr "فشرده‌سازی"
@@ -3448,7 +3457,8 @@ msgstr "ترمی یافت نشد"
 #~ msgid ""
 #~ "Enable to use reCaptcha when Google is not accessible or blocked in your "
 #~ "country."
-#~ msgstr "اگر مشکلی با اتصال به گوگل در کشور خود دارید، این گزینه را فعال کنید."
+#~ msgstr ""
+#~ "اگر مشکلی با اتصال به گوگل در کشور خود دارید، این گزینه را فعال کنید."
 
 #~ msgid "Disabled Submit Button"
 #~ msgstr "غیر فعال کردن دکمه تایید"
@@ -3627,8 +3637,8 @@ msgstr "ترمی یافت نشد"
 #~ msgid ""
 #~ "if you fill this item, we show title and excerpt of selected post in card."
 #~ msgstr ""
-#~ "اگر این مورد را پر کنید ، عنوان و گزیده ای از پیام های انتخاب شده را در کارت "
-#~ "نشان می دهیم."
+#~ "اگر این مورد را پر کنید ، عنوان و گزیده ای از پیام های انتخاب شده را در "
+#~ "کارت نشان می دهیم."
 
 #~ msgid "%s Icon to display."
 #~ msgstr "آیکون %s برای نمایش."
@@ -3665,7 +3675,8 @@ msgstr "ترمی یافت نشد"
 
 #~ msgid "Check this item, if you want show code in right fo screen"
 #~ msgstr ""
-#~ "با علامت زدن این گزینه، کد مورد نظر در قسمت سمت راست صفحه نمایش داده خواهد شد"
+#~ "با علامت زدن این گزینه، کد مورد نظر در قسمت سمت راست صفحه نمایش داده خواهد "
+#~ "شد"
 
 #~ msgid "Write your code here."
 #~ msgstr "کد مورد نظر خود را اینجا بنویسید."
@@ -3711,8 +3722,8 @@ msgstr "ترمی یافت نشد"
 #~ msgstr "شورتکد پایان"
 
 #~ msgid ""
-#~ "This shortcode used for close %s, no setting available. remember just use %s "
-#~ "after %s. for use this shortcode just press %s button"
+#~ "This shortcode used for close %s, no setting available. remember just use "
+#~ "%s after %s. for use this shortcode just press %s button"
 #~ msgstr ""
 #~ "این شورتکد برای بستن %s استفاده می‌شود، هیچ تنظیمی برای این شورتکد وجود "
 #~ "ندارد. به یاد داشته باشید از %s فقط بعد از %s استفاده شود. برای استفاده از "
@@ -4393,7 +4404,8 @@ msgstr "ترمی یافت نشد"
 #, fuzzy
 #~| msgid "Check this item to enable mailer functionality."
 #~ msgid ""
-#~ "Enable this option to stop receiving notifications when a new user registers."
+#~ "Enable this option to stop receiving notifications when a new user "
+#~ "registers."
 #~ msgstr ""
 #~ "با علامت زدن این گزینه، ارسال ایمیل با استفاده از سرویس swiftmailer  فعال "
 #~ "می‌شود."
@@ -5239,15 +5251,15 @@ msgstr "ترمی یافت نشد"
 #~ msgstr "نمایش جدولی"
 
 #~ msgid ""
-#~ "Image width is too small. Minimum width is %1$s px. Uploaded image width is "
-#~ "%2$s px"
+#~ "Image width is too small. Minimum width is %1$s px. Uploaded image width "
+#~ "is %2$s px"
 #~ msgstr ""
 #~ "ابعاد عکس کوچک است. عرض عکس باید حداقل %1$s پیکسل باشد ولی عرض عکس انتخابی "
 #~ "شما %2$s پیکسل است"
 
 #~ msgid ""
-#~ "Image height is too small. Minimum height is %1$s px. Uploaded image height "
-#~ "is %2$s px"
+#~ "Image height is too small. Minimum height is %1$s px. Uploaded image "
+#~ "height is %2$s px"
 #~ msgstr ""
 #~ "ابعاد عکس کوچک است. ارتفاع عکس باید حداقل %1$s پیکسل باشد ولی ارتفاع عکس "
 #~ "انتخابی شما %2$s پیکسل است"
@@ -5565,7 +5577,8 @@ msgstr "ترمی یافت نشد"
 
 #~ msgid "Error! Could not send form. This might be a server issue."
 #~ msgstr ""
-#~ "خطا! قادر به ارسال اطلاعات نیستیم. ممکن است مشکلی در سرور به وجود آمده باشد."
+#~ "خطا! قادر به ارسال اطلاعات نیستیم. ممکن است مشکلی در سرور به وجود آمده "
+#~ "باشد."
 
 #~ msgid "Please enter the correct number."
 #~ msgstr "عدد وارد شده صحیح نیست."
@@ -5731,15 +5744,15 @@ msgstr "ترمی یافت نشد"
 #~ msgid ""
 #~ "Specify headings to be excluded from appearing in the table of contents.\n"
 #~ "\n"
-#~ "                Separate multiple headings with a pipe |. Use an asterisk * "
-#~ "as a wildcard to match other text.\n"
+#~ "                Separate multiple headings with a pipe |. Use an asterisk "
+#~ "* as a wildcard to match other text.\n"
 #~ "\n"
 #~ "                Note that this is not case sensitive."
 #~ msgstr ""
 #~ "تیترهایی که نمی‌خواهید در فهرست مطالب درج شوند را مستثنی کنید\n"
 #~ "‏\n"
-#~ "\t\t\tتیترهای متعدد را با یک کاراکتر پایپ | از هم جدا کنید. از کاراکتر ستاره "
-#~ "* به منظور تطبیق کاراکتر دلخواه استفاده کنید\n"
+#~ "\t\t\tتیترهای متعدد را با یک کاراکتر پایپ | از هم جدا کنید. از کاراکتر "
+#~ "ستاره * به منظور تطبیق کاراکتر دلخواه استفاده کنید\n"
 #~ "‏\n"
 #~ "\t\t\tتوجه کنید که حساسیتی نسبت به بزرگی و کوچکی کاراکترها وجود ندارد."
 
@@ -5750,8 +5763,8 @@ msgstr "ترمی یافت نشد"
 #~ "                This path is from the root of your site and always begins "
 #~ "with a forward slash."
 #~ msgstr ""
-#~ "ایجاد فهرست مطالب را محدود به صفحاتی با مسیر زیر کنید آدرس این مسیر نسبت به "
-#~ "مسیر اصلی سایت است و همیشه با یک کاراکتر اسلش ‪/‬ در ابتدا شروع می‌شود."
+#~ "ایجاد فهرست مطالب را محدود به صفحاتی با مسیر زیر کنید آدرس این مسیر نسبت "
+#~ "به مسیر اصلی سایت است و همیشه با یک کاراکتر اسلش ‪/‬ در ابتدا شروع می‌شود."
 
 #~ msgid ""
 #~ "Anchor targets are restricted to alphanumeric characters as per HTML "
@@ -5760,8 +5773,8 @@ msgstr "ترمی یافت نشد"
 #~ "                The default anchor prefix will be used when no characters "
 #~ "qualify. When left blank, a number will be used instead.\n"
 #~ "\n"
-#~ "                This option normally applies to content written in character "
-#~ "sets other than ASCII."
+#~ "                This option normally applies to content written in "
+#~ "character sets other than ASCII."
 #~ msgstr ""
 #~ "با توجه به استاندارد HTML لینک مقصد محدود به کاراکترهای انگلیسی حرف یا عدد "
 #~ "است‪.‬\n"
@@ -5960,8 +5973,8 @@ msgstr "ترمی یافت نشد"
 #~ "Use aspect ratio based image URLs like http://example.com/upload/1x1/image."
 #~ "jpg"
 #~ msgstr ""
-#~ "از نسبت‌های طول به عرض رایج تصویر در آدرس دهی تصاویر استفاده کن مانند http://"
-#~ "example.com/upload/1x1/image.jpg"
+#~ "از نسبت‌های طول به عرض رایج تصویر در آدرس دهی تصاویر استفاده کن مانند "
+#~ "http://example.com/upload/1x1/image.jpg"
 
 #, fuzzy
 #~| msgid "Archives"
