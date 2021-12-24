@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr Common Foundation\n"
-"POT-Creation-Date: 2021-12-23 10:08+0330\n"
-"PO-Revision-Date: 2021-12-23 10:09+0330\n"
+"POT-Creation-Date: 2021-12-24 13:09+0330\n"
+"PO-Revision-Date: 2021-12-24 13:09+0330\n"
 "Last-Translator:  Farshad Asgharzade <Farshad_asgharzade@hotmail.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -26,11 +26,7 @@ msgstr ""
 msgid "Response is not valid"
 msgstr "پاسخ معتبر نیست"
 
-#: src/Pmpr/Common/Foundation/API/API.php:572
-msgid "Connection Error"
-msgstr "خطای اتصال به شبکه"
-
-#: src/Pmpr/Common/Foundation/API/API.php:602
+#: src/Pmpr/Common/Foundation/API/API.php:599
 msgid "Error Code"
 msgstr "کد خطا"
 
@@ -189,88 +185,102 @@ msgstr "بستن"
 msgid "%s Setting Template"
 msgstr "الگوی %s"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:216
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:212
 msgid "Enter license key"
 msgstr "کلید مجوز را وارد کنید"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:218
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:214
 #, php-format
 msgid "To complete the installation of %s, %s."
 msgstr "برای تکمیل فرآیند نصب %s، %s."
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:235
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:231
 #, php-format
 msgid "For convenience, setting templates can be selected via the %s tab"
 msgstr "به منظور سهولت، الگو‌های تنظیمات از طریق برگه %s قابل انتخاب است"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:254
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:250
 msgid "Setting"
 msgstr "تنظیمات"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:289
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:285
 #, php-format
 msgid "Setting options successfully change to %s"
 msgstr "تنظمیات با موفقیت به %s تغییر کرد"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:292
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:288
 #, fuzzy
 #| msgid "The Url you entered is not valid"
 msgid "Selected % is not valid"
 msgstr "پیوند وارد شده معتبر نیست"
 
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:288
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:292
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:296
 msgid "Setting Type"
 msgstr "نوع تنظمات"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:296
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:292
 #, fuzzy, php-format
 #| msgid "Please enter at least 5."
 msgid "Please select an option in the %s"
 msgstr "لطفا بیش از ۱۵ کاراکتر وارد کنید."
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:327
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:323
 msgid "Your license key saved successfully."
 msgstr "کلید مجوز شما با موفقیت ذخیره شد."
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:331
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:327
 msgid "Your license key is not valid."
 msgstr "کلید مجوز شما معتبر نیست."
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:347
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:343
 msgid "Save Changes"
 msgstr "ذخیره تغییرات"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:367
-#, php-format
-msgid "Received license key for %s domain, from %s product."
-msgstr "دریافت کلید مجوز برای %s از طریق %s."
-
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:371
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:361
 msgid "Some licenses are free and unpaid."
 msgstr "برخی از مجوز‌ها رایگان و بدون نیاز به پرداخت هستند."
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:376
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:363
+#, php-format
+msgid "Received license key for %s"
+msgstr "دریافت کلید مجوز %s"
+
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:366
+#, php-format
+msgid "First time %s"
+msgstr "اولین بار %s"
+
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:367
+#, php-format
+msgid "Next times %s"
+msgstr "دفعات بعدی %s"
+
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:367
+msgid "My Components"
+msgstr "کامپوننت‌های من"
+
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:378
 msgid "License"
 msgstr "مجوز"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:380
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:382
 msgid "License Key"
 msgstr "کلید مجوز"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:385
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:387
 msgid "Save License"
 msgstr "ذخیره مجوز"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:404
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:406
 msgid "Setting Templates"
 msgstr "الگو‌های تنظیمات"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:408
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:410
 msgid "Setting Template"
 msgstr "الگو"
 
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:413
+#: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:415
 msgid "Change Settings"
 msgstr "تغییر تنظیمات"
 
@@ -1888,6 +1898,9 @@ msgstr "افزودن یا آپلود فایل"
 msgid "No terms"
 msgstr "ترمی یافت نشد"
 
+#~ msgid "Connection Error"
+#~ msgstr "خطای اتصال به شبکه"
+
 #~ msgid "Default Settings"
 #~ msgstr "تنظیمات پیشفرض"
 
@@ -2013,9 +2026,6 @@ msgstr "ترمی یافت نشد"
 
 #~ msgid "User Info"
 #~ msgstr "اطلاعات کاربر"
-
-#~ msgid "First Name"
-#~ msgstr "نام"
 
 #~ msgid "Last Name"
 #~ msgstr "نام خانوادگی"
@@ -4218,9 +4228,6 @@ msgstr "ترمی یافت نشد"
 #~| msgid "Use as alt"
 #~ msgid "Use as logo alt."
 #~ msgstr "استفاده به عنوان توضیح تصویر"
-
-#~ msgid "Components"
-#~ msgstr "اجزاء"
 
 #~ msgid "View All"
 #~ msgstr "مشاهده همه"
