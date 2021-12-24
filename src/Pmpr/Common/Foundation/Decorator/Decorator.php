@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             61c4eac2e8bbd             |
+    |             61c57394e3e7d             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\Decorator; use Pmpr\Common\Foundation\Interfaces\ConstantInterface; abstract class Decorator implements ConstantInterface { public static function qyyygkguqcmgkmey($ekiuyucoiagmscgy, $ggauoeuaesiymgee = false, ...$ywmkwiwkosakssii) { $ksaameoqigiaoigg = $ggauoeuaesiymgee; if (!function_exists($ekiuyucoiagmscgy)) { goto iwioqeqiwwuqmakq; } $ksaameoqigiaoigg = call_user_func($ekiuyucoiagmscgy, ...$ywmkwiwkosakssii); iwioqeqiwwuqmakq: return $ksaameoqigiaoigg; } }
+ namespace Pmpr\Common\Foundation\Decorator; use Pmpr\Common\Foundation\Interfaces\ConstantInterface; abstract class Decorator implements ConstantInterface { public static function qyyygkguqcmgkmey($ekiuyucoiagmscgy, $ggauoeuaesiymgee = false, ...$ywmkwiwkosakssii) { $ksaameoqigiaoigg = $ggauoeuaesiymgee; if (!function_exists($ekiuyucoiagmscgy)) { goto qowiysuioeqesgwc; } $ksaameoqigiaoigg = call_user_func($ekiuyucoiagmscgy, ...$ywmkwiwkosakssii); qowiysuioeqesgwc: return $ksaameoqigiaoigg; } }
