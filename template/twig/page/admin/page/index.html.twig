@@ -15,9 +15,9 @@
         {{ do_action(('page_admin_before_' ~ page|call('getArg', 'parent_slug') ~ '_tabs')|generate_hook, page) }}
         <nav class="nav-tab-wrapper">
             {% for tab in tabs %}
-                <a href="{{ current_page_link|esc_attr }}&tab={{ tab.id|esc_attr }}"
-                   class="nav-tab{% if tab.id is same as(current_tab.id) %} nav-tab-active{% endif %}">
-                    {{ tab.title|raw }}
+                <a href="{{ current_page_link|esc_attr }}&tab={{ tab|call('getId')|esc_attr }}"
+                   class="nav-tab{% if tab|call('getId') is same as(current_tab|call('getId')) %} nav-tab-active{% endif %}">
+                    {{ tab|call('getTitle')|raw }}
                 </a>
             {% endfor %}
         </nav>
