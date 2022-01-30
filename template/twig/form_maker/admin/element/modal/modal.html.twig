@@ -17,8 +17,8 @@
 
                             {% include get_template('menu_item', _self) with {
                                 key: 'modal_submenu_' ~ key,
-                                icon: parent|call('getIcon'),
-                                title: parent|call('getTitle'),
+                                icon: parent.icon,
+                                title: parent.title,
                                 is_parent: 1
                             } %}
 
