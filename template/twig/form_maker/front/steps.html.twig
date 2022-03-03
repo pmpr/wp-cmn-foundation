@@ -1,13 +1,14 @@
 <nav class="steps-nav">
     <div class="steps-list" data-total-steps="{{ steps|length }}">
         {% for step in steps %}
-            <div class="step" id="{{ step.id|raw }}" data-step="{{ step.number|raw }}"
+            {% set id = step|call('getId') %}
+            <div class="step" id="{{ id|raw }}" data-step="{{ step|call('getNumber')|raw }}"
                  data-state="{% if loop.first %}current{% else %}pending{% endif %}"
-                 data-target="#step_content_{{ step.id|raw }}">
+                 data-target="#step_content_{{ id|raw }}">
                 <div class="step-wrapper">
-                    <div class="step-icon pr-3">{{ get_icon(step.icon, {class: 'icon-xl'})|raw }}</div>
-                    <div class="step-label">{{ step.title|raw }}</div>
-                    <div class="invalid-icon ml-auto">{{ get_icon(invalid_icon, {class: 'icon-danger icon-lg'})|raw }}</div>
+                    <div class="step-icon pr-3">{{ get_icon(step|call('getIcon'), {class: 'icon-xl'})|raw }}</div>
+                    <div class="step-label">{{ step|call('getTitle')|raw }}</div>
+                    <div class="invalid-icon ml-auto">{{ render_icon(invalid_icon, {class: 'icon-danger icon-lg'}) }}</div>
                 </div>
             </div>
         {% endfor %}
@@ -18,7 +19,8 @@
     <div class="step-message-container"></div>
     <div class="card-body p-5">
         {% for step in steps %}
-            <div class="step-content" id="step_content_{{ step.id|raw }}"
+            {% set id = step|call('getId') %}
+            <div class="step-content" id="step_content_{{ id|raw }}"
                  data-state="{% if loop.first %}current{% else %}pending{% endif %}">
                 <div class="d-flex justify-content-between flex-column h-100" style="min-height: 400px;">
                     {{ step|call('render')|raw }}
