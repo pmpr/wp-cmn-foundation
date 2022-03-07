@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             62261873e60f0             |
+    |             62261abb012f8             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Decorator; use WP_Error; class DecoratorCron extends Decorator { public static function mggeycowqkwsieew() : array { return wp_get_schedules(); } public static function sceqickmyoseqcue(string $iaakskwmyqceoscy, array $ywmkwiwkosakssii = []) { return wp_next_scheduled($iaakskwmyqceoscy, $ywmkwiwkosakssii); } public static function swgggegyusmecoky(int $yiuogaeewyockeak, string $iaakskwmyqceoscy, array $ywmkwiwkosakssii = [], $wpError = false) { return wp_unschedule_event($yiuogaeewyockeak, $iaakskwmyqceoscy, $ywmkwiwkosakssii, $wpError); } public static function uwugaiqywmseksqm(int $yiuogaeewyockeak, string $cukawkgykqoskaca, string $iaakskwmyqceoscy, array $ywmkwiwkosakssii = [], $wpError = false) { return wp_schedule_event($yiuogaeewyockeak, $cukawkgykqoskaca, $iaakskwmyqceoscy, $ywmkwiwkosakssii, $wpError); } public static function maeucgukqagocqsw(string $iaakskwmyqceoscy, $ywmkwiwkosakssii = null, $isksgswsmmqgeqmo = null) { return as_next_scheduled_action($iaakskwmyqceoscy, $ywmkwiwkosakssii, $isksgswsmmqgeqmo); } public static function gsuemqqyeumuscao(int $yiuogaeewyockeak, int $ycooswiwewekokei, string $iaakskwmyqceoscy, $ywmkwiwkosakssii = null, $isksgswsmmqgeqmo = null) : int { return as_schedule_recurring_action($yiuogaeewyockeak, $ycooswiwewekokei, $iaakskwmyqceoscy, $ywmkwiwkosakssii, $isksgswsmmqgeqmo); } }
