@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             62272f950f91d             |
+    |             62289b9d88a0a             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\ORM\DB\Field; class Boolean extends Field { public function __construct(string $aokagokqyuysuksm, ?string $meqocwsecsywiiqs = null) { parent::__construct("\142\157\x6f\x6c\145\141\x6e", $aokagokqyuysuksm, $meqocwsecsywiiqs); $this->aguakyuusmksagai()->eyygsasuqmommkua(0); } }
+ namespace Pmpr\Common\Foundation\ORM\DB\Field; class Boolean extends Field { public function __construct(string $aokagokqyuysuksm, ?string $meqocwsecsywiiqs = null) { parent::__construct("\142\157\157\x6c\145\141\156", $aokagokqyuysuksm, $meqocwsecsywiiqs); $this->aguakyuusmksagai()->eyygsasuqmommkua(0); } }
