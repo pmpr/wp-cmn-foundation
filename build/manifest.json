@@ -1,13 +1,13 @@
 {
-  "global.js": "/js/global._62nzzayR.js",
-  "front.js": "/js/front._62nzzayR.js",
-  "inline.js": "/js/inline._62nzzayR.js",
-  "multistep.css": "/css/multistep._62nzzayR.css",
-  "multistep.js": "/js/multistep._62nzzayR.js",
-  "collection.js": "/js/collection._62nzzayR.js",
-  "admin.css": "/css/admin._62nzzayR.css",
-  "admin.js": "/js/admin._62nzzayR.js",
-  "multiopts.js": "/js/multiopts._62nzzayR.js",
-  "shortcode.js": "/js/shortcode._62nzzayR.js",
-  "tinymce-plugin.js": "/js/tinymce-plugin._62nzzayR.js"
+  "global.js": "/js/global.d9gbMSKwU.js",
+  "front.js": "/js/front.d9gbMSKwU.js",
+  "inline.js": "/js/inline.d9gbMSKwU.js",
+  "multistep.css": "/css/multistep.d9gbMSKwU.css",
+  "multistep.js": "/js/multistep.d9gbMSKwU.js",
+  "collection.js": "/js/collection.d9gbMSKwU.js",
+  "admin.css": "/css/admin.d9gbMSKwU.css",
+  "admin.js": "/js/admin.d9gbMSKwU.js",
+  "multiopts.js": "/js/multiopts.d9gbMSKwU.js",
+  "shortcode.js": "/js/shortcode.d9gbMSKwU.js",
+  "tinymce-plugin.js": "/js/tinymce-plugin.d9gbMSKwU.js"
 }
