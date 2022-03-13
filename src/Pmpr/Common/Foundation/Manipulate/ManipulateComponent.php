@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             622dc2319d16b             |
+    |             622ddf0f08d31             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\Manipulate; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString; class ManipulateComponent extends Manipulate { public static function siomckkwaasawmiq($ymqmyyeuycgmigyo, $sqeykgyoooqysmca = self::iyyigeesoycocouq) : string { $ymqmyyeuycgmigyo = strtolower(ManipulateString::ogimogiceeekegoi($ymqmyyeuycgmigyo)); return self::aguuoekouoksucau . "{$sqeykgyoooqysmca}\x5f\x5f{$ymqmyyeuycgmigyo}"; } public static function gumqicgiosoqweoy($sociqikgoyemqaac) { $ymqmyyeuycgmigyo = ManipulateString::wiecmkiugmyyqiqc(self::aguuoekouoksucau, '', $sociqikgoyemqaac); return ManipulateString::csuomkyoukqauwcg($ymqmyyeuycgmigyo, 8); } }
+ namespace Pmpr\Common\Foundation\Manipulate; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString; class ManipulateComponent extends Manipulate { public static function siomckkwaasawmiq($ymqmyyeuycgmigyo, $sqeykgyoooqysmca = self::iyyigeesoycocouq) : string { $ymqmyyeuycgmigyo = strtolower(ManipulateString::ogimogiceeekegoi($ymqmyyeuycgmigyo)); return self::aguuoekouoksucau . "{$sqeykgyoooqysmca}\x5f\137{$ymqmyyeuycgmigyo}"; } public static function gumqicgiosoqweoy($sociqikgoyemqaac) { $ymqmyyeuycgmigyo = ManipulateString::wiecmkiugmyyqiqc(self::aguuoekouoksucau, '', $sociqikgoyemqaac); return ManipulateString::csuomkyoukqauwcg($ymqmyyeuycgmigyo, 8); } }
