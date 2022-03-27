@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             623c819818f71             |
+    |             623ffeab1e35f             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\FormMaker\Admin\Element; class Tool extends Page { public function __construct() { $this->type = "\x74\x6f\157\154\x73"; if ($this->cgugaaoykcyiomuk()) { goto wcagqkquasswioos; } $this->parentMenu = "\164\157\157\x6c\163\x2e\160\150\160"; wcagqkquasswioos: parent::__construct(); } }
+ namespace Pmpr\Common\Foundation\FormMaker\Admin\Element; class Tool extends Page { public function __construct() { $this->type = "\164\157\x6f\x6c\163"; if ($this->cgugaaoykcyiomuk()) { goto wcagqkquasswioos; } $this->parentMenu = "\164\x6f\x6f\x6c\x73\56\x70\150\160"; wcagqkquasswioos: parent::__construct(); } }
