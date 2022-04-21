@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             625c3eff69106             |
+    |             6261a3255e52e             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Decorator; class DecoratorI18N extends Decorator { public static function iyouigcsiacgwksc() : string { return get_locale(); } }
