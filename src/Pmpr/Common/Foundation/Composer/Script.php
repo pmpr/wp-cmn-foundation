@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             6265072d2f50d             |
+    |             62651bcfe5ad0             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Composer; use Composer\Script\Event; class Script { public static function ceuoyocoywikssmy(Event $uagesmomaeuiuwsu) { $ceuoyocoywikssmy = new Asset(); $ceuoyocoywikssmy->eeqkqkkwqyeoucok(getcwd()); } }
