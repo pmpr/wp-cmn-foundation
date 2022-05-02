@@ -6,7 +6,7 @@
         <input type="hidden" name="page" value="{{ name|esc_attr }}"/>
         <input type="hidden" name="orm_filter_by" value="{{ filter_name|esc_attr }}"/>
         <input type="hidden" name="orm_filter_value" value="{{ filter_value|esc_attr }}"/>
-        {{ table.search_box(items, name)|raw }}
+        {{ table.search_box(search_text, name)|raw }}
         {{ table.display()|raw }}
     </form>
     <div id="ajax-response"></div>
