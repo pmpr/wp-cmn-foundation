@@ -34,6 +34,7 @@
                                 {% if loop.last %}
 
                                     {{ step|call('getNextButton', {class: (btn_common_class ~ ' btn-success float-right action-submit'), type: 'submit'})|raw }}
+                                    {{ do_action('woocommerce_after_add_to_cart_button') }}
                                 {% else %}
 
                                     {{ step|call('getNextButton', {class: (btn_common_class ~ ' btn-primary action-next'), type: 'button'})|raw }}

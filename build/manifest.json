@@ -1,13 +1,14 @@
 {
-  "global.js": "/js/global.WMnx-kOZa.js",
-  "front.js": "/js/front.WMnx-kOZa.js",
-  "inline.js": "/js/inline.WMnx-kOZa.js",
-  "multistep.css": "/css/multistep.WMnx-kOZa.css",
-  "multistep.js": "/js/multistep.WMnx-kOZa.js",
-  "collection.js": "/js/collection.WMnx-kOZa.js",
-  "admin.css": "/css/admin.WMnx-kOZa.css",
-  "admin.js": "/js/admin.WMnx-kOZa.js",
-  "multiopts.js": "/js/multiopts.WMnx-kOZa.js",
-  "shortcode.js": "/js/shortcode.WMnx-kOZa.js",
-  "tinymce-plugin.js": "/js/tinymce-plugin.WMnx-kOZa.js"
+  "global.js": "/js/global.FUgLNt-q9.js",
+  "front.js": "/js/front.FUgLNt-q9.js",
+  "inline.js": "/js/inline.FUgLNt-q9.js",
+  "multistep.css": "/css/multistep.FUgLNt-q9.css",
+  "multistep.js": "/js/multistep.FUgLNt-q9.js",
+  "collection.js": "/js/collection.FUgLNt-q9.js",
+  "admin.css": "/css/admin.FUgLNt-q9.css",
+  "admin.js": "/js/admin.FUgLNt-q9.js",
+  "multiopts.js": "/js/multiopts.FUgLNt-q9.js",
+  "shortcode.js": "/js/shortcode.FUgLNt-q9.js",
+  "quick-edit.js": "/js/quick-edit.FUgLNt-q9.js",
+  "tinymce-plugin.js": "/js/tinymce-plugin.FUgLNt-q9.js"
 }

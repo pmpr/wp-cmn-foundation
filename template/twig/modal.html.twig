@@ -37,15 +37,16 @@
                     {% endif %}
                 </div>
             </footer>
-            {% if spinner %}
-                <div class="spinner-holder d-none" id="modal_spinner">
-                    <div class="overlay overlay-20 overlay-dark top-0 right-0" style="z-index: 99999999999;">
-                        <div class="d-flex justify-content-center align-self-center h-100 align-items-center">
-                            <div class="spinner-grow spinner-grow-{{ size }} text-info"></div>
-                        </div>
-                    </div>
-                </div>
-            {% endif %}
+            {{ spinner|raw }}
+{#            {% if spinner %}#}
+{#                <div class="spinner-holder d-none" id="modal_spinner">#}
+{#                    <div class="overlay overlay-20 overlay-dark top-0 right-0" style="z-index: 99999999999;">#}
+{#                        <div class="d-flex justify-content-center align-self-center h-100 align-items-center">#}
+{#                            <div class="spinner-grow spinner-grow-{{ size }} text-info"></div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            {% endif %}#}
         </div>
     </div>
 </div>
