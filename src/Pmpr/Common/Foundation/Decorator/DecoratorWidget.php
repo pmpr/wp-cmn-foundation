@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             62baa83800d6c             |
+    |             62baaa7751857             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Decorator; use WP_Widget; class DecoratorWidget extends Decorator { public static function register($assameyusgwogmce) { register_widget($assameyusgwogmce); } public static function ooksqgokuwcmoqcu($momcykaoccoymeig) { return is_active_sidebar($momcykaoccoymeig); } public static function esuiacmywcmmsmao($momcykaoccoymeig) { dynamic_sidebar($momcykaoccoymeig); } public static function ymaywccaiscsmsik($ywmkwiwkosakssii = []) { register_sidebar($ywmkwiwkosakssii); } public static function assameyusgwogmce($assameyusgwogmce, $owgumcsyqsamiemg = [], $ywmkwiwkosakssii = []) { the_widget($assameyusgwogmce, $owgumcsyqsamiemg, $ywmkwiwkosakssii); } }
