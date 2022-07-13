@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             62cb90d014097             |
+    |             62cef06cf2555             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\ORM\DB\Traits; use Pmpr\Common\Foundation\ORM\DB\Field as Fields; trait FieldTrait { public function owgikiusoocuqqgo(string $aokagokqyuysuksm) : Fields\Enum { return new Fields\Enum($aokagokqyuysuksm); } public function qagesioaeoaacoea(string $aokagokqyuysuksm) : Fields\Json { return new Fields\Json($aokagokqyuysuksm); } public function ymuegqgyuagyucws(string $aokagokqyuysuksm) : Fields\Text { return new Fields\Text($aokagokqyuysuksm); } public function kimoeccokowuaiic(string $aokagokqyuysuksm) : Fields\File { return new Fields\File($aokagokqyuysuksm); } public function qcyqgwuuymykkcke(string $aokagokqyuysuksm) : Fields\Str { return new Fields\Str($aokagokqyuysuksm); } public function geqyygqiwiqusekc(string $aokagokqyuysuksm) : Fields\Integer { return new Fields\Integer($aokagokqyuysuksm); } public function ggiieomioscuigco(string $aokagokqyuysuksm) : Fields\Foreign { return new Fields\Foreign($aokagokqyuysuksm); } public function kwwgyikigsyesgoo(string $aokagokqyuysuksm) : Fields\Boolean { return new Fields\Boolean($aokagokqyuysuksm); } public function mekgiwmysqksocmy(string $aokagokqyuysuksm) : Fields\BigInteger { return new Fields\BigInteger($aokagokqyuysuksm); } public function wyauigyyoceiaygw(string $aokagokqyuysuksm) : Fields\DateTime { return new Fields\DateTime($aokagokqyuysuksm); } public function ceqawoymcymsaeqo(string $aokagokqyuysuksm) : Fields\Timestamp { return new Fields\Timestamp($aokagokqyuysuksm); } }
