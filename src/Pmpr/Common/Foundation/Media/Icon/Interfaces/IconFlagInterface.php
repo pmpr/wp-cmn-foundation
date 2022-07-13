@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             62cf1bb86d713             |
+    |             62cf2621865ae             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\Media\Icon\Interfaces; interface IconFlagInterface { const wkekaeayeywcokga = "\x66\x6c\141\147\57\165\163\x61\55\146\x6c\141\147\55\x63\157\154\157\x72"; }
+ namespace Pmpr\Common\Foundation\Media\Icon\Interfaces; interface IconFlagInterface { const wkekaeayeywcokga = "\146\x6c\141\x67\57\x75\x73\x61\x2d\x66\154\141\x67\55\x63\x6f\x6c\157\x72"; }
