@@ -2,7 +2,7 @@
 
 {% block content %}
     {{ table.views()|raw }}
-    <form id="orm-list-filter" method="get">
+    <form class="pr-list-form" id="orm-list-filter" method="get">
         <input type="hidden" name="page" value="{{ name|esc_attr }}"/>
         <input type="hidden" name="orm_filter_by" value="{{ filter_name|esc_attr }}"/>
         <input type="hidden" name="orm_filter_value" value="{{ filter_value|esc_attr }}"/>
