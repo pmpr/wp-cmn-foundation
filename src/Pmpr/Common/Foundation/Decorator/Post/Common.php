@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             631f857c645de             |
+    |             6320d82854624             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Decorator\Post; use Pmpr\Common\Foundation\Decorator\Decorator; abstract class Common extends Decorator { public static function syeuyeikogukksam() : string { return get_the_archive_title(); } public static function wieoiwogwmcwukom() : string { return get_the_archive_description(); } }
