@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             6325e02a5a36b             |
+    |             632750fdbde20             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Media; use Pmpr\Common\Foundation\Media\Icon\Icon; class Media extends Common { public function __construct() { parent::__construct(); $this->iemaakgqgqosiecm(); } public function iemaakgqgqosiecm() { Icon::symcgieuakksimmu(); Image::symcgieuakksimmu(); } }

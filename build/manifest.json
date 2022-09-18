@@ -1,14 +1,14 @@
 {
-  "global.js": "/js/global.eZp1LrLmc.js",
-  "front.js": "/js/front.eZp1LrLmc.js",
-  "inline.js": "/js/inline.eZp1LrLmc.js",
-  "multistep.css": "/css/multistep.eZp1LrLmc.css",
-  "multistep.js": "/js/multistep.eZp1LrLmc.js",
-  "collection.js": "/js/collection.eZp1LrLmc.js",
-  "admin.css": "/css/admin.eZp1LrLmc.css",
-  "admin.js": "/js/admin.eZp1LrLmc.js",
-  "multiopts.js": "/js/multiopts.eZp1LrLmc.js",
-  "shortcode.js": "/js/shortcode.eZp1LrLmc.js",
-  "quick-edit.js": "/js/quick-edit.eZp1LrLmc.js",
-  "tinymce-plugin.js": "/js/tinymce-plugin.eZp1LrLmc.js"
+  "global.js": "/js/global.fHB8ailbc.js",
+  "front.js": "/js/front.fHB8ailbc.js",
+  "inline.js": "/js/inline.fHB8ailbc.js",
+  "multistep.css": "/css/multistep.fHB8ailbc.css",
+  "multistep.js": "/js/multistep.fHB8ailbc.js",
+  "collection.js": "/js/collection.fHB8ailbc.js",
+  "admin.css": "/css/admin.fHB8ailbc.css",
+  "admin.js": "/js/admin.fHB8ailbc.js",
+  "multiopts.js": "/js/multiopts.fHB8ailbc.js",
+  "shortcode.js": "/js/shortcode.fHB8ailbc.js",
+  "quick-edit.js": "/js/quick-edit.fHB8ailbc.js",
+  "tinymce-plugin.js": "/js/tinymce-plugin.fHB8ailbc.js"
 }
