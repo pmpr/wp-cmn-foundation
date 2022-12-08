@@ -1,0 +1,5 @@
+{% extends get_template('./common', _self) %}
+
+{% block field_body %}
+    <input {{ attributes|parse_attrs|raw }}/>
+{% endblock %}

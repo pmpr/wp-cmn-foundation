@@ -1,0 +1,3 @@
+{% for id, field in fields %}
+    {{ field|call('render')|raw }}
+{% endfor %}

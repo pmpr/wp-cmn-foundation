@@ -1,0 +1,36 @@
+{% set class_prefix = 'pr-field-media-' %}
+{% extends get_template('./common', _self) %}
+
+{% block before_field %}
+    {{ parent() }}
+    {% if description is defined and description is not empty %}
+        <div class="pr-field-description">{{ description|raw }}</div>
+    {% endif %}
+{% endblock %}
+
+{% block field_body %}
+    <button type="button" class="{{ class_prefix|esc_attr }}button">{{ args.button_text|raw }}</button>
+    <input {{ attributes|parse_attrs|raw }}/>
+    <div class="{{ class_prefix|esc_attr }}preview">
+        <div class="{{ class_prefix|esc_attr }}thumbnail">
+            {% if value is not empty %}
+                {% if is_image(value) %}
+                    <img class="pr-field-media-preview-image"
+                         src="{{ wp_get_attachment_url(value) }}"
+                         alt="{{ render_post_data('title', value) }}">
+                {% endif %}
+            {% endif %}
+        </div>
+        <div>
+            <div class="{{ class_prefix|esc_attr }}information">{{ args.information|raw }}</div>
+            <div class="{{ class_prefix|esc_attr }}actions">
+                {% for button in buttons %}
+                    {{ button|call('render')|raw }}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block after_field %}{% endblock %}
+

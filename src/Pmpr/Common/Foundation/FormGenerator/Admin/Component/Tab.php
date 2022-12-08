@@ -1,0 +1,7 @@
+<?php
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             63920cccd78cf             |
+    |_______________________________________|
+*/
+ namespace Pmpr\Common\Foundation\FormGenerator\Admin\Component; use Pmpr\Common\Foundation\FormGenerator\Admin\Field\Field; class Tab extends Component { protected array $fields = []; protected ?string $icon = null; public function qiccuiwooiquycsg() { $this->template = "\164\x61\142"; $this->templateClass = self::class; parent::qiccuiwooiquycsg(); } public function eyamqkqiykagecsw() : ?string { return $this->icon; } public function saemoowcasogykak(?string $wkaqekwwgqsqwcoi) : self { $this->icon = $wkaqekwwgqsqwcoi; return $this; } public function ugmceccgwaaaigiy() : ?array { return $this->fields; } public function iqoyuqgssusgimwa() : bool { return !empty($this->ugmceccgwaaaigiy()); } public function mkksewyosgeumwsa(Field $aiowsaccomcoikus) : self { if ($aiowsaccomcoikus->yywskysiycwkwsgw()) { goto wmaeicoyyciuaiuy; } $aiowsaccomcoikus->jyumyyugiwwiqomk(count($this->ugmceccgwaaaigiy()) + 1); wmaeicoyyciuaiuy: $this->fields[$aiowsaccomcoikus->mwikyscisascoeea()] = $aiowsaccomcoikus; return $this; } public function ewweaossowcqywaw(array $ikgwqyuyckaewsow) : self { foreach ($ikgwqyuyckaewsow as $aiowsaccomcoikus) { if (!$aiowsaccomcoikus instanceof Field) { goto aaogeemgkogagkai; } $this->mkksewyosgeumwsa($aiowsaccomcoikus); aaogeemgkogagkai: kwoyiysciqumswcy: } ooysmgyeqoiesgqm: return $this; } }

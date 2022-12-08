@@ -1,0 +1,10 @@
+{% extends get_template('./common', _self) %}
+
+{% block before_field %}{% endblock %}
+
+{% block field_body %}
+    <button {{ attributes|parse_attrs|raw }}>
+        {{ title|raw }}
+        {{ render_icon(icon) }}
+    </button>
+{% endblock %}

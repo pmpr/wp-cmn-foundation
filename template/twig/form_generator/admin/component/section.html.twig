@@ -1,0 +1,38 @@
+{% set class_prefix = 'pr-section-' %}
+<div class="{{ class_prefix|esc_attr }}header d-flex justify-content-between">
+    <div class="d-flex">
+        {{ render_icon(icon, {class: 'icon-sm my-auto mr-2'}) }}
+        <h3 class="pr-title-level-2">{{ title|raw }}</h3>
+    </div>
+</div>
+<div class="{{ class_prefix|esc_attr }}content">
+
+    {% if description is not empty %}
+        <div class="{{ class_prefix|esc_attr }}description">{{ description|raw }}</div>
+    {% endif %}
+
+    {% if tabs is not empty %}
+        <nav class="{{ class_prefix|esc_attr }}tabs">
+            {% for id, tab in tabs %}
+                <a href="#{{ class_prefix|esc_attr }}tab-{{ id }}"
+                   class="{{ class_prefix|esc_attr }}tab-item pr-tab-link{% if loop.first %} is-active{% endif %}"
+                   id="{{ class_prefix|esc_attr }}tab-item-{{ id|esc_attr }}">
+                    {{ render_icon(tab.icon, {class: 'icon-sm mr-2'}) }}
+                    <div class="{{ class_prefix|esc_attr }}tab-item-title">{{ tab.title|raw }}</div>
+                </a>
+            {% endfor %}
+        </nav>
+        {% for id, tab in tabs %}
+            <fieldset class="{{ class_prefix|esc_attr }}tab-content pr-tab-content{% if loop.first %} is-active{% endif %}"
+                 id="{{ class_prefix|esc_attr }}tab-{{ id }}">
+                {{ tab|call('render')|raw }}
+            </fieldset>
+        {% endfor %}
+
+    {% elseif fields is not empty %}
+        <fieldset class="{{ class_prefix|esc_attr }}fieldset">
+            {% include get_template('fields', _self) %}
+        </fieldset>
+    {% endif %}
+</div>
+

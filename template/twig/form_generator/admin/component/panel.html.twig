@@ -1,0 +1,49 @@
+{% set class_prefix = 'pr-panel-' %}
+<div class="{{ class_prefix|esc_attr }}wrap">
+    <h1 class="screen-reader-text">{{ title|raw }}</h1>
+    <div class="{{ class_prefix|esc_attr }}body">
+        <header class="{{ class_prefix|esc_attr }}header">
+            <div class="{{ class_prefix|esc_attr }}header-logo">
+                <span class="{{ class_prefix|esc_attr }}logo d-block d-lg-none"></span>
+                <div class="pr-title-level-2 d-none d-lg-block">{{ title|raw }}</div>
+            </div>
+            <nav class="{{ class_prefix|esc_attr }}header-nav">
+                {% for id, segment in segments %}
+                    <a href="#{{ class_prefix|esc_attr }}segment-{{ id }}"
+                       class="{{ class_prefix|esc_attr }}nav-item pr-tab-link{% if loop.first %} is-active{% endif %}"
+                       id="{{ class_prefix|esc_attr }}nav-item-{{ id|esc_attr }}">
+                        <div class="{{ class_prefix|esc_attr }}nav-item-title d-none d-lg-block">{{ segment.title|raw }}</div>
+                        <div class="{{ class_prefix|esc_attr }}nav-item-description d-none d-lg-block">{{ segment.description|raw }}</div>
+                        {{ render_icon(segment.icon) }}
+                    </a>
+                {% endfor %}
+            </nav>
+        </header>
+        <section class="{{ class_prefix|esc_attr }}content is-full">
+            <form enctype="multipart/form-data" method="POST">
+                {% for id, segment in segments %}
+                    <div class="{{ class_prefix|esc_attr }}segment pr-tab-content{% if loop.first %} is-active{% endif %}"
+                         id="{{ class_prefix|esc_attr }}segment-{{ id }}">
+                        {{ segment|call('render')|raw }}
+                    </div>
+                {% endfor %}
+                {% if buttons is not empty %}
+                    <div class="{{ class_prefix|esc_attr }}actions">
+                        {% for button in buttons %}
+                            {{ button|call('render')|raw }}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                {% if fields is not empty %}
+                    {% for field in fields %}
+                        {{ field|call('render')|raw }}
+                    {% endfor %}
+                {% endif %}
+            </form>
+        </section>
+        <aside class="{{ class_prefix|esc_attr }}sidebar">
+
+        </aside>
+    </div>
+</div>
+

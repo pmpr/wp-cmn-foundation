@@ -1,0 +1,15 @@
+{% extends get_template('./common', _self) %}
+
+{% block before_field %}
+    {{ parent() }}
+    {% if description is defined and description is not empty %}
+        <div class="pr-field-description">{{ description|raw }}</div>
+    {% endif %}
+{% endblock %}
+
+{% block field_body %}
+    {{ editor(value, args.editor_name, args) }}
+{% endblock %}
+
+{% block after_field %}{% endblock %}
+

@@ -1,0 +1,17 @@
+{% set class_prefix = 'pr-segment-' %}
+<div class="{{ class_prefix|esc_attr }}header d-flex">
+    {{ render_icon(icon, {class: 'icon-xl mr-4 centered-svg'}) }}
+    <div>
+        <h2 class="pr-title-level-1">{{ title|raw }}</h2>
+        <div class="{{ class_prefix|esc_attr }}description">{{ description|raw }}</div>
+    </div>
+</div>
+<div class="{{ class_prefix|esc_attr }}content">
+    {% for id, section in sections %}
+        <div class="{{ class_prefix|esc_attr }}section"
+             id="{{ class_prefix|esc_attr }}section-{{ id }}">
+            {{ section|call('render')|raw }}
+        </div>
+    {% endfor %}
+</div>
+
