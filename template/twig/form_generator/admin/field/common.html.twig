@@ -3,7 +3,7 @@
         {% if title is defined and title is not empty %}
             {% include get_template('label', _self) with {
                 label: title,
-                for: attributes.name,
+                for: attributes.id,
                 label_class: 'pr-field-label'
             } %}
         {% endif %}

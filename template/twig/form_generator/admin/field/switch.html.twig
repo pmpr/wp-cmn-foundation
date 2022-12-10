@@ -6,7 +6,7 @@
     <input {{ attributes|parse_attrs|raw }}/>
     {% embed get_template('label', _self) with {
         label: title,
-        for: attributes.name
+        for: attributes.id
     } %}
         {% block body %}
             <span class="pr-switch-ui"

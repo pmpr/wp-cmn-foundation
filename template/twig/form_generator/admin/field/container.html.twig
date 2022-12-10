@@ -1,0 +1,12 @@
+{% extends get_template('./common', _self) %}
+
+{% block before_field %}{% endblock %}
+
+{% block field_body %}
+    {% for field in fields %}
+        {{ field|call('render')|raw }}
+    {% endfor %}
+{% endblock %}
+
+{% block after_field %}{% endblock %}
+

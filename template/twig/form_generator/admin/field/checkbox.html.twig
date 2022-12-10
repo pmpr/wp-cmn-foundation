@@ -6,7 +6,7 @@
     <input {{ attributes|parse_attrs|raw }}/>
     {% include get_template('label', _self) with {
         label: title,
-        for: attributes.name
+        for: attributes.id
     } %}
     {% if description is defined
         and description is not empty %}

@@ -23,12 +23,13 @@
         {% endif %}
 
         {% for index, val in values %}
-            {{ _self.model(class_prefix, args, self|call('prepareFields', val, fields, index), index + 1, 1) }}
+            {{ _self.model(class_prefix, args, self|call('prepareFields', val, fields, index), index + 1, 0) }}
         {% endfor %}
 
     </div>
+
     <div class="{{ class_prefix|esc_attr }}model">
-        {{ _self.model(class_prefix, args, fields, '{#}', 0) }}
+        {{ _self.model(class_prefix, args, fields, '-#-', 1) }}
     </div>
 {% endblock %}
 
@@ -36,23 +37,23 @@
     {{ add_button|call('render')|raw }}
 {% endblock %}
 
-{% macro model(class_prefix, args, fields, index = 1, raw = 1) %}
+{% macro model(class_prefix, args, fields, index = 1, is_model = 0) %}
     <div class="{{ class_prefix|esc_attr }}item col-12{{ args.columns|raw }}" data-index="{{ index|esc_attr }}">
         <div class="{{ class_prefix|esc_attr }}item-wraper">
             <div class="{{ class_prefix|esc_attr }}item-header d-flex justify-content-between">
-                <span class="pr-title-level-3 my-auto">{{ args.item_title|replace({'{#}': index})|raw }}</span>
+                <span class="pr-title-level-3 my-auto">{{ args.item_title|replace({'-#-': index})|raw }}</span>
                 {% if index > 1 or not args.required %}
                     <a href="#" class="{{ class_prefix|esc_attr }}item-remove remove-item">
                         {{ render_icon(args.remove, {class: 'icon-xs'}) }}
                     </a>
                 {% endif %}
             </div>
-            <fieldset class="{{ class_prefix|esc_attr }}item-fieldset">
+            <fieldset class="{{ class_prefix|esc_attr }}item-fieldset{% if args.collapsible %} collapsed{% endif %}">
                 {% for field in fields %}
-                    {% if raw %}
+                    {% if not is_model %}
                         {{ field|call('render')|raw }}
                     {% else %}
-                        {{ field|call('render') }}
+                        {{ field|call('render', {model: 1}) }}
                     {% endif %}
                 {% endfor %}
             </fieldset>

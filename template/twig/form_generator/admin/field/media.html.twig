@@ -22,7 +22,9 @@
             {% endif %}
         </div>
         <div>
-            <div class="{{ class_prefix|esc_attr }}information">{{ args.information|raw }}</div>
+            <div class="{{ class_prefix|esc_attr }}information">
+                {{ args.information|raw }}
+            </div>
             <div class="{{ class_prefix|esc_attr }}actions">
                 {% for button in buttons %}
                     {{ button|call('render')|raw }}

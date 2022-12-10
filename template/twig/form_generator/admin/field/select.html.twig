@@ -1,0 +1,28 @@
+{% extends get_template('./common', _self) %}
+
+{% block field_body %}
+    <select {{ attributes|parse_attrs|raw }}>
+        {% if options is not empty %}
+            {% for key, option in options %}
+
+                {% if option is iterable %}
+                    {# group #}
+                    <optgroup label="{{ option.title|esc_attr }}">
+                        {% for k, title in option.options %}
+                            <option value="{{ k|esc_attr }}">{{ title|raw }}</option>
+                        {% endfor %}
+                    </optgroup>
+                {% else %}
+                    <option value="{{ key|esc_attr }}">{{ option|raw }}</option>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    </select>
+
+    {{ render_spinner({
+        size: '1x',
+        container_class: 'position-static',
+    }) }}
+
+{% endblock %}
+
