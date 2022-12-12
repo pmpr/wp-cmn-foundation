@@ -3,9 +3,7 @@
 {% block before_field %}{% endblock %}
 
 {% block field_body %}
-    {% for field in fields %}
-        {{ field|call('render')|raw }}
-    {% endfor %}
+    {% include get_template('../fields', _self) %}
 {% endblock %}
 
 {% block after_field %}{% endblock %}

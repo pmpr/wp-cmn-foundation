@@ -26,9 +26,9 @@
                 {{ args.information|raw }}
             </div>
             <div class="{{ class_prefix|esc_attr }}actions">
-                {% for button in buttons %}
-                    {{ button|call('render')|raw }}
-                {% endfor %}
+                {% include get_template('../fields', _self) with {
+                    fields: buttons
+                } %}
             </div>
         </div>
     </div>

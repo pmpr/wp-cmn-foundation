@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             6394c5fba8fb9             |
+    |             63977adbd4c5b             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\FormGenerator\Admin\Field; class Text extends Input { public function __construct(string $aokagokqyuysuksm = '') { parent::__construct($aokagokqyuysuksm, self::TEXT); } public function iygyugseyaqwywyg($eqgoocgaqwqcimie) : self { $this->qcgocuceocquqcuw(self::ciyoccqkiamemcmm, $eqgoocgaqwqcimie); return parent::iygyugseyaqwywyg($eqgoocgaqwqcimie); } }
+ namespace Pmpr\Common\Foundation\FormGenerator\Admin\Field; use Pmpr\Common\Foundation\FormGenerator\Admin\Traits\ShortcutsTrait; class Text extends Input { use ShortcutsTrait; public function __construct(string $aokagokqyuysuksm = '') { parent::__construct($aokagokqyuysuksm, self::TEXT); } public function iygyugseyaqwywyg($eqgoocgaqwqcimie) : self { $this->qcgocuceocquqcuw(self::ciyoccqkiamemcmm, $eqgoocgaqwqcimie); return parent::iygyugseyaqwywyg($eqgoocgaqwqcimie); } public function iccqusgqmsqaiqow() : self { return $this->uekikuwmokqsqoga(self::cwewykcqimckqycw)->qigsyyqgewgskemg("\160\x72\55\144\141\164\x65\x70\151\x63\x6b\145\x72"); } public function escqqisecooswqgo() : self { return $this->uekikuwmokqsqoga(self::eymwucuaaiiciymc); } public function qgsieamsswkgysow(array $ywmkwiwkosakssii = []) : void { $this->owguoyssgykuewes(); parent::qgsieamsswkgysow($ywmkwiwkosakssii); } }

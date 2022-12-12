@@ -1,5 +1,5 @@
 {% set class_prefix = 'pr-panel-' %}
-<div class="{{ class_prefix|esc_attr }}wrap">
+<div class="{{ class_prefix|esc_attr }}wrap wrap">
     <h1 class="screen-reader-text">{{ title|raw }}</h1>
     <div class="{{ class_prefix|esc_attr }}body">
         <header class="{{ class_prefix|esc_attr }}header">
@@ -29,16 +29,12 @@
                 {% endfor %}
                 {% if buttons is not empty %}
                     <div class="{{ class_prefix|esc_attr }}actions">
-                        {% for button in buttons %}
-                            {{ button|call('render')|raw }}
-                        {% endfor %}
+                        {% include get_template('../fields', _self) with {
+                            fields: buttons
+                        }%}
                     </div>
                 {% endif %}
-                {% if fields is not empty %}
-                    {% for field in fields %}
-                        {{ field|call('render')|raw }}
-                    {% endfor %}
-                {% endif %}
+                {% include get_template('../fields', _self) %}
             </form>
         </section>
         <aside class="{{ class_prefix|esc_attr }}sidebar">

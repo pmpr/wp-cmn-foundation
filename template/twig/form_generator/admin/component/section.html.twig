@@ -4,6 +4,7 @@
         {{ render_icon(icon, {class: 'icon-sm my-auto mr-2'}) }}
         <h3 class="pr-title-level-2">{{ title|raw }}</h3>
     </div>
+    {{ args.helper|raw }}
 </div>
 <div class="{{ class_prefix|esc_attr }}content">
 
@@ -31,7 +32,7 @@
 
     {% elseif fields is not empty %}
         <fieldset class="{{ class_prefix|esc_attr }}fieldset">
-            {% include get_template('fields', _self) %}
+            {% include get_template('../fields', _self) %}
         </fieldset>
     {% endif %}
 </div>
