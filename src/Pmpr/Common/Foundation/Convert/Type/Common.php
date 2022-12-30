@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             63aede6105079             |
+    |             63af48985f427             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Convert\Type; use Pmpr\Common\Foundation\Convert\Convert; abstract class Common extends Convert { }
