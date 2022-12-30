@@ -12,7 +12,7 @@
                     <a href="#{{ class_prefix|esc_attr }}segment-{{ id }}"
                        class="{{ class_prefix|esc_attr }}nav-item pr-tab-link{% if loop.first %} is-active{% endif %}"
                        id="{{ class_prefix|esc_attr }}nav-item-{{ id|esc_attr }}">
-                        <div class="{{ class_prefix|esc_attr }}nav-item-title d-none d-lg-block">{{ segment|call('getTitle')|raw }}</div>
+                        <div class="{{ class_prefix|esc_attr }}nav-item-title pr-title-level-2 d-none d-lg-block">{{ segment|call('getTitle')|raw }}</div>
                         {{ render_if_has_content('div', {class: class_prefix ~ 'nav-item-description d-none d-lg-block'}, segment|call('getDescription')) }}
                         {{ render_icon(segment|call('getIcon')) }}
                     </a>
