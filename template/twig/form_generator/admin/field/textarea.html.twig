@@ -11,7 +11,5 @@
     <textarea {{ attributes|parse_attrs|raw }}>{{ value|raw }}</textarea>
 {% endblock %}
 
-{% block after_field %}
-    {{ shortcuts|raw }}
-{% endblock %}
+{% block after_field %}{{ shortcuts|raw }}{% endblock %}
 

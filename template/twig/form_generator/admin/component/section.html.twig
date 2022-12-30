@@ -23,12 +23,14 @@
                 </a>
             {% endfor %}
         </nav>
-        {% for id, tab in tabs %}
-            <fieldset class="{{ class_prefix|esc_attr }}tab-content pr-tab-content{% if loop.first %} is-active{% endif %}"
-                 id="{{ class_prefix|esc_attr }}tab-{{ id }}">
-                {{ tab|call('render')|raw }}
-            </fieldset>
-        {% endfor %}
+        <div class="{{ class_prefix|esc_attr }}contents">
+            {% for id, tab in tabs %}
+                <fieldset class="{{ class_prefix|esc_attr }}tab-content pr-tab-content{% if loop.first %} is-active{% endif %}"
+                        id="{{ class_prefix|esc_attr }}tab-{{ id }}">
+                    {{ tab|call('render')|raw }}
+                </fieldset>
+            {% endfor %}
+        </div>
 
     {% elseif fields is not empty %}
         <fieldset class="{{ class_prefix|esc_attr }}fieldset">

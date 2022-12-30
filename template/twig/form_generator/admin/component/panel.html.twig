@@ -13,13 +13,15 @@
                        class="{{ class_prefix|esc_attr }}nav-item pr-tab-link{% if loop.first %} is-active{% endif %}"
                        id="{{ class_prefix|esc_attr }}nav-item-{{ id|esc_attr }}">
                         <div class="{{ class_prefix|esc_attr }}nav-item-title d-none d-lg-block">{{ segment.title|raw }}</div>
-                        <div class="{{ class_prefix|esc_attr }}nav-item-description d-none d-lg-block">{{ segment.description|raw }}</div>
+                        {% if segment.description is not empty %}
+                            <div class="{{ class_prefix|esc_attr }}nav-item-description d-none d-lg-block">{{ segment.description|raw }}</div>
+                        {% endif %}
                         {{ render_icon(segment.icon) }}
                     </a>
                 {% endfor %}
             </nav>
         </header>
-        <section class="{{ class_prefix|esc_attr }}content is-full">
+        <section class="{{ class_prefix|esc_attr }}content">
             <form enctype="multipart/form-data" method="POST">
                 {% for id, segment in segments %}
                     <div class="{{ class_prefix|esc_attr }}segment pr-tab-content{% if loop.first %} is-active{% endif %}"
@@ -31,15 +33,15 @@
                     <div class="{{ class_prefix|esc_attr }}actions">
                         {% include get_template('../fields', _self) with {
                             fields: buttons
-                        }%}
+                        } %}
                     </div>
                 {% endif %}
                 {% include get_template('../fields', _self) %}
             </form>
         </section>
-        <aside class="{{ class_prefix|esc_attr }}sidebar">
-
-        </aside>
+        {% if sidebar is not empty %}
+            {{ sidebar|call('render')|raw }}
+        {% endif %}
     </div>
 </div>
 

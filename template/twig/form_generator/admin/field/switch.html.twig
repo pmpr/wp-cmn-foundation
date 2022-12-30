@@ -14,11 +14,6 @@
                   data-inactive="{{ args['inactive-title'] }}"></span>
         {% endblock %}
     {% endembed %}
-    {% if description is defined
-        and description is not empty %}
-        <div class="pr-field-description">{{ description|raw }}</div>
-    {% endif %}
+    {{ parent() }}
 {% endblock %}
-
-{% block after_field %}{% endblock %}
 

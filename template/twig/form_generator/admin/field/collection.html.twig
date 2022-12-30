@@ -23,7 +23,7 @@
         {% endif %}
 
         {% for index, val in values %}
-            {{ _self.model(class_prefix, args, self|call('prepareFields', val, fields, index), index + 1, 0) }}
+            {{ _self.model(class_prefix, args, self|call('prepareFields', val, fields, index), index, 0) }}
         {% endfor %}
 
     </div>
@@ -39,14 +39,12 @@
 
 {% macro model(class_prefix, args, fields, index = 1, is_model = 0) %}
     <div class="{{ class_prefix|esc_attr }}item col-12{{ args.columns|raw }}" data-index="{{ index|esc_attr }}">
-        <div class="{{ class_prefix|esc_attr }}item-wraper">
+        <div class="{{ class_prefix|esc_attr }}item-wrap">
             <div class="{{ class_prefix|esc_attr }}item-header d-flex justify-content-between">
-                <span class="pr-title-level-3 my-auto">{{ args.item_title|replace({'-#-': index})|raw }}</span>
-                {% if index > 1 or not args.required %}
-                    <a href="#" class="{{ class_prefix|esc_attr }}item-remove remove-item">
-                        {{ render_icon(args.remove, {class: 'icon-xs'}) }}
-                    </a>
-                {% endif %}
+                <span class="pr-title-level-3 my-auto">{{ args.item_title|replace({'-#-': (index matches '/^\\d+$/' ? index + 1 : index) })|raw }}</span>
+                <a href="#" class="{{ class_prefix|esc_attr }}item-remove remove-item">
+                    {{ render_icon(args.remove, {class: 'icon-xs icon-danger'}) }}
+                </a>
             </div>
             <fieldset class="{{ class_prefix|esc_attr }}item-fieldset{% if args.collapsible %} collapsed{% endif %}">
                 {% for field in fields %}
