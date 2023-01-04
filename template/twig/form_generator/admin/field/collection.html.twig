@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block field_body %}
-    <div class="{{ class_prefix|esc_attr }}list row gutter-1">
+    <div class="{{ class_prefix|esc_attr }}list row gutter-1" id="{{ name|raw }}_collection">
 
         {% if value is defined and value is iterable and value is not empty %}
 
@@ -46,6 +46,7 @@
                     {{ render_icon(args.remove, {class: 'icon-xs icon-danger'}) }}
                 </a>
             </div>
+            <div class="{{ class_prefix|esc_attr }}item-message"></div>
             <fieldset class="{{ class_prefix|esc_attr }}item-fieldset{% if args.collapsible %} collapsed{% endif %}">
                 {% for field in fields %}
                     {% if not is_model %}

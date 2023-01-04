@@ -1,0 +1,29 @@
+{% extends get_template('./common', _self) %}
+
+{% block before_field %}{% endblock %}
+
+{% block field_body %}
+    <ul class="pr-field-radio-list">
+        {% if options is not empty %}
+            {% for key, option in options %}
+                <li class="pr-field-radio-item">
+                    {% set radio_id = attributes.id ~ '_' ~ key %}
+                    {% set overwrite = {value: key, id: radio_id} %}
+                    {% if value is same as(key) %}
+                        {% set overwrite = overwrite|add('checked', 'checked') %}
+                    {% endif %}
+                    <input {{ attributes|parse_attrs(overwrite)|raw }}/>
+                    {% include get_template('label', _self) with {
+                        for: radio_id,
+                        label: option,
+                        label_class: 'pr-field-label'
+                    } %}
+                </li>
+            {% endfor %}
+        {% endif %}
+    </ul>
+
+    {{ parent() }}
+
+{% endblock %}
+

@@ -1,5 +1,5 @@
 {% set class_prefix = 'pr-segment-' %}
-<div class="{{ class_prefix|esc_attr }}header d-flex">
+<div class="{{ class_prefix|esc_attr }}header">
     {{ render_icon(icon, {class: 'icon-xl mr-4 centered-svg'}) }}
     <div>
         <h2 class="pr-title-level-1">{{ title|raw }}</h2>
@@ -13,5 +13,13 @@
             {{ section|call('render')|raw }}
         </div>
     {% endfor %}
+    {% include get_template('../fields', _self) %}
 </div>
+{% if buttons is not empty %}
+    <div class="{{ class_prefix|esc_attr }}actions">
+        {% include get_template('../fields', _self) with {
+            fields: buttons
+        } %}
+    </div>
+{% endif %}
 
