@@ -16,5 +16,13 @@
         {% endblock %}
     </div>
     {% block after_field %}{% endblock %}
+    {% if errors is defined
+        and errors is not empty %}
+    <ul class="pr-field-errors">
+        {% for error in errors %}
+        <li class="pr-field-error">{{ error|raw }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
 </div>
 

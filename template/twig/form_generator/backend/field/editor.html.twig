@@ -10,3 +10,6 @@
 {% block field_body %}
     {{ editor(value, args.editor_name, args) }}
 {% endblock %}
+
+{% block after_field %}{{ shortcuts|raw }}{% endblock %}
+
