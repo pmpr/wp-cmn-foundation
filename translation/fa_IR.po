@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr Common Foundation\n"
-"POT-Creation-Date: 2023-01-17 15:18+0330\n"
-"PO-Revision-Date: 2023-01-17 15:19+0330\n"
+"POT-Creation-Date: 2023-02-16 13:58+0330\n"
+"PO-Revision-Date: 2023-02-16 13:59+0330\n"
 "Last-Translator: PMPR <pmpr.ir@gmail.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -50,25 +50,25 @@ msgstr ""
 msgid "Ops! Something is wrong. Are you hacking?! :("
 msgstr "اوپس! اشکالی به وجود آمده است. :("
 
-#: src/Pmpr/Common/Foundation/Ajax.php:347
-#, php-format
-msgid "Roles: %s"
-msgstr "نقش‌های کاربری: %s"
-
-#: src/Pmpr/Common/Foundation/Ajax.php:348
-#, php-format
-msgid "Username: %s"
-msgstr "نام کاربری:‌ %s"
-
-#: src/Pmpr/Common/Foundation/Ajax.php:349
+#: src/Pmpr/Common/Foundation/Ajax.php:344
 #, php-format
 msgid "Name: %s"
 msgstr "نام:‌ %s"
 
-#: src/Pmpr/Common/Foundation/Ajax.php:350
+#: src/Pmpr/Common/Foundation/Ajax.php:345
 #, php-format
 msgid "Email: %s"
 msgstr "ایمیل: %s"
+
+#: src/Pmpr/Common/Foundation/Ajax.php:346
+#, php-format
+msgid "Roles: %s"
+msgstr "نقش‌های کاربری: %s"
+
+#: src/Pmpr/Common/Foundation/Ajax.php:347
+#, php-format
+msgid "Username: %s"
+msgstr "نام کاربری:‌ %s"
 
 #: src/Pmpr/Common/Foundation/Asset/Asset.php:76
 msgid "Nothing selected"
@@ -212,7 +212,7 @@ msgstr "گیگابایت"
 msgid "Need Help?"
 msgstr "به کمک نیاز داردید؟"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Collection.php:102
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Collection.php:104
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Field/Group.php:66
 #: src/Pmpr/Common/Foundation/Register/RegisterPost.php:108
 #: src/Pmpr/Common/Foundation/Register/RegisterTaxonomy.php:105
@@ -334,49 +334,49 @@ msgstr "تنظیمات با موفقیت به روز شد"
 msgid "Your license key is not valid."
 msgstr "کلید مجوز شما معتبر نیست."
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:445
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:447
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:302
 #, php-format
 msgid "Setting options successfully change to %s"
 msgstr "تنظمیات با موفقیت به %s تغییر کرد"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:450
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:452
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:305
 #, fuzzy
 #| msgid "The Url you entered is not valid"
 msgid "Selected % is not valid"
 msgstr "پیوند وارد شده معتبر نیست"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:450
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:454
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:452
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:456
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:305
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:309
 msgid "Setting Type"
 msgstr "نوع تنظمات"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:454
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:456
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:309
 #, php-format
 msgid "Please select an option in the %s"
 msgstr "لطف یک گزینه در %s انتخاب کنید"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:472
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:474
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:168
 #, php-format
 msgid "%s Setting Template"
 msgstr "الگوی %s"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:610
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:613
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:435
 msgid "Setting Templates"
 msgstr "الگو‌های تنظیمات"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:614
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:617
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:439
 msgid "Setting Template"
 msgstr "الگو"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:619
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:622
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:444
 msgid "Change Settings"
 msgstr "تغییر تنظیمات"
@@ -573,8 +573,8 @@ msgid "Loading"
 msgstr "بارگذاری"
 
 #: src/Pmpr/Common/Foundation/FormMaker/Front/Field/Collection.php:183
-#: src/Pmpr/Common/Foundation/ORM/View/Edit.php:237
-#: src/Pmpr/Common/Foundation/ORM/View/Edit.php:387
+#: src/Pmpr/Common/Foundation/ORM/View/Edit.php:228
+#: src/Pmpr/Common/Foundation/ORM/View/Edit.php:380
 msgid "Add"
 msgstr "افزودن"
 
@@ -585,9 +585,9 @@ msgid "Clear"
 msgstr "پاک کردن"
 
 #: src/Pmpr/Common/Foundation/FormMaker/Front/Field/Collection.php:213
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2369
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2394
-#: src/Pmpr/Common/Foundation/ORM/View/Edit.php:251
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2381
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2406
+#: src/Pmpr/Common/Foundation/ORM/View/Edit.php:241
 #: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:156
 msgid "Delete"
 msgstr "حذف"
@@ -633,36 +633,34 @@ msgstr "مستندات"
 msgid "Something is wrong in addChannel on logger."
 msgstr "اشکالی در فرایند افزودن کانال به لاگر به وجود آمده است."
 
-#: src/Pmpr/Common/Foundation/Manipulate/Cover/ManipulateBootstrap.php:64
-#: src/Pmpr/Common/Foundation/Manipulate/Cover/ManipulateHTML.php:482
+#: src/Pmpr/Common/Foundation/Manipulate/Cover/ManipulateBootstrap.php:63
+#: src/Pmpr/Common/Foundation/Manipulate/Cover/ManipulateHTML.php:488
 msgid "Close"
 msgstr "بستن"
 
-#: src/Pmpr/Common/Foundation/Manipulate/Cover/ManipulateHTML.php:42
+#: src/Pmpr/Common/Foundation/Manipulate/Cover/ManipulateHTML.php:41
 msgid "Items"
 msgstr "آیتم‌ها‌"
 
-#: src/Pmpr/Common/Foundation/Manipulate/Cover/ManipulateHTML.php:45
+#: src/Pmpr/Common/Foundation/Manipulate/Cover/ManipulateHTML.php:44
 #, fuzzy, php-format
 #| msgid "Exclude"
 msgid "Include %s %s"
 msgstr "موارد استثنا"
 
-#: src/Pmpr/Common/Foundation/Manipulate/Cover/ManipulateHTML.php:129
-#, fuzzy
-#| msgid "Select a image as placeholder."
+#: src/Pmpr/Common/Foundation/Manipulate/Cover/ManipulateHTML.php:128
 msgid "You can use this shortcuts:"
-msgstr "انتخاب یک تصویر به عنوان تصویر پیشفرض."
+msgstr "می توانید از این متن‌های جایگزین استفاده کنید:"
 
-#: src/Pmpr/Common/Foundation/Manipulate/Cover/ManipulateHTML.php:488
+#: src/Pmpr/Common/Foundation/Manipulate/Cover/ManipulateHTML.php:494
 msgid "please specify a prefix for for modal"
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/Manipulate/Cover/ManipulateHTML.php:917
+#: src/Pmpr/Common/Foundation/Manipulate/Cover/ManipulateHTML.php:923
 msgid "Alert"
 msgstr "اعلان"
 
-#: src/Pmpr/Common/Foundation/Manipulate/Cover/ManipulateHTML.php:950
+#: src/Pmpr/Common/Foundation/Manipulate/Cover/ManipulateHTML.php:956
 msgid "Cancel"
 msgstr "انصراف"
 
@@ -693,49 +691,49 @@ msgstr "%s را نمی‌توان افزود."
 msgid "%s at %s"
 msgstr "%s در %s"
 
-#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:924
+#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:969
 msgid "Image"
 msgstr "تصویر"
 
-#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:925
+#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:970
 msgid "Price"
 msgstr "قیمت"
 
-#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:926
+#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:971
 msgid "Add to cart"
 msgstr "افزودن به سبد خرید"
 
-#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:927
+#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:972
 #: src/Pmpr/Common/Foundation/Woocommerce/MultiStepSingleProduct.php:225
 #: vendor/narmafzam/cmb2/example-functions.php:544
 msgid "Description"
 msgstr "شرح"
 
-#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:928
+#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:973
 #, fuzzy
 #| msgid "Sun"
 msgid "Sku"
 msgstr "ی"
 
-#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:929
+#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:974
 msgid "Availability"
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:930
-#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:1186
+#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:975
+#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:1231
 msgid "Weight"
 msgstr "وزن"
 
-#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:931
-#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:1192
+#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:976
+#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:1237
 msgid "Dimensions"
 msgstr "ابعاد"
 
-#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:1011
+#: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:1056
 msgid "In stock"
 msgstr "موجود در انبار"
 
-#: src/Pmpr/Common/Foundation/Manipulate/Type/ManipulateDatetime.php:36
+#: src/Pmpr/Common/Foundation/Manipulate/Type/ManipulateDatetime.php:53
 #, php-format
 msgid "%s ago"
 msgstr "‏%s پیش"
@@ -880,50 +878,50 @@ msgstr "اشکالی در فرایند حذف حافظه کش رخ داده اس
 msgid "Some require parameters not passed or not correct."
 msgstr "داده‌های الزامی ارسال نشد‌اند"
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:597
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2443
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:600
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2455
 msgid "Created At"
 msgstr "تاریخ ایجاد"
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:600
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2444
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:603
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2456
 msgid "Updated At"
 msgstr "تاریخ به روزرسانی"
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:614
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:617
 msgid "Logs"
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:969
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:972
 msgid "All"
 msgstr "همه"
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1776
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1788
 #, php-format
 msgid "Exception on add/update object: %s"
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1780
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1792
 #, fuzzy
 #| msgid "Qualification Setting"
 msgid "Validation failed."
 msgstr "تنظیمات مشخصه‌ها"
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1784
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:1796
 msgid "Builder is null, maybe table not created."
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2155
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2167
 #, php-format
 msgid "%s is unique and entered value already exist."
 msgstr "فیلد %s منحصر به فرد است و مقدار ورودی در حال حاضر وجود دارد."
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2160
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2172
 #, php-format
 msgid "%s cann't be empty, please fill it."
 msgstr "فیلد %s نمی‌تواند خالی باشد، لطفا آن را پر کنید."
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2374
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2386
 msgid "Are you sure you want to delete this item?"
 msgstr "در مورد حذف این آیتم مطمئن هستید؟"
 
@@ -969,54 +967,37 @@ msgstr ""
 msgid "Foreign key %s must end with %s postfix"
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/ORM/View/Edit.php:58
+#: src/Pmpr/Common/Foundation/ORM/View/Edit.php:62
 msgid "Sorry, you are not allowed to edit this item."
 msgstr "متاسفانه شما مجاز به ویرایش  این آیتم نیستید."
 
-#: src/Pmpr/Common/Foundation/ORM/View/Edit.php:133
+#: src/Pmpr/Common/Foundation/ORM/View/Edit.php:137
 #: src/Pmpr/Common/Foundation/ORM/View/Index.php:76
 #, php-format
 msgid "%s updated successfully."
 msgstr "%s با موفقیت به روز شد."
 
-#: src/Pmpr/Common/Foundation/ORM/View/Edit.php:137
+#: src/Pmpr/Common/Foundation/ORM/View/Edit.php:141
 #, php-format
 msgid "%s added successfully."
 msgstr "%s با موفقیت اضافه شد."
 
-#: src/Pmpr/Common/Foundation/ORM/View/Edit.php:145
+#: src/Pmpr/Common/Foundation/ORM/View/Edit.php:149
 #, php-format
 msgid "%s could not be updated."
 msgstr "به روز رسانی %s  امکان پذیر نیست."
 
-#: src/Pmpr/Common/Foundation/ORM/View/Edit.php:148
+#: src/Pmpr/Common/Foundation/ORM/View/Edit.php:152
 #, php-format
 msgid "%s could not be added."
 msgstr "افزودن %s  جدید امکان پذیر نیست."
 
-#: src/Pmpr/Common/Foundation/ORM/View/Edit.php:190
+#: src/Pmpr/Common/Foundation/ORM/View/Edit.php:194
 msgid "Sorry, you are not allowed to edit items of this type."
 msgstr "متاسفانه شما مجاز به ویرایش آیتم‌هایی از این نوع نیستید."
 
-#: src/Pmpr/Common/Foundation/ORM/View/Edit.php:227
-#, fuzzy, php-format
-#| msgid "Information"
-msgid "%s Information"
-msgstr "اطلاعات"
-
-#: src/Pmpr/Common/Foundation/ORM/View/Edit.php:228
-#, php-format
-msgid "Simple fields of %s"
-msgstr ""
-
 #: src/Pmpr/Common/Foundation/ORM/View/Edit.php:231
-#, fuzzy
-#| msgid "Custom Fields"
-msgid "Fields"
-msgstr "فیلد‌های سفارشی"
-
-#: src/Pmpr/Common/Foundation/ORM/View/Edit.php:240
-#: src/Pmpr/Common/Foundation/ORM/View/Edit.php:391
+#: src/Pmpr/Common/Foundation/ORM/View/Edit.php:384
 msgid "Update"
 msgstr "به روزرسانی"
 
@@ -1105,12 +1086,13 @@ msgstr "بررسی کلی"
 msgid "There are not %s yet."
 msgstr "هنوز %s وجود ندارد."
 
-#: src/Pmpr/Common/Foundation/Page/Page.php:71
-#, php-format
-msgid "Page for %s"
-msgstr "صفحه %s"
+#: src/Pmpr/Common/Foundation/Page/Page.php:350
+#, fuzzy, php-format
+#| msgid "Page"
+msgid "%s Page"
+msgstr "صفحه"
 
-#: src/Pmpr/Common/Foundation/Page/Page.php:372
+#: src/Pmpr/Common/Foundation/Page/Page.php:393
 msgid "Sorry, you haven't access to edit this page."
 msgstr "شما دسترسی لازم برای مشاهده یا ویرایش این صفحه را ندارید."
 
@@ -1327,7 +1309,7 @@ msgstr ""
 msgid "User Avatar"
 msgstr "آواتار کاربر"
 
-#: src/Pmpr/Common/Foundation/Traits/AjaxTrait.php:24
+#: src/Pmpr/Common/Foundation/Traits/AjaxTrait.php:25
 msgid "Request is not valid, please reload page and try again."
 msgstr "درخواست شما معتبر نیست، لطفا صفحه را بارگذاری مجدد کنید."
 
@@ -2260,6 +2242,19 @@ msgstr "افزودن یا آپلود فایل"
 #: vendor/narmafzam/cmb2/includes/types/CMB2_Type_Taxonomy_Base.php:115
 msgid "No terms"
 msgstr "ترمی یافت نشد"
+
+#, fuzzy
+#~| msgid "Information"
+#~ msgid "%s Information"
+#~ msgstr "اطلاعات"
+
+#, fuzzy
+#~| msgid "Custom Fields"
+#~ msgid "Fields"
+#~ msgstr "فیلد‌های سفارشی"
+
+#~ msgid "Page for %s"
+#~ msgstr "صفحه %s"
 
 #~ msgid "Link Rels"
 #~ msgstr "روابط پیوند"
@@ -4496,9 +4491,6 @@ msgstr "ترمی یافت نشد"
 #~| msgid "Schema App Structured Data"
 #~ msgid "Enable Structured Data"
 #~ msgstr "طرح کلی برنامه ساختار داده"
-
-#~ msgid "Page"
-#~ msgstr "صفحه"
 
 #~ msgid "Post Type Singles"
 #~ msgstr "صفحات نوع نوشته‌"
