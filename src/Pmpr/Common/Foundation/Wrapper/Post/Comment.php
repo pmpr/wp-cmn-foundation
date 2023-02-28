@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             63f69549622df             |
+    |             63fe3573ccf82             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\Wrapper; class Comment { }
+ namespace Pmpr\Common\Foundation\Wrapper\Post; class Comment extends Common { }

@@ -1,0 +1,7 @@
+<?php
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             63fe3573ccf82             |
+    |_______________________________________|
+*/
+ namespace Pmpr\Common\Foundation\Helper\HTML; class Backend extends Common { public function smawkkqgsoawiquc($meqocwsecsywiiqs, $wkaqekwwgqsqwcoi, array $wwgucssaecqekuek = [], bool $gskuwmeemyeuwogc = false) { if (!$wkaqekwwgqsqwcoi) { goto gkaayykiiqqogeiw; } $swqimwqeweekeusq = $this->caokeucsksukesyo()->wgqqgewcmcemoewo(); $wkaqekwwgqsqwcoi = $swqimwqeweekeusq->cuoygaaeqeqcuggu($wkaqekwwgqsqwcoi, $wwgucssaecqekuek, [self::kicoscymgmgqeqgy => $gskuwmeemyeuwogc]); $meqocwsecsywiiqs = $swqimwqeweekeusq->gmqyuaqwgiayskei($meqocwsecsywiiqs, ["\143\154\141\x73\x73" => "\x6d\x6c\x2d\62"]); $meqocwsecsywiiqs = $swqimwqeweekeusq->gmqyuaqwgiayskei($wkaqekwwgqsqwcoi . $meqocwsecsywiiqs); gkaayykiiqqogeiw: return $meqocwsecsywiiqs; } public function uyouiyyykmoqmicg($gaeqamemwmwsyukm, string $iueymcwwscwqkiyq = "\141\x64\x64\x65\x64") : string { $swqimwqeweekeusq = $this->caokeucsksukesyo()->wgqqgewcmcemoewo(); return $swqimwqeweekeusq->gmqyuaqwgiayskei($swqimwqeweekeusq->gmqyuaqwgiayskei($gaeqamemwmwsyukm, ["\x63\x6c\141\163\163" => "\x70\x6c\165\x67\x69\x6e\55\143\x6f\165\x6e\x74"]), ["\x63\x6c\141\x73\163" => "\165\160\144\141\164\145\x2d\160\x6c\x75\x67\151\156\x73\x20\143\157\165\156\164\55{$iueymcwwscwqkiyq}\40\155\154\55\x32"]); } }
