@@ -3,9 +3,7 @@
 
 {% block before_field %}
     {{ parent() }}
-    {% if description is defined and description is not empty %}
-        <div class="pr-field-description">{{ description|raw }}</div>
-    {% endif %}
+    {% include get_template('../description', _self) %}
 {% endblock %}
 
 {% block field_body %}
@@ -23,7 +21,7 @@
         {% endif %}
 
         {% for index, val in values %}
-            {{ _self.model(class_prefix, args, self|call('prepareFields', val, fields, index + 1), index + 1, 0) }}
+            {{ _self.model(class_prefix, args, self|call('prepareFields', val, fields, loop.index), loop.index, 0) }}
         {% endfor %}
 
     </div>

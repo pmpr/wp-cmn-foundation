@@ -3,9 +3,7 @@
 
 {% block before_field %}
     {{ parent() }}
-    {% if description is defined and description is not empty %}
-        <div class="pr-field-description">{{ description|raw }}</div>
-    {% endif %}
+    {% include get_template('../description', _self) %}
 {% endblock %}
 
 {% block field_body %}

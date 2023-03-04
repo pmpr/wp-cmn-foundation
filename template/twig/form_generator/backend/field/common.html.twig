@@ -10,9 +10,7 @@
     {% endblock %}
     <div class="pr-field-{{ type|esc_attr }}">
         {% block field_body %}
-            {% if description is defined and description is not empty %}
-                <div class="pr-field-description">{{ description|raw }}</div>
-            {% endif %}
+            {% include get_template('../description', _self) %}
         {% endblock %}
     </div>
     {% block after_field %}{% endblock %}
