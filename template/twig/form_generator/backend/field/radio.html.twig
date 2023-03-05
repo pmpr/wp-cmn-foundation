@@ -6,7 +6,7 @@
             {% for key, option in options %}
                 {% set radio_id = attributes.id ~ '_' ~ key %}
                 {% set attrs = {'data-value': key, id: radio_id, class: 'pr-field-radio-item pr-field-label'} %}
-                {% if value is same as(key) %}
+                {% if value is same as(key) or value == key %}
                     {% set attrs = attrs|add('class', 'checked') %}
                 {% endif %}
                 <li {{ attrs|parse_attrs|raw }}>{{ option|raw }}</li>
