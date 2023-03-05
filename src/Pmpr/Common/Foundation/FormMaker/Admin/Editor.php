@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             6403d243ca086             |
+    |             64046602cfbce             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\FormMaker\Admin; use Pmpr\Common\Foundation\Manipulate\Post\ManipulatePost; class Editor extends Common { public function kgquecmsgcouyaya() { $this->cecaguuoecmccuse("\155\x63\x65\x5f\145\x78\x74\145\x72\156\x61\154\x5f\x70\154\x75\147\x69\156\163", [$this, "\x6f\141\x61\145\x61\157\165\155\171\147\x6d\147\x63\145\141\x73"]); parent::kgquecmsgcouyaya(); } public function oaaeaoumygmgceas($mseykiqqcmyesccu) { if (!ManipulatePost::uqwgsuysegkweago([])) { goto swyogqkgcygqewgk; } $mseykiqqcmyesccu["\x73\150\x6f\162\164\143\x6f\144\x65"] = $this->miocmcoykayoyyau()->get("\x74\x69\x6e\171\155\143\145\55\160\154\165\147\x69\x6e\56\x6a\x73"); swyogqkgcygqewgk: return $mseykiqqcmyesccu; } }
+ namespace Pmpr\Common\Foundation\FormMaker\Admin; use Pmpr\Common\Foundation\Manipulate\Post\ManipulatePost; class Editor extends Common { public function kgquecmsgcouyaya() { $this->cecaguuoecmccuse("\155\x63\x65\137\145\170\164\145\162\156\141\154\x5f\160\x6c\x75\147\151\x6e\163", [$this, "\x6f\141\x61\x65\141\x6f\165\x6d\171\147\x6d\x67\143\145\141\163"]); parent::kgquecmsgcouyaya(); } public function oaaeaoumygmgceas($mseykiqqcmyesccu) { if (!ManipulatePost::uqwgsuysegkweago([])) { goto eycqiquyywmsaimu; } $mseykiqqcmyesccu["\x73\150\x6f\x72\164\143\157\x64\x65"] = $this->miocmcoykayoyyau()->get("\164\151\156\x79\155\143\145\55\x70\x6c\x75\x67\151\156\56\x6a\163"); eycqiquyywmsaimu: return $mseykiqqcmyesccu; } }

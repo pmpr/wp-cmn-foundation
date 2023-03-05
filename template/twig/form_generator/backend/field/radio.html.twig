@@ -4,24 +4,16 @@
     <ul class="pr-field-radio-list">
         {% if options is not empty %}
             {% for key, option in options %}
-                <li class="pr-field-radio-item">
-                    {% set radio_id = attributes.id ~ '_' ~ key %}
-                    {% set overwrite = {value: key, id: radio_id} %}
-                    {% if value is same as(key) %}
-                        {% set overwrite = overwrite|add('checked', 'checked') %}
-                    {% endif %}
-                    <input {{ attributes|parse_attrs(overwrite)|raw }}/>
-                    {% include get_template('label', _self) with {
-                        for: radio_id,
-                        label: option,
-                        label_class: 'pr-field-label'
-                    } %}
-                </li>
+                {% set radio_id = attributes.id ~ '_' ~ key %}
+                {% set attrs = {'data-value': key, id: radio_id, class: 'pr-field-radio-item pr-field-label'} %}
+                {% if value is same as(key) %}
+                    {% set attrs = attrs|add('class', 'checked') %}
+                {% endif %}
+                <li {{ attrs|parse_attrs|raw }}>{{ option|raw }}</li>
             {% endfor %}
         {% endif %}
     </ul>
-
+    <input {{ attributes|parse_attrs|raw }}/>
     {{ parent() }}
-
 {% endblock %}
 
