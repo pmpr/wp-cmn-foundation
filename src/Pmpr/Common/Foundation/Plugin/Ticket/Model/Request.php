@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             641183e17ed46             |
+    |             641ae95917404             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\Plugin\Ticket\Model; class Request { }
+ namespace Pmpr\Common\Foundation\Plugin\Ticket\Model; class Request extends AbstractResponse { }
