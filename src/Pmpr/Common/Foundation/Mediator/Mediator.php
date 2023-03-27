@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             64205c9f6dbfb             |
+    |             6421a7e732701             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Mediator; use Pmpr\Common\Foundation\Mediator\REST\REST; class Mediator extends Common { public function __construct() { parent::__construct(); $this->iemaakgqgqosiecm(); } public function iemaakgqgqosiecm() { REST::symcgieuakksimmu(); } }
