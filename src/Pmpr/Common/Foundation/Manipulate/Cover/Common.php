@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             642ac68c390f0             |
+    |             642ad5cc3c612             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\Manipulate\Cover; use Pmpr\Common\Foundation\Manipulate\Manipulate; use Pmpr\Common\Foundation\Template\Template; abstract class Common extends Manipulate { protected static function auqoykuwiywsocis(string $qqscaoyqikuyeoaw, array $qookweymeqawmcwo = []) : string { $nsmgceoqaqogqmuw = ''; if (!($kuyqaamgacigwcwq = Template::symcgieuakksimmu())) { goto yiwmwceouauueusw; } $nsmgceoqaqogqmuw = $kuyqaamgacigwcwq->iuygowkemiiwqmiw("\x40\x70\162\137\137\x63\155\156\x5f\137\146\x6f\x75\156\x64\141\164\151\x6f\156\57{$qqscaoyqikuyeoaw}\x2e\150\164\155\154\x2e\x74\x77\x69\x67", $qookweymeqawmcwo); yiwmwceouauueusw: return $nsmgceoqaqogqmuw; } }
+ namespace Pmpr\Common\Foundation\Manipulate\Cover; use Pmpr\Common\Foundation\Manipulate\Manipulate; use Pmpr\Common\Foundation\Template\Template; abstract class Common extends Manipulate { protected static function auqoykuwiywsocis(string $qqscaoyqikuyeoaw, array $qookweymeqawmcwo = []) : string { $nsmgceoqaqogqmuw = ''; if (!($kuyqaamgacigwcwq = Template::symcgieuakksimmu())) { goto umyoqguamkcimsci; } $nsmgceoqaqogqmuw = $kuyqaamgacigwcwq->iuygowkemiiwqmiw("\x40\160\x72\x5f\137\143\155\x6e\137\137\146\157\165\156\x64\141\164\x69\x6f\x6e\57{$qqscaoyqikuyeoaw}\x2e\x68\x74\155\154\x2e\164\167\x69\147", $qookweymeqawmcwo); umyoqguamkcimsci: return $nsmgceoqaqogqmuw; } }
