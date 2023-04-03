@@ -2,8 +2,8 @@
     {% if title %}
         <h1 class="wp-heading-inline">{{ title|raw }}</h1>
     {% endif %}
-    {% if actions is defined
-        and actions is not empty %}
+    {% if actions is defined and actions is not empty %}
+
         {% for action in actions %}
 
             <a {{ action.attrs|parse_attrs|raw }}>{{ action.title|raw }}</a>
