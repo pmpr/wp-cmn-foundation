@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             642bcfe93b439             |
+    |             642c3cfa40e39             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Decorator\Post; class DecoratorPage extends Common { public static function qmgcisuuikgmqcsu($post = false, $eoocgqsqmwuegiae = false, $cgqscqgaukewiaeg = false) { return get_page_link($post, $eoocgqsqmwuegiae, $cgqscqgaukewiaeg); } }
