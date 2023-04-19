@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             643baf2730c00             |
+    |             643fe5128d192             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\Wrapper\Traits; use Pmpr\Common\Foundation\Wrapper\Wrapper; trait WrapperTrait { protected ?Wrapper $wrapper = null; protected static ?Wrapper $staticWrapper = null; public function uwkmaywceaaaigwo() : Wrapper { if ($this->wrapper) { goto iauiowaaqsooooco; } $this->wrapper = new Wrapper(); iauiowaaqsooooco: return $this->wrapper; } public static function haqswuugoswcyoia() : Wrapper { if (self::$staticWrapper) { goto cwsmkieawokgkqso; } self::$staticWrapper = new Wrapper(); cwsmkieawokgkqso: return self::$staticWrapper; } }
+ namespace Pmpr\Common\Foundation\Wrapper\Traits; use Pmpr\Common\Foundation\Wrapper\Wrapper; trait WrapperTrait { protected ?Wrapper $wrapper = null; protected static ?Wrapper $staticWrapper = null; public function uwkmaywceaaaigwo() : Wrapper { if ($this->wrapper) { goto iayqwwsmsuwaykyw; } $this->wrapper = new Wrapper(); iayqwwsmsuwaykyw: return $this->wrapper; } public static function haqswuugoswcyoia() : Wrapper { if (self::$staticWrapper) { goto gaqweioagqyciyaw; } self::$staticWrapper = new Wrapper(); gaqweioagqyciyaw: return self::$staticWrapper; } }
