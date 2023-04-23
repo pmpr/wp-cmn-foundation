@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             644402fcab147             |
+    |             644534841fd66             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\Manipulate; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString; class ManipulateSanitize extends Manipulate { public static function issugmiaaqmiaoug($aiieyweysaukqemc) { if (!is_string($aiieyweysaukqemc)) { goto remiaquuossuqoma; } $aiieyweysaukqemc = strtolower(str_replace("\x5c", '', $aiieyweysaukqemc)); remiaquuossuqoma: return $aiieyweysaukqemc; } }
+ namespace Pmpr\Common\Foundation\Manipulate; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString; class ManipulateSanitize extends Manipulate { public static function issugmiaaqmiaoug($aiieyweysaukqemc) { if (!is_string($aiieyweysaukqemc)) { goto acikugwgomwemcmu; } $aiieyweysaukqemc = strtolower(str_replace("\x5c", '', $aiieyweysaukqemc)); acikugwgomwemcmu: return $aiieyweysaukqemc; } }
