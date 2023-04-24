@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             644534841fd66             |
+    |             64464454174ab             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\Wrapper\Traits; use Pmpr\Common\Foundation\Wrapper\Wrapper; trait WrapperTrait { protected ?Wrapper $wrapper = null; protected static ?Wrapper $staticWrapper = null; public function uwkmaywceaaaigwo() : Wrapper { if ($this->wrapper) { goto uqamuckwuksquqia; } $this->wrapper = new Wrapper(); uqamuckwuksquqia: return $this->wrapper; } public static function haqswuugoswcyoia() : Wrapper { if (self::$staticWrapper) { goto gukawqgamokyceki; } self::$staticWrapper = new Wrapper(); gukawqgamokyceki: return self::$staticWrapper; } }
+ namespace Pmpr\Common\Foundation\Wrapper\Traits; use Pmpr\Common\Foundation\Wrapper\Wrapper; trait WrapperTrait { protected ?Wrapper $wrapper = null; protected static ?Wrapper $staticWrapper = null; public function uwkmaywceaaaigwo() : Wrapper { if ($this->wrapper) { goto ygywqwksoumccysq; } $this->wrapper = new Wrapper(); ygywqwksoumccysq: return $this->wrapper; } public static function haqswuugoswcyoia() : Wrapper { if (self::$staticWrapper) { goto cecomsiewwckuwqy; } self::$staticWrapper = new Wrapper(); cecomsiewwckuwqy: return self::$staticWrapper; } }
