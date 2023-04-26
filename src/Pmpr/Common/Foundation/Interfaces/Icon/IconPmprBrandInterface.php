@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             6447dd2d6d44e             |
+    |             6448ec8d7fe9e             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\Interfaces\Icon; interface IconPmprBrandInterface { const yqkugkuyygummmsk = "\160\x6d\x70\x72\57\x31\x2f\142\162\x61\x6e\x64\57\x70\155\160\x72\55\163\155\x61\154\154"; }
+ namespace Pmpr\Common\Foundation\Interfaces\Icon; interface IconPmprBrandInterface { const yqkugkuyygummmsk = "\160\155\x70\162\57\x31\57\142\x72\141\156\144\57\x70\155\x70\x72\x2d\163\155\x61\154\154"; }
