@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             6448ec8d7fe9e             |
+    |             644d26dc21ff2             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\FormMaker\Front\Traits; use Pmpr\Common\Foundation\FormMaker\Front as Elements; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString; trait ElementTrait { public static function mmmemoswoaiewkes(?string $aokagokqyuysuksm = null) : Elements\Form { return new Elements\Form($aokagokqyuysuksm); } public static function mecgagckeuagggyw(string $aokagokqyuysuksm = null) : Elements\Div { if ($aokagokqyuysuksm) { goto sugmgeiemuygeoce; } $aokagokqyuysuksm = "\144\x69\x76\x5f" . ManipulateString::uniqid(3); sugmgeiemuygeoce: return new Elements\Div($aokagokqyuysuksm); } }
+ namespace Pmpr\Common\Foundation\FormMaker\Front\Traits; use Pmpr\Common\Foundation\FormMaker\Front as Elements; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString; trait ElementTrait { public static function mmmemoswoaiewkes(?string $aokagokqyuysuksm = null) : Elements\Form { return new Elements\Form($aokagokqyuysuksm); } public static function mecgagckeuagggyw(string $aokagokqyuysuksm = null) : Elements\Div { if ($aokagokqyuysuksm) { goto mqiiqkuaoekeuswo; } $aokagokqyuysuksm = "\x64\151\166\x5f" . ManipulateString::uniqid(3); mqiiqkuaoekeuswo: return new Elements\Div($aokagokqyuysuksm); } }
