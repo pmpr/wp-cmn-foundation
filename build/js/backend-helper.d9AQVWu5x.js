@@ -1,0 +1,1 @@
+(()=>{"use strict";const s=class{instances={};getHelperInstance(s){let e=null;return e=s in this.instances?this.instances[e]:new s,e}};const e=new class extends s{};window.PRBackedHelper=e})();
