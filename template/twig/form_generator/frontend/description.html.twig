@@ -1,0 +1,5 @@
+{% if description is defined
+    and description is not empty %}
+    <div id="{{ attributes.id }}_help" class="form-text">{{ description|raw }}</div>
+{% endif %}
+

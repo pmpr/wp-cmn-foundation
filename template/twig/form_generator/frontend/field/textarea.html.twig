@@ -1,0 +1,13 @@
+{% extends get_template('./common', _self) %}
+
+{% block before_field %}
+    {{ parent() }}
+    {% include get_template('../description', _self) %}
+{% endblock %}
+
+{% block field_body %}
+    <textarea {{ attributes|parse_attrs|raw }}>{{ value|raw }}</textarea>
+{% endblock %}
+
+{% block after_field %}{% endblock %}
+

@@ -29,12 +29,12 @@
                 {% endfor %}
                 {% if buttons is not empty %}
                     <div class="{{ class_prefix|esc_attr }}actions">
-                        {% include get_template('../fields', _self) with {
+                        {% include get_template('../../fields', _self) with {
                             fields: buttons
                         } %}
                     </div>
                 {% endif %}
-                {% include get_template('../fields', _self) %}
+                {% include get_template('../../fields', _self) %}
             {% if buttons is not empty %}
             </form>
             {% endif %}

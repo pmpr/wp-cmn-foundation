@@ -1,5 +1,7 @@
 <div class="d-flex justify-content-between">
-    <span>{{ title|raw }}</span>
+    <div>
+        <span class="result-item-type">{{ post_type|raw }}</span>{{ title|raw }}
+    </div>
     <span>{{ date|raw }}</span>
 </div>
 

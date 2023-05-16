@@ -1,0 +1,19 @@
+{% if container_atts is not empty %}
+<div {{ container_attrs|parse_attrs|raw }}>
+{% endif %}
+    {% block before_field %}
+        {% if title is defined and title is not empty %}
+            {% include get_template('label', _self) with {
+                label: title,
+                for: attributes.id,
+                label_class: 'form-label'
+            } %}
+        {% endif %}
+    {% endblock %}
+    {% block field_body %}{% endblock %}
+    {% block after_field %}
+        {% include get_template('../description', _self) %}
+    {% endblock %}
+{% if container_atts is not empty %}
+</div>
+{% endif %}
