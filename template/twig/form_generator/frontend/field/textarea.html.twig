@@ -1,7 +1,9 @@
 {% extends get_template('./common', _self) %}
 
 {% block before_field %}
-    {{ parent() }}
+    {% if not args.floating %}
+        {{ parent() }}
+    {% endif %}
     {% include get_template('../description', _self) %}
 {% endblock %}
 
@@ -9,5 +11,12 @@
     <textarea {{ attributes|parse_attrs|raw }}>{{ value|raw }}</textarea>
 {% endblock %}
 
-{% block after_field %}{% endblock %}
+{% block after_field %}
+    {% if args.floating %}
+        {% include get_template('label', _self) with {
+            label: title,
+            for: attributes.id,
+        } %}
+    {% endif %}
+{% endblock %}
 
