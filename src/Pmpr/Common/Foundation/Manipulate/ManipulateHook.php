@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             6473742368602             |
+    |             6474902fed27f             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Manipulate; use Pmpr\Common\Foundation\Decorator\DecoratorSanitize; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateArray; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString; class ManipulateHook extends Manipulate { public static function ygyygikyocoymgaw($ymqmyyeuycgmigyo, $quowyokcwswmuois = null, $ykuqcwwmuyqmkisq = true) { $iaakskwmyqceoscy = ''; if (!$ykuqcwwmuyqmkisq) { goto iiiwsgameuomumgw; } global $icgkamwwakkgigsi; if ($icgkamwwakkgigsi) { goto bgakaasgwwygosyi; } $icgkamwwakkgigsi = []; bgakaasgwwygosyi: $iaakskwmyqceoscy = ''; if (!in_array($ymqmyyeuycgmigyo, $icgkamwwakkgigsi)) { goto agyooskogigyayws; } $ksiyqouuaoymsycg = array_search($ymqmyyeuycgmigyo, $icgkamwwakkgigsi); if (!$ksiyqouuaoymsycg) { goto aucwccaiqwsmyuaq; } $iaakskwmyqceoscy = $ksiyqouuaoymsycg; aucwccaiqwsmyuaq: agyooskogigyayws: iiiwsgameuomumgw: if ($iaakskwmyqceoscy) { goto cgwokqwakqcmiieo; } if ($quowyokcwswmuois) { goto mcukocaaoyuugoeu; } $iaakskwmyqceoscy = $ymqmyyeuycgmigyo; goto scockmiqikwwkqse; mcukocaaoyuugoeu: $iaakskwmyqceoscy = "{$quowyokcwswmuois}\137{$ymqmyyeuycgmigyo}"; scockmiqikwwkqse: if (!$ykuqcwwmuyqmkisq) { goto okycquokqoamsquy; } $icgkamwwakkgigsi[$iaakskwmyqceoscy] = $ymqmyyeuycgmigyo; okycquokqoamsquy: cgwokqwakqcmiieo: return $iaakskwmyqceoscy; } }
