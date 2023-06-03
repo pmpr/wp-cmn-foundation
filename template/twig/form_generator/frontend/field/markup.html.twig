@@ -1,0 +1,8 @@
+{% extends get_template('./common', _self) %}
+
+{% block before_field %}{% endblock %}
+
+{% block field_body %}
+    {{ content|raw }}
+{% endblock %}
+
