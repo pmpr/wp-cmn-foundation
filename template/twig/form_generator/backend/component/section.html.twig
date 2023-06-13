@@ -18,6 +18,8 @@
             <div class="{{ class_prefix|esc_attr }}description">{{ description|raw }}</div>
         {% endif %}
 
+        {% include get_template('../alert', _self) %}
+
         {% if tabs is not empty %}
             <nav class="{{ class_prefix|esc_attr }}tabs">
                 {% for id, tab in tabs %}

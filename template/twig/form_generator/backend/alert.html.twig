@@ -1,0 +1,10 @@
+{% if alerts is defined
+    and alerts is not empty %}
+    {% for alert in alerts %}
+        <div class="pr-alert pr-alert-{{ alert.type }}">
+            {{ render_icon(alert.icon, {}, 1) }}
+            {{ alert.text|raw }}
+        </div>
+    {% endfor %}
+{% endif %}
+

@@ -1,12 +1,5 @@
 {% if description is defined and description is not empty %}
     <div class="pr-field-description">{{ description|raw }}</div>
 {% endif %}
-{% if notices is defined and notices is not empty %}
-    {% for alert in notices %}
-        <div class="pr-field-notice pr-field-notice-{{ alert.type }}">
-            {{ render_icon(alert.icon, {}, 1) }}
-            {{ alert.text|raw }}
-        </div>
-    {% endfor %}
-{% endif %}
+{% include get_template('alert', _self) %}
 
