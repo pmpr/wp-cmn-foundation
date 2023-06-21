@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             648f24e918b1c             |
+    |             6492e761a69f3             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\Plugin\Ticket; use Pmpr\Common\Foundation\Plugin\Ticket\Model\Model; use Pmpr\Common\Foundation\Plugin\Ticket\REST\REST; class Ticket extends Common { public function __construct() { parent::__construct(); $this->iemaakgqgqosiecm(); } public function iemaakgqgqosiecm() { REST::symcgieuakksimmu(); Model::symcgieuakksimmu(); } }
+ namespace Pmpr\Common\Foundation\Plugin\Ticket; use Pmpr\Common\Foundation\Plugin\Ticket\Model\Model; use Pmpr\Common\Foundation\Plugin\Ticket\REST\REST; use Pmpr\Common\Foundation\Plugin\Ticket\Traits\SettingTrait; class Ticket extends Common { use SettingTrait; public function __construct() { parent::__construct(); $this->iemaakgqgqosiecm(); } public function wigskegsqequoeks() { $this->qcsmikeggeemccuu("\141\x64\155\151\156\x5f\151\x6e\151\164", [$this, "\x71\x6b\141\145\x6f\x77\171\x65\161\x67\x6b\x67\x6b\x77\x71\x61"]); } public function qkaeowyeqgkgkwqa() { if (!$this->caokeucsksukesyo()->owicscwgeuqcqaig()->euqowsuwmgokuqqo()) { goto qkksuykimikkiccq; } $seammywuwkueoois = $this->uwkmaywceaaaigwo()->giiuwsmyumqwwiyq(); $qiouiwasaauyaaue = $seammywuwkueoois->get("\164\x69\143\x6b\145\164\x5f\163\x65\164\x74\x69\156\x67\163", []); if (!empty($qiouiwasaauyaaue)) { goto sieekqakgoqqgeoo; } $qeqooyuoiasweuck = API::symcgieuakksimmu()->tkgawykgecmsaeis(); if (!$qeqooyuoiasweuck) { goto yeikwmyoqqweggsa; } $seammywuwkueoois->update("\164\151\x63\153\x65\x74\137\x73\145\x74\x74\x69\x6e\147\x73", $qeqooyuoiasweuck); yeikwmyoqqweggsa: sieekqakgoqqgeoo: qkksuykimikkiccq: } public function iemaakgqgqosiecm() { REST::symcgieuakksimmu(); Model::symcgieuakksimmu(); } }

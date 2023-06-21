@@ -1,0 +1,58 @@
+<div class="wrap pr-ticket-view">
+    <h1 class="wp-heading-inline">{{ title|raw }}</h1>
+    <hr class="wp-header-end">
+
+    <div class="pr-ticket-container">
+
+        {% if items is defined
+            and items is not empty %}
+            <div class="pr-ticket-info">
+                <table>
+                    <thead>
+                    <tr>
+                        {% for item in data %}
+                            <th>{{ item.label|raw }}</th>
+                        {% endfor %}
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        {% for item in data %}
+                            <td>{{ item.value|raw }}</td>
+                        {% endfor %}
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        {% endif %}
+
+        <div class="pr-ticket-conversation-container">
+            <header class="pr-ticket-conversation-header">
+                <img class="pr-ticket-user-avatar" src="{{ setting.logo|esc_attr }}" alt="logo" height="50" width="50">
+                <div class="pr-ticket-brand">
+                    <strong class="pr-ticket-name">{{ setting.name|raw }}</strong>
+                    <div class="pr-ticket-slogan">{{ setting.slogan|raw }}</div>
+                </div>
+            </header>
+            <div class="pr-ticket-conversation-list">
+                {% if items is defined
+                    and items is not empty
+                    and items.items is defined
+                    and items.items is not empty %}
+
+                    {% for item in items.items %}
+
+
+
+                    {% endfor %}
+                {% else %}
+                    <div class="pr-ticket-conversation-empty">{{ empty_message|raw }}</div>
+                {% endif %}
+            </div>
+
+            <div class="pr-ticket-conversation-form">
+                {{ form|raw }}
+            </div>
+        </div>
+    </div>
+</div>
