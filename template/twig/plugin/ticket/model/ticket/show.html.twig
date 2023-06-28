@@ -4,8 +4,8 @@
 
     <div class="pr-ticket-container">
 
-        {% if items is defined
-            and items is not empty %}
+        {% if data is defined
+            and data is not empty %}
             <div class="pr-ticket-info">
                 <table>
                     <thead>
@@ -28,7 +28,7 @@
 
         <div class="pr-ticket-conversation-container">
             <header class="pr-ticket-conversation-header">
-                <img class="pr-ticket-user-avatar" src="{{ setting.logo|esc_attr }}" alt="logo" height="50" width="50">
+                <img class="pr-ticket-avatar" src="{{ setting.logo|esc_attr }}" alt="logo" height="50" width="50">
                 <div class="pr-ticket-brand">
                     <strong class="pr-ticket-name">{{ setting.name|raw }}</strong>
                     <div class="pr-ticket-slogan">{{ setting.slogan|raw }}</div>
@@ -42,10 +42,10 @@
 
                     {% for item in items.items %}
 
-
-
+                        {{ pmpr_do_action('plugin_ticket_render_conversation', item) }}
                     {% endfor %}
                 {% else %}
+
                     <div class="pr-ticket-conversation-empty">{{ empty_message|raw }}</div>
                 {% endif %}
             </div>
