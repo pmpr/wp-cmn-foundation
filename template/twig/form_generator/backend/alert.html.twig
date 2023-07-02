@@ -1,7 +1,7 @@
 {% if alerts is defined
     and alerts is not empty %}
     {% for alert in alerts %}
-        <div class="pr-alert pr-alert-{{ alert.type }}">
+        <div class="pr-alert pr-alert-{{ alert.type }}" role="alert">
             {{ render_icon(alert.icon, {}, 1) }}
             {{ alert.text|raw }}
         </div>
