@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr Common Foundation\n"
 "POT-Creation-Date: 2023-07-02 18:01+0330\n"
-"PO-Revision-Date: 2023-07-02 18:07+0330\n"
+"PO-Revision-Date: 2023-07-03 10:09+0330\n"
 "Last-Translator: pmpr.dev <pmpr.dev@gmail.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -264,8 +264,8 @@ msgstr "آیتم‌"
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Collection.php:59
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Field/Group.php:173
 msgid ""
-"Sorry, you can't submit form. Some field's value is duplicated in group, "
-"please fix errors and try again."
+"Sorry, you can't submit form. Some field's value is duplicated in group, please "
+"fix errors and try again."
 msgstr ""
 
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Collection.php:60
@@ -275,8 +275,8 @@ msgid ""
 "Sorry, you can't add new %s. Some field's value is duplicated, please fix "
 "errors and try again."
 msgstr ""
-"متاسفانه شما قادر به افزودن %s جدید نیستید. برخی از مقادیر فیلد‌ها تکراری "
-"هستند، لطفا خطا‌ها را اصلاح کرده و دوباره امتحان کنید."
+"متاسفانه شما قادر به افزودن %s جدید نیستید. برخی از مقادیر فیلد‌ها تکراری هستند، "
+"لطفا خطا‌ها را اصلاح کرده و دوباره امتحان کنید."
 
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Collection.php:136
 #: src/Pmpr/Common/Foundation/Register/RegisterPost.php:91
@@ -529,8 +529,8 @@ msgid ""
 "If you notice any errors on your website after having activated this setting, "
 "just deactivate it again, and your site will be back to normal."
 msgstr ""
-"اگر پس از فعال کردن این گزینه در وب سایت خود خطایی مشاهده کردید، برای رفع "
-"مشکل فقط دوباره آن را غیرفعال کنید."
+"اگر پس از فعال کردن این گزینه در وب سایت خود خطایی مشاهده کردید، برای رفع مشکل "
+"فقط دوباره آن را غیرفعال کنید."
 
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Field/File.php:186
 #: vendor/narmafzam/cmb2/includes/types/CMB2_Type_File.php:76
@@ -800,8 +800,8 @@ msgstr "استفاده به عنوان آیکون"
 #: src/Pmpr/Common/Foundation/Media/Icon.php:117
 msgid "Check if you want show this attachment in icon list."
 msgstr ""
-"در صورتی که می‌خواهید این تصویر در لیست‌ آیکون‌ها نمایش داده شود، این ایتم را "
-"فعال کنید."
+"در صورتی که می‌خواهید این تصویر در لیست‌ آیکون‌ها نمایش داده شود، این ایتم را فعال "
+"کنید."
 
 #: src/Pmpr/Common/Foundation/Media/Image.php:51
 msgid "SEO settings"
@@ -870,16 +870,16 @@ msgstr "استایل بک لینک"
 msgid ""
 "This component is registered and has copyright. You admit your full agreement "
 "and consent with putting the author's copyright link on the footer of your "
-"website by installation and using the software component. Any changes with "
-"any intent or purpose to the copyright link or the target page and/or its "
-"content is considered as obvious violation of the copyright and terms and "
-"leads to revocation of your license and API key and discontinuing any current "
-"or future services an warranty."
+"website by installation and using the software component. Any changes with any "
+"intent or purpose to the copyright link or the target page and/or its content "
+"is considered as obvious violation of the copyright and terms and leads to "
+"revocation of your license and API key and discontinuing any current or future "
+"services an warranty."
 msgstr ""
-"این کامپوننت ثبت شده و دارای کپی رایت (حق تالیف انحصاری) است. با نصب و "
-"استفاده از آن، موافقت کامل و غیر مشروط خود را با درج لینک توسعه دهنده در فوتر "
-"سایت که به یک صفحه داخلی جدید، در برگیرنده محتوای مرتبط با کامپوننت، هدایت "
-"می‌شود اعلام می‌کنید."
+"این کامپوننت ثبت شده و دارای کپی رایت (حق تالیف انحصاری) است. با نصب و استفاده "
+"از آن، موافقت کامل و غیر مشروط خود را با درج لینک توسعه دهنده در فوتر سایت که "
+"به یک صفحه داخلی جدید، در برگیرنده محتوای مرتبط با کامپوننت، هدایت می‌شود اعلام "
+"می‌کنید."
 
 #: src/Pmpr/Common/Foundation/MobileApp/Backward/PlugView.php:77
 msgid ""
@@ -1189,7 +1189,7 @@ msgstr ""
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/AbstractResponse.php:20
 msgid "Attachment"
-msgstr ""
+msgstr "پیوست"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/AbstractResponse.php:29
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:218
@@ -1262,14 +1262,12 @@ msgstr "سفارش‌های من"
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:53
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:187
 msgid "Order ID/Quote ID"
-msgstr ""
+msgstr "شماره سفارش / شماره پیشنهاد"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:54
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:191
-#, fuzzy
-#| msgid "Create Account Date"
 msgid "Order Date/Quote Date"
-msgstr "تاریخ ایجاد حساب"
+msgstr "تاریخ سفارش / تاریخ پیشنهاد"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:55
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:198
@@ -1297,10 +1295,8 @@ msgstr "محصول"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:60
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:156
-#, fuzzy
-#| msgid "Title of Link"
 msgid "Site Link"
-msgstr "عنوان پیوند"
+msgstr "لینک سایت"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:61
 msgid "Product Cat"
@@ -1404,7 +1400,7 @@ msgstr "اولویت"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:107
 msgid "Tracking Code"
-msgstr ""
+msgstr "کد پیگیری"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:160
 msgid "Pmpr Product"
@@ -1423,10 +1419,8 @@ msgid "Pmpr Cover"
 msgstr "کاور مهندس محمدپور"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:180
-#, fuzzy
-#| msgid "Your Customs"
 msgid "Your Custom"
-msgstr "سفارشی سازی‌های شما"
+msgstr "سفارشی سازی‌ شما"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:202
 msgid "If you can not found plugin, write it's name here."
@@ -2132,10 +2126,8 @@ msgid "Remove Entry"
 msgstr "حذف"
 
 #: vendor/narmafzam/cmb2/example-functions.php:537
-#, fuzzy
-#| msgid "Origin Title"
 msgid "Entry Title"
-msgstr "عنوان اصلی"
+msgstr ""
 
 #: vendor/narmafzam/cmb2/example-functions.php:545
 msgid "Write a short description for this entry"
@@ -2413,8 +2405,7 @@ msgstr "امروز"
 
 #: vendor/narmafzam/cmb2/includes/CMB2_JS.php:220
 msgctxt ""
-"Valid formatting string, as per http://trentrichardson.com/examples/"
-"timepicker/"
+"Valid formatting string, as per http://trentrichardson.com/examples/timepicker/"
 msgid "hh:mm TT"
 msgstr ""
 
@@ -2494,8 +2485,8 @@ msgstr ""
 
 #: vendor/narmafzam/cmb2/includes/rest-api/CMB2_REST_Controller.php:300
 msgid ""
-"No box found by that id. A box needs to be registered with the \"show_in_rest"
-"\" parameter configured."
+"No box found by that id. A box needs to be registered with the \"show_in_rest\" "
+"parameter configured."
 msgstr ""
 
 #: vendor/narmafzam/cmb2/includes/rest-api/CMB2_REST_Controller.php:378
@@ -2548,8 +2539,7 @@ msgstr ""
 
 #: vendor/narmafzam/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:236
 #: vendor/narmafzam/cmb2/tests/test-cmb-rest-controllers.php:247
-msgid ""
-"CMB2 Field value cannot be updated without the value parameter specified."
+msgid "CMB2 Field value cannot be updated without the value parameter specified."
 msgstr ""
 
 #: vendor/narmafzam/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:297
@@ -2661,8 +2651,7 @@ msgstr "ترمی یافت نشد"
 #~ "Sorry, this file couldn't be sanitized so for security reasons wasn't "
 #~ "uploaded"
 #~ msgstr ""
-#~ "متاسفم، قادر به پاکسازی فایل مورد نظر نبودیم، به دلایل امنیتی فایل آپلود "
-#~ "نشد"
+#~ "متاسفم، قادر به پاکسازی فایل مورد نظر نبودیم، به دلایل امنیتی فایل آپلود نشد"
 
 #~ msgid "Full Size"
 #~ msgstr "اندازه کامل"
@@ -2686,9 +2675,9 @@ msgstr "ترمی یافت نشد"
 #~ msgstr "خاکستری تیره"
 
 #~ msgid ""
-#~ "According to the discount you got during purchase of some modules or "
-#~ "themes, a link with the following appearance settings will be added to "
-#~ "your site footer."
+#~ "According to the discount you got during purchase of some modules or themes, "
+#~ "a link with the following appearance settings will be added to your site "
+#~ "footer."
 #~ msgstr ""
 #~ "با توجه به دریافت تخفیف مشروط به درج لینک، حین خرید برخی از ماژول‌ها یا "
 #~ "پوسته‌ها، یک لینک با مشخصات ظاهری زیر، به فوتر سایت شما اضافه می‌شود."
@@ -2713,11 +2702,9 @@ msgstr "ترمی یافت نشد"
 #~ msgid "On"
 #~ msgstr "روشن"
 
-#~ msgid ""
-#~ "Number of Column per row to show the items (just for vertical layouts)."
+#~ msgid "Number of Column per row to show the items (just for vertical layouts)."
 #~ msgstr ""
-#~ "تعداد ستون‌هایی که می‌خواهید در هر سطر نمایش داده شود (فقط برای لایه‌های "
-#~ "عمودی)."
+#~ "تعداد ستون‌هایی که می‌خواهید در هر سطر نمایش داده شود (فقط برای لایه‌های عمودی)."
 
 #~ msgid "Link rel attribute value"
 #~ msgstr "مقدار rel لینک"
@@ -3124,8 +3111,8 @@ msgstr "ترمی یافت نشد"
 
 #~ msgid "Ask a feedback question, if user rate less than threshold."
 #~ msgstr ""
-#~ "در صورتی که کاربر کمتر از آستانه امتیاز دهد، یک فرم بازخورد نشان داده "
-#~ "خواهد شد."
+#~ "در صورتی که کاربر کمتر از آستانه امتیاز دهد، یک فرم بازخورد نشان داده خواهد "
+#~ "شد."
 
 #, fuzzy
 #~| msgid "Question"
@@ -3359,8 +3346,8 @@ msgstr "ترمی یافت نشد"
 
 #~ msgid "Displayed to user if already sent a message."
 #~ msgstr ""
-#~ "در صورتی که کاربر قبل از اتمام محدودیت زمانی، پیام جدیدی را ارسال کند، "
-#~ "نمایش داده می‌شود."
+#~ "در صورتی که کاربر قبل از اتمام محدودیت زمانی، پیام جدیدی را ارسال کند، نمایش "
+#~ "داده می‌شود."
 
 #~ msgid "Enable Contact Information"
 #~ msgstr "فعال سازی اطلاعات تماس"
@@ -3865,8 +3852,7 @@ msgstr "ترمی یافت نشد"
 #~ msgstr "فعال سازی استایل هد"
 
 #~ msgid "enable this option to ignore css file and just use style in head."
-#~ msgstr ""
-#~ "با فعال کردن این گزینه همه استایل‌ها در هد صفحه اجرا می‌شوند (توصیه شده)"
+#~ msgstr "با فعال کردن این گزینه همه استایل‌ها در هد صفحه اجرا می‌شوند (توصیه شده)"
 
 #~ msgid "Desktop screen sizes"
 #~ msgstr "سایز صفحه دسکتاپ"
@@ -4003,8 +3989,7 @@ msgstr "ترمی یافت نشد"
 #~| msgid "Check this item, if you want show code in right fo screen"
 #~ msgid "Check this item if you want minify %s."
 #~ msgstr ""
-#~ "با علامت زدن این گزینه، کد مورد نظر در قسمت سمت راست صفحه نمایش داده خواهد "
-#~ "شد"
+#~ "با علامت زدن این گزینه، کد مورد نظر در قسمت سمت راست صفحه نمایش داده خواهد شد"
 
 #~ msgid "Minify"
 #~ msgstr "فشرده‌سازی"
@@ -4190,8 +4175,7 @@ msgstr "ترمی یافت نشد"
 #~ msgid ""
 #~ "Enable to use reCaptcha when Google is not accessible or blocked in your "
 #~ "country."
-#~ msgstr ""
-#~ "اگر مشکلی با اتصال به گوگل در کشور خود دارید، این گزینه را فعال کنید."
+#~ msgstr "اگر مشکلی با اتصال به گوگل در کشور خود دارید، این گزینه را فعال کنید."
 
 #~ msgid "Disabled Submit Button"
 #~ msgstr "غیر فعال کردن دکمه تایید"
@@ -4365,8 +4349,8 @@ msgstr "ترمی یافت نشد"
 #~ msgid ""
 #~ "if you fill this item, we show title and excerpt of selected post in card."
 #~ msgstr ""
-#~ "اگر این مورد را پر کنید ، عنوان و گزیده ای از پیام های انتخاب شده را در "
-#~ "کارت نشان می دهیم."
+#~ "اگر این مورد را پر کنید ، عنوان و گزیده ای از پیام های انتخاب شده را در کارت "
+#~ "نشان می دهیم."
 
 #~ msgid "%s Icon to display."
 #~ msgstr "آیکون %s برای نمایش."
@@ -4400,8 +4384,7 @@ msgstr "ترمی یافت نشد"
 
 #~ msgid "Check this item, if you want show code in right fo screen"
 #~ msgstr ""
-#~ "با علامت زدن این گزینه، کد مورد نظر در قسمت سمت راست صفحه نمایش داده خواهد "
-#~ "شد"
+#~ "با علامت زدن این گزینه، کد مورد نظر در قسمت سمت راست صفحه نمایش داده خواهد شد"
 
 #~ msgid "Write your code here."
 #~ msgstr "کد مورد نظر خود را اینجا بنویسید."
@@ -4444,8 +4427,8 @@ msgstr "ترمی یافت نشد"
 #~ msgstr "شورتکد پایان"
 
 #~ msgid ""
-#~ "This shortcode used for close %s, no setting available. remember just use "
-#~ "%s after %s. for use this shortcode just press %s button"
+#~ "This shortcode used for close %s, no setting available. remember just use %s "
+#~ "after %s. for use this shortcode just press %s button"
 #~ msgstr ""
 #~ "این شورتکد برای بستن %s استفاده می‌شود، هیچ تنظیمی برای این شورتکد وجود "
 #~ "ندارد. به یاد داشته باشید از %s فقط بعد از %s استفاده شود. برای استفاده از "
@@ -5088,8 +5071,7 @@ msgstr "ترمی یافت نشد"
 #, fuzzy
 #~| msgid "Check this item to enable mailer functionality."
 #~ msgid ""
-#~ "Enable this option to stop receiving notifications when a new user "
-#~ "registers."
+#~ "Enable this option to stop receiving notifications when a new user registers."
 #~ msgstr ""
 #~ "با علامت زدن این گزینه، ارسال ایمیل با استفاده از سرویس swiftmailer  فعال "
 #~ "می‌شود."
@@ -5905,15 +5887,15 @@ msgstr "ترمی یافت نشد"
 #~ msgstr "نمایش جدولی"
 
 #~ msgid ""
-#~ "Image width is too small. Minimum width is %1$s px. Uploaded image width "
-#~ "is %2$s px"
+#~ "Image width is too small. Minimum width is %1$s px. Uploaded image width is "
+#~ "%2$s px"
 #~ msgstr ""
 #~ "ابعاد عکس کوچک است. عرض عکس باید حداقل %1$s پیکسل باشد ولی عرض عکس انتخابی "
 #~ "شما %2$s پیکسل است"
 
 #~ msgid ""
-#~ "Image height is too small. Minimum height is %1$s px. Uploaded image "
-#~ "height is %2$s px"
+#~ "Image height is too small. Minimum height is %1$s px. Uploaded image height "
+#~ "is %2$s px"
 #~ msgstr ""
 #~ "ابعاد عکس کوچک است. ارتفاع عکس باید حداقل %1$s پیکسل باشد ولی ارتفاع عکس "
 #~ "انتخابی شما %2$s پیکسل است"
@@ -6222,8 +6204,7 @@ msgstr "ترمی یافت نشد"
 
 #~ msgid "Error! Could not send form. This might be a server issue."
 #~ msgstr ""
-#~ "خطا! قادر به ارسال اطلاعات نیستیم. ممکن است مشکلی در سرور به وجود آمده "
-#~ "باشد."
+#~ "خطا! قادر به ارسال اطلاعات نیستیم. ممکن است مشکلی در سرور به وجود آمده باشد."
 
 #~ msgid "Please enter the correct number."
 #~ msgstr "عدد وارد شده صحیح نیست."
@@ -6380,15 +6361,15 @@ msgstr "ترمی یافت نشد"
 #~ msgid ""
 #~ "Specify headings to be excluded from appearing in the table of contents.\n"
 #~ "\n"
-#~ "                Separate multiple headings with a pipe |. Use an asterisk "
-#~ "* as a wildcard to match other text.\n"
+#~ "                Separate multiple headings with a pipe |. Use an asterisk * "
+#~ "as a wildcard to match other text.\n"
 #~ "\n"
 #~ "                Note that this is not case sensitive."
 #~ msgstr ""
 #~ "تیترهایی که نمی‌خواهید در فهرست مطالب درج شوند را مستثنی کنید\n"
 #~ "‏\n"
-#~ "\t\t\tتیترهای متعدد را با یک کاراکتر پایپ | از هم جدا کنید. از کاراکتر "
-#~ "ستاره * به منظور تطبیق کاراکتر دلخواه استفاده کنید\n"
+#~ "\t\t\tتیترهای متعدد را با یک کاراکتر پایپ | از هم جدا کنید. از کاراکتر ستاره "
+#~ "* به منظور تطبیق کاراکتر دلخواه استفاده کنید\n"
 #~ "‏\n"
 #~ "\t\t\tتوجه کنید که حساسیتی نسبت به بزرگی و کوچکی کاراکترها وجود ندارد."
 
@@ -6399,8 +6380,8 @@ msgstr "ترمی یافت نشد"
 #~ "                This path is from the root of your site and always begins "
 #~ "with a forward slash."
 #~ msgstr ""
-#~ "ایجاد فهرست مطالب را محدود به صفحاتی با مسیر زیر کنید آدرس این مسیر نسبت "
-#~ "به مسیر اصلی سایت است و همیشه با یک کاراکتر اسلش ‪/‬ در ابتدا شروع می‌شود."
+#~ "ایجاد فهرست مطالب را محدود به صفحاتی با مسیر زیر کنید آدرس این مسیر نسبت به "
+#~ "مسیر اصلی سایت است و همیشه با یک کاراکتر اسلش ‪/‬ در ابتدا شروع می‌شود."
 
 #~ msgid ""
 #~ "Anchor targets are restricted to alphanumeric characters as per HTML "
@@ -6409,8 +6390,8 @@ msgstr "ترمی یافت نشد"
 #~ "                The default anchor prefix will be used when no characters "
 #~ "qualify. When left blank, a number will be used instead.\n"
 #~ "\n"
-#~ "                This option normally applies to content written in "
-#~ "character sets other than ASCII."
+#~ "                This option normally applies to content written in character "
+#~ "sets other than ASCII."
 #~ msgstr ""
 #~ "با توجه به استاندارد HTML لینک مقصد محدود به کاراکترهای انگلیسی حرف یا عدد "
 #~ "است‪.‬\n"
@@ -6606,8 +6587,8 @@ msgstr "ترمی یافت نشد"
 #~ "Use aspect ratio based image URLs like http://example.com/upload/1x1/image."
 #~ "jpg"
 #~ msgstr ""
-#~ "از نسبت‌های طول به عرض رایج تصویر در آدرس دهی تصاویر استفاده کن مانند "
-#~ "http://example.com/upload/1x1/image.jpg"
+#~ "از نسبت‌های طول به عرض رایج تصویر در آدرس دهی تصاویر استفاده کن مانند http://"
+#~ "example.com/upload/1x1/image.jpg"
 
 #, fuzzy
 #~| msgid "Archives"
