@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             64aaa0cd745e1             |
+    |             64b299fa3c89f             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\FormGenerator\Backend\Component; use Pmpr\Common\Foundation\FormGenerator\Traits\FieldsTrait; use Pmpr\Common\Foundation\FormGenerator\Backend\Traits\ButtonsTrait; use Pmpr\Common\Foundation\FormGenerator\Backend\Traits\ObjectTrait; class Page extends Component { use FieldsTrait, ObjectTrait, ButtonsTrait; protected ?Sidebar $sidebar = null; public function qiccuiwooiquycsg() { $this->template = self::imywcsggckkcywgk; $this->templateClass = self::class; parent::qiccuiwooiquycsg(); } public function iomqgwmuicwwweyo() : Sidebar { if ($this->sidebar) { goto ocaisasgmkouayqe; } $this->sidebar = self::eaiwcicqeaoaueuq("{$this->mwikyscisascoeea()}\137\163\151\144\x65\142\x61\x72"); ocaisasgmkouayqe: return $this->sidebar; } }
+ namespace Pmpr\Common\Foundation\FormGenerator\Backend\Component; use Pmpr\Common\Foundation\FormGenerator\Traits\FieldsTrait; use Pmpr\Common\Foundation\FormGenerator\Backend\Traits\ButtonsTrait; use Pmpr\Common\Foundation\FormGenerator\Backend\Traits\ObjectTrait; class Page extends Component { use FieldsTrait, ObjectTrait, ButtonsTrait; protected ?Sidebar $sidebar = null; public function qiccuiwooiquycsg() { $this->template = self::imywcsggckkcywgk; $this->templateClass = self::class; parent::qiccuiwooiquycsg(); } public function iomqgwmuicwwweyo() : Sidebar { if ($this->sidebar) { goto aiasawqemygsgggs; } $this->sidebar = self::eaiwcicqeaoaueuq("{$this->mwikyscisascoeea()}\x5f\x73\151\x64\x65\142\141\x72"); aiasawqemygsgggs: return $this->sidebar; } }
