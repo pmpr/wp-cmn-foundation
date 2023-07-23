@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             64bb6272cf09b             |
+    |             64bd0160360a6             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\Backend; class Backend extends Common { public function __construct() { parent::__construct(); $this->iemaakgqgqosiecm(); } public function wigskegsqequoeks() { $this->qcsmikeggeemccuu("\x61\x64\x6d\x69\156\x5f\146\157\157\x74\x65\162", [$this, "\x67\x67\x73\x6b\x63\147\147\141\141\x65\x61\x6b\x67\141\x71\143"]); } public function ggskcggaaeakgaqc() { echo $this->caokeucsksukesyo()->wmkogisswkckmeua()->icqkogwskuwscskk([self::PREFIX => "\x70\x72\137\x67\x65\x6e\x65\162\x61\x6c"]); } public function iemaakgqgqosiecm() { } }
+ namespace Pmpr\Common\Foundation\Backend; class Backend extends Common { public function __construct() { parent::__construct(); $this->iemaakgqgqosiecm(); } public function wigskegsqequoeks() { $this->qcsmikeggeemccuu("\141\144\155\151\x6e\137\146\157\x6f\x74\145\162", [$this, "\147\147\163\153\143\x67\147\141\x61\145\x61\x6b\x67\x61\x71\x63"]); } public function ggskcggaaeakgaqc() { echo $this->caokeucsksukesyo()->wmkogisswkckmeua()->icqkogwskuwscskk([self::PREFIX => "\x70\162\x5f\147\145\156\145\162\x61\154"]); } public function iemaakgqgqosiecm() { } }
