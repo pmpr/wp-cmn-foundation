@@ -9,6 +9,7 @@
 
 {% block field_body %}
     {{ editor(value, args.editor_name, args) }}
+    {% include get_template('../tip', _self) %}
     {{ placeholders|raw }}
 {% endblock %}
 

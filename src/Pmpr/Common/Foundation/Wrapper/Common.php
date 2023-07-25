@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             64bfb79ebf306             |
+    |             64bffaeeb13ae             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\Wrapper; use Pmpr\Common\Foundation\Container\Traits\SingletonTrait; use Pmpr\Common\Foundation\Helper\Traits\HelperTrait; use Pmpr\Common\Foundation\Interfaces\ConstantInterface; use Pmpr\Common\Foundation\Wrapper\Traits\WrapperTrait; abstract class Common implements ConstantInterface { use HelperTrait, WrapperTrait; public final function call($ekiuyucoiagmscgy, $ggauoeuaesiymgee = false, ...$ywmkwiwkosakssii) { $ksaameoqigiaoigg = $ggauoeuaesiymgee; if (!function_exists($ekiuyucoiagmscgy)) { goto aacaaeuuscacmgws; } $ksaameoqigiaoigg = $ekiuyucoiagmscgy(...$ywmkwiwkosakssii); aacaaeuuscacmgws: return $ksaameoqigiaoigg; } }
+ namespace Pmpr\Common\Foundation\Wrapper; use Pmpr\Common\Foundation\Container\Traits\SingletonTrait; use Pmpr\Common\Foundation\Helper\Traits\HelperTrait; use Pmpr\Common\Foundation\Interfaces\ConstantInterface; use Pmpr\Common\Foundation\Wrapper\Traits\WrapperTrait; abstract class Common implements ConstantInterface { use HelperTrait, WrapperTrait; public final function call($ekiuyucoiagmscgy, $ggauoeuaesiymgee = false, ...$ywmkwiwkosakssii) { $ksaameoqigiaoigg = $ggauoeuaesiymgee; if (!function_exists($ekiuyucoiagmscgy)) { goto imccgasockkumogm; } $ksaameoqigiaoigg = $ekiuyucoiagmscgy(...$ywmkwiwkosakssii); imccgasockkumogm: return $ksaameoqigiaoigg; } }

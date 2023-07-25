@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             64bfb79ebf306             |
+    |             64bffaeeb13ae             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Decorator; class DecoratorMeta extends Decorator { public static function get($sqeykgyoooqysmca, $aokagokqyuysuksm, $uusmaiomayssaecw = '', $cuyooiakswegosog = true) { return get_metadata($sqeykgyoooqysmca, $aokagokqyuysuksm, $uusmaiomayssaecw, $cuyooiakswegosog); } }
