@@ -6,7 +6,8 @@
     <input {{ attributes|parse_attrs|raw }}/>
     {% include get_template('label', _self) with {
         label: title,
-        for: attributes.id
+        for: attributes.id,
+        label_class: 'pr-field-label'
     } %}
     {{ parent() }}
 {% endblock %}

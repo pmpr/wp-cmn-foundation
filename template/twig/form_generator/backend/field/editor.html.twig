@@ -1,11 +1,15 @@
 {% extends get_template('./common', _self) %}
 
-{% block field_body %}
-    {{ editor(value, args.editor_name, args) }}
-    {{ parent() }}
+{% block before_field %}
+    <div class="pr-field-label-container">
+        {{ parent() }}
+        {% include get_template('../description', _self) %}
+    </div>
 {% endblock %}
 
-{% block after_field %}
+{% block field_body %}
+    {{ editor(value, args.editor_name, args) }}
     {{ placeholders|raw }}
 {% endblock %}
+
 
