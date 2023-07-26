@@ -9,7 +9,6 @@
 
 {% block field_body %}
     <textarea {{ attributes|parse_attrs|raw }}>{{ value|raw }}</textarea>
-    {% include get_template('../tip', _self) %}
-    {{ placeholders|raw }}
+    {{ parent()|raw }}
 {% endblock %}
 

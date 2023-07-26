@@ -1,5 +1,5 @@
 {% extends get_template('./common', _self) %}
-
+{% set show_description_under_label = 0 %}
 {% block field_body %}
     <select {{ attributes|parse_attrs|raw }}>
         {{ self|call('getOptionHTML', options)|raw }}
@@ -11,6 +11,5 @@
     }) }}
 
     {{ parent() }}
-
 {% endblock %}
 

@@ -1,11 +1,6 @@
 {% set class_prefix = 'pr-field-media-' %}
 {% extends get_template('./common', _self) %}
 
-{% block before_field %}
-    {{ parent() }}
-    {% include get_template('../description', _self) %}
-{% endblock %}
-
 {% block field_body %}
     <button type="button" class="{{ class_prefix|esc_attr }}button">{{ args.button_text|raw }}</button>
     <input {{ attributes|parse_attrs|raw }}/>
@@ -30,5 +25,6 @@
             </div>
         </div>
     </div>
+    {{ parent() }}
 {% endblock %}
 

@@ -8,7 +8,7 @@
     </div>
     <div class="pr-ticket-conversation-metadata">
         <time class="pr-ticket-conversation-datetime" datetime="{{ created_at|esc_attr }}">
-            {{ created_at|datetime('j F Y H:i')|raw }}
+            {{ created_at|datetime(format)|raw }}
         </time>
     </div>
 </div>

@@ -1,10 +1,11 @@
 {% extends get_template('./common', _self) %}
 
 {% block before_field %}
-    {% if title is not empty or description is not empty %}
+    {% if title is not empty
+        or description is not empty %}
         <header>
             {% if title is not empty %}
-                {% include get_template('label', _self) with {
+                {% include get_template('../label', _self) with {
                     label: title,
                     for: attributes.id,
                     label_class: 'pr-field-label'

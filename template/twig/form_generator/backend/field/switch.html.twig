@@ -4,7 +4,7 @@
 
 {% block field_body %}
     <input {{ attributes|parse_attrs|raw }}/>
-    {% embed get_template('label', _self) with {
+    {% embed get_template('../label', _self) with {
         label: title,
         for: attributes.id
     } %}

@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             64bffaeeb13ae             |
+    |             64c1370edbfb8             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Data; use Pmpr\Common\Foundation\Traits\AttributeTrait; class Metadata extends Meta { use AttributeTrait; public ?string $link = ''; public function qmgcisuuikgmqcsu() : ?string { return $this->link; } public function qoowicksguscqyks(?string $iwywmkygwewiamwm) : self { $this->link = $iwywmkygwewiamwm; return $this; } }

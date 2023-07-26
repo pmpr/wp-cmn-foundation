@@ -1,12 +1,6 @@
 {% extends get_template('./common', _self) %}
-
+{% set show_description_under_label = 0 %}
 {% block field_body %}
     <input {{ attributes|parse_attrs|raw }}/>
-    {{ parent() }}
-{% endblock %}
-
-{% block after_field %}
-    {{ parent() }}
-    {{ placeholders|raw }}
 {% endblock %}
 

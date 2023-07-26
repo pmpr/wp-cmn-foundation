@@ -4,11 +4,12 @@
 
 {% block field_body %}
     <input {{ attributes|parse_attrs|raw }}/>
-    {% include get_template('label', _self) with {
+    {% include get_template('../label', _self) with {
         label: title,
         for: attributes.id,
         label_class: 'pr-field-label'
     } %}
+    {% include get_template('../description', _self) %}
     {{ parent() }}
 {% endblock %}
 

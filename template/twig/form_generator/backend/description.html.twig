@@ -1,8 +1,4 @@
 {% if description is defined and description is not empty %}
     <div class="pr-field-description">{{ description|raw }}</div>
 {% endif %}
-{% if arg.variations is not empty %}
-    <div class="pr-field-variation"></div>
-{% endif %}
-{% include get_template('alert', _self) %}
 
