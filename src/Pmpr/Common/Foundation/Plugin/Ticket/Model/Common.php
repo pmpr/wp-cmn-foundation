@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             64c1434343f91             |
+    |             64c7bf6e09c6f             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\Plugin\Ticket\Model; use Pmpr\Common\Foundation\ORM\DB\Model; use Pmpr\Common\Foundation\Plugin\Ticket\Traits\SettingTrait; abstract class Common extends Model { use SettingTrait; const yeaekcacwwyyqigq = "\164\151\143\x6b\145\x74"; const asywgyemkouimocw = self::yeaekcacwwyyqigq . self::mswocgcucqoaesaa; public function ckgmycmaukqgkosk() { $quowyokcwswmuois = self::akuociswqmoigkas(); $this->oyeskqayoscwciem()->myysgyqcumekoueo()->okgmqaeuaeymaocm($quowyokcwswmuois); parent::ckgmycmaukqgkosk(); } public function ewaqwooqoqmcoomi() { $this->cquokmemekqqywgi($this->gysoeyaguiyewoes(self::IDENTIFIER)->acokiqqgsmoqaeyu()->gswweykyogmsyawy(__("\x49\x64\x65\x6e\164\151\x66\x69\x65\x72", PR__CMN__FOUNDATION))); parent::ewaqwooqoqmcoomi(); } }
+ namespace Pmpr\Common\Foundation\Plugin\Ticket\Model; use Pmpr\Common\Foundation\ORM\DB\Model; use Pmpr\Common\Foundation\Plugin\Ticket\Traits\SettingTrait; abstract class Common extends Model { use SettingTrait; const yeaekcacwwyyqigq = "\x74\x69\x63\153\x65\x74"; const asywgyemkouimocw = self::yeaekcacwwyyqigq . self::mswocgcucqoaesaa; public function ckgmycmaukqgkosk() { $quowyokcwswmuois = self::akuociswqmoigkas(); $this->oyeskqayoscwciem()->myysgyqcumekoueo()->okgmqaeuaeymaocm($quowyokcwswmuois); parent::ckgmycmaukqgkosk(); } public function ewaqwooqoqmcoomi() { $this->cquokmemekqqywgi($this->gysoeyaguiyewoes(self::IDENTIFIER)->acokiqqgsmoqaeyu()->gswweykyogmsyawy(__("\111\x64\145\x6e\164\x69\146\x69\145\x72", PR__CMN__FOUNDATION))); parent::ewaqwooqoqmcoomi(); } }
