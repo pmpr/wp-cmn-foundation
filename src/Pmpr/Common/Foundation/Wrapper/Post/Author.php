@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             64c7bf6e09c6f             |
+    |             64ca123209c3d             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Wrapper\Post; class Author extends Common { public function get() : ?string { return get_the_author(); } public function qmgcisuuikgmqcsu() : ?string { return get_the_author_link(); } public function igawqaomowicuayw($aiowsaccomcoikus, $qscaoekmoooeuyqg = null) : string { return get_the_author_meta($aiowsaccomcoikus, $qscaoekmoooeuyqg); } public function mkaiaewoyaimieqg($qscaoekmoooeuyqg = null, string $ymqmyyeuycgmigyo = '') : string { return get_author_posts_url($qscaoekmoooeuyqg, $ymqmyyeuycgmigyo); } }
