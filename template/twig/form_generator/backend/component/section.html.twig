@@ -20,6 +20,12 @@
 
         {% include get_template('../alert', _self) %}
 
+        {% if fields is not empty %}
+            <fieldset class="{{ class_prefix|esc_attr }}fieldset">
+                {% include get_template('../../fields', _self) %}
+            </fieldset>
+        {% endif %}
+
         {% if tabs is not empty %}
             <nav class="{{ class_prefix|esc_attr }}tabs">
                 {% for id, tab in tabs %}
@@ -40,11 +46,6 @@
                     </fieldset>
                 {% endfor %}
             </div>
-
-        {% elseif fields is not empty %}
-            <fieldset class="{{ class_prefix|esc_attr }}fieldset">
-                {% include get_template('../../fields', _self) %}
-            </fieldset>
         {% endif %}
     </div>
 {% endif %}
