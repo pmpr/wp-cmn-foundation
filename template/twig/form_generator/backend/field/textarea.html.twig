@@ -1,12 +1,5 @@
 {% extends get_template('./common', _self) %}
 
-{% block before_field %}
-    <div class="pr-field-label-container">
-        {{ parent() }}
-        {% include get_template('../description', _self) %}
-    </div>
-{% endblock %}
-
 {% block field_body %}
     <textarea {{ attributes|parse_attrs|raw }}>{{ value|raw }}</textarea>
     {{ parent()|raw }}
