@@ -1,15 +1,7 @@
 {% extends get_template('./common', _self) %}
 {% set show_description_under_label = 0 %}
 {% block field_body %}
-    <select {{ attributes|parse_attrs|raw }}>
-        {{ self|call('getOptionHTML', options)|raw }}
-    </select>
-
-    {{ render_spinner({
-        size: '1x',
-        container_class: 'position-static',
-    }) }}
-
+    {% include get_template('../select', _self) %}
     {{ parent() }}
 {% endblock %}
 
