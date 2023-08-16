@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr Common Foundation\n"
-"POT-Creation-Date: 2023-08-08 13:50+0330\n"
-"PO-Revision-Date: 2023-08-08 13:50+0330\n"
+"POT-Creation-Date: 2023-08-08 23:56+0330\n"
+"PO-Revision-Date: 2023-08-09 00:04+0330\n"
 "Last-Translator: pmpr.dev <pmpr.dev@gmail.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -284,15 +284,15 @@ msgstr ""
 msgid "Add %s"
 msgstr "افزودن %s"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Icon.php:45
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Icon.php:46
 msgid "Select From Media"
 msgstr "انتخاب از رسانه"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Icon.php:51
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Icon.php:53
 msgid "Select From Icon Set"
 msgstr "انتخاب از آیکون‌ها"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Icon.php:66
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Icon.php:78
 msgid "Or"
 msgstr "یا"
 
@@ -300,11 +300,11 @@ msgstr "یا"
 msgid "Select Media"
 msgstr "انتخاب رسانه"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Media.php:178
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Media.php:175
 msgid "Change"
 msgstr "تغییر"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Media.php:182
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Media.php:179
 #: vendor/narmafzam/cmb2/includes/CMB2_JS.php:229
 #: vendor/narmafzam/cmb2/includes/CMB2_Types.php:406
 #: vendor/narmafzam/cmb2/includes/types/CMB2_Type_File_Base.php:84
@@ -315,22 +315,22 @@ msgstr "تغییر"
 msgid "Remove"
 msgstr "حذف"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Media.php:189
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Media.php:185
 #: src/Pmpr/Common/Foundation/Woocommerce/MultiStepSingleProduct.php:216
 msgid "Title"
 msgstr "عنوان"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Media.php:190
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Media.php:186
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:76
 msgid "Type"
 msgstr "نوع"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Media.php:194
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Media.php:190
 #, php-format
 msgid "Select for %s"
 msgstr "انتخاب %s"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Media.php:196
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Media.php:192
 msgid "Use This File"
 msgstr "استفاده از این فایل"
 
@@ -353,113 +353,113 @@ msgstr "روشن"
 msgid "OFF"
 msgstr "خاموش"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:98
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:129
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:367
 msgid "Save Changes"
 msgstr "ذخیره تغییرات"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:128
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:159
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:215
 msgid "Enter license key"
 msgstr "کلید مجوز را وارد کنید"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:129
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:160
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:216
 #, php-format
 msgid "To complete the installation of %s, %s."
 msgstr "برای تکمیل فرآیند نصب %s، %s."
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:147
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:178
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:249
 msgid "Setting"
 msgstr "تنظیمات"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:159
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:190
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:403
 msgid "License"
 msgstr "مجوز"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:161
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:192
 msgid "Guide & License"
 msgstr "راهنما و مجوز"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:164
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:195
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:407
 msgid "License Key"
 msgstr "کلید مجوز"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:169
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:200
 msgid "Code"
 msgstr "کد"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:228
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:259
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/MetaTab.php:862
 msgid "Settings Updated"
 msgstr "تنظیمات با موفقیت به روز شد"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:260
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:291
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:350
 msgid "Your license key is not valid."
 msgstr "کلید مجوز شما معتبر نیست."
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:478
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:509
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:297
 #, php-format
 msgid "Setting options successfully change to %s"
 msgstr "تنظمیات با موفقیت به %s تغییر کرد"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:483
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:514
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:300
 #, fuzzy
 #| msgid "The Url you entered is not valid"
 msgid "Selected % is not valid"
 msgstr "پیوند وارد شده معتبر نیست"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:483
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:487
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:514
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:518
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:300
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:304
 msgid "Setting Type"
 msgstr "نوع تنظمات"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:487
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:518
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:304
 #, php-format
 msgid "Please select an option in the %s"
 msgstr "لطف یک گزینه در %s انتخاب کنید"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:505
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:536
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:165
 #, php-format
 msgid "%s Setting Template"
 msgstr "الگوی %s"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:639
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:670
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:431
 msgid "Setting Templates"
 msgstr "الگو‌های تنظیمات"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:643
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:674
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:435
 msgid "Setting Template"
 msgstr "الگو"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:648
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:679
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:440
 msgid "Change Settings"
 msgstr "تغییر تنظیمات"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:664
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:695
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:655
 msgid "min"
 msgstr "دقیقه"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:665
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:696
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:656
 msgid "hr"
 msgstr "ساعت"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:676
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:707
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:667
 msgid "No Limit"
 msgstr "بدون محدودیت"
@@ -809,16 +809,6 @@ msgstr ""
 #: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:1056
 msgid "In stock"
 msgstr "موجود در انبار"
-
-#: src/Pmpr/Common/Foundation/Media/Icon.php:114
-msgid "Use For Icon"
-msgstr "استفاده به عنوان آیکون"
-
-#: src/Pmpr/Common/Foundation/Media/Icon.php:117
-msgid "Check if you want show this attachment in icon list."
-msgstr ""
-"در صورتی که می‌خواهید این تصویر در لیست‌ آیکون‌ها نمایش داده شود، این ایتم را "
-"فعال کنید."
 
 #: src/Pmpr/Common/Foundation/Media/Image.php:51
 msgid "SEO settings"
@@ -1647,11 +1637,11 @@ msgstr "بخش نمایشی سایت"
 msgid "You can change front page configuration by above fields."
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/Setting.php:117
+#: src/Pmpr/Common/Foundation/Setting.php:123
 msgid "Front"
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/Setting.php:123
+#: src/Pmpr/Common/Foundation/Setting.php:129
 msgid "Admin"
 msgstr ""
 
@@ -2570,6 +2560,14 @@ msgstr "افزودن یا آپلود فایل"
 #: vendor/narmafzam/cmb2/includes/types/CMB2_Type_Taxonomy_Base.php:115
 msgid "No terms"
 msgstr "ترمی یافت نشد"
+
+#~ msgid "Use For Icon"
+#~ msgstr "استفاده به عنوان آیکون"
+
+#~ msgid "Check if you want show this attachment in icon list."
+#~ msgstr ""
+#~ "در صورتی که می‌خواهید این تصویر در لیست‌ آیکون‌ها نمایش داده شود، این ایتم را "
+#~ "فعال کنید."
 
 #~ msgid "Page Title"
 #~ msgstr "عنوان صفحه"
