@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             64dcfa315b8c5             |
+    |             64dcfc1086ab1             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Plugin\Ticket\Model; use Pmpr\Common\Foundation\Plugin\Ticket\Common; class Model extends Common { public function aqyikqugcomoqqqi() { Ticket::symcgieuakksimmu(); Request::symcgieuakksimmu(); Response::symcgieuakksimmu(); } }
