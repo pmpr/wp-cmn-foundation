@@ -9,7 +9,7 @@
         {% embed get_template('../media', _self) with media|call('getParameters') %}
             {% block after_button %}
                 <span class="{{ icon_class_prefix|esc_attr }}separator">{{ before_button_text }}</span>
-                {% include get_template('../button', _self) with media.buttons.change_input|call('getParameters') %}
+                {% include get_template('../button', _self) with media|call('getButton', 'change_input')|call('getParameters') %}
             {% endblock %}
         {% endembed %}
     </div>
