@@ -2,7 +2,6 @@
 <div class="{{ class_prefix }}content">
     {{ render_if_has_content('h2', {class: class_prefix ~ 'title'}, title) }}
     {{ render_if_has_content('div', {class: class_prefix ~ 'description'}, description) }}
-
     {% if step_template is not empty %}
         {% include step_template with parameters %}
     {% endif %}

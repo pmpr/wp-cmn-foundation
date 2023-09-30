@@ -19,6 +19,7 @@
                 </div>
             {% endfor %}
         </nav>
+        <div class="{{ class_prefix }}message-container"></div>
         <div class="{{ class_prefix }}contents">
             {% for step in steps %}
                 {% set id = step|call('getId') %}

@@ -36,7 +36,7 @@
             <div class="{{ class_prefix|esc_attr }}item-header d-flex justify-content-between">
                 <span class="pr-title-level-3 my-auto">{{ args.item_title|replace({'-#-': (index matches '/^\\d+$/' ? index : index) })|raw }}</span>
                 <a href="#" class="{{ class_prefix|esc_attr }}item-remove remove-item">
-                    {{ render_icon(args.remove, {class: 'icon-xs icon-danger'}) }}
+                    {{ render_icon(args.remove, {class: 'icon-xs icon-danger'}, 1) }}
                 </a>
             </div>
             <div class="{{ class_prefix|esc_attr }}item-message"></div>
