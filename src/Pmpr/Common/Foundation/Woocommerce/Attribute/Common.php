@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             651831595d0db             |
+    |             65197b7ad20fb             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\Woocommerce\Attribute; use Pmpr\Common\Foundation\FormGenerator\Backend\Traits\ObjectTrait; use Pmpr\Common\Foundation\Woocommerce\Common as BaseClass; abstract class Common extends BaseClass { use ObjectTrait; const kmywkmmykgoyyyoy = self::ciyoccqkiamemcmm . "\x5f\164\171\x70\x65"; }
+ namespace Pmpr\Common\Foundation\Woocommerce\Attribute; use Pmpr\Common\Foundation\Woocommerce\Common as BaseClass; abstract class Common extends BaseClass { const kmywkmmykgoyyyoy = self::ciyoccqkiamemcmm . "\x5f\x74\x79\x70\145"; }

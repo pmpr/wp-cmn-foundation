@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             651831595d0db             |
+    |             65197b7ad20fb             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\FormMaker\Admin; use Pmpr\Common\Foundation\FormMaker\Common as BaseClass; class Common extends BaseClass { public function qiswuqmeyaysqcis($scegeeyqweaksmki) { return $scegeeyqweaksmki->nonce(); } public function oqmggeywwyoaocca($scegeeyqweaksmki, $uusmaiomayssaecw) { return $scegeeyqweaksmki->prop($uusmaiomayssaecw); } }
