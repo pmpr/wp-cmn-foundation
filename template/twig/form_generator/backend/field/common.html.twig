@@ -1,34 +1,32 @@
-<div {{ container_attrs|parse_attrs|raw }}>
-    {% block before_field %}
-        <div class="pr-field-label-container">
-            {% if title is defined and title is not empty %}
-                {% include get_template('../label', _self) with {
-                    label: title,
-                    for: attributes.id,
-                    label_class: 'pr-field-label'
-                } %}
-            {% endif %}
-            {% if show_description_under_label|default(1) %}
-                {% include get_template('../description', _self) %}
-            {% endif %}
-        </div>
-    {% endblock %}
-    <div class="pr-field-{{ type|esc_attr }}{% if field_container_class is defined and field_container_class is not empty %} {{ field_container_class|esc_attr }}{% endif %}">
-        {% block field_body %}
-            {% include get_template('../tip', _self) %}
-            {% if not show_description_under_label|default(1) %}
-                {% include get_template('../description', _self) %}
-            {% endif %}
-        {% endblock %}
+{% block before_field %}
+    <div class="pr-field-label-container">
+        {% if title is defined and title is not empty %}
+            {% include get_template('../label', _self) with {
+                label: title,
+                for: attributes.id,
+                label_class: 'pr-field-label'
+            } %}
+        {% endif %}
+        {% if show_description_under_label|default(1) %}
+            {% include get_template('../description', _self) %}
+        {% endif %}
     </div>
-    {% block after_field %}{% endblock %}
-    {% if errors is defined
-        and errors is not empty %}
-        <ul class="pr-field-errors">
-            {% for error in errors %}
-                <li class="pr-field-error">{{ error|raw }}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}
+{% endblock %}
+<div class="pr-field-{{ type|esc_attr }}{% if field_container_class is defined and field_container_class is not empty %} {{ field_container_class|esc_attr }}{% endif %}">
+    {% block field_body %}
+        {% include get_template('../tip', _self) %}
+        {% if not show_description_under_label|default(1) %}
+            {% include get_template('../description', _self) %}
+        {% endif %}
+    {% endblock %}
 </div>
+{% block after_field %}{% endblock %}
+{% if errors is defined
+    and errors is not empty %}
+    <ul class="pr-field-errors">
+        {% for error in errors %}
+            <li class="pr-field-error">{{ error|raw }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
 

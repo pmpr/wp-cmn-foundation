@@ -1,5 +1,6 @@
-{% if label is defined and label is not empty %}
-    <label for="{{ for|raw }}"{% if label_class is defined and label_class is not empty %} class="{{ label_class|esc_attr }}"{% endif %}>
+{% if label is defined
+    and label is not empty %}
+    <label {{ label_attrs|parse_attrs|raw }}>
         {{ label|raw }}
         {% block body %}{% endblock %}
     </label>

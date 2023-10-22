@@ -13,10 +13,7 @@
 
 {% block after_field %}
     {% if args.floating %}
-        {% include get_template('label', _self) with {
-            label: title,
-            for: attributes.id,
-        } %}
+        {% include get_template('label', _self) with {label: title} %}
     {% endif %}
     {{ parent() }}
 {% endblock %}
