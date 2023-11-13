@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             6550df9a9aa66             |
+    |             6551d64d06a2b             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\FormMaker\Admin\Traits; use Pmpr\Common\Foundation\FormMaker\Admin\Element as Forms; trait ElementTrait { public static function sgsmqaoowiyocqaa($aokagokqyuysuksm, $meqocwsecsywiiqs = null) : Forms\Tab { return new Forms\Tab($aokagokqyuysuksm, $meqocwsecsywiiqs); } public static function cgygmuguceeosoey($aokagokqyuysuksm, $meqocwsecsywiiqs = null, $yiyasiwyokuumigg = false) : Forms\MetaBox { return new Forms\MetaBox($aokagokqyuysuksm, $meqocwsecsywiiqs, $yiyasiwyokuumigg); } }
