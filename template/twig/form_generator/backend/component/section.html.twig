@@ -1,6 +1,6 @@
 {% set class_prefix = 'pr-section-' %}
 
-{% if fields is not empty or tabs is not empty %}
+{% if fields is not empty or tabs is not empty or alerts is not empty%}
 
     {% if title is not empty %}
         <div class="{{ class_prefix|esc_attr }}header d-flex justify-content-between">

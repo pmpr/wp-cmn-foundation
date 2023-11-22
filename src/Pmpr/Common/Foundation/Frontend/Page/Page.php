@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             6555ae7732d3c             |
+    |             655dfeabddd0c             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\Frontend\Page; use Pmpr\Common\Foundation\Frontend\Common; class Page extends Common { public function aqyikqugcomoqqqi() { if (!$this->ocksiywmkyaqseou("\151\x6e\x69\164\137\x64\x65\166\145\x6c\157\160\x5f\x70\141\147\x65", false)) { goto uogakawoeucgocym; } Develop::symcgieuakksimmu(); uogakawoeucgocym: } }
+ namespace Pmpr\Common\Foundation\Frontend\Page; use Pmpr\Common\Foundation\Frontend\Common; class Page extends Common { public function aqyikqugcomoqqqi() { if (!$this->ocksiywmkyaqseou("\x69\x6e\151\x74\137\144\x65\x76\x65\x6c\x6f\x70\x5f\160\141\x67\x65", false)) { goto ywsywoumuaykkeaa; } Develop::symcgieuakksimmu(); ywsywoumuaykkeaa: } }
