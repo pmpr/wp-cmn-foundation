@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             65622cf540ce2             |
+    |             656c9d111e521             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\Decorator; class DecoratorPlugin extends Decorator { public static function ggocakcisguuokai($mkysicwccoeicumg) { if (!function_exists("\151\163\137\160\154\x75\147\x69\156\137\x61\143\164\x69\x76\145")) { include_once ABSPATH . "\167\160\x2d\141\x64\x6d\x69\x6e\x2f\151\x6e\143\x6c\165\x64\145\x73\57\x70\x6c\165\147\x69\x6e\56\x70\x68\x70"; } return is_plugin_active($mkysicwccoeicumg); } public static function sioyqaykmwwugmgi(string $mkysicwccoeicumg) : bool { return is_plugin_active_for_network($mkysicwccoeicumg); } }
+ namespace Pmpr\Common\Foundation\Decorator; class DecoratorPlugin extends Decorator { public static function ggocakcisguuokai($mkysicwccoeicumg) { if (!function_exists("\151\163\x5f\x70\x6c\165\147\151\156\137\141\143\164\151\166\x65")) { include_once ABSPATH . "\x77\160\x2d\x61\144\155\x69\x6e\x2f\x69\156\143\154\165\144\145\163\57\160\x6c\165\147\151\156\x2e\160\x68\x70"; } return is_plugin_active($mkysicwccoeicumg); } public static function sioyqaykmwwugmgi(string $mkysicwccoeicumg) : bool { return is_plugin_active_for_network($mkysicwccoeicumg); } }
