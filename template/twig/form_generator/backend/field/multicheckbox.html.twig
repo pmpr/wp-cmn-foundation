@@ -1,19 +1,21 @@
 {% extends get_template('./common', _self) %}
 
 {% block field_body %}
-    {% for key, title in options %}
-        {% set id = attributes.id ~ '[' ~ key ~ ']' %}
-        <div class="pr-field-checkbox-element pr-field-multicheckbox-item">
-            <input name="{{ id|esc_attr }}" id="{{ id|esc_attr }}"
-                   type="checkbox" data-value="{{ key|esc_attr }}"
-                    {% if value[key] is same as('on') %} checked{% endif %}>
-            {% include get_template('../label', _self) with {
-                label: title,
-                for: id,
-                label_class: 'pr-field-label'
-            } %}
-        </div>
-    {% endfor %}
+    <div class="pr-field-multicheckbox-items">
+        {% for key, title in options %}
+            {% set id = attributes.id ~ '[' ~ key ~ ']' %}
+            <div class="pr-field-checkbox-element pr-field-multicheckbox-item">
+                <input name="{{ id|esc_attr }}" id="{{ id|esc_attr }}"
+                       type="checkbox" data-value="{{ key|esc_attr }}"
+                        {% if value[key] is same as('on') %} checked{% endif %}>
+                {% include get_template('../label', _self) with {
+                    label: title,
+                    for: id,
+                    label_class: 'pr-field-label'
+                } %}
+            </div>
+        {% endfor %}
+    </div>
 
     {% set attributes = attributes|merge({name: '', id: ''}) %}
 
