@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr Common Foundation\n"
-"POT-Creation-Date: 2023-11-16 00:15+0330\n"
-"PO-Revision-Date: 2023-11-16 00:15+0330\n"
+"POT-Creation-Date: 2023-12-12 19:40+0330\n"
+"PO-Revision-Date: 2023-12-12 19:41+0330\n"
 "Last-Translator: pmpr.dev <pmpr.dev@gmail.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -75,39 +75,39 @@ msgid "Username: %s"
 msgstr "نام کاربری:‌ %s"
 
 #: src/Pmpr/Common/Foundation/Asset/Asset.php:113
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:105
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:110
 msgid "Nothing selected"
 msgstr "چیزی انتخاب نشده‌ است"
 
 #: src/Pmpr/Common/Foundation/Asset/Asset.php:114
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:106
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:111
 #, fuzzy
 #| msgid "No Results"
 msgid "No results match {0}"
 msgstr "هیچ نتیجه‌ای یافت نشد"
 
 #: src/Pmpr/Common/Foundation/Asset/Asset.php:115
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:107
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:112
 msgid "{0} from {1} item selected"
 msgstr "{0} آیتم از {1} آیتم انتخاب شده"
 
 #: src/Pmpr/Common/Foundation/Asset/Asset.php:117
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:109
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:114
 msgid "Limit reached ({n} items max)"
 msgstr ""
 
 #: src/Pmpr/Common/Foundation/Asset/Asset.php:118
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:110
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:115
 msgid "Group limit reached ({n} items max)"
 msgstr ""
 
 #: src/Pmpr/Common/Foundation/Asset/Asset.php:120
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:112
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:117
 msgid "Select All"
 msgstr "انتخاب همه"
 
 #: src/Pmpr/Common/Foundation/Asset/Asset.php:121
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:113
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:118
 msgid "Deselect All"
 msgstr "لغو انتخاب همه"
 
@@ -210,38 +210,42 @@ msgid "GB"
 msgstr "گیگابایت"
 
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:97
+msgid "This field is required, please fill it first."
+msgstr "این فیلد الزامی است، لطفا ابتدا آن را پر کنید."
+
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:102
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Type/BSSelect.php:18
 msgid "Unable to retrieve results"
 msgstr "بازیابی نتایج امکان پذیر نیست"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:98
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:103
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Type/BSSelect.php:19
 msgid "Select and begin typing"
 msgstr "کلیک کرده و تایپ کنید"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:99
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:104
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Type/BSSelect.php:20
 msgid "Please enter more characters"
 msgstr "لطفا کاراکتری‌های بیشتری وارد کنید"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:100
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:105
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Type/BSSelect.php:21
 msgid "No Results"
 msgstr "هیچ نتیجه‌ای یافت نشد"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:101
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:103
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:106
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:108
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Type/BSSelect.php:22
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Type/BSSelect.php:24
 msgid "Searching..."
 msgstr "در حال جستجو ..."
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:102
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:107
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Type/BSSelect.php:23
 msgid "Currently Selected"
 msgstr "در حال حاضر انتخاب شده است"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:104
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:109
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Type/BSSelect.php:25
 msgid "Start typing a search query"
 msgstr "جستجو را با تایپ شروع کنید"
@@ -287,6 +291,7 @@ msgid "Item"
 msgstr "آیتم‌"
 
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Collection.php:58
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Collection.php:136
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Field/Group.php:173
 msgid ""
 "Sorry, you can't submit form. Some field's value is duplicated in group, "
@@ -294,6 +299,7 @@ msgid ""
 msgstr ""
 
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Collection.php:59
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Collection.php:135
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Field/Group.php:174
 #, php-format
 msgid ""
@@ -303,7 +309,7 @@ msgstr ""
 "متاسفانه شما قادر به افزودن %s جدید نیستید. برخی از مقادیر فیلد‌ها تکراری "
 "هستند، لطفا خطا‌ها را اصلاح کرده و دوباره امتحان کنید."
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Collection.php:135
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Collection.php:165
 #: src/Pmpr/Common/Foundation/Register/RegisterPost.php:91
 #, php-format
 msgid "Add %s"
@@ -1338,7 +1344,7 @@ msgid "Attachment"
 msgstr "پیوست"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/AbstractResponse.php:29
-#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:218
+#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:219
 msgid "Text"
 msgstr "متن"
 
@@ -1405,32 +1411,32 @@ msgid "Order"
 msgstr "سفارش‌های من"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:53
-#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:187
+#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:188
 msgid "Order ID/Quote ID"
 msgstr "شماره سفارش / شماره پیشنهاد"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:54
-#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:191
+#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:192
 msgid "Order Date/Quote Date"
 msgstr "تاریخ سفارش / تاریخ پیشنهاد"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:55
-#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:198
+#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:199
 msgid "Plugin"
 msgstr "افزونه"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:56
-#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:201
+#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:202
 msgid "Plugin Name"
 msgstr "نام افزونه"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:57
-#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:209
+#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:210
 msgid "Theme"
 msgstr "پوسته"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:58
-#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:212
+#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:213
 msgid "Theme Name"
 msgstr "نام پوسته"
 
@@ -1439,7 +1445,7 @@ msgid "Product"
 msgstr "محصول"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:60
-#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:156
+#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:157
 msgid "Site Link"
 msgstr "لینک سایت"
 
@@ -1547,43 +1553,43 @@ msgstr "اولویت"
 msgid "Tracking Code"
 msgstr "کد پیگیری"
 
-#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:160
+#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:161
 msgid "Pmpr Product"
 msgstr "محصول مهندس محمدپور"
 
-#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:165
+#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:166
 msgid "Pmpr Product Category"
 msgstr "دسته‌‌بندی محصولات مهندس محمدپور"
 
-#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:170
+#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:171
 msgid "Pmpr Module"
 msgstr "ماژول‌ مهندس محمدپور"
 
-#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:175
+#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:176
 msgid "Pmpr Cover"
 msgstr "کاور مهندس محمدپور"
 
-#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:180
+#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:181
 msgid "Your Custom"
 msgstr "سفارشی سازی‌ شما"
 
-#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:202
+#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:203
 msgid "If you can not found plugin, write it's name here."
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:213
+#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:214
 msgid "If you can not found theme, write it's name here."
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:245
+#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:246
 msgid "Send Request"
 msgstr "ارسال درخواست"
 
-#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:254
+#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:255
 msgid "No messages here yet..."
 msgstr "هنوز پیامی ارسال نشده است ..."
 
-#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:287
+#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:288
 msgid "Can not submit ticket on server, please try again."
 msgstr ""
 
