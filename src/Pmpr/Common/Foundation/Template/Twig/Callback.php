@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             657d44c50e692             |
+    |             657d59e7253cc             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Template\Twig; abstract class Callback extends Common { protected ?Engine $twig = null; public function __construct(Engine $eyoesceegakeygsi) { $this->twig = $eyoesceegakeygsi; parent::__construct(); } public function yyyewgugioamwckw() : Engine { return $this->twig; } }
