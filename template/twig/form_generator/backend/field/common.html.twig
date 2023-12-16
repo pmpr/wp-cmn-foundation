@@ -18,15 +18,15 @@
         {% if not show_description_under_label|default(1) %}
             {% include get_template('../description', _self) %}
         {% endif %}
+        <ul class="pr-field-invalid-message pr-field-errors">
+            {% if errors is defined
+                and errors is not empty %}
+                {% for error in errors %}
+                    <li class="pr-field-error">{{ error|raw }}</li>
+                {% endfor %}
+            {% endif %}
+        </ul>
     {% endblock %}
-    <ul class="pr-field-invalid-message pr-field-errors">
-        {% if errors is defined
-            and errors is not empty %}
-            {% for error in errors %}
-                <li class="pr-field-error">{{ error|raw }}</li>
-            {% endfor %}
-        {% endif %}
-    </ul>
 </div>
 {% block after_field %}{% endblock %}
 

@@ -20,15 +20,16 @@
     {% set asRow = args.columns is defined
         and args.columns is not empty %}
 
-    {% for id, field in fields %}
-        {% if asRow %}
-            <div class="{{ args.columns|esc_attr }}">
-        {% endif %}
-        {{ field|call('render')|raw }}
-        {% if asRow %}
-            </div>
-        {% endif %}
-    {% endfor %}
-
+    <div {{ attributes|parse_attrs|raw }}>
+        {% for id, field in fields %}
+            {% if asRow %}
+                <div class="{{ args.columns|esc_attr }}">
+            {% endif %}
+            {{ field|call('render')|raw }}
+            {% if asRow %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
 {% endblock %}
 
