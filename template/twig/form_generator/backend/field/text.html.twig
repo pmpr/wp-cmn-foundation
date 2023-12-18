@@ -2,5 +2,6 @@
 {% set show_description_under_label = 0 %}
 {% block field_body %}
     <input {{ attributes|parse_attrs|raw }}/>
+    {{ parent() }}
 {% endblock %}
 

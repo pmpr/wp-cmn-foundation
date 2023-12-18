@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr Common Foundation\n"
-"POT-Creation-Date: 2023-12-12 19:40+0330\n"
-"PO-Revision-Date: 2023-12-12 19:41+0330\n"
+"POT-Creation-Date: 2023-12-18 12:48+0330\n"
+"PO-Revision-Date: 2023-12-18 12:48+0330\n"
 "Last-Translator: pmpr.dev <pmpr.dev@gmail.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -336,8 +336,8 @@ msgstr "حذف"
 
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Media.php:195
 #: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:778
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:815
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:816
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:821
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:822
 #: src/Pmpr/Common/Foundation/Woocommerce/MultiStepSingleProduct.php:216
 msgid "Title"
 msgstr "عنوان"
@@ -784,8 +784,8 @@ msgid "Cancel"
 msgstr "انصراف"
 
 #: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:781
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:818
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:819
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:824
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:825
 #: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:972
 #: src/Pmpr/Common/Foundation/Woocommerce/MultiStepSingleProduct.php:221
 #: vendor/narmafzam/cmb2/example-functions.php:544
@@ -798,61 +798,61 @@ msgstr "شرح"
 msgid "Background"
 msgstr "رنگ پس‌زمینه"
 
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:798
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:804
 #, fuzzy
 #| msgid "Link"
 msgid "Link To"
 msgstr "پیوند"
 
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:799
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:807
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:805
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:813
 msgid "Post"
 msgstr "نوشته‌"
 
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:800
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:810
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:806
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:816
 msgid "Term"
-msgstr ""
+msgstr "ترم"
 
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:801
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:813
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:807
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:819
 msgid "URL"
 msgstr "پیوند"
 
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:816
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:819
 #: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:822
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:825
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:828
 #, php-format
 msgid "You can override %s by this field."
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:821
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:822
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:827
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:828
 msgid "Thumbnail"
 msgstr "تصویر بند انگشتی"
 
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:885
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:904
 #, fuzzy
 #| msgid "Code Text"
 msgid "Action Text"
 msgstr "متن کد"
 
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:889
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:908
 #, fuzzy
 #| msgid "Text of Link"
 msgid "Action Link Type"
 msgstr "متن پیوند"
 
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:890
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:909
 msgid "Internal Link"
 msgstr "لینک داخلی"
 
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:891
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:910
 msgid "External Link"
 msgstr "لینک به بیرون"
 
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:897
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:900
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:916
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:919
 #, fuzzy
 #| msgid "Text of Link"
 msgid "Action Link"
@@ -893,7 +893,7 @@ msgstr "وزن"
 msgid "Dimensions"
 msgstr "ابعاد"
 
-#: src/Pmpr/Common/Foundation/Helper/Server.php:34
+#: src/Pmpr/Common/Foundation/Helper/Server.php:33
 msgid "Back to Homepage"
 msgstr "بازگشت به خانه"
 
