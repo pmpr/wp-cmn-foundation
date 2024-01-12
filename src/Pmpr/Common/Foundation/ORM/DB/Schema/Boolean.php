@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             65a195306176b             |
+    |             65a19fb31e9dc             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\ORM\DB\Schema; class Boolean extends Schema { public function __construct(string $aokagokqyuysuksm, ?string $meqocwsecsywiiqs = null) { parent::__construct("\142\157\157\154\145\x61\156", $aokagokqyuysuksm, $meqocwsecsywiiqs); $this->aguakyuusmksagai()->eyygsasuqmommkua(0); } }
+ namespace Pmpr\Common\Foundation\ORM\DB\Schema; class Boolean extends Schema { public function __construct(string $aokagokqyuysuksm, ?string $meqocwsecsywiiqs = null) { parent::__construct("\142\x6f\x6f\x6c\x65\x61\x6e", $aokagokqyuysuksm, $meqocwsecsywiiqs); $this->aguakyuusmksagai()->eyygsasuqmommkua(0); } }
