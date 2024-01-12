@@ -2,6 +2,7 @@
 {% extends get_template('common', _self) %}
 
 {% block field_body %}
+    {{ parent() }}
     <div class="{{ class_prefix|esc_attr }}list row gutter-1" id="{{ name|raw }}_collection">
 
         {% if value is defined and value is iterable and value is not empty %}

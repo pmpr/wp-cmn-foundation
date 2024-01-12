@@ -1,5 +1,6 @@
 {{ action|raw }}
-<div class="modal fade" id="{{ id|esc_attr }}"
+<div class="modal{% if not show %} fade{% endif %}" id="{{ id|esc_attr }}"
+     {% if not dismissible %}data-backdrop="static"{% endif %}
      tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="{{ id|esc_attr }}_label">
     <div class="modal-dialog modal-{{ size|default('md')|esc_attr }}{% if centered %} modal-dialog-centered{% endif %}"
          role="document">
@@ -8,9 +9,11 @@
                 and title is not empty %}
                 <div class="modal-header">
                     {{ render_if_has_content(title_element|default('strong'), {id: id, class: 'modal-title'}, title) }}
-                    <a href="#" class="close card-link" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </a>
+                    {% if dismissible %}
+                        <a href="#" class="close card-link" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </a>
+                    {% endif %}
                 </div>
             {% endif %}
             {{ render_if_has_content('div', {class: 'modal-body'}, content) }}
@@ -20,6 +23,7 @@
                     {% for button in buttons %}
                         {{ button|raw }}
                     {% endfor %}
+                    {{ footer_content|raw }}
                 </div>
             {% endif %}
         </div>

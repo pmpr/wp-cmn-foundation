@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr Common Foundation\n"
-"POT-Creation-Date: 2023-12-18 12:48+0330\n"
-"PO-Revision-Date: 2023-12-18 12:48+0330\n"
+"POT-Creation-Date: 2023-12-18 14:48+0330\n"
+"PO-Revision-Date: 2023-12-18 14:49+0330\n"
 "Last-Translator: pmpr.dev <pmpr.dev@gmail.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -799,10 +799,8 @@ msgid "Background"
 msgstr "رنگ پس‌زمینه"
 
 #: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:804
-#, fuzzy
-#| msgid "Link"
 msgid "Link To"
-msgstr "پیوند"
+msgstr "لینک به"
 
 #: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:805
 #: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:813
@@ -824,35 +822,35 @@ msgstr "پیوند"
 #: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:828
 #, php-format
 msgid "You can override %s by this field."
-msgstr ""
+msgstr "شما ‌می‌توانید %s این مورد را از طریق این فیلد تغییر دهید."
 
 #: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:827
 #: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:828
 msgid "Thumbnail"
 msgstr "تصویر بند انگشتی"
 
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:904
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:907
 #, fuzzy
 #| msgid "Code Text"
 msgid "Action Text"
 msgstr "متن کد"
 
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:908
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:911
 #, fuzzy
 #| msgid "Text of Link"
 msgid "Action Link Type"
 msgstr "متن پیوند"
 
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:909
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:912
 msgid "Internal Link"
 msgstr "لینک داخلی"
 
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:910
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:913
 msgid "External Link"
 msgstr "لینک به بیرون"
 
-#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:916
 #: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:919
+#: src/Pmpr/Common/Foundation/Helper/HTML/Backend.php:922
 #, fuzzy
 #| msgid "Text of Link"
 msgid "Action Link"
