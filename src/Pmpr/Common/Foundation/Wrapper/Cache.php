@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             65a2a0681f58f             |
+    |             65a51f6f3e3a7             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Wrapper; class Cache extends Common { public function get($uusmaiomayssaecw, string $isksgswsmmqgeqmo = '', bool $cwwowqyuwccuykom = false, &$yumccasyisqwmmio = null) { return wp_cache_get($uusmaiomayssaecw, $isksgswsmmqgeqmo, $cwwowqyuwccuykom, $yumccasyisqwmmio); } public function set($uusmaiomayssaecw, $icwicymcioeyeyek, string $isksgswsmmqgeqmo = '', int $owiuekcekysskaoe = 0) : bool { return wp_cache_set($uusmaiomayssaecw, $icwicymcioeyeyek, $isksgswsmmqgeqmo, $owiuekcekysskaoe); } public function delete($uusmaiomayssaecw, string $isksgswsmmqgeqmo = '') : bool { return wp_cache_delete($uusmaiomayssaecw, $isksgswsmmqgeqmo); } }
