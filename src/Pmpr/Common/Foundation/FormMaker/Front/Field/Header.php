@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             65a51f6f3e3a7             |
+    |             65a52990da439             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\FormMaker\Front\Field; class Header extends Html { protected ?string $title = null; public function __construct(?string $aokagokqyuysuksm, ?string $meqocwsecsywiiqs) { $this->title = $meqocwsecsywiiqs; parent::__construct($aokagokqyuysuksm); $this->askmmuauqcuuqsea("\110\145\141\144\x65\162"); } public function qcgakseyaikigqco() : ?string { return $this->title; } public function gswweykyogmsyawy(?string $meqocwsecsywiiqs) : self { $this->title = $meqocwsecsywiiqs; return $this; } public function souwykwwmyygqyqi() : ?string { return $this->qcgakseyaikigqco(); } }
+ namespace Pmpr\Common\Foundation\FormMaker\Front\Field; class Header extends Html { protected ?string $title = null; public function __construct(?string $aokagokqyuysuksm, ?string $meqocwsecsywiiqs) { $this->title = $meqocwsecsywiiqs; parent::__construct($aokagokqyuysuksm); $this->askmmuauqcuuqsea("\110\x65\x61\144\145\162"); } public function qcgakseyaikigqco() : ?string { return $this->title; } public function gswweykyogmsyawy(?string $meqocwsecsywiiqs) : self { $this->title = $meqocwsecsywiiqs; return $this; } public function souwykwwmyygqyqi() : ?string { return $this->qcgakseyaikigqco(); } }

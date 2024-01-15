@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             65a51f6f3e3a7             |
+    |             65a52990da439             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\FormMaker\Front\Traits; use Pmpr\Common\Foundation\FormMaker\Front as Elements; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString; trait ElementTrait { public static function mmmemoswoaiewkes(?string $aokagokqyuysuksm = null) : Elements\Form { return new Elements\Form($aokagokqyuysuksm); } public static function wkmaaomoyekcuisa(?string $aokagokqyuysuksm = null) : Elements\MultiStepForm { return new Elements\MultiStepForm($aokagokqyuysuksm); } public static function mecgagckeuagggyw(string $aokagokqyuysuksm = null) : Elements\Div { if ($aokagokqyuysuksm) { goto emggyucsukgwkcgc; } $aokagokqyuysuksm = "\144\151\166\137" . ManipulateString::uniqid(3); emggyucsukgwkcgc: return new Elements\Div($aokagokqyuysuksm); } }
+ namespace Pmpr\Common\Foundation\FormMaker\Front\Traits; use Pmpr\Common\Foundation\FormMaker\Front as Elements; use Pmpr\Common\Foundation\Manipulate\Type\ManipulateString; trait ElementTrait { public static function mmmemoswoaiewkes(?string $aokagokqyuysuksm = null) : Elements\Form { return new Elements\Form($aokagokqyuysuksm); } public static function wkmaaomoyekcuisa(?string $aokagokqyuysuksm = null) : Elements\MultiStepForm { return new Elements\MultiStepForm($aokagokqyuysuksm); } public static function mecgagckeuagggyw(string $aokagokqyuysuksm = null) : Elements\Div { if ($aokagokqyuysuksm) { goto iqaieccaegoeggii; } $aokagokqyuysuksm = "\144\151\x76\137" . ManipulateString::uniqid(3); iqaieccaegoeggii: return new Elements\Div($aokagokqyuysuksm); } }
