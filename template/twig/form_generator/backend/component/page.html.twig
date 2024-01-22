@@ -9,7 +9,7 @@
             <form enctype="multipart/form-data"
                   method="POST" id="{{ id }}_form">
             {% endif %}
-            <fieldset class="{{ class_prefix|esc_attr }}fieldset">
+            <fieldset class="{{ class_prefix|esc_attr }}fieldset pr-fieldset">
                 {% include get_template('../../fields', _self) %}
             </fieldset>
             {% if buttons is not empty %}

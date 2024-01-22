@@ -41,7 +41,7 @@
                 </a>
             </div>
             <div class="{{ class_prefix|esc_attr }}item-message"></div>
-            <fieldset class="{{ class_prefix|esc_attr }}item-fieldset{% if args.collapsible %} collapsed{% endif %}">
+            <fieldset class="{{ class_prefix|esc_attr }}item-fieldset pr-fieldset{% if args.collapsible %} collapsed{% endif %}">
                 {% for field in fields %}
                     {% if not is_model %}
                         {{ field|call('render')|raw }}

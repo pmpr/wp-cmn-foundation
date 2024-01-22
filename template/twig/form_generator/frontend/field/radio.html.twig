@@ -1,0 +1,18 @@
+{% extends get_template('./common', _self) %}
+
+{% block field_body %}
+    {% if options is not empty %}
+        {% for key, option in options %}
+            {% set item_id = id ~ loop.index %}
+            <div class="custom-control custom-radio">
+                <input class="custom-control-input pr-field-radio-item" type="radio"
+                       name="{{ id|esc_attr }}_view" id="{{ item_id|esc_attr }}" value="{{ key|esc_attr }}"
+                       data-value="{{ key|esc_attr }}"{% if value is same as(key) %} checked{% endif %}>
+                <label class="custom-control-label" for="{{ item_id|esc_attr }}">{{ option|raw }}</label>
+            </div>
+        {% endfor %}
+    {% endif %}
+    <input {{ attributes|parse_attrs|raw }}/>
+    {{ parent() }}
+{% endblock %}
+

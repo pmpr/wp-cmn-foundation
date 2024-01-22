@@ -1,9 +1,7 @@
 {% extends get_template('./common', _self) %}
 
 {% block field_body %}
-    <select {{ attributes|parse_attrs|raw }}>
-        {{ self|call('getOptionHTML', options)|raw }}
-    </select>
+    {% include get_template('../../select', _self) %}
     {{ parent() }}
 {% endblock %}
 

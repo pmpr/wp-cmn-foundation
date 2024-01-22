@@ -21,7 +21,7 @@
         {% include get_template('../alert', _self) %}
 
         {% if fields is not empty %}
-            <fieldset class="{{ class_prefix|esc_attr }}fieldset">
+            <fieldset class="{{ class_prefix|esc_attr }}fieldset pr-fieldset">
                 {% include get_template('../../fields', _self) %}
             </fieldset>
         {% endif %}
@@ -40,7 +40,7 @@
             <div class="{{ class_prefix|esc_attr }}contents">
                 {% for id, tab in tabs %}
                     <fieldset
-                            class="{{ class_prefix|esc_attr }}tab-content pr-tab-content{% if loop.first %} is-active{% endif %}"
+                            class="{{ class_prefix|esc_attr }}tab-content pr-fieldset pr-tab-content{% if loop.first %} is-active{% endif %}"
                             id="{{ class_prefix|esc_attr }}tab-{{ id }}">
                         {{ tab|call('render')|raw }}
                     </fieldset>

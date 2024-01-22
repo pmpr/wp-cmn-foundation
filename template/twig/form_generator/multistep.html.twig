@@ -1,15 +1,15 @@
 {% set class_prefix = 'pr-multistep-' %}
 
-<div {{ attributes|parse_attrs|raw }}>
+<form {{ attributes|parse_attrs|raw }}>
     {{ render_if_has_content('h1', {class: class_prefix ~ 'title pr-title-level-1'}, title) }}
     <div class="{{ class_prefix }}body">
         <nav class="{{ class_prefix }}nav" data-total-steps="{{ steps|length }}">
             {% for step in steps %}
-                {% set id = step|call('getId') %}
-                <div class="{{ class_prefix }}step" id="step_nav_{{ id|esc_attr }}"
-                     data-step="{{ step|call('getNumber')|esc_attr }}" data-name="{{ id|esc_attr }}"
+                {% set step_id = step|call('getId') %}
+                <div class="{{ class_prefix }}step" id="step_nav_{{ step_id|esc_attr }}"
+                     data-step="{{ step|call('getNumber')|esc_attr }}" data-name="{{ step_id|esc_attr }}"
                      data-state="{% if loop.first %}current{% else %}pending{% endif %}"
-                     data-target="#step_content_{{ id|esc_attr }}">
+                     data-target="#step_content_{{ step_id|esc_attr }}">
                     <div class="{{ class_prefix }}step-wrapper">
                         {{ render_icon(step|call('getIcon'), {class: 'icon-lg ' ~ class_prefix ~ 'step-icon'}) }}
                         <strong class="{{ class_prefix }}step-label">{{ step|call('getLabel')|raw }}</strong>
@@ -20,12 +20,12 @@
             {% endfor %}
         </nav>
         <div class="{{ class_prefix }}message-container"></div>
-        <div class="{{ class_prefix }}contents">
+        <div class="{{ class_prefix }}contents pr-fieldset">
             {% for step in steps %}
-                {% set id = step|call('getId') %}
-                <section class="{{ class_prefix }}step-content" id="step_content_{{ id|esc_attr }}"
+                {% set step_id = step|call('getId') %}
+                <section class="{{ class_prefix }}step-content" id="step_content_{{ step_id|esc_attr }}"
                          data-state="{% if loop.first %}current{% else %}pending{% endif %}"
-                         aria-labelledby="step_nav_{{ id|esc_attr }}" data-name="{{ id|esc_attr }}"
+                         aria-labelledby="step_nav_{{ step_id|esc_attr }}" data-name="{{ step_id|esc_attr }}"
                          data-step="{{ step|call('getNumber')|esc_attr }}">
                     <div class="{{ class_prefix }}step-wrapper">
                         {{ step|call('render', 0, {parameters: self|call('getStepParameters', step)})|raw }}
@@ -50,5 +50,5 @@
             {% endfor %}
         </div>
     </div>
-</div>
+</form>
 
