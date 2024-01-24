@@ -10,6 +10,9 @@
         label_class: 'pr-field-label'
     } %}
     {% include get_template('../description', _self) %}
-    {{ parent() }}
+{% endblock %}
+{% block after_field %}
+    {% include get_template('../tip', _self) %}
+    {% include get_template('../error', _self) %}
 {% endblock %}
 

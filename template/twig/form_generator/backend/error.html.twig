@@ -1,0 +1,9 @@
+<ul class="pr-field-invalid-message pr-field-errors">
+    {% if errors is defined
+        and errors is not empty %}
+        {% for error in errors %}
+            <li class="pr-field-error">{{ error|raw }}</li>
+        {% endfor %}
+    {% endif %}
+</ul>
+
