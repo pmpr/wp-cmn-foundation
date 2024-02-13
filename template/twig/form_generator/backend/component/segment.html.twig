@@ -7,6 +7,7 @@
     </div>
 </div>
 <div class="{{ class_prefix|esc_attr }}content">
+    {% include get_template('../alert', _self) %}
     {% for id, section in sections %}
         <div class="{{ class_prefix|esc_attr }}section"
              id="{{ class_prefix|esc_attr }}section-{{ id }}">
@@ -14,6 +15,9 @@
         </div>
     {% endfor %}
     {% include get_template('../../fields', _self) %}
+    {% if sidebar is not empty %}
+        {{ sidebar|call('render')|raw }}
+    {% endif %}
 </div>
 {% if buttons is not empty %}
     <div class="{{ class_prefix|esc_attr }}actions">

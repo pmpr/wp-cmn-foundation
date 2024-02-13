@@ -3,7 +3,7 @@
 
 {% block field_body %}
     {{ parent() }}
-    <div class="{{ class_prefix|esc_attr }}list row gutter-1" id="{{ name|raw }}_collection">
+    <div class="{{ class_prefix|esc_attr }}list{% if args.columns is not empty %} row gutter-1{% endif %}" id="{{ name|raw }}_collection">
 
         {% if value is defined and value is iterable and value is not empty %}
 
@@ -17,22 +17,21 @@
         {% endif %}
 
         {% for index, val in values %}
-            {{ _self.model(class_prefix, args, self|call('prepareFields', val, fields, loop.index), loop.index, 0) }}
+            {{ _self.model(class_prefix, args, self|call('prepareFields', fields, val, loop.index), loop.index, 0) }}
         {% endfor %}
+    </div>
 
+    <div class="{{ class_prefix|esc_attr }}actions">
+        {{ add_button|call('render')|raw }}
     </div>
 
     <div class="{{ class_prefix|esc_attr }}model">
-        {{ _self.model(class_prefix, args, fields, '-#-', 1) }}
+        {{ _self.model(class_prefix, args, self|call('prepareFields', fields), '-#-', 1) }}
     </div>
 {% endblock %}
 
-{% block after_field %}
-    {{ add_button|call('render')|raw }}
-{% endblock %}
-
 {% macro model(class_prefix, args, fields, index = 1, is_model = 0) %}
-    <div class="{{ class_prefix|esc_attr }}item col-12{{ args.columns|raw }}" data-index="{{ index|esc_attr }}">
+    <div class="{{ class_prefix|esc_attr }}item{% if args.columns is not empty %} {{ args.columns|raw }}{% endif %}" data-index="{{ index|esc_attr }}">
         <div class="{{ class_prefix|esc_attr }}item-wrap">
             <div class="{{ class_prefix|esc_attr }}item-header d-flex justify-content-between">
                 <span class="pr-title-level-3 my-auto">{{ args.item_title|replace({'-#-': (index matches '/^\\d+$/' ? index : index) })|raw }}</span>

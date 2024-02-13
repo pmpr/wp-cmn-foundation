@@ -2,7 +2,9 @@
     and alerts is not empty %}
     {% for alert in alerts %}
         <div class="pr-alert pr-alert-{{ alert.type }}" role="alert">
-            {{ render_icon(alert.icon, {}, 1) }}
+            {% if alert.icon is not empty %}
+                {{ render_icon(alert.icon, {}, 1) }}
+            {% endif %}
             {{ alert.text|raw }}
         </div>
     {% endfor %}
