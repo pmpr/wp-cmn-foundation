@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             65cb506e7ea52             |
+    |             65e509d3e9e34             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\Helper\Traits; use Pmpr\Common\Foundation\Helper\Helper; trait HelperTrait { protected ?Helper $helper = null; protected static ?Helper $staticHelper = null; public function caokeucsksukesyo() : Helper { if ($this->helper) { goto agyycikucwgmysee; } $this->helper = new Helper(); agyycikucwgmysee: return $this->helper; } public static function iwgqamekocwaigci() : Helper { if (self::$staticHelper) { goto aiukiwqmikscoswm; } self::$staticHelper = new Helper(); aiukiwqmikscoswm: return self::$staticHelper; } }
+ namespace Pmpr\Common\Foundation\Helper\Traits; use Pmpr\Common\Foundation\Helper\Helper; trait HelperTrait { protected ?Helper $helper = null; protected static ?Helper $staticHelper = null; public function caokeucsksukesyo() : Helper { if ($this->helper) { goto uykwmucgoywoesui; } $this->helper = new Helper(); uykwmucgoywoesui: return $this->helper; } public static function iwgqamekocwaigci() : Helper { if (self::$staticHelper) { goto iisieuaeyiqwckou; } self::$staticHelper = new Helper(); iisieuaeyiqwckou: return self::$staticHelper; } }

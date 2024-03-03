@@ -12,7 +12,7 @@
     {% include get_template('../description', _self) %}
 {% endblock %}
 {% block after_field %}
+    {% include get_template('../message', _self) %}
     {% include get_template('../tip', _self) %}
-    {% include get_template('../error', _self) %}
 {% endblock %}
 

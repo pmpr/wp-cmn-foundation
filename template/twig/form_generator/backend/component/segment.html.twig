@@ -15,6 +15,9 @@
         </div>
     {% endfor %}
     {% include get_template('../../fields', _self) %}
+    {% if content is not empty %}
+        {{ self|call('renderContent') }}
+    {% endif %}
     {% if sidebar is not empty %}
         {{ sidebar|call('render')|raw }}
     {% endif %}
