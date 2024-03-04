@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             65e50f284816c             |
+    |             65e517818bcb1             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\FormGenerator\Backend\Traits; use Pmpr\Common\Foundation\FormGenerator\Backend\Component\Tab; trait TabsTrait { protected array $tabs = []; public function equiyaoamqmaeckc() : ?array { return $this->tabs; } public function myomgmiksogoikuc() : bool { return !empty($this->equiyaoamqmaeckc()); } public function kmmgwqwowkgusics(array $ywoucyskcquysiwc) : self { $this->tabs = $ywoucyskcquysiwc; return $this; } public function aucimgwswmgaocae(?Tab $cciauwuwuqaywgce) : self { if (!$cciauwuwuqaywgce) { goto ieymsauiqeoqasiq; } $cciauwuwuqaywgce->ggiaseqygioygumq($this->mwikyscisascoeea() . $cciauwuwuqaywgce->mwikyscisascoeea()); if ($cciauwuwuqaywgce->yywskysiycwkwsgw()) { goto uiauuokawqgeseew; } $cciauwuwuqaywgce->jyumyyugiwwiqomk(count($this->equiyaoamqmaeckc()) + 1); uiauuokawqgeseew: $this->tabs[$cciauwuwuqaywgce->mwikyscisascoeea()] = $cciauwuwuqaywgce; ieymsauiqeoqasiq: return $this; } public function ciwuiwsyckiiogwo(array $ywoucyskcquysiwc) : self { foreach ($ywoucyskcquysiwc as $cciauwuwuqaywgce) { if (!$cciauwuwuqaywgce instanceof Tab) { goto myescyyqsggoauyu; } $this->aucimgwswmgaocae($cciauwuwuqaywgce); myescyyqsggoauyu: quewuekkmwqwwuuu: } ioyaesuyigcaeqww: return $this; } }
