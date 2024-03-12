@@ -39,6 +39,6 @@
       "index.php"
     ]
   },
-  "minimum-stability": "dev"
+  "minimum-stability": "dev",
+  "tag": "1.3.341"
 }
-
