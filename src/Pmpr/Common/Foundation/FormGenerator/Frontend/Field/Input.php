@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             65fee406e227f             |
+    |             65ff085d9018d             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\FormGenerator\Frontend\Field; class Input extends Field { public function __construct(string $aokagokqyuysuksm = '', string $sqeykgyoooqysmca = '') { parent::__construct($aokagokqyuysuksm, $sqeykgyoooqysmca); $this->uekikuwmokqsqoga($sqeykgyoooqysmca); } public function iygyugseyaqwywyg($eqgoocgaqwqcimie) : self { $this->qcgocuceocquqcuw(self::ciyoccqkiamemcmm, $eqgoocgaqwqcimie); return parent::iygyugseyaqwywyg($eqgoocgaqwqcimie); } }
