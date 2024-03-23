@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             65fd7defcd6f1             |
+    |             65fee406e227f             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Page\Admin; use Pmpr\Common\Foundation\Page\Common as BaseClass; class Common extends BaseClass { }
