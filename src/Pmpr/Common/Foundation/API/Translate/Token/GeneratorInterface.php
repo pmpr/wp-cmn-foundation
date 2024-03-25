@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             65ff5b6f7cae0             |
+    |             6601ae5f34a2d             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\API\Translate\Token; interface GeneratorInterface { }
