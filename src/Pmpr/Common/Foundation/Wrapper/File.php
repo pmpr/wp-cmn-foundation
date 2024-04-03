@@ -1,7 +1,0 @@
-<?php
-/*   _______________________________________
-    |  Obfuscated by PMPR - Php Obfuscator  |
-    |             66080baef0c26             |
-    |_______________________________________|
-*/
- namespace Pmpr\Common\Foundation\Wrapper; class File extends Common { public function qmgqwkwkuqaguewu(string $wkcwykowmmmwioqs, $yawwowoqosismgyq = null) : array { return wp_check_filetype($wkcwykowmmmwioqs, $yawwowoqosismgyq); } public function mkakmgoaemygaomc(string $wkcwykowmmmwioqs, array $qiouiwasaauyaaue = []) { return wp_json_file_decode($wkcwykowmmmwioqs, $qiouiwasaauyaaue); } public function uqwwsygscmsoiwym(string $qogsmwakwacwqogk, string $smaiamkswqkisawm) : bool { return wp_delete_file_from_directory($qogsmwakwacwqogk, $smaiamkswqkisawm); } public function oemywwmmmiywiqai() : array { return wp_upload_dir(); } public function wayeasoyaomiwwmc() : string { return get_home_path(); } public function cgwcgscqeqauaagi($mkomwsiykqigmqca) : string { return wp_normalize_path($mkomwsiykqigmqca); } public function qsyguaycgacaggsu($qogsmwakwacwqogk = null, $qysuisecuceywamu = true, $cqgoimumaewouews = false) : array { if (!function_exists("\167\160\x5f\x68\x61\x6e\144\x6c\145\137\163\151\x64\x65\154\157\141\144")) { require_once ABSPATH . "\167\x70\x2d\x61\144\x6d\x69\156\x2f\151\156\x63\x6c\x75\x64\145\163\x2f\146\151\x6c\x65\56\160\150\x70"; } return wp_handle_sideload($qogsmwakwacwqogk, $qysuisecuceywamu, $cqgoimumaewouews); } }

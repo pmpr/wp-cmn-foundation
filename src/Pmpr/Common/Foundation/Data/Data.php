@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             66080baef0c26             |
+    |             660dbf68a5a6d             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\Data; use Pmpr\Common\Foundation\Helper\Traits\HelperTrait; use Pmpr\Common\Foundation\Interfaces\ConstantInterface; use Pmpr\Common\Foundation\Wrapper\Traits\WrapperTrait; abstract class Data implements ConstantInterface { use WrapperTrait, HelperTrait; }
+ namespace Pmpr\Common\Foundation\Data; use Pmpr\Common\Foundation\Functions\Traits\HelperTrait; use Pmpr\Common\Foundation\Functions\Traits\WrapperTrait; use Pmpr\Common\Foundation\Interfaces\ConstantInterface; abstract class Data implements ConstantInterface { use WrapperTrait, HelperTrait; }
