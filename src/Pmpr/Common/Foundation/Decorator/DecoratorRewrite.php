@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             660dbf68a5a6d             |
+    |             660dc37b26b22             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\Decorator; use Pmpr\Common\Foundation\Manipulate\Manipulate; class DecoratorRewrite extends Manipulate { public static function ggqucmukcaycuckk($wqgoeumkaeyqaiqu = true) { flush_rewrite_rules($wqgoeumkaeyqaiqu); } public static function aimosgcaukumakge($ucccueqywigcukcc, $gqgemcmoicmgaqie, $miisqgccsqqcscia = "\x62\157\164\164\157\155") { add_rewrite_rule($ucccueqywigcukcc, $gqgemcmoicmgaqie, $miisqgccsqqcscia); } public static function sqwyuucgyowmqcgc($ymqmyyeuycgmigyo, $wwqoakwweuiyqgco, $emmugacswycqccku = true) { add_rewrite_endpoint($ymqmyyeuycgmigyo, $wwqoakwweuiyqgco, $emmugacswycqccku); } }
+ namespace Pmpr\Common\Foundation\Decorator; use Pmpr\Common\Foundation\Manipulate\Manipulate; class DecoratorRewrite extends Manipulate { public static function ggqucmukcaycuckk($wqgoeumkaeyqaiqu = true) { flush_rewrite_rules($wqgoeumkaeyqaiqu); } public static function aimosgcaukumakge($ucccueqywigcukcc, $gqgemcmoicmgaqie, $miisqgccsqqcscia = "\142\x6f\x74\x74\157\x6d") { add_rewrite_rule($ucccueqywigcukcc, $gqgemcmoicmgaqie, $miisqgccsqqcscia); } public static function sqwyuucgyowmqcgc($ymqmyyeuycgmigyo, $wwqoakwweuiyqgco, $emmugacswycqccku = true) { add_rewrite_endpoint($ymqmyyeuycgmigyo, $wwqoakwweuiyqgco, $emmugacswycqccku); } }
