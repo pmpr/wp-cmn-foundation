@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             662e236b22165             |
+    |             662e3e3136c47             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\API; use Pmpr\Common\Foundation\API\Translate\Translate; class APIs extends Common { public function mameiwsayuyquoeq() { Translate::symcgieuakksimmu(); } }
