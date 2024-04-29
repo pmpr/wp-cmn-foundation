@@ -1,10 +1,12 @@
 {% set class_prefix = 'pr-sidebar' %}
 <aside class="{{ class_prefix|esc_attr }}">
     <div class="{{ class_prefix|esc_attr }}-wrap">
+        {% set sections = sections|sortby('getPriority') %}
         {% for id, section in sections %}
-            <div class="{{ class_prefix|esc_attr }}-section">
-                {{ section|call('render')|raw }}
-            </div>
+            {% set content = section|call('render') %}
+            {% if content is not empty %}
+                <div class="{{ class_prefix|esc_attr }}-section">{{ content|raw }}</div>
+            {% endif %}
         {% endfor %}
     </div>
 </aside>

@@ -1,6 +1,6 @@
 {% extends get_template('./common', _self) %}
 
 {% block field_body %}
-    {{ content|raw }}
+    {{ self|call('getContent')|raw }}
 {% endblock %}
 
