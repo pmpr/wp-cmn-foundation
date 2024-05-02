@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr Common Foundation\n"
-"POT-Creation-Date: 2024-04-30 17:19+0330\n"
-"PO-Revision-Date: 2024-04-30 17:19+0330\n"
+"POT-Creation-Date: 2024-05-02 16:06+0330\n"
+"PO-Revision-Date: 2024-05-02 16:11+0330\n"
 "Last-Translator: pmpr.dev <pmpr.dev@gmail.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -73,51 +73,6 @@ msgstr "نقش‌های کاربری: %s"
 #, php-format
 msgid "Username: %s"
 msgstr "نام کاربری:‌ %s"
-
-#: src/Pmpr/Common/Foundation/Asset/Asset.php:118
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:110
-msgid "Nothing selected"
-msgstr "چیزی انتخاب نشده‌ است"
-
-#: src/Pmpr/Common/Foundation/Asset/Asset.php:119
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:111
-#, fuzzy
-#| msgid "No Results"
-msgid "No results match {0}"
-msgstr "هیچ نتیجه‌ای یافت نشد"
-
-#: src/Pmpr/Common/Foundation/Asset/Asset.php:120
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:112
-msgid "{0} from {1} item selected"
-msgstr "{0} آیتم از {1} آیتم انتخاب شده"
-
-#: src/Pmpr/Common/Foundation/Asset/Asset.php:122
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:114
-msgid "Limit reached ({n} items max)"
-msgstr ""
-
-#: src/Pmpr/Common/Foundation/Asset/Asset.php:123
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:115
-msgid "Group limit reached ({n} items max)"
-msgstr ""
-
-#: src/Pmpr/Common/Foundation/Asset/Asset.php:125
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:117
-msgid "Select All"
-msgstr "انتخاب همه"
-
-#: src/Pmpr/Common/Foundation/Asset/Asset.php:126
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:118
-msgid "Deselect All"
-msgstr "لغو انتخاب همه"
-
-#: src/Pmpr/Common/Foundation/Asset/Asset.php:132
-msgid "Copied!"
-msgstr "کپی شد!"
-
-#: src/Pmpr/Common/Foundation/Asset/Asset.php:133
-msgid "Copy process failed."
-msgstr "فرآیند کپی ناموفق بود."
 
 #: src/Pmpr/Common/Foundation/CPT.php:70
 #, php-format
@@ -216,46 +171,76 @@ msgstr "مگابایت"
 msgid "GB"
 msgstr "گیگابایت"
 
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:96
+msgid "Copied!"
+msgstr "کپی شد!"
+
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:97
+msgid "Copy process failed."
+msgstr "فرآیند کپی ناموفق بود."
+
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:102
 msgid "This field is required, please fill it first."
 msgstr "این فیلد الزامی است، لطفا ابتدا آن را پر کنید."
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:102
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Type/BSSelect.php:18
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:107
 msgid "Unable to retrieve results"
 msgstr "بازیابی نتایج امکان پذیر نیست"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:103
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Type/BSSelect.php:19
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:108
 msgid "Select and begin typing"
 msgstr "کلیک کرده و تایپ کنید"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:104
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Type/BSSelect.php:20
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:109
 msgid "Please enter more characters"
 msgstr "لطفا کاراکتری‌های بیشتری وارد کنید"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:105
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Type/BSSelect.php:21
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:110
 msgid "No Results"
 msgstr "هیچ نتیجه‌ای یافت نشد"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:106
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:108
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Type/BSSelect.php:22
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Type/BSSelect.php:24
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:111
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:113
 msgid "Searching..."
 msgstr "در حال جستجو ..."
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:107
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Type/BSSelect.php:23
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:112
 msgid "Currently Selected"
 msgstr "در حال حاضر انتخاب شده است"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:109
-#: src/Pmpr/Common/Foundation/FormMaker/Admin/Type/BSSelect.php:25
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:114
 msgid "Start typing a search query"
 msgstr "جستجو را با تایپ شروع کنید"
+
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:115
+msgid "Nothing selected"
+msgstr "چیزی انتخاب نشده‌ است"
+
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:116
+#, fuzzy
+#| msgid "No Results"
+msgid "No results match {0}"
+msgstr "هیچ نتیجه‌ای یافت نشد"
+
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:117
+msgid "{0} from {1} item selected"
+msgstr "{0} آیتم از {1} آیتم انتخاب شده"
+
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:119
+msgid "Limit reached ({n} items max)"
+msgstr ""
+
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:120
+msgid "Group limit reached ({n} items max)"
+msgstr ""
+
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:122
+msgid "Select All"
+msgstr "انتخاب همه"
+
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:123
+msgid "Deselect All"
+msgstr "لغو انتخاب همه"
 
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Component/Form.php:25
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Component/Multistep.php:87
@@ -279,12 +264,10 @@ msgid "Need Help?"
 msgstr "به کمک نیاز داردید؟"
 
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Background.php:58
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Icon.php:46
 msgid "Select From Media"
 msgstr "انتخاب از رسانه"
 
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Background.php:63
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Icon.php:53
 msgid "Select From Icon Set"
 msgstr "انتخاب از آیکون‌ها"
 
@@ -330,6 +313,14 @@ msgstr ""
 #, php-format
 msgid "Add %s"
 msgstr "افزودن %s"
+
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Icon.php:46
+msgid "Media"
+msgstr "رسانه"
+
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Icon.php:53
+msgid "Icon Set"
+msgstr "آیکون‌ها"
 
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Media.php:180
 msgid "Select Media"
@@ -550,21 +541,21 @@ msgstr "الگو"
 msgid "Change Settings"
 msgstr "تغییر تنظیمات"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Traits/SettingTrait.php:76
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Traits/SettingTrait.php:77
 msgid "Unfortunately Your license key is not valid. Your changes not saved."
 msgstr "متأسفانه کلید مجوز شما معتبر نیست. تغییرات شما ذخیره نشد."
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Traits/SettingTrait.php:289
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Traits/SettingTrait.php:291
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:655
 msgid "min"
 msgstr "دقیقه"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Traits/SettingTrait.php:290
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Traits/SettingTrait.php:292
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:656
 msgid "hr"
 msgstr "ساعت"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Traits/SettingTrait.php:301
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Traits/SettingTrait.php:303
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:667
 msgid "No Limit"
 msgstr "بدون محدودیت"
@@ -1153,10 +1144,8 @@ msgid "%s %s all rights reserved for %s"
 msgstr "%s %s تمامی حقوق برای %s محفوظ است"
 
 #: src/Pmpr/Common/Foundation/MobileApp/Listing.php:158
-#, fuzzy
-#| msgid "Something wrong in delete cache process"
 msgid "Something wrong, please try again later or contact us."
-msgstr "اشکالی در فرایند حذف حافظه کش رخ داده است"
+msgstr "مشکلی پیش آمده است،"
 
 #: src/Pmpr/Common/Foundation/Notice/Traits/NoticeTrait.php:44
 #, php-format
@@ -4962,9 +4951,6 @@ msgstr ""
 #~| msgid "Icons Color"
 #~ msgid "Dominant Color"
 #~ msgstr "رنگ آیکون"
-
-#~ msgid "Media"
-#~ msgstr "رسانه"
 
 #~ msgid "Enable Lazyload"
 #~ msgstr "فعال سازی بارگذاری تنبل"
