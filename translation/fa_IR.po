@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr Common Foundation\n"
-"POT-Creation-Date: 2024-05-02 16:06+0330\n"
-"PO-Revision-Date: 2024-05-02 16:11+0330\n"
+"POT-Creation-Date: 2024-05-25 11:50+0330\n"
+"PO-Revision-Date: 2024-05-25 11:50+0330\n"
 "Last-Translator: pmpr.dev <pmpr.dev@gmail.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.4.3\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: index.php\n"
 "X-Source-Language: en\n"
@@ -272,7 +272,7 @@ msgid "Select From Icon Set"
 msgstr "انتخاب از آیکون‌ها"
 
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Background.php:90
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Icon.php:90
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Icon.php:89
 msgid "Or"
 msgstr "یا"
 
@@ -318,7 +318,7 @@ msgstr "افزودن %s"
 msgid "Media"
 msgstr "رسانه"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Icon.php:53
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Icon.php:52
 msgid "Icon Set"
 msgstr "آیکون‌ها"
 
@@ -343,9 +343,9 @@ msgstr "حذف"
 
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Media.php:196
 #: src/Pmpr/Common/Foundation/Frontend/MultistepAware.php:257
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:812
 #: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:855
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:898
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:899
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:856
 msgid "Title"
 msgstr "عنوان"
 
@@ -425,118 +425,118 @@ msgstr "عنوان اصلی"
 msgid "Name"
 msgstr "نام:‌ %s"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:92
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:91
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:366
 msgid "Save Changes"
 msgstr "ذخیره تغییرات"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:117
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:116
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:214
 msgid "Enter license key"
 msgstr "کلید مجوز را وارد کنید"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:122
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:121
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:215
 #, php-format
 msgid "To complete the installation of %s, %s."
 msgstr "برای تکمیل فرآیند نصب %s، %s."
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:142
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:141
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:248
 msgid "Setting"
 msgstr "تنظیمات"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:154
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:153
 msgid "The license is valid."
 msgstr "مجوز معتبر است."
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:158
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:157
 msgid "The license is invalid."
 msgstr "مجوز نامعتبر است"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:165
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:164
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:402
 msgid "License"
 msgstr "مجوز"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:167
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:166
 msgid "Guide & License"
 msgstr "راهنما و مجوز"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:170
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:169
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:406
 msgid "License Key"
 msgstr "کلید مجوز"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:174
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:173
 msgid "License Code"
 msgstr "کد مجوز"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:178
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:177
 msgid "Fetch License Information"
 msgstr "دریافت اطلاعات مجوز"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:184
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:183
 msgid "License Status"
 msgstr "وضعیت مجوز"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:228
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:227
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/MetaTab.php:862
 msgid "Settings Updated"
 msgstr "تنظیمات با موفقیت به روز شد"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:336
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:324
 #, php-format
 msgid "The license key for %s has been successfully received and saved"
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:346
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:334
 msgid "Can not found component"
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:374
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:362
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:296
 #, php-format
 msgid "Setting options successfully change to %s"
 msgstr "تنظمیات با موفقیت به %s تغییر کرد"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:379
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:367
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:299
 #, fuzzy
 #| msgid "The Url you entered is not valid"
 msgid "Selected % is not valid"
 msgstr "پیوند وارد شده معتبر نیست"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:379
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:383
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:367
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:371
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:299
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:303
 msgid "Setting Type"
 msgstr "نوع تنظمات"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:383
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:371
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:303
 #, php-format
 msgid "Please select an option in the %s"
 msgstr "لطف یک گزینه در %s انتخاب کنید"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:401
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:389
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:165
 #, php-format
 msgid "%s Setting Template"
 msgstr "الگوی %s"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:445
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:433
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:430
 msgid "Setting Templates"
 msgstr "الگو‌های تنظیمات"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:449
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:437
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:434
 msgid "Setting Template"
 msgstr "الگو"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:454
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:442
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Element/Setting.php:439
 msgid "Change Settings"
 msgstr "تغییر تنظیمات"
@@ -545,17 +545,17 @@ msgstr "تغییر تنظیمات"
 msgid "Unfortunately Your license key is not valid. Your changes not saved."
 msgstr "متأسفانه کلید مجوز شما معتبر نیست. تغییرات شما ذخیره نشد."
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Traits/SettingTrait.php:291
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Traits/SettingTrait.php:290
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:655
 msgid "min"
 msgstr "دقیقه"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Traits/SettingTrait.php:292
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Traits/SettingTrait.php:291
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:656
 msgid "hr"
 msgstr "ساعت"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Traits/SettingTrait.php:303
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Traits/SettingTrait.php:302
 #: src/Pmpr/Common/Foundation/FormMaker/Admin/Traits/FieldTrait.php:667
 msgid "No Limit"
 msgstr "بدون محدودیت"
@@ -738,8 +738,8 @@ msgid "Clear"
 msgstr "پاک کردن"
 
 #: src/Pmpr/Common/Foundation/FormMaker/Front/Field/Collection.php:213
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2809
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2834
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2832
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2857
 #: src/Pmpr/Common/Foundation/ORM/View/Edit.php:268
 #: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:162
 #: vendor/woocommerce/action-scheduler/classes/ActionScheduler_ListTable.php:92
@@ -777,9 +777,9 @@ msgid "Enable"
 msgstr "فعال"
 
 #: src/Pmpr/Common/Foundation/Frontend/MultistepAware.php:262
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:815
 #: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:858
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:901
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:902
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:859
 #: src/Pmpr/Common/Foundation/Manipulate/Plugin/ManipulateWoocommerce.php:972
 #: vendor/narmafzam/cmb2/example-functions.php:544
 msgid "Description"
@@ -834,87 +834,91 @@ msgstr "%s را نمی‌توان افزود."
 msgid "You can use these placeholders:"
 msgstr "می توانید از این متن‌های جایگزین استفاده کنید:"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:172
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:178
 #: src/Pmpr/Common/Foundation/Manipulate/Cover/ManipulateBootstrap.php:63
 #: src/Pmpr/Common/Foundation/Manipulate/Cover/ManipulateHTML.php:488
 msgid "Close"
 msgstr "بستن"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:179
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:185
 #: src/Pmpr/Common/Foundation/Manipulate/Cover/ManipulateHTML.php:494
 msgid "please specify a prefix for for modal"
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:294
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:300
 #: src/Pmpr/Common/Foundation/Manipulate/Cover/ManipulateHTML.php:923
 msgid "Alert"
 msgstr "اعلان"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:328
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:334
 #: src/Pmpr/Common/Foundation/Manipulate/Cover/ManipulateHTML.php:956
 #: vendor/woocommerce/action-scheduler/classes/ActionScheduler_ListTable.php:133
 msgid "Cancel"
 msgstr "انصراف"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:862
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:343
+msgid "OK"
+msgstr "باشه"
+
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:819
 #, fuzzy
 #| msgid "Background Color"
 msgid "Background"
 msgstr "رنگ پس‌زمینه"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:881
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:838
 msgid "Link To"
 msgstr "لینک به"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:882
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:890
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:839
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:847
 msgid "Post"
 msgstr "نوشته‌"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:883
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:893
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:840
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:850
 msgid "Term"
 msgstr "ترم"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:884
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:896
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:841
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:853
 msgid "URL"
 msgstr "پیوند"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:899
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:902
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:905
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:856
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:859
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:862
 #, php-format
 msgid "You can override %s by this field."
 msgstr "شما ‌می‌توانید %s این مورد را از طریق این فیلد تغییر دهید."
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:904
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:905
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:861
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:862
 msgid "Thumbnail"
 msgstr "تصویر بند انگشتی"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:984
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:941
 #, fuzzy
 #| msgid "Code Text"
 msgid "Action Text"
 msgstr "متن کد"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:988
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:945
 #, fuzzy
 #| msgid "Text of Link"
 msgid "Action Link Type"
 msgstr "متن پیوند"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:989
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:946
 msgid "Internal Link"
 msgstr "لینک داخلی"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:990
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:947
 msgid "External Link"
 msgstr "لینک به بیرون"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:996
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:999
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:953
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:956
 #, fuzzy
 #| msgid "Text of Link"
 msgid "Action Link"
@@ -1176,12 +1180,12 @@ msgid "Some require parameters not passed or not correct."
 msgstr "داده‌های الزامی ارسال نشد‌اند"
 
 #: src/Pmpr/Common/Foundation/ORM/DB/Model.php:744
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2886
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2909
 msgid "Created At"
 msgstr "تاریخ ایجاد"
 
 #: src/Pmpr/Common/Foundation/ORM/DB/Model.php:747
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2887
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2910
 msgid "Updated At"
 msgstr "تاریخ به روزرسانی"
 
@@ -1193,37 +1197,17 @@ msgstr ""
 msgid "All"
 msgstr "همه"
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2050
-#, fuzzy
-#| msgid "Qualification Setting"
-msgid "Validation failed."
-msgstr "تنظیمات مشخصه‌ها"
-
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2068
-#, php-format
-msgid "Exception on delete object: %s"
-msgstr ""
-
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2075
-#, php-format
-msgid "Exception on add/update object: %s"
-msgstr ""
-
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2079
-msgid "Builder is null, maybe table not created."
-msgstr ""
-
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2567
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2590
 #, php-format
 msgid "%s is unique and entered value already exist."
 msgstr "فیلد %s منحصر به فرد است و مقدار ورودی در حال حاضر وجود دارد."
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2578
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2601
 #, php-format
 msgid "%s cann't be empty, please fill it."
 msgstr "فیلد %s نمی‌تواند خالی باشد، لطفا آن را پر کنید."
 
-#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2814
+#: src/Pmpr/Common/Foundation/ORM/DB/Model.php:2837
 msgid "Are you sure you want to delete this item?"
 msgstr "در مورد حذف این آیتم مطمئن هستید؟"
 
@@ -1328,33 +1312,33 @@ msgstr ""
 msgid "Edit %s"
 msgstr "ویرایش %s"
 
-#: src/Pmpr/Common/Foundation/ORM/View/Index.php:177
+#: src/Pmpr/Common/Foundation/ORM/View/Index.php:179
 msgid "Error in deleting."
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/ORM/View/Index.php:181
-#: src/Pmpr/Common/Foundation/ORM/View/Index.php:225
+#: src/Pmpr/Common/Foundation/ORM/View/Index.php:183
+#: src/Pmpr/Common/Foundation/ORM/View/Index.php:228
 msgid "Sorry, you are not allowed to delete items of this type."
 msgstr "متاسفانه شما مجاز به حذف آیتم‌هایی از این نوع نیستید."
 
-#: src/Pmpr/Common/Foundation/ORM/View/Index.php:189
+#: src/Pmpr/Common/Foundation/ORM/View/Index.php:191
 msgid "Item successfully deleted."
 msgstr "آیتم مورد نظر با موفقیت حذف شد."
 
-#: src/Pmpr/Common/Foundation/ORM/View/Index.php:218
+#: src/Pmpr/Common/Foundation/ORM/View/Index.php:221
 #, php-format
 msgid "Can not delete requested items: %s."
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/ORM/View/Index.php:236
+#: src/Pmpr/Common/Foundation/ORM/View/Index.php:239
 msgid "Requested items deleted."
 msgstr "موارد درخواستی حذف شد."
 
-#: src/Pmpr/Common/Foundation/ORM/View/Index.php:386
+#: src/Pmpr/Common/Foundation/ORM/View/Index.php:389
 msgid "Number of items per page:"
 msgstr "تعداد آیتم‌ها در هر صفحه:"
 
-#: src/Pmpr/Common/Foundation/ORM/View/Index.php:399
+#: src/Pmpr/Common/Foundation/ORM/View/Index.php:402
 #: vendor/woocommerce/action-scheduler/classes/ActionScheduler_AdminView.php:237
 msgid "Columns"
 msgstr "ستون‌ها"
@@ -3602,6 +3586,11 @@ msgstr ""
 #, php-format
 msgid "Caught exception while cancelling action \"%1$s\": %2$s"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Qualification Setting"
+#~ msgid "Validation failed."
+#~ msgstr "تنظیمات مشخصه‌ها"
 
 #~ msgid "Code"
 #~ msgstr "کد"
@@ -6565,9 +6554,6 @@ msgstr ""
 
 #~ msgid "More Info"
 #~ msgstr "اطلاعات بیشتر"
-
-#~ msgid "OK"
-#~ msgstr "باشه"
 
 #~ msgid "Show custom translation"
 #~ msgstr "نمایش ترجمه سفارشی"
