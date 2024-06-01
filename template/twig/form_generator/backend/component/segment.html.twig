@@ -8,16 +8,18 @@
 </div>
 <div class="{{ class_prefix|esc_attr }}content">
     {% include get_template('../alert', _self) %}
-    {% for id, section in sections %}
-        <div class="{{ class_prefix|esc_attr }}section"
-             id="{{ class_prefix|esc_attr }}section-{{ id }}">
-            {{ section|call('render')|raw }}
-        </div>
-    {% endfor %}
-    {% include get_template('../../fields', _self) %}
-    {% if content is not empty %}
-        {{ self|call('renderContent') }}
-    {% endif %}
+    <div class="{{ class_prefix|esc_attr }}sections">
+        {% for id, section in sections %}
+            <div class="{{ class_prefix|esc_attr }}section"
+                 id="{{ class_prefix|esc_attr }}section-{{ id }}">
+                {{ section|call('render')|raw }}
+            </div>
+        {% endfor %}
+        {% include get_template('../../fields', _self) %}
+        {% if content is not empty %}
+            {{ self|call('renderContent') }}
+        {% endif %}
+    </div>
     {% if sidebar is not empty %}
         {{ sidebar|call('render')|raw }}
     {% endif %}
