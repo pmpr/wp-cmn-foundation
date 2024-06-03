@@ -6,8 +6,8 @@
         <div class="{{ class_prefix|esc_attr }}description">{{ description|raw }}</div>
     </div>
 </div>
+{% include get_template('../alert', _self) %}
 <div class="{{ class_prefix|esc_attr }}content">
-    {% include get_template('../alert', _self) %}
     <div class="{{ class_prefix|esc_attr }}sections">
         {% for id, section in sections %}
             <div class="{{ class_prefix|esc_attr }}section"
