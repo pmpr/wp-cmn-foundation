@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             665f429803592             |
+    |             6668a96c006dd             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\Frontend\Page; use Pmpr\Common\Foundation\Frontend\Page; class Develop extends Page { public function qiccuiwooiquycsg() { $this->myysgyqcumekoueo()->oyaugcgekomyiiik()->wegcaymyqqoyewmw("\167\157\162\144\160\x72\145\163\x73\55\167\145\x62\x2d\x64\145\163\151\147\156\55\144\x65\166\145\154\157\160\155\145\156\x74"); } public function gogaagekwoisaqgu() { $this->gswweykyogmsyawy(__("\x44\x65\x76\145\154\x6f\160\40\141\156\x64\40\104\x65\x73\x69\147\156", PR__CMN__FOUNDATION)); } }
+ namespace Pmpr\Common\Foundation\Frontend\Page; use Pmpr\Common\Foundation\Frontend\Page; class Develop extends Page { public function qiccuiwooiquycsg() { $this->myysgyqcumekoueo()->oyaugcgekomyiiik()->wegcaymyqqoyewmw("\x77\157\162\x64\x70\x72\145\x73\163\x2d\167\145\142\55\144\x65\x73\151\x67\x6e\55\144\145\x76\x65\x6c\157\x70\155\x65\x6e\164"); } public function gogaagekwoisaqgu() { $this->gswweykyogmsyawy(__("\104\x65\x76\145\x6c\x6f\160\40\x61\x6e\144\40\x44\145\163\x69\147\156", PR__CMN__FOUNDATION)); } }
