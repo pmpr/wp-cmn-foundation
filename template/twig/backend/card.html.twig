@@ -1,4 +1,4 @@
-<div class="pr-card"{% if type is not empty %} data-type="{{ type|esc_attr }}"{% endif %}>
+<div class="pr-card{% if card_class is not empty %} {{ card_class|raw }}{% endif %}"{% if type is not empty %} data-type="{{ type|esc_attr }}"{% endif %}>
     {% if header is not empty %}
         <div class="pr-card-header{% if header_class is not empty %} {{ header_class|raw }}{% endif %}">
             <strong class="pr-card-title">{{ header|raw }}</strong>
