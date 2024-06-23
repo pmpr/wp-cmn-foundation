@@ -1,0 +1,16 @@
+<nav class="{{ class_prefix }}nav" data-total-steps="{{ steps|length }}">
+    {% for step in steps %}
+        {% set step_id = step|call('getId') %}
+        <div class="{{ class_prefix }}step" id="step_nav_{{ step_id|esc_attr }}"
+             data-step="{{ step|call('getNumber')|esc_attr }}" data-name="{{ step_id|esc_attr }}"
+             data-state="{% if loop.first %}current{% else %}pending{% endif %}"
+             data-target="#step_content_{{ step_id|esc_attr }}">
+            <div class="{{ class_prefix }}step-wrapper">
+                {{ render_icon(step|call('getIcon'), {class: 'icon-lg ' ~ class_prefix ~ 'step-icon'}) }}
+                <strong class="{{ class_prefix }}step-label">{{ step|call('getLabel')|raw }}</strong>
+                <span class="{{ class_prefix }}step-number">{{ step|call('getNumber')|number|raw }}</span>
+                {{ render_icon(done_icon, {class: 'icon-md ' ~ class_prefix ~ 'step-done-icon'})|raw }}
+            </div>
+        </div>
+    {% endfor %}
+</nav>
