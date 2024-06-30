@@ -1,7 +1,9 @@
 {% block before_field %}
     {% include get_template('label', _self) with {label: title} %}
 {% endblock %}
-{% block field_body %}{% endblock %}
+<div class="pr-field-{{ type|esc_attr }}{% if field_container_class is defined and field_container_class is not empty %} {{ field_container_class|esc_attr }}{% endif %}">
+    {% block field_body %}{% endblock %}
+</div>
 {% block after_field %}
     {% include get_template('../description', _self) %}
 {% endblock %}
