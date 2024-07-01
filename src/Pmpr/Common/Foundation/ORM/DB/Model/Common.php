@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             66812ccd0a7ad             |
+    |             66827cae43f2f             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\ORM\DB\Model; use Pmpr\Common\Foundation\ORM\DB\Model; use Pmpr\Common\Foundation\ORM\Register; abstract class Common extends Model { protected Model $relatedModel; public function qkuoycokmukoscka() : Model { return $this->relatedModel; } public function __construct($ykyqqwuyuqeekuqw = null, ?array $siquossayskcwkea = []) { if (!$ykyqqwuyuqeekuqw instanceof Model) { goto esaioouuwmeaqiim; } $this->relatedModel = $ykyqqwuyuqeekuqw; parent::__construct($siquossayskcwkea); esaioouuwmeaqiim: } public function ecmkecmemkyqwogo() : Register { return $this->qkuoycokmukoscka()->oyeskqayoscwciem(); } public function iymiksyekgoqkosc() : string { return $this->ecmkecmemkyqwogo()->aiqioscoyukqgsgw() . self::mswocgcucqoaesaa; } public function ckgmycmaukqgkosk() { $this->oyeskqayoscwciem()->myysgyqcumekoueo()->qemeyueyiwgsokuc()->okgmqaeuaeymaocm($this->ecmkecmemkyqwogo()->ogqgmqymcwsqikme()); parent::ckgmycmaukqgkosk(); } }
