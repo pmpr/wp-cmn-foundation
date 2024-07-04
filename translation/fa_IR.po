@@ -1528,11 +1528,11 @@ msgstr "درخواست پیشنهاد قیمت"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:80
 msgid "Pmpr Products"
-msgstr "محصولات مهندس محمدپور"
+msgstr "محصولات دکتر محمدپور"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:81
 msgid "Pmpr Product Categories"
-msgstr "دسته‌‌بندی‌های محصولات مهندس محمدپور"
+msgstr "دسته‌‌بندی‌های محصولات دکتر محمدپور"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:82
 msgid "Your Shop Orders"
@@ -1540,15 +1540,15 @@ msgstr "سفارشات شما"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:83
 msgid "Pmpr Site"
-msgstr "سایت مهندس محمدپور"
+msgstr "سایت دکتر محمدپور"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:84
 msgid "Pmpr Modules"
-msgstr "ماژول‌های مهندس محمدپور"
+msgstr "ماژول‌های دکتر محمدپور"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:85
 msgid "Pmpr Covers"
-msgstr "کاورهای مهندس محمدپور"
+msgstr "کاورهای دکتر محمدپور"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:86
 msgid "Your Customs"
@@ -1606,19 +1606,19 @@ msgstr "کد پیگیری"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:158
 msgid "Pmpr Product"
-msgstr "محصول مهندس محمدپور"
+msgstr "محصول دکتر محمدپور"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:163
 msgid "Pmpr Product Category"
-msgstr "دسته‌‌بندی محصولات مهندس محمدپور"
+msgstr "دسته‌‌بندی محصولات دکتر محمدپور"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:168
 msgid "Pmpr Module"
-msgstr "ماژول‌ مهندس محمدپور"
+msgstr "ماژول‌ دکتر محمدپور"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:173
 msgid "Pmpr Cover"
-msgstr "کاور مهندس محمدپور"
+msgstr "کاور دکتر محمدپور"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:178
 msgid "Your Custom"
@@ -4462,7 +4462,7 @@ msgstr ""
 #~ msgstr "توسط %s"
 
 #~ msgid "Engineer Peyman Mohamadpour design and development team"
-#~ msgstr "تیم طراحی و توسعه مهندس پیمان محمدپور"
+#~ msgstr "تیم طراحی و توسعه دکتر پیمان محمدپور"
 
 #~ msgid "Lock"
 #~ msgstr "قفل"
