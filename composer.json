@@ -11,7 +11,7 @@
     "foundation"
   ],
   "require": {
-    "php": ">=8.3",
+    "php": ">=8.2",
     "twig/twig": "v3.0.5",
     "symfony/asset": "v5.4.3",
     "doctrine/dbal": "3.3.6",
@@ -39,7 +39,7 @@
     ]
   },
   "prod-require": {
-    "php": "8.3",
+    "php": "8.2",
     "wordpress": "6.0"
   },
   "autoload": {
@@ -52,5 +52,5 @@
   },
   "prefer-stable": true,
   "minimum-stability": "dev",
-  "tag": "1.4.58"
+  "tag": "1.4.59"
 }
