@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             6687509c8d906             |
+    |             6688fb4d374d1             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Traits; use Pmpr\Common\Foundation\FormMaker\Admin\Element\Setting as OldSetting; use Pmpr\Common\Foundation\FormGenerator\Backend\Setting\Setting as NewSetting; trait SettingTrait { protected $settingObj; protected array $allSettings = []; public final function kmuweyayaqoeqiyw() { return $this->settingObj; } public final function aoqykkmokwseeeie() : array { $mksyucucyswaukig = $this->kmuweyayaqoeqiyw(); $qeqooyuoiasweuck = []; if (!$mksyucucyswaukig) { goto asueqykmkoaimguq; } if ($mksyucucyswaukig instanceof OldSetting) { goto meegaqaesckqmyec; } $qeqooyuoiasweuck = $mksyucucyswaukig->gkwkqmwweiawigae(); goto scccyaiaggeasgqg; meegaqaesckqmyec: $qeqooyuoiasweuck = $mksyucucyswaukig::mywwyegkuymookeg(); scccyaiaggeasgqg: asueqykmkoaimguq: return $qeqooyuoiasweuck; } public final function weysguygiseoukqw(string $uusmaiomayssaecw, $ggauoeuaesiymgee = null) { $amakmumgguksgmum = $ggauoeuaesiymgee; if (!($qeqooyuoiasweuck = $this->aoqykkmokwseeeie())) { goto isaouwiaamimceeg; } $amakmumgguksgmum = $qeqooyuoiasweuck[$uusmaiomayssaecw] ?? $ggauoeuaesiymgee; if (!in_array($amakmumgguksgmum, [self::ON, self::OFF, self::wiquocqckkqkmayo, self::ioyokcgwaowoqskk], true)) { goto iyocimuyeemkaaso; } $amakmumgguksgmum = in_array($amakmumgguksgmum, [self::ON, self::wiquocqckkqkmayo], true); iyocimuyeemkaaso: isaouwiaamimceeg: return $amakmumgguksgmum; } }
