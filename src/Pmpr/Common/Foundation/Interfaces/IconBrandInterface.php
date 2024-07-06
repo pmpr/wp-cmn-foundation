@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             6688ff183dd0c             |
+    |             66895817d513e             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Interfaces; use Pmpr\Common\Foundation\Interfaces\Icon\IconFasmBrandInterface; use Pmpr\Common\Foundation\Interfaces\Icon\IconPmprBankInterface; use Pmpr\Common\Foundation\Interfaces\Icon\IconPmprBrandInterface; interface IconBrandInterface extends IconFasmBrandInterface, IconPmprBrandInterface, IconPmprBankInterface { }
