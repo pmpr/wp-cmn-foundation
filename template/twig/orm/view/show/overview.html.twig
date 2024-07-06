@@ -1,5 +1,5 @@
 {% include get_template('../table', _self) with {
-    cell_class: 'py-3 font-16'
+    cell_class: 'py-2 font-14'
 } %}
 {% if buttons is defined
     and buttons is not empty %}
@@ -7,7 +7,7 @@
         {% for button in buttons %}
             {% if button is iterable %}
                 <a href="{{ button.link|raw }}" title="{{ button.label|raw }}"
-                   class="pr-btn btn-{{ button.color }}">{{ button.label|raw }}</a>
+                   class="pr-btn btn-{{ button.color }} mr-2">{{ button.label|raw }}</a>
             {% else %}
                 {{ button|raw }}
             {% endif %}
