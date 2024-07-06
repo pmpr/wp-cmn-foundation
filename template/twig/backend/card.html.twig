@@ -9,9 +9,11 @@
     {% endif %}
     {% if content is not empty %}
         {% for content_html in content %}
-            <div class="pr-card-content{% if content_class is not empty %} {{ content_class|raw }}{% endif %}">{{ content_html|raw }}</div>
-            {% if footer is not empty or not loop.last %}
-                <div class="pr-card-separator"></div>
+            {% if content is not empty %}
+                <div class="pr-card-content{% if content_class is not empty %} {{ content_class|raw }}{% endif %}">{{ content_html|raw }}</div>
+                {% if footer is not empty or not loop.last %}
+                    <div class="pr-card-separator"></div>
+                {% endif %}
             {% endif %}
         {% endfor %}
     {% endif %}

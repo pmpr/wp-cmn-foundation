@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             66895817d513e             |
+    |             6689685009849             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Logger\Traits; use Pmpr\Common\Foundation\Logger\Engine; trait LogTrait { protected ?string $logChannel = null; protected ?Engine $logEngine = null; public final function cycuaskkikweaoym() : ?string { return $this->logChannel; } public final function waasecgmwoucqoqa() : Engine { if ($this->logEngine) { goto cooogaqeyuuakoky; } $this->logEngine = new Engine(); cooogaqeyuuakoky: return $this->logEngine; } public final function saqqeqmcyyoeqici(?string $uamcoiueqaamsqma, array $mgkceomocowocqyo = []) { $this->giaekemmcwcgswce($uamcoiueqaamsqma, $mgkceomocowocqyo, Engine::kgyucekgwygmaaqo); } public final function uiagwusgwcassqua(?string $uamcoiueqaamsqma, array $mgkceomocowocqyo = []) { $this->giaekemmcwcgswce($uamcoiueqaamsqma, $mgkceomocowocqyo, Engine::swmsegkcoseieecu); } public final function oaumimwssciwumys(?string $uamcoiueqaamsqma, array $mgkceomocowocqyo = []) { $this->giaekemmcwcgswce($uamcoiueqaamsqma, $mgkceomocowocqyo); } public final function ciyuwccsawgygkie(?string $uamcoiueqaamsqma, array $mgkceomocowocqyo = []) { $this->giaekemmcwcgswce($uamcoiueqaamsqma, $mgkceomocowocqyo, Engine::wsoyicosksecekqq); } private function giaekemmcwcgswce(string $uamcoiueqaamsqma, array $mgkceomocowocqyo = [], int $iqaosyayeiuaisqi = Engine::ewqeuewgmkawokak) { $this->waasecgmwoucqoqa()->uimukyawykswgwsm($this->cycuaskkikweaoym(), $iqaosyayeiuaisqi, $uamcoiueqaamsqma, $mgkceomocowocqyo); } }
