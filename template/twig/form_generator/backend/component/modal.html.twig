@@ -3,7 +3,7 @@
 <div class="{{ class_prefix }}wrapper" id="modal_{{ id|esc_attr }}">
     <div class="{{ class_prefix }}container">
         <aside class="{{ class_prefix }}aside">
-            {{ render_spinner() }}
+            {{ render_backend_spinner() }}
         </aside>
         <div class="{{ class_prefix }}frame">
             <header class="{{ class_prefix }}header">
@@ -16,7 +16,7 @@
                 {% endif %}
             </div>
             <footer class="{{ class_prefix }}footer"></footer>
-            {{ render_spinner() }}
+            {{ render_backend_spinner() }}
         </div>
     </div>
     <div class="{{ class_prefix }}backdrop {{ class_prefix}}close"></div>

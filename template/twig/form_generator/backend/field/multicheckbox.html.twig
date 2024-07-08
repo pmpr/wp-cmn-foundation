@@ -13,7 +13,7 @@
             <div class="pr-field-checkbox-element pr-field-multicheckbox-item{% if disable %} pr-field-item-disabled{% endif %}">
                 <input name="{{ id|esc_attr }}" id="{{ id|esc_attr }}"
                        type="checkbox" data-value="{{ key|esc_attr }}"
-                        {% if value[key] is same as('on') %} checked{% endif %}>
+                        {% if value[key] is same as('on') or key in value %} checked{% endif %}>
                 {% include get_template('../label', _self) with {
                     label: option_label,
                     for: id,

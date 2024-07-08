@@ -3,7 +3,7 @@
     {{ render_icon(icon) }}
     {% if args.spinner is defined
         and args.spinner is not empty %}
-        {{ render_spinner(args.spinner) }}
+        {{ render_backend_spinner(args.spinner) }}
     {% endif %}
 </{{ args.element|default('button') }}>
 
