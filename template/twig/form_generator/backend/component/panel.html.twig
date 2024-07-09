@@ -24,9 +24,11 @@
                     <a href="{% if not server_side %}#{{ class_prefix }}segment-{{ segment_id }}{% else %}{{ segment|call('getLink', id) }}{% endif %}"
                        class="{{ class_prefix }}nav-item{% if not server_side %} pr-tab-link{% endif %}{% if is_segment_active %} is-active{% endif %}"
                        id="{{ class_prefix }}nav-item-{{ segment_id }}">
-                        <div class="{{ class_prefix }}nav-item-title d-none d-lg-block">{{ segment|call('getTitle')|raw }}</div>
-                        {{ render_if_has_content('div', {class: class_prefix ~ 'nav-item-description d-none d-lg-block'}, segment|call('getDescription')) }}
                         {{ render_icon(segment|call('getIcon')) }}
+                        <div class="{{ class_prefix }}nav-item-summary">
+                            <div class="{{ class_prefix }}nav-item-title">{{ segment|call('getTitle')|raw }}</div>
+                            {{ render_if_has_content('div', {class: class_prefix ~ 'nav-item-description'}, segment|call('getDescription')) }}
+                        </div>
                     </a>
                 {% endfor %}
             </nav>

@@ -10,7 +10,7 @@
 <div class="{{ class_prefix|esc_attr }}content">
     <div class="{{ class_prefix|esc_attr }}sections">
         {% for id, section in sections %}
-            <div class="{{ class_prefix|esc_attr }}section"
+            <div class="{{ class_prefix|esc_attr }}section{% if section|call('getArg', 'full') %} is-full{% endif %}"
                  id="{{ class_prefix|esc_attr }}section-{{ id }}">
                 {{ section|call('render')|raw }}
             </div>
