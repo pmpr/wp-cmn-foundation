@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             668dab8c1d99f             |
+    |             668f1c0bb2cf9             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\Functions\Helper\HTML; use Pmpr\Common\Foundation\Functions\Helper\Common as BaseClass; use Pmpr\Common\Foundation\Template\Template; abstract class Common extends BaseClass { protected function auqoykuwiywsocis(string $qqscaoyqikuyeoaw, array $qookweymeqawmcwo = []) : string { $nsmgceoqaqogqmuw = ''; if (!($kuyqaamgacigwcwq = Template::symcgieuakksimmu())) { goto oqckmkkyuymqomww; } $nsmgceoqaqogqmuw = $kuyqaamgacigwcwq->iuygowkemiiwqmiw("\x40\160\x72\137\137\x63\x6d\156\x5f\137\146\157\165\156\144\141\x74\151\x6f\x6e\57{$qqscaoyqikuyeoaw}\x2e\150\164\x6d\x6c\56\164\167\151\147", $qookweymeqawmcwo); oqckmkkyuymqomww: return $nsmgceoqaqogqmuw; } }
+ namespace Pmpr\Common\Foundation\Functions\Helper\HTML; use Pmpr\Common\Foundation\Functions\Helper\Common as BaseClass; use Pmpr\Common\Foundation\Template\Template; abstract class Common extends BaseClass { protected function auqoykuwiywsocis(string $qqscaoyqikuyeoaw, array $qookweymeqawmcwo = []) : string { $nsmgceoqaqogqmuw = ''; if (!($kuyqaamgacigwcwq = Template::symcgieuakksimmu())) { goto uwyayemiakeqosci; } $nsmgceoqaqogqmuw = $kuyqaamgacigwcwq->iuygowkemiiwqmiw("\100\x70\x72\137\137\x63\x6d\x6e\x5f\x5f\x66\x6f\165\x6e\x64\141\164\151\157\x6e\x2f{$qqscaoyqikuyeoaw}\56\x68\x74\155\154\x2e\x74\x77\151\147", $qookweymeqawmcwo); uwyayemiakeqosci: return $nsmgceoqaqogqmuw; } }
