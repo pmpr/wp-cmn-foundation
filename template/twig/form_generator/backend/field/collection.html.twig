@@ -3,7 +3,8 @@
 
 {% block field_body %}
     {{ parent() }}
-    <div class="{{ class_prefix|esc_attr }}list{% if args.columns is not empty %} row gutter-1{% endif %}" id="{{ name|raw }}_collection">
+    <div class="{{ class_prefix|esc_attr }}list{% if args.columns is not empty %} row gutter-1{% endif %}"
+         id="{{ name|raw }}_collection">
 
         {% if value is defined and value is iterable and value is not empty %}
 
@@ -21,9 +22,11 @@
         {% endfor %}
     </div>
 
-    <div class="{{ class_prefix|esc_attr }}actions">
-        {{ add_button|call('render')|raw }}
-    </div>
+    {% if args.addable %}
+        <div class="{{ class_prefix|esc_attr }}actions">
+            {{ add_button|call('render')|raw }}
+        </div>
+    {% endif %}
 
     <div class="{{ class_prefix|esc_attr }}model">
         {{ _self.model(class_prefix, args, self|call('prepareFields', fields), '-#-', 1) }}
@@ -31,16 +34,20 @@
 {% endblock %}
 
 {% macro model(class_prefix, args, fields, index = 1, is_model = 0) %}
-    <div class="{{ class_prefix|esc_attr }}item{% if args.columns is not empty %} {{ args.columns|raw }}{% endif %}" data-index="{{ index|esc_attr }}">
+    <div class="{{ class_prefix|esc_attr }}item{% if args.columns is not empty %} {{ args.columns|raw }}{% endif %}"
+         data-index="{{ index|esc_attr }}">
         <div class="{{ class_prefix|esc_attr }}item-wrap">
             <div class="{{ class_prefix|esc_attr }}item-header d-flex justify-content-between">
                 <span class="pr-title-level-3 my-auto">{{ args.item_title|replace({'-#-': (index matches '/^\\d+$/' ? index : index) })|raw }}</span>
-                <a href="#" class="{{ class_prefix|esc_attr }}item-remove remove-item">
-                    {{ render_icon(args.remove, {class: 'icon-xs icon-danger'}, 1) }}
-                </a>
+                {% if args.removable %}
+                    <a href="#" class="{{ class_prefix|esc_attr }}item-remove remove-item">
+                        {{ render_icon(args.remove, {class: 'icon-xs icon-danger'}, 1) }}
+                    </a>
+                {% endif %}
             </div>
             <div class="{{ class_prefix|esc_attr }}item-message"></div>
-            <fieldset class="{{ class_prefix|esc_attr }}item-fieldset pr-fieldset{% if args.collapsible %} collapsed{% endif %}">
+            <fieldset
+                    class="{{ class_prefix|esc_attr }}item-fieldset pr-fieldset{% if args.collapsible %} collapsed{% endif %}">
                 {% for field in fields %}
                     {% if not is_model %}
                         {{ field|call('render')|raw }}

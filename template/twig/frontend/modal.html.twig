@@ -1,7 +1,7 @@
 {{ action|raw }}
 <div class="modal{% if not show %} fade{% endif %}" id="{{ id|esc_attr }}"
      {% if not dismissible %}data-backdrop="static"{% endif %}
-     tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="{{ id|esc_attr }}_label">
+     role="dialog" aria-hidden="true" aria-labelledby="{{ id|esc_attr }}_label">
     <div class="modal-dialog modal-{{ size|default('md')|esc_attr }}{% if centered %} modal-dialog-centered{% endif %}"
          role="document">
         <div class="modal-content">

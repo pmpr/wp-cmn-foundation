@@ -1,0 +1,18 @@
+{% extends get_template('./common', _self) %}
+
+{% block before_field %}{% endblock %}
+
+{% block field_body %}
+    <input {{ attributes|parse_attrs|raw }}/>
+    {% include get_template('label', _self) with {
+        label: title,
+        label_attrs: {
+            class: 'custom-control-label',
+            for: attributes.id
+        }
+    } %}
+    {{ parent() }}
+{% endblock %}
+
+{% block after_field %}{% endblock %}
+

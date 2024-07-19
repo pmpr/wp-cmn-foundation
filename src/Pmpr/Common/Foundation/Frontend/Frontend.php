@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             668f2a487f65c             |
+    |             669ada81ac791             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Frontend; use Pmpr\Common\Foundation\Frontend\Page\Page; class Frontend extends Common { public function mameiwsayuyquoeq() { Page::symcgieuakksimmu(); } }
