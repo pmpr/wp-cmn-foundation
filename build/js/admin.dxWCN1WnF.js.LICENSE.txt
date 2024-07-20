@@ -129,5 +129,3 @@
  * @author	owenm    <owen23355@gmail.com>
  * @license MIT
  */
-
-//!$select.data("multiple"),
