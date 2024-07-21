@@ -3,37 +3,10 @@
 <form {{ attributes|parse_attrs|raw }}>
     {{ render_if_has_content('h1', {class: class_prefix ~ 'title pr-title-level-1'}, title) }}
     <div class="{{ class_prefix }}body">
+        {% include get_template('./before_nav', _self) %}
         {% include get_template('./nav', _self) %}
         <div class="{{ class_prefix }}message-container"></div>
-        <div class="{{ class_prefix }}contents pr-fieldset">
-            {% for step in steps %}
-                {% set step_id = step|call('getId') %}
-                <section class="{{ class_prefix }}step-content" id="step_content_{{ step_id|esc_attr }}"
-                         data-state="{% if loop.first %}current{% else %}pending{% endif %}"
-                         aria-labelledby="step_nav_{{ step_id|esc_attr }}" data-name="{{ step_id|esc_attr }}"
-                         data-step="{{ step|call('getNumber')|esc_attr }}">
-                    <div class="{{ class_prefix }}step-wrapper">
-                        {{ step|call('render', 0, {parameters: self|call('getStepParameters', step)})|raw }}
-                        <div class="{{ class_prefix }}step-actions">
-                            {% if loop.first %}
-
-                                {{ self|call('getButton', 'next', step)|call('render')|raw }}
-                            {% else %}
-
-                                {{ self|call('getButton', 'prev', step)|call('render')|raw }}
-                                {% if loop.last %}
-
-                                    {{ self|call('getButton', 'submit', step)|call('render')|raw }}
-                                {% else %}
-
-                                    {{ self|call('getButton', 'next', step)|call('render')|raw }}
-                                {% endif %}
-                            {% endif %}
-                        </div>
-                    </div>
-                </section>
-            {% endfor %}
-        </div>
+        {% include get_template('./content', _self) %}
     </div>
 </form>
 

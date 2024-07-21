@@ -1,0 +1,30 @@
+<div class="{{ class_prefix }}contents pr-fieldset">
+    {% for step in steps %}
+        {% set step_id = step|call('getId') %}
+        <section class="{{ class_prefix }}step-content" id="step_content_{{ step_id|esc_attr }}"
+                 data-state="{% if loop.first %}current{% else %}pending{% endif %}"
+                 aria-labelledby="step_nav_{{ step_id|esc_attr }}" data-name="{{ step_id|esc_attr }}"
+                 data-step="{{ step|call('getNumber')|esc_attr }}">
+            <div class="{{ class_prefix }}step-wrapper">
+                {{ step|call('render', 0, {parameters: self|call('getStepParameters', step)})|raw }}
+                <div class="{{ class_prefix }}step-actions">
+                    {% if loop.first %}
+
+                        {{ self|call('getButton', 'next', step)|call('render')|raw }}
+                    {% else %}
+
+                        {{ self|call('getButton', 'prev', step)|call('render')|raw }}
+                        {% if loop.last %}
+
+                            {{ self|call('getButton', 'submit', step)|call('render')|raw }}
+                        {% else %}
+
+                            {{ self|call('getButton', 'next', step)|call('render')|raw }}
+                        {% endif %}
+                    {% endif %}
+                </div>
+            </div>
+        </section>
+    {% endfor %}
+</div>
+
