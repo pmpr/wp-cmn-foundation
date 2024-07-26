@@ -14,8 +14,8 @@
         </nav>
         <div class="{{ class_prefix|esc_attr }}contents">
             {% for id, tab in tabs %}
-                <fieldset id="{{ class_prefix|esc_attr }}tab-{{ id }} pr-fieldset"
-                          class="{{ class_prefix|esc_attr }}tab-content pr-tab-content{% if loop.first %} is-active{% endif %}">
+                <fieldset id="{{ class_prefix|esc_attr }}tab-{{ id }}"
+                          class="{{ class_prefix|esc_attr }}tab-content pr-fieldset pr-tab-content{% if loop.first %} is-active{% endif %}">
                     {{ tab|call('render')|raw }}
                 </fieldset>
             {% endfor %}

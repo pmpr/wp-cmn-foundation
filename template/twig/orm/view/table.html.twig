@@ -1,4 +1,6 @@
-{% if items is defined and items is not empty %}
+{% if items is defined
+    and items is not empty %}
+
     <table class="table m-0 table-striped table-borderless {{ table_class }}">
         <tbody>
         {% for item in items %}
