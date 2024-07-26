@@ -1,4 +1,4 @@
-{{ table.views()|raw }}
+{{ views|raw }}
 <form class="pr-list-form" id="orm-list-filter" method="get">
     <input type="hidden" name="page" value="{{ name|esc_attr }}"/>
     <input type="hidden" name="orm_filter_by" value="{{ filter.name|esc_attr }}"/>
