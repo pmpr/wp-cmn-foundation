@@ -5,7 +5,7 @@
         <tbody>
         {% for item in items %}
             <tr>
-                <th class="text-left {{ cell_class }}" style="width: 10rem">{{ item.label|raw }}:</th>
+                <th class="text-left {{ cell_class }}" style="width: 10rem">{{ item.label|raw }}</th>
                 <td class="{{ cell_class }}">{{ item.value|raw }}</td>
             </tr>
         {% endfor %}
