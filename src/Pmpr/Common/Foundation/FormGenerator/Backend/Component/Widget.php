@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             66b415b03b4c7             |
+    |             66b61855c9112             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\FormGenerator\Backend\Component; use Pmpr\Common\Foundation\FormGenerator\Traits\FieldsTrait; class Widget extends Component { use FieldsTrait; public function qiccuiwooiquycsg() { $this->template = "\167\x69\x64\147\145\164"; $this->templateClass = self::class; parent::qiccuiwooiquycsg(); } }
+ namespace Pmpr\Common\Foundation\FormGenerator\Backend\Component; use Pmpr\Common\Foundation\FormGenerator\Traits\FieldsTrait; class Widget extends Component { use FieldsTrait; public function qiccuiwooiquycsg() { $this->template = "\167\151\x64\x67\x65\164"; $this->templateClass = self::class; parent::qiccuiwooiquycsg(); } }
