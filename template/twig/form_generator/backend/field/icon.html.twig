@@ -1,0 +1,24 @@
+{% set icon_class_prefix = 'pr-field-icon-' %}
+{% set media_class_prefix = 'pr-field-media-' %}
+{% set select_class_prefix = 'pr-field-select-' %}
+
+{% extends get_template('./common', _self) %}
+
+{% block field_body %}
+    <div class="{{ icon_class_prefix|esc_attr }}media pr-field-media">
+        {% embed get_template('../media', _self) with media|call('getParameters') %}
+            {% block after_button %}
+                <span class="{{ icon_class_prefix|esc_attr }}separator">{{ before_button_text }}</span>
+                {% include get_template('../button', _self) with media|call('getButton', 'change_input')|call('getParameters') %}
+            {% endblock %}
+        {% endembed %}
+    </div>
+    <div class="{{ icon_class_prefix|esc_attr }}select pr-field-select">
+        {% include get_template('../../select', _self) with select|call('getParameters') %}
+        <span class="{{ icon_class_prefix|esc_attr }}separator">{{ before_button_text }}</span>
+        {% include get_template('../button', _self) with button|call('getParameters') %}
+    </div>
+    <input {{ attributes|parse_attrs|raw }}/>
+    {{ parent() }}
+{% endblock %}
+

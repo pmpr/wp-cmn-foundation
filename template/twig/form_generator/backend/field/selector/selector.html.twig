@@ -1,0 +1,22 @@
+{% extends get_template('../common', _self) %}
+
+{% block before_field %}{% endblock %}
+
+{% block field_body %}
+    <input {{ attributes|parse_attrs|raw }}/>
+    <div class="pr-field-selector-levels">
+        {% for level in levels %}
+            <div class="pr-field-selector-level row{% if loop.first %} active{% endif %}"
+                 id="level_{{ level|call('getId')|esc_attr }}">
+                {% for option in level|call('getOptions') %}
+
+                    {% include get_template('option', _self) with option|call('toArray') %}
+
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+
+{% block after_field %}{% endblock %}
+

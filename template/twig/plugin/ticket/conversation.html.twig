@@ -1,0 +1,15 @@
+{% set hasAgent = responder is defined and responder is not empty %}
+<div class="pr-ticket-conversation {% if hasAgent %}response{% else %}request{% endif %}">
+    <div class="pr-ticket-conversation-content">
+        {% if avatar_url is not empty %}
+            <img src="{{ avatar_url|esc_attr }}" alt="logo" class="pr-ticket-avatar" width="55" height="55">
+        {% endif %}
+        <div class="pr-ticket-conversation-text">{{ wpautop(text)|raw }}</div>
+    </div>
+    <div class="pr-ticket-conversation-metadata">
+        <time class="pr-ticket-conversation-datetime" datetime="{{ created_at|esc_attr }}">
+            {{ created_at|datetime(format)|raw }}
+        </time>
+    </div>
+</div>
+

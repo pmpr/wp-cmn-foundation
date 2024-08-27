@@ -1,0 +1,31 @@
+{% extends get_template('./common', _self) %}
+
+{% block field_body %}
+    <div class="pr-field-multicheckbox-items">
+        {% for key, option in options %}
+            {% set id = attributes.id ~ '[' ~ key ~ ']' %}
+            {% set disable = 0 %}
+            {% set option_label = option %}
+            {% if option is iterable %}
+                {% set option_label = option.label %}
+                {% set disable = option.disable is defined and option.disable %}
+            {% endif %}
+            <div class="pr-field-checkbox-element pr-field-multicheckbox-item{% if disable %} pr-field-item-disabled{% endif %}">
+                <input name="{{ id|esc_attr }}" id="{{ id|esc_attr }}"
+                       type="checkbox" data-value="{{ key|esc_attr }}"
+                        {% if value[key] is same as('on') or key in value %} checked{% endif %}>
+                {% include get_template('../label', _self) with {
+                    label: option_label,
+                    for: id,
+                    label_class: 'pr-field-label'
+                } %}
+            </div>
+        {% endfor %}
+    </div>
+
+    {% set attributes = attributes|merge({name: '', id: ''}) %}
+
+    <input {{ attributes|parse_attrs|raw }}/>
+    {{ parent() }}
+{% endblock %}
+

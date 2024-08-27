@@ -1,0 +1,20 @@
+{% extends get_template('./common', _self) %}
+
+{% block before_field %}
+    {% if not args.floating %}
+        {{ parent() }}
+    {% endif %}
+    {% include get_template('../description', _self) %}
+{% endblock %}
+
+{% block field_body %}
+    <textarea {{ attributes|parse_attrs|raw }}>{{ value|raw }}</textarea>
+    {% include get_template('../message', _self) %}
+{% endblock %}
+
+{% block after_field %}
+    {% if args.floating %}
+        {% include get_template('label', _self) with {label: title} %}
+    {% endif %}
+{% endblock %}
+

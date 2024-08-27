@@ -1,0 +1,4 @@
+{% if button %}
+    {% set attrs = attrs|default({})|add('class', 'btn btn-' ~ size ~ ' btn-' ~ color) %}
+{% endif %}
+{{ render_if_has_content(element|default('button'), attrs, text) }}

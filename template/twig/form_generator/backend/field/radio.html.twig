@@ -1,0 +1,27 @@
+{% extends get_template('./common', _self) %}
+
+{% block field_body %}
+    <ul class="pr-field-radio-list">
+        {% if options is not empty %}
+            {% for key, option in options %}
+                {% set radio_id = attributes.id ~ '_' ~ key %}
+                {% set attrs = {'data-value': key, id: radio_id, class: 'pr-field-radio-item pr-field-label'} %}
+                {% if value is same as(key) or value == key %}
+                    {% set attrs = attrs|add('class', 'checked') %}
+                {% endif %}
+                {% set option_label = option %}
+                {% if option is iterable %}
+                    {% set option_label = option.label %}
+                    {% if option.disable is defined
+                        and option.disable %}
+                        {% set attrs = attrs|add('class', 'pr-field-item-disabled') %}
+                    {% endif %}
+                {% endif %}
+                <li {{ attrs|parse_attrs|raw }}>{{ option_label|raw }}</li>
+            {% endfor %}
+        {% endif %}
+    </ul>
+    <input {{ attributes|parse_attrs|raw }}/>
+    {{ parent() }}
+{% endblock %}
+

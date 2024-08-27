@@ -1,0 +1,52 @@
+<div class="pr-mini-tabs" id="{{ name|esc_attr }}-container">
+    <div class="taxonomy-error"></div>
+    <div id="{{ name|esc_attr }}-tabs" data-target="#{{ name|esc_attr }}-tab-contents">
+        <ul class="pr-tabs">
+            <li class="pr-tab">
+                <a href="#{{ name|esc_attr }}-all" class="pr-tab-link active">{{ taxonomy.labels.all_items|raw }}</a>
+            </li>
+            <li class="pr-tab">
+                <a href="#{{ name|esc_attr }}-pop" class="pr-tab-link">{{ taxonomy.labels.most_used|raw }}</a>
+            </li>
+        </ul>
+        <div class="pr-tab-contents" id="{{ name|esc_attr }}-tab-contents">
+            <div id="{{ name|esc_attr }}-all" class="pr-tab-content active">
+                <ul class='radio-group all' id='taxonomy-{{ name|esc_attr }}'>
+                    {% if list is empty %}
+                        <p>{{ empty_message|format(taxonomy.labels.singular_name) }}</p>
+                    {% else %}
+                        {{ list|raw }}
+                    {% endif %}
+                </ul>
+            </div>
+            <div id="{{ name|esc_attr }}-pop" class="pr-tab-content">
+                <ul id="{{ name|esc_attr }}-checklist-pop" class="radio-group popular form-no-clear">
+                    {{ popular|raw }}
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% if current_user_can(taxonomy.cap.edit_terms) %}
+        {% set add_new_item = taxonomy.labels.add_new_item %}
+        <div id="{{ name }}-adder">
+            <a id="{{ name }}-add-toggle" href="#{{ name }}-add"
+               class="taxonomy-add-new link text-decoration-none m-0">+ {{ add_new_item }}</a>
+            <div class="d-none" id="{{ name }}-add">
+                <p id="{{ name }}-add" class="category-add">
+                    <label class="screen-reader-text" for="new{{ name }}">{{ add_new_item }}</label>
+                    <input type="text" name="new{{ name }}" id="new-{{ name }}-taxonomy"
+                           class="new-taxonomy form-required form-input-tip"
+                           value="{{ new_item_name|esc_attr }}" aria-required="true"/>
+                    {% if taxonomy.hierarchical is defined and taxonomy.hierarchical %}
+                        <span id="parent-select">
+                            {{ wp_dropdown_categories(args, 0)|raw }}
+                        </span>
+                    {% endif %}
+                    <input type="button" data-taxonomy="{{ name }}" data-post="{{ post }}" id="{{ name }}-add-submit"
+                           class="button taxonomy-add-submit-ajax" value="{{ add_new_item|esc_attr }}"/>
+                </p>
+            </div>
+            {{ wp_nonce_field('add-' ~ name, '_ajax_nonce-add-' ~ name, 0)|raw }}
+        </div>
+    {% endif %}
+</div>

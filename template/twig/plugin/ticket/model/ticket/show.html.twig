@@ -1,0 +1,51 @@
+<div class="wrap pr-ticket-view">
+    <h1 class="wp-heading-inline">{{ title|raw }}</h1>
+    <hr class="wp-header-end">
+
+    <div class="pr-ticket-container">
+
+        {% if data is defined
+            and data is not empty %}
+            <div class="pr-ticket-info">
+                <table>
+                    <thead>
+                    <tr>
+                        {% for item in data %}
+                            <th>{{ item.label|raw }}</th>
+                        {% endfor %}
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        {% for item in data %}
+                            <td>{{ item.value|raw }}</td>
+                        {% endfor %}
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        {% endif %}
+
+        <div class="pr-ticket-conversation-container">
+            <div class="pr-ticket-conversation-list">
+                {% if items is defined
+                    and items is not empty
+                    and items.items is defined
+                    and items.items is not empty %}
+
+                    {% for item in items.items %}
+
+                        {{ pmpr_do_action('plugin_ticket_render_conversation', item) }}
+                    {% endfor %}
+                {% else %}
+
+                    <div class="pr-ticket-conversation-empty">{{ empty_message|raw }}</div>
+                {% endif %}
+            </div>
+
+            <div class="pr-ticket-conversation-form">
+                {{ form|raw }}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+<span class="pr-spinner{% if show %} show{% endif%}{% if container_class is not empty %} {{ container_class|esc_attr }}{% endif %}">
+    <span class="pr-overlay{% if centered %} justify-content-center{% else %} justify-content-start{% endif %}{% if transparent %} pr-transparent{% endif %}{% if position %} position-{{ position|esc_attr }}{% endif %}">
+        {{ render_icon(icon, icon_attrs|default({class: 'icon-3x icon-primary'}), 1) }}
+    </span>
+</span>
+

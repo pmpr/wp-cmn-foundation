@@ -1,0 +1,10 @@
+<div class="pr-alert pr-alert-{{ type }} d-flex" role="alert">
+    {% if icon and icon is not empty %}
+        {{ render_icon(icon, {class: 'mr-2'}, 1) }}
+    {% endif %}
+    <div>
+        {{ render_if_has_content(title_element|default('strong'), {class: 'alert-title d-block mb-1'}, title) }}
+        {{ content|raw }}
+    </div>
+</div>
+

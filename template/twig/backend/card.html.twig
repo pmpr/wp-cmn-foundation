@@ -1,0 +1,23 @@
+<div class="pr-card{% if card_class is not empty %} {{ card_class|raw }}{% endif %}"{% if type is not empty %} data-type="{{ type|esc_attr }}"{% endif %}>
+    {% if header is not empty %}
+        <div class="pr-card-header{% if header_class is not empty %} {{ header_class|raw }}{% endif %}">
+            <strong class="pr-card-title">{{ header|raw }}</strong>
+        </div>
+        {% if content is not empty or footer is not empty %}
+            <div class="pr-card-separator"></div>
+        {% endif %}
+    {% endif %}
+    {% if content is not empty %}
+        {% for content_html in content %}
+            {% if content is not empty %}
+                <div class="pr-card-content{% if content_class is not empty %} {{ content_class|raw }}{% endif %}">{{ content_html|raw }}</div>
+                {% if footer is not empty or not loop.last %}
+                    <div class="pr-card-separator"></div>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+    {% if footer is not empty %}
+        <div class="pr-card-footer{% if footer_class is not empty %} {{ footer_class|raw }}{% endif %}">{{ footer|raw }}</div>
+    {% endif %}
+</div>

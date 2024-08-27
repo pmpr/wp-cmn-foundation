@@ -1,0 +1,9 @@
+<label class="screen-reader-text" for="cb-select-{{ value|esc_attr }}">
+    {{ title|format(value)|raw }}
+</label>
+<input id="cb-select-{{ value|esc_attr }}" type="checkbox" name="item[]" value="{{ value|esc_attr }}"/>
+<div class="locked-indicator">
+    <span class="locked-indicator-icon" aria-hidden="true"></span>
+    <span class="screen-reader-text">{{ text|format(value)|raw }}</span>
+</div>
+

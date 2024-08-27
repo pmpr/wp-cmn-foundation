@@ -1,0 +1,19 @@
+{% extends get_template('./common', _self) %}
+
+{% block before_field %}{% endblock %}
+
+{% block field_body %}
+    <input {{ attributes|parse_attrs|raw }}/>
+    {% embed get_template('../label', _self) with {
+        label: title,
+        for: attributes.id
+    } %}
+        {% block body %}
+            <span class="pr-switch-ui"
+                  data-active="{{ args['active-title'] }}"
+                  data-inactive="{{ args['inactive-title'] }}"></span>
+        {% endblock %}
+    {% endembed %}
+    {{ parent() }}
+{% endblock %}
+

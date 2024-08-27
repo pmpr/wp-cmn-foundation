@@ -1,0 +1,32 @@
+<div class="wrap">
+    <h1 class="wp-heading-inline">{{ page|call('getArg', 'page_title')|raw }}</h1>
+    {% if actions is defined
+        and actions is not empty %}
+        <div class="float-right mt-2">
+            {{ actions|join('')|raw }}
+        </div>
+    {% endif %}
+    <hr class="wp-header-end">
+    {{ do_action('render_notices'|generate_hook, 'page-notice') }}
+    {{ do_action(('page_admin_after_' ~ page|call('getArg', 'parent_slug') ~ '_title')|generate_hook, page) }}
+    {% if tabs is defined
+        and tabs is not empty %}
+        {{ do_action('page_admin_before_tabs'|generate_hook, page) }}
+        {{ do_action(('page_admin_before_' ~ page|call('getArg', 'parent_slug') ~ '_tabs')|generate_hook, page) }}
+        <nav class="nav-tab-wrapper">
+            {% for tab in tabs %}
+                <a href="{{ current_page_link|esc_attr }}&tab={{ tab|call('getId')|esc_attr }}"
+                   class="nav-tab{% if tab|call('getId') is same as(current_tab|call('getId')) %} nav-tab-active{% endif %}">
+                    {{ tab|call('getTitle')|raw }}
+                </a>
+            {% endfor %}
+        </nav>
+        <h2 class="screen-reader-text">{{ current_tab|call('getTitle')|raw }}</h2>
+        <div>{{ do_action(('page_admin_output_' ~ current_tab|call('getId') ~ '_tab')|generate_hook, page) }}</div>
+    {% elseif list_table is defined
+        and list_table is not empty %}
+
+        {{ table.search_box(items, name)|raw }}
+        {{ list_table.display|raw }}
+    {% endif %}
+</div>

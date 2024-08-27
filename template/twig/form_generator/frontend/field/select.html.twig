@@ -1,0 +1,7 @@
+{% extends get_template('./common', _self) %}
+
+{% block field_body %}
+    {% include get_template('../../select', _self) %}
+    {{ parent() }}
+{% endblock %}
+

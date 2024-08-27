@@ -1,0 +1,28 @@
+{% extends get_template('../page', _self) %}
+
+{% block content %}
+    <div class="orm-view-show">
+        <nav class="nav-tab-wrapper">
+            {% for name, tab in tabs %}
+                <a href="{{ tab.url }}" id="tab_{{ name|esc_attr }}"
+                   class="nav-tab{% if name is same as (current_tab) %} nav-tab-active{% endif %}">
+                    {% if tab.icon is defined
+                        and tab.icon is not empty %}
+
+                        {{ get_icon(tab.icon, {
+                            class: 'icon-sm mr-1'
+                        }, 1)|raw }}
+                    {% endif %}
+                    {{ (tab.title ?? tab)|raw }}
+                </a>
+            {% endfor %}
+        </nav>
+        <div class="tabs-content-wrapper">
+            <div class="tab-content pt-4 px-0 active">
+                {{ content|raw }}
+                {{ do_action('orm_view_show_tab_' ~ current_name, object, model) }}
+                {{ do_action('orm_view_show_' ~ name ~ '_tab_' ~ current_name, object, model) }}
+            </div>
+        </div>
+    </div>
+{% endblock %}

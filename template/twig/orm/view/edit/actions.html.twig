@@ -1,0 +1,5 @@
+<div class="d-flex justify-content-{% if deletion is not empty %}between{% else %}end{% endif %}">
+    {{ deletion|raw }}
+    <input type="submit" name="orm-save" id="orm-save"
+           class="button button-primary" value="{{ submit_label|esc_attr }}">
+</div>

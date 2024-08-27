@@ -1,0 +1,7 @@
+{% extends get_template('./common', _self) %}
+{% set show_description_under_label = 0 %}
+{% block field_body %}
+    {% include get_template('../../select', _self) %}
+    {{ parent() }}
+{% endblock %}
+

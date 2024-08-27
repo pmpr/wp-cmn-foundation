@@ -1,0 +1,62 @@
+{% set class_prefix = 'pr-field-collection-' %}
+{% extends get_template('common', _self) %}
+
+{% block field_body %}
+    {{ parent() }}
+    <div class="{{ class_prefix|esc_attr }}list{% if args.columns is not empty %} row gutter-1{% endif %}"
+         id="{{ name|raw }}_collection">
+
+        {% if value is defined and value is iterable and value is not empty %}
+
+            {% set values = value %}
+        {% elseif default is defined and default is iterable and default is not empty %}
+
+            {% set values = default %}
+        {% elseif args.required %}
+
+            {% set values = [['']] %}
+        {% endif %}
+
+        {% for index, val in values %}
+            {{ _self.model(class_prefix, args, self|call('prepareFields', fields, val, loop.index), loop.index, 0) }}
+        {% endfor %}
+    </div>
+
+    {% if args.addable %}
+        <div class="{{ class_prefix|esc_attr }}actions">
+            {{ add_button|call('render')|raw }}
+        </div>
+    {% endif %}
+
+    <div class="{{ class_prefix|esc_attr }}model">
+        {{ _self.model(class_prefix, args, self|call('prepareFields', fields), '-#-', 1) }}
+    </div>
+{% endblock %}
+
+{% macro model(class_prefix, args, fields, index = 1, is_model = 0) %}
+    <div class="{{ class_prefix|esc_attr }}item{% if args.columns is not empty %} {{ args.columns|raw }}{% endif %}"
+         data-index="{{ index|esc_attr }}">
+        <div class="{{ class_prefix|esc_attr }}item-wrap">
+            <div class="{{ class_prefix|esc_attr }}item-header d-flex justify-content-between">
+                <span class="pr-title-level-3 my-auto">{{ args.item_title|replace({'-#-': (index matches '/^\\d+$/' ? index : index) })|raw }}</span>
+                {% if args.removable %}
+                    <a href="#" class="{{ class_prefix|esc_attr }}item-remove remove-item">
+                        {{ render_icon(args.remove, {class: 'icon-xs icon-danger'}, 1) }}
+                    </a>
+                {% endif %}
+            </div>
+            <div class="{{ class_prefix|esc_attr }}item-message"></div>
+            <fieldset
+                    class="{{ class_prefix|esc_attr }}item-fieldset pr-fieldset{% if args.collapsible %} collapsed{% endif %}">
+                {% for field in fields %}
+                    {% if not is_model %}
+                        {{ field|call('render')|raw }}
+                    {% else %}
+                        {{ field|call('render', {model: 1}) }}
+                    {% endif %}
+                {% endfor %}
+            </fieldset>
+        </div>
+    </div>
+{% endmacro %}
+

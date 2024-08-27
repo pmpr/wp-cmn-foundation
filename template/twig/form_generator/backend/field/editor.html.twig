@@ -1,0 +1,8 @@
+{% extends get_template('./common', _self) %}
+
+{% block field_body %}
+    {{ editor(value, args.editor_name, args) }}
+    {{ parent() }}
+{% endblock %}
+
+

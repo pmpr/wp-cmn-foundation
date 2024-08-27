@@ -1,0 +1,2 @@
+{% set attributes = attributes|default({})|add('class', 'btn main-action') %}
+{{ render_if_has_content('button', attributes, title) }}

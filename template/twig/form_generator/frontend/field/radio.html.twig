@@ -1,0 +1,33 @@
+{% extends get_template('./common', _self) %}
+
+{% block field_body %}
+    {% if options is not empty %}
+        {% for key, option in options %}
+            {% set item_id = id ~ loop.index %}
+            <div class="custom-control custom-radio pr-field-radio-item">
+
+                {% set attrs = {
+                    class: 'custom-control-input pr-field-radio-item',
+                    type: 'radio', name: id ~ '_view', id: item_id,
+                    value: key, 'data-value': key
+                } %}
+
+                {% set option_label = option %}
+                {% if option is iterable %}
+                    {% set option_label = option.label %}
+                    {% if option.disable is defined
+                        and option.disable %}
+                        {% set attrs = attrs|add('class', 'pr-field-item-disabled') %}
+                        {% set attrs = attrs|add('disabled', 'true') %}
+                    {% endif %}
+                {% endif %}
+
+                <input {{ attrs|parse_attrs|raw }}{% if value is same as(key) %} checked{% endif %}>
+                <label class="custom-control-label" for="{{ item_id|esc_attr }}">{{ option_label|raw }}</label>
+            </div>
+        {% endfor %}
+    {% endif %}
+    <input {{ attributes|parse_attrs|raw }}/>
+    {{ parent() }}
+{% endblock %}
+

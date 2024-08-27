@@ -1,0 +1,51 @@
+{% set class_prefix = 'pr-section-' %}
+
+{% if fields is not empty or tabs is not empty or alerts is not empty%}
+
+    {% if title is not empty %}
+        <div class="{{ class_prefix|esc_attr }}header d-flex justify-content-between">
+            <div class="d-flex">
+                {{ render_icon(icon, {class: 'icon-sm my-auto mr-2'}) }}
+                <h3 class="pr-title-level-2">{{ title|raw }}</h3>
+            </div>
+            {{ args.helper|raw }}
+        </div>
+    {% endif %}
+
+    <div class="{{ class_prefix|esc_attr }}content">
+
+        {% if description is not empty %}
+            <div class="{{ class_prefix|esc_attr }}description">{{ description|raw }}</div>
+        {% endif %}
+
+        {% include get_template('../alert', _self) %}
+
+        {% if fields is not empty %}
+            <fieldset class="{{ class_prefix|esc_attr }}fieldset pr-fieldset">
+                {% include get_template('../../fields', _self) %}
+            </fieldset>
+        {% endif %}
+
+        {% if tabs is not empty %}
+            <nav class="{{ class_prefix|esc_attr }}tabs">
+                {% for id, tab in tabs %}
+                    <a href="#{{ class_prefix|esc_attr }}tab-{{ id }}"
+                       class="{{ class_prefix|esc_attr }}tab-item pr-tab-link{% if loop.first %} is-active{% endif %}"
+                       id="{{ class_prefix|esc_attr }}tab-item-{{ id|esc_attr }}">
+                        {{ render_icon(tab|call('getIcon'), {class: 'icon-sm mr-2'}) }}
+                        <div class="{{ class_prefix|esc_attr }}tab-item-title">{{ tab|call('getTitle')|raw }}</div>
+                    </a>
+                {% endfor %}
+            </nav>
+            <div class="{{ class_prefix|esc_attr }}contents">
+                {% for id, tab in tabs %}
+                    <fieldset
+                            class="{{ class_prefix|esc_attr }}tab-content pr-fieldset pr-tab-content{% if loop.first %} is-active{% endif %}"
+                            id="{{ class_prefix|esc_attr }}tab-{{ id }}">
+                        {{ tab|call('render')|raw }}
+                    </fieldset>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+{% endif %}

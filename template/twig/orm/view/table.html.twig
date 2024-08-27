@@ -1,0 +1,15 @@
+{% if items is defined
+    and items is not empty %}
+
+    <table class="table m-0 table-striped table-borderless {{ table_class }}">
+        <tbody>
+        {% for item in items %}
+            <tr>
+                <th class="text-left {{ cell_class }}" style="width: 10rem">{{ item.label|raw }}</th>
+                <td class="{{ cell_class }}">{{ item.value|raw }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endif %}
+

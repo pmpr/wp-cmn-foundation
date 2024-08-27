@@ -1,0 +1,7 @@
+<?php
+/*   _______________________________________
+    |  Obfuscated by PMPR - Php Obfuscator  |
+    |             66ce3480d954f             |
+    |_______________________________________|
+*/
+ namespace Pmpr\Common\Foundation\FormGenerator\Backend\Shortcode; use Pmpr\Common\Foundation\Interfaces\Constants; use Pmpr\Common\Foundation\FormGenerator\Backend\Component\Modal; use Pmpr\Common\Foundation\FormGenerator\Backend\Traits\ObjectTrait; class Shortcode extends Modal { use ObjectTrait; public function qiccuiwooiquycsg() { parent::qiccuiwooiquycsg(); $this->type = "\x73\150\x6f\x72\164\x63\x6f\x64\145"; } public function wigskegsqequoeks() { $this->qcsmikeggeemccuu("\155\x65\144\x69\x61\x5f\142\x75\x74\x74\157\x6e\163", [$this, "\163\145\x77\161\163\167\x65\x67\x63\x77\171\x77\x61\155\165\x77"]); parent::wigskegsqequoeks(); } public function uqwgsuysegkweago($ccamueccusigaaio = null) : bool { $seumokooiykcomco = $this->caokeucsksukesyo()->ayueggmoqeeukqmq(); if ($ccamueccusigaaio) { goto esaqcqqwuussiiwo; } $ccamueccusigaaio = $seumokooiykcomco->gueasuouwqysmomu(); esaqcqqwuussiiwo: return $seumokooiykcomco->uqwgsuysegkweago($ccamueccusigaaio); } public function sewqswegcwywamuw($igwkwmgowquoucyk) { if (!(Constants::ssmskyqgcmeiayco === $igwkwmgowquoucyk && $this->uqwgsuysegkweago() && $this->skgwcckoyoqsascq())) { goto ikqeeaysmqgcgawq; } $this->qoeiescseggagsqs($this->cisyiemkeykgkomc())->gswweykyogmsyawy($this->qcgakseyaikigqco())->render([Constants::qaacaqioeyiuakeu => true]); ikqeeaysmqgcgawq: } }

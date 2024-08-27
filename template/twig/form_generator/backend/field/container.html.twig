@@ -1,0 +1,35 @@
+{% extends get_template('./common', _self) %}
+
+{% block before_field %}
+    {% if title is not empty
+        or description is not empty %}
+        <header>
+            {% if title is not empty %}
+                {% include get_template('../label', _self) with {
+                    label: title,
+                    for: attributes.id,
+                    label_class: 'pr-field-label'
+                } %}
+            {% endif %}
+            {% include get_template('../description', _self) %}
+        </header>
+    {% endif %}
+{% endblock %}
+
+{% block field_body %}
+    {% set asRow = args.columns is defined
+        and args.columns is not empty %}
+
+    <div {{ attributes|parse_attrs|raw }}>
+        {% for id, field in fields %}
+            {% if asRow %}
+                <div class="{{ args.columns|esc_attr }}">
+            {% endif %}
+            {{ field|call('render')|raw }}
+            {% if asRow %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock %}
+

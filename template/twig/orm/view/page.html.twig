@@ -1,0 +1,21 @@
+<div class="wrap">
+    {% if title %}
+        <h1 class="wp-heading-inline">{{ title|raw }}</h1>
+    {% endif %}
+    {% if actions is defined and actions is not empty %}
+
+        {% for action in actions %}
+            {% if action is iterable %}
+                <a {{ action.attrs|parse_attrs|raw }}>{{ action.title|raw }}</a>
+            {% else %}
+                {{ action|raw }}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+    <hr class="wp-header-end">
+    {{ pmpr_do_action('render_notices', 'orm-notice') }}
+    {{ pmpr_do_action('orm_page_before_content', name) }}
+    {{ pmpr_do_action('orm_' ~ name  ~ '_page_before_content') }}
+    {% block content %}{% endblock %}
+</div>

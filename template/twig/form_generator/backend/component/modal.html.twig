@@ -1,0 +1,23 @@
+{% set class_prefix = 'pr-modal-' %}
+
+<div class="{{ class_prefix }}wrapper" id="modal_{{ id|esc_attr }}">
+    <div class="{{ class_prefix }}container">
+        <aside class="{{ class_prefix }}aside">
+            {{ render_backend_spinner() }}
+        </aside>
+        <div class="{{ class_prefix }}frame">
+            <header class="{{ class_prefix }}header">
+                {{ render_icon(close_icon, {class: 'icon-primary pr-modal-close pr-modal-close-button'}) }}
+                <strong class="{{ class_prefix }}title">{{ title|raw }}</strong>
+            </header>
+            <div class="{{ class_prefix }}content">
+                {% if content_template is not empty %}
+                    {% include content_template with self|call('getTemplateParameters') %}
+                {% endif %}
+            </div>
+            <footer class="{{ class_prefix }}footer"></footer>
+            {{ render_backend_spinner() }}
+        </div>
+    </div>
+    <div class="{{ class_prefix }}backdrop {{ class_prefix}}close"></div>
+</div>

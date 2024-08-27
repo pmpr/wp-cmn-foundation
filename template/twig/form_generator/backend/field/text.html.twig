@@ -1,0 +1,19 @@
+{% extends get_template('./common', _self) %}
+{% set show_description_under_label = 0 %}
+{% block field_body %}
+    <div class="pr-field-input-container">
+        <input {{ attributes|parse_attrs|raw }}/>
+        {% if args.validation is defined and args.validation %}
+            {{ render_icon(args.invalid_icon, {class: 'invalid-icon icon-danger'}, 1) }}
+            {{ render_icon(args.valid_icon, {class: 'valid-icon icon-success'}, 1) }}
+        {% endif %}
+
+        {% if button is defined
+            and button is not empty %}
+
+            {% include get_template('../button', _self) with button|call('getParameters') %}
+        {% endif %}
+    </div>
+    {{ parent() }}
+{% endblock %}
+

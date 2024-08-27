@@ -1,0 +1,20 @@
+{% extends get_template('./common', _self) %}
+
+{% block before_field %}
+    {% if not args.floating %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}
+
+{% block field_body %}
+    <input {{ attributes|parse_attrs|raw }}/>
+    {{ parent() }}
+{% endblock %}
+
+{% block after_field %}
+    {% if args.floating %}
+        {% include get_template('label', _self) with {label: title} %}
+    {% endif %}
+    {{ parent() }}
+{% endblock %}
+

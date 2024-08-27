@@ -1,0 +1,34 @@
+{% set class_prefix = 'pr-segment-' %}
+<div class="{{ class_prefix|esc_attr }}header">
+    {{ render_icon(icon, {class: 'icon-xl mr-4 centered-svg'}) }}
+    <div>
+        <h2 class="pr-title-level-1">{{ title|raw }}</h2>
+        <div class="{{ class_prefix|esc_attr }}description">{{ description|raw }}</div>
+    </div>
+</div>
+{% include get_template('../alert', _self) %}
+<div class="{{ class_prefix|esc_attr }}content">
+    <div class="{{ class_prefix|esc_attr }}sections">
+        {% for id, section in sections %}
+            <div class="{{ class_prefix|esc_attr }}section{% if section|call('getArg', 'full') %} is-full{% endif %}"
+                 id="{{ class_prefix|esc_attr }}section-{{ id }}">
+                {{ section|call('render')|raw }}
+            </div>
+        {% endfor %}
+        {% include get_template('../../fields', _self) %}
+        {% if content is not empty %}
+            {{ self|call('renderContent') }}
+        {% endif %}
+    </div>
+    {% if sidebar is not empty %}
+        {{ sidebar|call('render')|raw }}
+    {% endif %}
+</div>
+{% if buttons is not empty %}
+    <div class="{{ class_prefix|esc_attr }}actions">
+        {% include get_template('../../fields', _self) with {
+            fields: buttons
+        } %}
+    </div>
+{% endif %}
+

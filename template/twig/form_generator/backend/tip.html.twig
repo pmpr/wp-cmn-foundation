@@ -1,0 +1,13 @@
+{% if tip is defined and tip is not empty %}
+    <div class="pr-field-tip">{{ tip|raw }}</div>
+{% endif %}
+
+{% if arg.variations is not empty %}
+    <div class="pr-field-variation"></div>
+{% endif %}
+
+{% include get_template('alert', _self) %}
+
+{% if placeholders is defined and placeholders is not empty %}
+    {{ placeholders|raw }}
+{% endif %}

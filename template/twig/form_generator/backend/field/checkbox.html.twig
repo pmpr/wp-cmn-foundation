@@ -1,0 +1,18 @@
+{% extends get_template('./common', _self) %}
+
+{% block before_field %}{% endblock %}
+
+{% block field_body %}
+    <input {{ attributes|parse_attrs|raw }}/>
+    {% include get_template('../label', _self) with {
+        label: title,
+        for: attributes.id,
+        label_class: 'pr-field-label-container pr-field-label'
+    } %}
+    {% include get_template('../description', _self) %}
+{% endblock %}
+{% block after_field %}
+    {% include get_template('../message', _self) %}
+    {% include get_template('../tip', _self) %}
+{% endblock %}
+

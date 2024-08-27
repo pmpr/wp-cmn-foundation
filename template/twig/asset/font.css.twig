@@ -1,0 +1,11 @@
+{% for font in fonts %}
+@font-face {
+    font-family: "{{ font.family|raw }}";
+    src: url("{{ font.url|raw }}");
+{% if font.sources is not empty %}
+    src: {% for source in font.sources %} url("{{ source.url|raw }}") format("{{ source.format|raw }}"){% if loop.last %};{% else %},{% endif %}{% endfor %}
+{% endif %}
+    font-weight: {{ font.weight|raw }};
+    font-style: {{ font.style|raw }};
+}
+{% endfor %}

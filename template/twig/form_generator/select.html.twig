@@ -1,0 +1,4 @@
+<select {{ attributes|parse_attrs|raw }}>
+    {{ self|call('getOptionsHTML', options)|raw }}
+</select>
+

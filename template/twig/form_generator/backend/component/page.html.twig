@@ -1,0 +1,32 @@
+{% set class_prefix = 'pr-page-' %}
+<div class="{{ class_prefix|esc_attr }}wrap wrap">
+    <h1 class="{{ class_prefix }}title pr-title-level-1">{{ title|raw }}</h1>
+    {{ pmpr_do_action('render_notices') }}
+    <br>
+    <div class="{{ class_prefix|esc_attr }}body">
+        <section class="{{ class_prefix|esc_attr }}content">
+            {% if buttons is not empty %}
+            <form enctype="multipart/form-data"
+                  method="POST" id="{{ id }}_form">
+            {% endif %}
+            <fieldset class="{{ class_prefix|esc_attr }}fieldset pr-fieldset">
+                {% include get_template('../alert', _self) %}
+                {% include get_template('../../fields', _self) %}
+            </fieldset>
+            {% if buttons is not empty %}
+                <div class="{{ class_prefix|esc_attr }}actions">
+                    {% include get_template('../../fields', _self) with {
+                        fields: buttons
+                    } %}
+                </div>
+            {% endif %}
+            {% if buttons is not empty %}
+            </form>
+            {% endif %}
+        </section>
+        {% if sidebar is not empty %}
+            {{ sidebar|call('render')|raw }}
+        {% endif %}
+    </div>
+</div>
+

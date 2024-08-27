@@ -1,0 +1,8 @@
+{% if label is defined
+    and label is not empty %}
+    {% set label_attrs = label_attrs|add('class', 'pr-field-label') %}
+    <label {{ label_attrs|parse_attrs|raw }}>
+        {{ label|raw }}
+        {% block body %}{% endblock %}
+    </label>
+{% endif %}
