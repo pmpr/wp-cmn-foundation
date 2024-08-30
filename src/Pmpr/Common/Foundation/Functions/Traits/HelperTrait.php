@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             66cf4bac87f58             |
+    |             66d1dbc474879             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Functions\Traits; use Pmpr\Common\Foundation\Functions\Helper\Helper; trait HelperTrait { public function caokeucsksukesyo() : Helper { return Helper::symcgieuakksimmu(); } public static function iwgqamekocwaigci() : Helper { return Helper::symcgieuakksimmu(); } }
