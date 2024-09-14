@@ -4,6 +4,9 @@
 
 {% block field_body %}
     <input {{ attributes|parse_attrs|raw }}/>
+    {% if args.referer is not empty %}
+        <input type="hidden" name="_wp_http_referer" value="{{ args.referer|esc_url }}" />
+    {% endif %}
 {% endblock %}
 
 
