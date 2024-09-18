@@ -1,0 +1,11 @@
+{{ views|raw }}
+<form class="pr-list-form" id="orm-list-filter" method="get">
+    <input type="hidden" name="page" value="{{ name|esc_attr }}"/>
+    <input type="hidden" name="orm_filter_by" value="{{ filter.name|esc_attr }}"/>
+    <input type="hidden" name="orm_filter_value" value="{{ filter.value|esc_attr }}"/>
+    {{ table.search_box(search_text, name)|raw }}
+    {{ table.display()|raw }}
+</form>
+<div id="ajax-response"></div>
+<br class="clear"/>
+

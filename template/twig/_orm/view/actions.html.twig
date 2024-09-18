@@ -1,0 +1,15 @@
+{% if actions is defined
+    and actions is not empty %}
+    {% if actions is iterable %}
+        {% for action in actions %}
+            {% if action is iterable %}
+                <a {{ action.attrs|parse_attrs|raw }}>{{ action.title|raw }}</a>
+            {% else %}
+                {{ action|raw }}
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        {{ actions|raw }}
+    {% endif %}
+{% endif %}
+
