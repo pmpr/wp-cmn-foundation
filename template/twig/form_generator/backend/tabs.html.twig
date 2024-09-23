@@ -1,0 +1,29 @@
+{% if tabs is not empty %}
+    <nav class="{{ class_prefix|esc_attr }}tabs pr-form-tabs">
+        {% for id, tab in tabs %}
+            <a href="#{{ class_prefix|esc_attr }}tab-{{ id }}"
+               class="{{ class_prefix|esc_attr }}tab-item pr-form-tab-item pr-tab-link{% if loop.first %} is-active{% endif %}"
+               id="{{ class_prefix|esc_attr }}tab-item-{{ id|esc_attr }}">
+                {{ render_icon(tab|call('getIcon'), {class: 'icon-sm mr-2'}) }}
+                <div class="{{ class_prefix|esc_attr }}tab-item-title pr-form-tab-item-title">{{ tab|call('getTitle')|raw }}</div>
+            </a>
+        {% endfor %}
+    </nav>
+    <div class="{{ class_prefix|esc_attr }}contents pr-form-tab-contents">
+        {% for id, tab in tabs %}
+            {% if tab|call('hasSection') %}
+                <div class="{{ class_prefix|esc_attr }}tab-content pr-form-tab-content pr-tab-content{% if loop.first %} is-active{% endif %}"
+                     id="{{ class_prefix|esc_attr }}tab-{{ id }}">
+                    {{ tab|call('render')|raw }}
+                </div>
+            {% else %}
+                <fieldset
+                        class="{{ class_prefix|esc_attr }}tab-content pr-form-tab-content pr-fieldset pr-tab-content{% if loop.first %} is-active{% endif %}"
+                        id="{{ class_prefix|esc_attr }}tab-{{ id }}">
+                    {{ tab|call('render')|raw }}
+                </fieldset>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endif %}
+

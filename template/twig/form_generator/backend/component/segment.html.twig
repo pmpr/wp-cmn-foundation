@@ -7,14 +7,21 @@
     </div>
 </div>
 {% include get_template('../alert', _self) %}
-<div class="{{ class_prefix|esc_attr }}content">
-    <div class="{{ class_prefix|esc_attr }}sections">
-        {% for id, section in sections %}
-            <div class="{{ class_prefix|esc_attr }}section{% if section|call('getArg', 'full') %} is-full{% endif %}"
-                 id="{{ class_prefix|esc_attr }}section-{{ id }}">
-                {{ section|call('render')|raw }}
-            </div>
-        {% endfor %}
+<div class="{{ class_prefix|esc_attr }}content-wrapper">
+    <div class="{{ class_prefix|esc_attr }}content">
+        {% if tabs is not empty %}
+            {% include get_template('../tabs', _self) with {
+                id: id,
+                tabs: tabs,
+                class_prefix: class_prefix
+            } %}
+        {% endif %}
+        {% if sections is not empty %}
+            {% include get_template('../sections', _self) with {
+                sections: sections,
+                class_prefix: class_prefix
+            } %}
+        {% endif %}
         {% include get_template('../../fields', _self) %}
         {% if content is not empty %}
             {{ self|call('renderContent') }}

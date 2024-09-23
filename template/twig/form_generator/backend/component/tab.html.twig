@@ -1,5 +1,11 @@
 {% if description is not empty %}
     <div class="pr-tab-description">{{ description|raw }}</div>
 {% endif %}
+{% if sections is not empty %}
+    {% include get_template('../sections', _self) with {
+        sections: sections,
+        class_prefix: class_prefix
+    } %}
+{% endif %}
 {% include get_template('../../fields', _self) %}
 
