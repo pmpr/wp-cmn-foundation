@@ -1,6 +1,6 @@
 <{{ args.element|default('button') }} {{ attributes|parse_attrs|raw }}>
     {{ title|raw }}
-    {{ render_icon(icon) }}
+    {{ render_icon(icon, {}, 1) }}
     {% if args.spinner is defined
         and args.spinner is not empty %}
         {{ render_backend_spinner(args.spinner) }}
