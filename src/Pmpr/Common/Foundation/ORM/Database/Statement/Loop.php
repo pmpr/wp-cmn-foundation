@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             6705246332371             |
+    |             670d43c49e811             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\ORM\Database\Statement; use Illuminate\Database\Query\Builder; class Loop extends Statement { protected function run($siykeiywomwwuoiw) { return $this->igyyscwegckkkkya($siykeiywomwwuoiw); } }
