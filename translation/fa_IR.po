@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr Common Foundation\n"
-"POT-Creation-Date: 2024-10-21 01:09+0330\n"
-"PO-Revision-Date: 2024-10-21 01:09+0330\n"
+"POT-Creation-Date: 2024-10-27 14:02+0330\n"
+"PO-Revision-Date: 2024-10-27 14:02+0330\n"
 "Last-Translator: pmpr.dev <pmpr.dev@gmail.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -137,74 +137,74 @@ msgstr "مگابایت"
 msgid "GB"
 msgstr "گیگابایت"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:31
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:30
 msgid "Copied!"
 msgstr "کپی شد!"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:32
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:31
 msgid "Copy process failed."
 msgstr "فرآیند کپی ناموفق بود."
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:37
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:36
 msgid "This field is required, please fill it first."
 msgstr "این فیلد الزامی است، لطفا ابتدا آن را پر کنید."
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:42
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:41
 msgid "Unable to retrieve results"
 msgstr "بازیابی نتایج امکان پذیر نیست"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:43
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:42
 msgid "Select and begin typing"
 msgstr "کلیک کرده و تایپ کنید"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:44
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:43
 msgid "Please enter more characters"
 msgstr "لطفا کاراکتری‌های بیشتری وارد کنید"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:45
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:44
 msgid "No Results"
 msgstr "هیچ نتیجه‌ای یافت نشد"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:46
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:48
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:45
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:47
 msgid "Searching..."
 msgstr "در حال جستجو ..."
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:47
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:46
 msgid "Currently Selected"
 msgstr "در حال حاضر انتخاب شده است"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:49
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:48
 msgid "Start typing a search query"
 msgstr "جستجو را با تایپ شروع کنید"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:50
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:49
 msgid "Nothing selected"
 msgstr "چیزی انتخاب نشده‌ است"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:51
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:50
 #, fuzzy
 #| msgid "No Results"
 msgid "No results match {0}"
 msgstr "هیچ نتیجه‌ای یافت نشد"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:52
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:51
 msgid "{0} from {1} item selected"
 msgstr "{0} آیتم از {1} آیتم انتخاب شده"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:54
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:53
 msgid "Limit reached ({n} items max)"
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:55
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:54
 msgid "Group limit reached ({n} items max)"
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:57
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:56
 msgid "Select All"
 msgstr "انتخاب همه"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:58
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Backend.php:57
 msgid "Deselect All"
 msgstr "لغو انتخاب همه"
 
@@ -716,11 +716,11 @@ msgstr "مقدار noopener"
 msgid "Noreferrer"
 msgstr "مقدار noreferrer"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/HTML.php:789
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/HTML.php:788
 msgid "Items"
 msgstr "آیتم‌ها‌"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/HTML.php:792
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/HTML.php:791
 #, php-format
 msgid "Include %s %s"
 msgstr "شامل %s %s"
@@ -966,7 +966,12 @@ msgstr ""
 msgid "Builder is null, maybe table not created."
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/ORM/Database/Schema/Foreign.php:224
+#: src/Pmpr/Common/Foundation/ORM/Database/Schema/Foreign.php:87
+#, php-format
+msgid "Without %s"
+msgstr "بدون %s"
+
+#: src/Pmpr/Common/Foundation/ORM/Database/Schema/Foreign.php:234
 #, php-format
 msgid "Foreign key %s must end with %s postfix"
 msgstr ""
@@ -1067,58 +1072,58 @@ msgid "Update"
 msgstr "به روزرسانی"
 
 #: src/Pmpr/Common/Foundation/ORM/View/Edit.php:286
-#: src/Pmpr/Common/Foundation/ORM/View/Index.php:138
-#: src/Pmpr/Common/Foundation/ORM/View/View.php:158
-#: src/Pmpr/Common/Foundation/ORM/View/View.php:173
+#: src/Pmpr/Common/Foundation/ORM/View/Index.php:137
+#: src/Pmpr/Common/Foundation/ORM/View/View.php:159
+#: src/Pmpr/Common/Foundation/ORM/View/View.php:174
 #: vendor/woocommerce/action-scheduler/classes/ActionScheduler_ListTable.php:92
 msgid "Delete"
 msgstr "حذف"
 
-#: src/Pmpr/Common/Foundation/ORM/View/Index.php:98
-#: src/Pmpr/Common/Foundation/ORM/View/Index.php:100
+#: src/Pmpr/Common/Foundation/ORM/View/Index.php:97
+#: src/Pmpr/Common/Foundation/ORM/View/Index.php:99
 #: vendor/woocommerce/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:35
 msgid "Edit"
 msgstr "ویرایش"
 
-#: src/Pmpr/Common/Foundation/ORM/View/Index.php:109
-#: src/Pmpr/Common/Foundation/ORM/View/Index.php:111
+#: src/Pmpr/Common/Foundation/ORM/View/Index.php:108
+#: src/Pmpr/Common/Foundation/ORM/View/Index.php:110
 msgid "Quick Edit"
 msgstr "ویرایش سریع"
 
-#: src/Pmpr/Common/Foundation/ORM/View/Index.php:123
-#: src/Pmpr/Common/Foundation/ORM/View/Index.php:125
+#: src/Pmpr/Common/Foundation/ORM/View/Index.php:122
+#: src/Pmpr/Common/Foundation/ORM/View/Index.php:124
 msgid "Show"
 msgstr "نمایش"
 
-#: src/Pmpr/Common/Foundation/ORM/View/Index.php:164
+#: src/Pmpr/Common/Foundation/ORM/View/Index.php:163
 #, fuzzy
 #| msgid "Actions"
 msgid "Actions"
 msgstr "عملیات"
 
-#: src/Pmpr/Common/Foundation/ORM/View/Index.php:244
+#: src/Pmpr/Common/Foundation/ORM/View/Index.php:243
 msgid "All"
 msgstr "همه"
 
-#: src/Pmpr/Common/Foundation/ORM/View/Index.php:387
+#: src/Pmpr/Common/Foundation/ORM/View/Index.php:386
 msgid "Error in deleting."
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/ORM/View/Index.php:395
-#: src/Pmpr/Common/Foundation/ORM/View/Index.php:440
+#: src/Pmpr/Common/Foundation/ORM/View/Index.php:394
+#: src/Pmpr/Common/Foundation/ORM/View/Index.php:439
 msgid "Sorry, you are not allowed to delete items of this type."
 msgstr "متاسفانه شما مجاز به حذف آیتم‌هایی از این نوع نیستید."
 
-#: src/Pmpr/Common/Foundation/ORM/View/Index.php:403
+#: src/Pmpr/Common/Foundation/ORM/View/Index.php:402
 msgid "Item successfully deleted."
 msgstr "آیتم مورد نظر با موفقیت حذف شد."
 
-#: src/Pmpr/Common/Foundation/ORM/View/Index.php:433
+#: src/Pmpr/Common/Foundation/ORM/View/Index.php:432
 #, php-format
 msgid "Can not delete requested items: %s."
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/ORM/View/Index.php:451
+#: src/Pmpr/Common/Foundation/ORM/View/Index.php:450
 msgid "Requested items deleted."
 msgstr "موارد درخواستی حذف شد."
 
@@ -1167,7 +1172,7 @@ msgstr ""
 msgid "Overview"
 msgstr "بررسی کلی"
 
-#: src/Pmpr/Common/Foundation/ORM/View/View.php:178
+#: src/Pmpr/Common/Foundation/ORM/View/View.php:179
 msgid "Are you sure you want to delete this item?"
 msgstr "در مورد حذف این آیتم مطمئن هستید؟"
 
