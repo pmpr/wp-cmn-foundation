@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             679576175075e             |
+    |             6796bb94d52e6             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Functions\Wrapper\Plugin; use Pmpr\Common\Foundation\Functions\Wrapper\Common as BaseClass; abstract class Common extends BaseClass { }
