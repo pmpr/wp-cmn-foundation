@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             67abdb6f91c28             |
+    |             67b702de51b58             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\FormGenerator\Element; class Div extends Element { public function __construct(string $aokagokqyuysuksm = '') { parent::__construct($aokagokqyuysuksm, "\x64\151\166"); } }
+ namespace Pmpr\Common\Foundation\FormGenerator\Element; class Div extends Element { public function __construct(string $aokagokqyuysuksm = '') { parent::__construct($aokagokqyuysuksm, 'div'); } }

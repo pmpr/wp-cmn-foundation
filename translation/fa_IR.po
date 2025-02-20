@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr Common Foundation\n"
-"POT-Creation-Date: 2025-01-19 18:03+0330\n"
-"PO-Revision-Date: 2025-01-19 18:03+0330\n"
+"POT-Creation-Date: 2025-02-13 15:13+0330\n"
+"PO-Revision-Date: 2025-02-13 15:14+0330\n"
 "Last-Translator: pmpr.dev <pmpr.dev@gmail.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -317,11 +317,11 @@ msgstr "انتخاب %s"
 msgid "Use This File"
 msgstr "استفاده از این فایل"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Select.php:388
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Select.php:385
 msgid "Choose an option..."
 msgstr "یک گزینه را انتخاب کنید..."
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Select.php:389
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Select.php:386
 msgid "Deselect"
 msgstr "لغو انتخاب"
 
@@ -389,7 +389,7 @@ msgid "To complete the installation of %s, %s."
 msgstr "برای تکمیل فرآیند نصب %s، %s."
 
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:139
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:63
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:65
 msgid "Setting"
 msgstr "تنظیمات"
 
@@ -588,18 +588,18 @@ msgstr "شما دسترسی لازم برای مشاهده یا ویرایش ا�
 msgid "%s Page"
 msgstr "صفحه %s"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Error.php:154
+#: src/Pmpr/Common/Foundation/Functions/Helper/Error.php:152
 #, php-format
 msgid "%s is a required parameter."
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Error.php:157
+#: src/Pmpr/Common/Foundation/Functions/Helper/Error.php:155
 #, fuzzy
 #| msgid "Required data not passed"
 msgid "Required parameters not passed."
 msgstr "داده‌های الزامی ارسال نشد‌اند"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Error.php:228
+#: src/Pmpr/Common/Foundation/Functions/Helper/Error.php:226
 msgid "Sorry, there seems to be a problem with the server, please contact us."
 msgstr ""
 
@@ -753,23 +753,23 @@ msgstr "ابعاد"
 msgid "Back to Homepage"
 msgstr "بازگشت به خانه"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:899
+#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:918
 #, fuzzy
 #| msgid "Sorry, you haven't access to edit this page."
 msgid "You do not have access to perform this operation."
 msgstr "شما دسترسی لازم برای مشاهده یا ویرایش این صفحه را ندارید."
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:904
+#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:923
 #, fuzzy
 #| msgid "Your request is forbidden"
 msgid "Your request is not valid or expired."
 msgstr "درخواست شما ممنوع است"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:921
+#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:940
 msgid "Request is not valid, please reload page and try again."
 msgstr "درخواست شما معتبر نیست، لطفا صفحه را بارگذاری مجدد کنید."
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:965
+#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:984
 #, php-format
 msgid "Could not use path \"%s\" without slash on the first character."
 msgstr ""
@@ -795,35 +795,35 @@ msgstr "جستجو"
 msgid "%s ago"
 msgstr "‏%s پیش"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:231
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:233
 #, fuzzy, php-format
 #| msgid "%s minute"
 msgid "%s Minute"
 msgid_plural "%s Minutes"
 msgstr[0] "%s دقیقه"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:234
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:236
 #, fuzzy, php-format
 #| msgid "%s Hours"
 msgid "%s Hour"
 msgid_plural "%s Hours"
 msgstr[0] "%s ساعت "
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:237
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:239
 #, fuzzy, php-format
 #| msgid "%s Days"
 msgid "%s Day"
 msgid_plural "%s Days"
 msgstr[0] "%s روز"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:240
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:242
 #, fuzzy, php-format
 #| msgid "Weeks"
 msgid "%s Week"
 msgid_plural "%s Weeks"
 msgstr[0] "هفته‌ها"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:243
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:245
 #, fuzzy, php-format
 #| msgid "%s month ago"
 #| msgid_plural "%s months ago"
@@ -831,7 +831,7 @@ msgid "%s Month"
 msgid_plural "%s Months"
 msgstr[0] "%s ماه پیش"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:246
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:248
 #, fuzzy, php-format
 #| msgid "Years"
 msgid "%s Year"
@@ -937,42 +937,42 @@ msgstr "%s %s تمامی حقوق برای %s محفوظ است"
 msgid "Something wrong, please try again later or contact us."
 msgstr "مشکلی پیش آمده است،"
 
-#: src/Pmpr/Common/Foundation/ORM/Ajax.php:65
+#: src/Pmpr/Common/Foundation/ORM/Ajax.php:67
 #, php-format
 msgid "Can not find requested %s with id %s."
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/ORM/Ajax.php:69
+#: src/Pmpr/Common/Foundation/ORM/Ajax.php:71
 #, fuzzy
 #| msgid "Nothing selected"
 msgid "No change detected."
 msgstr "چیزی انتخاب نشده‌ است"
 
-#: src/Pmpr/Common/Foundation/ORM/Ajax.php:74
+#: src/Pmpr/Common/Foundation/ORM/Ajax.php:76
 #, fuzzy
 #| msgid "Required data not passed"
 msgid "Some require parameters not passed or not correct."
 msgstr "داده‌های الزامی ارسال نشد‌اند"
 
-#: src/Pmpr/Common/Foundation/ORM/Database/Entity.php:671
+#: src/Pmpr/Common/Foundation/ORM/Database/Entity.php:699
 #, php-format
 msgid "Can not save %s."
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/ORM/Database/Entity.php:679
+#: src/Pmpr/Common/Foundation/ORM/Database/Entity.php:707
 msgid "Object is not subclass of Model"
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/ORM/Database/Entity.php:687
+#: src/Pmpr/Common/Foundation/ORM/Database/Entity.php:715
 msgid "Builder is null, maybe table not created."
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/ORM/Database/Schema/Foreign.php:87
+#: src/Pmpr/Common/Foundation/ORM/Database/Schema/Foreign.php:96
 #, php-format
 msgid "Without %s"
 msgstr "بدون %s"
 
-#: src/Pmpr/Common/Foundation/ORM/Database/Schema/Foreign.php:234
+#: src/Pmpr/Common/Foundation/ORM/Database/Schema/Foreign.php:250
 #, php-format
 msgid "Foreign key %s must end with %s postfix"
 msgstr ""
@@ -1152,12 +1152,12 @@ msgstr ""
 msgid "Table Order by %s"
 msgstr "انتخاب پارامتر مرتب سازی"
 
-#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:352
+#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:357
 #, php-format
 msgid "Edit \"%s\""
 msgstr "ویرایش: %s"
 
-#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:360
+#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:365
 msgid "Show more details"
 msgstr "نمایش جزئیات بیشتر"
 
@@ -1463,7 +1463,7 @@ msgstr "هنوز %s وجود ندارد."
 msgid "User Avatar"
 msgstr "آواتار کاربر"
 
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/OAuth.php:134
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/OAuth.php:138
 msgid "Error: "
 msgstr "خطا: "
 
@@ -1475,54 +1475,54 @@ msgstr "دسترسی با موفقیت اعطا شد!"
 msgid "Access could not be granted!"
 msgstr "دسترسی داده نشد!"
 
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:75
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:78
 msgid "Google API Credential"
 msgstr "اطلاعات حساب گوگل API"
 
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:78
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:81
 msgid "Grant Access Status"
 msgstr "وضعیت دسترسی"
 
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:83
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:86
 msgid "Authorized redirect URI"
 msgstr "URI تغییر مسیر مجاز"
 
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:84
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:87
 msgid "Use this url as authorized redirect uri in google api console."
 msgstr ""
 "از این url به عنوان authorized redirect uri در google api console استفاده "
 "کنید."
 
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:88
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:123
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:91
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:126
 msgid "Client ID"
 msgstr "شناسه مشتری (Client ID)"
 
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:92
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:123
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:95
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:126
 msgid "Client Secret"
 msgstr "کلید مشتری (Client Secret)"
 
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:107
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:120
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:110
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:123
 msgid "Not connected."
 msgstr "وصل نشده."
 
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:109
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:112
 #, php-format
 msgid "Please %s to grant access permission."
 msgstr "لطفا برای اعطای مجوز دسترسی %s."
 
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:110
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:113
 msgid "Click Here"
 msgstr "اینجا کلیک کنید"
 
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:122
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:125
 #, php-format
 msgid "Please fill %s and %s and save settings."
 msgstr "لطفا %s و %s را پر کرده و تنظمات را ذخیره کنید."
 
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:129
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:132
 msgid "Connected"
 msgstr ""
 
