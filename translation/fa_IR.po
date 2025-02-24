@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr Common Foundation\n"
-"POT-Creation-Date: 2025-02-13 15:13+0330\n"
-"PO-Revision-Date: 2025-02-13 15:14+0330\n"
+"POT-Creation-Date: 2025-02-24 12:22+0330\n"
+"PO-Revision-Date: 2025-02-24 12:22+0330\n"
 "Last-Translator: pmpr.dev <pmpr.dev@gmail.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -594,10 +594,8 @@ msgid "%s is a required parameter."
 msgstr ""
 
 #: src/Pmpr/Common/Foundation/Functions/Helper/Error.php:155
-#, fuzzy
-#| msgid "Required data not passed"
 msgid "Required parameters not passed."
-msgstr "داده‌های الزامی ارسال نشد‌اند"
+msgstr "برخی از پارامترهای ضروری ارسال نشده‌اند."
 
 #: src/Pmpr/Common/Foundation/Functions/Helper/Error.php:226
 msgid "Sorry, there seems to be a problem with the server, please contact us."
@@ -705,23 +703,23 @@ msgstr "لینک به بیرون"
 msgid "Action Link"
 msgstr "متن پیوند"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/HTML.php:22
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/HTML.php:21
 msgid "Nofollow"
 msgstr "مقدار nofollow"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/HTML.php:23
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/HTML.php:22
 msgid "Noopener"
 msgstr "مقدار noopener"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/HTML.php:24
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/HTML.php:23
 msgid "Noreferrer"
 msgstr "مقدار noreferrer"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/HTML.php:786
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/HTML.php:789
 msgid "Items"
 msgstr "آیتم‌ها‌"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/HTML.php:789
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/HTML.php:792
 #, php-format
 msgid "Include %s %s"
 msgstr "شامل %s %s"
@@ -1459,7 +1457,7 @@ msgstr "صفحه درخواستی شما وجود ندارد."
 msgid "There are not %s yet."
 msgstr "هنوز %s وجود ندارد."
 
-#: src/Pmpr/Common/Foundation/Template/Twig/Action.php:869
+#: src/Pmpr/Common/Foundation/Template/Twig/Action.php:876
 msgid "User Avatar"
 msgstr "آواتار کاربر"
 
