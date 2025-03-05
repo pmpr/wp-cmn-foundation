@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             67bc35b2a09b1             |
+    |             67c8341cd9730             |
     |_______________________________________|
 */
- namespace Pmpr\Common\Foundation\FormGenerator\Frontend\Field; class Media extends File { public function scmsukieucuekmki() : self { $this->ycueqsmmommygueu(); return $this->askmmuauqcuuqsea('Avatar'); } public function ycueqsmmommygueu(array $yemgmmgogcwccuky = []) : self { return $this->hsgemasguekogiui(['jpg', 'jpeg', 'webp'], 'image', $yemgmmgogcwccuky); } }
+ namespace Pmpr\Common\Foundation\FormGenerator\Frontend\Field; class Media extends File { public function __construct(string $aokagokqyuysuksm = '') { parent::__construct($aokagokqyuysuksm); $this->askmmuauqcuuqsea('Media'); } public function kogekgsaaqoeosuc(array $yemgmmgogcwccuky = []) : self { return $this->hsgemasguekogiui(['jpg', 'jpeg', 'webp'], 'image', $yemgmmgogcwccuky); } }
