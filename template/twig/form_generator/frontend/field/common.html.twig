@@ -4,7 +4,9 @@
 
 <div class="pr-field-{{ type|esc_attr }}{% if field_container_class is defined and field_container_class is not empty %} {{ field_container_class|esc_attr }}{% endif %}">
     {% block field_body %}
-        {% include get_template('../message', _self) %}
+        {% if args.show_error %}
+            {% include get_template('../message', _self) %}
+        {% endif %}
         {% include get_template('../description', _self) %}
     {% endblock %}
 </div>

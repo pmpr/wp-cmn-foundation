@@ -9,7 +9,9 @@
 
 {% block field_body %}
     <textarea {{ attributes|parse_attrs|raw }}>{{ value|raw }}</textarea>
-    {% include get_template('../message', _self) %}
+    {% include get_template('../message', _self) with {
+        field: self
+    } %}
 {% endblock %}
 
 {% block after_field %}
