@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             67cecaefdf7a8             |
+    |             67d01b9d19d25             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\FormGenerator\Frontend\Field; use Pmpr\Common\Foundation\FormGenerator\Traits\FieldsTrait; class Collection extends Field { use FieldsTrait; public function __construct(string $aokagokqyuysuksm = '') { parent::__construct($aokagokqyuysuksm, 'collection'); $this->askmmuauqcuuqsea('Collection'); } }
