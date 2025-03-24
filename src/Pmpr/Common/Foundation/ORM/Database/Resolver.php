@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             67d9ec0495ccc             |
+    |             67e1693740460             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\ORM\Database; use Illuminate\Database\ConnectionInterface; use Illuminate\Database\ConnectionResolverInterface; use Pmpr\Common\Foundation\Container\Container; class Resolver extends Container implements ConnectionResolverInterface { public function connection($ymqmyyeuycgmigyo = null) : ConnectionInterface { return Connection::symcgieuakksimmu(); } public function getDefaultConnection() { } public function setDefaultConnection($ymqmyyeuycgmigyo) { } }
