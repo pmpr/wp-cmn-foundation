@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             680156ee8e514             |
+    |             680567b2d9bfb             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Functions\Traits; use Pmpr\Common\Foundation\Functions\Wrapper\Wrapper; trait WrapperTrait { public function uwkmaywceaaaigwo() : Wrapper { return Wrapper::symcgieuakksimmu(); } public static function haqswuugoswcyoia() : Wrapper { return Wrapper::symcgieuakksimmu(); } }

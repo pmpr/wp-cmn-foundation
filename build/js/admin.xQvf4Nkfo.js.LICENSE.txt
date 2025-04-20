@@ -1,0 +1,131 @@
+/*!
+ * Ajax Bootstrap Select
+ *
+ * Extends existing [Bootstrap Select] implementations by adding the ability to search via AJAX requests as you type. Originally for CROSCON.
+ *
+ * @version 1.4.5
+ * @author Adam Heim - https://github.com/truckingsim
+ * @link https://github.com/truckingsim/Ajax-Bootstrap-Select
+ * @copyright 2019 Adam Heim
+ * @license Released under the MIT license.
+ *
+ * Contributors:
+ *   Mark Carver - https://github.com/markcarver
+ *
+ * Last build: 2019-04-23 12:18:55 PM EDT
+ */
+
+/*!
+ * Bootstrap-select v1.13.18 (https://developer.snapappointments.com/bootstrap-select)
+ *
+ * Copyright 2012-2020 SnapAppointments, LLC
+ * Licensed under MIT (https://github.com/snapappointments/bootstrap-select/blob/master/LICENSE)
+ */
+
+/*!
+ * English translation for the "en-US" and "en" language codes.
+ * Mark Carver <mark.carver@me.com>
+ */
+
+/*! ../../scss/backend/index.scss */
+
+/*! jquery */
+
+/*!*************************!*\
+  !*** external "jQuery" ***!
+  \*************************/
+
+/*!***************************************!*\
+  !*** ./asset/scss/backend/index.scss ***!
+  \***************************************/
+
+/*!*********************************************!*\
+  !*** ./asset/js/backend/form/field/icon.js ***!
+  \*********************************************/
+
+/*!**********************************************!*\
+  !*** ./asset/js/backend/form/field/media.js ***!
+  \**********************************************/
+
+/*!***********************************************!*\
+  !*** ./asset/js/backend/form/field/editor.js ***!
+  \***********************************************/
+
+/*!************************************************!*\
+  !*** ./asset/js/backend/index.js + 25 modules ***!
+  \************************************************/
+
+/*!*************************************************!*\
+  !*** ./asset/js/backend/form/component/plan.js ***!
+  \*************************************************/
+
+/*!*************************************************!*\
+  !*** ./asset/js/backend/form/field/selector.js ***!
+  \*************************************************/
+
+/*!**************************************************!*\
+  !*** ./asset/js/backend/form/component/modal.js ***!
+  \**************************************************/
+
+/*!**************************************************!*\
+  !*** ./asset/js/backend/form/plugin/required.js ***!
+  \**************************************************/
+
+/*!***************************************************!*\
+  !*** ./asset/js/backend/form/component/widget.js ***!
+  \***************************************************/
+
+/*!***************************************************!*\
+  !*** ./asset/js/backend/form/field/collection.js ***!
+  \***************************************************/
+
+/*!***************************************************!*\
+  !*** ./asset/js/backend/form/plugin/updatable.js ***!
+  \***************************************************/
+
+/*!****************************************************!*\
+  !*** ./asset/js/backend/form/component/setting.js ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./asset/js/backend/form/plugin/bereplaced.js ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./asset/js/backend/form/plugin/effectable.js ***!
+  \****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./asset/js/backend/form/plugin/placeholder.js ***!
+  \*****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./asset/js/backend/form/plugin/variational.js ***!
+  \*****************************************************/
+
+/*!*******************************************************!*\
+  !*** ./asset/js/backend/form/component/customizer.js ***!
+  \*******************************************************/
+
+/*!*************************************************************!*\
+  !*** ./node_modules/jquery-mask-plugin/dist/jquery.mask.js ***!
+  \*************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/bootstrap-select/dist/js/bootstrap-select.js ***!
+  \*******************************************************************/
+
+/*!**********************************************************************!*\
+  !*** ./node_modules/bootstrap-select/dist/js/i18n/defaults-fa_IR.js ***!
+  \**********************************************************************/
+
+/*!*****************************************************************************!*\
+  !*** ./node_modules/ajax-bootstrap-select/dist/js/ajax-bootstrap-select.js ***!
+  \*****************************************************************************/
+
+/**!
+ * Sortable 1.13.0
+ * @author	RubaXa   <trash@rubaxa.org>
+ * @author	owenm    <owen23355@gmail.com>
+ * @license MIT
+ */
