@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             680567b2d9bfb             |
+    |             68063bc52ad41             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\ORM\Database\Statement; use Pmpr\Common\Foundation\Interfaces\Constants; class RawSelect extends Statement { public function csyqowowokmwskks() { return $this->maqiysyuqmwcqoig(Constants::wgwemioaokwaiuyq); } public function suqwmwoiekgckekw(string $wiokgkkuiumaumci) : self { return $this->igiywquyccyiaucw('expression', $wiokgkkuiumaumci); } public function uoicowkokecgyius($sikaymiwcesagayc = Constants::gouqcwikiiygyasc, $umwqusowiqmyseom = Constants::omaksceqmigeaoko) { $this->igiywquyccyiaucw(Constants::awkcoioakcaougmq, $umwqusowiqmyseom)->igiywquyccyiaucw(Constants::gqiasegggowomgie, $sikaymiwcesagayc)->maqiysyuqmwcqoig(Constants::ykiukwgwogcggqwg); return $this; } protected function run($siykeiywomwwuoiw) { $wiokgkkuiumaumci = $this->imkyoqyocosuqasu('expression'); if (!$wiokgkkuiumaumci) { switch ($this->auiqywousmcqsskq()) { case Constants::wgwemioaokwaiuyq: $wiokgkkuiumaumci = "SUM({$this->myywwqkyiwawwquy()}) as {$this->kwyoumwowyqcekys()}"; break; case Constants::ykiukwgwogcggqwg: $wiokgkkuiumaumci = "ROW_NUMBER() OVER (PARTITION BY {$this->myywwqkyiwawwquy()} ORDER BY {$this->imkyoqyocosuqasu(Constants::gqiasegggowomgie)} {$this->imkyoqyocosuqasu(Constants::awkcoioakcaougmq)}) as {$this->kwyoumwowyqcekys()}"; break; } } if ($wiokgkkuiumaumci) { return $siykeiywomwwuoiw->selectRaw($wiokgkkuiumaumci); } return $siykeiywomwwuoiw; } }
