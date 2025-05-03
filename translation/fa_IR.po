@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr Common Foundation\n"
-"POT-Creation-Date: 2025-04-20 13:10+0330\n"
-"PO-Revision-Date: 2025-04-20 13:12+0330\n"
+"POT-Creation-Date: 2025-05-01 16:47+0330\n"
+"PO-Revision-Date: 2025-05-01 16:47+0330\n"
 "Last-Translator: pmpr.dev <pmpr.dev@gmail.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -304,6 +304,7 @@ msgid "Title"
 msgstr "عنوان"
 
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Media.php:199
+#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:51
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:82
 msgid "Type"
 msgstr "نوع"
@@ -395,7 +396,7 @@ msgstr "مجوز معتبر است."
 
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:157
 msgid "The license is invalid."
-msgstr "مجوز نامعتبر است"
+msgstr "مجوز نامعتبر است."
 
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Setting/Setting.php:166
 msgid "License"
@@ -597,18 +598,24 @@ msgstr "برخی از پارامترهای ضروری ارسال نشده‌ان
 msgid "Sorry, there seems to be a problem with the server, please contact us."
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/File.php:465
+#: src/Pmpr/Common/Foundation/Functions/Helper/File.php:466
 #, php-format
 msgid ""
 "The .htaccess file (%s) could not be edited. Check if the file has write "
 "permissions."
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/File.php:476
+#: src/Pmpr/Common/Foundation/Functions/Helper/File.php:477
 #, fuzzy, php-format
 #| msgid "%s could not be added."
 msgid "%s is not readable."
 msgstr "%s را نمی‌توان افزود."
+
+#: src/Pmpr/Common/Foundation/Functions/Helper/File.php:756
+#, fuzzy
+#| msgid "User not found"
+msgid "File not founded."
+msgstr "کاربر یافت نشد"
 
 #: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:94
 msgid "You can use these placeholders:"
@@ -747,23 +754,23 @@ msgstr "ابعاد"
 msgid "Back to Homepage"
 msgstr "بازگشت به خانه"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:934
+#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:939
 #, fuzzy
 #| msgid "Sorry, you haven't access to edit this page."
 msgid "You do not have access to perform this operation."
 msgstr "شما دسترسی لازم برای مشاهده یا ویرایش این صفحه را ندارید."
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:939
+#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:944
 #, fuzzy
 #| msgid "Your request is forbidden"
 msgid "Your request is not valid or expired."
 msgstr "درخواست شما ممنوع است"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:956
+#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:961
 msgid "Request is not valid, please reload page and try again."
 msgstr "درخواست شما معتبر نیست، لطفا صفحه را بارگذاری مجدد کنید."
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:997
+#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:1002
 #, php-format
 msgid "Could not use path \"%s\" without slash on the first character."
 msgstr ""
@@ -790,47 +797,40 @@ msgid "%s ago"
 msgstr "‏%s پیش"
 
 #: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:234
-#, fuzzy, php-format
-#| msgid "%s minute"
+#, php-format
 msgid "%s Minute"
 msgid_plural "%s Minutes"
 msgstr[0] "%s دقیقه"
 
 #: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:237
-#, fuzzy, php-format
-#| msgid "%s Hours"
+#, php-format
 msgid "%s Hour"
 msgid_plural "%s Hours"
-msgstr[0] "%s ساعت "
+msgstr[0] "%s ساعت"
 
 #: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:240
-#, fuzzy, php-format
-#| msgid "%s Days"
+#, php-format
 msgid "%s Day"
 msgid_plural "%s Days"
 msgstr[0] "%s روز"
 
 #: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:243
-#, fuzzy, php-format
-#| msgid "Weeks"
+#, php-format
 msgid "%s Week"
 msgid_plural "%s Weeks"
-msgstr[0] "هفته‌ها"
+msgstr[0] "%s هفته"
 
 #: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:246
-#, fuzzy, php-format
-#| msgid "%s month ago"
-#| msgid_plural "%s months ago"
+#, php-format
 msgid "%s Month"
 msgid_plural "%s Months"
-msgstr[0] "%s ماه پیش"
+msgstr[0] "%s ماه"
 
 #: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:249
-#, fuzzy, php-format
-#| msgid "Years"
+#, php-format
 msgid "%s Year"
 msgid_plural "%s Years"
-msgstr[0] "سال‌ها"
+msgstr[0] "%s سال"
 
 #: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Number.php:50
 msgid "B"
@@ -966,7 +966,7 @@ msgstr ""
 msgid "Without %s"
 msgstr "بدون %s"
 
-#: src/Pmpr/Common/Foundation/ORM/Database/Schema/Foreign.php:247
+#: src/Pmpr/Common/Foundation/ORM/Database/Schema/Foreign.php:246
 #, php-format
 msgid "Foreign key %s must end with %s postfix"
 msgstr ""
@@ -982,6 +982,7 @@ msgid "%s Log"
 msgstr ""
 
 #: src/Pmpr/Common/Foundation/ORM/Model/Log.php:40
+#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:36
 msgid "User"
 msgstr "کاربر"
 
@@ -1002,27 +1003,92 @@ msgid "New Value"
 msgstr "مقدار جدید"
 
 #: src/Pmpr/Common/Foundation/ORM/Model/Log.php:88
+#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:74
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:128
 msgid "Created At"
 msgstr "تاریخ ایجاد"
 
-#: src/Pmpr/Common/Foundation/ORM/Model/Metadata.php:26
+#: src/Pmpr/Common/Foundation/ORM/Model/Metadata.php:25
 #, php-format
 msgid "%s Metadata"
 msgstr "متادیتا %s"
 
-#: src/Pmpr/Common/Foundation/ORM/Model/Metadata.php:27
+#: src/Pmpr/Common/Foundation/ORM/Model/Metadata.php:26
 #, php-format
 msgid "%s Meta"
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/ORM/Model/Metadata.php:43
+#: src/Pmpr/Common/Foundation/ORM/Model/Metadata.php:42
 msgid "Meta Key"
 msgstr "کلید متا"
 
-#: src/Pmpr/Common/Foundation/ORM/Model/Metadata.php:48
+#: src/Pmpr/Common/Foundation/ORM/Model/Metadata.php:47
 msgid "Meta Value"
 msgstr "مقدار متا"
+
+#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:24
+#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:25
+msgid "User OTP Logs"
+msgstr "لاگ رمز‌های یکبار مصرف ورود کاربران"
+
+#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:41
+msgid "code"
+msgstr "کد"
+
+#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:46
+msgid "Email OR Mobile"
+msgstr "ایمیل یا موبایل"
+
+#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:52
+msgid "Email"
+msgstr "ایمیل"
+
+#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:53
+msgid "Mobile"
+msgstr "موبایل"
+
+#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:57
+#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:102
+#: vendor/woocommerce/action-scheduler/classes/ActionScheduler_AdminView.php:242
+#: vendor/woocommerce/action-scheduler/classes/ActionScheduler_ListTable.php:97
+msgid "Status"
+msgstr "وضعیت"
+
+#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:58
+#: vendor/woocommerce/action-scheduler/classes/abstracts/ActionScheduler_Store.php:406
+msgid "Pending"
+msgstr "در انتظار بررسی"
+
+#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:59
+msgid "Used"
+msgstr ""
+
+#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:60
+msgid "Expired"
+msgstr ""
+
+#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:61
+#: vendor/woocommerce/action-scheduler/classes/abstracts/ActionScheduler_Store.php:408
+msgid "Failed"
+msgstr "ناموفق"
+
+#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:140
+#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:207
+#, php-format
+msgid "Please try again after %s."
+msgstr "لطفا بعد از %s دوباره تلاش کنید."
+
+#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:315
+msgid "You've entered the wrong OTP too many times. Please request a new code."
+msgstr "تعداد تلاش‌های اشتباه بیش از حد مجاز. لطفاً کد جدیدی دریافت کنید."
+
+#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:323
+msgid "OTP expired"
+msgstr "رمز یکبار مصرف منقضی شده است"
+
+#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:327
+msgid "Incorrect OTP. Please try again."
+msgstr "رمز یکبار مصرف اشتباه است. لطفا دوباره تلاش کنید."
 
 #: src/Pmpr/Common/Foundation/ORM/View/Edit.php:37
 msgid "Sorry, you are not allowed to edit this item."
@@ -1089,8 +1155,6 @@ msgid "Show"
 msgstr "نمایش"
 
 #: src/Pmpr/Common/Foundation/ORM/View/Index.php:174
-#, fuzzy
-#| msgid "Actions"
 msgid "Actions"
 msgstr "عملیات"
 
@@ -1369,12 +1433,6 @@ msgstr "باز"
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:101
 msgid "Closed"
 msgstr "بسته"
-
-#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:102
-#: vendor/woocommerce/action-scheduler/classes/ActionScheduler_AdminView.php:242
-#: vendor/woocommerce/action-scheduler/classes/ActionScheduler_ListTable.php:97
-msgid "Status"
-msgstr "وضعیت"
 
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:106
 msgid "Low"
@@ -1849,20 +1907,16 @@ msgid "Cancel the action now to avoid it being run in future"
 msgstr ""
 
 #: vendor/woocommerce/action-scheduler/classes/ActionScheduler_ListTable.php:144
-#, fuzzy, php-format
-#| msgid "%s year ago"
-#| msgid_plural "%s years ago"
+#, php-format
 msgid "%s year"
 msgid_plural "%s years"
-msgstr[0] "%s سال پیش"
+msgstr[0] "%s سال"
 
 #: vendor/woocommerce/action-scheduler/classes/ActionScheduler_ListTable.php:149
-#, fuzzy, php-format
-#| msgid "%s month ago"
-#| msgid_plural "%s months ago"
+#, php-format
 msgid "%s month"
 msgid_plural "%s months"
-msgstr[0] "%s ماه پیش"
+msgstr[0] "%s ماه"
 
 #: vendor/woocommerce/action-scheduler/classes/ActionScheduler_ListTable.php:154
 #, php-format
@@ -1871,12 +1925,10 @@ msgid_plural "%s weeks"
 msgstr[0] ""
 
 #: vendor/woocommerce/action-scheduler/classes/ActionScheduler_ListTable.php:159
-#, fuzzy, php-format
-#| msgid "%s day ago"
-#| msgid_plural "%s days ago"
+#, php-format
 msgid "%s day"
 msgid_plural "%s days"
-msgstr[0] "%s روز پیش"
+msgstr[0] "%s روز"
 
 #: vendor/woocommerce/action-scheduler/classes/ActionScheduler_ListTable.php:164
 #, fuzzy, php-format
@@ -1887,8 +1939,7 @@ msgid_plural "%s hours"
 msgstr[0] "%s ساعت پیش"
 
 #: vendor/woocommerce/action-scheduler/classes/ActionScheduler_ListTable.php:169
-#, fuzzy, php-format
-#| msgid "%s minute"
+#, php-format
 msgid "%s minute"
 msgid_plural "%s minutes"
 msgstr[0] "%s دقیقه"
@@ -2025,10 +2076,8 @@ msgid "This section shows details of Action Scheduler."
 msgstr ""
 
 #: vendor/woocommerce/action-scheduler/classes/ActionScheduler_wcSystemStatus.php:114
-#, fuzzy
-#| msgid "Version 2"
 msgid "Version:"
-msgstr "نسخه ۲"
+msgstr "نسخه:"
 
 #: vendor/woocommerce/action-scheduler/classes/ActionScheduler_wcSystemStatus.php:118
 #, fuzzy
@@ -2163,8 +2212,6 @@ msgid "Search results for \"%s\""
 msgstr "نتیجه جستجو برای: %s"
 
 #: vendor/woocommerce/action-scheduler/classes/abstracts/ActionScheduler_Abstract_ListTable.php:685
-#, fuzzy
-#| msgid "All"
 msgctxt "status labels"
 msgid "All"
 msgstr "همه"
@@ -2282,19 +2329,9 @@ msgstr ""
 msgid "Complete"
 msgstr "شکایت"
 
-#: vendor/woocommerce/action-scheduler/classes/abstracts/ActionScheduler_Store.php:406
-msgid "Pending"
-msgstr "در انتظار بررسی"
-
 #: vendor/woocommerce/action-scheduler/classes/abstracts/ActionScheduler_Store.php:407
 msgid "In-progress"
 msgstr ""
-
-#: vendor/woocommerce/action-scheduler/classes/abstracts/ActionScheduler_Store.php:408
-#, fuzzy
-#| msgid "Mailer"
-msgid "Failed"
-msgstr "ایمیل"
 
 #: vendor/woocommerce/action-scheduler/classes/abstracts/ActionScheduler_Store.php:409
 #, fuzzy
@@ -2880,9 +2917,6 @@ msgstr ""
 #~ msgid "%s &mdash; Updated!"
 #~ msgstr "%s به روز شد"
 
-#~ msgid "Please Try Again"
-#~ msgstr "لطفا مجدد تلاش کنید"
-
 #, fuzzy
 #~| msgid "Remove Entry"
 #~ msgid "Remove Embed"
@@ -3225,12 +3259,6 @@ msgstr ""
 #~| msgid "Authentication failed."
 #~ msgid "Authorization header malformed."
 #~ msgstr "احراز هویت شکست خورد."
-
-#~ msgid "User not found"
-#~ msgstr "کاربر یافت نشد"
-
-#~ msgid "Email"
-#~ msgstr "ایمیل"
 
 #~ msgid "Profile update successfully."
 #~ msgstr "پروفایل با موفقیت به روز شد."
@@ -5471,11 +5499,6 @@ msgstr ""
 #~ msgid "Username only"
 #~ msgstr "نام کاربری یا ایمیل"
 
-#, fuzzy
-#~| msgid "Email"
-#~ msgid "Email only"
-#~ msgstr "ایمیل"
-
 #~ msgid "Username or Email"
 #~ msgstr "نام کاربری یا ایمیل"
 
@@ -5534,9 +5557,6 @@ msgstr ""
 
 #~ msgid "Search form"
 #~ msgstr "فرم جستجو"
-
-#~ msgid "Shortcode"
-#~ msgstr "شورت‌کد"
 
 #, fuzzy
 #~| msgid "General Setting"
@@ -6529,9 +6549,6 @@ msgstr ""
 
 #~ msgid "Back to %s"
 #~ msgstr "بازگشت به %s"
-
-#~ msgid "Mobile"
-#~ msgstr "موبایل"
 
 #~ msgid "Senior Consultant Rating 3 of the computer system"
 #~ msgstr "مشاور ارشد رتبه ۳ سازمان نظام رایانه‌ای"
