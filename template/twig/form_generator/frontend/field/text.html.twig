@@ -8,10 +8,6 @@
 
 {% block field_body %}
     <input {{ attributes|parse_attrs|raw }}/>
-    {{ parent() }}
-{% endblock %}
-
-{% block after_field %}
     {% if args.floating %}
         {% include get_template('label', _self) with {label: title} %}
     {% endif %}

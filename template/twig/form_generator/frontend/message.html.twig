@@ -1,8 +1,8 @@
 <ul class="pr-field-messages">
-    {% if errors is defined and errors is not empty %}
-        {% for error in errors %}
+    {%- if errors is defined and errors is not empty -%}
+        {%- for error in errors -%}
             {{ render_if_has_content('li', {class: 'pr-field-error'}, error) }}
-        {% endfor %}
-    {% endif %}
+        {%- endfor -%}
+    {%- endif -%}
 </ul>
 
