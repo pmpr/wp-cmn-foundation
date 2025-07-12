@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr Common Foundation\n"
-"POT-Creation-Date: 2025-05-01 16:47+0330\n"
-"PO-Revision-Date: 2025-05-01 16:47+0330\n"
+"POT-Creation-Date: 2025-07-09 12:48+0330\n"
+"PO-Revision-Date: 2025-07-09 12:48+0330\n"
 "Last-Translator: pmpr.dev <pmpr.dev@gmail.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -297,14 +297,13 @@ msgstr "حذف"
 
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Media.php:198
 #: src/Pmpr/Common/Foundation/Frontend/MultistepAware.php:322
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:941
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:984
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:985
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:966
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1009
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1010
 msgid "Title"
 msgstr "عنوان"
 
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Media.php:199
-#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:51
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:82
 msgid "Type"
 msgstr "نوع"
@@ -547,9 +546,9 @@ msgid "Step"
 msgstr "مرحله"
 
 #: src/Pmpr/Common/Foundation/Frontend/MultistepAware.php:327
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:944
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:987
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:988
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:969
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1012
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1013
 msgid "Description"
 msgstr "شرح"
 
@@ -585,16 +584,16 @@ msgstr "شما دسترسی لازم برای مشاهده یا ویرایش ا�
 msgid "%s Page"
 msgstr "صفحه %s"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Error.php:152
+#: src/Pmpr/Common/Foundation/Functions/Helper/Error.php:223
 #, php-format
 msgid "%s is a required parameter."
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Error.php:155
+#: src/Pmpr/Common/Foundation/Functions/Helper/Error.php:226
 msgid "Required parameters not passed."
 msgstr "برخی از پارامترهای ضروری ارسال نشده‌اند."
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Error.php:226
+#: src/Pmpr/Common/Foundation/Functions/Helper/Error.php:302
 msgid "Sorry, there seems to be a problem with the server, please contact us."
 msgstr ""
 
@@ -617,90 +616,90 @@ msgstr "%s را نمی‌توان افزود."
 msgid "File not founded."
 msgstr "کاربر یافت نشد"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:94
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:96
 msgid "You can use these placeholders:"
 msgstr "می توانید از این متن‌های جایگزین استفاده کنید:"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:190
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:192
 msgid "Close"
 msgstr "بستن"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:197
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:199
 msgid "please specify a prefix for for modal"
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:312
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:318
 msgid "Alert"
 msgstr "اعلان"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:357
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:364
 msgid "OK"
 msgstr "باشه"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:361
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:368
 #: vendor/woocommerce/action-scheduler/classes/ActionScheduler_ListTable.php:133
 msgid "Cancel"
 msgstr "انصراف"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:948
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:973
 #, fuzzy
 #| msgid "Background Color"
 msgid "Background"
 msgstr "رنگ پس‌زمینه"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:967
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:992
 msgid "Link To"
 msgstr "لینک به"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:968
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:976
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:993
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1001
 msgid "Post"
 msgstr "نوشته‌"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:969
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:979
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:994
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1004
 msgid "Term"
 msgstr "ترم"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:970
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:982
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:995
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1007
 msgid "URL"
 msgstr "پیوند"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:985
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:988
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:991
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1010
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1013
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1016
 #, php-format
 msgid "You can override %s by this field."
 msgstr "شما ‌می‌توانید %s این مورد را از طریق این فیلد تغییر دهید."
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:990
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:991
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1015
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1016
 msgid "Thumbnail"
 msgstr "تصویر بند انگشتی"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1070
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1095
 #, fuzzy
 #| msgid "Code Text"
 msgid "Action Text"
 msgstr "متن کد"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1074
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1099
 #, fuzzy
 #| msgid "Text of Link"
 msgid "Action Link Type"
 msgstr "متن پیوند"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1075
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1100
 msgid "Internal Link"
 msgstr "لینک داخلی"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1076
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1101
 msgid "External Link"
 msgstr "لینک به بیرون"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1082
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1085
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1107
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1110
 #, fuzzy
 #| msgid "Text of Link"
 msgid "Action Link"
@@ -718,11 +717,11 @@ msgstr "مقدار noopener"
 msgid "Noreferrer"
 msgstr "مقدار noreferrer"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/HTML.php:789
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/HTML.php:851
 msgid "Items"
 msgstr "آیتم‌ها‌"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/HTML.php:792
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/HTML.php:854
 #, php-format
 msgid "Include %s %s"
 msgstr "شامل %s %s"
@@ -754,23 +753,23 @@ msgstr "ابعاد"
 msgid "Back to Homepage"
 msgstr "بازگشت به خانه"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:939
+#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:935
 #, fuzzy
 #| msgid "Sorry, you haven't access to edit this page."
 msgid "You do not have access to perform this operation."
 msgstr "شما دسترسی لازم برای مشاهده یا ویرایش این صفحه را ندارید."
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:944
+#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:940
 #, fuzzy
 #| msgid "Your request is forbidden"
 msgid "Your request is not valid or expired."
 msgstr "درخواست شما ممنوع است"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:961
+#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:957
 msgid "Request is not valid, please reload page and try again."
 msgstr "درخواست شما معتبر نیست، لطفا صفحه را بارگذاری مجدد کنید."
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:1002
+#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:998
 #, php-format
 msgid "Could not use path \"%s\" without slash on the first character."
 msgstr ""
@@ -781,56 +780,70 @@ msgstr ""
 msgid "%s at %s"
 msgstr "%s ساعت %s"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Theme.php:265
+#: src/Pmpr/Common/Foundation/Functions/Helper/Theme.php:266
 #, php-format
 msgid "Search result for: %s"
 msgstr "نتیجه جستجو برای: %s"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Theme.php:268
+#: src/Pmpr/Common/Foundation/Functions/Helper/Theme.php:269
 #: vendor/woocommerce/action-scheduler/classes/abstracts/ActionScheduler_Abstract_ListTable.php:765
 msgid "Search"
 msgstr "جستجو"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:71
+#: src/Pmpr/Common/Foundation/Functions/Helper/Tool.php:216
+msgid "To many request. please try again few minutes later."
+msgstr ""
+
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:72
 #, php-format
 msgid "%s ago"
 msgstr "‏%s پیش"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:234
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:236
 #, php-format
 msgid "%s Minute"
 msgid_plural "%s Minutes"
 msgstr[0] "%s دقیقه"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:237
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:239
 #, php-format
 msgid "%s Hour"
 msgid_plural "%s Hours"
 msgstr[0] "%s ساعت"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:240
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:242
 #, php-format
 msgid "%s Day"
 msgid_plural "%s Days"
 msgstr[0] "%s روز"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:243
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:245
 #, php-format
 msgid "%s Week"
 msgid_plural "%s Weeks"
 msgstr[0] "%s هفته"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:246
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:248
 #, php-format
 msgid "%s Month"
 msgid_plural "%s Months"
 msgstr[0] "%s ماه"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:249
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:251
 #, php-format
 msgid "%s Year"
 msgid_plural "%s Years"
 msgstr[0] "%s سال"
+
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:289
+msgid "This Week"
+msgstr "هفته جاری"
+
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:290
+#, php-format
+msgid "%s week ago"
+msgid_plural "%s weeks ago"
+msgstr[0] "%s هفته پیش"
 
 #: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Number.php:50
 msgid "B"
@@ -982,7 +995,6 @@ msgid "%s Log"
 msgstr ""
 
 #: src/Pmpr/Common/Foundation/ORM/Model/Log.php:40
-#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:36
 msgid "User"
 msgstr "کاربر"
 
@@ -1003,7 +1015,6 @@ msgid "New Value"
 msgstr "مقدار جدید"
 
 #: src/Pmpr/Common/Foundation/ORM/Model/Log.php:88
-#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:74
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:128
 msgid "Created At"
 msgstr "تاریخ ایجاد"
@@ -1025,70 +1036,6 @@ msgstr "کلید متا"
 #: src/Pmpr/Common/Foundation/ORM/Model/Metadata.php:47
 msgid "Meta Value"
 msgstr "مقدار متا"
-
-#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:24
-#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:25
-msgid "User OTP Logs"
-msgstr "لاگ رمز‌های یکبار مصرف ورود کاربران"
-
-#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:41
-msgid "code"
-msgstr "کد"
-
-#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:46
-msgid "Email OR Mobile"
-msgstr "ایمیل یا موبایل"
-
-#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:52
-msgid "Email"
-msgstr "ایمیل"
-
-#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:53
-msgid "Mobile"
-msgstr "موبایل"
-
-#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:57
-#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:102
-#: vendor/woocommerce/action-scheduler/classes/ActionScheduler_AdminView.php:242
-#: vendor/woocommerce/action-scheduler/classes/ActionScheduler_ListTable.php:97
-msgid "Status"
-msgstr "وضعیت"
-
-#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:58
-#: vendor/woocommerce/action-scheduler/classes/abstracts/ActionScheduler_Store.php:406
-msgid "Pending"
-msgstr "در انتظار بررسی"
-
-#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:59
-msgid "Used"
-msgstr ""
-
-#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:60
-msgid "Expired"
-msgstr ""
-
-#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:61
-#: vendor/woocommerce/action-scheduler/classes/abstracts/ActionScheduler_Store.php:408
-msgid "Failed"
-msgstr "ناموفق"
-
-#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:140
-#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:207
-#, php-format
-msgid "Please try again after %s."
-msgstr "لطفا بعد از %s دوباره تلاش کنید."
-
-#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:315
-msgid "You've entered the wrong OTP too many times. Please request a new code."
-msgstr "تعداد تلاش‌های اشتباه بیش از حد مجاز. لطفاً کد جدیدی دریافت کنید."
-
-#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:323
-msgid "OTP expired"
-msgstr "رمز یکبار مصرف منقضی شده است"
-
-#: src/Pmpr/Common/Foundation/ORM/Model/UserOTP.php:327
-msgid "Incorrect OTP. Please try again."
-msgstr "رمز یکبار مصرف اشتباه است. لطفا دوباره تلاش کنید."
 
 #: src/Pmpr/Common/Foundation/ORM/View/Edit.php:37
 msgid "Sorry, you are not allowed to edit this item."
@@ -1434,6 +1381,12 @@ msgstr "باز"
 msgid "Closed"
 msgstr "بسته"
 
+#: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:102
+#: vendor/woocommerce/action-scheduler/classes/ActionScheduler_AdminView.php:242
+#: vendor/woocommerce/action-scheduler/classes/ActionScheduler_ListTable.php:97
+msgid "Status"
+msgstr "وضعیت"
+
 #: src/Pmpr/Common/Foundation/Plugin/Ticket/Model/Ticket.php:106
 msgid "Low"
 msgstr "پایین"
@@ -1511,7 +1464,7 @@ msgstr "صفحه درخواستی شما وجود ندارد."
 msgid "There are not %s yet."
 msgstr "هنوز %s وجود ندارد."
 
-#: src/Pmpr/Common/Foundation/Template/Twig/Action.php:890
+#: src/Pmpr/Common/Foundation/Template/Twig/Action.php:1006
 msgid "User Avatar"
 msgstr "آواتار کاربر"
 
@@ -1527,54 +1480,54 @@ msgstr "دسترسی با موفقیت اعطا شد!"
 msgid "Access could not be granted!"
 msgstr "دسترسی داده نشد!"
 
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:78
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:79
 msgid "Google API Credential"
 msgstr "اطلاعات حساب گوگل API"
 
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:81
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:82
 msgid "Grant Access Status"
 msgstr "وضعیت دسترسی"
 
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:86
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:87
 msgid "Authorized redirect URI"
 msgstr "URI تغییر مسیر مجاز"
 
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:87
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:88
 msgid "Use this url as authorized redirect uri in google api console."
 msgstr ""
 "از این url به عنوان authorized redirect uri در google api console استفاده "
 "کنید."
 
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:91
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:126
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:92
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:127
 msgid "Client ID"
 msgstr "شناسه مشتری (Client ID)"
 
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:95
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:126
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:96
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:127
 msgid "Client Secret"
 msgstr "کلید مشتری (Client Secret)"
 
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:110
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:123
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:111
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:124
 msgid "Not connected."
 msgstr "وصل نشده."
 
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:112
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:113
 #, php-format
 msgid "Please %s to grant access permission."
 msgstr "لطفا برای اعطای مجوز دسترسی %s."
 
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:113
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:114
 msgid "Click Here"
 msgstr "اینجا کلیک کنید"
 
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:125
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:126
 #, php-format
 msgid "Please fill %s and %s and save settings."
 msgstr "لطفا %s و %s را پر کرده و تنظمات را ذخیره کنید."
 
-#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:132
+#: src/Pmpr/Common/Foundation/ThirdParty/Google/SettingSegment.php:133
 msgid "Connected"
 msgstr ""
 
@@ -2329,9 +2282,17 @@ msgstr ""
 msgid "Complete"
 msgstr "شکایت"
 
+#: vendor/woocommerce/action-scheduler/classes/abstracts/ActionScheduler_Store.php:406
+msgid "Pending"
+msgstr "در انتظار بررسی"
+
 #: vendor/woocommerce/action-scheduler/classes/abstracts/ActionScheduler_Store.php:407
 msgid "In-progress"
 msgstr ""
+
+#: vendor/woocommerce/action-scheduler/classes/abstracts/ActionScheduler_Store.php:408
+msgid "Failed"
+msgstr "ناموفق"
 
 #: vendor/woocommerce/action-scheduler/classes/abstracts/ActionScheduler_Store.php:409
 #, fuzzy
@@ -2597,6 +2558,35 @@ msgstr ""
 #, php-format
 msgid "Caught exception while cancelling action \"%1$s\": %2$s"
 msgstr ""
+
+#~ msgid "User OTP Logs"
+#~ msgstr "لاگ رمز‌های یکبار مصرف ورود کاربران"
+
+#~ msgid "code"
+#~ msgstr "کد"
+
+#~ msgid "Email OR Mobile"
+#~ msgstr "ایمیل یا موبایل"
+
+#~ msgid "Email"
+#~ msgstr "ایمیل"
+
+#~ msgid "Mobile"
+#~ msgstr "موبایل"
+
+#, php-format
+#~ msgid "Please try again after %s."
+#~ msgstr "لطفا بعد از %s دوباره تلاش کنید."
+
+#~ msgid ""
+#~ "You've entered the wrong OTP too many times. Please request a new code."
+#~ msgstr "تعداد تلاش‌های اشتباه بیش از حد مجاز. لطفاً کد جدیدی دریافت کنید."
+
+#~ msgid "OTP expired"
+#~ msgstr "رمز یکبار مصرف منقضی شده است"
+
+#~ msgid "Incorrect OTP. Please try again."
+#~ msgstr "رمز یکبار مصرف اشتباه است. لطفا دوباره تلاش کنید."
 
 #~ msgid "Name: %s"
 #~ msgstr "نام:‌ %s"
@@ -5939,10 +5929,6 @@ msgstr ""
 #~ msgid "an hour ago"
 #~ msgid_plural "%s hours ago"
 #~ msgstr[0] "%s ساعت پیش"
-
-#~ msgid "a week ago"
-#~ msgid_plural "%s weeks ago"
-#~ msgstr[0] "%s هفته پیش"
 
 #~ msgid "Default Name"
 #~ msgstr "نام پیشفرض"
