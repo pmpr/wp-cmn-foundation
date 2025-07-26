@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             68821f1d309d2             |
+    |             68855d3fd4fab             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\FormGenerator\Backend\Setting; use Pmpr\Common\Foundation\FormGenerator\Backend\Component\Component; use Pmpr\Common\Foundation\FormGenerator\Backend\Traits\ButtonsTrait; use Pmpr\Common\Foundation\FormGenerator\Backend\Traits\SegmentsTrait; use Pmpr\Common\Foundation\FormGenerator\Backend\Traits\SettingTrait; use Pmpr\Common\Foundation\Traits\CacheTrait; class AjaxSetting extends Component { use CacheTrait, ButtonsTrait, SettingTrait, SegmentsTrait; public function qiccuiwooiquycsg() { $this->kwcoiysqqkqsugqo(); parent::qiccuiwooiquycsg(); } }
