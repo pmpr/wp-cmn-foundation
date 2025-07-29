@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             68874836a5b5c             |
+    |             6888e9932f010             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Container; abstract class CoverInitiator extends ComponentInitiator { public function ikcgmcycisiccyuc() { $this->canRunSetup = true; } }
