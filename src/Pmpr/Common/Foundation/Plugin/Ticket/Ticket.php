@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             688a0697168b3             |
+    |             688b675cde12a             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Plugin\Ticket; use Pmpr\Common\Foundation\Plugin\Ticket\Model\Request; use Pmpr\Common\Foundation\Plugin\Ticket\Model\Response; use Pmpr\Common\Foundation\Plugin\Ticket\Model\Ticket as TicketModel; use Pmpr\Common\Foundation\Plugin\Ticket\REST\REST; use Pmpr\Common\Foundation\Plugin\Ticket\Traits\SettingTrait; class Ticket extends Common { use SettingTrait; public function mameiwsayuyquoeq() { $owaoeyikmqaeegma = $this->caokeucsksukesyo()->owicscwgeuqcqaig(); if ($owaoeyikmqaeegma->awumyiewiaosiyyy()) { TicketModel::symcgieuakksimmu(); } if ($owaoeyikmqaeegma->gimisysaiasieees()) { REST::symcgieuakksimmu(); } if ($owaoeyikmqaeegma->mcgoysmkqsqooceq(Ajax::wiysygukkaksueso)) { Ajax::ksyueceqagwomguk(); } } public function wigskegsqequoeks() { $this->qcsmikeggeemccuu('admin_init', [$this, 'yeyiguyegmmyusea']); $this->qcsmikeggeemccuu(Process::kwqsoeywkaegiuqe, [$this, 'eeqsymyiuqayuuwu'])->qcsmikeggeemccuu(Process::gikmesasuuecmiuo, [$this, 'eeqsymyiuqayuuwu']); $this->waqewsckuayqguos('plugin_ticket_render_conversation', [$this, 'mkeeosiimgoyiayo']); } public function mkeeosiimgoyiayo($iiwuoccgisuaoaka) { echo $this->umqeyekmoagusaiq($iiwuoccgisuaoaka); } public function yeyiguyegmmyusea() { Process::symcgieuakksimmu()->qkwwakswqmiecgcs(); } public function eeqsymyiuqayuuwu() { if ($qiouiwasaauyaaue = API::symcgieuakksimmu()->tkgawykgecmsaeis()) { $this->caokeucsksukesyo()->eiwcuqigayigimak()->csucgayeuwoeeuuw($qiouiwasaauyaaue, self::iwkmsgmiukksyamy); } } }
