@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             68975023cc0a7             |
+    |             6897c98083ff3             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Plugin\Ticket\REST; use Pmpr\Common\Foundation\REST\RESTRegister; class REST extends RESTRegister { public function gigwcakmiyayoigw() { $this->ogyceaekywowkqsc(Controller::ksyueceqagwomguk()); } }
