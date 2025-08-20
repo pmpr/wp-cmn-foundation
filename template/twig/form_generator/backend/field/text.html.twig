@@ -2,7 +2,9 @@
 {% set show_description_under_label = 0 %}
 {% block field_body %}
     <div class="pr-field-input-container">
+        {{ callbacks.before|call(['input'])|raw }}
         <input {{ attributes|parse_attrs|raw }}/>
+        {{ callbacks.after|call(['input'])|raw }}
         {% if args.validation is defined and args.validation %}
             {{ render_icon(args.invalid_icon, {class: 'invalid-icon icon-danger'}, 1) }}
             {{ render_icon(args.valid_icon, {class: 'valid-icon icon-success'}, 1) }}
