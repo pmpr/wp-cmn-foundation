@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr Common Foundation\n"
-"POT-Creation-Date: 2025-07-09 12:48+0330\n"
-"PO-Revision-Date: 2025-07-09 12:48+0330\n"
+"POT-Creation-Date: 2025-09-11 13:42+0330\n"
+"PO-Revision-Date: 2025-09-11 13:42+0330\n"
 "Last-Translator: pmpr.dev <pmpr.dev@gmail.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -10,14 +10,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.7\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: index.php\n"
 "X-Source-Language: en\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPathExcluded-2: vendor\n"
 "X-Poedit-SearchPathExcluded-3: asset\n"
 "X-Poedit-SearchPathExcluded-4: build\n"
@@ -107,8 +106,8 @@ msgid "%s draft updated."
 msgstr "%s به روز شد"
 
 #: src/Pmpr/Common/Foundation/CPT.php:451
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:49
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:53
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:100
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:104
 #, php-format
 msgid "View %s"
 msgstr "مشاهده %s"
@@ -262,7 +261,7 @@ msgstr ""
 "هستند، لطفا خطا‌ها را اصلاح کرده و دوباره امتحان کنید."
 
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Collection.php:223
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:44
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:95
 #, php-format
 msgid "Add %s"
 msgstr "افزودن %s"
@@ -297,9 +296,9 @@ msgstr "حذف"
 
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Media.php:198
 #: src/Pmpr/Common/Foundation/Frontend/MultistepAware.php:322
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:966
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1009
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1010
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:969
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1012
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1013
 msgid "Title"
 msgstr "عنوان"
 
@@ -317,13 +316,13 @@ msgstr "انتخاب %s"
 msgid "Use This File"
 msgstr "استفاده از این فایل"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Select.php:389
-msgid "Choose an option..."
-msgstr "یک گزینه را انتخاب کنید..."
-
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Select.php:390
 msgid "Deselect"
 msgstr "لغو انتخاب"
+
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Select.php:394
+msgid "Choose an option..."
+msgstr "یک گزینه را انتخاب کنید..."
 
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Selector/Level.php:28
 msgid "Back Previous Level"
@@ -490,6 +489,15 @@ msgstr "ساعت"
 msgid "No Limit"
 msgstr "بدون محدودیت"
 
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Shortcode/Shortcode.php:41
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Shortcode/Shortcode.php:42
+msgid "Insert Shortcode"
+msgstr "افزودن شورت‌کد"
+
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Shortcode/Shortcode.php:43
+msgid "Update Shortcode"
+msgstr "به روزرسانی شورت‌کد"
+
 #: src/Pmpr/Common/Foundation/FormGenerator/Backend/Traits/SettingTrait.php:84
 msgid "Unfortunately Your license key is not valid. Your changes not saved."
 msgstr "متأسفانه کلید مجوز شما معتبر نیست. تغییرات شما ذخیره نشد."
@@ -520,7 +528,7 @@ msgstr "مرحله بعد"
 msgid "Previous Step"
 msgstr "مرحله قبلی"
 
-#: src/Pmpr/Common/Foundation/Foundation.php:27
+#: src/Pmpr/Common/Foundation/Foundation.php:28
 msgid "Foundation"
 msgstr "زیرساخت"
 
@@ -546,9 +554,9 @@ msgid "Step"
 msgstr "مرحله"
 
 #: src/Pmpr/Common/Foundation/Frontend/MultistepAware.php:327
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:969
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1012
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1013
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:972
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1015
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1016
 msgid "Description"
 msgstr "شرح"
 
@@ -560,40 +568,40 @@ msgstr "آیکون"
 msgid "Next Step Button Title"
 msgstr "متن دکمه مرحله بعد"
 
-#: src/Pmpr/Common/Foundation/Frontend/Page.php:80
+#: src/Pmpr/Common/Foundation/Frontend/Page.php:81
 #, php-format
 msgid "Setting of %s"
 msgstr "تنظیمات %s"
 
-#: src/Pmpr/Common/Foundation/Frontend/Page.php:156
+#: src/Pmpr/Common/Foundation/Frontend/Page.php:157
 msgid "Page Settings"
 msgstr "تنظیمات صفحه"
 
-#: src/Pmpr/Common/Foundation/Frontend/Page.php:166
+#: src/Pmpr/Common/Foundation/Frontend/Page.php:167
 msgid "Go to Settings"
 msgstr "رفتن به تنظیمات"
 
-#: src/Pmpr/Common/Foundation/Frontend/Page.php:178
-#: src/Pmpr/Common/Foundation/Page/Page.php:455
+#: src/Pmpr/Common/Foundation/Frontend/Page.php:179
+#: src/Pmpr/Common/Foundation/Page/Page.php:460
 msgid "Sorry, you haven't access to edit this page."
 msgstr "شما دسترسی لازم برای مشاهده یا ویرایش این صفحه را ندارید."
 
-#: src/Pmpr/Common/Foundation/Frontend/Page.php:347
-#: src/Pmpr/Common/Foundation/Page/Page.php:405
+#: src/Pmpr/Common/Foundation/Frontend/Page.php:348
+#: src/Pmpr/Common/Foundation/Page/Page.php:410
 #, php-format
 msgid "%s Page"
 msgstr "صفحه %s"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Error.php:223
+#: src/Pmpr/Common/Foundation/Functions/Helper/Error.php:222
 #, php-format
 msgid "%s is a required parameter."
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Error.php:226
+#: src/Pmpr/Common/Foundation/Functions/Helper/Error.php:225
 msgid "Required parameters not passed."
 msgstr "برخی از پارامترهای ضروری ارسال نشده‌اند."
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Error.php:302
+#: src/Pmpr/Common/Foundation/Functions/Helper/Error.php:308
 msgid "Sorry, there seems to be a problem with the server, please contact us."
 msgstr ""
 
@@ -610,7 +618,7 @@ msgstr ""
 msgid "%s is not readable."
 msgstr "%s را نمی‌توان افزود."
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/File.php:756
+#: src/Pmpr/Common/Foundation/Functions/Helper/File.php:758
 #, fuzzy
 #| msgid "User not found"
 msgid "File not founded."
@@ -641,65 +649,65 @@ msgstr "باشه"
 msgid "Cancel"
 msgstr "انصراف"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:973
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:976
 #, fuzzy
 #| msgid "Background Color"
 msgid "Background"
 msgstr "رنگ پس‌زمینه"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:992
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:995
 msgid "Link To"
 msgstr "لینک به"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:993
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1001
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:996
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1004
 msgid "Post"
 msgstr "نوشته‌"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:994
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1004
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:997
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1007
 msgid "Term"
 msgstr "ترم"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:995
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1007
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:998
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1010
 msgid "URL"
 msgstr "پیوند"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1010
 #: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1013
 #: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1016
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1019
 #, php-format
 msgid "You can override %s by this field."
 msgstr "شما ‌می‌توانید %s این مورد را از طریق این فیلد تغییر دهید."
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1015
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1016
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1018
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1019
 msgid "Thumbnail"
 msgstr "تصویر بند انگشتی"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1095
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1098
 #, fuzzy
 #| msgid "Code Text"
 msgid "Action Text"
 msgstr "متن کد"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1099
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1102
 #, fuzzy
 #| msgid "Text of Link"
 msgid "Action Link Type"
 msgstr "متن پیوند"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1100
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1103
 msgid "Internal Link"
 msgstr "لینک داخلی"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1101
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1104
 msgid "External Link"
 msgstr "لینک به بیرون"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1107
 #: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1110
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1113
 #, fuzzy
 #| msgid "Text of Link"
 msgid "Action Link"
@@ -753,23 +761,23 @@ msgstr "ابعاد"
 msgid "Back to Homepage"
 msgstr "بازگشت به خانه"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:935
+#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:938
 #, fuzzy
 #| msgid "Sorry, you haven't access to edit this page."
 msgid "You do not have access to perform this operation."
 msgstr "شما دسترسی لازم برای مشاهده یا ویرایش این صفحه را ندارید."
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:940
+#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:943
 #, fuzzy
 #| msgid "Your request is forbidden"
 msgid "Your request is not valid or expired."
 msgstr "درخواست شما ممنوع است"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:957
+#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:960
 msgid "Request is not valid, please reload page and try again."
 msgstr "درخواست شما معتبر نیست، لطفا صفحه را بارگذاری مجدد کنید."
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:998
+#: src/Pmpr/Common/Foundation/Functions/Helper/Server.php:1001
 #, php-format
 msgid "Could not use path \"%s\" without slash on the first character."
 msgstr ""
@@ -790,7 +798,7 @@ msgstr "نتیجه جستجو برای: %s"
 msgid "Search"
 msgstr "جستجو"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Tool.php:216
+#: src/Pmpr/Common/Foundation/Functions/Helper/Tool.php:229
 msgid "To many request. please try again few minutes later."
 msgstr ""
 
@@ -835,11 +843,11 @@ msgid "%s Year"
 msgid_plural "%s Years"
 msgstr[0] "%s سال"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:289
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:360
 msgid "This Week"
 msgstr "هفته جاری"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:290
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:361
 #, php-format
 msgid "%s week ago"
 msgid_plural "%s weeks ago"
@@ -1075,7 +1083,7 @@ msgid "Add"
 msgstr "افزودن"
 
 #: src/Pmpr/Common/Foundation/ORM/View/Edit.php:215
-#: src/Pmpr/Common/Foundation/ORM/View/Edit.php:254
+#: src/Pmpr/Common/Foundation/ORM/View/Edit.php:253
 msgid "Update"
 msgstr "به روزرسانی"
 
@@ -1136,33 +1144,33 @@ msgid "No change on form's data detected."
 msgstr ""
 
 #: src/Pmpr/Common/Foundation/ORM/View/Index.php:586
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:47
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:98
 #, php-format
 msgid "Edit %s"
 msgstr "ویرایش %s"
 
-#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:190
+#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:193
 #, php-format
 msgid "Select Item #%d"
 msgstr "انتخاب آیتم #%d"
 
-#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:191
+#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:194
 #, php-format
 msgid "&#8220;Item #%d&#8221; is locked"
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:226
+#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:229
 #, fuzzy, php-format
 #| msgid "Choice Order by"
 msgid "Table Order by %s"
 msgstr "انتخاب پارامتر مرتب سازی"
 
-#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:357
+#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:360
 #, php-format
 msgid "Edit \"%s\""
 msgstr "ویرایش: %s"
 
-#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:365
+#: src/Pmpr/Common/Foundation/ORM/View/ListTable.php:368
 msgid "Show more details"
 msgstr "نمایش جزئیات بیشتر"
 
@@ -1464,7 +1472,7 @@ msgstr "صفحه درخواستی شما وجود ندارد."
 msgid "There are not %s yet."
 msgstr "هنوز %s وجود ندارد."
 
-#: src/Pmpr/Common/Foundation/Template/Twig/Action.php:1006
+#: src/Pmpr/Common/Foundation/Template/Twig/Action.php:1004
 msgid "User Avatar"
 msgstr "آواتار کاربر"
 
@@ -1531,154 +1539,154 @@ msgstr "لطفا %s و %s را پر کرده و تنظمات را ذخیره ک�
 msgid "Connected"
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:45
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:96
 #, php-format
 msgid "%s archives"
 msgstr "آرشیو %s"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:46
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:64
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:97
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:115
 #, php-format
 msgid "New %s"
 msgstr "افزودن %s"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:50
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:101
 #, php-format
 msgid "All %s"
 msgstr "همه %s"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:51
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:102
 #, php-format
 msgid "No %s found."
 msgstr "%s یافت نشد."
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:52
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:103
 #, php-format
 msgid "%s attributes"
 msgstr "ویژگی‌های %s"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:54
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:105
 #, php-format
 msgid "%s list"
 msgstr "لیست %s"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:56
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:107
 #, php-format
 msgid "Update %s"
 msgstr "به روز رسانی %s"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:57
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:108
 #, php-format
 msgid "Remove %s"
 msgstr "حذف %s"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:58
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:109
 #, php-format
 msgid "Search %s"
 msgstr "جستجوی %s"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:59
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:110
 #, php-format
 msgid "Add New %s"
 msgstr "افزودن %s جدید"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:60
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:111
 #, php-format
 msgid "Parent %s"
 msgstr "والد %s"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:61
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:112
 #, php-format
 msgid "%s updated"
 msgstr "%s به روز شد"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:62
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:113
 #, php-format
 msgid "Popular %s"
 msgstr "محبوب‌ترین %s"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:65
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:116
 #, php-format
 msgid "%s published"
 msgstr "%s منشتر شد"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:66
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:117
 #, php-format
 msgid "%s scheduled"
 msgstr "%s زمانبندی شد"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:67
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:118
 #, php-format
 msgid "%s image"
 msgstr "تصویر %s"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:69
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:120
 #, php-format
 msgid "Put into %s"
 msgstr "افزودن به %s"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:70
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:121
 #, php-format
 msgid "Filter %s list"
 msgstr "فیلتر لیست %s"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:71
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:122
 #, php-format
 msgid "Parent %s:"
 msgstr "والد %s:"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:72
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:123
 #, php-format
 msgid "Set %s image"
 msgstr "تنظیم %s تصویر"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:73
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:124
 #, php-format
 msgid "No %s found in Trash."
 msgstr "%s در زباله‌دان یافت نشد."
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:74
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:125
 #, php-format
 msgid "Use as %s image"
 msgstr "استفاده از %s به عنوان تصویر"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:75
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:126
 #, php-format
 msgid "Add or remove %s"
 msgstr "افزودن یا حذف %s"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:76
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:127
 #, fuzzy, php-format
 #| msgid "Clear this %s"
 msgid "Uploaded to this %s"
 msgstr "حذف این %s"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:77
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:128
 #, php-format
 msgid "Remove %s image"
 msgstr "حذف تصویر %s"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:78
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:129
 #, php-format
 msgid "%s pagination"
 msgstr "%s صفحه بندی"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:79
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:130
 #, php-format
 msgid "Choose from the most used %s"
 msgstr "انتخاب از بین %s بیشتر انتخاب شده"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:80
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:131
 #, php-format
 msgid "%s reverted to draft"
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:81
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:132
 #, php-format
 msgid "%s published privately"
 msgstr "%s به صورت خصوصی منتشر شد"
 
-#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:82
+#: src/Pmpr/Common/Foundation/Traits/LabelsTrait.php:133
 #, php-format
 msgid "Separate %s with commas"
 msgstr "%s را با کاما جدا کنید"
@@ -2636,9 +2644,6 @@ msgstr ""
 #~ msgid "Save License"
 #~ msgstr "ذخیره مجوز"
 
-#~ msgid "Insert Shortcode"
-#~ msgstr "افزودن شورت‌کد"
-
 #~ msgid "YES"
 #~ msgstr "بله"
 
@@ -3203,9 +3208,6 @@ msgstr ""
 
 #~ msgid "Dynamic Data"
 #~ msgstr "داده انتخابی"
-
-#~ msgid "Close Shortcode"
-#~ msgstr "بستن شورتکد"
 
 #~ msgid "Required parameters is missing for generate nonce"
 #~ msgstr "داده‌های مورد نیاز برای ایجاد nonce یافت نشد"
@@ -6840,8 +6842,8 @@ msgstr ""
 #~ msgstr "رفتار ناپسند"
 
 #~ msgid ""
-#~ "Use aspect ratio based image URLs like http://example.com/upload/1x1/image."
-#~ "jpg"
+#~ "Use aspect ratio based image URLs like http://example.com/upload/1x1/"
+#~ "image.jpg"
 #~ msgstr ""
 #~ "از نسبت‌های طول به عرض رایج تصویر در آدرس دهی تصاویر استفاده کن مانند "
 #~ "http://example.com/upload/1x1/image.jpg"

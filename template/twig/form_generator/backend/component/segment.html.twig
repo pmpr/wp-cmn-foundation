@@ -1,8 +1,8 @@
 {% set class_prefix = 'pr-segment-' %}
 <div class="{{ class_prefix|esc_attr }}header">
-    {{ render_icon(icon, {class: 'icon-xl mr-4 centered-svg'}, 1) }}
+    {{ render_icon(icon, {class: class_prefix ~ 'icon icon-xl mr-4 centered-svg'}, 1) }}
     <div>
-        <h2 class="pr-title-level-1">{{ title|raw }}</h2>
+        <h2 class="{{ class_prefix|esc_attr }}title pr-title-level-1">{{ title|raw }}</h2>
         <div class="{{ class_prefix|esc_attr }}description">{{ description|raw }}</div>
     </div>
 </div>

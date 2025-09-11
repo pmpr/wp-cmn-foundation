@@ -23,7 +23,7 @@
             } %}
                 {% block after_content %}
                     {% if buttons is not empty %}
-                        <div class="{{ class_prefix }}actions">
+                        <div class="pr-panel-actions">
                             {% include get_template('../../fields', _self) with {
                                 fields: buttons
                             } %}

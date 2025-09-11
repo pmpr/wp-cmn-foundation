@@ -1,40 +1,82 @@
-{% set class_prefix = 'pr-panel-' %}
+{% set class_prefix = 'pr-segment-' %}
 
-<div class="{{ class_prefix }}segments {{ class_prefix }}{% if vertical|default(0) %}vertical{% else %}horizontal{% endif %}">
-    <header class="{{ class_prefix }}header">
-        <nav class="{{ class_prefix }}header-nav">
-            {% for segment_id, segment in segments %}
-
-                {% set is_segment_active = ((not server_side or current_segment is empty) and loop.first)
-                    or (server_side and segment_id is same as(current_segment)) %}
-
-                <a href="{% if not server_side %}#{{ class_prefix }}segment-{{ segment_id }}{% else %}{{ segment|call('getLink', id) }}{% endif %}"
-                   class="{{ class_prefix }}nav-item{% if not server_side %} pr-tab-link{% endif %}{% if is_segment_active %} is-active{% endif %}"
-                   id="{{ class_prefix }}nav-item-{{ segment_id }}">
-                    {{ render_icon(segment|call('getIcon'), {}, 1) }}
-                    <div class="{{ class_prefix }}nav-item-summary">
-                        <div class="{{ class_prefix }}nav-item-title">{{ segment|call('getTitle')|raw }}</div>
-                        {{ render_if_has_content('div', {class: class_prefix ~ 'nav-item-description'}, segment|call('getDescription')) }}
-                    </div>
-                </a>
-            {% endfor %}
-        </nav>
-    </header>
-    <section class="{{ class_prefix }}content">
-
+<div class="{{ class_prefix }}wrapper {{ class_prefix }}{% if vertical|default(0) %}vertical{% else %}horizontal{% endif %}">
+    <nav class="{{ class_prefix }}nav pr-tabs">
         {% for segment_id, segment in segments %}
 
+            {% set hasSegment = segment|call('hasSegment') %}
             {% set is_segment_active = ((not server_side or current_segment is empty) and loop.first)
                 or (server_side and segment_id is same as(current_segment)) %}
 
-            {% if not server_side or current_segment is same as(segment_id) %}
-                <div class="{{ class_prefix }}segment pr-tab-content{% if is_segment_active %} is-active{% endif %}{% if segment|call('getArg', 'full') %} is-full{% endif %} {{ segment|call('getArg', 'container_class') }}"
-                     id="{{ class_prefix }}segment-{{ segment_id }}">
-                    {{ segment|call('render')|raw }}
+            <a href="{% if hasSegment %}#{{ class_prefix }}{{ segment_id }}-children{% elseif not server_side %}#{{ class_prefix }}{{ segment_id }}{% else %}{{ segment|call('getLink', id) }}{% endif %}"
+               class="{{ class_prefix }}nav-item{% if not server_side and not hasSegment %} pr-tab-link{% endif %}{% if hasSegment %} pr-tab-parent{% endif %}{% if is_segment_active %} is-active{% endif %}"
+               id="{{ class_prefix }}nav-item-{{ segment_id }}" data-name="{{ segment|call('getId')|esc_attr }}">
+                {{ render_icon(segment|call('getIcon'), {class: class_prefix ~ 'icon'}, 1) }}
+                <div class="{{ class_prefix }}nav-item-summary">
+                    <div class="{{ class_prefix }}nav-item-title">{{ segment|call('getTitle')|raw }}</div>
+                    {{ render_if_has_content('div', {class: class_prefix ~ 'nav-item-description'}, segment|call('getDescription')) }}
                 </div>
-                {% if server_side %}
-                    {% break %}
+                {% if hasSegment %}
+                    {{ render_icon('fasm/6/set/angle-left', {class: 'icon-sm angle-icon'}) }}
                 {% endif %}
+            </a>
+
+            {% if hasSegment %}
+                <ul class="{{ class_prefix }}nav-children pr-tab-children{% if is_segment_active %} is-active{% endif %}"
+                    id="{{ class_prefix }}{{ segment_id }}-children">
+                    {% for child_id, child in segment|call('getSegments') %}
+                        {% set is_child_active = ((not server_side or current_segment is empty) and loop.first)
+                            or (server_side and segment_id is same as(current_segment)) %}
+
+                        <li class="{{ class_prefix }}nav-child-wrapper pr-tab-child-wrapper">
+                            <a href="{% if not server_side %}#{{ class_prefix }}{{ child_id }}{% else %}{{ child|call('getLink', id) }}{% endif %}"
+                               class="{{ class_prefix }}nav-item child{% if not server_side %} pr-tab-child pr-tab-link{% endif %}{% if is_segment_active and is_child_active %} is-active{% endif %}"
+                               id="{{ class_prefix }}nav-item-{{ child_id }}" data-name="{{ child|call('getId')|esc_attr }}">
+                                {{ render_icon(child|call('getIcon'), {class: class_prefix ~ 'icon'}, 1) }}
+                                <div class="{{ class_prefix }}nav-item-summary">
+                                    <div class="{{ class_prefix }}nav-item-title">{{ child|call('getTitle')|raw }}</div>
+                                    {{ render_if_has_content('div', {class: class_prefix ~ 'nav-item-description'}, child|call('getDescription')) }}
+                                </div>
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endfor %}
+    </nav>
+    <section class="{{ class_prefix }}contents">
+
+        {% for segment_id, segment in segments %}
+
+            {% set hasSegment = segment|call('hasSegment') %}
+            {% set is_segment_active = ((not server_side or current_segment is empty) and loop.first)
+                or (server_side and segment_id is same as(current_segment)) %}
+
+            {% if not hasSegment %}
+                {% if not server_side or current_segment is same as(segment_id) %}
+                    <div class="pr-segment pr-tab-content{% if is_segment_active %} is-active{% endif %}{% if segment|call('getArg', 'full') %} is-full{% endif %} {{ segment|call('getArg', 'container_class') }}"
+                         id="{{ class_prefix }}{{ segment_id }}">
+                        {{ segment|call('render')|raw }}
+                    </div>
+                    {% if server_side %}
+                        {% break %}
+                    {% endif %}
+                {% endif %}
+            {% else %}
+                {% for child_id, child in segment|call('getSegments') %}
+                    {% set is_child_active = ((not server_side or current_segment is empty) and loop.first)
+                        or (server_side and child_id is same as(current_segment)) %}
+                    {% if not server_side or current_segment is same as(segment_id) %}
+                        <div class="pr-segment pr-tab-content{% if is_segment_active and is_child_active %} is-active{% endif %}{% if child|call('getArg', 'full') %} is-full{% endif %} {{ child|call('getArg', 'container_class') }}"
+                             id="{{ class_prefix }}{{ child_id }}">
+                            {{ child|call('render')|raw }}
+                        </div>
+                        {% if server_side %}
+                            {% break %}
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+
             {% endif %}
         {% endfor %}
         {% block after_content %}
