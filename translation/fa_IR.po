@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pmpr Common Foundation\n"
-"POT-Creation-Date: 2025-09-11 13:42+0330\n"
-"PO-Revision-Date: 2025-09-11 13:42+0330\n"
+"POT-Creation-Date: 2025-09-27 15:01+0330\n"
+"PO-Revision-Date: 2025-09-27 15:01+0330\n"
 "Last-Translator: pmpr.dev <pmpr.dev@gmail.com>\n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -316,11 +316,11 @@ msgstr "انتخاب %s"
 msgid "Use This File"
 msgstr "استفاده از این فایل"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Select.php:390
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Select.php:391
 msgid "Deselect"
 msgstr "لغو انتخاب"
 
-#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Select.php:394
+#: src/Pmpr/Common/Foundation/FormGenerator/Backend/Field/Select.php:395
 msgid "Choose an option..."
 msgstr "یک گزینه را انتخاب کنید..."
 
@@ -568,29 +568,35 @@ msgstr "آیکون"
 msgid "Next Step Button Title"
 msgstr "متن دکمه مرحله بعد"
 
-#: src/Pmpr/Common/Foundation/Frontend/Page.php:81
-#, php-format
-msgid "Setting of %s"
-msgstr "تنظیمات %s"
-
-#: src/Pmpr/Common/Foundation/Frontend/Page.php:157
+#: src/Pmpr/Common/Foundation/Frontend/Page.php:99
 msgid "Page Settings"
 msgstr "تنظیمات صفحه"
 
-#: src/Pmpr/Common/Foundation/Frontend/Page.php:167
-msgid "Go to Settings"
-msgstr "رفتن به تنظیمات"
-
-#: src/Pmpr/Common/Foundation/Frontend/Page.php:179
+#: src/Pmpr/Common/Foundation/Frontend/Page.php:117
 #: src/Pmpr/Common/Foundation/Page/Page.php:460
 msgid "Sorry, you haven't access to edit this page."
 msgstr "شما دسترسی لازم برای مشاهده یا ویرایش این صفحه را ندارید."
 
-#: src/Pmpr/Common/Foundation/Frontend/Page.php:348
+#: src/Pmpr/Common/Foundation/Frontend/Page.php:220
 #: src/Pmpr/Common/Foundation/Page/Page.php:410
 #, php-format
 msgid "%s Page"
 msgstr "صفحه %s"
+
+#: src/Pmpr/Common/Foundation/Frontend/TaxonomyArchivePage.php:82
+#: src/Pmpr/Common/Foundation/Frontend/WebPage.php:373
+msgid "Go to Page Settings"
+msgstr "رفتن به تنظیمات صفحه"
+
+#: src/Pmpr/Common/Foundation/Frontend/TaxonomyEndPoint.php:37
+#, php-format
+msgid "Go to %s Settings"
+msgstr "رفتن به تنظمات صفحه %s"
+
+#: src/Pmpr/Common/Foundation/Frontend/WebPage.php:324
+#, php-format
+msgid "Setting of %s"
+msgstr "تنظیمات %s"
 
 #: src/Pmpr/Common/Foundation/Functions/Helper/Error.php:222
 #, php-format
@@ -713,6 +719,18 @@ msgstr "لینک به بیرون"
 msgid "Action Link"
 msgstr "متن پیوند"
 
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1116
+#, fuzzy
+#| msgid "Background Color"
+msgid "Action Background"
+msgstr "رنگ پس‌زمینه"
+
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/Backend.php:1120
+#, fuzzy
+#| msgid "Background Color"
+msgid "As Outline Background"
+msgstr "رنگ پس‌زمینه"
+
 #: src/Pmpr/Common/Foundation/Functions/Helper/HTML/HTML.php:21
 msgid "Nofollow"
 msgstr "مقدار nofollow"
@@ -725,11 +743,11 @@ msgstr "مقدار noopener"
 msgid "Noreferrer"
 msgstr "مقدار noreferrer"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/HTML.php:851
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/HTML.php:852
 msgid "Items"
 msgstr "آیتم‌ها‌"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/HTML.php:854
+#: src/Pmpr/Common/Foundation/Functions/Helper/HTML/HTML.php:855
 #, php-format
 msgid "Include %s %s"
 msgstr "شامل %s %s"
@@ -802,52 +820,70 @@ msgstr "جستجو"
 msgid "To many request. please try again few minutes later."
 msgstr ""
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:72
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:73
 #, php-format
 msgid "%s ago"
 msgstr "‏%s پیش"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:236
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:82
+msgid "Second"
+msgid_plural "Seconds"
+msgstr[0] "ثانیه"
+
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:89
+msgid "Minute"
+msgid_plural "Minutes"
+msgstr[0] "دقیقه"
+
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:96
+msgid "Hour"
+msgid_plural "Hours"
+msgstr[0] "ساعت"
+
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:267
 #, php-format
 msgid "%s Minute"
 msgid_plural "%s Minutes"
 msgstr[0] "%s دقیقه"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:239
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:270
 #, php-format
 msgid "%s Hour"
 msgid_plural "%s Hours"
 msgstr[0] "%s ساعت"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:242
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:273
 #, php-format
 msgid "%s Day"
 msgid_plural "%s Days"
 msgstr[0] "%s روز"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:245
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:276
 #, php-format
 msgid "%s Week"
 msgid_plural "%s Weeks"
 msgstr[0] "%s هفته"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:248
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:279
 #, php-format
 msgid "%s Month"
 msgid_plural "%s Months"
 msgstr[0] "%s ماه"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:251
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:282
 #, php-format
 msgid "%s Year"
 msgid_plural "%s Years"
-msgstr[0] "%s سال"
+msgstr[0] ""
+"\n"
+"\n"
+"%s سال"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:360
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:391
 msgid "This Week"
 msgstr "هفته جاری"
 
-#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:361
+#: src/Pmpr/Common/Foundation/Functions/Helper/Type/_Datetime.php:392
 #, php-format
 msgid "%s week ago"
 msgid_plural "%s weeks ago"
@@ -1472,7 +1508,7 @@ msgstr "صفحه درخواستی شما وجود ندارد."
 msgid "There are not %s yet."
 msgstr "هنوز %s وجود ندارد."
 
-#: src/Pmpr/Common/Foundation/Template/Twig/Action.php:1004
+#: src/Pmpr/Common/Foundation/Template/Twig/Action.php:996
 msgid "User Avatar"
 msgstr "آواتار کاربر"
 
@@ -1918,10 +1954,9 @@ msgid "Now!"
 msgstr ""
 
 #: vendor/woocommerce/action-scheduler/classes/ActionScheduler_ListTable.php:260
-#, fuzzy, php-format
-#| msgid "Every %d Minutes"
+#, php-format
 msgid "Every %s"
-msgstr "هر %d دقیقه"
+msgstr "هر %s"
 
 #: vendor/woocommerce/action-scheduler/classes/ActionScheduler_ListTable.php:266
 #, fuzzy
@@ -2946,15 +2981,6 @@ msgstr ""
 
 #~ msgid "Time"
 #~ msgstr "زمان"
-
-#~ msgid "Hour"
-#~ msgstr "ساعت"
-
-#~ msgid "Minute"
-#~ msgstr "دقیقه"
-
-#~ msgid "Second"
-#~ msgstr "ثانیه"
 
 #~ msgid "Now"
 #~ msgstr "امروز"
