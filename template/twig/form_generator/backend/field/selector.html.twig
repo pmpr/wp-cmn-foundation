@@ -1,0 +1,37 @@
+{% extends get_template('common', _self) %}
+
+{% block before_field %}{% endblock %}
+
+{% block field_body %}
+    <input {{ attributes|parse_attrs|raw }}/>
+    <div class="pr-field-selector-levels">
+        {% for level in levels %}
+            <div class="pr-field-selector-level row{% if loop.first %} active{% endif %}"
+                 id="level_{{ level|call('getId')|esc_attr }}">
+                {% for option in level|call('getOptions') %}
+
+                    {% set optionData = option|call('toArray'); %}
+                    {% set is_nav = optionData.type in ['next', 'prev'] %}
+                    <div class="pr-field-selector-option-wrapper col-12 col-sm-6 col-md-4">
+                        <div class="pr-field-selector-option {{ optionData.type }}{% if is_nav %} navigation{% endif %}"{% if is_nav %} data-target="#level_{{ optionData.level|esc_attr }}"{% else %} id="{{ optionData.id|esc_attr }}"{% endif %}>
+                            {% if optionData.type is same as('next') %}
+                                {{ render_icon(optionData.nav_icon, {class: 'pr-field-selector-navigation-icon'}, 1) }}
+                            {% elseif optionData.type is same as('option') %}
+                                <span class="pr-field-selector-option-radio"></span>
+                            {% endif %}
+                            {% if optionData.icon is not empty %}
+                                {{ render_icon(optionData.icon, {class: 'icon-3x pr-field-selector-image'}, 1) }}
+                            {% endif %}
+                            {{ render_if_has_content('strong', {class: 'pr-field-selector-title'}, optionData.title) }}
+                            {{ render_if_has_content('div', {class: 'pr-field-selector-description'}, optionData.description) }}
+                        </div>
+                    </div>
+
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+
+{% block after_field %}{% endblock %}
+

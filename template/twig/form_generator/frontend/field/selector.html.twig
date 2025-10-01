@@ -1,0 +1,36 @@
+{% extends get_template('common', _self) %}
+
+{% block before_field %}{% endblock %}
+
+{% block field_body %}
+    <input {{ attributes|parse_attrs|raw }}/>
+    <div class="pr-field-selector-levels">
+        {% for level in levels %}
+            <div class="pr-field-selector-level{% if (value is empty and loop.first) or self|call('isActive', level) %} active{% endif %}"
+                 id="level_{{ level|call('getId')|esc_attr }}">
+                {% for option in level|call('getOptions') %}
+
+                    {% set optionData = option|call('toArray') %}
+                    {% set is_nav = optionData.type in ['next', 'prev'] %}
+                    {% set is_next = optionData.type in ['next'] %}
+
+                    <div class="pr-field-selector-option {{ optionData.type }}{% if is_nav %} navigation{% elseif value == optionData.id %} selected{% endif %}"
+                            {% if is_nav %} data-target="#level_{{ optionData.level|esc_attr }}" {% else %} id="{{ optionData.id|esc_attr }}"{% endif %} data-level="{{ optionData.level|esc_attr }}">
+
+                        {% if option.image is not empty %}
+                            <figure class="pr-field-selector-image">{{ option.image|raw }}</figure>
+                        {% elseif optionData.icon is not empty %}
+                            {{ render_icon(optionData.icon, {class: 'pr-field-selector-icon'}) }}
+                        {% endif %}
+
+                        {{ render_if_has_content('div', {class: 'pr-field-selector-title'}, optionData.title) }}
+                        {{ render_if_has_content('div', {class: 'pr-field-selector-description'}, optionData.description) }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+
+{% block after_field %}{% endblock %}
+
