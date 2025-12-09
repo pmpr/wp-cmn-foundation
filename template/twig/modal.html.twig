@@ -22,10 +22,9 @@
             <footer id="{{ prefix }}_modal_footer" class="pr-modal-footer {{ prefix }}-modal-footer"
                     data-pr-modal-default-content="">
                 <div class="pr-modal-actions">
-                    {% if buttons is defined
-                        and buttons is not empty %}
+                    {% if buttons is defined and buttons is not empty %}
                         {% for button in buttons %}
-                            {% if button is iterable %}
+                            {% if button is array or button is object %}
                                 <button {{ button.attrs|parse_attrs|raw }}>{{ button.title|raw }}</button>
                             {% else %}
                                 {{ button|raw }}
