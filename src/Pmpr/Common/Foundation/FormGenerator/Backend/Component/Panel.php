@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             6952c8d37796e             |
+    |             6953c7cef2cea             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\FormGenerator\Backend\Component; use Pmpr\Common\Foundation\Interfaces\Constants; use Pmpr\Common\Foundation\FormGenerator\Backend\Traits\SegmentsTrait; class Panel extends Page { use SegmentsTrait; public function qiccuiwooiquycsg() { parent::qiccuiwooiquycsg(); $this->template = Constants::ismwwqmwgmqqocke; $this->templateClass = self::class; } public function iumcsgkcwwwsyggc() { $this->ykwqaukkycogooii(); $this->wumseguyiucgkiuq(); parent::iumcsgkcwwwsyggc(); } public function ykwqaukkycogooii() { } }
