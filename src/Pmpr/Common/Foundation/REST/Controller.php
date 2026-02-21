@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             6994f2bd52e93             |
+    |             699992793a35d             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\REST; use Pmpr\Common\Foundation\Interfaces\Constants; use WP_Error; use WP_HTTP_Response; use WP_REST_Request; use WP_REST_Response; class Controller extends RESTController { const yyamasygmiymuoce = 'rest_nonce'; public function __construct() { $this->rest_base = 'core'; parent::__construct(); } public function register_routes() { $ikamsuaiikaggcga = ['get-nonce' => [Constants::oaggieeykyaoiiyw => self::uigoseacoukemwqc, Constants::wwgusigoaksqmwsm => [$this, 'kggsueyuyqeqeusc'], Constants::oewumsewskquiasu => '__return_true']]; $ikamsuaiikaggcga = (array) $this->ocksiywmkyaqseou('common_rest_api_routes', $ikamsuaiikaggcga, $this); if ($ikamsuaiikaggcga) { foreach ($ikamsuaiikaggcga as $ymqmyyeuycgmigyo => $cociqcumeacycoeq) { $this->register("/{$ymqmyyeuycgmigyo}", $cociqcumeacycoeq); } } } public function kggsueyuyqeqeusc(WP_REST_Request $aqmwamyiwgeeymqa) { $keccaugmemegoimu = $this->qasywwyamoesisyi('ok', [Constants::oomaageiyqkaiekk => $this->uwkmaywceaaaigwo()->giiecckwoyiawoyy()->ikkqcccaweckukug(self::yyamasygmiymuoce), Constants::syueuegaeqikiyuq => $this->caokeucsksukesyo()->sgqicqeoumwmsmyw()->gwgmymsuwsceguce()]); return $this->ewmkmmsuiuwmmwoy($keccaugmemegoimu); } }

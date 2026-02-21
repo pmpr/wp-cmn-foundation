@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             6994f2bd52e93             |
+    |             699992793a35d             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Plugin; use Pmpr\Common\Foundation\REST\RESTController; abstract class Controller extends RESTController { public function __construct() { parent::__construct(); $this->namespace .= '/plugin'; } }
