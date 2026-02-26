@@ -1,0 +1,12 @@
+<div class="d-flex">
+    <img
+            src="{{ thumbnail }}" alt="{{ title|esc_attr }}"
+            class="mr-2" width="65" height="65"
+    >
+    <div class="d-flex flex-column">
+        <strong>{{ title|raw }}</strong>
+        {{ price_html|raw }}
+        <span class="{{ stock_status|esc_attr }}">{{ stock_html|raw }}</span>
+    </div>
+</div>
+

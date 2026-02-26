@@ -13,7 +13,7 @@
     {% endset %}
     {{ render_if_has_content('div', {class: 'pr-field-label-container'}, field_label) }}
 {% endblock %}
-<div class="pr-field-{{ type|esc_attr }}{% if field_container_class is defined and field_container_class is not empty %} {{ field_container_class|esc_attr }}{% endif %}">
+<div class="pr-field-input-container pr-field-{{ type|esc_attr }}{% if field_container_class is defined and field_container_class is not empty %} {{ field_container_class|esc_attr }}{% endif %}">
     {% block field_body %}
         {% include get_template('../message', _self) %}
         {% include get_template('../tip', _self) %}
