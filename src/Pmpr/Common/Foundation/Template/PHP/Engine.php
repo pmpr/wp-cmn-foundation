@@ -1,7 +1,7 @@
 <?php
 /*   _______________________________________
     |  Obfuscated by PMPR - Php Obfuscator  |
-    |             69a0a1216424e             |
+    |             69a0b3a7a4aa3             |
     |_______________________________________|
 */
  namespace Pmpr\Common\Foundation\Template\PHP; use Pmpr\Common\Foundation\Interfaces\Constants; use Pmpr\Common\Foundation\Template\Engine as BaseClass; class Engine extends BaseClass { public function ikcgmcycisiccyuc() { $this->type = Constants::PHP; } public function exists($qqscaoyqikuyeoaw, $wksoawcgagcgoask = null) : bool { return $this->caokeucsksukesyo()->iuekyyeesukysksy()->kcciqwskewsuaemk()->exists($qqscaoyqikuyeoaw); } public function wkosicsekwkigyss($aiieyweysaukqemc, $mkomwsiykqigmqca) : bool { return true; } public function ugcgocaoguesoiic(string $wkcwykowmmmwioqs, array $qookweymeqawmcwo = []) { if ($this->exists($wkcwykowmmmwioqs)) { extract($qookweymeqawmcwo); include $wkcwykowmmmwioqs; } } public function mawoacksgosuccme($ksqeumockcesgeeo) : string { $yucgcsieomwqgwws = '.php'; if ($this->caokeucsksukesyo()->owgcciayoweymuws()->ykemmsoumouomkqm($ksqeumockcesgeeo, $yucgcsieomwqgwws)) { return $ksqeumockcesgeeo; } return "{$ksqeumockcesgeeo}{$yucgcsieomwqgwws}"; } public function siameoooqiiuqgsm($egkyssmuqcwaciya) : ?string { $wksoawcgagcgoask = $this->caokeucsksukesyo()->cqusmgskowmesgcg()->get($egkyssmuqcwaciya); $mkomwsiykqigmqca = $this->miauceksymgoyacu($egkyssmuqcwaciya); return "{$wksoawcgagcgoask->ikeqsmumgwwuqmkw()}/template/php/{$mkomwsiykqigmqca}"; } }
